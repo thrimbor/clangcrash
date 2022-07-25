@@ -17224,51 +17224,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
 }
 
 template <class _CharT, class _Traits, class _Allocator>
-template <class _InputIterator>
-typename enable_if
-<
-    __is_exactly_input_iterator<_InputIterator>::value,
-    void
->::type
-basic_string<_CharT, _Traits, _Allocator>::__init(_InputIterator __first, _InputIterator __last)
-{
-    __zero();
-    for (; __first != __last; ++__first)
-        push_back(*__first);
-}
-
-template <class _CharT, class _Traits, class _Allocator>
-template <class _ForwardIterator>
-typename enable_if
-<
-    __is_forward_iterator<_ForwardIterator>::value,
-    void
->::type
-basic_string<_CharT, _Traits, _Allocator>::__init(_ForwardIterator __first, _ForwardIterator __last)
-{
-    size_type __sz = static_cast<size_type>(std::__1::distance(__first, __last));
-    if (__sz > max_size())
-        this->__throw_length_error();
-    pointer __p;
-    if (__sz < __min_cap)
-    {
-        __set_short_size(__sz);
-        __p = __get_short_pointer();
-    }
-    else
-    {
-        size_type __cap = __recommend(__sz);
-        __p = __alloc_traits::allocate(__alloc(), __cap+1);
-        __set_long_pointer(__p);
-        __set_long_cap(__cap+1);
-        __set_long_size(__sz);
-    }
-    for (; __first != __last; ++__first, (void) ++__p)
-        traits_type::assign(*__p, *__first);
-    traits_type::assign(*__p, value_type());
-}
-
-template <class _CharT, class _Traits, class _Allocator>
 template<class _InputIterator, class>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, _InputIterator __last)
