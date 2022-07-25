@@ -930,22 +930,6 @@ typedef unsigned int   char32_t;
 #  define _LIBCPP_DECLARE_STRONG_ENUM_EPILOG(x)
 #endif  // _LIBCPP_HAS_NO_STRONG_ENUMS
 
-#ifdef _LIBCPP_DEBUG
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_DEBUG_LEVEL 1
-
-#elif 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_DEBUG_LEVEL 2
-#  else
-#    error Supported values for _LIBCPP_DEBUG are 0 and 1
-#  endif
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_EXTERN_TEMPLATE(...)
-#  endif
-#endif
-
 #ifdef _LIBCPP_DISABLE_EXTERN_TEMPLATE
 #define _LIBCPP_EXTERN_TEMPLATE(...)
 #define _LIBCPP_EXTERN_TEMPLATE2(...)
@@ -1254,20 +1238,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 # define _LIBCPP_HAS_TRIVIAL_CONDVAR_DESTRUCTION
 #endif
 
-// Systems that use capability-based security (FreeBSD with Capsicum,
-// Nuxi CloudABI) may only provide local filesystem access (using *at()).
-// Functions like open(), rename(), unlink() and stat() should not be
-// used, as they attempt to access the global filesystem namespace.
-#ifdef __CloudABI__
-#define _LIBCPP_HAS_NO_GLOBAL_FILESYSTEM_NAMESPACE
-#endif
-
-// CloudABI is intended for running networked services. Processes do not
-// have standard input and output channels.
-#ifdef __CloudABI__
-#define _LIBCPP_HAS_NO_STDIN
-#define _LIBCPP_HAS_NO_STDOUT
-#endif
 
 // Some systems do not provide gets() in their C library, for security reasons.
 #ifndef _LIBCPP_C_HAS_NO_GETS
@@ -11678,10 +11648,6 @@ _PDCLIB_PUBLIC void perror( const char * s );
 #endif  // _LIBCPP_STDIO_H
 
 
-#if 1 /* evaluated by -frewrite-includes */
-
-#endif
-
 _LIBCPP_BEGIN_NAMESPACE_STD
 
 using ::FILE;
@@ -11712,22 +11678,6 @@ using ::remove;
 using ::rename;
 #endif
 
-#ifndef _LIBCPP_HAS_NO_STDIN
-using ::getchar;
-
-#if 0 /* evaluated by -frewrite-includes */
-using ::gets;
-#endif
-using ::scanf;
-using ::vscanf;
-#endif
-
-#ifndef _LIBCPP_HAS_NO_STDOUT
-using ::printf;
-using ::putchar;
-using ::puts;
-using ::vprintf;
-#endif
 
 _LIBCPP_END_NAMESPACE_STD
 
@@ -26207,36 +26157,6 @@ _LIBCPP_PUSH_MACROS
 //
 //===----------------------------------------------------------------------===//
 
-
-#ifdef min
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing min")
-#else
-#warning: macro min is incompatible with C++.  #undefing min
-#endif
-#endif
-#undef min
-#endif
-
-#ifdef max
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing max")
-#else
-#warning: macro max is incompatible with C++.  #undefing max
-#endif
-#endif
-#undef max
-#endif
-
-
 _LIBCPP_BEGIN_NAMESPACE_STD
 
 // I'd like to replace these with _VSTD::equal_to<void>, but can't because:
@@ -26355,53 +26275,6 @@ __half_positive(_Tp __value)
     return __value / 2;
 }
 
-#ifdef _LIBCPP_DEBUG
-
-template <class _Compare>
-struct __debug_less
-{
-    _Compare &__comp_;
-    _LIBCPP_CONSTEXPR_AFTER_CXX17
-    __debug_less(_Compare& __c) : __comp_(__c) {}
-
-    template <class _Tp, class _Up>
-    _LIBCPP_CONSTEXPR_AFTER_CXX17
-    bool operator()(const _Tp& __x,  const _Up& __y)
-    {
-        bool __r = __comp_(__x, __y);
-        if (__r)
-            __do_compare_assert(0, __y, __x);
-        return __r;
-    }
-
-    template <class _Tp, class _Up>
-    _LIBCPP_CONSTEXPR_AFTER_CXX17
-    bool operator()(_Tp& __x,  _Up& __y)
-    {
-        bool __r = __comp_(__x, __y);
-        if (__r)
-            __do_compare_assert(0, __y, __x);
-        return __r;
-    }
-
-    template <class _LHS, class _RHS>
-    _LIBCPP_CONSTEXPR_AFTER_CXX17
-    inline _LIBCPP_INLINE_VISIBILITY
-    decltype((void)_VSTD::declval<_Compare&>()(
-        _VSTD::declval<_LHS &>(), _VSTD::declval<_RHS &>()))
-    __do_compare_assert(int, _LHS & __l, _RHS & __r) {
-        _LIBCPP_ASSERT(!__comp_(__l, __r),
-            "Comparator does not induce a strict weak ordering");
-    }
-
-    template <class _LHS, class _RHS>
-    _LIBCPP_CONSTEXPR_AFTER_CXX17
-    inline _LIBCPP_INLINE_VISIBILITY
-    void __do_compare_assert(long, _LHS &, _RHS &) {}
-};
-
-#endif // _LIBCPP_DEBUG
-
 template <class _Comp>
 struct __comp_ref_type {
   // Pass the comparator by lvalue reference. Or in debug mode, using a
@@ -26478,143 +26351,6 @@ __unwrap_iter(__wrap_iter<_Tp*> __i)
 
 #endif  // _LIBCPP_DEBUG_LEVEL < 2
 
-template <class _InputIterator, class _OutputIterator>
-inline _LIBCPP_INLINE_VISIBILITY
-_OutputIterator
-__copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
-{
-    for (; __first != __last; ++__first, (void) ++__result)
-        *__result = *__first;
-    return __result;
-}
-
-template <class _Tp, class _Up>
-inline _LIBCPP_INLINE_VISIBILITY
-typename enable_if
-<
-    is_same<typename remove_const<_Tp>::type, _Up>::value &&
-    is_trivially_copy_assignable<_Up>::value,
-    _Up*
->::type
-__copy(_Tp* __first, _Tp* __last, _Up* __result)
-{
-    const size_t __n = static_cast<size_t>(__last - __first);
-    if (__n > 0)
-        _VSTD::memmove(__result, __first, __n * sizeof(_Up));
-    return __result + __n;
-}
-
-template <class _InputIterator, class _OutputIterator>
-inline _LIBCPP_INLINE_VISIBILITY
-_OutputIterator
-copy(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
-{
-    return _VSTD::__copy(__unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
-}
-
-// copy_backward
-
-template <class _BidirectionalIterator, class _OutputIterator>
-inline _LIBCPP_INLINE_VISIBILITY
-_OutputIterator
-__copy_backward(_BidirectionalIterator __first, _BidirectionalIterator __last, _OutputIterator __result)
-{
-    while (__first != __last)
-        *--__result = *--__last;
-    return __result;
-}
-
-template <class _Tp, class _Up>
-inline _LIBCPP_INLINE_VISIBILITY
-typename enable_if
-<
-    is_same<typename remove_const<_Tp>::type, _Up>::value &&
-    is_trivially_copy_assignable<_Up>::value,
-    _Up*
->::type
-__copy_backward(_Tp* __first, _Tp* __last, _Up* __result)
-{
-    const size_t __n = static_cast<size_t>(__last - __first);
-    if (__n > 0)
-    {
-        __result -= __n;
-        _VSTD::memmove(__result, __first, __n * sizeof(_Up));
-    }
-    return __result;
-}
-
-template <class _BidirectionalIterator1, class _BidirectionalIterator2>
-inline _LIBCPP_INLINE_VISIBILITY
-_BidirectionalIterator2
-copy_backward(_BidirectionalIterator1 __first, _BidirectionalIterator1 __last,
-              _BidirectionalIterator2 __result)
-{
-    return _VSTD::__copy_backward(__unwrap_iter(__first),
-                                  __unwrap_iter(__last),
-                                  __unwrap_iter(__result));
-}
-
-// copy_if
-
-template<class _InputIterator, class _OutputIterator, class _Predicate>
-inline _LIBCPP_INLINE_VISIBILITY
-_OutputIterator
-copy_if(_InputIterator __first, _InputIterator __last,
-        _OutputIterator __result, _Predicate __pred)
-{
-    for (; __first != __last; ++__first)
-    {
-        if (__pred(*__first))
-        {
-            *__result = *__first;
-            ++__result;
-        }
-    }
-    return __result;
-}
-
-// copy_n
-
-template<class _InputIterator, class _Size, class _OutputIterator>
-inline _LIBCPP_INLINE_VISIBILITY
-typename enable_if
-<
-    __is_input_iterator<_InputIterator>::value &&
-   !__is_random_access_iterator<_InputIterator>::value,
-    _OutputIterator
->::type
-copy_n(_InputIterator __first, _Size __orig_n, _OutputIterator __result)
-{
-    typedef decltype(__convert_to_integral(__orig_n)) _IntegralSize;
-    _IntegralSize __n = __orig_n;
-    if (__n > 0)
-    {
-        *__result = *__first;
-        ++__result;
-        for (--__n; __n > 0; --__n)
-        {
-            ++__first;
-            *__result = *__first;
-            ++__result;
-        }
-    }
-    return __result;
-}
-
-template<class _InputIterator, class _Size, class _OutputIterator>
-inline _LIBCPP_INLINE_VISIBILITY
-typename enable_if
-<
-    __is_random_access_iterator<_InputIterator>::value,
-    _OutputIterator
->::type
-copy_n(_InputIterator __first, _Size __orig_n, _OutputIterator __result)
-{
-    typedef decltype(__convert_to_integral(__orig_n)) _IntegralSize;
-    _IntegralSize __n = __orig_n;
-    return _VSTD::copy(__first, __first + __n, __result);
-}
-
 
 // fill_n
 
@@ -26661,31 +26397,6 @@ void
 fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value_)
 {
     _VSTD::__fill(__first, __last, __value_, typename iterator_traits<_ForwardIterator>::iterator_category());
-}
-
-// generate
-
-template <class _ForwardIterator, class _Generator>
-inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
-void
-generate(_ForwardIterator __first, _ForwardIterator __last, _Generator __gen)
-{
-    for (; __first != __last; ++__first)
-        *__first = __gen();
-}
-
-// generate_n
-
-template <class _OutputIterator, class _Size, class _Generator>
-inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
-_OutputIterator
-generate_n(_OutputIterator __first, _Size __orig_n, _Generator __gen)
-{
-    typedef decltype(__convert_to_integral(__orig_n)) _IntegralSize;
-    _IntegralSize __n = __orig_n;
-    for (; __n > 0; ++__first, (void) --__n)
-        *__first = __gen();
-    return __first;
 }
 
 // min_element
@@ -26759,165 +26470,6 @@ min(initializer_list<_Tp> __t)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-
-// max_element
-
-template <class _ForwardIterator, class _Compare>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-_ForwardIterator
-max_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp)
-{
-    static_assert(__is_forward_iterator<_ForwardIterator>::value,
-        "std::max_element requires a ForwardIterator");
-    if (__first != __last)
-    {
-        _ForwardIterator __i = __first;
-        while (++__i != __last)
-            if (__comp(*__first, *__i))
-                __first = __i;
-    }
-    return __first;
-}
-
-
-template <class _ForwardIterator>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-_ForwardIterator
-max_element(_ForwardIterator __first, _ForwardIterator __last)
-{
-    return _VSTD::max_element(__first, __last,
-              __less<typename iterator_traits<_ForwardIterator>::value_type>());
-}
-
-// max
-
-template <class _Tp, class _Compare>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-const _Tp&
-max(const _Tp& __a, const _Tp& __b, _Compare __comp)
-{
-    return __comp(__a, __b) ? __b : __a;
-}
-
-template <class _Tp>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-const _Tp&
-max(const _Tp& __a, const _Tp& __b)
-{
-    return _VSTD::max(__a, __b, __less<_Tp>());
-}
-
-#ifndef _LIBCPP_CXX03_LANG
-
-template<class _Tp, class _Compare>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-_Tp
-max(initializer_list<_Tp> __t, _Compare __comp)
-{
-    return *_VSTD::max_element(__t.begin(), __t.end(), __comp);
-}
-
-template<class _Tp>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-_Tp
-max(initializer_list<_Tp> __t)
-{
-    return *_VSTD::max_element(__t.begin(), __t.end(), __less<_Tp>());
-}
-
-#endif  // _LIBCPP_CXX03_LANG
-
-
-#if 1 /* evaluated by -frewrite-includes */
-// clamp
-template<class _Tp, class _Compare>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-const _Tp&
-clamp(const _Tp& __v, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
-{
-    _LIBCPP_ASSERT(!__comp(__hi, __lo), "Bad bounds passed to std::clamp");
-    return __comp(__v, __lo) ? __lo : __comp(__hi, __v) ? __hi : __v;
-
-}
-
-template<class _Tp>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-const _Tp&
-clamp(const _Tp& __v, const _Tp& __lo, const _Tp& __hi)
-{
-    return _VSTD::clamp(__v, __lo, __hi, __less<_Tp>());
-}
-#endif
-
-// minmax_element
-
-template <class _ForwardIterator, class _Compare>
-_LIBCPP_NODISCARD_EXT _LIBCPP_CONSTEXPR_AFTER_CXX11
-std::pair<_ForwardIterator, _ForwardIterator>
-minmax_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp)
-{
-  static_assert(__is_forward_iterator<_ForwardIterator>::value,
-        "std::minmax_element requires a ForwardIterator");
-  std::pair<_ForwardIterator, _ForwardIterator> __result(__first, __first);
-  if (__first != __last)
-  {
-      if (++__first != __last)
-      {
-          if (__comp(*__first, *__result.first))
-              __result.first = __first;
-          else
-              __result.second = __first;
-          while (++__first != __last)
-          {
-              _ForwardIterator __i = __first;
-              if (++__first == __last)
-              {
-                  if (__comp(*__i, *__result.first))
-                      __result.first = __i;
-                  else if (!__comp(*__i, *__result.second))
-                      __result.second = __i;
-                  break;
-              }
-              else
-              {
-                  if (__comp(*__first, *__i))
-                  {
-                      if (__comp(*__first, *__result.first))
-                          __result.first = __first;
-                      if (!__comp(*__i, *__result.second))
-                          __result.second = __i;
-                  }
-                  else
-                  {
-                      if (__comp(*__i, *__result.first))
-                          __result.first = __i;
-                      if (!__comp(*__first, *__result.second))
-                          __result.second = __first;
-                  }
-              }
-          }
-      }
-  }
-  return __result;
-}
-
-template <class _ForwardIterator>
-_LIBCPP_NODISCARD_EXT inline
-_LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-std::pair<_ForwardIterator, _ForwardIterator>
-minmax_element(_ForwardIterator __first, _ForwardIterator __last)
-{
-    return _VSTD::minmax_element(__first, __last,
-              __less<typename iterator_traits<_ForwardIterator>::value_type>());
-}
 
 // __independent_bits_engine
 
@@ -27654,57 +27206,7 @@ _LIBCPP_POP_MACROS
 #endif  // _LIBCPP___STRING
 
 
-
-
-
-
-
-
-
-#if 1 /* evaluated by -frewrite-includes */
-
-#endif
-
 _LIBCPP_PUSH_MACROS
-
-// -*- C++ -*-
-//===------------------------ __undef_macros ------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
-
-#ifdef min
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing min")
-#else
-#warning: macro min is incompatible with C++.  #undefing min
-#endif
-#endif
-#undef min
-#endif
-
-#ifdef max
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing max")
-#else
-#warning: macro max is incompatible with C++.  #undefing max
-#endif
-#endif
-#undef max
-#endif
-
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -28418,78 +27920,13 @@ using ::mbsrtowcs;
 using ::wcsrtombs;
 #endif
 
-#ifndef _LIBCPP_HAS_NO_STDIN
-using ::getwchar;
-using ::vwscanf;
-using ::wscanf;
-#endif
-
-#ifndef _LIBCPP_HAS_NO_STDOUT
-using ::putwchar;
-using ::vwprintf;
-using ::wprintf;
-#endif
-
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CWCHAR
 
 
 
-
-
-
-
-
-
-#ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
-
-#endif
-
-
-#if 1 /* evaluated by -frewrite-includes */
-
-#endif
-
 _LIBCPP_PUSH_MACROS
-// -*- C++ -*-
-//===------------------------ __undef_macros ------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
-
-#ifdef min
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing min")
-#else
-#warning: macro min is incompatible with C++.  #undefing min
-#endif
-#endif
-#undef min
-#endif
-
-#ifdef max
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-_LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
-                "before any Windows header. #undefing max")
-#else
-#warning: macro max is incompatible with C++.  #undefing max
-#endif
-#endif
-#undef max
-#endif
-
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
