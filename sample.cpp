@@ -3,9 +3,7 @@
 #define _LIBCPP_STRING
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- __config ---------------------------------===//
 //
@@ -30,24 +28,16 @@
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_MSC_VER) && !defined(__clang__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
 #  endif
 #endif
 
 #ifndef _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
@@ -73,24 +63,13 @@
 #endif
 
 #ifndef _LIBCPP_STD_VER
-#if 0 /* disabled by -frewrite-includes */
-#  if  __cplusplus <= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_STD_VER 11
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif __cplusplus <= 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_STD_VER 14
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif __cplusplus <= 201703L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_STD_VER 17
 #  else
@@ -98,48 +77,27 @@
 #  endif
 #endif  // _LIBCPP_STD_VER
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__ELF__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_OBJECT_FORMAT_ELF   1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__MACH__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_OBJECT_FORMAT_MACHO 1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_WIN32)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_OBJECT_FORMAT_COFF  1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__wasm__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_OBJECT_FORMAT_WASM  1
 #else
 #  error Unknown object file format
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_UNSTABLE) || _LIBCPP_ABI_VERSION >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 #elif 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_OBJECT_FORMAT_COFF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Enable compiling copies of now inline methods into the dylib to support
 // applications compiled against older libraries. This is unnecessary with
@@ -150,10 +108,7 @@
 #  endif
 // Feature macros for disabling pre ABI v1 features. All of these options
 // are deprecated.
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__FreeBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR
 #  endif
@@ -171,10 +126,7 @@
 # define _LIBCPP_ABI_NAMESPACE _LIBCPP_CONCAT(__,_LIBCPP_ABI_VERSION)
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_CXX03_LANG
 #endif
@@ -215,42 +167,24 @@
 #define __has_include(...) 0
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__clang__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_COMPILER_CLANG
 #  ifndef __apple_build_version__
 #    define _LIBCPP_CLANG_VER (__clang_major__ * 100 + __clang_minor__)
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__GNUC__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_COMPILER_GCC
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_MSC_VER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_COMPILER_MSVC
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__IBMCPP__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_COMPILER_IBM
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_COMPILER_GCC) && __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error "libc++ does not support using GCC with C++03. Please enable C++11"
 #endif
@@ -260,31 +194,17 @@
 // that Windows compilers pretending to be MSVC++ target the Microsoft ABI,
 // and allow the user to explicitly specify the ABI to handle cases where this
 // heuristic falls short.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_FORCE_ITANIUM) && defined(_LIBCPP_ABI_FORCE_MICROSOFT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  error "Only one of _LIBCPP_ABI_FORCE_ITANIUM and _LIBCPP_ABI_FORCE_MICROSOFT can be defined"
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_ABI_FORCE_ITANIUM)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_ABI_ITANIUM
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_ABI_FORCE_MICROSOFT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_ABI_MICROSOFT
 #else
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_WIN32) && defined(_MSC_VER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_ABI_MICROSOFT
 #  else
@@ -292,27 +212,16 @@
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_MICROSOFT) && !defined(_LIBCPP_NO_VCRUNTIME)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define _LIBCPP_ABI_VCRUNTIME
 #endif
 
 // Need to detect which libc we're using if we're on Linux.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__linux__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#  include <features.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__GLIBC_PREREQ)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_GLIBC_PREREQ(a, b) __GLIBC_PREREQ(a, b)
 #  else
@@ -321,50 +230,32 @@
 #endif // defined(__linux__)
 
 #ifdef __LITTLE_ENDIAN__
-#if 0 /* disabled by -frewrite-includes */
-#  if __LITTLE_ENDIAN__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_LITTLE_ENDIAN
 #  endif  // __LITTLE_ENDIAN__
 #endif  // __LITTLE_ENDIAN__
 
 #ifdef __BIG_ENDIAN__
-#if 0 /* disabled by -frewrite-includes */
-#  if __BIG_ENDIAN__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_BIG_ENDIAN
 #  endif  // __BIG_ENDIAN__
 #endif  // __BIG_ENDIAN__
 
 #ifdef __BYTE_ORDER__
-#if 0 /* disabled by -frewrite-includes */
-#  if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_LITTLE_ENDIAN
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_BIG_ENDIAN
 #  endif // __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
 #endif // __BYTE_ORDER__
 
 #ifdef __FreeBSD__
-#if 0 /* expanded by -frewrite-includes */
-#  include <sys/endian.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if _BYTE_ORDER == _LITTLE_ENDIAN
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_LITTLE_ENDIAN
 #  else  // _BYTE_ORDER == _LITTLE_ENDIAN
@@ -376,10 +267,7 @@
 #endif  // __FreeBSD__
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_WIN32)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_WIN32API
 #  define _LIBCPP_LITTLE_ENDIAN
@@ -388,44 +276,25 @@
 #  define _LIBCPP_MSVCRT_LIKE
 // If mingw not explicitly detected, assume using MS C runtime only if
 // a MS compatibility version is specified.
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_MSC_VER) && !defined(__MINGW32__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_MSVCRT // Using Microsoft's C Runtime library
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#  if (defined(_M_AMD64) || defined(__x86_64__)) || (defined(_M_ARM) || defined(__arm__))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_BITSCAN64
 #  endif
 #  define _LIBCPP_HAS_OPEN_WITH_WCHAR
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_LIBCPP_MSVCRT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_QUICK_EXIT
 #  endif
 
 // Some CRT APIs are unavailable to store apps
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(WINAPI_FAMILY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#    include <winapifamily.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#    if !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) &&                  \
-        (!defined(WINAPI_PARTITION_SYSTEM) ||                                  \
-         !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_SYSTEM))
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
 #      define _LIBCPP_WINDOWS_STORE_APP
 #    endif
@@ -433,9 +302,7 @@
 #endif // defined(_WIN32)
 
 #ifdef __sun__
-#if 0 /* expanded by -frewrite-includes */
-#  include <sys/isa_defs.h>
-#endif /* expanded by -frewrite-includes */
+
 #  ifdef _LITTLE_ENDIAN
 #    define _LIBCPP_LITTLE_ENDIAN
 #  else
@@ -443,63 +310,36 @@
 #  endif
 #endif // __sun__
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__CloudABI__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
    // Certain architectures provide arc4random(). Prefer using
    // arc4random() over /dev/{u,}random to make it possible to obtain
    // random data even when using sandboxing mechanisms such as chroots,
    // Capsicum, etc.
 #  define _LIBCPP_USING_ARC4_RANDOM
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__Fuchsia__) || defined(__wasi__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_USING_GETENTROPY
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__native_client__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
    // NaCl's sandbox (which PNaCl also runs in) doesn't allow filesystem access,
    // including accesses to the special files under /dev. C++11's
    // std::random_device is instead exposed through a NaCl syscall.
 #  define _LIBCPP_USING_NACL_RANDOM
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_WIN32API)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_USING_WIN32_RANDOM
 #else
 #  define _LIBCPP_USING_DEV_RANDOM
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_LITTLE_ENDIAN) && !defined(_LIBCPP_BIG_ENDIAN)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#  include <endian.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if __BYTE_ORDER == __LITTLE_ENDIAN
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_LITTLE_ENDIAN
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif __BYTE_ORDER == __BIG_ENDIAN
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_BIG_ENDIAN
 #  else  // __BYTE_ORDER == __BIG_ENDIAN
@@ -507,59 +347,33 @@
 #  endif
 #endif  // !defined(_LIBCPP_LITTLE_ENDIAN) && !defined(_LIBCPP_BIG_ENDIAN)
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(__no_sanitize__) && !defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NO_CFI __attribute__((__no_sanitize__("cfi")))
 #else
 #  define _LIBCPP_NO_CFI
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __ISO_C_VISIBLE >= 2011 || __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__FreeBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_QUICK_EXIT
 #    define _LIBCPP_HAS_C11_FEATURES
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif defined(__Fuchsia__) || defined(__wasi__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_QUICK_EXIT
 #    define _LIBCPP_HAS_TIMESPEC_GET
 #    define _LIBCPP_HAS_C11_FEATURES
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif defined(__linux__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#    if !defined(_LIBCPP_HAS_MUSL_LIBC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#      if _LIBCPP_GLIBC_PREREQ(2, 15) || defined(__BIONIC__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #        define _LIBCPP_HAS_QUICK_EXIT
 #      endif
-#if 0 /* disabled by -frewrite-includes */
-#      if _LIBCPP_GLIBC_PREREQ(2, 17)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #        define _LIBCPP_HAS_C11_FEATURES
 #        define _LIBCPP_HAS_TIMESPEC_GET
@@ -574,11 +388,7 @@
 
 #ifndef _LIBCPP_CXX03_LANG
 # define _LIBCPP_ALIGNOF(_Tp) alignof(_Tp)
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_CLANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 # define _LIBCPP_ALIGNOF(_Tp) _Alignof(_Tp)
 #else
@@ -589,28 +399,17 @@
 
 #define _LIBCPP_PREFERRED_ALIGNOF(_Tp) __alignof(_Tp)
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_COMPILER_CLANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 // _LIBCPP_ALTERNATE_STRING_LAYOUT is an old name for
 // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT left here for backward compatibility.
-#if 0 /* disabled by -frewrite-includes */
-#if (defined(__APPLE__) && !defined(__i386__) && !defined(__x86_64__) &&       \
-     (!defined(__arm__) || __ARM_ARCH_7K__ >= 2)) ||                           \
-    defined(_LIBCPP_ALTERNATE_STRING_LAYOUT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_alignas)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _ALIGNAS_TYPE(x) alignas(x)
 #  define _ALIGNAS(x) alignas(x)
@@ -619,66 +418,42 @@
 #  define _ALIGNAS(x) __attribute__((__aligned__(x)))
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 typedef __char16_t char16_t;
 typedef __char32_t char32_t;
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_exceptions)) && !defined(_LIBCPP_NO_EXCEPTIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NO_EXCEPTIONS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_rtti)) && !defined(_LIBCPP_NO_RTTI)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NO_RTTI
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_strong_enums))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_STRONG_ENUMS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_attributes)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NORETURN [[noreturn]]
 #else
 #  define _LIBCPP_NORETURN __attribute__ ((noreturn))
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_lambdas))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_LAMBDAS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_nullptr))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if (__has_extension(cxx_nullptr) || __has_keyword(__nullptr)) && defined(_LIBCPP_ABI_ALWAYS_USE_CXX11_NULLPTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define nullptr __nullptr
 #  else
@@ -686,100 +461,64 @@ typedef __char32_t char32_t;
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_rvalue_references))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_RVALUE_REFERENCES
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_auto_type))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_AUTO_TYPE
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_variadic_templates))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_VARIADICS
 #endif
 
 // Objective-C++ features (opt-in)
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(objc_arc)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_OBJC_ARC
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(objc_arc_weak)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_OBJC_ARC_WEAK
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_relaxed_constexpr))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_variable_templates))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !(__has_feature(cxx_noexcept))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_NOEXCEPT
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ASAN) && !__has_feature(address_sanitizer)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_ASAN
 #endif
 
 // Allow for build-time disabling of unsigned integer sanitization
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK) && __has_attribute(no_sanitize)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK __attribute__((__no_sanitize__("unsigned-integer-overflow")))
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_builtin(__builtin_launder)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__is_identifier(__has_unique_object_representations)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS
 #endif
@@ -787,22 +526,14 @@ typedef __char32_t char32_t;
 #define _LIBCPP_ALWAYS_INLINE __attribute__ ((__always_inline__))
 
 // Literal operators ""d and ""y are supported starting with LLVM Clang 8 and AppleClang 10.0.1
-#if 0 /* disabled by -frewrite-includes */
-#if (defined(_LIBCPP_CLANG_VER) && _LIBCPP_CLANG_VER < 800) || \
-    (defined(__apple_build_version__) && __apple_build_version__ < 10010000)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_CXX20_CHRONO_LITERALS
 #endif
 
 #define _LIBCPP_DISABLE_EXTENSION_WARNING __extension__
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 
 #define _ALIGNAS(x) __attribute__((__aligned__(x)))
@@ -810,52 +541,34 @@ typedef __char32_t char32_t;
 
 #define _LIBCPP_NORETURN __attribute__((noreturn))
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__EXCEPTIONS && !defined(_LIBCPP_NO_EXCEPTIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NO_EXCEPTIONS
 #endif
 
 // Determine if GCC supports relaxed constexpr
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__cpp_constexpr) || __cpp_constexpr < 201304L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #endif
 
 // GCC 5 supports variable templates
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__cpp_variable_templates) || __cpp_variable_templates < 201304L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ASAN) && !defined(__SANITIZE_ADDRESS__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_ASAN
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _GNUC_VER >= 700
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _GNUC_VER >= 700
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS
 #endif
@@ -864,21 +577,14 @@ typedef __char32_t char32_t;
 
 #define _LIBCPP_DISABLE_EXTENSION_WARNING __extension__
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 
 #define _LIBCPP_TOSTRING2(x) #x
 #define _LIBCPP_TOSTRING(x) _LIBCPP_TOSTRING2(x)
 #define _LIBCPP_WARNING(x) __pragma(message(__FILE__ "(" _LIBCPP_TOSTRING(__LINE__) ") : warning note: " x))
 
-#if 0 /* disabled by -frewrite-includes */
-#if _MSC_VER < 1900
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error "MSVC versions prior to Visual Studio 2015 are not supported"
 #endif
@@ -900,11 +606,7 @@ typedef __char32_t char32_t;
 
 #define _LIBCPP_DISABLE_EXTENSION_WARNING
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_IBM)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 
 #define _ALIGNAS(x) __attribute__((__aligned__(x)))
@@ -915,10 +617,7 @@ typedef __char32_t char32_t;
 #define _LIBCPP_HAS_NO_UNICODE_CHARS
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_AIX)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define __MULTILOCALE_API
 #endif
@@ -933,10 +632,7 @@ typedef __char32_t char32_t;
 
 #endif // _LIBCPP_COMPILER_[CLANG|GCC|MSVC|IBM]
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_OBJECT_FORMAT_COFF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 #ifdef _DLL
@@ -945,27 +641,17 @@ typedef __char32_t char32_t;
 #  define _LIBCPP_CRT_FUNC
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DLL_VIS
 #  define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
 #  define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #  define _LIBCPP_OVERRIDABLE_FUNC_VIS
 #  define _LIBCPP_EXPORTED_FROM_ABI
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DLL_VIS __declspec(dllexport)
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__MINGW32__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS _LIBCPP_DLL_VIS
 #    define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
@@ -994,10 +680,7 @@ typedef __char32_t char32_t;
 #endif // defined(_LIBCPP_OBJECT_FORMAT_COFF)
 
 #ifndef _LIBCPP_HIDDEN
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HIDDEN __attribute__ ((__visibility__("hidden")))
 #  else
@@ -1006,10 +689,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // The inline should be removed once PR32114 is resolved
 #    define _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS inline _LIBCPP_HIDDEN
@@ -1019,10 +699,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_FUNC_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_FUNC_VIS __attribute__ ((__visibility__("default")))
 #  else
@@ -1031,10 +708,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_TYPE_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_TYPE_VIS __attribute__ ((__visibility__("default")))
 #  else
@@ -1043,15 +717,9 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_TEMPLATE_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#    if __has_attribute(__type_visibility__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #      define _LIBCPP_TEMPLATE_VIS __attribute__ ((__type_visibility__("default")))
 #    else
@@ -1063,10 +731,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_EXPORTED_FROM_ABI
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_EXPORTED_FROM_ABI __attribute__((__visibility__("default")))
 #  else
@@ -1079,10 +744,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_EXCEPTION_ABI
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_EXCEPTION_ABI __attribute__ ((__visibility__("default")))
 #  else
@@ -1091,10 +753,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_ENUM_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS) && __has_attribute(__type_visibility__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_ENUM_VIS __attribute__ ((__type_visibility__("default")))
 #  else
@@ -1103,10 +762,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS) && __has_attribute(__type_visibility__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS __attribute__ ((__visibility__("default")))
 #  else
@@ -1118,20 +774,14 @@ typedef __char32_t char32_t;
 #define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(internal_linkage)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_INTERNAL_LINKAGE __attribute__ ((internal_linkage))
 #else
 #  define _LIBCPP_INTERNAL_LINKAGE _LIBCPP_ALWAYS_INLINE
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(exclude_from_explicit_instantiation)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_EXCLUDE_FROM_EXPLICIT_INSTANTIATION __attribute__ ((__exclude_from_explicit_instantiation__))
 #else
@@ -1160,10 +810,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifndef _LIBCPP_HIDE_FROM_ABI
-#if 0 /* disabled by -frewrite-includes */
-#  if _LIBCPP_HIDE_FROM_ABI_PER_TU
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HIDE_FROM_ABI _LIBCPP_HIDDEN _LIBCPP_INTERNAL_LINKAGE
 #  else
@@ -1172,10 +819,7 @@ typedef __char32_t char32_t;
 #endif
 
 #ifdef _LIBCPP_BUILDING_LIBRARY
-#if 0 /* disabled by -frewrite-includes */
-#  if _LIBCPP_ABI_VERSION > 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HIDE_FROM_ABI_AFTER_V1 _LIBCPP_HIDE_FROM_ABI
 #  else
@@ -1194,10 +838,7 @@ typedef __char32_t char32_t;
 #define _VSTD std::_LIBCPP_ABI_NAMESPACE
 _LIBCPP_BEGIN_NAMESPACE_STD _LIBCPP_END_NAMESPACE_STD
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_BEGIN_NAMESPACE_FILESYSTEM \
   _LIBCPP_BEGIN_NAMESPACE_STD inline namespace __fs { namespace filesystem {
@@ -1212,10 +853,7 @@ _LIBCPP_BEGIN_NAMESPACE_STD _LIBCPP_END_NAMESPACE_STD
 #define _VSTD_FS _VSTD::__fs::filesystem
 
 #ifndef _LIBCPP_PREFERRED_OVERLOAD
-#if 0 /* disabled by -frewrite-includes */
-#  if __has_attribute(__enable_if__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_PREFERRED_OVERLOAD __attribute__ ((__enable_if__(true, "")))
 #  endif
@@ -1267,21 +905,14 @@ typedef unsigned int   char32_t;
 #  define _LIBCPP_NOALIAS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_explicit_conversions) || defined(__IBMCPP__) || \
-    (!defined(_LIBCPP_CXX03_LANG) && defined(__GNUC__)) // All supported GCC versions
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_EXPLICIT explicit
 #else
 #  define _LIBCPP_EXPLICIT
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_builtin(__builtin_operator_new) || !__has_builtin(__builtin_operator_delete)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
 #endif
@@ -1300,26 +931,16 @@ typedef unsigned int   char32_t;
 #endif  // _LIBCPP_HAS_NO_STRONG_ENUMS
 
 #ifdef _LIBCPP_DEBUG
-#if 0 /* disabled by -frewrite-includes */
-#  if _LIBCPP_DEBUG == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_DEBUG_LEVEL 1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif _LIBCPP_DEBUG == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_DEBUG_LEVEL 2
 #  else
 #    error Supported values for _LIBCPP_DEBUG are 0 and 1
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_EXTERN_TEMPLATE(...)
 #  endif
@@ -1338,27 +959,17 @@ typedef unsigned int   char32_t;
 #define _LIBCPP_EXTERN_TEMPLATE2(...) extern template __VA_ARGS__;
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__APPLE__) || defined(__FreeBSD__) || defined(_LIBCPP_MSVCRT_LIKE) || \
-    defined(__sun__) || defined(__NetBSD__) || defined(__CloudABI__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #ifndef NXDK
 #define _LIBCPP_LOCALE__L_EXTENSIONS 1
 #endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__unix__) || (defined(__APPLE__) && defined(__MACH__))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Most unix variants have catopen.  These are the specific ones that don't.
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(__BIONIC__) && !defined(_NEWLIB_VERSION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_CATOPEN 1
 #  endif
@@ -1370,68 +981,40 @@ typedef unsigned int   char32_t;
 
 // If we are getting operator new from the MSVC CRT, then allocation overloads
 // for align_val_t were added in 19.12, aka VS 2017 version 15.3.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_MSVCRT) && defined(_MSC_VER) && _MSC_VER < 1912
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_ABI_VCRUNTIME) && !defined(__cpp_aligned_new) && !defined(NXDK)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
    // We're deferring to Microsoft's STL to provide aligned new et al. We don't
    // have it unless the language feature test macro is defined.
 #  define _LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__APPLE__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if !defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && \
-      defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define __MAC_OS_X_VERSION_MIN_REQUIRED __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__
 #  endif
 #endif // defined(__APPLE__)
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ALIGNED_ALLOCATION) && \
-    (defined(_LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION) || \
-    (!defined(__cpp_aligned_new) || __cpp_aligned_new < 201606))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_HAS_NO_ALIGNED_ALLOCATION
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__APPLE__) || defined(__FreeBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_DEFAULTRUNELOCALE
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__APPLE__) || defined(__FreeBSD__) || defined(__sun__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_WCTYPE_IS_MASK
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 17 || !defined(__cpp_char8_t)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NO_HAS_CHAR8_T
 #endif
@@ -1440,22 +1023,12 @@ typedef unsigned int   char32_t;
 //
 // Deprecations warnings are always enabled, except when users explicitly opt-out
 // by defining _LIBCPP_DISABLE_DEPRECATION_WARNINGS.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_DEPRECATION_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if __has_attribute(deprecated)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_DEPRECATED [[deprecated]]
 #  else
@@ -1465,70 +1038,49 @@ typedef unsigned int   char32_t;
 #  define _LIBCPP_DEPRECATED
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
 #else
 #  define _LIBCPP_DEPRECATED_IN_CXX11
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
 #else
 #  define _LIBCPP_DEPRECATED_IN_CXX14
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
 #else
 #  define _LIBCPP_DEPRECATED_IN_CXX17
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_EXPLICIT_AFTER_CXX11
 #else
 #  define _LIBCPP_EXPLICIT_AFTER_CXX11 explicit
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX11 constexpr
 #else
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX11
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX14 constexpr
 #else
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX14
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX17 constexpr
 #else
@@ -1537,17 +1089,10 @@ typedef unsigned int   char32_t;
 
 // The _LIBCPP_NODISCARD_ATTRIBUTE should only be used to define other
 // NODISCARD macros to the correct attribute.
-#if 0 /* disabled by -frewrite-includes */
-#if __has_cpp_attribute(nodiscard) || defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NODISCARD_ATTRIBUTE [[nodiscard]]
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_CLANG) && !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NODISCARD_ATTRIBUTE [[clang::warn_unused_result]]
 #else
@@ -1559,31 +1104,21 @@ typedef unsigned int   char32_t;
 
 // _LIBCPP_NODISCARD_EXT may be used to apply [[nodiscard]] to entities not
 // specified as such as an extension.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ENABLE_NODISCARD) && !defined(_LIBCPP_DISABLE_NODISCARD_EXT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NODISCARD_EXT _LIBCPP_NODISCARD_ATTRIBUTE
 #else
 #  define _LIBCPP_NODISCARD_EXT
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_NODISCARD_AFTER_CXX17) && \
-    (_LIBCPP_STD_VER > 17 || defined(_LIBCPP_ENABLE_NODISCARD))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_NODISCARD_ATTRIBUTE
 #else
 #  define _LIBCPP_NODISCARD_AFTER_CXX17
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && defined(__cpp_inline_variables) && (__cpp_inline_variables >= 201606L)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_INLINE_VAR inline
 #else
@@ -1597,10 +1132,7 @@ typedef unsigned int   char32_t;
 #endif
 
 #ifndef _LIBCPP_CONSTEXPR_IF_NODEBUG
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_DEBUG) || defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_CONSTEXPR_IF_NODEBUG
 #else
@@ -1608,10 +1140,7 @@ typedef unsigned int   char32_t;
 #endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(no_destroy)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NO_DESTROY __attribute__((__no_destroy__))
 #else
@@ -1626,25 +1155,12 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 // Try to find out if RTTI is disabled.
 // g++ and cl.exe have RTTI on by default and define a macro when it is.
 // g++ only defines the macro in 4.3.2 and onwards.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_NO_RTTI)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__GNUC__) && \
-      ((__GNUC__ >= 5) || \
-       (__GNUC__ == 4 && (__GNUC_MINOR__ >= 3 || __GNUC_PATCHLEVEL__ >= 2))) && \
-      !defined(__GXX_RTTI)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_NO_RTTI
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif defined(_LIBCPP_COMPILER_MSVC) && !defined(_CPPRTTI)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_NO_RTTI
 #  endif
@@ -1655,34 +1171,12 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 
 // Thread API
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_THREADS) && \
-    !defined(_LIBCPP_HAS_THREAD_API_PTHREAD) && \
-    !defined(_LIBCPP_HAS_THREAD_API_WIN32) && \
-    !defined(_LIBCPP_HAS_THREAD_API_EXTERNAL)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__FreeBSD__) || \
-      defined(__Fuchsia__) || \
-      defined(__wasi__) || \
-      defined(__NetBSD__) || \
-      defined(__linux__) || \
-      defined(__GNU__) || \
-      defined(__APPLE__) || \
-      defined(__CloudABI__) || \
-      defined(__sun__) || \
-      (defined(__MINGW32__) && __has_include(<pthread.h>))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_THREAD_API_PTHREAD
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#  elif defined(_LIBCPP_WIN32API)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_THREAD_API_WIN32
 #  else
@@ -1690,72 +1184,44 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #  endif // _LIBCPP_HAS_THREAD_API
 #endif // _LIBCPP_HAS_NO_THREADS
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_THREAD_API_PTHREAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__ANDROID__) && __ANDROID_API__ >= 30
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_COND_CLOCKWAIT
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_GLIBC_PREREQ)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_GLIBC_PREREQ(2, 30)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_COND_CLOCKWAIT
 #endif
 #endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_THREADS) && defined(_LIBCPP_HAS_THREAD_API_PTHREAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error _LIBCPP_HAS_THREAD_API_PTHREAD may only be defined when \
        _LIBCPP_HAS_NO_THREADS is not defined.
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_THREADS) && defined(_LIBCPP_HAS_THREAD_API_EXTERNAL)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error _LIBCPP_HAS_THREAD_API_EXTERNAL may not be defined when \
        _LIBCPP_HAS_NO_THREADS is defined.
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_MONOTONIC_CLOCK) && !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error _LIBCPP_HAS_NO_MONOTONIC_CLOCK may only be defined when \
        _LIBCPP_HAS_NO_THREADS is defined.
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__STDCPP_THREADS__) && defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error _LIBCPP_HAS_NO_THREADS cannot be set when __STDCPP_THREADS__ is set.
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_THREADS) && !defined(__STDCPP_THREADS__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define __STDCPP_THREADS__ 1
 #endif
@@ -1770,11 +1236,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 //
 // TODO(EricWF): Enable this optimization on Bionic after speaking to their
 //               respective stakeholders.
-#if 0 /* disabled by -frewrite-includes */
-#if (defined(_LIBCPP_HAS_THREAD_API_PTHREAD) && defined(__GLIBC__)) \
-  || defined(_LIBCPP_HAS_THREAD_API_WIN32)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define _LIBCPP_HAS_TRIVIAL_MUTEX_DESTRUCTION
 #endif
@@ -1787,10 +1249,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 //
 // TODO(EricWF): This is potentially true for some pthread implementations
 // as well.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_THREAD_API_WIN32)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define _LIBCPP_HAS_TRIVIAL_CONDVAR_DESTRUCTION
 #endif
@@ -1812,20 +1271,13 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 
 // Some systems do not provide gets() in their C library, for security reasons.
 #ifndef _LIBCPP_C_HAS_NO_GETS
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_LIBCPP_MSVCRT) || (defined(__FreeBSD__) && __FreeBSD__ >= 13)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_C_HAS_NO_GETS
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__BIONIC__) || defined(__CloudABI__) || defined(NXDK) ||           \
-    defined(__Fuchsia__) || defined(__wasi__) || defined(_LIBCPP_HAS_MUSL_LIBC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE
 #endif
@@ -1836,28 +1288,15 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_HAS_NO_THREAD_UNSAFE_C_FUNCTIONS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_atomic) || __has_extension(c_atomic) || __has_keyword(_Atomic)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_HAS_C_ATOMIC_IMP
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_HAS_GCC_ATOMIC_IMP
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if (!defined(_LIBCPP_HAS_C_ATOMIC_IMP) && \
-     !defined(_LIBCPP_HAS_GCC_ATOMIC_IMP) && \
-     !defined(_LIBCPP_HAS_EXTERNAL_ATOMIC_IMP)) \
-     || defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_HAS_NO_ATOMIC_HEADER
 #else
@@ -1873,73 +1312,46 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(__clang__) && __has_attribute(acquire_capability)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Work around the attribute handling in clang.  When both __declspec and
 // __attribute__ are present, the processing goes awry preventing the definition
 // of the types.
-#if 0 /* disabled by -frewrite-includes */
-#    if !defined(_LIBCPP_OBJECT_FORMAT_COFF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #      define _LIBCPP_HAS_THREAD_SAFETY_ANNOTATIONS
 #    endif
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(require_constant_initialization)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_SAFE_STATIC __attribute__((__require_constant_initialization__))
 #else
 #  define _LIBCPP_SAFE_STATIC
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_builtin(__builtin_addressof) && _GNUC_VER < 700
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_builtin(__builtin_is_constant_evaluated) && _GNUC_VER < 900
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_BUILTIN_IS_CONSTANT_EVALUATED
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_OFF_T_FUNCTIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_LIBCPP_MSVCRT) || defined(_NEWLIB_VERSION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_HAS_NO_OFF_T_FUNCTIONS
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(diagnose_if) && !defined(_LIBCPP_DISABLE_ADDITIONAL_DIAGNOSTICS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DIAGNOSE_WARNING(...) \
      __attribute__((diagnose_if(__VA_ARGS__, "warning")))
@@ -1951,34 +1363,20 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 
 // Use a function like macro to imply that it must be followed by a semicolon
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L && __has_cpp_attribute(fallthrough)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_FALLTHROUGH() [[fallthrough]]
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif __has_cpp_attribute(clang::fallthrough)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_FALLTHROUGH() [[clang::fallthrough]]
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif __has_attribute(fallthough) || _GNUC_VER >= 700
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_FALLTHROUGH() __attribute__((__fallthrough__))
 #else
 #  define _LIBCPP_FALLTHROUGH() ((void)0)
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(__nodebug__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NODEBUG __attribute__((__nodebug__))
 #else
@@ -1986,11 +1384,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 
 #ifndef _LIBCPP_NODEBUG_TYPE
-#if 0 /* disabled by -frewrite-includes */
-#if __has_attribute(__nodebug__) && \
-    (defined(_LIBCPP_CLANG_VER) && _LIBCPP_CLANG_VER >= 900)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_NODEBUG_TYPE __attribute__((nodebug))
 #else
@@ -1998,21 +1392,14 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif // !defined(_LIBCPP_NODEBUG_TYPE)
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_MICROSOFT) && \
-    (defined(_LIBCPP_COMPILER_MSVC) || __has_declspec_attribute(empty_bases))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DECLSPEC_EMPTY_BASES __declspec(empty_bases)
 #else
 #  define _LIBCPP_DECLSPEC_EMPTY_BASES
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR
 #define _LIBCPP_ENABLE_CXX17_REMOVED_UNEXPECTED_FUNCTIONS
@@ -2020,26 +1407,17 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_ENABLE_CXX17_REMOVED_BINDERS
 #endif // _LIBCPP_ENABLE_CXX17_REMOVED_FEATURES
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__cpp_deduction_guides) || __cpp_deduction_guides < 201611
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_DEDUCTION_GUIDES
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_keyword(__is_aggregate) && (_GNUC_VER_NEW < 7001)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_IS_AGGREGATE
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__cpp_coroutines) || __cpp_coroutines < 201703L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_COROUTINES
 #endif
@@ -2050,14 +1428,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_HAS_NO_SPACESHIP_OPERATOR
 
 // Decide whether to use availability macros.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_BUILDING_LIBRARY) &&                                      \
-    !defined(_LIBCPP_DISABLE_AVAILABILITY) &&                                  \
-    __has_feature(attribute_availability_with_strict) &&                       \
-    __has_feature(attribute_availability_in_templates) &&                      \
-    __has_extension(pragma_clang_attribute_external_declaration)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  ifdef __APPLE__
 #    define _LIBCPP_USE_AVAILABILITY_APPLE
@@ -2065,10 +1436,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 
 // Define availability macros.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_USE_AVAILABILITY_APPLE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_AVAILABILITY_SHARED_MUTEX                                    \
      __attribute__((availability(macosx,strict,introduced=10.12)))             \
@@ -2156,30 +1524,17 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 // declarations for streams exist conditionally to this; if we provide
 // an explicit instantiation declaration and we try to deploy to a dylib
 // that does not provide those symbols, we'll get a load-time error.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_BUILDING_LIBRARY) &&                                      \
-    ((defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) &&                \
-      __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ < 1090) ||                 \
-     (defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__) &&               \
-      __ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__ < 70000))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_DO_NOT_ASSUME_STREAMS_EXPLICIT_INSTANTIATION_IN_DYLIB
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_COMPILER_IBM)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_PUSH_MACROS
 #  define _LIBCPP_POP_MACROS
@@ -2189,10 +1544,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #  ifndef _LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS
 #    define _LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_PUSH_MACROS    \
        __pragma(push_macro("min")) \
@@ -2211,15 +1563,9 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif // defined(_LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO)
 
 #ifndef _LIBCPP_NO_AUTO_LINK
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_LIBCPP_ABI_MICROSOFT) && !defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#    if defined(_DLL)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #      pragma comment(lib, "c++.lib")
 #    else
@@ -2235,10 +1581,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 //
 // Not all platforms support this, but it helps avoid fd-leaks on platforms that
 // do.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__BIONIC__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_FOPEN_CLOEXEC_MODE "e"
 #else
@@ -2248,9 +1591,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif // __cplusplus
 
 #endif // _LIBCPP_CONFIG
-#if 0 /* expanded by -frewrite-includes */
-#include <string_view>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ string_view ---------------------------------===//
 //
@@ -2263,12 +1604,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #ifndef _LIBCPP_STRING_VIEW
 #define _LIBCPP_STRING_VIEW
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__string>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===-------------------------- __string ----------------------------------===//
 //
@@ -2282,12 +1619,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP___STRING
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <algorithm>  // for search and min
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===-------------------------- algorithm ---------------------------------===//
 //
@@ -2300,12 +1633,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #ifndef _LIBCPP_ALGORITHM
 #define _LIBCPP_ALGORITHM
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===----------------------- initializer_list -----------------------------===//
 //
@@ -2319,12 +1648,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_INITIALIZER_LIST
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- cstddef ----------------------------------===//
 //
@@ -2360,12 +1685,8 @@ Types:
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- version ----------------------------------===//
 //
@@ -2378,24 +1699,14 @@ Types:
 #ifndef _LIBCPP_VERSIONH
 #define _LIBCPP_VERSIONH
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define __cpp_lib_chrono_udls                          201304L
 # define __cpp_lib_complex_udls                         201309L
@@ -2411,10 +1722,7 @@ Types:
 # define __cpp_lib_quoted_string_io                     201304L
 # define __cpp_lib_result_of_sfinae                     201210L
 # define __cpp_lib_robust_nonmodifying_seq_ops          201304L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_shared_timed_mutex                 201402L
 # endif
@@ -2425,15 +1733,9 @@ Types:
 # define __cpp_lib_tuples_by_type                       201304L
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_BUILTIN_ADDRESSOF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_addressof_constexpr                201603L
 # endif
@@ -2442,10 +1744,7 @@ Types:
 # define __cpp_lib_apply                                201603L
 # define __cpp_lib_array_constexpr                      201603L
 # define __cpp_lib_as_const                             201510L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_atomic_is_always_lock_free         201603L
 # endif
@@ -2459,20 +1758,14 @@ Types:
 # define __cpp_lib_filesystem                           201703L
 # define __cpp_lib_gcd_lcm                              201606L
 # define __cpp_lib_hardware_interference_size           201703L
-#if 0 /* disabled by -frewrite-includes */
-# if defined(_LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_has_unique_object_representations  201606L
 # endif
 # define __cpp_lib_hypot                                201603L
 # define __cpp_lib_incomplete_container_elements        201505L
 # define __cpp_lib_invoke                               201411L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_IS_AGGREGATE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_is_aggregate                       201703L
 # endif
@@ -2492,10 +1785,7 @@ Types:
 # define __cpp_lib_raw_memory_algorithms                201606L
 # define __cpp_lib_sample                               201603L
 # define __cpp_lib_scoped_lock                          201703L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_shared_mutex                       201505L
 # endif
@@ -2512,44 +1802,29 @@ Types:
 # define __cpp_lib_void_t                               201411L
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // #   define __cpp_lib_atomic_ref                         201806L
 # endif
 // # define __cpp_lib_bind_front                           201811L
 // # define __cpp_lib_bit_cast                             201806L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_NO_HAS_CHAR8_T)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_char8_t                            201811L
 # endif
 // # define __cpp_lib_concepts                             201806L
 // # define __cpp_lib_constexpr_misc                       201811L
 // # define __cpp_lib_constexpr_swap_algorithms            201806L
-#if 0 /* disabled by -frewrite-includes */
-# if _LIBCPP_STD_VER > 17 && defined(__cpp_impl_destroying_delete) && __cpp_impl_destroying_delete >= 201806L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_destroying_delete                  201806L
 # endif
 # define __cpp_lib_erase_if                             201811L
 // # define __cpp_lib_generic_unordered_lookup             201811L
 # define __cpp_lib_interpolate                          201902L
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_HAS_NO_BUILTIN_IS_CONSTANT_EVALUATED)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #   define __cpp_lib_is_constant_evaluated              201811L
 # endif
@@ -2560,20 +1835,13 @@ Types:
 
 #endif // _LIBCPP_VERSIONH
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 // Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stddef.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Common definitions <stddef.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -2587,9 +1855,7 @@ Types:
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_lib_ext1.h"
-#endif /* expanded by -frewrite-includes */
+
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -2599,10 +1865,7 @@ extern "C" {
 #ifndef __STDC_WANT_LIB_EXT1__
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_WANT_LIB_EXT1_PREVIOUS__ != -1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
@@ -2611,36 +1874,23 @@ extern "C" {
   #endif
 #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != __STDC_WANT_LIB_EXT1_PREVIOUS__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
   #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif ( __STDC_WANT_LIB_EXT1__ + 0 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
@@ -2648,9 +1898,7 @@ extern "C" {
     #endif
   #endif
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 /* PDCLib internal integer logic <_PDCLIB_int.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -2665,9 +1913,7 @@ extern "C" {
 /* would be considered a bug / missing feature: notify the author(s).         */
 /* -------------------------------------------------------------------------- */
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_config.h"
-#endif /* expanded by -frewrite-includes */
+
 /* Internal PDCLib configuration <_PDCLIB_config.h>
    (Generic Template)
 
@@ -3019,179 +2265,114 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_ONCE_FLAG_INIT 0
 #define _PDCLIB_TSS_DTOR_ITERATIONS 4
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<assert_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_ASSERT_H <assert_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<ctype_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_CTYPE_H <ctype_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<errno_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_ERRNO_H <errno_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<float_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_FLOAT_H <float_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<inttypes_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_INTTYPES_H <inttypes_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<iso646_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_ISO646_H <iso646_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<limits_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_LIMITS_H <limits_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<locale_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_LOCALE_H <locale_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<signal_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_SIGNAL_H <signal_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdalign_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDALIGN_H <stdalign_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdarg_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDARG_H <stdarg_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdbool_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDBOOL_H <stdbool_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stddef_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDDEF_H <stddef_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdint_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDINT_H <stdint_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdio_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDIO_H <stdio_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdlib_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDLIB_H <stdlib_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<stdnoreturn_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDNORETURN_H <stdnoreturn_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<string_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STRING_H <string_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<threads_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_THREADS_H <threads_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<time_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_TIME_H <time_ext_.h>
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_include(<wctype_ext_.h>)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_WCTYPE_H <wctype_ext_.h>
 #endif
 
 
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_aux.h"
-#endif /* expanded by -frewrite-includes */
+
 /* Auxiliary PDCLib code <_PDCLIB_aux.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -3212,18 +2393,12 @@ typedef int _PDCLIB_once_flag;
 
 /* Many a compiler gets this wrong, so you might have to hardcode it instead. */
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC__ != 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error Compiler does not define _ _STDC_ _ to 1 (not standard-compliant)!
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_VERSION__ < 199901L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_restrict
 #define _PDCLIB_inline
@@ -3232,10 +2407,7 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_inline inline
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_VERSION__ < 201112L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_Noreturn
 #else
@@ -3244,18 +2416,10 @@ typedef int _PDCLIB_once_flag;
 
 #ifndef __STDC_HOSTED__
 #error Compiler does not define _ _STDC_HOSTED_ _ (not standard-compliant)!
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif __STDC_HOSTED__ == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_HOSTED 0
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif __STDC_HOSTED__ == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_HOSTED 1
 #else
@@ -3316,10 +2480,7 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_UCHAR_MAX   0xff
 #define _PDCLIB_SCHAR_MIN   (-0x7f - 1)
 #define _PDCLIB_SCHAR_MAX   0x7f
-#if 0 /* disabled by -frewrite-includes */
-#if _PDCLIB_CHAR_SIGNED == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_CHAR_MIN    _PDCLIB_SCHAR_MIN
 #define _PDCLIB_CHAR_MAX    _PDCLIB_SCHAR_MAX
@@ -3329,10 +2490,7 @@ typedef int _PDCLIB_once_flag;
 #endif
 
 /* Setting 'short' limits                                                     */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_SHRT_BYTES == 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_SHRT_MAX      0x7fff
 #define _PDCLIB_SHRT_MIN      (-0x7fff - 1)
@@ -3342,37 +2500,23 @@ typedef int _PDCLIB_once_flag;
 #endif
 #define _PDCLIB_USHRT_MIN 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if _PDCLIB_INT_BYTES < _PDCLIB_SHRT_BYTES
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #error Bogus setting: short > int? Check _PDCLIB_config.h.
 #endif
 
 /* Setting 'int' limits                                                       */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_INT_BYTES == 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_INT_MAX   0x7fff
 #define _PDCLIB_INT_MIN   (-0x7fff - 1)
 #define _PDCLIB_UINT_MAX  0xffffU
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif   _PDCLIB_INT_BYTES == 4
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_INT_MAX   0x7fffffff
 #define _PDCLIB_INT_MIN   (-0x7fffffff - 1)
 #define _PDCLIB_UINT_MAX  0xffffffffU
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _PDCLIB_INT_BYTES   == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_INT_MAX   0x7fffffffffffffff
 #define _PDCLIB_INT_MIN   (-0x7fffffffffffffff - 1)
@@ -3383,19 +2527,12 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_UINT_MIN 0
 
 /* Setting 'long' limits                                                      */
-#if 0 /* disabled by -frewrite-includes */
-#if   _PDCLIB_LONG_BYTES   == 4
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_LONG_MAX   0x7fffffffL
 #define _PDCLIB_LONG_MIN   (-0x7fffffffL - 1L)
 #define _PDCLIB_ULONG_MAX  0xffffffffUL
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif   _PDCLIB_LONG_BYTES == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_LONG_MAX   0x7fffffffffffffffL
 #define _PDCLIB_LONG_MIN   (-0x7fffffffffffffffL - 1L)
@@ -3406,19 +2543,12 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_ULONG_MIN 0
 
 /* Setting 'long long' limits                                                 */
-#if 0 /* disabled by -frewrite-includes */
-#if _PDCLIB_LLONG_BYTES    == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_LLONG_MAX  0x7fffffffffffffffLL
 #define _PDCLIB_LLONG_MIN  (-0x7fffffffffffffffLL - 1LL)
 #define _PDCLIB_ULLONG_MAX 0xffffffffffffffffULL
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _PDCLIB_LLONG_BYTES  == 16
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _PDCLIB_LLONG_MAX  0x7fffffffffffffffffffffffffffffffLL
 #define _PDCLIB_LLONG_MIN  (-0x7fffffffffffffffffffffffffffffffLL - 1LL)
@@ -3435,10 +2565,7 @@ typedef int _PDCLIB_once_flag;
 /* types are identical to the "exact-width" types, by definition.             */
 
 /* Setting 'int8_t', its limits, its literal, and conversion macros.          */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_CHAR_BIT == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 typedef signed char        _PDCLIB_int8_t;
 typedef unsigned char      _PDCLIB_uint8_t;
@@ -3451,10 +2578,7 @@ typedef unsigned char      _PDCLIB_uint8_t;
 #endif
 
 /* Setting 'int16_t', its limits, its literal, and conversion macros.         */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_INT_BYTES  == 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 typedef signed int         _PDCLIB_int16_t;
 typedef unsigned int       _PDCLIB_uint16_t;
@@ -3462,11 +2586,7 @@ typedef unsigned int       _PDCLIB_uint16_t;
 #define _PDCLIB_INT16_MIN  _PDCLIB_INT_MIN
 #define _PDCLIB_UINT16_MAX _PDCLIB_UINT_MAX
 #define _PDCLIB_16_CONV
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif   _PDCLIB_SHRT_BYTES == 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 typedef signed short       _PDCLIB_int16_t;
 typedef unsigned short     _PDCLIB_uint16_t;
@@ -3479,10 +2599,7 @@ typedef unsigned short     _PDCLIB_uint16_t;
 #endif
 
 /* Setting 'int32_t', its limits, its literal, and conversion macros.         */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_INT_BYTES  == 4
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 typedef signed int         _PDCLIB_int32_t;
 typedef unsigned int       _PDCLIB_uint32_t;
@@ -3492,11 +2609,7 @@ typedef unsigned int       _PDCLIB_uint32_t;
 #define _PDCLIB_INT32_LITERAL
 #define _PDCLIB_UINT32_LITERAL
 #define _PDCLIB_32_CONV
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif   _PDCLIB_LONG_BYTES == 4
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 typedef signed long        _PDCLIB_int32_t;
 typedef unsigned long      _PDCLIB_uint32_t;
@@ -3511,10 +2624,7 @@ typedef unsigned long      _PDCLIB_uint32_t;
 #endif
 
 /* Setting 'int64_t', its limits, its literal, and conversion macros.         */
-#if 0 /* disabled by -frewrite-includes */
-#if     _PDCLIB_LONG_BYTES == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 typedef signed long        _PDCLIB_int64_t;
 typedef unsigned long      _PDCLIB_uint64_t;
@@ -3524,11 +2634,7 @@ typedef unsigned long      _PDCLIB_uint64_t;
 #define _PDCLIB_INT64_LITERAL  l
 #define _PDCLIB_UINT64_LITERAL ul
 #define _PDCLIB_64_CONV        l
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _PDCLIB_LLONG_BYTES  == 8
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
 typedef signed long long   _PDCLIB_int64_t;
 typedef unsigned long long _PDCLIB_uint64_t;
@@ -3944,10 +3050,7 @@ typedef _PDCLIB_wchar_t   wchar_t;
 
 /* Annex K -- Bounds-checking interfaces */
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #ifndef _PDCLIB_RSIZE_T_DEFINED
 #define _PDCLIB_RSIZE_T_DEFINED _PDCLIB_RSIZE_T_DEFINED
@@ -3959,9 +3062,7 @@ typedef size_t rsize_t;
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_STDDEF_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_STDDEF_H
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
@@ -3969,9 +3070,7 @@ typedef size_t rsize_t;
 #endif
 
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include <__nullptr>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- __nullptr --------------------------------===//
 //
@@ -3984,18 +3083,11 @@ typedef size_t rsize_t;
 #ifndef _LIBCPP_NULLPTR
 #define _LIBCPP_NULLPTR
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 namespace std
@@ -4010,11 +3102,7 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 using ::ptrdiff_t;
 using ::size_t;
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__CLANG_MAX_ALIGN_T_DEFINED) || defined(_GCC_MAX_ALIGN_T) || \
-    defined(__DEFINED_max_align_t) || defined(__NetBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Re-use the compiler's <stddef.h> max_align_t where possible.
 using ::max_align_t;
@@ -4024,10 +3112,7 @@ typedef long double max_align_t;
 
 _LIBCPP_END_NAMESPACE_STD
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 namespace std  // purposefully not versioned
 {
@@ -4076,9 +3161,7 @@ constexpr byte  operator~ (byte __b) noexcept
 
 }
 
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>  // rest of byte
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ type_traits ---------------------------------===//
 //
@@ -4091,12 +3174,8 @@ constexpr byte  operator~ (byte __b) noexcept
 #ifndef _LIBCPP_TYPE_TRAITS
 #define _LIBCPP_TYPE_TRAITS
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- cstddef ----------------------------------===//
 //
@@ -4132,41 +3211,24 @@ Types:
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 // Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stddef.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__nullptr>
-#endif /* expanded by -frewrite-includes */
+
+
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
 using ::ptrdiff_t;
 using ::size_t;
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__CLANG_MAX_ALIGN_T_DEFINED) || defined(_GCC_MAX_ALIGN_T) || \
-    defined(__DEFINED_max_align_t) || defined(__NetBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Re-use the compiler's <stddef.h> max_align_t where possible.
 using ::max_align_t;
@@ -4176,31 +3238,19 @@ typedef long double max_align_t;
 
 _LIBCPP_END_NAMESPACE_STD
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>  // rest of byte
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #endif  // _LIBCPP_CSTDDEF
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -4218,10 +3268,7 @@ struct _LIBCPP_TEMPLATE_VIS integral_constant
   typedef integral_constant type;
   _LIBCPP_INLINE_VISIBILITY
   _LIBCPP_CONSTEXPR operator value_type() const _NOEXCEPT {return value;}
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
   _LIBCPP_INLINE_VISIBILITY
   constexpr value_type operator ()() const _NOEXCEPT {return value;}
@@ -4231,10 +3278,7 @@ struct _LIBCPP_TEMPLATE_VIS integral_constant
 template <class _Tp, _Tp __v>
 _LIBCPP_CONSTEXPR const _Tp integral_constant<_Tp, __v>::value;
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <bool __b>
 using bool_constant = integral_constant<bool, __b>;
@@ -4321,10 +3365,7 @@ template <bool _Bp, class _If, class _Then>
 template <class _If, class _Then>
     struct _LIBCPP_TEMPLATE_VIS conditional<false, _If, _Then> {typedef _Then type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <bool _Bp, class _If, class _Then> using conditional_t = typename conditional<_Bp, _If, _Then>::type;
 #endif
@@ -4332,10 +3373,7 @@ template <bool _Bp, class _If, class _Then> using conditional_t = typename condi
 template <bool, class _Tp = void> struct _LIBCPP_TEMPLATE_VIS enable_if {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS enable_if<true, _Tp> {typedef _Tp type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <bool _Bp, class _Tp = void> using enable_if_t = typename enable_if<_Bp, _Tp>::type;
 #endif
@@ -4345,10 +3383,7 @@ template <bool _Bp, class _Tp = void> using enable_if_t = typename enable_if<_Bp
 template <class _Tp, class _Up> struct _LIBCPP_TEMPLATE_VIS is_same           : public false_type {};
 template <class _Tp>            struct _LIBCPP_TEMPLATE_VIS is_same<_Tp, _Tp> : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class _Up>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_same_v
@@ -4397,10 +3432,7 @@ addressof(_Tp& __x) _NOEXCEPT
 
 #endif // _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_OBJC_ARC) && !defined(_LIBCPP_PREDEFINED_OBJC_ARC_ADDRESSOF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Objective-C++ Automatic Reference Counting uses qualified pointers
 // that require special addressof() signatures. When
@@ -4441,10 +3473,7 @@ addressof(__unsafe_unretained _Tp& __x) _NOEXCEPT
 }
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> _Tp* addressof(const _Tp&&) noexcept = delete;
 #endif
@@ -4458,10 +3487,7 @@ struct __two {char __lx[2];};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_const            : public false_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_const<_Tp const> : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_const_v
@@ -4473,10 +3499,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_const_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_volatile               : public false_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_volatile<_Tp volatile> : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_volatile_v
@@ -4487,10 +3510,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_volatile_v
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_const            {typedef _Tp type;};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_const<const _Tp> {typedef _Tp type;};
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_const_t = typename remove_const<_Tp>::type;
 #endif
@@ -4499,10 +3519,7 @@ template <class _Tp> using remove_const_t = typename remove_const<_Tp>::type;
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_volatile               {typedef _Tp type;};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_volatile<volatile _Tp> {typedef _Tp type;};
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_volatile_t = typename remove_volatile<_Tp>::type;
 #endif
@@ -4511,10 +3528,7 @@ template <class _Tp> using remove_volatile_t = typename remove_volatile<_Tp>::ty
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_cv
 {typedef typename remove_volatile<typename remove_const<_Tp>::type>::type type;};
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_cv_t = typename remove_cv<_Tp>::type;
 #endif
@@ -4527,10 +3541,7 @@ template <>          struct __libcpp_is_void<void> : public true_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_void
     : public __libcpp_is_void<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_void_v
@@ -4545,18 +3556,12 @@ template <>          struct __is_nullptr_t_impl<nullptr_t> : public true_type {}
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS __is_nullptr_t
     : public __is_nullptr_t_impl<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_null_pointer
     : public __is_nullptr_t_impl<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_null_pointer_v
@@ -4595,10 +3600,7 @@ template <>          struct __libcpp_is_integral<__uint128_t>        : public tr
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_integral
     : public __libcpp_is_integral<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_integral_v
@@ -4615,10 +3617,7 @@ template <>          struct __libcpp_is_floating_point<long double> : public tru
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_floating_point
     : public __libcpp_is_floating_point<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_floating_point_v
@@ -4634,10 +3633,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_array<_Tp[]>
 template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS is_array<_Tp[_Np]>
     : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_array_v
@@ -4650,10 +3646,7 @@ template <class _Tp> struct __libcpp_is_pointer       : public false_type {};
 template <class _Tp> struct __libcpp_is_pointer<_Tp*> : public true_type {};
 
 template <class _Tp> struct __libcpp_remove_objc_qualifiers { typedef _Tp type; };
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_OBJC_ARC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __strong> { typedef _Tp type; };
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __weak> { typedef _Tp type; };
@@ -4664,10 +3657,7 @@ template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __unsafe_unretai
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pointer
     : public __libcpp_is_pointer<typename __libcpp_remove_objc_qualifiers<typename remove_cv<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_pointer_v
@@ -4686,10 +3676,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_reference        : public fa
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_reference<_Tp&>  : public true_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_reference<_Tp&&> : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_reference_v
@@ -4705,10 +3692,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_rvalue_reference_v
 #endif
 // is_union
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_union) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_union
@@ -4722,10 +3706,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_union
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_union_v
@@ -4734,10 +3715,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_union_v
 
 // is_class
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_class) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
@@ -4756,10 +3734,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_class_v
@@ -4778,10 +3753,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_function
     > {};
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_function_v
@@ -4807,10 +3779,7 @@ template <class _Tp, class _Up> struct __libcpp_is_member_pointer<_Tp _Up::*> {
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_function_pointer
     : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_func > {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_function_pointer_v
@@ -4822,10 +3791,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_function_pointer_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_pointer
  : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_member > {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_pointer_v
@@ -4837,10 +3803,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_pointer_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_object_pointer
     : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_obj >  {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_object_pointer_v
@@ -4849,10 +3812,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_object_pointer_v
 
 // is_enum
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_enum) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
@@ -4874,10 +3834,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_enum_v
@@ -4890,10 +3847,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_arithmetic
     : public integral_constant<bool, is_integral<_Tp>::value      ||
                                      is_floating_point<_Tp>::value> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_arithmetic_v
@@ -4907,10 +3861,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_fundamental
                                      __is_nullptr_t<_Tp>::value ||
                                      is_arithmetic<_Tp>::value> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_fundamental_v
@@ -4928,10 +3879,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_scalar
 
 template <> struct _LIBCPP_TEMPLATE_VIS is_scalar<nullptr_t> : public true_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_scalar_v
@@ -4946,10 +3894,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_object
                                      is_union<_Tp>::value  ||
                                      is_class<_Tp>::value  > {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_object_v
@@ -4961,10 +3906,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_object_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_compound
     : public integral_constant<bool, !is_fundamental<_Tp>::value> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_compound_v
@@ -4990,10 +3932,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_const {
   typedef _LIBCPP_NODEBUG_TYPE const _Tp type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_const_t = typename add_const<_Tp>::type;
 #endif
@@ -5004,10 +3943,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_volatile {
   typedef _LIBCPP_NODEBUG_TYPE volatile _Tp type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_volatile_t = typename add_volatile<_Tp>::type;
 #endif
@@ -5017,10 +3953,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_cv {
   typedef _LIBCPP_NODEBUG_TYPE const volatile _Tp type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_cv_t = typename add_cv<_Tp>::type;
 #endif
@@ -5031,10 +3964,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_reference        {typede
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_reference<_Tp&>  {typedef _LIBCPP_NODEBUG_TYPE _Tp type;};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_reference<_Tp&&> {typedef _LIBCPP_NODEBUG_TYPE _Tp type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_reference_t = typename remove_reference<_Tp>::type;
 #endif
@@ -5047,10 +3977,7 @@ template <class _Tp                                       > struct __add_lvalue_
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_lvalue_reference
 {typedef _LIBCPP_NODEBUG_TYPE typename  __add_lvalue_reference_impl<_Tp>::type type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_lvalue_reference_t = typename add_lvalue_reference<_Tp>::type;
 #endif
@@ -5061,10 +3988,7 @@ template <class _Tp                                       > struct __add_rvalue_
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_rvalue_reference
 {typedef _LIBCPP_NODEBUG_TYPE  typename __add_rvalue_reference_impl<_Tp>::type type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_rvalue_reference_t = typename add_rvalue_reference<_Tp>::type;
 #endif
@@ -5099,10 +4023,7 @@ template <class _Tp, class _Up>
 struct __is_same_uncvref : _IsSame<typename __uncvref<_Tp>::type,
                                    typename __uncvref<_Up>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // remove_cvref - same as __uncvref
 template <class _Tp>
@@ -5125,10 +4046,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_pointer<_Tp* const>     
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_pointer<_Tp* volatile>       {typedef _LIBCPP_NODEBUG_TYPE _Tp type;};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_pointer<_Tp* const volatile> {typedef _LIBCPP_NODEBUG_TYPE _Tp type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_pointer_t = typename remove_pointer<_Tp>::type;
 #endif
@@ -5146,19 +4064,13 @@ template <class _Tp> struct __add_pointer_impl<_Tp, false>
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_pointer
     {typedef _LIBCPP_NODEBUG_TYPE typename __add_pointer_impl<_Tp>::type type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_pointer_t = typename add_pointer<_Tp>::type;
 #endif
 
 // type_identity
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Tp> struct type_identity { typedef _Tp type; };
 template<class _Tp> using type_identity_t = typename type_identity<_Tp>::type;
@@ -5179,10 +4091,7 @@ template <class _Tp> struct __libcpp_is_signed<_Tp, false> : public false_type {
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_signed : public __libcpp_is_signed<_Tp> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_signed_v
@@ -5204,10 +4113,7 @@ template <class _Tp> struct __libcpp_is_unsigned<_Tp, false> : public false_type
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_unsigned : public __libcpp_is_unsigned<_Tp> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_unsigned_v
@@ -5223,10 +4129,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS rank<_Tp[]>
 template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS rank<_Tp[_Np]>
     : public integral_constant<size_t, rank<_Tp>::value + 1> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t rank_v
@@ -5246,10 +4149,7 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS extent<_Tp[_Np], 0>
 template <class _Tp, size_t _Np, unsigned _Ip> struct _LIBCPP_TEMPLATE_VIS extent<_Tp[_Np], _Ip>
     : public integral_constant<size_t, extent<_Tp, _Ip-1>::value> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, unsigned _Ip = 0>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t extent_v
@@ -5265,10 +4165,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_extent<_Tp[]>
 template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS remove_extent<_Tp[_Np]>
     {typedef _Tp type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_extent_t = typename remove_extent<_Tp>::type;
 #endif
@@ -5282,18 +4179,12 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_all_extents<_Tp[]>
 template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS remove_all_extents<_Tp[_Np]>
     {typedef typename remove_all_extents<_Tp>::type type;};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_all_extents_t = typename remove_all_extents<_Tp>::type;
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // is_bounded_array
 
@@ -5346,10 +4237,7 @@ public:
     typedef _LIBCPP_NODEBUG_TYPE typename __decay<_Up, __is_referenceable<_Up>::value>::type type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using decay_t = typename decay<_Tp>::type;
 #endif
@@ -5359,10 +4247,7 @@ template <class _Tp> using decay_t = typename decay<_Tp>::type;
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_abstract
     : public integral_constant<bool, __is_abstract(_Tp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_abstract_v
@@ -5374,19 +4259,13 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_abstract_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS
 __libcpp_is_final : public integral_constant<bool, __is_final(_Tp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS
 is_final : public integral_constant<bool, __is_final(_Tp)> {};
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_final_v
@@ -5394,19 +4273,13 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_final_v
 #endif
 
 // is_aggregate
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_IS_AGGREGATE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS
 is_aggregate : public integral_constant<bool, __is_aggregate(_Tp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr bool is_aggregate_v
@@ -5421,10 +4294,7 @@ template <class _Bp, class _Dp>
 struct _LIBCPP_TEMPLATE_VIS is_base_of
     : public integral_constant<bool, __is_base_of(_Bp, _Dp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Bp, class _Dp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_base_of_v
@@ -5433,10 +4303,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_base_of_v
 
 // is_convertible
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_convertible_to) && !defined(_LIBCPP_USE_IS_CONVERTIBLE_FALLBACK)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _T1, class _T2> struct _LIBCPP_TEMPLATE_VIS is_convertible
@@ -5447,10 +4314,7 @@ template <class _T1, class _T2> struct _LIBCPP_TEMPLATE_VIS is_convertible
 
 #endif  // __has_feature(is_convertible_to)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _From, class _To>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_convertible_v
@@ -5459,10 +4323,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_convertible_v
 
 // is_nothrow_convertible
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 template <typename _Tp>
@@ -5489,10 +4350,7 @@ inline constexpr bool is_nothrow_convertible_v = is_nothrow_convertible<_Fm, _To
 
 // is_empty
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_empty) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp>
@@ -5522,10 +4380,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_empty : public __libcpp_empt
 
 #endif  // __has_feature(is_empty)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_empty_v
@@ -5534,10 +4389,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_empty_v
 
 // is_polymorphic
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_polymorphic) || defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp>
@@ -5556,10 +4408,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_polymorphic
 
 #endif // __has_feature(is_polymorphic)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_polymorphic_v
@@ -5568,10 +4417,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_polymorphic_v
 
 // has_virtual_destructor
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(has_virtual_destructor) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_virtual_destructor
@@ -5584,10 +4430,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_virtual_destructor
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_virtual_destructor_v
@@ -5596,20 +4439,14 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_virtual_destructor_v
 
 // has_unique_object_representations
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && defined(_LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_unique_object_representations
     : public integral_constant<bool,
        __has_unique_object_representations(remove_cv_t<remove_all_extents_t<_Tp>>)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_unique_object_representations_v
@@ -5623,10 +4460,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_unique_object_representations_v
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS alignment_of
     : public integral_constant<size_t, _LIBCPP_ALIGNOF(_Tp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t alignment_of_v
@@ -5731,10 +4565,7 @@ struct _LIBCPP_TEMPLATE_VIS aligned_storage
     };
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <size_t _Len, size_t _Align = __find_max_align<__all_types, _Len>::value>
     using aligned_storage_t = typename aligned_storage<_Len, _Align>::type;
@@ -5765,10 +4596,7 @@ _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x800);
 _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x1000);
 _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x2000);
 // PE/COFF does not support alignment beyond 8192 (=0x2000)
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_OBJECT_FORMAT_COFF)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x4000);
 #endif // !defined(_LIBCPP_OBJECT_FORMAT_COFF)
@@ -5804,10 +4632,7 @@ struct aligned_union
     typedef typename aligned_storage<__len, alignment_value>::type type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <size_t _Len, class ..._Types> using aligned_union_t = typename aligned_union<_Len, _Types...>::type;
 #endif
@@ -6007,10 +4832,7 @@ struct _LIBCPP_TEMPLATE_VIS make_signed
     typedef typename __apply_cv<_Tp, typename __make_signed<typename remove_cv<_Tp>::type>::type>::type type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using make_signed_t = typename make_signed<_Tp>::type;
 #endif
@@ -6044,10 +4866,7 @@ struct _LIBCPP_TEMPLATE_VIS make_unsigned
     typedef typename __apply_cv<_Tp, typename __make_unsigned<typename remove_cv<_Tp>::type>::type>::type type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using make_unsigned_t = typename make_unsigned<_Tp>::type;
 #endif
@@ -6070,10 +4889,7 @@ template <class, class = void>
 struct __common_type_impl {};
 
 // Clang provides variadic templates in C++03 as an extension.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG) || defined(__clang__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define _LIBCPP_OPTIONAL_PACK(...) , __VA_ARGS__
 template <class... Tp>
@@ -6141,10 +4957,7 @@ struct _LIBCPP_TEMPLATE_VIS
 
 #undef _LIBCPP_OPTIONAL_PACK
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class ..._Tp> using common_type_t = typename common_type<_Tp...>::type;
 #endif
@@ -6175,10 +4988,7 @@ template <class _Tp, class _Arg>
 struct is_assignable
     : public __is_assignable_imp<_Tp, _Arg> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_assignable_v
@@ -6191,10 +5001,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_copy_assignable
     : public is_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_copy_assignable_v
@@ -6207,10 +5014,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_move_assignable
     : public is_assignable<typename add_lvalue_reference<_Tp>::type,
                            typename add_rvalue_reference<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_assignable_v
@@ -6275,10 +5079,7 @@ template <>
 struct is_destructible<void>
     : public _VSTD::false_type {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_destructible_v
@@ -6391,10 +5192,7 @@ struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param..., ...) const volatil
     typedef _Rp (_FnType) (_Param..., ...);
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_reference_qualified_functions) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Rp, class _Class, class ..._Param>
@@ -6566,16 +5364,9 @@ namespace __is_construct
 struct __nat {};
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG) && (!__has_feature(is_constructible) || \
-    defined(_LIBCPP_TESTING_FALLBACK_IS_CONSTRUCTIBLE))
-#endif
-#endif /* disabled by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_constructible)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class ..._Args>
 struct _LIBCPP_TEMPLATE_VIS is_constructible
@@ -6587,10 +5378,7 @@ struct _LIBCPP_TEMPLATE_VIS is_constructible
     : public __libcpp_is_constructible<_Tp, _Args...>::type {};
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class ..._Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_constructible_v
@@ -6604,10 +5392,7 @@ struct _LIBCPP_TEMPLATE_VIS is_default_constructible
     : public is_constructible<_Tp>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_default_constructible_v
@@ -6645,10 +5430,7 @@ struct _LIBCPP_TEMPLATE_VIS is_copy_constructible
     : public is_constructible<_Tp,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_copy_constructible_v
@@ -6662,10 +5444,7 @@ struct _LIBCPP_TEMPLATE_VIS is_move_constructible
     : public is_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_constructible_v
@@ -6674,10 +5453,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_constructible_v
 
 // is_trivially_constructible
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_trivially_constructible) || _GNUC_VER >= 501
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, class... _Args>
@@ -6696,10 +5472,7 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible<_Tp>
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(has_trivial_constructor) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     : integral_constant<bool, __has_trivial_constructor(_Tp)>
 #else
@@ -6729,10 +5502,7 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible<_Tp, _Tp&>
 #endif  // !__has_feature(is_trivially_constructible)
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class... _Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_constructible_v
@@ -6745,10 +5515,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_default_constructi
     : public is_trivially_constructible<_Tp>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_default_constructible_v
@@ -6761,10 +5528,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copy_constructible
     : public is_trivially_constructible<_Tp, typename add_lvalue_reference<const _Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copy_constructible_v
@@ -6777,10 +5541,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_move_constructible
     : public is_trivially_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_constructible_v
@@ -6789,10 +5550,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_constructible_v
 
 // is_trivially_assignable
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_trivially_assignable) || _GNUC_VER >= 501
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, class _Arg>
@@ -6825,10 +5583,7 @@ struct is_trivially_assignable<_Tp&, _Tp&&>
 
 #endif  // !__has_feature(is_trivially_assignable)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_assignable_v
@@ -6841,10 +5596,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copy_assignable
     : public is_trivially_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copy_assignable_v
@@ -6858,10 +5610,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_move_assignable
                                      typename add_rvalue_reference<_Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_assignable_v
@@ -6870,20 +5619,13 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_assignable_v
 
 // is_trivially_destructible
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_keyword(__is_trivially_destructible)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible
     : public integral_constant<bool, __is_trivially_destructible(_Tp)> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif __has_feature(has_trivial_destructor) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible
@@ -6903,10 +5645,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible<_Tp[]
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_destructible_v
@@ -6915,10 +5654,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_destructible_v
 
 // is_nothrow_constructible
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_keyword(__is_nothrow_constructible)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, class... _Args>
@@ -6965,10 +5701,7 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_constructible<_Tp[_Ns]>
 #endif  // _LIBCPP_HAS_NO_NOEXCEPT
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class ..._Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_constructible_v
@@ -6981,10 +5714,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_default_constructibl
     : public is_nothrow_constructible<_Tp>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_default_constructible_v
@@ -6997,10 +5727,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_copy_constructible
     : public is_nothrow_constructible<_Tp,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_copy_constructible_v
@@ -7013,10 +5740,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_move_constructible
     : public is_nothrow_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_constructible_v
@@ -7025,10 +5749,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_constructible_v
 
 // is_nothrow_assignable
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_keyword(__is_nothrow_assignable)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, class _Arg>
@@ -7059,10 +5780,7 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_assignable
 
 #endif  // _LIBCPP_HAS_NO_NOEXCEPT
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_assignable_v
@@ -7075,10 +5793,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_copy_assignable
     : public is_nothrow_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_copy_assignable_v
@@ -7092,10 +5807,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_move_assignable
                                      typename add_rvalue_reference<_Tp>::type>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_assignable_v
@@ -7104,10 +5816,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_assignable_v
 
 // is_nothrow_destructible
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <bool, class _Tp> struct __libcpp_is_nothrow_destructible;
@@ -7163,10 +5872,7 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_destructible<_Tp[]>
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_destructible_v
@@ -7175,10 +5881,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_destructible_v
 
 // is_pod
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_pod) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pod
@@ -7194,10 +5897,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pod
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_pod_v
@@ -7210,10 +5910,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_literal_type
     : public integral_constant<bool, __is_literal_type(_Tp)>
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_literal_type_v
@@ -7223,10 +5920,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_literal_type_v
 // is_standard_layout;
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_standard_layout
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_standard_layout) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     : public integral_constant<bool, __is_standard_layout(_Tp)>
 #else
@@ -7234,10 +5928,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_standard_layout
 #endif
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_standard_layout_v
@@ -7247,17 +5938,10 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_standard_layout_v
 // is_trivially_copyable;
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copyable
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_trivially_copyable)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     : public integral_constant<bool, __is_trivially_copyable(_Tp)>
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _GNUC_VER >= 501
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     : public integral_constant<bool, !is_volatile<_Tp>::value && __is_trivially_copyable(_Tp)>
 #else
@@ -7265,10 +5949,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copyable
 #endif
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copyable_v
@@ -7278,10 +5959,7 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copyable_v
 // is_trivial;
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivial
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(is_trivial) || defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     : public integral_constant<bool, __is_trivial(_Tp)>
 #else
@@ -7290,10 +5968,7 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivial
 #endif
     {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivial_v
@@ -7569,18 +6244,12 @@ class _LIBCPP_TEMPLATE_VIS result_of<_Fp(_Args...)>
 {
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using result_of_t = typename result_of<_Tp>::type;
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 // invoke_result
@@ -7752,10 +6421,7 @@ struct __is_nothrow_swappable
 {
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, class _Up>
@@ -7826,10 +6492,7 @@ struct __underlying_type_impl<_Tp, true>
 template <class _Tp>
 struct underlying_type : __underlying_type_impl<_Tp, is_enum<_Tp>::value> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using underlying_type_t = typename underlying_type<_Tp>::type;
 #endif
@@ -7915,10 +6578,7 @@ struct __has_operator_addressof
 
 #endif  // _LIBCPP_CXX03_LANG
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class...> using void_t = void;
@@ -7976,10 +6636,7 @@ struct __can_extract_map_key<_ValTy, _Key, _Key, _RawValTy>
 #endif
 
 #ifndef _LIBCPP_HAS_NO_BUILTIN_IS_CONSTANT_EVALUATED
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_INLINE_VISIBILITY
 inline constexpr bool is_constant_evaluated() noexcept {
@@ -8035,14 +6692,9 @@ template <class _Integer>
 
 #endif  // _LIBCPP_CSTDDEF
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 namespace std  // purposefully not versioned
@@ -8111,12 +6763,8 @@ end(initializer_list<_Ep> __il) _NOEXCEPT
 }  // std
 
 #endif  // _LIBCPP_INITIALIZER_LIST
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstring>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- cstring ----------------------------------===//
 //
@@ -8129,12 +6777,8 @@ end(initializer_list<_Ep> __il) _NOEXCEPT
 #ifndef _LIBCPP_CSTRING
 #define _LIBCPP_CSTRING
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <string.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- string.h ---------------------------------===//
 //
@@ -8188,23 +6832,14 @@ size_t strlen(const char* s);
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <string.h>
-#endif /* expanded by -frewrite-includes */
+
 /* String handling <string.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -8218,9 +6853,7 @@ size_t strlen(const char* s);
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_lib_ext1.h"
-#endif /* expanded by -frewrite-includes */
+
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -8230,10 +6863,7 @@ extern "C" {
 #ifndef __STDC_WANT_LIB_EXT1__
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_WANT_LIB_EXT1_PREVIOUS__ != -1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
@@ -8242,36 +6872,23 @@ extern "C" {
   #endif
 #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != __STDC_WANT_LIB_EXT1_PREVIOUS__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
   #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif ( __STDC_WANT_LIB_EXT1__ + 0 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
@@ -8279,9 +6896,7 @@ extern "C" {
     #endif
   #endif
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
@@ -8466,9 +7081,7 @@ _PDCLIB_PUBLIC size_t strlen( const char * s );
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_STRING_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_STRING_H
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2020 Stefan Schmidt
@@ -8600,19 +7213,12 @@ inline static _NXDK_PREFERRED_OVERLOAD char *strstr (char *__s1, const char *__s
 // MSVCRT, GNU libc and its derivates may already have the correct prototype in
 // <string.h>. This macro can be defined by users if their C library provides
 // the right signature.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__CORRECT_ISO_CPP_STRING_H_PROTO) || defined(_LIBCPP_MSVCRT) || \
-    defined(__sun__) || defined(_STRING_H_CPLUSPLUS_98_CONFORMANCE_)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STRING_H_HAS_CONST_OVERLOADS
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(_LIBCPP_STRING_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
@@ -8654,14 +7260,9 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
 
 #endif  // _LIBCPP_STRING_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -8695,9 +7296,7 @@ using ::strlen;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTRING
-#if 0 /* expanded by -frewrite-includes */
-#include <utility> // needed to provide swap_ranges.
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===-------------------------- utility -----------------------------------===//
 //
@@ -8711,12 +7310,8 @@ _LIBCPP_END_NAMESPACE_STD
 #define _LIBCPP_UTILITY
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__tuple>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===----------------------------------------------------------------------===//
 //
@@ -8729,24 +7324,13 @@ _LIBCPP_END_NAMESPACE_STD
 #ifndef _LIBCPP___TUPLE
 #define _LIBCPP___TUPLE
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 
@@ -8754,10 +7338,7 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_size;
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class...>
 using __enable_if_tuple_size_imp = _Tp;
@@ -8829,10 +7410,7 @@ struct __integer_sequence {
   using __to_tuple_indices = __tuple_indices<(_Values + _Sp)...>;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_builtin(__make_integer_seq)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <size_t _Ep, size_t _Sp>
 using __make_indices_imp =
@@ -8945,10 +7523,7 @@ get(const array<_Tp, _Size>&&) _NOEXCEPT;
 
 template <class ..._Tp> struct __tuple_types {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_builtin(__type_pack_element)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 namespace __indexer_detail {
@@ -9158,10 +7733,7 @@ struct _LIBCPP_TEMPLATE_VIS tuple_element<_Ip, tuple<_Tp...> >
     typedef _LIBCPP_NODEBUG_TYPE typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <size_t _Ip, class ..._Tp>
 using tuple_element_t _LIBCPP_NODEBUG_TYPE  = typename tuple_element <_Ip, _Tp...>::type;
@@ -9194,10 +7766,7 @@ struct _LIBCPP_TYPE_VIS __check_tuple_constructor_fail {
 };
 #endif // !defined(_LIBCPP_CXX03_LANG)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <bool _CanCopy, bool _CanMove>
@@ -9258,21 +7827,11 @@ struct __sfinae_assign_base<false, true> {
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP___TUPLE
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstring>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdint>
-#endif /* expanded by -frewrite-includes */
+
+
+
+
+
 // -*- C++ -*-
 //===--------------------------- cstdint ----------------------------------===//
 //
@@ -9415,12 +7974,8 @@ Types:
 }  // std
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stdint.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===---------------------------- stdint.h --------------------------------===//
 //
@@ -9434,10 +7989,7 @@ Types:
 // AIX system headers need stdint.h to be re-enterable while _STD_TYPES_T
 // is defined until an inclusion of it without _STD_TYPES_T occurs, in which
 // case the header guard macro is defined.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_AIX) || !defined(_STD_TYPES_T)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STDINT_H
 #endif // _STD_TYPES_T
@@ -9530,42 +8082,27 @@ Macros:
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 /* C99 stdlib (e.g. glibc < 2.18) does not provide macros needed
    for C++11 unless __STDC_LIMIT_MACROS and __STDC_CONSTANT_MACROS
    are defined
 */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(__STDC_LIMIT_MACROS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __STDC_LIMIT_MACROS
 #endif
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(__STDC_CONSTANT_MACROS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define __STDC_CONSTANT_MACROS
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdint.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Integer types <stdint.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -9579,9 +8116,7 @@ Macros:
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_lib_ext1.h"
-#endif /* expanded by -frewrite-includes */
+
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -9591,10 +8126,7 @@ extern "C" {
 #ifndef __STDC_WANT_LIB_EXT1__
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_WANT_LIB_EXT1_PREVIOUS__ != -1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
@@ -9603,36 +8135,23 @@ extern "C" {
   #endif
 #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != __STDC_WANT_LIB_EXT1_PREVIOUS__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
   #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif ( __STDC_WANT_LIB_EXT1__ + 0 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
@@ -9640,9 +8159,7 @@ extern "C" {
     #endif
   #endif
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 /* 7.18.1.1 Exact-width integer types. */
 
@@ -9841,10 +8358,7 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 
 /* Annex K -- Bounds-checking interfaces */
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define RSIZE_MAX ( _PDCLIB_SIZE_MAX >> 1 )
 #endif
@@ -9853,9 +8367,7 @@ typedef _PDCLIB_uintmax_t uintmax_t;
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_STDINT_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_STDINT_H
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
@@ -9866,14 +8378,9 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 
 #endif  // _LIBCPP_STDINT_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -9917,12 +8424,8 @@ using::uintmax_t;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDINT
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- __debug ----------------------------------===//
 //
@@ -9935,12 +8438,8 @@ _LIBCPP_END_NAMESPACE_STD
 #ifndef _LIBCPP_DEBUG_H
 #define _LIBCPP_DEBUG_H
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iosfwd>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- iosfwd -----------------------------------===//
 //
@@ -10034,12 +8533,8 @@ typedef fpos<char_traits<wchar_t>::state_type> wstreampos;
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <wchar.h>  // for mbstate_t
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -10049,31 +8544,17 @@ typedef fpos<char_traits<wchar_t>::state_type> wstreampos;
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_wint_t) || defined(__need_mbstate_t)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_WCHAR_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_WCHAR_H
 
@@ -10164,27 +8645,18 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Sean Koppenhafer
@@ -10193,12 +8665,8 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 #ifndef _XBOXRT_WCHAR_H
 #define _XBOXRT_WCHAR_H
 
-#if 0 /* expanded by -frewrite-includes */
-#include <stdint.h>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stddef.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- stddef.h ---------------------------------===//
 //
@@ -10208,32 +8676,17 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_ptrdiff_t) || defined(__need_size_t) || \
-    defined(__need_wchar_t) || defined(__need_NULL) || defined(__need_wint_t)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stddef.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_STDDEF_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STDDEF_H
 
@@ -10254,39 +8707,24 @@ Types:
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stddef.h>
-#endif /* expanded by -frewrite-includes */
+
 
 #ifdef __cplusplus
 
 extern "C++" {
-#if 0 /* expanded by -frewrite-includes */
-#include <__nullptr>
-#endif /* expanded by -frewrite-includes */
+
 using std::nullptr_t;
 }
 
 // Re-use the compiler's <stddef.h> max_align_t where possible.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__CLANG_MAX_ALIGN_T_DEFINED) && !defined(_GCC_MAX_ALIGN_T) && \
-    !defined(__DEFINED_max_align_t) && !defined(__NetBSD__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 typedef long double max_align_t;
 #endif
@@ -10294,9 +8732,7 @@ typedef long double max_align_t;
 #endif
 
 #endif  // _LIBCPP_STDDEF_H
-#if 0 /* expanded by -frewrite-includes */
-#include <wctype.h>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- wctype.h ---------------------------------===//
 //
@@ -10343,23 +8779,14 @@ wctrans_t wctrans(const char* property);
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wctype.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Wide character classification and mapping utilities <wctype.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -10373,9 +8800,7 @@ wctrans_t wctrans(const char* property);
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 typedef _PDCLIB_wint_t wint_t;
 
@@ -10508,9 +8933,7 @@ _PDCLIB_PUBLIC wctrans_t wctrans( const char * property );
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_WCTYPE_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_WCTYPE_H
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
@@ -10614,9 +9037,7 @@ int wcrtomb_s(size_t * XBOXRT_RESTRICT retval, char * XBOXRT_RESTRICT s, size_t 
 }
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include <wchar_ext_.h>
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -10635,44 +9056,24 @@ int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
 #endif /* end of include guard: _XBOXRT_WCHAR_H */
 
 // Determine whether we have const-correct overloads for wcschr and friends.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_WCHAR_H_CPLUSPLUS_98_CONFORMANCE_)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__GLIBC_PREREQ)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if __GLIBC_PREREQ(2, 10)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_MSVCRT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 1 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_CRT_CONST_CORRECT_OVERLOADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
@@ -10712,10 +9113,7 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
 }
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
@@ -10727,14 +9125,9 @@ size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
 
 #endif  // _LIBCPP_WCHAR_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -10835,10 +9228,7 @@ typedef fpos<mbstate_t>    u16streampos;
 typedef fpos<mbstate_t>    u32streampos;
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_NEWLIB_VERSION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // On newlib, off_t is 'long int'
 typedef long int streamoff;         // for char_traits in <string>
@@ -10862,34 +9252,19 @@ _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_IOSFWD
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_NULLPTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-# include <cstddef>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 1 || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#   include <cstdlib>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- cstdlib ----------------------------------===//
 //
@@ -10973,12 +9348,8 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stdlib.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- stdlib.h ---------------------------------===//
 //
@@ -10988,39 +9359,22 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_malloc_and_calloc) || defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #undef _LIBCPP_STDLIB_INCLUDE_NEXT
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdlib.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_STDLIB_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STDLIB_H
 
@@ -11090,23 +9444,14 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdlib.h>
-#endif /* expanded by -frewrite-includes */
+
 /* General utilities <stdlib.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -11120,9 +9465,7 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_lib_ext1.h"
-#endif /* expanded by -frewrite-includes */
+
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -11132,10 +9475,7 @@ extern "C" {
 #ifndef __STDC_WANT_LIB_EXT1__
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_WANT_LIB_EXT1_PREVIOUS__ != -1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
@@ -11144,36 +9484,23 @@ extern "C" {
   #endif
 #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != __STDC_WANT_LIB_EXT1_PREVIOUS__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
   #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif ( __STDC_WANT_LIB_EXT1__ + 0 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
@@ -11181,9 +9508,7 @@ extern "C" {
     #endif
   #endif
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
@@ -11276,10 +9601,7 @@ _PDCLIB_PUBLIC void * malloc( size_t size );
 */
 _PDCLIB_PUBLIC void * calloc( size_t nmemb, size_t size );
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_VERSION__ >= 201112L || defined(__cplusplus)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 _PDCLIB_PUBLIC void * aligned_alloc( size_t alignment, size_t size );
 #endif
@@ -11440,10 +9762,7 @@ _PDCLIB_PUBLIC size_t wcstombs( char * _PDCLIB_restrict s, const wchar_t * _PDCL
 
 /* Annex K -- Bounds-checking interfaces */
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 #ifndef _PDCLIB_ERRNO_T_DEFINED
@@ -11556,9 +9875,7 @@ _PDCLIB_PUBLIC errno_t qsort_s( void * base, rsize_t nmemb, rsize_t size, int (*
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_STDLIB_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_STDLIB_H
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2021 Stefan Schmidt
@@ -11587,9 +9904,7 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #define _sys_nerr _PDCLIB_ERRNO_MAX
 
 // Necessary stub for libc++
-#if 0 /* expanded by -frewrite-includes */
-#include <wchar.h>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -11599,96 +9914,53 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_wint_t) || defined(__need_mbstate_t)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_WCHAR_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_WCHAR_H
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
+
 
 // Determine whether we have const-correct overloads for wcschr and friends.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_WCHAR_H_CPLUSPLUS_98_CONFORMANCE_)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__GLIBC_PREREQ)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if __GLIBC_PREREQ(2, 10)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_MSVCRT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_CRT_CONST_CORRECT_OVERLOADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
@@ -11728,10 +10000,7 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
 }
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
@@ -11757,10 +10026,7 @@ int mbtowc (wchar_t *pwc, const char *string, size_t n);
 
 
 #ifdef __cplusplus
-#if 0 /* disabled by -frewrite-includes */
-#if (__cplusplus < 201103L)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _NXDK_NOEXCEPT throw()
 #else
@@ -11807,9 +10073,7 @@ static void _aligned_free (void *memblock)
 #endif
 
 #ifdef __cplusplus
-#if 0 /* expanded by -frewrite-includes */
-#include <math.h>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===---------------------------- math.h ----------------------------------===//
 //
@@ -11822,24 +10086,15 @@ static void _aligned_free (void *memblock)
 #ifndef _LIBCPP_MATH_H
 #define _LIBCPP_MATH_H
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #define _LIBCPP_STDLIB_INCLUDE_NEXT
-#if 0 /* expanded by -frewrite-includes */
-#include <stdlib.h>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- stdlib.h ---------------------------------===//
 //
@@ -11849,39 +10104,22 @@ static void _aligned_free (void *memblock)
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_malloc_and_calloc) || defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #undef _LIBCPP_STDLIB_INCLUDE_NEXT
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdlib.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_STDLIB_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STDLIB_H
 
@@ -11951,35 +10189,22 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdlib.h>
-#endif /* expanded by -frewrite-includes */
+
 
 #ifdef __cplusplus
-#if 0 /* expanded by -frewrite-includes */
-#include <math.h>
-#endif /* expanded by -frewrite-includes */
+
 #endif  // __cplusplus
 
 #endif  // _LIBCPP_STDLIB_H
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <math.h>
-#endif /* expanded by -frewrite-includes */
+
 #ifndef _PDCLIB_MATH_H
 #define _PDCLIB_MATH_H _PDCLIB_MATH_H
 
@@ -12301,12 +10526,8 @@ long double fmal(long double x, long double y, long double z);
 // back to C++ linkage before including these C++ headers.
 extern "C++" {
 
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <limits>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===---------------------------- limits ----------------------------------===//
 //
@@ -12319,47 +10540,26 @@ extern "C++" {
 #ifndef _LIBCPP_LIMITS
 #define _LIBCPP_LIMITS
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include "support/win32/limits_msvc_win32.h"
-#endif /* expanded by -frewrite-includes */
+
 #endif // _LIBCPP_MSVCRT
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__IBMCPP__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include "support/ibm/limits.h"
-#endif /* expanded by -frewrite-includes */
+
 #endif // __IBMCPP__
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -12371,15 +10571,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -12391,15 +10585,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -12409,9 +10597,7 @@ _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #undef max
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
+
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -12532,11 +10718,7 @@ protected:
     static _LIBCPP_CONSTEXPR const bool is_bounded = true;
     static _LIBCPP_CONSTEXPR const bool is_modulo = !_VSTD::is_signed<_Tp>::value;
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__i386__) || defined(__x86_64__) || defined(__pnacl__) || \
-    defined(__wasm__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     static _LIBCPP_CONSTEXPR const bool traps = true;
 #else
@@ -12723,10 +10905,7 @@ protected:
     _LIBCPP_INLINE_VISIBILITY static _LIBCPP_CONSTEXPR type signaling_NaN() _NOEXCEPT {return __builtin_nansl("");}
     _LIBCPP_INLINE_VISIBILITY static _LIBCPP_CONSTEXPR type denorm_min() _NOEXCEPT {return __LDBL_DENORM_MIN__;}
 
-#if 0 /* disabled by -frewrite-includes */
-#if (defined(__ppc__) || defined(__ppc64__))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     static _LIBCPP_CONSTEXPR const bool is_iec559 = false;
 #else
@@ -13127,10 +11306,7 @@ _LIBCPP_POP_MACROS
 #endif
 
 // MSVCRT already has the correct prototype in <stdlib.h> if __cplusplus is defined
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_MSVCRT) && !defined(__sun__) && !defined(_AIX)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 inline _LIBCPP_INLINE_VISIBILITY ldiv_t div(long __x, long __y) _NOEXCEPT {
   return ::ldiv(__x, __y);
@@ -13157,14 +11333,9 @@ inline _LIBCPP_INLINE_VISIBILITY lldiv_t div(long long __x,
 //
 // and receive the definitions of mathematical constants, even if <math.h>
 // has previously been included.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_MSVCRT) && defined(_USE_MATH_DEFINES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include_next <math.h>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #endif  // _LIBCPP_MATH_H
@@ -13172,14 +11343,9 @@ inline _LIBCPP_INLINE_VISIBILITY lldiv_t div(long long __x,
 
 #endif  // _LIBCPP_STDLIB_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __GNUC__
@@ -13246,18 +11412,12 @@ using ::wctomb;
 using ::mbstowcs;
 using ::wcstombs;
 #endif // NXDK
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG) && defined(_LIBCPP_HAS_QUICK_EXIT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 using ::at_quick_exit;
 using ::quick_exit;
 #endif
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 && defined(_LIBCPP_HAS_C11_FEATURES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 using ::aligned_alloc;
 #endif
@@ -13265,9 +11425,7 @@ using ::aligned_alloc;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDLIB
-#if 0 /* expanded by -frewrite-includes */
-#   include <cstdio>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===---------------------------- cstdio ----------------------------------===//
 //
@@ -13280,12 +11438,8 @@ _LIBCPP_END_NAMESPACE_STD
 #ifndef _LIBCPP_CSTDIO
 #define _LIBCPP_CSTDIO
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stdio.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===---------------------------- stdio.h ---------------------------------===//
 //
@@ -13295,51 +11449,28 @@ _LIBCPP_END_NAMESPACE_STD
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_FILE) || defined(__need___FILE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdio.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_STDIO_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_STDIO_H
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <stdio.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Input/output <stdio.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -13353,9 +11484,7 @@ _LIBCPP_END_NAMESPACE_STD
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_lib_ext1.h"
-#endif /* expanded by -frewrite-includes */
+
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -13365,10 +11494,7 @@ extern "C" {
 #ifndef __STDC_WANT_LIB_EXT1__
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if __STDC_WANT_LIB_EXT1_PREVIOUS__ != -1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
@@ -13377,36 +11503,23 @@ extern "C" {
   #endif
 #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != __STDC_WANT_LIB_EXT1_PREVIOUS__
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
   #else
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif ( __STDC_WANT_LIB_EXT1__ + 0 ) == 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
@@ -13414,9 +11527,7 @@ extern "C" {
     #endif
   #endif
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
@@ -13531,19 +11642,14 @@ _PDCLIB_PUBLIC void perror( const char * s );
 
 /* Annex K -- Bounds-checking interfaces */
 
-#if 0 /* disabled by -frewrite-includes */
-#if ( __STDC_WANT_LIB_EXT1__ + 0 ) != 0
-#endif
-#endif /* disabled by -frewrite-includes */
+
 
 
 /* Extension hook for downstream projects that want to have non-standard
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_STDIO_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_STDIO_H
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -13571,14 +11677,9 @@ _PDCLIB_PUBLIC void perror( const char * s );
 
 #endif  // _LIBCPP_STDIO_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -13613,10 +11714,7 @@ using ::rename;
 
 #ifndef _LIBCPP_HAS_NO_STDIN
 using ::getchar;
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 11 && !defined(_LIBCPP_C_HAS_NO_GETS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 using ::gets;
 #endif
@@ -13634,24 +11732,16 @@ using ::vprintf;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDIO
-#if 0 /* expanded by -frewrite-includes */
-#   include <cstddef>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 1 && !defined(_LIBCPP_ASSERT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 # define _LIBCPP_ASSERT(x, m) ((x) ? (void)0 : \
   _VSTD::__libcpp_debug_function(_VSTD::__libcpp_debug_info(__FILE__, __LINE__, #x, m)))
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #ifndef _LIBCPP_DEBUG_ASSERT
 #define _LIBCPP_DEBUG_ASSERT(x, m) _LIBCPP_ASSERT(x, m)
@@ -13712,14 +11802,9 @@ _LIBCPP_END_NAMESPACE_STD
 #endif  // _LIBCPP_DEBUG_H
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -13784,30 +11869,21 @@ move_if_noexcept(_Tp& __x) _NOEXCEPT
     return _VSTD::move(__x);
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> constexpr add_const_t<_Tp>& as_const(_Tp& __t) noexcept { return __t; }
 template <class _Tp>                        void as_const(const _Tp&&) = delete;
 #endif
 
 struct _LIBCPP_TEMPLATE_VIS piecewise_construct_t { explicit piecewise_construct_t() = default; };
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_CXX03_LANG) || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 extern _LIBCPP_EXPORTED_FROM_ABI const piecewise_construct_t piecewise_construct;// = piecewise_construct_t();
 #else
 /* _LIBCPP_INLINE_VAR */ constexpr piecewise_construct_t piecewise_construct = piecewise_construct_t();
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class, class>
 struct __non_trivially_copyable_base {
@@ -13820,10 +11896,7 @@ struct __non_trivially_copyable_base {
 
 template <class _T1, class _T2>
 struct _LIBCPP_TEMPLATE_VIS pair
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 : private __non_trivially_copyable_base<_T1, _T2>
 #endif
@@ -13834,10 +11907,7 @@ struct _LIBCPP_TEMPLATE_VIS pair
     _T1 first;
     _T2 second;
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     pair(pair const&) = default;
     pair(pair&&) = default;
@@ -14172,10 +12242,7 @@ struct __unwrap_reference { typedef _LIBCPP_NODEBUG_TYPE _Tp type; };
 template <class _Tp>
 struct __unwrap_reference<reference_wrapper<_Tp> > { typedef _LIBCPP_NODEBUG_TYPE _Tp& type; };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Tp>
 struct unwrap_reference : __unwrap_reference<_Tp> { };
@@ -14186,10 +12253,7 @@ struct unwrap_ref_decay : unwrap_reference<typename decay<_Tp>::type> { };
 
 template <class _Tp>
 struct __unwrap_ref_decay
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     : unwrap_ref_decay<_Tp>
 #else
@@ -14338,10 +12402,7 @@ get(const pair<_T1, _T2>&& __p) _NOEXCEPT
 }
 #endif  // _LIBCPP_CXX03_LANG
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _T1, class _T2>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -14401,10 +12462,7 @@ constexpr _T1 const && get(pair<_T2, _T1> const&& __p) _NOEXCEPT
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template<class _Tp, _Tp... _Ip>
@@ -14423,10 +12481,7 @@ struct _LIBCPP_TEMPLATE_VIS integer_sequence
 template<size_t... _Ip>
     using index_sequence = integer_sequence<size_t, _Ip...>;
 
-#if 0 /* disabled by -frewrite-includes */
-#if __has_builtin(__make_integer_seq) && !defined(_LIBCPP_TESTING_FALLBACK_MAKE_INTEGER_SEQUENCE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, _Tp _Ep>
@@ -14464,10 +12519,7 @@ template<class... _Tp>
 
 #endif  // _LIBCPP_STD_VER > 11
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template<class _T1, class _T2 = _T1>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
@@ -14479,10 +12531,7 @@ _T1 exchange(_T1& __obj, _T2 && __new_value)
 }
 #endif  // _LIBCPP_STD_VER > 11
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 struct _LIBCPP_TYPE_VIS in_place_t {
@@ -15052,10 +13101,7 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
         // -0.0 and 0.0 should return same hash
         if (__v == 0.0L)
             return 0;
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__i386__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
         // Zero out padding bits
         union
@@ -15075,11 +13121,7 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
         __u.__s.__d = 0;
         __u.__t = __v;
         return __u.__s.__a ^ __u.__s.__b ^ __u.__s.__c ^ __u.__s.__d;
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__x86_64__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
         // Zero out padding bits
         union
@@ -15101,10 +13143,7 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
     }
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp, bool = is_enum<_Tp>::value>
@@ -15131,10 +13170,7 @@ struct _LIBCPP_TEMPLATE_VIS hash : public __enum_hash<_Tp>
 };
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <>
@@ -15162,10 +13198,7 @@ using __has_enabled_hash _LIBCPP_NODEBUG_TYPE = integral_constant<bool,
     is_default_constructible<_Hash>::value
 >;
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Type, class>
 using __enable_hash_helper_imp _LIBCPP_NODEBUG_TYPE  = _Type;
@@ -15184,9 +13217,7 @@ using __enable_hash_helper _LIBCPP_NODEBUG_TYPE = _Type;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_UTILITY
-#if 0 /* expanded by -frewrite-includes */
-#include <memory>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===-------------------------- memory ------------------------------------===//
 //
@@ -15200,15 +13231,9 @@ _LIBCPP_END_NAMESPACE_STD
 #define _LIBCPP_MEMORY
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <typeinfo>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===-------------------------- typeinfo ----------------------------------===//
 //
@@ -15222,12 +13247,8 @@ _LIBCPP_END_NAMESPACE_STD
 #define __LIBCPP_TYPEINFO
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <exception>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===-------------------------- exception ---------------------------------===//
 //
@@ -15240,30 +13261,15 @@ _LIBCPP_END_NAMESPACE_STD
 #ifndef _LIBCPP_EXCEPTION
 #define _LIBCPP_EXCEPTION
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdlib>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_VCRUNTIME)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <vcruntime_exception.h>
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -15337,30 +13343,17 @@ namespace std
 #endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 namespace std  // purposefully not using versioning namespace
 {
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_ABI_VCRUNTIME)
-#endif
-#endif /* disabled by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 \
-    || defined(_LIBCPP_ENABLE_CXX17_REMOVED_UNEXPECTED_FUNCTIONS) \
-    || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
 typedef void (*unexpected_handler)();
 _LIBCPP_FUNC_VIS unexpected_handler set_unexpected(unexpected_handler) _NOEXCEPT;
@@ -15387,20 +13380,14 @@ _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void rethrow_exception(exception_ptr);
 
 class _LIBCPP_TYPE_VIS exception_ptr
 {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__clang__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-private-field"
 #endif
     void* __ptr1_;
     void* __ptr2_;
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__clang__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #pragma clang diagnostic pop
 #endif
@@ -15528,36 +13515,20 @@ rethrow_if_nested(const _Ep&,
 }  // std
 
 #endif  // _LIBCPP_EXCEPTION
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdint>
-#endif /* expanded by -frewrite-includes */
+
+
 #ifdef _LIBCPP_NO_EXCEPTIONS
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdlib>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_VCRUNTIME)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <vcruntime_typeinfo.h>
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2020 Stefan Schmidt
@@ -15565,18 +13536,14 @@ rethrow_if_nested(const _Ep&,
 #ifndef __VCRUNTIME_TYPEINFO_H__
 #define __VCRUNTIME_TYPEINFO_H__
 
-#if 0 /* expanded by -frewrite-includes */
-#include <assert.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Diagnostics <assert.h>
 
    This file is part of the Public Domain C Library (PDCLib).
    Permission is granted to use, modify, and / or redistribute at will.
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_aux.h"
-#endif /* expanded by -frewrite-includes */
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -15608,9 +13575,7 @@ void _xbox_assert(char const * const expression, char const * const file_name, c
 #ifdef __cplusplus
 }
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include <vcruntime_exception.h>
-#endif /* expanded by -frewrite-includes */
+
 
 struct __std_type_info_data
 {
@@ -15698,15 +13663,9 @@ namespace std
 
 
 #endif  // __LIBCPP_TYPEINFO
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdint>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <new>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===----------------------------- new ------------------------------------===//
 //
@@ -15795,78 +13754,41 @@ void  operator delete[](void* ptr, void*) noexcept;
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <exception>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
+
+
+
+
+
 #ifdef _LIBCPP_NO_EXCEPTIONS
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdlib>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_VCRUNTIME) && !defined(NXDK)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <new.h>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(__cpp_sized_deallocation) || __cpp_sized_deallocation  < 201309L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_LANGUAGE_SIZED_DEALLOCATION
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_BUILDING_LIBRARY) && _LIBCPP_STD_VER < 14 && \
-    defined(_LIBCPP_HAS_NO_LANGUAGE_SIZED_DEALLOCATION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 # define _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION) || \
-    defined(_LIBCPP_HAS_NO_LANGUAGE_SIZED_DEALLOCATION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define _LIBCPP_HAS_NO_SIZED_DEALLOCATION
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !__has_builtin(__builtin_operator_new) || \
-   __has_builtin(__builtin_operator_new) < 201802L
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE
 #endif
@@ -15874,10 +13796,7 @@ void  operator delete[](void* ptr, void*) noexcept;
 namespace std  // purposefully not using versioning namespace
 {
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_ABI_VCRUNTIME) || defined(NXDK)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 struct _LIBCPP_TYPE_VIS nothrow_t { explicit nothrow_t() = default; };
 extern _LIBCPP_FUNC_VIS const nothrow_t nothrow;
@@ -15910,11 +13829,7 @@ _LIBCPP_FUNC_VIS new_handler get_new_handler() _NOEXCEPT;
 
 _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void __throw_bad_alloc();  // not in C++ spec
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION) && \
-    (!defined(_LIBCPP_ABI_VCRUNTIME) || defined(NXDK))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #ifndef _LIBCPP_CXX03_LANG
 enum class _LIBCPP_ENUM_VIS align_val_t : size_t { };
@@ -15923,10 +13838,7 @@ enum align_val_t { __zero = 0, __max = (size_t)-1 };
 #endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 // Enable the declaration even if the compiler doesn't support the language
 // feature.
@@ -15938,20 +13850,14 @@ _LIBCPP_INLINE_VAR constexpr destroying_delete_t destroying_delete{};
 
 }  // std
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #define _THROW_BAD_ALLOC throw(std::bad_alloc)
 #else
 #define _THROW_BAD_ALLOC
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_ABI_VCRUNTIME) || defined(NXDK)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new(std::size_t __sz) _THROW_BAD_ALLOC;
@@ -16028,10 +13934,7 @@ inline _LIBCPP_INLINE_VISIBILITY void *__libcpp_allocate(size_t __size, size_t _
 struct _DeallocateCaller {
   static inline _LIBCPP_INLINE_VISIBILITY
   void __do_deallocate_handle_size_align(void *__ptr, size_t __size, size_t __align) {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_ALIGNED_ALLOCATION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     ((void)__align);
     return __do_deallocate_handle_size(__ptr, __size);
@@ -16047,10 +13950,7 @@ struct _DeallocateCaller {
 
   static inline _LIBCPP_INLINE_VISIBILITY
   void __do_deallocate_handle_align(void *__ptr, size_t __align) {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_ALIGNED_ALLOCATION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     ((void)__align);
     return __do_call(__ptr);
@@ -16088,11 +13988,7 @@ struct _DeallocateCaller {
 private:
   template <class _A1, class _A2>
   static inline void __do_call(void *__ptr, _A1 __a1, _A2 __a2) {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE) || \
-    defined(_LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return ::operator delete(__ptr, __a1, __a2);
 #else
@@ -16102,11 +13998,7 @@ private:
 
   template <class _A1>
   static inline void __do_call(void *__ptr, _A1 __a1) {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE) || \
-    defined(_LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return ::operator delete(__ptr, __a1);
 #else
@@ -16145,10 +14037,7 @@ _LIBCPP_CONSTEXPR _Tp* __launder(_Tp* __p) _NOEXCEPT
 }
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_NODISCARD_AFTER_CXX17 inline _LIBCPP_INLINE_VISIBILITY
@@ -16161,15 +14050,9 @@ constexpr _Tp* launder(_Tp* __p) noexcept
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_NEW
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <limits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iterator>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===-------------------------- iterator ----------------------------------===//
 //
@@ -16588,15 +14471,9 @@ template <class E> constexpr const E* data(initializer_list<E> il) noexcept;    
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iosfwd> // for forward declarations of vector and string.
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===----------------------------------------------------------------------===//
 //
@@ -16609,33 +14486,16 @@ template <class E> constexpr const E* data(initializer_list<E> il) noexcept;    
 #ifndef _LIBCPP_FUNCTIONAL_BASE
 #define _LIBCPP_FUNCTIONAL_BASE
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <typeinfo>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <exception>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <new>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -16659,10 +14519,7 @@ public:
     static const bool value = sizeof(__test<_Tp>(0)) == 1;
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -16675,10 +14532,7 @@ struct _LIBCPP_TEMPLATE_VIS less : binary_function<_Tp, _Tp, bool>
         {return __x < __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS less<void>
@@ -16928,9 +14782,7 @@ struct __invoke_return
 
 #else // defined(_LIBCPP_CXX03_LANG)
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base_03>
-#endif /* expanded by -frewrite-includes */
+
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
 
@@ -17173,10 +15025,7 @@ template <class _Tp> void ref(const _Tp&&) = delete;
 template <class _Tp> void cref(const _Tp&&) = delete;
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class, class = void>
 struct __is_transparent : false_type {};
@@ -17191,10 +15040,7 @@ struct __is_transparent<_Tp, _Up,
 
 struct _LIBCPP_TEMPLATE_VIS allocator_arg_t { explicit allocator_arg_t() = default; };
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_CXX03_LANG) || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 extern _LIBCPP_EXPORTED_FROM_ABI const allocator_arg_t allocator_arg;
 #else
@@ -17233,10 +15079,7 @@ struct _LIBCPP_TEMPLATE_VIS uses_allocator
 {
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, class _Alloc>
 _LIBCPP_INLINE_VAR constexpr size_t uses_allocator_v = uses_allocator<_Tp, _Alloc>::value;
@@ -17289,36 +15132,19 @@ void __user_alloc_construct_impl (integral_constant<int, 2>, _Tp *__storage, con
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_FUNCTIONAL_BASE
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
+
+
+
+
 #ifdef __APPLE__
-#if 0 /* expanded by -frewrite-includes */
-#include <Availability.h>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -17696,10 +15522,7 @@ operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_i
     return reverse_iterator<_Iter>(__x.base() - __n);
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Iter>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -18227,18 +16050,12 @@ private:
     iterator_type __i;
 public:
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter() _NOEXCEPT
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
                 : __i{}
 #endif
     {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         __get_db()->__insert_i(this);
 #endif
@@ -18267,10 +16084,7 @@ public:
 
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter& operator--() _NOEXCEPT
     {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _LIBCPP_ASSERT(__get_const_db()->__decrementable(this),
                        "Attempted to decrement non-decrementable iterator");
@@ -18284,10 +16098,7 @@ public:
         {__wrap_iter __w(*this); __w += __n; return __w;}
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter& operator+=(difference_type __n) _NOEXCEPT
     {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _LIBCPP_ASSERT(__get_const_db()->__addable(this, __n),
                    "Attempted to add/subtract iterator outside of valid range");
@@ -18301,10 +16112,7 @@ public:
         {*this += -__n; return *this;}
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG reference    operator[](difference_type __n) const _NOEXCEPT
     {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _LIBCPP_ASSERT(__get_const_db()->__subscriptable(this, __n),
                    "Attempted to subscript iterator outside of valid range");
@@ -18315,10 +16123,7 @@ public:
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG iterator_type base() const _NOEXCEPT {return __i;}
 
 private:
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(const void* __p, iterator_type __x) : __i(__x)
     {
@@ -18386,10 +16191,7 @@ private:
     template <class _Ip, class _Op> friend _Op move(_Ip, _Ip, _Op);
     template <class _B1, class _B2> friend _B2 move_backward(_B1, _B1, _B2);
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL < 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     template <class _Tp>
     _LIBCPP_CONSTEXPR_IF_NODEBUG friend
@@ -18424,10 +16226,7 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
 bool
 operator<(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to compare incomparable iterators");
@@ -18450,10 +16249,7 @@ auto
 operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
 -> decltype(__x.base() - __y.base())
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to subtract incompatible iterators");
@@ -18466,10 +16262,7 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
 typename __wrap_iter<_Iter1>::difference_type
 operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to subtract incompatible iterators");
@@ -18521,16 +16314,10 @@ end(_Tp (&__array)[_Np])
     return __array + _Np;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 
@@ -18541,10 +16328,7 @@ end(_Tp (&__array)[_Np])
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 
@@ -18559,10 +16343,7 @@ template <class _Tp, size_t _Sz>
 _LIBCPP_INLINE_VISIBILITY
 constexpr size_t size(const _Tp (&)[_Sz]) noexcept { return _Sz; }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Cont>
 _LIBCPP_INLINE_VISIBILITY
@@ -18618,15 +16399,9 @@ constexpr const _Ep* data(initializer_list<_Ep> __il) noexcept { return __il.beg
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_ITERATOR
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iosfwd>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <tuple>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===--------------------------- tuple ------------------------------------===//
 //
@@ -18640,36 +16415,17 @@ _LIBCPP_END_NAMESPACE_STD
 #define _LIBCPP_TUPLE
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__tuple>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -18699,10 +16455,7 @@ class __tuple_leaf
 
     template <class _Tp>
     static constexpr bool __can_bind_reference() {
-#if 0 /* disabled by -frewrite-includes */
-#if __has_keyword(__reference_binds_to_temporary)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
       return !__reference_binds_to_temporary(_Hp, _Tp);
 #else
@@ -18999,10 +16752,7 @@ class _LIBCPP_TEMPLATE_VIS tuple
 
     _BaseT __base_;
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ENABLE_TUPLE_IMPLICIT_REDUCED_ARITY_EXTENSION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     static constexpr bool _EnableImplicitReducedArityExtension = true;
 #else
@@ -19523,10 +17273,7 @@ swap(tuple<_Tp...>& __t, tuple<_Tp...>& __u)
                  _NOEXCEPT_(__all<__is_nothrow_swappable<_Tp>::value...>::value)
     {__t.swap(__u);}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 namespace __find_detail {
@@ -19701,10 +17448,7 @@ operator<=(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
     return !(__y < __x);
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
@@ -19754,9 +17498,7 @@ _LIBCPP_NOEXCEPT_RETURN(
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_TUPLE
-#if 0 /* expanded by -frewrite-includes */
-#include <stdexcept>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- stdexcept --------------------------------===//
 //
@@ -19803,19 +17545,12 @@ public:
 
 
 #ifdef _LIBCPP_NO_EXCEPTIONS
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdlib>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 
@@ -19965,17 +17700,10 @@ _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void __throw_runtime_error(const char*);
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_STDEXCEPT
-#if 0 /* expanded by -frewrite-includes */
-#include <cstring>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ATOMIC_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#  include <atomic>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- atomic -----------------------------------===//
 //
@@ -19989,30 +17717,15 @@ _LIBCPP_END_NAMESPACE_STD
 #define _LIBCPP_ATOMIC
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdint>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef _LIBCPP_HAS_NO_THREADS
@@ -20057,10 +17770,7 @@ enum __legacy_memory_order {
 
 typedef underlying_type<__legacy_memory_order>::type __memory_order_underlying_t;
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 enum class memory_order : __memory_order_underlying_t {
@@ -20093,20 +17803,13 @@ typedef enum memory_order {
 #endif // _LIBCPP_STD_VER > 17
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_GCC_ATOMIC_IMP) || \
-	defined(_LIBCPP_ATOMIC_ONLY_USE_BUILTINS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_GCC_ATOMIC_IMP)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 template <typename _Tp>
@@ -20150,10 +17853,7 @@ _Tp kill_dependency(_Tp __y) _NOEXCEPT
     return __y;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__CLANG_ATOMIC_BOOL_LOCK_FREE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 # define ATOMIC_BOOL_LOCK_FREE      __CLANG_ATOMIC_BOOL_LOCK_FREE
 # define ATOMIC_CHAR_LOCK_FREE      __CLANG_ATOMIC_CHAR_LOCK_FREE
@@ -20175,10 +17875,7 @@ template <typename _Tp,
 #endif //_LIBCPP_ATOMIC_ONLY_USE_BUILTINS
 struct __cxx_atomic_impl : public _Base {
 
-#if 0 /* disabled by -frewrite-includes */
-#if _GNUC_VER >= 501
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     static_assert(is_trivially_copyable<_Tp>::value,
       "std::atomic<Tp> requires that 'Tp' be a trivially copyable type");
@@ -20196,10 +17893,7 @@ struct __atomic_base  // false
 {
     mutable __cxx_atomic_impl<_Tp> __a_;
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cpp_lib_atomic_is_always_lock_free)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
   static _LIBCPP_CONSTEXPR bool is_always_lock_free = __atomic_always_lock_free(sizeof(__a_), 0);
 #endif
@@ -20285,10 +17979,7 @@ private:
 #endif
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cpp_lib_atomic_is_always_lock_free)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp, bool __b>
 _LIBCPP_CONSTEXPR bool __atomic_base<_Tp, __b>::is_always_lock_free;
@@ -21043,24 +18734,15 @@ _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_ATOMIC
 #endif
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -21072,15 +18754,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -21092,15 +18768,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -21117,12 +18787,7 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 template <class _ValueType>
 inline _LIBCPP_INLINE_VISIBILITY
 _ValueType __libcpp_relaxed_load(_ValueType const* __value) {
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_THREADS) && \
-    defined(__ATOMIC_RELAXED) &&        \
-    (__has_builtin(__atomic_load_n) || defined(_LIBCPP_COMPILER_GCC))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __atomic_load_n(__value, __ATOMIC_RELAXED);
 #else
@@ -21133,12 +18798,7 @@ _ValueType __libcpp_relaxed_load(_ValueType const* __value) {
 template <class _ValueType>
 inline _LIBCPP_INLINE_VISIBILITY
 _ValueType __libcpp_acquire_load(_ValueType const* __value) {
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_THREADS) && \
-    defined(__ATOMIC_ACQUIRE) &&        \
-    (__has_builtin(__atomic_load_n) || defined(_LIBCPP_COMPILER_GCC))
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __atomic_load_n(__value, __ATOMIC_ACQUIRE);
 #else
@@ -21502,10 +19162,7 @@ __to_raw_pointer(_Tp* __p) _NOEXCEPT
     return __p;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Pointer>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -21775,10 +19432,7 @@ struct __has_allocate_hint
 
 #endif  // _LIBCPP_CXX03_LANG
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Alloc, class _Tp, class ..._Args>
@@ -22260,10 +19914,7 @@ public:
         {_VSTD::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));}
     _LIBCPP_INLINE_VISIBILITY size_type max_size() const _NOEXCEPT
         {return size_type(~0) / sizeof(_Tp);}
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     template <class _Up, class... _Args>
         _LIBCPP_INLINE_VISIBILITY
@@ -22279,10 +19930,7 @@ public:
         {
             ::new((void*)__p) _Tp();
         }
-#if 0 /* disabled by -frewrite-includes */
-# if defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
     template <class _A0>
@@ -22369,10 +20017,7 @@ public:
         {_VSTD::__libcpp_deallocate((void*) const_cast<_Tp *>(__p), __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));}
     _LIBCPP_INLINE_VISIBILITY size_type max_size() const _NOEXCEPT
         {return size_type(~0) / sizeof(_Tp);}
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     template <class _Up, class... _Args>
         _LIBCPP_INLINE_VISIBILITY
@@ -22388,10 +20033,7 @@ public:
         {
             ::new((void*) const_cast<_Tp *>(__p)) _Tp();
         }
-#if 0 /* disabled by -frewrite-includes */
-# if defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
     template <class _A0>
@@ -22464,10 +20106,7 @@ public:
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator*() {return *this;}
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator=(const _Tp& __element)
         {::new(_VSTD::addressof(*__x_)) _Tp(__element); return *this;}
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator=(_Tp&& __element)
         {::new(_VSTD::addressof(*__x_)) _Tp(_VSTD::move(__element)); return *this;}
@@ -22475,10 +20114,7 @@ public:
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator++() {++__x_; return *this;}
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator  operator++(int)
         {raw_storage_iterator __t(*this); ++__x_; return __t;}
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY _OutputIterator base() const { return __x_; }
 #endif
@@ -22497,10 +20133,7 @@ get_temporary_buffer(ptrdiff_t __n) _NOEXCEPT
         __n = __m;
     while (__n > 0)
     {
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ALIGNED_ALLOCATION)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     if (__is_overaligned_for_new(_LIBCPP_ALIGNOF(_Tp)))
         {
@@ -22540,10 +20173,7 @@ void return_temporary_buffer(_Tp* __p) _NOEXCEPT
   _VSTD::__libcpp_deallocate_unsized((void*)__p, _LIBCPP_ALIGNOF(_Tp));
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Tp>
 struct _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr_ref
@@ -22973,10 +20603,7 @@ public:
   unique_ptr(unique_ptr<_Up, _Ep>&& __u) _NOEXCEPT
       : __ptr_(__u.release(), _VSTD::forward<_Ep>(__u.get_deleter())) {}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
@@ -23005,10 +20632,7 @@ public:
     return *this;
   }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
@@ -23459,10 +21083,7 @@ operator>=(nullptr_t, const unique_ptr<_T1, _D1>& __x)
     return !(nullptr < __x);
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template<class _Tp>
@@ -23774,19 +21395,10 @@ uninitialized_move_n(_InputIt __first, _Size __n, _ForwardIt __first_res) {
 // NOTE: Relaxed and acq/rel atomics (for increment and decrement respectively)
 // should be sufficient for thread safety.
 // See https://bugs.llvm.org/show_bug.cgi?id=22803
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__clang__) && __has_builtin(__atomic_add_fetch)          \
-                       && defined(__ATOMIC_RELAXED)                  \
-                       && defined(__ATOMIC_ACQ_REL)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 #   define _LIBCPP_HAS_BUILTIN_ATOMIC_SUPPORT
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_COMPILER_GCC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 #   define _LIBCPP_HAS_BUILTIN_ATOMIC_SUPPORT
 #endif
@@ -23795,10 +21407,7 @@ template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY _Tp
 __libcpp_atomic_refcount_increment(_Tp& __t) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_BUILTIN_ATOMIC_SUPPORT) && !defined(_LIBCPP_HAS_NO_THREADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __atomic_add_fetch(&__t, 1, __ATOMIC_RELAXED);
 #else
@@ -23843,11 +21452,7 @@ public:
     explicit __shared_count(long __refs = 0) _NOEXCEPT
         : __shared_owners_(__refs) {}
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_BUILDING_LIBRARY) && \
-    defined(_LIBCPP_DEPRECATED_ABI_LEGACY_LIBRARY_DEFINITIONS_FOR_INLINE_FUNCTIONS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     void __add_shared() _NOEXCEPT;
     bool __release_shared() _NOEXCEPT;
@@ -23907,10 +21512,7 @@ public:
     // Otherwise we may break clients who need to compile their projects with
     // -fno-rtti and yet link against a libc++.dylib compiled
     // without -fno-rtti.
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_NO_RTTI) || !defined(_LIBCPP_BUILD_STATIC)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     virtual const void* __get_deleter(const type_info&) const _NOEXCEPT;
 #endif
@@ -24076,10 +21678,7 @@ public:
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
     template<class _Yp> explicit shared_ptr(const weak_ptr<_Yp>& __r,
                    typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type= __nat());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
     template<class _Yp>
@@ -24154,10 +21753,7 @@ public:
         >::type
         _LIBCPP_INLINE_VISIBILITY
         operator=(shared_ptr<_Yp>&& __r);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     template<class _Yp>
         _LIBCPP_INLINE_VISIBILITY
@@ -24170,10 +21766,7 @@ public:
         operator=(auto_ptr<_Yp>&& __r);
 #endif
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     template<class _Yp>
         _LIBCPP_INLINE_VISIBILITY
@@ -24495,10 +22088,7 @@ shared_ptr<_Tp>::shared_ptr(shared_ptr<_Yp>&& __r,
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Tp>
 template<class _Yp>
@@ -24533,10 +22123,7 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
                             >::type)
     : __ptr_(__r.get())
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
@@ -24567,10 +22154,7 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
                             >::type)
     : __ptr_(__r.get())
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
@@ -24681,10 +22265,7 @@ shared_ptr<_Tp>::operator=(shared_ptr<_Yp>&& __r)
     return *this;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Tp>
 template<class _Yp>
@@ -24720,10 +22301,7 @@ shared_ptr<_Tp>::operator=(unique_ptr<_Yp, _Dp>&& __r)
 
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Tp>
 template<class _Yp>
@@ -24860,10 +22438,7 @@ inline _LIBCPP_INLINE_VISIBILITY
 bool
 operator<(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     typedef typename common_type<_Tp*, _Up*>::type _Vp;
     return less<_Vp>()(__x.get(), __y.get());
@@ -25305,10 +22880,7 @@ weak_ptr<_Tp>::lock() const _NOEXCEPT
     return __r;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void> struct owner_less;
 #else
@@ -25347,10 +22919,7 @@ struct _LIBCPP_TEMPLATE_VIS owner_less<weak_ptr<_Tp> >
         {return __x.owner_before(__y);}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS owner_less<void>
@@ -25397,10 +22966,7 @@ public:
     shared_ptr<_Tp const> shared_from_this() const
         {return shared_ptr<const _Tp>(__weak_this_);}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY
     weak_ptr<_Tp> weak_from_this() _NOEXCEPT
@@ -25433,10 +22999,7 @@ basic_ostream<_CharT, _Traits>&
 operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p);
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_ATOMIC_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 class _LIBCPP_TYPE_VIS __sp_mut
@@ -25580,10 +23143,7 @@ atomic_compare_exchange_weak_explicit(shared_ptr<_Tp>* __p, shared_ptr<_Tp>* __v
 #endif  // !defined(_LIBCPP_HAS_NO_ATOMIC_HEADER)
 
 //enum class
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 # ifndef _LIBCPP_CXX03_LANG
 enum class pointer_safety : unsigned char {
@@ -25614,19 +23174,12 @@ struct _LIBCPP_TYPE_VIS pointer_safety
 };
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE) && \
-    defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 _LIBCPP_FUNC_VIS pointer_safety get_pointer_safety() _NOEXCEPT;
 #else
 // This function is only offered in C++03 under ABI v1.
-#if 0 /* disabled by -frewrite-includes */
-# if !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE) || !defined(_LIBCPP_CXX03_LANG)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 inline _LIBCPP_INLINE_VISIBILITY
 pointer_safety get_pointer_safety() _NOEXCEPT {
@@ -25655,10 +23208,7 @@ _LIBCPP_FUNC_VIS void* align(size_t __align, size_t __sz, void*& __ptr, size_t& 
 template <typename _Alloc>
 inline _LIBCPP_INLINE_VISIBILITY
 void __swap_allocator(_Alloc & __a1, _Alloc & __a2)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _NOEXCEPT
 #else
@@ -25672,10 +23222,7 @@ void __swap_allocator(_Alloc & __a1, _Alloc & __a2)
 template <typename _Alloc>
 _LIBCPP_INLINE_VISIBILITY
 void __swap_allocator(_Alloc & __a1, _Alloc & __a2, true_type)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _NOEXCEPT
 #else
@@ -25693,10 +23240,7 @@ void __swap_allocator(_Alloc &, _Alloc &, false_type) _NOEXCEPT {}
 template <typename _Alloc, typename _Traits=allocator_traits<_Alloc> >
 struct __noexcept_move_assign_container : public integral_constant<bool,
     _Traits::propagate_on_container_move_assignment::value
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
         || _Traits::is_always_equal::value
 #else
@@ -25787,20 +23331,13 @@ _LIBCPP_END_NAMESPACE_STD
 
 _LIBCPP_POP_MACROS
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_PARALLEL_ALGORITHMS) && _LIBCPP_STD_VER >= 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#   include <__pstl_memory>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #endif  // _LIBCPP_MEMORY
-#if 0 /* expanded by -frewrite-includes */
-#include <functional>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ functional ----------------------------------===//
 //
@@ -25814,51 +23351,25 @@ _LIBCPP_POP_MACROS
 #define _LIBCPP_FUNCTIONAL
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <typeinfo>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <exception>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <memory>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <tuple>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -25871,10 +23382,7 @@ struct _LIBCPP_TEMPLATE_VIS plus : binary_function<_Tp, _Tp, _Tp>
         {return __x + __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS plus<void>
@@ -25890,10 +23398,7 @@ struct _LIBCPP_TEMPLATE_VIS plus<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -25906,10 +23411,7 @@ struct _LIBCPP_TEMPLATE_VIS minus : binary_function<_Tp, _Tp, _Tp>
         {return __x - __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS minus<void>
@@ -25925,10 +23427,7 @@ struct _LIBCPP_TEMPLATE_VIS minus<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -25941,10 +23440,7 @@ struct _LIBCPP_TEMPLATE_VIS multiplies : binary_function<_Tp, _Tp, _Tp>
         {return __x * __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS multiplies<void>
@@ -25960,10 +23456,7 @@ struct _LIBCPP_TEMPLATE_VIS multiplies<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -25976,10 +23469,7 @@ struct _LIBCPP_TEMPLATE_VIS divides : binary_function<_Tp, _Tp, _Tp>
         {return __x / __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS divides<void>
@@ -25995,10 +23485,7 @@ struct _LIBCPP_TEMPLATE_VIS divides<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26011,10 +23498,7 @@ struct _LIBCPP_TEMPLATE_VIS modulus : binary_function<_Tp, _Tp, _Tp>
         {return __x % __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS modulus<void>
@@ -26030,10 +23514,7 @@ struct _LIBCPP_TEMPLATE_VIS modulus<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26046,10 +23527,7 @@ struct _LIBCPP_TEMPLATE_VIS negate : unary_function<_Tp, _Tp>
         {return -__x;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS negate<void>
@@ -26065,10 +23543,7 @@ struct _LIBCPP_TEMPLATE_VIS negate<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26081,10 +23556,7 @@ struct _LIBCPP_TEMPLATE_VIS equal_to : binary_function<_Tp, _Tp, bool>
         {return __x == __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS equal_to<void>
@@ -26100,10 +23572,7 @@ struct _LIBCPP_TEMPLATE_VIS equal_to<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26116,10 +23585,7 @@ struct _LIBCPP_TEMPLATE_VIS not_equal_to : binary_function<_Tp, _Tp, bool>
         {return __x != __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS not_equal_to<void>
@@ -26135,10 +23601,7 @@ struct _LIBCPP_TEMPLATE_VIS not_equal_to<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26151,10 +23614,7 @@ struct _LIBCPP_TEMPLATE_VIS greater : binary_function<_Tp, _Tp, bool>
         {return __x > __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS greater<void>
@@ -26172,10 +23632,7 @@ struct _LIBCPP_TEMPLATE_VIS greater<void>
 
 // less in <__functional_base>
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26188,10 +23645,7 @@ struct _LIBCPP_TEMPLATE_VIS greater_equal : binary_function<_Tp, _Tp, bool>
         {return __x >= __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS greater_equal<void>
@@ -26207,10 +23661,7 @@ struct _LIBCPP_TEMPLATE_VIS greater_equal<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26223,10 +23674,7 @@ struct _LIBCPP_TEMPLATE_VIS less_equal : binary_function<_Tp, _Tp, bool>
         {return __x <= __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS less_equal<void>
@@ -26242,10 +23690,7 @@ struct _LIBCPP_TEMPLATE_VIS less_equal<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26258,10 +23703,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_and : binary_function<_Tp, _Tp, bool>
         {return __x && __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_and<void>
@@ -26277,10 +23719,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_and<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26293,10 +23732,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_or : binary_function<_Tp, _Tp, bool>
         {return __x || __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_or<void>
@@ -26312,10 +23748,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_or<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26328,10 +23761,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_not : unary_function<_Tp, bool>
         {return !__x;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_not<void>
@@ -26347,10 +23777,7 @@ struct _LIBCPP_TEMPLATE_VIS logical_not<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26363,10 +23790,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_and : binary_function<_Tp, _Tp, _Tp>
         {return __x & __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_and<void>
@@ -26382,10 +23806,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_and<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26398,10 +23819,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_or : binary_function<_Tp, _Tp, _Tp>
         {return __x | __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_or<void>
@@ -26417,10 +23835,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_or<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 #else
@@ -26433,10 +23848,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_xor : binary_function<_Tp, _Tp, _Tp>
         {return __x ^ __y;}
 };
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_xor<void>
@@ -26452,10 +23864,7 @@ struct _LIBCPP_TEMPLATE_VIS bit_xor<void>
 #endif
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp = void>
 struct _LIBCPP_TEMPLATE_VIS bit_not : unary_function<_Tp, _Tp>
@@ -27425,10 +24834,7 @@ public:
     template<class _Fp, class = _EnableIfCallable<_Fp>>
     function(_Fp);
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     template<class _Alloc>
       _LIBCPP_INLINE_VISIBILITY
@@ -27455,10 +24861,7 @@ public:
     // function modifiers:
     void swap(function&) _NOEXCEPT;
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     template<class _Fp, class _Alloc>
       _LIBCPP_INLINE_VISIBILITY
@@ -27539,10 +24942,7 @@ function(_Fp) -> function<_Stripped>;
 template<class _Rp, class ..._ArgTypes>
 function<_Rp(_ArgTypes...)>::function(const function& __f) : __f_(__f.__f_) {}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Rp, class ..._ArgTypes>
 template <class _Alloc>
@@ -27554,10 +24954,7 @@ template <class _Rp, class... _ArgTypes>
 function<_Rp(_ArgTypes...)>::function(function&& __f) _NOEXCEPT
     : __f_(_VSTD::move(__f.__f_)) {}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template<class _Rp, class ..._ArgTypes>
 template <class _Alloc>
@@ -27570,10 +24967,7 @@ template <class _Rp, class... _ArgTypes>
 template <class _Fp, class>
 function<_Rp(_ArgTypes...)>::function(_Fp __f) : __f_(_VSTD::move(__f)) {}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Rp, class... _ArgTypes>
 template <class _Fp, class _Alloc, class>
@@ -27687,9 +25081,7 @@ swap(function<_Rp(_ArgTypes...)>& __x, function<_Rp(_ArgTypes...)>& __y) _NOEXCE
 
 #else // _LIBCPP_CXX03_LANG
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_03>
-#endif /* expanded by -frewrite-includes */
+
 
 #endif
 
@@ -27701,10 +25093,7 @@ template<class _Tp> struct __is_bind_expression : public false_type {};
 template<class _Tp> struct _LIBCPP_TEMPLATE_VIS is_bind_expression
     : public __is_bind_expression<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t is_bind_expression_v = is_bind_expression<_Tp>::value;
@@ -27714,10 +25103,7 @@ template<class _Tp> struct __is_placeholder : public integral_constant<int, 0> {
 template<class _Tp> struct _LIBCPP_TEMPLATE_VIS is_placeholder
     : public __is_placeholder<typename remove_cv<_Tp>::type> {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t is_placeholder_v = is_placeholder<_Tp>::value;
@@ -27728,10 +25114,7 @@ namespace placeholders
 
 template <int _Np> struct __ph {};
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_CXX03_LANG) || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 _LIBCPP_FUNC_VIS extern const __ph<1>   _1;
 _LIBCPP_FUNC_VIS extern const __ph<2>   _2;
@@ -28065,10 +25448,7 @@ bind(_Fp&& __f, _BoundArgs&&... __bound_args)
 
 #endif  // _LIBCPP_CXX03_LANG
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Fn, class ..._Args>
@@ -28219,10 +25599,7 @@ __search(_RandomAccessIterator1 __first1, _RandomAccessIterator1 __last1,
     }
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 // default searcher
@@ -28252,10 +25629,7 @@ private:
 
 #endif // _LIBCPP_STD_VER > 14
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 template <class _Tp>
 using unwrap_reference_t = typename unwrap_reference<_Tp>::type;
@@ -28279,15 +25653,9 @@ inline void __libcpp_erase_if_container( _Container& __c, _Predicate __pred)
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_FUNCTIONAL
-#if 0 /* expanded by -frewrite-includes */
-#include <iterator>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstddef>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <bit>
-#endif /* expanded by -frewrite-includes */
+
+
+
 // -*- C++ -*-
 //===------------------------------ bit ----------------------------------===//
 //
@@ -28343,55 +25711,28 @@ namespace std {
 
 */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <limits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__IBMCPP__)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include "support/ibm/support.h"
-#endif /* expanded by -frewrite-includes */
-#endif
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_COMPILER_MSVC)
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <intrin.h>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+#if 0 /* evaluated by -frewrite-includes */
+
 #endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -28403,15 +25744,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -28423,15 +25758,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -28497,10 +25826,7 @@ int __libcpp_ctz(unsigned long __x) {
 inline _LIBCPP_INLINE_VISIBILITY
 int __libcpp_ctz(unsigned long long __x) {
     unsigned long __where;
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_BITSCAN64)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     (defined(_M_AMD64) || defined(__x86_64__))
   if (_BitScanForward64(&__where, __x))
@@ -28535,10 +25861,7 @@ int __libcpp_clz(unsigned long __x) {
 inline _LIBCPP_INLINE_VISIBILITY
 int __libcpp_clz(unsigned long long __x) {
   unsigned long __where;
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_BITSCAN64)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
   if (_BitScanReverse64(&__where, __x))
     return static_cast<int>(63 - __where);
@@ -28731,10 +26054,7 @@ bool __ispow2(_Tp __t) _NOEXCEPT
 }
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
 template<class _Tp>
@@ -28849,17 +26169,10 @@ enum class endian
 {
     little = 0xDEAD,
     big    = 0xFACE,
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_LITTLE_ENDIAN)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     native = little
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_BIG_ENDIAN)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     native = big
 #else
@@ -28874,28 +26187,17 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif // _LIBCPP_BIT
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -28907,15 +26209,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -28927,15 +26223,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -29177,10 +26467,7 @@ for_each(_InputIterator __first, _InputIterator __last, _Function __f)
     return __f;
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 // for_each_n
 
@@ -29516,10 +26803,7 @@ mismatch(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __fi
     return _VSTD::mismatch(__first1, __last1, __first2, __equal_to<__v1, __v2>());
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
 _LIBCPP_NODISCARD_EXT inline
@@ -29573,10 +26857,7 @@ equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first
     return _VSTD::equal(__first1, __last1, __first2, __equal_to<__v1, __v2>());
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _BinaryPredicate, class _InputIterator1, class _InputIterator2>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
@@ -29694,10 +26975,7 @@ is_permutation(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
     return _VSTD::is_permutation(__first1, __last1, __first2, __equal_to<__v1, __v2>());
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template<class _BinaryPredicate, class _ForwardIterator1, class _ForwardIterator2>
 _LIBCPP_CONSTEXPR_AFTER_CXX17 bool
@@ -29826,10 +27104,7 @@ search(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
 }
 
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _ForwardIterator, class _Searcher>
 _LIBCPP_NODISCARD_EXT _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
@@ -29960,10 +27235,7 @@ __unwrap_iter(move_iterator<_Tp*> __i)
     return __i.base();
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL < 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 
 template <class _Tp>
@@ -30677,10 +27949,7 @@ max(initializer_list<_Tp> __t)
 
 #endif  // _LIBCPP_CXX03_LANG
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 // clamp
 template<class _Tp, class _Compare>
@@ -31085,11 +28354,7 @@ _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK
     return static_cast<result_type>(__u + __p.a());
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_RANDOM_SHUFFLE) \
-  || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 class _LIBCPP_TYPE_VIS __rs_default;
 
@@ -31224,10 +28489,7 @@ _SampleIterator __sample(_PopulationIterator __first,
       __g, _PopCategory());
 }
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
 template <class _PopulationIterator, class _SampleIterator, class _Distance,
           class _UniformRandomNumberGenerator>
@@ -32196,42 +29458,24 @@ _LIBCPP_END_NAMESPACE_STD
 
 _LIBCPP_POP_MACROS
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_HAS_PARALLEL_ALGORITHMS) && _LIBCPP_STD_VER >= 17
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#   include <__pstl_algorithm>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #endif  // _LIBCPP_ALGORITHM
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdio>     // For EOF.
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <memory>     // for __murmur2_or_cityhash
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -32243,15 +29487,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -32263,15 +29501,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -32379,17 +29611,10 @@ char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t 
 {
     if (__n == 0)
         return 0;
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __builtin_memcmp(__s1, __s2, __n);
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     return memcmp(__s1, __s2, __n);
 #else
@@ -32410,17 +29635,10 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
 {
     if (__n == 0)
         return nullptr;
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __builtin_char_memchr(__s, to_int_type(__a), __n);
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     return (const char_type*) memchr(__s, to_int_type(__a), __n);
 #else
@@ -32487,17 +29705,10 @@ char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size
 {
     if (__n == 0)
         return 0;
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __builtin_wmemcmp(__s1, __s2, __n);
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     return wmemcmp(__s1, __s2, __n);
 #else
@@ -32517,10 +29728,7 @@ template <class _Traits>
 _LIBCPP_INLINE_VISIBILITY
 _LIBCPP_CONSTEXPR
 inline size_t __char_traits_length_checked(const typename _Traits::char_type* __s) _NOEXCEPT {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 1
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
   return __s ? _Traits::length(__s) : (_VSTD::__libcpp_debug_function(_VSTD::__libcpp_debug_info(__FILE__, __LINE__, "p == nullptr", "null pointer pass to non-null argument of char_traits<...>::length")), 0);
 #else
@@ -32532,17 +29740,10 @@ inline _LIBCPP_CONSTEXPR_AFTER_CXX14
 size_t
 char_traits<wchar_t>::length(const char_type* __s) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __builtin_wcslen(__s);
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     return wcslen(__s);
 #else
@@ -32559,17 +29760,10 @@ char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __
 {
     if (__n == 0)
         return nullptr;
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     return __builtin_wmemchr(__s, __a, __n);
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
     return wmemchr(__s, __a, __n);
 #else
@@ -32650,10 +29844,7 @@ inline constexpr
 int
 char_traits<char8_t>::compare(const char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT
 {
-#if 0 /* disabled by -frewrite-includes */
-#if __has_feature(cxx_constexpr_string_builtins)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     return __builtin_memcmp(__s1, __s2, __n);
 #else
@@ -33170,42 +30361,21 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif  // _LIBCPP___STRING
-#if 0 /* expanded by -frewrite-includes */
-#include <iosfwd>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <algorithm>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iterator>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <limits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stdexcept>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__debug>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
+
+
+
+
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
-#if 0 /* expanded by -frewrite-includes */
-#include <__undef_macros>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -33217,15 +30387,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -33237,15 +30401,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -33297,10 +30455,7 @@ public:
     basic_string_view(const _CharT* __s, size_type __len) _NOEXCEPT
         : __data(__s), __size(__len)
     {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _LIBCPP_ASSERT(__len == 0 || __s != nullptr, "string_view::string_view(_CharT *, size_t): received nullptr");
 #endif
@@ -33440,18 +30595,10 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif // _LIBCPP_STRING_VIEW
-#if 0 /* expanded by -frewrite-includes */
-#include <iosfwd>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstring>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdio>  // For EOF.
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cwchar>
-#endif /* expanded by -frewrite-includes */
+
+
+
+
 // -*- C++ -*-
 //===--------------------------- cwchar -----------------------------------===//
 //
@@ -33465,12 +30612,8 @@ _LIBCPP_POP_MACROS
 #define _LIBCPP_CWCHAR
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cwctype>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===--------------------------- cwctype ----------------------------------===//
 //
@@ -33484,12 +30627,8 @@ _LIBCPP_POP_MACROS
 #define _LIBCPP_CWCTYPE
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <cctype>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===---------------------------- cctype ----------------------------------===//
 //
@@ -33503,12 +30642,8 @@ _LIBCPP_POP_MACROS
 #define _LIBCPP_CCTYPE
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <ctype.h>
-#endif /* expanded by -frewrite-includes */
+
+
 // -*- C++ -*-
 //===---------------------------- ctype.h ---------------------------------===//
 //
@@ -33522,23 +30657,14 @@ _LIBCPP_POP_MACROS
 #define _LIBCPP_CTYPE_H
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <ctype.h>
-#endif /* expanded by -frewrite-includes */
+
 /* Character handling <ctype.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -33552,9 +30678,7 @@ _LIBCPP_POP_MACROS
 extern "C" {
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include "pdclib/_PDCLIB_int.h"
-#endif /* expanded by -frewrite-includes */
+
 
 /* Character classification functions */
 
@@ -33643,9 +30767,7 @@ _PDCLIB_PUBLIC int toupper( int c );
    extensions to standard headers.
 */
 #ifdef _PDCLIB_EXTEND_CTYPE_H
-#if 0 /* expanded by -frewrite-includes */
-#include _PDCLIB_EXTEND_CTYPE_H
-#endif /* expanded by -frewrite-includes */
+
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -33703,14 +30825,9 @@ static int isascii (int c)
 
 #endif  // _LIBCPP_CTYPE_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -33790,18 +30907,11 @@ using ::toupper;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CCTYPE
-#if 0 /* expanded by -frewrite-includes */
-#include <wctype.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -33831,9 +30941,7 @@ using ::wctrans;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CWCTYPE
-#if 0 /* expanded by -frewrite-includes */
-#include <wchar.h>
-#endif /* expanded by -frewrite-includes */
+
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -33843,96 +30951,53 @@ _LIBCPP_END_NAMESPACE_STD
 //
 //===----------------------------------------------------------------------===//
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__need_wint_t) || defined(__need_mbstate_t)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif !defined(_LIBCPP_WCHAR_H)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #elif 0 /* evaluated by -frewrite-includes */
 #define _LIBCPP_WCHAR_H
 
 
-#if 0 /* expanded by -frewrite-includes */
-#include <__config>
-#endif /* expanded by -frewrite-includes */
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
 
-#if 0 /* expanded by -frewrite-includes */
-#include_next <wchar.h>
-#endif /* expanded by -frewrite-includes */
+
 
 // Determine whether we have const-correct overloads for wcschr and friends.
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_WCHAR_H_CPLUSPLUS_98_CONFORMANCE_)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(__GLIBC_PREREQ)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if __GLIBC_PREREQ(2, 10)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_MSVCRT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#  if defined(_CRT_CONST_CORRECT_OVERLOADS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
@@ -33972,10 +31037,7 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
 }
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
@@ -33987,14 +31049,9 @@ size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
 
 #endif  // _LIBCPP_WCHAR_H
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -34085,47 +31142,22 @@ using ::wprintf;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CWCHAR
-#if 0 /* expanded by -frewrite-includes */
-#include <algorithm>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <iterator>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <memory>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <stdexcept>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <__functional_base>
-#endif /* expanded by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#include <version>
-#endif /* expanded by -frewrite-includes */
+
+
+
+
+
+
+
+
+
 #ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
-#if 0 /* expanded by -frewrite-includes */
-#include <cstdint>
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
+
 #endif
 
 _LIBCPP_PUSH_MACROS
@@ -34140,15 +31172,9 @@ _LIBCPP_PUSH_MACROS
 
 
 #ifdef min
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
@@ -34160,15 +31186,9 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 
 #ifdef max
-#if 0 /* disabled by -frewrite-includes */
-#if !defined(_LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
-#if 0 /* disabled by -frewrite-includes */
-#if defined(_LIBCPP_WARNING)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
@@ -34223,11 +31243,7 @@ _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS __basic_string_co
 #ifdef _LIBCPP_NO_EXCEPTIONS
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator_impl : public true_type {};
-#if 0 /* disabled by -frewrite-includes */
-#if 0
-#elif defined(_LIBCPP_HAS_NO_NOEXCEPT)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #elif 0 /* evaluated by -frewrite-includes */
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator_impl : public false_type {};
@@ -34375,10 +31391,7 @@ public:
         _NOEXCEPT_(is_nothrow_default_constructible<allocator_type>::value);
 
     _LIBCPP_INLINE_VISIBILITY explicit basic_string(const allocator_type& __a)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _NOEXCEPT_(is_nothrow_copy_constructible<allocator_type>::value);
 #else
@@ -34467,10 +31480,7 @@ public:
     basic_string& operator=(const _Tp& __t)
         {__self_view __sv = __t; return assign(__sv);}
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY
     iterator begin() _NOEXCEPT
@@ -34810,10 +31820,7 @@ public:
 
     _LIBCPP_INLINE_VISIBILITY
     void swap(basic_string& __str)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER >= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
         _NOEXCEPT;
 #else
@@ -34825,10 +31832,7 @@ public:
     const value_type* c_str() const _NOEXCEPT {return data();}
     _LIBCPP_INLINE_VISIBILITY
     const value_type* data() const _NOEXCEPT  {return _VSTD::__to_raw_pointer(__get_pointer());}
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14 || defined(_LIBCPP_BUILDING_LIBRARY)
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
     _LIBCPP_INLINE_VISIBILITY
     value_type* data()             _NOEXCEPT  {return _VSTD::__to_raw_pointer(__get_pointer());}
@@ -35120,10 +32124,7 @@ private:
         _NOEXCEPT_(__alloc_traits::is_always_equal::value);
     _LIBCPP_INLINE_VISIBILITY
     void __move_assign(basic_string& __str, true_type)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 1 /* evaluated by -frewrite-includes */
         _NOEXCEPT;
 #else
@@ -35197,10 +32198,7 @@ inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string()
     _NOEXCEPT_(is_nothrow_default_constructible<allocator_type>::value)
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35210,10 +32208,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string()
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(const allocator_type& __a)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _NOEXCEPT_(is_nothrow_copy_constructible<allocator_type>::value)
 #else
@@ -35221,10 +32216,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const allocator_type& __
 #endif
 : __r_(__second_tag(), __a)
 {
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35287,10 +32279,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, const
 {
     _LIBCPP_ASSERT(__s != nullptr, "basic_string(const char*, allocator) detected nullptr");
     __init(__s, traits_type::length(__s));
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35302,10 +32291,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 {
     _LIBCPP_ASSERT(__n == 0 || __s != nullptr, "basic_string(const char*, n) detected nullptr");
     __init(__s, __n);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35318,10 +32304,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 {
     _LIBCPP_ASSERT(__n == 0 || __s != nullptr, "basic_string(const char*, n, allocator) detected nullptr");
     __init(__s, __n);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35335,10 +32318,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
         __r_.first().__r = __str.__r_.first().__r;
     else
         __init(_VSTD::__to_raw_pointer(__str.__get_long_pointer()), __str.__get_long_size());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35353,10 +32333,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
         __r_.first().__r = __str.__r_.first().__r;
     else
         __init(_VSTD::__to_raw_pointer(__str.__get_long_pointer()), __str.__get_long_size());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35367,10 +32344,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(basic_string&& __str)
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER <= 14
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
         _NOEXCEPT_(is_nothrow_move_constructible<allocator_type>::value)
 #else
@@ -35427,10 +32401,7 @@ inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __c)
 {
     __init(__n, __c);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35442,10 +32413,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __
     : __r_(__second_tag(), __a)
 {
     __init(__n, __c);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35461,10 +32429,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
     if (__pos > __str_sz)
         this->__throw_out_of_range();
     __init(__str.data() + __pos, _VSTD::min(__n, __str_sz - __pos));
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35480,10 +32445,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
     if (__pos > __str_sz)
         this->__throw_out_of_range();
     __init(__str.data() + __pos, __str_sz - __pos);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35498,10 +32460,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
     __self_view __sv0 = __t;
     __self_view __sv = __sv0.substr(__pos, __n);
     __init(__sv.data(), __sv.size());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35513,10 +32472,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _Tp & __t)
 {
     __self_view __sv = __t;
     __init(__sv.data(), __sv.size());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35529,10 +32485,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _Tp & __t, const _
 {
     __self_view __sv = __t;
     __init(__sv.data(), __sv.size());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35602,10 +32555,7 @@ inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, _InputIterator __last)
 {
     __init(__first, __last);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35619,10 +32569,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
     : __r_(__second_tag(), __a)
 {
     __init(__first, __last);
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35636,10 +32583,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
     initializer_list<_CharT> __il)
 {
     __init(__il.begin(), __il.end());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35653,10 +32597,7 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
     : __r_(__second_tag(), __a)
 {
     __init(__il.begin(), __il.end());
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_DEBUG_LEVEL >= 2
-#endif
-#endif /* disabled by -frewrite-includes */
+
 #if 0 /* evaluated by -frewrite-includes */
     __get_db()->__insert_c(this);
 #endif
@@ -35697,10 +32638,7 @@ struct _LIBCPP_TEMPLATE_VIS
 _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS basic_string<char>)
 _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS basic_string<wchar_t>)
 
-#if 0 /* disabled by -frewrite-includes */
-#if _LIBCPP_STD_VER > 11
-#endif
-#endif /* disabled by -frewrite-includes */
+
 
 
 _LIBCPP_END_NAMESPACE_STD
@@ -35708,9 +32646,7 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif  // _LIBCPP_STRING
-#if 0 /* expanded by -frewrite-includes */
-#include <string.h>
-#endif /* expanded by -frewrite-includes */
+
 
 int xbox_register ()
 {
