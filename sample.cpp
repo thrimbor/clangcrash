@@ -59,8 +59,6 @@ typedef int _PDCLIB_ptrdiff_t;
 
 typedef unsigned int _PDCLIB_size_t;
 
-typedef unsigned short _PDCLIB_wchar_t;
-
 typedef unsigned short _PDCLIB_wint_t;
 
 typedef long _PDCLIB_intptr_t;
@@ -502,7 +500,6 @@ template <> struct __libcpp_is_integral<bool> : public true_type {};
 template <> struct __libcpp_is_integral<char> : public true_type {};
 template <> struct __libcpp_is_integral<signed char> : public true_type {};
 template <> struct __libcpp_is_integral<unsigned char> : public true_type {};
-template <> struct __libcpp_is_integral<wchar_t> : public true_type {};
 
 template <> struct __libcpp_is_integral<char16_t> : public true_type {};
 template <> struct __libcpp_is_integral<char32_t> : public true_type {};
@@ -3378,92 +3375,14 @@ struct tm;
 
 extern "C" {
 
-wchar_t * wcscpy( wchar_t * __restrict s1, const wchar_t * __restrict s2 );
-wchar_t * wcsncpy( wchar_t * __restrict s1, const wchar_t * __restrict s2, size_t n );
-wchar_t * wmemcpy( wchar_t * __restrict s1, const wchar_t * __restrict s2, size_t n );
-wchar_t * wmemmove( wchar_t * s1, const wchar_t * s2, size_t n );
-wchar_t * wcscat( wchar_t * __restrict s1, const wchar_t * __restrict s2 );
-wchar_t * wcsncat( wchar_t * __restrict s1, const wchar_t * __restrict s2, size_t n );
-int wcscmp( const wchar_t * s1, const wchar_t * s2 );
-int wcscoll( const wchar_t * s1, const wchar_t * s2 );
-int wcsncmp( const wchar_t * s1, const wchar_t * s2, size_t n );
-size_t wcsxfrm( wchar_t * __restrict s1, const wchar_t * __restrict s2, size_t n );
-int wmemcmp( const wchar_t * s1, const wchar_t * s2, size_t n );
-wchar_t * wcschr( const wchar_t * s, wchar_t c );
-size_t wcscspn( const wchar_t * s1, const wchar_t * s2 );
-wchar_t * wcspbrk( const wchar_t * s1, const wchar_t * s2 );
-wchar_t * wcsrchr( const wchar_t * s, wchar_t c );
-size_t wcsspn( const wchar_t * s1, const wchar_t * s2 );
-wchar_t * wcsstr( const wchar_t * s1, const wchar_t * s2 );
-wchar_t * wcstok( wchar_t * __restrict s1, const wchar_t * __restrict s2, wchar_t * * __restrict ptr );
-wchar_t * wmemchr( const wchar_t * s, wchar_t c, size_t n );
-size_t wcslen( const wchar_t * s );
 int mbsinit( const mbstate_t * ps );
-size_t mbrtowc( wchar_t * __restrict pwc, const char * __restrict s, size_t n, mbstate_t * __restrict ps );
-size_t wcrtomb( char * __restrict s, wchar_t wc, mbstate_t * __restrict ps );
-wchar_t *wmemset(wchar_t *wcs, wchar_t wc, size_t n);
-double wcstod(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr);
-float wcstof(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr);
-long double wcstold(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr);
-long wcstol(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr, int base);
-long long wcstoll(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr, int base);
-unsigned long wcstoul(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr, int base);
-unsigned long long wcstoull(const wchar_t * __restrict nptr, wchar_t ** __restrict endptr, int base);
+
 size_t mbrlen(const char *s, size_t n, mbstate_t *ps);
 wint_t btowc(int c);
-size_t mbsrtowcs(wchar_t *dest, const char **src, size_t len, mbstate_t *ps);
 int wctob(wint_t c);
-int wcrtomb_s(size_t * __restrict retval, char * __restrict s, size_t ssz, wchar_t wc, mbstate_t * __restrict ps);
 
 }
-extern "C" {
 
-int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
-
-}
-extern "C++" {
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-wchar_t* __libcpp_wcschr(const wchar_t* __s, wchar_t __c) {return (wchar_t*)wcschr(__s, __c);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-const wchar_t* wcschr(const wchar_t* __s, wchar_t __c) {return __libcpp_wcschr(__s, __c);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-      wchar_t* wcschr( wchar_t* __s, wchar_t __c) {return __libcpp_wcschr(__s, __c);}
-
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-wchar_t* __libcpp_wcspbrk(const wchar_t* __s1, const wchar_t* __s2) {return (wchar_t*)wcspbrk(__s1, __s2);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-const wchar_t* wcspbrk(const wchar_t* __s1, const wchar_t* __s2) {return __libcpp_wcspbrk(__s1, __s2);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-      wchar_t* wcspbrk( wchar_t* __s1, const wchar_t* __s2) {return __libcpp_wcspbrk(__s1, __s2);}
-
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-wchar_t* __libcpp_wcsrchr(const wchar_t* __s, wchar_t __c) {return (wchar_t*)wcsrchr(__s, __c);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-const wchar_t* wcsrchr(const wchar_t* __s, wchar_t __c) {return __libcpp_wcsrchr(__s, __c);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-      wchar_t* wcsrchr( wchar_t* __s, wchar_t __c) {return __libcpp_wcsrchr(__s, __c);}
-
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-wchar_t* __libcpp_wcsstr(const wchar_t* __s1, const wchar_t* __s2) {return (wchar_t*)wcsstr(__s1, __s2);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-const wchar_t* wcsstr(const wchar_t* __s1, const wchar_t* __s2) {return __libcpp_wcsstr(__s1, __s2);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-      wchar_t* wcsstr( wchar_t* __s1, const wchar_t* __s2) {return __libcpp_wcsstr(__s1, __s2);}
-
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-wchar_t* __libcpp_wmemchr(const wchar_t* __s, wchar_t __c, size_t __n) {return (wchar_t*)wmemchr(__s, __c, __n);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-const wchar_t* wmemchr(const wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ ((__enable_if__(true, "")))
-      wchar_t* wmemchr( wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
-}
-
-extern "C" {
-size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
-                  size_t nmc, size_t len, mbstate_t *__restrict ps);
-size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
-                  size_t nwc, size_t len, mbstate_t *__restrict ps);
-}
 namespace std { inline namespace __1 {
 
 class ios_base;
@@ -3473,7 +3392,6 @@ template<> struct char_traits<char>;
 
 template<> struct char_traits<char16_t>;
 template<> struct char_traits<char32_t>;
-template<> struct char_traits<wchar_t>;
 
 template<class _Tp> class allocator;
 
@@ -3517,7 +3435,6 @@ template <class _CharT, class _Traits = char_traits<_CharT> >
     class ostreambuf_iterator;
 
 typedef basic_ios<char> ios;
-typedef basic_ios<wchar_t> wios;
 
 typedef basic_streambuf<char> streambuf;
 typedef basic_istream<char> istream;
@@ -3534,21 +3451,6 @@ typedef basic_ifstream<char> ifstream;
 typedef basic_ofstream<char> ofstream;
 typedef basic_fstream<char> fstream;
 
-typedef basic_streambuf<wchar_t> wstreambuf;
-typedef basic_istream<wchar_t> wistream;
-typedef basic_ostream<wchar_t> wostream;
-typedef basic_iostream<wchar_t> wiostream;
-
-typedef basic_stringbuf<wchar_t> wstringbuf;
-typedef basic_istringstream<wchar_t> wistringstream;
-typedef basic_ostringstream<wchar_t> wostringstream;
-typedef basic_stringstream<wchar_t> wstringstream;
-
-typedef basic_filebuf<wchar_t> wfilebuf;
-typedef basic_ifstream<wchar_t> wifstream;
-typedef basic_ofstream<wchar_t> wofstream;
-typedef basic_fstream<wchar_t> wfstream;
-
 template <class _State> class fpos;
 typedef fpos<mbstate_t> streampos;
 typedef fpos<mbstate_t> wstreampos;
@@ -3563,7 +3465,6 @@ template <class _CharT,
           class _Allocator = allocator<_CharT> >
     class basic_string;
 typedef basic_string<char, char_traits<char>, allocator<char> > string;
-typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t> > wstring;
 
 template <class _Tp, class _Alloc = allocator<_Tp> >
 class vector;
@@ -3634,7 +3535,6 @@ typedef void (__cdecl *_purecall_handler)(void);
 
 _purecall_handler __cdecl _get_purecall_handler (void);
 _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
-int mbtowc (wchar_t *pwc, const char *string, size_t n);
 }
 inline static long abs (long __x) noexcept
 {
@@ -5785,13 +5685,6 @@ struct hash<char32_t>
     size_t operator()(char32_t __v) const noexcept {return static_cast<size_t>(__v);}
 };
 
-template <>
-struct hash<wchar_t>
-    : public unary_function<wchar_t, size_t>
-{
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    size_t operator()(wchar_t __v) const noexcept {return static_cast<size_t>(__v);}
-};
 
 template <>
 struct hash<short>
@@ -15350,7 +15243,6 @@ using __bitop_unsigned_integer __attribute__((nodebug)) = integral_constant<bool
          is_unsigned<_Tp>::value &&
         _IsNotSame<typename remove_cv<_Tp>::type, bool>::value &&
         _IsNotSame<typename remove_cv<_Tp>::type, signed char>::value &&
-        _IsNotSame<typename remove_cv<_Tp>::type, wchar_t>::value &&
         _IsNotSame<typename remove_cv<_Tp>::type, char16_t>::value &&
         _IsNotSame<typename remove_cv<_Tp>::type, char32_t>::value
     >;
@@ -16285,60 +16177,6 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
     return __builtin_char_memchr(__s, to_int_type(__a), __n);
 }
 
-template <>
-struct char_traits<wchar_t>
-{
-    typedef wchar_t char_type;
-    typedef wint_t int_type;
-    typedef streamoff off_type;
-    typedef streampos pos_type;
-    typedef mbstate_t state_type;
-
-    static inline constexpr
-    void assign(char_type& __c1, const char_type& __c2) noexcept {__c1 = __c2;}
-    static inline constexpr bool eq(char_type __c1, char_type __c2) noexcept
-        {return __c1 == __c2;}
-    static inline constexpr bool lt(char_type __c1, char_type __c2) noexcept
-        {return __c1 < __c2;}
-
-    static constexpr
-    int compare(const char_type* __s1, const char_type* __s2, size_t __n) noexcept;
-    static constexpr
-    size_t length(const char_type* __s) noexcept;
-    static constexpr
-    const char_type* find(const char_type* __s, size_t __n, const char_type& __a) noexcept;
-    static inline char_type* move(char_type* __s1, const char_type* __s2, size_t __n) noexcept
-        {return __n == 0 ? __s1 : (char_type*)wmemmove(__s1, __s2, __n);}
-    static inline char_type* copy(char_type* __s1, const char_type* __s2, size_t __n) noexcept
-        {
-            ((void)0);
-            return __n == 0 ? __s1 : (char_type*)wmemcpy(__s1, __s2, __n);
-        }
-    static inline char_type* assign(char_type* __s, size_t __n, char_type __a) noexcept
-        {return __n == 0 ? __s : (char_type*)wmemset(__s, __a, __n);}
-
-    static inline constexpr int_type not_eof(int_type __c) noexcept
-        {return eq_int_type(__c, eof()) ? ~eof() : __c;}
-    static inline constexpr char_type to_char_type(int_type __c) noexcept
-        {return char_type(__c);}
-    static inline constexpr int_type to_int_type(char_type __c) noexcept
-        {return int_type(__c);}
-    static inline constexpr bool eq_int_type(int_type __c1, int_type __c2) noexcept
-        {return __c1 == __c2;}
-    static inline constexpr int_type eof() noexcept
-        {return int_type((wint_t)-1);}
-};
-
-inline constexpr
-int
-char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size_t __n) noexcept
-{
-    if (__n == 0)
-        return 0;
-
-    return __builtin_wmemcmp(__s1, __s2, __n);
-}
-
 template <class _Traits>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr
@@ -16346,24 +16184,6 @@ inline size_t __char_traits_length_checked(const typename _Traits::char_type* __
 
   return _Traits::length(__s);
 
-}
-
-inline constexpr
-size_t
-char_traits<wchar_t>::length(const char_type* __s) noexcept
-{
-
-    return __builtin_wcslen(__s);
-}
-
-inline constexpr
-const wchar_t*
-char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __a) noexcept
-{
-    if (__n == 0)
-        return nullptr;
-
-    return __builtin_wmemchr(__s, __a, __n);
 }
 
 template<class _Ptr>
@@ -16477,44 +16297,11 @@ using ::size_t;
 using ::tm;
 using ::wint_t;
 using ::FILE;
-using ::wcstod;
-using ::wcstof;
-using ::wcstold;
-using ::wcstol;
-
-using ::wcstoul;
-
-using ::wcstoull;
-
-using ::wcscpy;
-using ::wcsncpy;
-using ::wcscat;
-using ::wcsncat;
-using ::wcscmp;
-using ::wcscoll;
-using ::wcsncmp;
-using ::wcsxfrm;
-using ::wcschr;
-using ::wcspbrk;
-using ::wcsrchr;
-using ::wcsstr;
-using ::wmemchr;
-using ::wcscspn;
-using ::wcslen;
-using ::wcsspn;
-using ::wcstok;
-using ::wmemcmp;
-using ::wmemcpy;
-using ::wmemmove;
-using ::wmemset;
 
 using ::btowc;
 using ::wctob;
 using ::mbsinit;
 using ::mbrlen;
-using ::mbrtowc;
-using ::wcrtomb;
-using ::mbsrtowcs;
 
 } }
 
@@ -17287,7 +17074,6 @@ struct
 };
 
 extern template class basic_string<char>;
-extern template class basic_string<wchar_t>;
 
 } }
 
