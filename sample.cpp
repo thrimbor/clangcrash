@@ -6270,137 +6270,6 @@ template <class _Tp>
 struct __is_stashing_iterator<_Tp, typename __void_t<typename _Tp::__stashing_iterator_tag>::type>
   : true_type {};
 
-template <class _Iter>
-class reverse_iterator
-    : public iterator<typename iterator_traits<_Iter>::iterator_category,
-                      typename iterator_traits<_Iter>::value_type,
-                      typename iterator_traits<_Iter>::difference_type,
-                      typename iterator_traits<_Iter>::pointer,
-                      typename iterator_traits<_Iter>::reference>
-{
-private:
-                _Iter __t;
-
-    static_assert(!__is_stashing_iterator<_Iter>::value,
-      "The specified iterator type cannot be used with reverse_iterator; "
-      "Using stashing iterators with reverse_iterator causes undefined behavior");
-
-protected:
-    _Iter current;
-public:
-    typedef _Iter iterator_type;
-    typedef typename iterator_traits<_Iter>::difference_type difference_type;
-    typedef typename iterator_traits<_Iter>::reference reference;
-    typedef typename iterator_traits<_Iter>::pointer pointer;
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator() : __t(), current() {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    explicit reverse_iterator(_Iter __x) : __t(__x), current(__x) {}
-    template <class _Up>
-        __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-        reverse_iterator(const reverse_iterator<_Up>& __u) : __t(__u.base()), current(__u.base()) {}
-    template <class _Up>
-        __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-        reverse_iterator& operator=(const reverse_iterator<_Up>& __u)
-            { __t = current = __u.base(); return *this; }
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    _Iter base() const {return current;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reference operator*() const {_Iter __tmp = current; return *--__tmp;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    pointer operator->() const {return std::__1::addressof(operator*());}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator& operator++() {--current; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator operator++(int) {reverse_iterator __tmp(*this); --current; return __tmp;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator& operator--() {++current; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator operator--(int) {reverse_iterator __tmp(*this); ++current; return __tmp;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator operator+ (difference_type __n) const {return reverse_iterator(current - __n);}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator& operator+=(difference_type __n) {current -= __n; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator operator- (difference_type __n) const {return reverse_iterator(current + __n);}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reverse_iterator& operator-=(difference_type __n) {current += __n; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reference operator[](difference_type __n) const {return *(*this + __n);}
-};
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator==(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() == __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator<(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() > __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator!=(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() != __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator>(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() < __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator>=(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() <= __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator<=(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
-{
-    return __x.base() >= __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-auto
-operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
--> decltype(__y.base() - __x.base())
-{
-    return __y.base() - __x.base();
-}
-
-template <class _Iter>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-reverse_iterator<_Iter>
-operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
-{
-    return reverse_iterator<_Iter>(__x.base() - __n);
-}
-
-template <class _Iter>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-reverse_iterator<_Iter> make_reverse_iterator(_Iter __i)
-{
-    return reverse_iterator<_Iter>(__i);
-}
 
 template <class _Container>
 class back_insert_iterator
@@ -6743,10 +6612,6 @@ operator+(typename __wrap_iter<_Iter>::difference_type __n,
 template <class _Iter>
 struct __libcpp_is_trivial_iterator
     : public bool_constant<(is_pointer<_Iter>::value)> {};
-
-template <class _Iter>
-struct __libcpp_is_trivial_iterator<reverse_iterator<_Iter> >
-    : public bool_constant<(__libcpp_is_trivial_iterator<_Iter>::value)> {};
 
 template <class _Iter>
 struct __libcpp_is_trivial_iterator<__wrap_iter<_Iter> >
@@ -12132,9 +11997,6 @@ public:
     typedef __wrap_iter<pointer> iterator;
     typedef __wrap_iter<const_pointer> const_iterator;
 
-    typedef std::__1::reverse_iterator<iterator> reverse_iterator;
-    typedef std::__1::reverse_iterator<const_iterator> const_reverse_iterator;
-
 private:
 
     struct __long
@@ -12260,17 +12122,6 @@ public:
     const_iterator end() const noexcept
         {return const_iterator(__get_pointer() + size());}
     __attribute__ ((__exclude_from_explicit_instantiation__))
-    reverse_iterator rbegin() noexcept
-        {return reverse_iterator(end());}
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    const_reverse_iterator rbegin() const noexcept
-        {return const_reverse_iterator(end());}
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    reverse_iterator rend() noexcept
-        {return reverse_iterator(begin());}
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    const_reverse_iterator rend() const noexcept
-        {return const_reverse_iterator(begin());}
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const_iterator cbegin() const noexcept
@@ -12278,12 +12129,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const_iterator cend() const noexcept
         {return end();}
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    const_reverse_iterator crbegin() const noexcept
-        {return rbegin();}
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    const_reverse_iterator crend() const noexcept
-        {return rend();}
 
     __attribute__ ((__exclude_from_explicit_instantiation__)) size_type size() const noexcept
         {return __is_long() ? __get_long_size() : __get_short_size();}
