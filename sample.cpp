@@ -126,11 +126,6 @@
 # define _LIBCPP_ABI_NAMESPACE _LIBCPP_CONCAT(__,_LIBCPP_ABI_VERSION)
 #endif
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_CXX03_LANG
-#endif
-
 #ifndef __has_attribute
 #define __has_attribute(__x) 0
 #endif
@@ -333,25 +328,8 @@
 #  define _LIBCPP_USING_DEV_RANDOM
 #endif
 
-
-#if 0 /* evaluated by -frewrite-includes */
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_LITTLE_ENDIAN
-
-#elif 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_BIG_ENDIAN
-#  else  // __BYTE_ORDER == __BIG_ENDIAN
-#    error unable to determine endian
-#  endif
-#endif  // !defined(_LIBCPP_LITTLE_ENDIAN) && !defined(_LIBCPP_BIG_ENDIAN)
-
-
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NO_CFI __attribute__((__no_sanitize__("cfi")))
-#else
-#  define _LIBCPP_NO_CFI
 #endif
 
 
@@ -402,98 +380,14 @@
 
 #if 1 /* evaluated by -frewrite-includes */
 
-
-
 #if 1 /* evaluated by -frewrite-includes */
 #  define _ALIGNAS_TYPE(x) alignas(x)
 #  define _ALIGNAS(x) alignas(x)
-#else
-#  define _ALIGNAS_TYPE(x) __attribute__((__aligned__(_LIBCPP_ALIGNOF(x))))
-#  define _ALIGNAS(x) __attribute__((__aligned__(x)))
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-typedef __char16_t char16_t;
-typedef __char32_t char32_t;
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_NO_EXCEPTIONS
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_NO_RTTI
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_STRONG_ENUMS
 #endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
 #  define _LIBCPP_NORETURN [[noreturn]]
-#else
-#  define _LIBCPP_NORETURN __attribute__ ((noreturn))
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_LAMBDAS
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define nullptr __nullptr
-#  else
-#    define _LIBCPP_HAS_NO_NULLPTR
-#  endif
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_RVALUE_REFERENCES
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_AUTO_TYPE
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_VARIADICS
-#endif
-
-// Objective-C++ features (opt-in)
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_OBJC_ARC
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_OBJC_ARC_WEAK
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_NOEXCEPT
 #endif
 
 
@@ -12847,24 +12741,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
         __u.__s.__d = 0;
         __u.__t = __v;
         return __u.__s.__a ^ __u.__s.__b ^ __u.__s.__c ^ __u.__s.__d;
-
-#elif 0 /* evaluated by -frewrite-includes */
-        // Zero out padding bits
-        union
-        {
-            long double __t;
-            struct
-            {
-                size_t __a;
-                size_t __b;
-            } __s;
-        } __u;
-        __u.__s.__a = 0;
-        __u.__s.__b = 0;
-        __u.__t = __v;
-        return __u.__s.__a ^ __u.__s.__b;
-#else
-        return __scalar_hash<long double>::operator()(__v);
 #endif
     }
 };
@@ -12986,13 +12862,6 @@ _LIBCPP_END_NAMESPACE_STD
 
 #ifndef _LIBCPP_EXCEPTION
 #define _LIBCPP_EXCEPTION
-
-
-
-
-
-
-
 
 #if 1 /* evaluated by -frewrite-includes */
 
@@ -13166,33 +13035,6 @@ struct __nested
 {
     _LIBCPP_INLINE_VISIBILITY explicit __nested(const _Tp& __t) : _Tp(__t) {}
 };
-
-#ifndef _LIBCPP_NO_EXCEPTIONS
-template <class _Tp, class _Up, bool>
-struct __throw_with_nested;
-
-template <class _Tp, class _Up>
-struct __throw_with_nested<_Tp, _Up, true> {
-    _LIBCPP_NORETURN static inline _LIBCPP_INLINE_VISIBILITY void
-    __do_throw(_Tp&& __t)
-    {
-        throw __nested<_Up>(_VSTD::forward<_Tp>(__t));
-    }
-};
-
-template <class _Tp, class _Up>
-struct __throw_with_nested<_Tp, _Up, false> {
-    _LIBCPP_NORETURN static inline _LIBCPP_INLINE_VISIBILITY void
-#ifndef _LIBCPP_CXX03_LANG
-    __do_throw(_Tp&& __t)
-#else
-    __do_throw (_Tp& __t)
-#endif  // _LIBCPP_CXX03_LANG
-    {
-        throw _VSTD::forward<_Tp>(__t);
-    }
-};
-#endif
 
 template <class _Tp>
 _LIBCPP_NORETURN
@@ -13390,100 +13232,8 @@ namespace std
 
 #endif  // __LIBCPP_TYPEINFO
 
-
-
-// -*- C++ -*-
-//===----------------------------- new ------------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
 #ifndef _LIBCPP_NEW
 #define _LIBCPP_NEW
-
-/*
-    new synopsis
-
-namespace std
-{
-
-class bad_alloc
-    : public exception
-{
-public:
-    bad_alloc() noexcept;
-    bad_alloc(const bad_alloc&) noexcept;
-    bad_alloc& operator=(const bad_alloc&) noexcept;
-    virtual const char* what() const noexcept;
-};
-
-class bad_array_new_length : public bad_alloc // C++14
-{
-public:
-    bad_array_new_length() noexcept;
-};
-
-enum class align_val_t : size_t {}; // C++17
-
-struct destroying_delete_t { // C++20
-  explicit destroying_delete_t() = default;
-};
-inline constexpr destroying_delete_t destroying_delete{}; // C++20
-
-struct nothrow_t { explicit nothrow_t() = default; };
-extern const nothrow_t nothrow;
-typedef void (*new_handler)();
-new_handler set_new_handler(new_handler new_p) noexcept;
-new_handler get_new_handler() noexcept;
-
-// 21.6.4, pointer optimization barrier
-template <class T> constexpr T* launder(T* p) noexcept; // C++17
-}  // std
-
-void* operator new(std::size_t size);                                   // replaceable, nodiscard in C++2a
-void* operator new(std::size_t size, std::align_val_t alignment);       // replaceable, C++17, nodiscard in C++2a
-void* operator new(std::size_t size, const std::nothrow_t&) noexcept;   // replaceable, nodiscard in C++2a
-void* operator new(std::size_t size, std::align_val_t alignment,
-                   const std::nothrow_t&) noexcept;                     // replaceable, C++17, nodiscard in C++2a
-void  operator delete(void* ptr) noexcept;                              // replaceable
-void  operator delete(void* ptr, std::size_t size) noexcept;            // replaceable, C++14
-void  operator delete(void* ptr, std::align_val_t alignment) noexcept;  // replaceable, C++17
-void  operator delete(void* ptr, std::size_t size,
-                      std::align_val_t alignment) noexcept;             // replaceable, C++17
-void  operator delete(void* ptr, const std::nothrow_t&) noexcept;       // replaceable
-void  operator delete(void* ptr, std:align_val_t alignment,
-                      const std::nothrow_t&) noexcept;                  // replaceable, C++17
-
-void* operator new[](std::size_t size);                                 // replaceable, nodiscard in C++2a
-void* operator new[](std::size_t size,
-                     std::align_val_t alignment) noexcept;              // replaceable, C++17, nodiscard in C++2a
-void* operator new[](std::size_t size, const std::nothrow_t&) noexcept; // replaceable, nodiscard in C++2a
-void* operator new[](std::size_t size, std::align_val_t alignment,
-                     const std::nothrow_t&) noexcept;                   // replaceable, C++17, nodiscard in C++2a
-void  operator delete[](void* ptr) noexcept;                            // replaceable
-void  operator delete[](void* ptr, std::size_t size) noexcept;          // replaceable, C++14
-void  operator delete[](void* ptr,
-                        std::align_val_t alignment) noexcept;           // replaceable, C++17
-void  operator delete[](void* ptr, std::size_t size,
-                        std::align_val_t alignment) noexcept;           // replaceable, C++17
-void  operator delete[](void* ptr, const std::nothrow_t&) noexcept;     // replaceable
-void  operator delete[](void* ptr, std::align_val_t alignment,
-                        const std::nothrow_t&) noexcept;                // replaceable, C++17
-
-void* operator new  (std::size_t size, void* ptr) noexcept;             // nodiscard in C++2a
-void* operator new[](std::size_t size, void* ptr) noexcept;             // nodiscard in C++2a
-void  operator delete  (void* ptr, void*) noexcept;
-void  operator delete[](void* ptr, void*) noexcept;
-
-*/
-
-
-
-
-
 
 #ifdef _LIBCPP_NO_EXCEPTIONS
 
@@ -13791,424 +13541,6 @@ _LIBCPP_END_NAMESPACE_STD
 #ifndef _LIBCPP_ITERATOR
 #define _LIBCPP_ITERATOR
 
-/*
-    iterator synopsis
-
-namespace std
-{
-
-template<class Iterator>
-struct iterator_traits
-{
-    typedef typename Iterator::difference_type difference_type;
-    typedef typename Iterator::value_type value_type;
-    typedef typename Iterator::pointer pointer;
-    typedef typename Iterator::reference reference;
-    typedef typename Iterator::iterator_category iterator_category;
-};
-
-template<class T>
-struct iterator_traits<T*>
-{
-    typedef ptrdiff_t difference_type;
-    typedef T value_type;
-    typedef T* pointer;
-    typedef T& reference;
-    typedef random_access_iterator_tag iterator_category;
-};
-
-template<class Category, class T, class Distance = ptrdiff_t,
-         class Pointer = T*, class Reference = T&>
-struct iterator
-{
-    typedef T         value_type;
-    typedef Distance  difference_type;
-    typedef Pointer   pointer;
-    typedef Reference reference;
-    typedef Category  iterator_category;
-};
-
-struct input_iterator_tag  {};
-struct output_iterator_tag {};
-struct forward_iterator_tag       : public input_iterator_tag         {};
-struct bidirectional_iterator_tag : public forward_iterator_tag       {};
-struct random_access_iterator_tag : public bidirectional_iterator_tag {};
-
-// 27.4.3, iterator operations
-// extension: second argument not conforming to C++03
-template <class InputIterator>  // constexpr in C++17
-  constexpr void advance(InputIterator& i,
-             typename iterator_traits<InputIterator>::difference_type n);
-
-template <class InputIterator>  // constexpr in C++17
-  constexpr typename iterator_traits<InputIterator>::difference_type
-    distance(InputIterator first, InputIterator last);
-
-template <class InputIterator>  // constexpr in C++17
-  constexpr InputIterator next(InputIterator x,
-typename iterator_traits<InputIterator>::difference_type n = 1);
-
-template <class BidirectionalIterator>  // constexpr in C++17
-  constexpr BidirectionalIterator prev(BidirectionalIterator x,
-    typename iterator_traits<BidirectionalIterator>::difference_type n = 1);
-
-template <class Iterator>
-class reverse_iterator
-    : public iterator<typename iterator_traits<Iterator>::iterator_category,
-                      typename iterator_traits<Iterator>::value_type,
-                      typename iterator_traits<Iterator>::difference_type,
-                      typename iterator_traits<Iterator>::pointer,
-                      typename iterator_traits<Iterator>::reference>
-{
-protected:
-    Iterator current;
-public:
-    typedef Iterator                                            iterator_type;
-    typedef typename iterator_traits<Iterator>::difference_type difference_type;
-    typedef typename iterator_traits<Iterator>::reference       reference;
-    typedef typename iterator_traits<Iterator>::pointer         pointer;
-
-    constexpr reverse_iterator();
-    constexpr explicit reverse_iterator(Iterator x);
-    template <class U> constexpr reverse_iterator(const reverse_iterator<U>& u);
-    template <class U> constexpr reverse_iterator& operator=(const reverse_iterator<U>& u);
-    constexpr Iterator base() const;
-    constexpr reference operator*() const;
-    constexpr pointer   operator->() const;
-    constexpr reverse_iterator& operator++();
-    constexpr reverse_iterator  operator++(int);
-    constexpr reverse_iterator& operator--();
-    constexpr reverse_iterator  operator--(int);
-    constexpr reverse_iterator  operator+ (difference_type n) const;
-    constexpr reverse_iterator& operator+=(difference_type n);
-    constexpr reverse_iterator  operator- (difference_type n) const;
-    constexpr reverse_iterator& operator-=(difference_type n);
-    constexpr reference         operator[](difference_type n) const;
-};
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator==(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator<(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator!=(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator>(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator>=(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool                          // constexpr in C++17
-operator<=(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr auto
-operator-(const reverse_iterator<Iterator1>& x, const reverse_iterator<Iterator2>& y)
--> decltype(__y.base() - __x.base());   // constexpr in C++17
-
-template <class Iterator>
-constexpr reverse_iterator<Iterator>
-operator+(typename reverse_iterator<Iterator>::difference_type n,
-          const reverse_iterator<Iterator>& x);   // constexpr in C++17
-
-template <class Iterator>
-constexpr reverse_iterator<Iterator> make_reverse_iterator(Iterator i); // C++14, constexpr in C++17
-
-template <class Container>
-class back_insert_iterator
-{
-protected:
-    Container* container;
-public:
-    typedef Container                   container_type;
-    typedef void                        value_type;
-    typedef void                        difference_type;
-    typedef void                        reference;
-    typedef void                        pointer;
-
-    explicit back_insert_iterator(Container& x);
-    back_insert_iterator& operator=(const typename Container::value_type& value);
-    back_insert_iterator& operator*();
-    back_insert_iterator& operator++();
-    back_insert_iterator  operator++(int);
-};
-
-template <class Container> back_insert_iterator<Container> back_inserter(Container& x);
-
-template <class Container>
-class front_insert_iterator
-{
-protected:
-    Container* container;
-public:
-    typedef Container                    container_type;
-    typedef void                         value_type;
-    typedef void                         difference_type;
-    typedef void                         reference;
-    typedef void                         pointer;
-
-    explicit front_insert_iterator(Container& x);
-    front_insert_iterator& operator=(const typename Container::value_type& value);
-    front_insert_iterator& operator*();
-    front_insert_iterator& operator++();
-    front_insert_iterator  operator++(int);
-};
-
-template <class Container> front_insert_iterator<Container> front_inserter(Container& x);
-
-template <class Container>
-class insert_iterator
-{
-protected:
-    Container* container;
-    typename Container::iterator iter;
-public:
-    typedef Container              container_type;
-    typedef void                   value_type;
-    typedef void                   difference_type;
-    typedef void                   reference;
-    typedef void                   pointer;
-
-    insert_iterator(Container& x, typename Container::iterator i);
-    insert_iterator& operator=(const typename Container::value_type& value);
-    insert_iterator& operator*();
-    insert_iterator& operator++();
-    insert_iterator& operator++(int);
-};
-
-template <class Container, class Iterator>
-insert_iterator<Container> inserter(Container& x, Iterator i);
-
-template <class Iterator>
-class move_iterator {
-public:
-    typedef Iterator                                              iterator_type;
-    typedef typename iterator_traits<Iterator>::difference_type   difference_type;
-    typedef Iterator                                              pointer;
-    typedef typename iterator_traits<Iterator>::value_type        value_type;
-    typedef typename iterator_traits<Iterator>::iterator_category iterator_category;
-    typedef value_type&&                                          reference;
-
-    constexpr move_iterator();  // all the constexprs are in C++17
-    constexpr explicit move_iterator(Iterator i);
-    template <class U>
-      constexpr move_iterator(const move_iterator<U>& u);
-    template <class U>
-      constexpr move_iterator& operator=(const move_iterator<U>& u);
-    constexpr iterator_type base() const;
-    constexpr reference operator*() const;
-    constexpr pointer operator->() const;
-    constexpr move_iterator& operator++();
-    constexpr move_iterator operator++(int);
-    constexpr move_iterator& operator--();
-    constexpr move_iterator operator--(int);
-    constexpr move_iterator operator+(difference_type n) const;
-    constexpr move_iterator& operator+=(difference_type n);
-    constexpr move_iterator operator-(difference_type n) const;
-    constexpr move_iterator& operator-=(difference_type n);
-    constexpr unspecified operator[](difference_type n) const;
-private:
-    Iterator current; // exposition only
-};
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator==(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator!=(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator<(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator<=(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator>(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr bool   // constexpr in C++17
-operator>=(const move_iterator<Iterator1>& x, const move_iterator<Iterator2>& y);
-
-template <class Iterator1, class Iterator2>
-constexpr auto   // constexpr in C++17
-operator-(const move_iterator<Iterator1>& x,
-          const move_iterator<Iterator2>& y) -> decltype(x.base() - y.base());
-
-template <class Iterator>
-constexpr move_iterator<Iterator> operator+(   // constexpr in C++17
-            typename move_iterator<Iterator>::difference_type n,
-            const move_iterator<Iterator>& x);
-
-template <class Iterator>   // constexpr in C++17
-constexpr  move_iterator<Iterator> make_move_iterator(const Iterator& i);
-
-
-template <class T, class charT = char, class traits = char_traits<charT>, class Distance = ptrdiff_t>
-class istream_iterator
-    : public iterator<input_iterator_tag, T, Distance, const T*, const T&>
-{
-public:
-    typedef charT char_type;
-    typedef traits traits_type;
-    typedef basic_istream<charT,traits> istream_type;
-
-    constexpr istream_iterator();
-    istream_iterator(istream_type& s);
-    istream_iterator(const istream_iterator& x);
-    ~istream_iterator();
-
-    const T& operator*() const;
-    const T* operator->() const;
-    istream_iterator& operator++();
-    istream_iterator  operator++(int);
-};
-
-template <class T, class charT, class traits, class Distance>
-bool operator==(const istream_iterator<T,charT,traits,Distance>& x,
-                const istream_iterator<T,charT,traits,Distance>& y);
-template <class T, class charT, class traits, class Distance>
-bool operator!=(const istream_iterator<T,charT,traits,Distance>& x,
-                const istream_iterator<T,charT,traits,Distance>& y);
-
-template <class T, class charT = char, class traits = char_traits<charT> >
-class ostream_iterator
-    : public iterator<output_iterator_tag, void, void, void ,void>
-{
-public:
-    typedef charT char_type;
-    typedef traits traits_type;
-    typedef basic_ostream<charT,traits> ostream_type;
-
-    ostream_iterator(ostream_type& s);
-    ostream_iterator(ostream_type& s, const charT* delimiter);
-    ostream_iterator(const ostream_iterator& x);
-    ~ostream_iterator();
-    ostream_iterator& operator=(const T& value);
-
-    ostream_iterator& operator*();
-    ostream_iterator& operator++();
-    ostream_iterator& operator++(int);
-};
-
-template<class charT, class traits = char_traits<charT> >
-class istreambuf_iterator
-    : public iterator<input_iterator_tag, charT,
-                      typename traits::off_type, unspecified,
-                      charT>
-{
-public:
-    typedef charT                         char_type;
-    typedef traits                        traits_type;
-    typedef typename traits::int_type     int_type;
-    typedef basic_streambuf<charT,traits> streambuf_type;
-    typedef basic_istream<charT,traits>   istream_type;
-
-    istreambuf_iterator() noexcept;
-    istreambuf_iterator(istream_type& s) noexcept;
-    istreambuf_iterator(streambuf_type* s) noexcept;
-    istreambuf_iterator(a-private-type) noexcept;
-
-    charT                operator*() const;
-    pointer operator->() const;
-    istreambuf_iterator& operator++();
-    a-private-type       operator++(int);
-
-    bool equal(const istreambuf_iterator& b) const;
-};
-
-template <class charT, class traits>
-bool operator==(const istreambuf_iterator<charT,traits>& a,
-                const istreambuf_iterator<charT,traits>& b);
-template <class charT, class traits>
-bool operator!=(const istreambuf_iterator<charT,traits>& a,
-                const istreambuf_iterator<charT,traits>& b);
-
-template <class charT, class traits = char_traits<charT> >
-class ostreambuf_iterator
-    : public iterator<output_iterator_tag, void, void, void, void>
-{
-public:
-    typedef charT                         char_type;
-    typedef traits                        traits_type;
-    typedef basic_streambuf<charT,traits> streambuf_type;
-    typedef basic_ostream<charT,traits>   ostream_type;
-
-    ostreambuf_iterator(ostream_type& s) noexcept;
-    ostreambuf_iterator(streambuf_type* s) noexcept;
-    ostreambuf_iterator& operator=(charT c);
-    ostreambuf_iterator& operator*();
-    ostreambuf_iterator& operator++();
-    ostreambuf_iterator& operator++(int);
-    bool failed() const noexcept;
-};
-
-template <class C> constexpr auto begin(C& c) -> decltype(c.begin());
-template <class C> constexpr auto begin(const C& c) -> decltype(c.begin());
-template <class C> constexpr auto end(C& c) -> decltype(c.end());
-template <class C> constexpr auto end(const C& c) -> decltype(c.end());
-template <class T, size_t N> constexpr T* begin(T (&array)[N]);
-template <class T, size_t N> constexpr T* end(T (&array)[N]);
-
-template <class C> auto constexpr cbegin(const C& c) -> decltype(std::begin(c));        // C++14
-template <class C> auto constexpr cend(const C& c) -> decltype(std::end(c));            // C++14
-template <class C> auto constexpr rbegin(C& c) -> decltype(c.rbegin());                 // C++14
-template <class C> auto constexpr rbegin(const C& c) -> decltype(c.rbegin());           // C++14
-template <class C> auto constexpr rend(C& c) -> decltype(c.rend());                     // C++14
-template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());               // C++14
-template <class E> reverse_iterator<const E*> constexpr rbegin(initializer_list<E> il); // C++14
-template <class E> reverse_iterator<const E*> constexpr rend(initializer_list<E> il);   // C++14
-template <class T, size_t N> reverse_iterator<T*> constexpr rbegin(T (&array)[N]);      // C++14
-template <class T, size_t N> reverse_iterator<T*> constexpr rend(T (&array)[N]);        // C++14
-template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));      // C++14
-template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));          // C++14
-
-// 24.8, container access:
-template <class C> constexpr auto size(const C& c) -> decltype(c.size());         // C++17
-template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept; // C++17
-
-template <class C> constexpr auto ssize(const C& c)
-    -> common_type_t<ptrdiff_t, make_signed_t<decltype(c.size())>>;				       // C++20
-template <class T, ptrdiff_t> constexpr ptrdiff_t ssize(const T (&array)[N]) noexcept; // C++20
-
-template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());       // C++17
-template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;  // C++17
-template <class E> constexpr bool empty(initializer_list<E> il) noexcept;         // C++17
-template <class C> constexpr auto data(C& c) -> decltype(c.data());               // C++17
-template <class C> constexpr auto data(const C& c) -> decltype(c.data());         // C++17
-template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;           // C++17
-template <class E> constexpr const E* data(initializer_list<E> il) noexcept;      // C++17
-
-}  // std
-
-*/
-
-
-
-
-// -*- C++ -*-
-//===----------------------------------------------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
 #ifndef _LIBCPP_FUNCTIONAL_BASE
 #define _LIBCPP_FUNCTIONAL_BASE
 
@@ -14505,11 +13837,6 @@ struct __invoke_return
 {
     typedef decltype(__invoke(_VSTD::declval<_Tp>(), _VSTD::declval<_Args>()...)) type;
 };
-
-#else // defined(_LIBCPP_CXX03_LANG)
-
-
-
 #endif  // !defined(_LIBCPP_CXX03_LANG)
 
 
@@ -14521,26 +13848,6 @@ struct __invoke_void_return_wrapper
     static _Ret __call(_Args&&... __args) {
         return __invoke(_VSTD::forward<_Args>(__args)...);
     }
-#else
-    template <class _Fn>
-    static _Ret __call(_Fn __f) {
-        return __invoke(__f);
-    }
-
-    template <class _Fn, class _A0>
-    static _Ret __call(_Fn __f, _A0& __a0) {
-        return __invoke(__f, __a0);
-    }
-
-    template <class _Fn, class _A0, class _A1>
-    static _Ret __call(_Fn __f, _A0& __a0, _A1& __a1) {
-        return __invoke(__f, __a0, __a1);
-    }
-
-    template <class _Fn, class _A0, class _A1, class _A2>
-    static _Ret __call(_Fn __f, _A0& __a0, _A1& __a1, _A2& __a2){
-        return __invoke(__f, __a0, __a1, __a2);
-    }
 #endif
 };
 
@@ -14551,26 +13858,6 @@ struct __invoke_void_return_wrapper<void>
     template <class ..._Args>
     static void __call(_Args&&... __args) {
         __invoke(_VSTD::forward<_Args>(__args)...);
-    }
-#else
-    template <class _Fn>
-    static void __call(_Fn __f) {
-        __invoke(__f);
-    }
-
-    template <class _Fn, class _A0>
-    static void __call(_Fn __f, _A0& __a0) {
-        __invoke(__f, __a0);
-    }
-
-    template <class _Fn, class _A0, class _A1>
-    static void __call(_Fn __f, _A0& __a0, _A1& __a1) {
-        __invoke(__f, __a0, __a1);
-    }
-
-    template <class _Fn, class _A0, class _A1, class _A2>
-    static void __call(_Fn __f, _A0& __a0, _A1& __a1, _A2& __a2) {
-        __invoke(__f, __a0, __a1, __a2);
     }
 #endif
 };
@@ -14604,111 +13891,6 @@ public:
     typename __invoke_of<type&, _ArgTypes...>::type
     operator() (_ArgTypes&&... __args) const {
         return __invoke(get(), _VSTD::forward<_ArgTypes>(__args)...);
-    }
-#else
-
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return<type>::type
-    operator() () const {
-        return __invoke(get());
-    }
-
-    template <class _A0>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return0<type, _A0>::type
-    operator() (_A0& __a0) const {
-        return __invoke(get(), __a0);
-    }
-
-    template <class _A0>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return0<type, _A0 const>::type
-    operator() (_A0 const& __a0) const {
-        return __invoke(get(), __a0);
-    }
-
-    template <class _A0, class _A1>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return1<type, _A0, _A1>::type
-    operator() (_A0& __a0, _A1& __a1) const {
-        return __invoke(get(), __a0, __a1);
-    }
-
-    template <class _A0, class _A1>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return1<type, _A0 const, _A1>::type
-    operator() (_A0 const& __a0, _A1& __a1) const {
-        return __invoke(get(), __a0, __a1);
-    }
-
-    template <class _A0, class _A1>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return1<type, _A0, _A1 const>::type
-    operator() (_A0& __a0, _A1 const& __a1) const {
-        return __invoke(get(), __a0, __a1);
-    }
-
-    template <class _A0, class _A1>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return1<type, _A0 const, _A1 const>::type
-    operator() (_A0 const& __a0, _A1 const& __a1) const {
-        return __invoke(get(), __a0, __a1);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0, _A1, _A2>::type
-    operator() (_A0& __a0, _A1& __a1, _A2& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0 const, _A1, _A2>::type
-    operator() (_A0 const& __a0, _A1& __a1, _A2& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0, _A1 const, _A2>::type
-    operator() (_A0& __a0, _A1 const& __a1, _A2& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0, _A1, _A2 const>::type
-    operator() (_A0& __a0, _A1& __a1, _A2 const& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0 const, _A1 const, _A2>::type
-    operator() (_A0 const& __a0, _A1 const& __a1, _A2& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0 const, _A1, _A2 const>::type
-    operator() (_A0 const& __a0, _A1& __a1, _A2 const& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0, _A1 const, _A2 const>::type
-    operator() (_A0& __a0, _A1 const& __a1, _A2 const& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
-    }
-
-    template <class _A0, class _A1, class _A2>
-    _LIBCPP_INLINE_VISIBILITY
-    typename __invoke_return2<type, _A0 const, _A1 const, _A2 const>::type
-    operator() (_A0 const& __a0, _A1 const& __a1, _A2 const& __a2) const {
-        return __invoke(get(), __a0, __a1, __a2);
     }
 #endif // _LIBCPP_CXX03_LANG
 };
@@ -15227,14 +14409,6 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
 auto
 operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
 -> decltype(__y.base() - __x.base())
-{
-    return __y.base() - __x.base();
-}
-#else
-template <class _Iter1, class _Iter2>
-inline _LIBCPP_INLINE_VISIBILITY
-typename reverse_iterator<_Iter1>::difference_type
-operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
 {
     return __y.base() - __x.base();
 }
@@ -18589,10 +17763,6 @@ struct __pointer_traits_element_type<_Sp<_Tp, _Args...>, false>
 {
     typedef _LIBCPP_NODEBUG_TYPE _Tp type;
 };
-
-#else  // _LIBCPP_HAS_NO_VARIADICS
-
-
 #endif  // _LIBCPP_HAS_NO_VARIADICS
 
 template <class _Tp, class = void>
@@ -18642,8 +17812,6 @@ struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, true>
 {
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename _Sp<_Tp, _Args...>::template rebind<_Up> type;
-#else
-    typedef _LIBCPP_NODEBUG_TYPE typename _Sp<_Tp, _Args...>::template rebind<_Up>::other type;
 #endif
 };
 
@@ -18652,77 +17820,6 @@ struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, false>
 {
     typedef _Sp<_Up, _Args...> type;
 };
-
-#else  // _LIBCPP_HAS_NO_VARIADICS
-
-template <template <class> class _Sp, class _Tp, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp>, _Up, true>
-{
-#ifndef _LIBCPP_CXX03_LANG
-    typedef typename _Sp<_Tp>::template rebind<_Up> type;
-#else
-    typedef typename _Sp<_Tp>::template rebind<_Up>::other type;
-#endif
-};
-
-template <template <class> class _Sp, class _Tp, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp>, _Up, false>
-{
-    typedef _Sp<_Up> type;
-};
-
-template <template <class, class> class _Sp, class _Tp, class _A0, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0>, _Up, true>
-{
-#ifndef _LIBCPP_CXX03_LANG
-    typedef typename _Sp<_Tp, _A0>::template rebind<_Up> type;
-#else
-    typedef typename _Sp<_Tp, _A0>::template rebind<_Up>::other type;
-#endif
-};
-
-template <template <class, class> class _Sp, class _Tp, class _A0, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0>, _Up, false>
-{
-    typedef _Sp<_Up, _A0> type;
-};
-
-template <template <class, class, class> class _Sp, class _Tp, class _A0,
-                                         class _A1, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1>, _Up, true>
-{
-#ifndef _LIBCPP_CXX03_LANG
-    typedef typename _Sp<_Tp, _A0, _A1>::template rebind<_Up> type;
-#else
-    typedef typename _Sp<_Tp, _A0, _A1>::template rebind<_Up>::other type;
-#endif
-};
-
-template <template <class, class, class> class _Sp, class _Tp, class _A0,
-                                         class _A1, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1>, _Up, false>
-{
-    typedef _Sp<_Up, _A0, _A1> type;
-};
-
-template <template <class, class, class, class> class _Sp, class _Tp, class _A0,
-                                                class _A1, class _A2, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1, _A2>, _Up, true>
-{
-#ifndef _LIBCPP_CXX03_LANG
-    typedef typename _Sp<_Tp, _A0, _A1, _A2>::template rebind<_Up> type;
-#else
-    typedef typename _Sp<_Tp, _A0, _A1, _A2>::template rebind<_Up>::other type;
-#endif
-};
-
-template <template <class, class, class, class> class _Sp, class _Tp, class _A0,
-                                                class _A1, class _A2, class _Up>
-struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1, _A2>, _Up, false>
-{
-    typedef _Sp<_Up, _A0, _A1, _A2> type;
-};
-
 #endif  // _LIBCPP_HAS_NO_VARIADICS
 
 template <class _Ptr>
@@ -18734,9 +17831,6 @@ struct _LIBCPP_TEMPLATE_VIS pointer_traits
 
 #ifndef _LIBCPP_CXX03_LANG
     template <class _Up> using rebind = typename __pointer_traits_rebind<pointer, _Up>::type;
-#else
-    template <class _Up> struct rebind
-        {typedef typename __pointer_traits_rebind<pointer, _Up>::type other;};
 #endif  // _LIBCPP_CXX03_LANG
 
 private:
@@ -18757,8 +17851,6 @@ struct _LIBCPP_TEMPLATE_VIS pointer_traits<_Tp*>
 
 #ifndef _LIBCPP_CXX03_LANG
     template <class _Up> using rebind = _Up*;
-#else
-    template <class _Up> struct rebind {typedef _Up* other;};
 #endif
 
 private:
@@ -18774,8 +17866,6 @@ template <class _From, class _To>
 struct __rebind_pointer {
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename pointer_traits<_From>::template rebind<_To>        type;
-#else
-    typedef typename pointer_traits<_From>::template rebind<_To>::other type;
 #endif
 };
 
@@ -18852,8 +17942,6 @@ struct __void_pointer<_Ptr, _Alloc, false>
 {
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<void> type;
-#else
-    typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<void>::other type;
 #endif
 };
 
@@ -18875,8 +17963,6 @@ struct __const_void_pointer<_Ptr, _Alloc, false>
 {
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<const void> type;
-#else
-    typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<const void>::other type;
 #endif
 };
 
@@ -18896,40 +17982,6 @@ typename pointer_traits<_Pointer>::element_type*
 __to_raw_pointer(_Pointer __p) _NOEXCEPT
 {
     return _VSTD::__to_raw_pointer(__p.operator->());
-}
-#else
-template <class _Pointer>
-inline _LIBCPP_INLINE_VISIBILITY
-auto
-__to_raw_pointer(const _Pointer& __p) _NOEXCEPT
--> decltype(pointer_traits<_Pointer>::to_address(__p))
-{
-    return pointer_traits<_Pointer>::to_address(__p);
-}
-
-template <class _Pointer, class... _None>
-inline _LIBCPP_INLINE_VISIBILITY
-auto
-__to_raw_pointer(const _Pointer& __p, _None...) _NOEXCEPT
-{
-    return _VSTD::__to_raw_pointer(__p.operator->());
-}
-
-template <class _Tp>
-inline _LIBCPP_INLINE_VISIBILITY constexpr
-_Tp*
-to_address(_Tp* __p) _NOEXCEPT
-{
-    static_assert(!is_function_v<_Tp>, "_Tp is a function type");
-    return __p;
-}
-
-template <class _Pointer>
-inline _LIBCPP_INLINE_VISIBILITY
-auto
-to_address(const _Pointer& __p) _NOEXCEPT
-{
-    return _VSTD::__to_raw_pointer(__p);
 }
 #endif
 
@@ -19068,61 +18120,6 @@ struct __allocator_traits_rebind<_Alloc<_Tp, _Args...>, _Up, false>
 {
     typedef _LIBCPP_NODEBUG_TYPE _Alloc<_Up, _Args...> type;
 };
-
-#else  // _LIBCPP_HAS_NO_VARIADICS
-
-template <template <class> class _Alloc, class _Tp, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp>, _Up, true>
-{
-    typedef typename _Alloc<_Tp>::template rebind<_Up>::other type;
-};
-
-template <template <class> class _Alloc, class _Tp, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp>, _Up, false>
-{
-    typedef _Alloc<_Up> type;
-};
-
-template <template <class, class> class _Alloc, class _Tp, class _A0, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0>, _Up, true>
-{
-    typedef typename _Alloc<_Tp, _A0>::template rebind<_Up>::other type;
-};
-
-template <template <class, class> class _Alloc, class _Tp, class _A0, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0>, _Up, false>
-{
-    typedef _Alloc<_Up, _A0> type;
-};
-
-template <template <class, class, class> class _Alloc, class _Tp, class _A0,
-                                         class _A1, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0, _A1>, _Up, true>
-{
-    typedef typename _Alloc<_Tp, _A0, _A1>::template rebind<_Up>::other type;
-};
-
-template <template <class, class, class> class _Alloc, class _Tp, class _A0,
-                                         class _A1, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0, _A1>, _Up, false>
-{
-    typedef _Alloc<_Up, _A0, _A1> type;
-};
-
-template <template <class, class, class, class> class _Alloc, class _Tp, class _A0,
-                                                class _A1, class _A2, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0, _A1, _A2>, _Up, true>
-{
-    typedef typename _Alloc<_Tp, _A0, _A1, _A2>::template rebind<_Up>::other type;
-};
-
-template <template <class, class, class, class> class _Alloc, class _Tp, class _A0,
-                                                class _A1, class _A2, class _Up>
-struct __allocator_traits_rebind<_Alloc<_Tp, _A0, _A1, _A2>, _Up, false>
-{
-    typedef _Alloc<_Up, _A0, _A1, _A2> type;
-};
-
 #endif  // _LIBCPP_HAS_NO_VARIADICS
 
 #ifndef _LIBCPP_CXX03_LANG
@@ -28308,10 +27305,6 @@ inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __c)
 {
     __init(__n, __c);
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28321,9 +27314,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __
 {
     __init(__n, __c);
 
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28336,10 +27326,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
     if (__pos > __str_sz)
         this->__throw_out_of_range();
     __init(__str.data() + __pos, _VSTD::min(__n, __str_sz - __pos));
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28352,10 +27338,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
     if (__pos > __str_sz)
         this->__throw_out_of_range();
     __init(__str.data() + __pos, __str_sz - __pos);
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28368,21 +27350,8 @@ typename enable_if
 basic_string<_CharT, _Traits, _Allocator>::__init(_InputIterator __first, _InputIterator __last)
 {
     __zero();
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    try
-    {
-#endif  // _LIBCPP_NO_EXCEPTIONS
     for (; __first != __last; ++__first)
         push_back(*__first);
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    }
-    catch (...)
-    {
-        if (__is_long())
-            __alloc_traits::deallocate(__alloc(), __get_long_pointer(), __get_long_cap());
-        throw;
-    }
-#endif  // _LIBCPP_NO_EXCEPTIONS
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28423,9 +27392,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
 {
     __init(__first, __last);
 
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -28437,9 +27403,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
 {
     __init(__first, __last);
 
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 #ifndef _LIBCPP_CXX03_LANG
