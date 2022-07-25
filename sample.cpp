@@ -2,17 +2,6 @@
 #ifndef _LIBCPP_STRING
 #define _LIBCPP_STRING
 
-
-
-// -*- C++ -*-
-//===--------------------------- __config ---------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
 #ifndef _LIBCPP_CONFIG
 #define _LIBCPP_CONFIG
 
@@ -26,14 +15,6 @@
 #define _LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE
 #define _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
-#  endif
 #endif
 
 #ifndef _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
@@ -91,27 +72,6 @@
 #  define _LIBCPP_OBJECT_FORMAT_WASM  1
 #else
 #  error Unknown object file format
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#elif 1 /* evaluated by -frewrite-includes */
-
-#if 0 /* evaluated by -frewrite-includes */
-// Enable compiling copies of now inline methods into the dylib to support
-// applications compiled against older libraries. This is unnecessary with
-// COFF dllexport semantics, since dllexport forces a non-inline definition
-// of inline functions to be emitted anyway. Our own non-inline copy would
-// conflict with the dllexport-emitted copy, so we disable it.
-#    define _LIBCPP_DEPRECATED_ABI_LEGACY_LIBRARY_DEFINITIONS_FOR_INLINE_FUNCTIONS
-#  endif
-// Feature macros for disabling pre ABI v1 features. All of these options
-// are deprecated.
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR
-#  endif
 #endif
 
 #ifdef _LIBCPP_TRIVIAL_PAIR_COPY_CTOR
@@ -247,20 +207,6 @@
 #    define _LIBCPP_BIG_ENDIAN
 #  endif // __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
 #endif // __BYTE_ORDER__
-
-#ifdef __FreeBSD__
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#    define _LIBCPP_LITTLE_ENDIAN
-#  else  // _BYTE_ORDER == _LITTLE_ENDIAN
-#    define _LIBCPP_BIG_ENDIAN
-#  endif  // _BYTE_ORDER == _LITTLE_ENDIAN
-#  ifndef __LONG_LONG_SUPPORTED
-#    define _LIBCPP_HAS_NO_LONG_LONG
-#  endif  // __LONG_LONG_SUPPORTED
-#endif  // __FreeBSD__
-
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -429,38 +375,6 @@
 
 #define _LIBCPP_NORETURN __attribute__((noreturn))
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_NO_EXCEPTIONS
-#endif
-
-// Determine if GCC supports relaxed constexpr
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
-#endif
-
-// GCC 5 supports variable templates
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_NO_ASAN
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS
-#endif
-
 #define _LIBCPP_ALWAYS_INLINE __attribute__ ((__always_inline__))
 
 #define _LIBCPP_DISABLE_EXTENSION_WARNING __extension__
@@ -472,10 +386,6 @@
 #define _LIBCPP_TOSTRING(x) _LIBCPP_TOSTRING2(x)
 #define _LIBCPP_WARNING(x) __pragma(message(__FILE__ "(" _LIBCPP_TOSTRING(__LINE__) ") : warning note: " x))
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#error "MSVC versions prior to Visual Studio 2015 are not supported"
-#endif
 
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
@@ -2103,12 +2013,6 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_ONCE_FLAG_INIT 0
 #define _PDCLIB_TSS_DTOR_ITERATIONS 4
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_ASSERT_H <assert_ext_.h>
-#endif
-
-
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_CTYPE_H <ctype_ext_.h>
 #endif
@@ -2118,61 +2022,9 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_EXTEND_ERRNO_H <errno_ext_.h>
 #endif
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_FLOAT_H <float_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_INTTYPES_H <inttypes_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_ISO646_H <iso646_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_LIMITS_H <limits_ext_.h>
-#endif
-
-
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_LOCALE_H <locale_ext_.h>
 #endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_SIGNAL_H <signal_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDALIGN_H <stdalign_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDARG_H <stdarg_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDBOOL_H <stdbool_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDDEF_H <stddef_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDINT_H <stdint_ext_.h>
-#endif
-
 
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STDIO_H <stdio_ext_.h>
@@ -2183,29 +2035,8 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_EXTEND_STDLIB_H <stdlib_ext_.h>
 #endif
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_STDNORETURN_H <stdnoreturn_ext_.h>
-#endif
-
-
 #if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_EXTEND_STRING_H <string_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_THREADS_H <threads_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_TIME_H <time_ext_.h>
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_EXTEND_WCTYPE_H <wctype_ext_.h>
 #endif
 
 
@@ -2231,19 +2062,8 @@ typedef int _PDCLIB_once_flag;
 
 /* Many a compiler gets this wrong, so you might have to hardcode it instead. */
 
-
-#if 0 /* evaluated by -frewrite-includes */
-#error Compiler does not define _ _STDC_ _ to 1 (not standard-compliant)!
-#endif
-
-
-#if 1 /* evaluated by -frewrite-includes */
 #define _PDCLIB_restrict
 #define _PDCLIB_inline
-#else
-#define _PDCLIB_restrict restrict
-#define _PDCLIB_inline inline
-#endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -2339,10 +2159,6 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_USHRT_MIN 0
 
 
-#if 0 /* evaluated by -frewrite-includes */
-#error Bogus setting: short > int? Check _PDCLIB_config.h.
-#endif
-
 /* Setting 'int' limits                                                       */
 
 #if 0 /* evaluated by -frewrite-includes */
@@ -2354,11 +2170,6 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_INT_MAX   0x7fffffff
 #define _PDCLIB_INT_MIN   (-0x7fffffff - 1)
 #define _PDCLIB_UINT_MAX  0xffffffffU
-
-#elif 0 /* evaluated by -frewrite-includes */
-#define _PDCLIB_INT_MAX   0x7fffffffffffffff
-#define _PDCLIB_INT_MIN   (-0x7fffffffffffffff - 1)
-#define _PDCLIB_UINT_MAX  0xffffffffffffffff
 #else
 #error Unsupported width of 'int' (neither 16, 32, nor 64 bit).
 #endif
@@ -27112,18 +26923,9 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string()
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(const allocator_type& __a)
-
-#if 0 /* evaluated by -frewrite-includes */
-        _NOEXCEPT_(is_nothrow_copy_constructible<allocator_type>::value)
-#else
         _NOEXCEPT
-#endif
 : __r_(__second_tag(), __a)
 {
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
     __zero();
 }
 
@@ -27183,10 +26985,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, const
 {
     _LIBCPP_ASSERT(__s != nullptr, "basic_string(const char*, allocator) detected nullptr");
     __init(__s, traits_type::length(__s));
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -27195,10 +26993,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 {
     _LIBCPP_ASSERT(__n == 0 || __s != nullptr, "basic_string(const char*, n) detected nullptr");
     __init(__s, __n);
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -27208,10 +27002,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 {
     _LIBCPP_ASSERT(__n == 0 || __s != nullptr, "basic_string(const char*, n, allocator) detected nullptr");
     __init(__s, __n);
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -27222,10 +27012,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
         __r_.first().__r = __str.__r_.first().__r;
     else
         __init(_VSTD::__to_raw_pointer(__str.__get_long_pointer()), __str.__get_long_size());
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -27237,10 +27023,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
         __r_.first().__r = __str.__r_.first().__r;
     else
         __init(_VSTD::__to_raw_pointer(__str.__get_long_pointer()), __str.__get_long_size());
-
-#if 0 /* evaluated by -frewrite-includes */
-    __get_db()->__insert_c(this);
-#endif
 }
 
 #ifndef _LIBCPP_CXX03_LANG
