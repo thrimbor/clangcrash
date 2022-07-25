@@ -127,19 +127,9 @@ extern const char _PDCLIB_Xdigits[];
 
               unsigned int _PDCLIB_filemode( const char * mode );
 
-              int _PDCLIB_prepread( struct _PDCLIB_file_t * stream );
-
-              int _PDCLIB_prepwrite( struct _PDCLIB_file_t * stream );
-
               void _PDCLIB_closeall( void );
 
               int _PDCLIB_is_leap( int year_offset );
-
-              char * _PDCLIB_load_lines( struct _PDCLIB_file_t * stream, _PDCLIB_size_t lines );
-
-              int _PDCLIB_getstream( struct _PDCLIB_file_t * stream );
-
-              void _PDCLIB_setstream( struct _PDCLIB_file_t * stream );
 
               char * _PDCLIB_strtok( char * s1, _PDCLIB_size_t * s1max, const char * s2, char ** ptr );
                int * _PDCLIB_errno_func( void );
@@ -3398,65 +3388,20 @@ template<class _Tp> class allocator;
 template <class _CharT, class _Traits = char_traits<_CharT> >
     class basic_ios;
 
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_streambuf;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_istream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_ostream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_iostream;
-
 template <class _CharT, class _Traits = char_traits<_CharT>,
           class _Allocator = allocator<_CharT> >
     class basic_stringbuf;
-template <class _CharT, class _Traits = char_traits<_CharT>,
-          class _Allocator = allocator<_CharT> >
-    class basic_istringstream;
-template <class _CharT, class _Traits = char_traits<_CharT>,
-          class _Allocator = allocator<_CharT> >
-    class basic_ostringstream;
-template <class _CharT, class _Traits = char_traits<_CharT>,
-          class _Allocator = allocator<_CharT> >
-    class basic_stringstream;
 
 template <class _CharT, class _Traits = char_traits<_CharT> >
     class basic_filebuf;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_ifstream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_ofstream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class basic_fstream;
-
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class istreambuf_iterator;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-    class ostreambuf_iterator;
-
 typedef basic_ios<char> ios;
 
-typedef basic_streambuf<char> streambuf;
-typedef basic_istream<char> istream;
-typedef basic_ostream<char> ostream;
-typedef basic_iostream<char> iostream;
-
 typedef basic_stringbuf<char> stringbuf;
-typedef basic_istringstream<char> istringstream;
-typedef basic_ostringstream<char> ostringstream;
-typedef basic_stringstream<char> stringstream;
 
 typedef basic_filebuf<char> filebuf;
-typedef basic_ifstream<char> ifstream;
-typedef basic_ofstream<char> ofstream;
-typedef basic_fstream<char> fstream;
 
 template <class _State> class fpos;
 typedef fpos<mbstate_t> streampos;
-typedef fpos<mbstate_t> wstreampos;
-
-typedef fpos<mbstate_t> u16streampos;
-typedef fpos<mbstate_t> u32streampos;
 
 typedef long long streamoff;
 
@@ -4546,20 +4491,6 @@ extern FILE * stderr;
 
                int rename( const char * oldpath, const char * newpath );
 
-               int fclose( FILE * stream );
-
-               int fflush( FILE * stream );
-
-               FILE * fopen( const char * filename, const char * mode );
-
-               FILE * freopen( const char * filename, const char * mode, FILE * stream );
-
-               void setbuf( FILE * stream, char * buf );
-
-               int setvbuf( FILE * stream, char * buf, int mode, size_t size );
-
-               int fprintf( FILE * stream, const char * format, ... );
-
                int printf( const char * format, ... );
 
                int scanf( const char * format, ... );
@@ -4570,10 +4501,6 @@ extern FILE * stderr;
 
                int sscanf( const char * s, const char * format, ... );
 
-               int vfprintf( FILE * stream, const char * format, _PDCLIB_va_list arg );
-
-               int vfscanf( FILE * stream, const char * format, _PDCLIB_va_list arg );
-
                int vprintf( const char * format, _PDCLIB_va_list arg );
 
                int vscanf( const char * format, _PDCLIB_va_list arg );
@@ -4581,12 +4508,6 @@ extern FILE * stderr;
                int vsnprintf( char * s, size_t n, const char * format, _PDCLIB_va_list arg );
 
                int vsprintf( char * s, const char * format, _PDCLIB_va_list arg );
-
-               void clearerr( FILE * stream );
-
-               int feof( FILE * stream );
-
-               int ferror( FILE * stream );
 
                void perror( const char * s );
 }
@@ -4596,25 +4517,12 @@ using ::FILE;
 using ::fpos_t;
 using ::size_t;
 
-using ::fclose;
-using ::fflush;
-using ::setbuf;
-using ::setvbuf;
-using ::fprintf;
 using ::snprintf;
 using ::sprintf;
 using ::sscanf;
-using ::vfprintf;
-using ::vfscanf;
 using ::vsnprintf;
 using ::vsprintf;
-using ::clearerr;
-using ::feof;
-using ::ferror;
 using ::perror;
-
-using ::fopen;
-using ::freopen;
 using ::remove;
 using ::rename;
 
@@ -7163,325 +7071,6 @@ inserter(_Container& __x, typename _Container::iterator __i)
     return insert_iterator<_Container>(__x, __i);
 }
 
-template <class _Tp, class _CharT = char,
-          class _Traits = char_traits<_CharT>, class _Distance = ptrdiff_t>
-class istream_iterator
-    : public iterator<input_iterator_tag, _Tp, _Distance, const _Tp*, const _Tp&>
-{
-public:
-    typedef _CharT char_type;
-    typedef _Traits traits_type;
-    typedef basic_istream<_CharT,_Traits> istream_type;
-private:
-    istream_type* __in_stream_;
-    _Tp __value_;
-public:
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr istream_iterator() : __in_stream_(0), __value_() {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istream_iterator(istream_type& __s) : __in_stream_(std::__1::addressof(__s))
-        {
-            if (!(*__in_stream_ >> __value_))
-                __in_stream_ = 0;
-        }
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) const _Tp& operator*() const {return __value_;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) const _Tp* operator->() const {return std::__1::addressof((operator*()));}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istream_iterator& operator++()
-        {
-            if (!(*__in_stream_ >> __value_))
-                __in_stream_ = 0;
-            return *this;
-        }
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istream_iterator operator++(int)
-        {istream_iterator __t(*this); ++(*this); return __t;}
-
-    template <class _Up, class _CharU, class _TraitsU, class _DistanceU>
-    friend __attribute__ ((__exclude_from_explicit_instantiation__))
-    bool
-    operator==(const istream_iterator<_Up, _CharU, _TraitsU, _DistanceU>& __x,
-               const istream_iterator<_Up, _CharU, _TraitsU, _DistanceU>& __y);
-
-    template <class _Up, class _CharU, class _TraitsU, class _DistanceU>
-    friend __attribute__ ((__exclude_from_explicit_instantiation__))
-    bool
-    operator==(const istream_iterator<_Up, _CharU, _TraitsU, _DistanceU>& __x,
-               const istream_iterator<_Up, _CharU, _TraitsU, _DistanceU>& __y);
-};
-
-template <class _Tp, class _CharT, class _Traits, class _Distance>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-bool
-operator==(const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __x,
-           const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __y)
-{
-    return __x.__in_stream_ == __y.__in_stream_;
-}
-
-template <class _Tp, class _CharT, class _Traits, class _Distance>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-bool
-operator!=(const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __x,
-           const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __y)
-{
-    return !(__x == __y);
-}
-
-template <class _Tp, class _CharT = char, class _Traits = char_traits<_CharT> >
-class ostream_iterator
-    : public iterator<output_iterator_tag, void, void, void, void>
-{
-public:
-    typedef _CharT char_type;
-    typedef _Traits traits_type;
-    typedef basic_ostream<_CharT,_Traits> ostream_type;
-private:
-    ostream_type* __out_stream_;
-    const char_type* __delim_;
-public:
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator(ostream_type& __s) noexcept
-        : __out_stream_(std::__1::addressof(__s)), __delim_(0) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator(ostream_type& __s, const _CharT* __delimiter) noexcept
-        : __out_stream_(std::__1::addressof(__s)), __delim_(__delimiter) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator& operator=(const _Tp& __value_)
-        {
-            *__out_stream_ << __value_;
-            if (__delim_)
-                *__out_stream_ << __delim_;
-            return *this;
-        }
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator& operator*() {return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator& operator++() {return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostream_iterator& operator++(int) {return *this;}
-};
-
-template<class _CharT, class _Traits>
-class istreambuf_iterator
-    : public iterator<input_iterator_tag, _CharT,
-                      typename _Traits::off_type, _CharT*,
-                      _CharT>
-{
-public:
-    typedef _CharT char_type;
-    typedef _Traits traits_type;
-    typedef typename _Traits::int_type int_type;
-    typedef basic_streambuf<_CharT,_Traits> streambuf_type;
-    typedef basic_istream<_CharT,_Traits> istream_type;
-private:
-    mutable streambuf_type* __sbuf_;
-
-    class __proxy
-    {
-        char_type __keep_;
-        streambuf_type* __sbuf_;
-        __attribute__ ((__exclude_from_explicit_instantiation__)) __proxy(char_type __c, streambuf_type* __s)
-            : __keep_(__c), __sbuf_(__s) {}
-        friend class istreambuf_iterator;
-    public:
-        __attribute__ ((__exclude_from_explicit_instantiation__)) char_type operator*() const {return __keep_;}
-    };
-
-    __attribute__ ((__exclude_from_explicit_instantiation__))
-    bool __test_for_eof() const
-    {
-        if (__sbuf_ && traits_type::eq_int_type(__sbuf_->sgetc(), traits_type::eof()))
-            __sbuf_ = 0;
-        return __sbuf_ == 0;
-    }
-public:
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr istreambuf_iterator() noexcept : __sbuf_(0) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istreambuf_iterator(istream_type& __s) noexcept
-        : __sbuf_(__s.rdbuf()) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istreambuf_iterator(streambuf_type* __s) noexcept
-        : __sbuf_(__s) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istreambuf_iterator(const __proxy& __p) noexcept
-        : __sbuf_(__p.__sbuf_) {}
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) char_type operator*() const
-        {return static_cast<char_type>(__sbuf_->sgetc());}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) istreambuf_iterator& operator++()
-        {
-            __sbuf_->sbumpc();
-            return *this;
-        }
-    __attribute__ ((__exclude_from_explicit_instantiation__)) __proxy operator++(int)
-        {
-            return __proxy(__sbuf_->sbumpc(), __sbuf_);
-        }
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) bool equal(const istreambuf_iterator& __b) const
-        {return __test_for_eof() == __b.__test_for_eof();}
-};
-
-template <class _CharT, class _Traits>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-bool operator==(const istreambuf_iterator<_CharT,_Traits>& __a,
-                const istreambuf_iterator<_CharT,_Traits>& __b)
-                {return __a.equal(__b);}
-
-template <class _CharT, class _Traits>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-bool operator!=(const istreambuf_iterator<_CharT,_Traits>& __a,
-                const istreambuf_iterator<_CharT,_Traits>& __b)
-                {return !__a.equal(__b);}
-
-template <class _CharT, class _Traits>
-class ostreambuf_iterator
-    : public iterator<output_iterator_tag, void, void, void, void>
-{
-public:
-    typedef _CharT char_type;
-    typedef _Traits traits_type;
-    typedef basic_streambuf<_CharT,_Traits> streambuf_type;
-    typedef basic_ostream<_CharT,_Traits> ostream_type;
-private:
-    streambuf_type* __sbuf_;
-public:
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator(ostream_type& __s) noexcept
-        : __sbuf_(__s.rdbuf()) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator(streambuf_type* __s) noexcept
-        : __sbuf_(__s) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator& operator=(_CharT __c)
-        {
-            if (__sbuf_ && traits_type::eq_int_type(__sbuf_->sputc(__c), traits_type::eof()))
-                __sbuf_ = 0;
-            return *this;
-        }
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator& operator*() {return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator& operator++() {return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) ostreambuf_iterator& operator++(int) {return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) bool failed() const noexcept {return __sbuf_ == 0;}
-
-    template <class _Ch, class _Tr>
-    friend
-
-    ostreambuf_iterator<_Ch, _Tr>
-    __pad_and_output(ostreambuf_iterator<_Ch, _Tr> __s,
-                     const _Ch* __ob, const _Ch* __op, const _Ch* __oe,
-                     ios_base& __iob, _Ch __fl);
-};
-
-template <class _Iter>
-class move_iterator
-{
-private:
-    _Iter __i;
-public:
-    typedef _Iter iterator_type;
-    typedef typename iterator_traits<iterator_type>::iterator_category iterator_category;
-    typedef typename iterator_traits<iterator_type>::value_type value_type;
-    typedef typename iterator_traits<iterator_type>::difference_type difference_type;
-    typedef iterator_type pointer;
-
-    typedef typename iterator_traits<iterator_type>::reference __reference;
-    typedef typename conditional<
-            is_reference<__reference>::value,
-            typename remove_reference<__reference>::type&&,
-            __reference
-        >::type reference;
-
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator() : __i() {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    explicit move_iterator(_Iter __x) : __i(__x) {}
-    template <class _Up>
-      __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-      move_iterator(const move_iterator<_Up>& __u) : __i(__u.base()) {}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr _Iter base() const {return __i;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reference operator*() const { return static_cast<reference>(*__i); }
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    pointer operator->() const { return __i;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator& operator++() {++__i; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator operator++(int) {move_iterator __tmp(*this); ++__i; return __tmp;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator& operator--() {--__i; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator operator--(int) {move_iterator __tmp(*this); --__i; return __tmp;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator operator+ (difference_type __n) const {return move_iterator(__i + __n);}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator& operator+=(difference_type __n) {__i += __n; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator operator- (difference_type __n) const {return move_iterator(__i - __n);}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    move_iterator& operator-=(difference_type __n) {__i -= __n; return *this;}
-    __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-    reference operator[](difference_type __n) const { return static_cast<reference>(__i[__n]); }
-};
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator==(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() == __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator<(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() < __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator!=(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() != __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator>(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() > __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator>=(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() >= __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-bool
-operator<=(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
-{
-    return __x.base() <= __y.base();
-}
-
-template <class _Iter1, class _Iter2>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-auto
-operator-(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
--> decltype(__x.base() - __y.base())
-{
-    return __x.base() - __y.base();
-}
-template <class _Iter>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-move_iterator<_Iter>
-operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
-{
-    return move_iterator<_Iter>(__x.base() + __n);
-}
-
-template <class _Iter>
-inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
-move_iterator<_Iter>
-make_move_iterator(_Iter __i)
-{
-    return move_iterator<_Iter>(__i);
-}
 
 template <class _Iter> class __wrap_iter;
 
@@ -7722,10 +7311,6 @@ operator+(typename __wrap_iter<_Iter>::difference_type __n,
 template <class _Iter>
 struct __libcpp_is_trivial_iterator
     : public bool_constant<(is_pointer<_Iter>::value)> {};
-
-template <class _Iter>
-struct __libcpp_is_trivial_iterator<move_iterator<_Iter> >
-    : public bool_constant<(__libcpp_is_trivial_iterator<_Iter>::value)> {};
 
 template <class _Iter>
 struct __libcpp_is_trivial_iterator<reverse_iterator<_Iter> >
@@ -12979,11 +12564,6 @@ struct hash<shared_ptr<_Tp> >
     }
 };
 
-template<class _CharT, class _Traits, class _Yp>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-basic_ostream<_CharT, _Traits>&
-operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p);
-
 class __sp_mut
 {
     void* __lx;
@@ -15517,17 +15097,6 @@ __unwrap_iter(_Iter __i)
     return __i;
 }
 
-template <class _Tp>
-inline __attribute__ ((__exclude_from_explicit_instantiation__))
-typename enable_if
-<
-    is_trivially_copy_assignable<_Tp>::value,
-    _Tp*
->::type
-__unwrap_iter(move_iterator<_Tp*> __i)
-{
-    return __i.base();
-}
 
 template <class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
