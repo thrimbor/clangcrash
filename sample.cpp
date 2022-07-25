@@ -1,7 +1,3 @@
-# 1 "<built-in>"
-# 1 "register_xbox.cpp"
-# 1 "register_xbox.cpp"
-# 1 "nxdk-dxt/lib/libcxx/include/string" 1
 
 #ifndef _LIBCPP_STRING
 #define _LIBCPP_STRING
@@ -10,8 +6,6 @@
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 503 "nxdk-dxt/lib/libcxx/include/string"
-# 1 "nxdk-dxt/lib/libcxx/include/__config" 1
 // -*- C++ -*-
 //===--------------------------- __config ---------------------------------===//
 //
@@ -25,7 +19,6 @@
 #define _LIBCPP_CONFIG
 
 #if 1 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__config"
 #define _LIBCPP_NO_AUTO_LINK
 #define _LIBCPP_NO_EXCEPTIONS
 #define _LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS
@@ -36,33 +29,26 @@
 #define _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
-# 24 "nxdk-dxt/lib/libcxx/include/__config"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_MSC_VER) && !defined(__clang__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__config"
 #if 0 /* disabled by -frewrite-includes */
 #  if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/libcxx/include/__config"
 #    define _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
 #  endif
-# 29 "nxdk-dxt/lib/libcxx/include/__config"
 #endif
-# 30 "nxdk-dxt/lib/libcxx/include/__config"
 
 #ifndef _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 33 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __cplusplus
 
@@ -72,23 +58,19 @@
 // introduced in GCC 5.0.
 #  define _GNUC_VER_NEW (_GNUC_VER * 10 + __GNUC_PATCHLEVEL__)
 #else
-# 43 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _GNUC_VER 0
 #  define _GNUC_VER_NEW 0
 #endif
-# 46 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_VERSION 10000
 
 #ifndef _LIBCPP_ABI_VERSION
 #  define _LIBCPP_ABI_VERSION 1
 #endif
-# 52 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __STDC_HOSTED__
 #  define _LIBCPP_FREESTANDING
 #endif
-# 56 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_STD_VER
 #if 0 /* disabled by -frewrite-includes */
@@ -96,7 +78,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 59 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_STD_VER 11
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -104,7 +85,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 61 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_STD_VER 14
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -112,22 +92,17 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_STD_VER 17
 #  else
-# 65 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_STD_VER 18  // current year, or date of c++2a ratification
 #  endif
-# 67 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif  // _LIBCPP_STD_VER
-# 68 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__ELF__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 70 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_OBJECT_FORMAT_ELF   1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -135,7 +110,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 72 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_OBJECT_FORMAT_MACHO 1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -143,7 +117,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 74 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_OBJECT_FORMAT_COFF  1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -151,29 +124,23 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 76 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_OBJECT_FORMAT_WASM  1
 #else
-# 78 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  error Unknown object file format
 #endif
-# 80 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_UNSTABLE) || _LIBCPP_ABI_VERSION >= 2
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 82 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #elif 1 /* evaluated by -frewrite-includes */
-# 118 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if !defined(_LIBCPP_OBJECT_FORMAT_COFF)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 119 "nxdk-dxt/lib/libcxx/include/__config" 3
 // Enable compiling copies of now inline methods into the dylib to support
 // applications compiled against older libraries. This is unnecessary with
 // COFF dllexport semantics, since dllexport forces a non-inline definition
@@ -181,7 +148,6 @@
 // conflict with the dllexport-emitted copy, so we disable it.
 #    define _LIBCPP_DEPRECATED_ABI_LEGACY_LIBRARY_DEFINITIONS_FOR_INLINE_FUNCTIONS
 #  endif
-# 126 "nxdk-dxt/lib/libcxx/include/__config" 3
 // Feature macros for disabling pre ABI v1 features. All of these options
 // are deprecated.
 #if 0 /* disabled by -frewrite-includes */
@@ -189,18 +155,14 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 129 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR
 #  endif
-# 131 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 132 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_TRIVIAL_PAIR_COPY_CTOR
 #error "_LIBCPP_TRIVIAL_PAIR_COPY_CTOR" is no longer supported. \
        use _LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR instead
 #endif
-# 137 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_CONCAT1(_LIBCPP_X,_LIBCPP_Y) _LIBCPP_X##_LIBCPP_Y
 #define _LIBCPP_CONCAT(_LIBCPP_X,_LIBCPP_Y) _LIBCPP_CONCAT1(_LIBCPP_X,_LIBCPP_Y)
@@ -208,80 +170,66 @@
 #ifndef _LIBCPP_ABI_NAMESPACE
 # define _LIBCPP_ABI_NAMESPACE _LIBCPP_CONCAT(__,_LIBCPP_ABI_VERSION)
 #endif
-# 144 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __cplusplus < 201103L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 146 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_CXX03_LANG
 #endif
-# 148 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_attribute
 #define __has_attribute(__x) 0
 #endif
-# 152 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_builtin
 #define __has_builtin(__x) 0
 #endif
-# 156 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_extension
 #define __has_extension(__x) 0
 #endif
-# 160 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_feature
 #define __has_feature(__x) 0
 #endif
-# 164 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_cpp_attribute
 #define __has_cpp_attribute(__x) 0
 #endif
-# 168 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // '__is_identifier' returns '0' if '__x' is a reserved identifier provided by
 // the compiler and '1' otherwise.
 #ifndef __is_identifier
 #define __is_identifier(__x) 1
 #endif
-# 174 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __has_declspec_attribute
 #define __has_declspec_attribute(__x) 0
 #endif
-# 178 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define __has_keyword(__x) !(__is_identifier(__x))
 
 #ifndef __has_include
 #define __has_include(...) 0
 #endif
-# 184 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__clang__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 186 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_COMPILER_CLANG
 #  ifndef __apple_build_version__
 #    define _LIBCPP_CLANG_VER (__clang_major__ * 100 + __clang_minor__)
 #  endif
-# 190 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #if 0
 #elif defined(__GNUC__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 191 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_COMPILER_GCC
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -289,7 +237,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 193 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_COMPILER_MSVC
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -297,20 +244,16 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 195 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_COMPILER_IBM
 #endif
-# 197 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_COMPILER_GCC) && __cplusplus < 201103L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 199 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error "libc++ does not support using GCC with C++03. Please enable C++11"
 #endif
-# 201 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // FIXME: ABI detection should be done via compiler builtin macros. This
 // is just a placeholder until Clang implements such macros. For now assume
@@ -322,7 +265,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 208 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  error "Only one of _LIBCPP_ABI_FORCE_ITANIUM and _LIBCPP_ABI_FORCE_MICROSOFT can be defined"
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -330,7 +272,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 210 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_ABI_ITANIUM
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -338,34 +279,26 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 212 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_ABI_MICROSOFT
 #else
-# 214 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_WIN32) && defined(_MSC_VER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 215 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_ABI_MICROSOFT
 #  else
-# 217 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_ABI_ITANIUM
 #  endif
-# 219 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 220 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_MICROSOFT) && !defined(_LIBCPP_NO_VCRUNTIME)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 222 "nxdk-dxt/lib/libcxx/include/__config" 3
 # define _LIBCPP_ABI_VCRUNTIME
 #endif
-# 224 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Need to detect which libc we're using if we're on Linux.
 #if 0 /* disabled by -frewrite-includes */
@@ -373,26 +306,19 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 227 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* expanded by -frewrite-includes */
 #  include <features.h>
 #endif /* expanded by -frewrite-includes */
-# 227 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 228 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__GLIBC_PREREQ)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 229 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_GLIBC_PREREQ(a, b) __GLIBC_PREREQ(a, b)
 #  else
-# 231 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_GLIBC_PREREQ(a, b) 0
 #  endif // defined(__GLIBC_PREREQ)
-# 233 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // defined(__linux__)
-# 234 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __LITTLE_ENDIAN__
 #if 0 /* disabled by -frewrite-includes */
@@ -400,12 +326,9 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 237 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_LITTLE_ENDIAN
 #  endif  // __LITTLE_ENDIAN__
-# 239 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif  // __LITTLE_ENDIAN__
-# 240 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __BIG_ENDIAN__
 #if 0 /* disabled by -frewrite-includes */
@@ -413,12 +336,9 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 243 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_BIG_ENDIAN
 #  endif  // __BIG_ENDIAN__
-# 245 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif  // __BIG_ENDIAN__
-# 246 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __BYTE_ORDER__
 #if 0 /* disabled by -frewrite-includes */
@@ -426,7 +346,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 249 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_LITTLE_ENDIAN
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -434,46 +353,34 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 251 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_BIG_ENDIAN
 #  endif // __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
-# 253 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // __BYTE_ORDER__
-# 254 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __FreeBSD__
 #if 0 /* expanded by -frewrite-includes */
 #  include <sys/endian.h>
 #endif /* expanded by -frewrite-includes */
-# 256 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 257 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if _BYTE_ORDER == _LITTLE_ENDIAN
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 258 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_LITTLE_ENDIAN
 #  else  // _BYTE_ORDER == _LITTLE_ENDIAN
-# 260 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_BIG_ENDIAN
 #  endif  // _BYTE_ORDER == _LITTLE_ENDIAN
-# 262 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  ifndef __LONG_LONG_SUPPORTED
 #    define _LIBCPP_HAS_NO_LONG_LONG
 #  endif  // __LONG_LONG_SUPPORTED
-# 265 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif  // __FreeBSD__
-# 266 "nxdk-dxt/lib/libcxx/include/__config" 3
 
-# 276 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_WIN32)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 278 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_WIN32API
 #  define _LIBCPP_LITTLE_ENDIAN
 #  define _LIBCPP_SHORT_WCHAR   1
@@ -486,29 +393,23 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 286 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_MSVCRT // Using Microsoft's C Runtime library
 #  endif
-# 288 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if (defined(_M_AMD64) || defined(__x86_64__)) || (defined(_M_ARM) || defined(__arm__))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 289 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_BITSCAN64
 #  endif
-# 291 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_OPEN_WITH_WCHAR
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_LIBCPP_MSVCRT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 293 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_QUICK_EXIT
 #  endif
-# 295 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Some CRT APIs are unavailable to store apps
 #if 0 /* disabled by -frewrite-includes */
@@ -516,12 +417,9 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 298 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* expanded by -frewrite-includes */
 #    include <winapifamily.h>
 #endif /* expanded by -frewrite-includes */
-# 298 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 299 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #    if !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) &&                  \
         (!defined(WINAPI_PARTITION_SYSTEM) ||                                  \
@@ -529,37 +427,27 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 302 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      define _LIBCPP_WINDOWS_STORE_APP
 #    endif
-# 304 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  endif
-# 305 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // defined(_WIN32)
-# 306 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __sun__
 #if 0 /* expanded by -frewrite-includes */
 #  include <sys/isa_defs.h>
 #endif /* expanded by -frewrite-includes */
-# 308 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 309 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  ifdef _LITTLE_ENDIAN
 #    define _LIBCPP_LITTLE_ENDIAN
 #  else
-# 312 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_BIG_ENDIAN
 #  endif
-# 314 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // __sun__
-# 315 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__CloudABI__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 317 "nxdk-dxt/lib/libcxx/include/__config" 3
    // Certain architectures provide arc4random(). Prefer using
    // arc4random() over /dev/{u,}random to make it possible to obtain
    // random data even when using sandboxing mechanisms such as chroots,
@@ -571,7 +459,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 323 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_USING_GETENTROPY
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -579,7 +466,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 325 "nxdk-dxt/lib/libcxx/include/__config" 3
    // NaCl's sandbox (which PNaCl also runs in) doesn't allow filesystem access,
    // including accesses to the special files under /dev. C++11's
    // std::random_device is instead exposed through a NaCl syscall.
@@ -590,31 +476,24 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 330 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_USING_WIN32_RANDOM
 #else
-# 332 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_USING_DEV_RANDOM
 #endif
-# 334 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_LITTLE_ENDIAN) && !defined(_LIBCPP_BIG_ENDIAN)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 336 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* expanded by -frewrite-includes */
 #  include <endian.h>
 #endif /* expanded by -frewrite-includes */
-# 336 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 337 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if __BYTE_ORDER == __LITTLE_ENDIAN
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 338 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_LITTLE_ENDIAN
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -622,41 +501,32 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 340 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_BIG_ENDIAN
 #  else  // __BYTE_ORDER == __BIG_ENDIAN
-# 342 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    error unable to determine endian
 #  endif
-# 344 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif  // !defined(_LIBCPP_LITTLE_ENDIAN) && !defined(_LIBCPP_BIG_ENDIAN)
-# 345 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(__no_sanitize__) && !defined(_LIBCPP_COMPILER_GCC)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 347 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NO_CFI __attribute__((__no_sanitize__("cfi")))
 #else
-# 349 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NO_CFI
 #endif
-# 351 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __ISO_C_VISIBLE >= 2011 || __cplusplus >= 201103L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 353 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__FreeBSD__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 354 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_QUICK_EXIT
 #    define _LIBCPP_HAS_C11_FEATURES
 #if 0 /* disabled by -frewrite-includes */
@@ -665,7 +535,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 357 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_QUICK_EXIT
 #    define _LIBCPP_HAS_TIMESPEC_GET
 #    define _LIBCPP_HAS_C11_FEATURES
@@ -675,43 +544,33 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 361 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #    if !defined(_LIBCPP_HAS_MUSL_LIBC)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 362 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #      if _LIBCPP_GLIBC_PREREQ(2, 15) || defined(__BIONIC__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 363 "nxdk-dxt/lib/libcxx/include/__config" 3
 #        define _LIBCPP_HAS_QUICK_EXIT
 #      endif
-# 365 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #      if _LIBCPP_GLIBC_PREREQ(2, 17)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 366 "nxdk-dxt/lib/libcxx/include/__config" 3
 #        define _LIBCPP_HAS_C11_FEATURES
 #        define _LIBCPP_HAS_TIMESPEC_GET
 #      endif
-# 369 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    else // defined(_LIBCPP_HAS_MUSL_LIBC)
-# 370 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      define _LIBCPP_HAS_QUICK_EXIT
 #      define _LIBCPP_HAS_TIMESPEC_GET
 #      define _LIBCPP_HAS_C11_FEATURES
 #    endif
-# 374 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  endif // __linux__
-# 375 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 376 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 # define _LIBCPP_ALIGNOF(_Tp) alignof(_Tp)
@@ -721,15 +580,12 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 380 "nxdk-dxt/lib/libcxx/include/__config" 3
 # define _LIBCPP_ALIGNOF(_Tp) _Alignof(_Tp)
 #else
-# 382 "nxdk-dxt/lib/libcxx/include/__config" 3
 // This definition is potentially buggy, but it's only taken with GCC in C++03,
 // which we barely support anyway. See llvm.org/PR39713
 # define _LIBCPP_ALIGNOF(_Tp) __alignof(_Tp)
 #endif
-# 386 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_PREFERRED_ALIGNOF(_Tp) __alignof(_Tp)
 
@@ -738,7 +594,6 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 390 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // _LIBCPP_ALTERNATE_STRING_LAYOUT is an old name for
 // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT left here for backward compatibility.
@@ -749,140 +604,111 @@
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 396 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
 #endif
-# 398 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(cxx_alignas)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 400 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _ALIGNAS_TYPE(x) alignas(x)
 #  define _ALIGNAS(x) alignas(x)
 #else
-# 403 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _ALIGNAS_TYPE(x) __attribute__((__aligned__(_LIBCPP_ALIGNOF(x))))
 #  define _ALIGNAS(x) __attribute__((__aligned__(x)))
 #endif
-# 406 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __cplusplus < 201103L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 408 "nxdk-dxt/lib/libcxx/include/__config" 3
 typedef __char16_t char16_t;
 typedef __char32_t char32_t;
 #endif
-# 411 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_exceptions)) && !defined(_LIBCPP_NO_EXCEPTIONS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 413 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NO_EXCEPTIONS
 #endif
-# 415 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_rtti)) && !defined(_LIBCPP_NO_RTTI)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 417 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NO_RTTI
 #endif
-# 419 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_strong_enums))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 421 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_STRONG_ENUMS
 #endif
-# 423 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(cxx_attributes)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 425 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NORETURN [[noreturn]]
 #else
-# 427 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NORETURN __attribute__ ((noreturn))
 #endif
-# 429 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_lambdas))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 431 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_LAMBDAS
 #endif
-# 433 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_nullptr))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 435 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if (__has_extension(cxx_nullptr) || __has_keyword(__nullptr)) && defined(_LIBCPP_ABI_ALWAYS_USE_CXX11_NULLPTR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 436 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define nullptr __nullptr
 #  else
-# 438 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_NO_NULLPTR
 #  endif
-# 440 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 441 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_rvalue_references))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 443 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_RVALUE_REFERENCES
 #endif
-# 445 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_auto_type))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 447 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_AUTO_TYPE
 #endif
-# 449 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_variadic_templates))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 451 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_VARIADICS
 #endif
-# 453 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Objective-C++ features (opt-in)
 #if 0 /* disabled by -frewrite-includes */
@@ -890,60 +716,48 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 456 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_OBJC_ARC
 #endif
-# 458 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(objc_arc_weak)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 460 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_OBJC_ARC_WEAK
 #endif
-# 462 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_relaxed_constexpr))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 464 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #endif
-# 466 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_variable_templates))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 468 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
 #endif
-# 470 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !(__has_feature(cxx_noexcept))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 472 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_NOEXCEPT
 #endif
-# 474 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_ASAN) && !__has_feature(address_sanitizer)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 476 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_ASAN
 #endif
-# 478 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Allow for build-time disabling of unsigned integer sanitization
 #if 0 /* disabled by -frewrite-includes */
@@ -951,30 +765,24 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 481 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK __attribute__((__no_sanitize__("unsigned-integer-overflow")))
 #endif
-# 483 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_builtin(__builtin_launder)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 485 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
-# 487 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__is_identifier(__has_unique_object_representations)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 489 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS
 #endif
-# 491 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_ALWAYS_INLINE __attribute__ ((__always_inline__))
 
@@ -985,10 +793,8 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 497 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_CXX20_CHRONO_LITERALS
 #endif
-# 499 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_DISABLE_EXTENSION_WARNING __extension__
 
@@ -998,7 +804,6 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 503 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _ALIGNAS(x) __attribute__((__aligned__(x)))
 #define _ALIGNAS_TYPE(x) __attribute__((__aligned__(_LIBCPP_ALIGNOF(x))))
@@ -1010,10 +815,8 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 510 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NO_EXCEPTIONS
 #endif
-# 512 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Determine if GCC supports relaxed constexpr
 #if 0 /* disabled by -frewrite-includes */
@@ -1021,10 +824,8 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 515 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #endif
-# 517 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // GCC 5 supports variable templates
 #if 0 /* disabled by -frewrite-includes */
@@ -1032,40 +833,32 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 520 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
 #endif
-# 522 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_ASAN) && !defined(__SANITIZE_ADDRESS__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 524 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_ASAN
 #endif
-# 526 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _GNUC_VER >= 700
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 528 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
 #endif
-# 530 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _GNUC_VER >= 700
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 532 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_UNIQUE_OBJECT_REPRESENTATIONS
 #endif
-# 534 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_ALWAYS_INLINE __attribute__ ((__always_inline__))
 
@@ -1077,7 +870,6 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 540 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_TOSTRING2(x) #x
 #define _LIBCPP_TOSTRING(x) _LIBCPP_TOSTRING2(x)
@@ -1088,10 +880,8 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 546 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error "MSVC versions prior to Visual Studio 2015 are not supported"
 #endif
-# 548 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_HAS_NO_CXX14_CONSTEXPR
 #define _LIBCPP_HAS_NO_VARIABLE_TEMPLATES
@@ -1116,7 +906,6 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 567 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _ALIGNAS(x) __attribute__((__aligned__(x)))
 #define _ALIGNAS_TYPE(x) __attribute__((__aligned__(_LIBCPP_ALIGNOF(x))))
@@ -1131,10 +920,8 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 577 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define __MULTILOCALE_API
 #endif
-# 579 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_HAS_NO_ASAN
 
@@ -1145,29 +932,24 @@ typedef __char32_t char32_t;
 #define _LIBCPP_DISABLE_EXTENSION_WARNING
 
 #endif // _LIBCPP_COMPILER_[CLANG|GCC|MSVC|IBM]
-# 589 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_OBJECT_FORMAT_COFF)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 591 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _DLL
 #  define _LIBCPP_CRT_FUNC __declspec(dllimport)
 #else
-# 595 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CRT_FUNC
 #endif
-# 597 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 599 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DLL_VIS
 #  define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
 #  define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
@@ -1179,33 +961,27 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 605 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DLL_VIS __declspec(dllexport)
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__MINGW32__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 607 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS _LIBCPP_DLL_VIS
 #    define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #  else
-# 610 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
 #    define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS _LIBCPP_DLL_VIS
 #  endif
-# 613 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_DLL_VIS
 #  define _LIBCPP_EXPORTED_FROM_ABI __declspec(dllexport)
 #else
-# 616 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DLL_VIS __declspec(dllimport)
 #  define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS _LIBCPP_DLL_VIS
 #  define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #  define _LIBCPP_OVERRIDABLE_FUNC_VIS
 #  define _LIBCPP_EXPORTED_FROM_ABI __declspec(dllimport)
 #endif
-# 622 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_TYPE_VIS            _LIBCPP_DLL_VIS
 #define _LIBCPP_FUNC_VIS            _LIBCPP_DLL_VIS
@@ -1216,7 +992,6 @@ typedef __char32_t char32_t;
 #define _LIBCPP_ENUM_VIS
 
 #endif // defined(_LIBCPP_OBJECT_FORMAT_COFF)
-# 632 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HIDDEN
 #if 0 /* disabled by -frewrite-includes */
@@ -1224,15 +999,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 635 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDDEN __attribute__ ((__visibility__("hidden")))
 #  else
-# 637 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDDEN
 #  endif
-# 639 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 640 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1240,16 +1011,12 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 643 "nxdk-dxt/lib/libcxx/include/__config" 3
 // The inline should be removed once PR32114 is resolved
 #    define _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS inline _LIBCPP_HIDDEN
 #  else
-# 646 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
 #  endif
-# 648 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 649 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_FUNC_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1257,15 +1024,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 652 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_FUNC_VIS __attribute__ ((__visibility__("default")))
 #  else
-# 654 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_FUNC_VIS
 #  endif
-# 656 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 657 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_TYPE_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1273,15 +1036,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 660 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_TYPE_VIS __attribute__ ((__visibility__("default")))
 #  else
-# 662 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_TYPE_VIS
 #  endif
-# 664 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 665 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_TEMPLATE_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1289,26 +1048,19 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 668 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #    if __has_attribute(__type_visibility__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 669 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      define _LIBCPP_TEMPLATE_VIS __attribute__ ((__type_visibility__("default")))
 #    else
-# 671 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      define _LIBCPP_TEMPLATE_VIS __attribute__ ((__visibility__("default")))
 #    endif
-# 673 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  else
-# 674 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_TEMPLATE_VIS
 #  endif
-# 676 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 677 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_EXPORTED_FROM_ABI
 #if 0 /* disabled by -frewrite-includes */
@@ -1316,20 +1068,15 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 680 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXPORTED_FROM_ABI __attribute__((__visibility__("default")))
 #  else
-# 682 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXPORTED_FROM_ABI
 #  endif
-# 684 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 685 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_OVERRIDABLE_FUNC_VIS
 #define _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_FUNC_VIS
 #endif
-# 689 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_EXCEPTION_ABI
 #if 0 /* disabled by -frewrite-includes */
@@ -1337,15 +1084,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 692 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXCEPTION_ABI __attribute__ ((__visibility__("default")))
 #  else
-# 694 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXCEPTION_ABI
 #  endif
-# 696 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 697 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_ENUM_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1353,15 +1096,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 700 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_ENUM_VIS __attribute__ ((__type_visibility__("default")))
 #  else
-# 702 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_ENUM_VIS
 #  endif
-# 704 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 705 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
 #if 0 /* disabled by -frewrite-includes */
@@ -1369,73 +1108,56 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 708 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS __attribute__ ((__visibility__("default")))
 #  else
-# 710 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS
 #  endif
-# 712 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 713 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #define _LIBCPP_CLASS_TEMPLATE_INSTANTIATION_VIS
 #endif
-# 717 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(internal_linkage)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 719 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_INTERNAL_LINKAGE __attribute__ ((internal_linkage))
 #else
-# 721 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_INTERNAL_LINKAGE _LIBCPP_ALWAYS_INLINE
 #endif
-# 723 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(exclude_from_explicit_instantiation)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 725 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXCLUDE_FROM_EXPLICIT_INSTANTIATION __attribute__ ((__exclude_from_explicit_instantiation__))
 #else
-# 727 "nxdk-dxt/lib/libcxx/include/__config" 3
    // Try to approximate the effect of exclude_from_explicit_instantiation
    // (which is that entities are not assumed to be provided by explicit
    // template instantiations in the dylib) by always inlining those entities.
 #  define _LIBCPP_EXCLUDE_FROM_EXPLICIT_INSTANTIATION _LIBCPP_ALWAYS_INLINE
 #endif
-# 732 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HIDE_FROM_ABI_PER_TU
 #  ifndef _LIBCPP_HIDE_FROM_ABI_PER_TU_BY_DEFAULT
 #    define _LIBCPP_HIDE_FROM_ABI_PER_TU 0
 #  else
-# 737 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDE_FROM_ABI_PER_TU 1
 #  endif
-# 739 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 740 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT
 # ifdef _LIBCPP_OBJECT_FORMAT_COFF // Windows binaries can't merge typeinfos.
 # define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
 #else
-# 745 "nxdk-dxt/lib/libcxx/include/__config" 3
 // TODO: This isn't strictly correct on ELF platforms due to llvm.org/PR37398
 // And we should consider defaulting to OFF.
 # define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 1
 #endif
-# 749 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 750 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HIDE_FROM_ABI
 #if 0 /* disabled by -frewrite-includes */
@@ -1443,15 +1165,11 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 753 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDE_FROM_ABI _LIBCPP_HIDDEN _LIBCPP_INTERNAL_LINKAGE
 #  else
-# 755 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDE_FROM_ABI _LIBCPP_HIDDEN _LIBCPP_EXCLUDE_FROM_EXPLICIT_INSTANTIATION
 #  endif
-# 757 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 758 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_BUILDING_LIBRARY
 #if 0 /* disabled by -frewrite-includes */
@@ -1459,18 +1177,13 @@ typedef __char32_t char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 761 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDE_FROM_ABI_AFTER_V1 _LIBCPP_HIDE_FROM_ABI
 #  else
-# 763 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HIDE_FROM_ABI_AFTER_V1
 #  endif
-# 765 "nxdk-dxt/lib/libcxx/include/__config" 3
 #else
-# 766 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HIDE_FROM_ABI_AFTER_V1 _LIBCPP_HIDE_FROM_ABI
 #endif
-# 768 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Just so we can migrate to the new macros gradually.
 #define _LIBCPP_INLINE_VISIBILITY _LIBCPP_HIDE_FROM_ABI
@@ -1486,15 +1199,12 @@ _LIBCPP_BEGIN_NAMESPACE_STD _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 779 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_BEGIN_NAMESPACE_FILESYSTEM \
   _LIBCPP_BEGIN_NAMESPACE_STD inline namespace __fs { namespace filesystem {
 #else
-# 782 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_BEGIN_NAMESPACE_FILESYSTEM \
   _LIBCPP_BEGIN_NAMESPACE_STD namespace __fs { namespace filesystem {
 #endif
-# 785 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_END_NAMESPACE_FILESYSTEM \
   _LIBCPP_END_NAMESPACE_STD } }
@@ -1507,71 +1217,55 @@ _LIBCPP_BEGIN_NAMESPACE_STD _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 793 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_PREFERRED_OVERLOAD __attribute__ ((__enable_if__(true, "")))
 #  endif
-# 795 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 796 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HAS_NO_NOEXCEPT
 #  define _NOEXCEPT noexcept
 #  define _NOEXCEPT_(x) noexcept(x)
 #else
-# 801 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _NOEXCEPT throw()
 #  define _NOEXCEPT_(x)
 #endif
-# 804 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_HAS_NO_UNICODE_CHARS
 typedef unsigned short char16_t;
 typedef unsigned int   char32_t;
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
-# 809 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef __SIZEOF_INT128__
 #define _LIBCPP_HAS_NO_INT128
 #endif
-# 813 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_CXX03_LANG
 # define static_assert(...) _Static_assert(__VA_ARGS__)
 # define decltype(...) __decltype(__VA_ARGS__)
 #endif  // _LIBCPP_CXX03_LANG
-# 818 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_CXX03_LANG
 #  define _LIBCPP_CONSTEXPR
 #else
-# 822 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR constexpr
 #endif
-# 824 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_CXX03_LANG
 #  define _LIBCPP_DEFAULT {}
 #else
-# 828 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEFAULT = default;
 #endif
-# 830 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_CXX03_LANG
 #  define _LIBCPP_EQUAL_DELETE
 #else
-# 834 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EQUAL_DELETE = delete
 #endif
-# 836 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __GNUC__
 #  define _LIBCPP_NOALIAS __attribute__((__malloc__))
 #else
-# 840 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NOALIAS
 #endif
-# 842 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(cxx_explicit_conversions) || defined(__IBMCPP__) || \
@@ -1579,23 +1273,18 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 845 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXPLICIT explicit
 #else
-# 847 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXPLICIT
 #endif
-# 849 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__has_builtin(__builtin_operator_new) || !__has_builtin(__builtin_operator_delete)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 851 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
 #endif
-# 853 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_HAS_NO_STRONG_ENUMS
 #  define _LIBCPP_DECLARE_STRONG_ENUM(x) struct _LIBCPP_TYPE_VIS x { enum __lx
@@ -1606,11 +1295,9 @@ typedef unsigned int   char32_t;
      _LIBCPP_INLINE_VISIBILITY operator int() const {return __v_;} \
      };
 #else  // _LIBCPP_HAS_NO_STRONG_ENUMS
-# 863 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DECLARE_STRONG_ENUM(x) enum class _LIBCPP_ENUM_VIS x
 #  define _LIBCPP_DECLARE_STRONG_ENUM_EPILOG(x)
 #endif  // _LIBCPP_HAS_NO_STRONG_ENUMS
-# 866 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_DEBUG
 #if 0 /* disabled by -frewrite-includes */
@@ -1618,7 +1305,6 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 869 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEBUG_LEVEL 1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -1626,40 +1312,31 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 871 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEBUG_LEVEL 2
 #  else
-# 873 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    error Supported values for _LIBCPP_DEBUG are 0 and 1
 #  endif
-# 875 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if !defined(_LIBCPP_BUILDING_LIBRARY)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 876 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_EXTERN_TEMPLATE(...)
 #  endif
-# 878 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 879 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_DISABLE_EXTERN_TEMPLATE
 #define _LIBCPP_EXTERN_TEMPLATE(...)
 #define _LIBCPP_EXTERN_TEMPLATE2(...)
 #endif
-# 884 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_EXTERN_TEMPLATE
 #define _LIBCPP_EXTERN_TEMPLATE(...) extern template __VA_ARGS__;
 #endif
-# 888 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_EXTERN_TEMPLATE2
 #define _LIBCPP_EXTERN_TEMPLATE2(...) extern template __VA_ARGS__;
 #endif
-# 892 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__APPLE__) || defined(__FreeBSD__) || defined(_LIBCPP_MSVCRT_LIKE) || \
@@ -1667,37 +1344,29 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 895 "nxdk-dxt/lib/libcxx/include/__config" 3
 #ifndef NXDK
 #define _LIBCPP_LOCALE__L_EXTENSIONS 1
 #endif
-# 898 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 899 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__unix__) || (defined(__APPLE__) && defined(__MACH__))
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 901 "nxdk-dxt/lib/libcxx/include/__config" 3
 // Most unix variants have catopen.  These are the specific ones that don't.
 #if 0 /* disabled by -frewrite-includes */
 #  if !defined(__BIONIC__) && !defined(_NEWLIB_VERSION)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 903 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_CATOPEN 1
 #  endif
-# 905 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 906 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef __FreeBSD__
 #define _DECLARE_C99_LDBL_MATH 1
 #endif
-# 910 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // If we are getting operator new from the MSVC CRT, then allocation overloads
 // for align_val_t were added in 19.12, aka VS 2017 version 15.3.
@@ -1706,7 +1375,6 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 914 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -1714,31 +1382,25 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 916 "nxdk-dxt/lib/libcxx/include/__config" 3
    // We're deferring to Microsoft's STL to provide aligned new et al. We don't
    // have it unless the language feature test macro is defined.
 #  define _LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION
 #endif
-# 920 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__APPLE__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 922 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if !defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && \
       defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 924 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define __MAC_OS_X_VERSION_MIN_REQUIRED __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__
 #  endif
-# 926 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // defined(__APPLE__)
-# 927 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_ALIGNED_ALLOCATION) && \
@@ -1747,40 +1409,32 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 931 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_NO_ALIGNED_ALLOCATION
 #endif
-# 933 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__APPLE__) || defined(__FreeBSD__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 935 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_DEFAULTRUNELOCALE
 #endif
-# 937 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__APPLE__) || defined(__FreeBSD__) || defined(__sun__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 939 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_WCTYPE_IS_MASK
 #endif
-# 941 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 17 || !defined(__cpp_char8_t)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 943 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NO_HAS_CHAR8_T
 #endif
-# 945 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Deprecation macros.
 //
@@ -1791,13 +1445,11 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 951 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if __has_attribute(deprecated)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 952 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -1805,109 +1457,83 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 954 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEPRECATED [[deprecated]]
 #  else
-# 956 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_DEPRECATED
 #  endif
-# 958 "nxdk-dxt/lib/libcxx/include/__config" 3
 #else
-# 959 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED
 #endif
-# 961 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_CXX03_LANG)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 963 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
 #else
-# 965 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX11
 #endif
-# 967 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER >= 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 969 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
 #else
-# 971 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX14
 #endif
-# 973 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER >= 17
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 975 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
 #else
-# 977 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DEPRECATED_IN_CXX17
 #endif
-# 979 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 981 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXPLICIT_AFTER_CXX11
 #else
-# 983 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXPLICIT_AFTER_CXX11 explicit
 #endif
-# 985 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 987 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX11 constexpr
 #else
-# 989 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX11
 #endif
-# 991 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 993 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX14 constexpr
 #else
-# 995 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX14
 #endif
-# 997 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 17 && !defined(_LIBCPP_HAS_NO_CXX14_CONSTEXPR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 999 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX17 constexpr
 #else
-# 1001 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_CONSTEXPR_AFTER_CXX17
 #endif
-# 1003 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // The _LIBCPP_NODISCARD_ATTRIBUTE should only be used to define other
 // NODISCARD macros to the correct attribute.
@@ -1916,7 +1542,6 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1007 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_ATTRIBUTE [[nodiscard]]
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -1924,16 +1549,13 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1009 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_ATTRIBUTE [[clang::warn_unused_result]]
 #else
-# 1011 "nxdk-dxt/lib/libcxx/include/__config" 3
 // We can't use GCC's [[gnu::warn_unused_result]] and
 // __attribute__((warn_unused_result)), because GCC does not silence them via
 // (void) cast.
 #  define _LIBCPP_NODISCARD_ATTRIBUTE
 #endif
-# 1016 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // _LIBCPP_NODISCARD_EXT may be used to apply [[nodiscard]] to entities not
 // specified as such as an extension.
@@ -1942,13 +1564,10 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1020 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_EXT _LIBCPP_NODISCARD_ATTRIBUTE
 #else
-# 1022 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_EXT
 #endif
-# 1024 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_DISABLE_NODISCARD_AFTER_CXX17) && \
@@ -1956,34 +1575,26 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1027 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_NODISCARD_ATTRIBUTE
 #else
-# 1029 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NODISCARD_AFTER_CXX17
 #endif
-# 1031 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && defined(__cpp_inline_variables) && (__cpp_inline_variables >= 201606L)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1033 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_INLINE_VAR inline
 #else
-# 1035 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_INLINE_VAR
 #endif
-# 1037 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifdef _LIBCPP_HAS_NO_RVALUE_REFERENCES
 #  define _LIBCPP_EXPLICIT_MOVE(x) _VSTD::move(x)
 #else
-# 1041 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_EXPLICIT_MOVE(x) (x)
 #endif
-# 1043 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_CONSTEXPR_IF_NODEBUG
 #if 0 /* disabled by -frewrite-includes */
@@ -1991,34 +1602,26 @@ typedef unsigned int   char32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1046 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_CONSTEXPR_IF_NODEBUG
 #else
-# 1048 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_CONSTEXPR_IF_NODEBUG constexpr
 #endif
-# 1050 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1051 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(no_destroy)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1053 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NO_DESTROY __attribute__((__no_destroy__))
 #else
-# 1055 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_NO_DESTROY
 #endif
-# 1057 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_HAS_NO_ASAN
 _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
   const void *, const void *, const void *, const void *);
 #endif
-# 1062 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Try to find out if RTTI is disabled.
 // g++ and cl.exe have RTTI on by default and define a macro when it is.
@@ -2028,7 +1631,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1067 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__GNUC__) && \
       ((__GNUC__ >= 5) || \
@@ -2037,7 +1639,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1071 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_NO_RTTI
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2045,17 +1646,13 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1073 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_NO_RTTI
 #  endif
-# 1075 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1076 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_WEAK
 #define _LIBCPP_WEAK __attribute__((__weak__))
 #endif
-# 1080 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Thread API
 #if 0 /* disabled by -frewrite-includes */
@@ -2066,7 +1663,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1086 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__FreeBSD__) || \
       defined(__Fuchsia__) || \
@@ -2081,7 +1677,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1096 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_THREAD_API_PTHREAD
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2089,28 +1684,22 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 1098 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_THREAD_API_WIN32
 #  else
-# 1100 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    error "No thread API"
 #  endif // _LIBCPP_HAS_THREAD_API
-# 1102 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // _LIBCPP_HAS_NO_THREADS
-# 1103 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_THREAD_API_PTHREAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1105 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__ANDROID__) && __ANDROID_API__ >= 30
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1106 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_COND_CLOCKWAIT
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2118,73 +1707,58 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1108 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_GLIBC_PREREQ(2, 30)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1109 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_COND_CLOCKWAIT
 #endif
-# 1111 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1112 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1113 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_THREADS) && defined(_LIBCPP_HAS_THREAD_API_PTHREAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1115 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error _LIBCPP_HAS_THREAD_API_PTHREAD may only be defined when \
        _LIBCPP_HAS_NO_THREADS is not defined.
 #endif
-# 1118 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_THREADS) && defined(_LIBCPP_HAS_THREAD_API_EXTERNAL)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1120 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error _LIBCPP_HAS_THREAD_API_EXTERNAL may not be defined when \
        _LIBCPP_HAS_NO_THREADS is defined.
 #endif
-# 1123 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_MONOTONIC_CLOCK) && !defined(_LIBCPP_HAS_NO_THREADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1125 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error _LIBCPP_HAS_NO_MONOTONIC_CLOCK may only be defined when \
        _LIBCPP_HAS_NO_THREADS is defined.
 #endif
-# 1128 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__STDCPP_THREADS__) && defined(_LIBCPP_HAS_NO_THREADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1130 "nxdk-dxt/lib/libcxx/include/__config" 3
 #error _LIBCPP_HAS_NO_THREADS cannot be set when __STDCPP_THREADS__ is set.
 #endif
-# 1132 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_THREADS) && !defined(__STDCPP_THREADS__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1134 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define __STDCPP_THREADS__ 1
 #endif
-# 1136 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // The glibc and Bionic implementation of pthreads implements
 // pthread_mutex_destroy as nop for regular mutexes. Additionally, Win32
@@ -2202,10 +1776,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1149 "nxdk-dxt/lib/libcxx/include/__config" 3
 # define _LIBCPP_HAS_TRIVIAL_MUTEX_DESTRUCTION
 #endif
-# 1151 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Destroying a condvar is a nop on Windows.
 //
@@ -2220,10 +1792,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1161 "nxdk-dxt/lib/libcxx/include/__config" 3
 # define _LIBCPP_HAS_TRIVIAL_CONDVAR_DESTRUCTION
 #endif
-# 1163 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Systems that use capability-based security (FreeBSD with Capsicum,
 // Nuxi CloudABI) may only provide local filesystem access (using *at()).
@@ -2232,7 +1802,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #ifdef __CloudABI__
 #define _LIBCPP_HAS_NO_GLOBAL_FILESYSTEM_NAMESPACE
 #endif
-# 1171 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // CloudABI is intended for running networked services. Processes do not
 // have standard input and output channels.
@@ -2240,7 +1809,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_HAS_NO_STDIN
 #define _LIBCPP_HAS_NO_STDOUT
 #endif
-# 1178 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Some systems do not provide gets() in their C library, for security reasons.
 #ifndef _LIBCPP_C_HAS_NO_GETS
@@ -2249,12 +1817,9 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1182 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_C_HAS_NO_GETS
 #  endif
-# 1184 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1185 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__BIONIC__) || defined(__CloudABI__) || defined(NXDK) ||           \
@@ -2262,24 +1827,20 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1188 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE
 #endif
-# 1190 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Thread-unsafe functions such as strtok() and localtime()
 // are not available.
 #ifdef __CloudABI__
 #define _LIBCPP_HAS_NO_THREAD_UNSAFE_C_FUNCTIONS
 #endif
-# 1196 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(cxx_atomic) || __has_extension(c_atomic) || __has_keyword(_Atomic)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1198 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_C_ATOMIC_IMP
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2287,10 +1848,8 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1200 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_GCC_ATOMIC_IMP
 #endif
-# 1202 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if (!defined(_LIBCPP_HAS_C_ATOMIC_IMP) && \
@@ -2300,38 +1859,30 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1207 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_HAS_NO_ATOMIC_HEADER
 #else
-# 1209 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  ifndef _LIBCPP_ATOMIC_FLAG_TYPE
 #    define _LIBCPP_ATOMIC_FLAG_TYPE bool
 #  endif
-# 1212 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  ifdef _LIBCPP_FREESTANDING
 #    define _LIBCPP_ATOMIC_ONLY_USE_BUILTINS
 #  endif
-# 1215 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1216 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK
 #define _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK
 #endif
-# 1220 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1222 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(__clang__) && __has_attribute(acquire_capability)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1223 "nxdk-dxt/lib/libcxx/include/__config" 3
 // Work around the attribute handling in clang.  When both __declspec and
 // __attribute__ are present, the processing goes awry preventing the definition
 // of the types.
@@ -2340,82 +1891,64 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1227 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      define _LIBCPP_HAS_THREAD_SAFETY_ANNOTATIONS
 #    endif
-# 1229 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  endif
-# 1230 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1231 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(require_constant_initialization)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1233 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_SAFE_STATIC __attribute__((__require_constant_initialization__))
 #else
-# 1235 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_SAFE_STATIC
 #endif
-# 1237 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__has_builtin(__builtin_addressof) && _GNUC_VER < 700
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1239 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
 #endif
-# 1241 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__has_builtin(__builtin_is_constant_evaluated) && _GNUC_VER < 900
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1243 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_BUILTIN_IS_CONSTANT_EVALUATED
 #endif
-# 1245 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_OFF_T_FUNCTIONS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1247 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_LIBCPP_MSVCRT) || defined(_NEWLIB_VERSION)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1248 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_HAS_NO_OFF_T_FUNCTIONS
 #  endif
-# 1250 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1251 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(diagnose_if) && !defined(_LIBCPP_DISABLE_ADDITIONAL_DIAGNOSTICS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1253 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DIAGNOSE_WARNING(...) \
      __attribute__((diagnose_if(__VA_ARGS__, "warning")))
 #  define _LIBCPP_DIAGNOSE_ERROR(...) \
      __attribute__((diagnose_if(__VA_ARGS__, "error")))
 #else
-# 1258 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DIAGNOSE_WARNING(...)
 #  define _LIBCPP_DIAGNOSE_ERROR(...)
 #endif
-# 1261 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Use a function like macro to imply that it must be followed by a semicolon
 #if 0 /* disabled by -frewrite-includes */
@@ -2423,7 +1956,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1264 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FALLTHROUGH() [[fallthrough]]
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2431,7 +1963,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1266 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FALLTHROUGH() [[clang::fallthrough]]
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -2439,26 +1970,20 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1268 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FALLTHROUGH() __attribute__((__fallthrough__))
 #else
-# 1270 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FALLTHROUGH() ((void)0)
 #endif
-# 1272 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_attribute(__nodebug__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1274 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NODEBUG __attribute__((__nodebug__))
 #else
-# 1276 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NODEBUG
 #endif
-# 1278 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_NODEBUG_TYPE
 #if 0 /* disabled by -frewrite-includes */
@@ -2467,15 +1992,11 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1282 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NODEBUG_TYPE __attribute__((nodebug))
 #else
-# 1284 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_NODEBUG_TYPE
 #endif
-# 1286 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // !defined(_LIBCPP_NODEBUG_TYPE)
-# 1287 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_MICROSOFT) && \
@@ -2483,56 +2004,45 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1290 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DECLSPEC_EMPTY_BASES __declspec(empty_bases)
 #else
-# 1292 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DECLSPEC_EMPTY_BASES
 #endif
-# 1294 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1296 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR
 #define _LIBCPP_ENABLE_CXX17_REMOVED_UNEXPECTED_FUNCTIONS
 #define _LIBCPP_ENABLE_CXX17_REMOVED_RANDOM_SHUFFLE
 #define _LIBCPP_ENABLE_CXX17_REMOVED_BINDERS
 #endif // _LIBCPP_ENABLE_CXX17_REMOVED_FEATURES
-# 1301 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(__cpp_deduction_guides) || __cpp_deduction_guides < 201611
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1303 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_DEDUCTION_GUIDES
 #endif
-# 1305 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__has_keyword(__is_aggregate) && (_GNUC_VER_NEW < 7001)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1307 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_IS_AGGREGATE
 #endif
-# 1309 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(__cpp_coroutines) || __cpp_coroutines < 201703L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1311 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_COROUTINES
 #endif
-# 1313 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // FIXME: Correct this macro when either (A) a feature test macro for the
 // spaceship operator is provided, or (B) a compiler provides a complete
@@ -2549,13 +2059,10 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1325 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  ifdef __APPLE__
 #    define _LIBCPP_USE_AVAILABILITY_APPLE
 #  endif
-# 1328 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif
-# 1329 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Define availability macros.
 #if 0 /* disabled by -frewrite-includes */
@@ -2563,7 +2070,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1332 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_AVAILABILITY_SHARED_MUTEX                                    \
      __attribute__((availability(macosx,strict,introduced=10.12)))             \
      __attribute__((availability(ios,strict,introduced=10.0)))                 \
@@ -2615,7 +2121,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
      _Pragma("clang attribute pop")                                            \
      _Pragma("clang attribute pop")
 #else
-# 1383 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_AVAILABILITY_SHARED_MUTEX
 #  define _LIBCPP_AVAILABILITY_BAD_VARIANT_ACCESS
 #  define _LIBCPP_AVAILABILITY_BAD_OPTIONAL_ACCESS
@@ -2630,7 +2135,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #  define _LIBCPP_AVAILABILITY_FILESYSTEM_PUSH
 #  define _LIBCPP_AVAILABILITY_FILESYSTEM_POP
 #endif
-# 1397 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // Define availability that depends on _LIBCPP_NO_EXCEPTIONS.
 #ifdef _LIBCPP_NO_EXCEPTIONS
@@ -2639,13 +2143,11 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #  define _LIBCPP_AVAILABILITY_THROW_BAD_OPTIONAL_ACCESS
 #  define _LIBCPP_AVAILABILITY_THROW_BAD_VARIANT_ACCESS
 #else
-# 1405 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_AVAILABILITY_FUTURE                    _LIBCPP_AVAILABILITY_FUTURE_ERROR
 #  define _LIBCPP_AVAILABILITY_THROW_BAD_ANY_CAST        _LIBCPP_AVAILABILITY_BAD_ANY_CAST
 #  define _LIBCPP_AVAILABILITY_THROW_BAD_OPTIONAL_ACCESS _LIBCPP_AVAILABILITY_BAD_OPTIONAL_ACCESS
 #  define _LIBCPP_AVAILABILITY_THROW_BAD_VARIANT_ACCESS  _LIBCPP_AVAILABILITY_BAD_VARIANT_ACCESS
 #endif
-# 1410 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 // The stream API was dropped and re-added in the dylib shipped on macOS
 // and iOS. We can only assume the dylib to provide these definitions for
@@ -2663,43 +2165,35 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1423 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_DO_NOT_ASSUME_STREAMS_EXPLICIT_INSTANTIATION_IN_DYLIB
 #endif
-# 1425 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_COMPILER_IBM)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1427 "nxdk-dxt/lib/libcxx/include/__config" 3
 #define _LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO
 #endif
-# 1429 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1431 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_PUSH_MACROS
 #  define _LIBCPP_POP_MACROS
 #else
-# 1434 "nxdk-dxt/lib/libcxx/include/__config" 3
   // Don't warn about macro conflicts when we can restore them at the
   // end of the header.
 #  ifndef _LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS
 #    define _LIBCPP_DISABLE_MACRO_CONFLICT_WARNINGS
 #  endif
-# 1439 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_LIBCPP_COMPILER_MSVC)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1440 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_PUSH_MACROS    \
        __pragma(push_macro("min")) \
        __pragma(push_macro("max"))
@@ -2707,7 +2201,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
        __pragma(pop_macro("min"))  \
        __pragma(pop_macro("max"))
 #  else
-# 1447 "nxdk-dxt/lib/libcxx/include/__config" 3
 #    define _LIBCPP_PUSH_MACROS        \
        _Pragma("push_macro(\"min\")")  \
        _Pragma("push_macro(\"max\")")
@@ -2715,9 +2208,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
        _Pragma("pop_macro(\"min\")")   \
        _Pragma("pop_macro(\"max\")")
 #  endif
-# 1454 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // defined(_LIBCPP_HAS_NO_PRAGMA_PUSH_POP_MACRO)
-# 1455 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #ifndef _LIBCPP_NO_AUTO_LINK
 #if 0 /* disabled by -frewrite-includes */
@@ -2725,23 +2216,17 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1458 "nxdk-dxt/lib/libcxx/include/__config" 3
 #if 0 /* disabled by -frewrite-includes */
 #    if defined(_DLL)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1459 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      pragma comment(lib, "c++.lib")
 #    else
-# 1461 "nxdk-dxt/lib/libcxx/include/__config" 3
 #      pragma comment(lib, "libc++.lib")
 #    endif
-# 1463 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  endif // defined(_LIBCPP_ABI_MICROSOFT) && !defined(_LIBCPP_BUILDING_LIBRARY)
-# 1464 "nxdk-dxt/lib/libcxx/include/__config" 3
 #endif // _LIBCPP_NO_AUTO_LINK
-# 1465 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #define _LIBCPP_UNUSED_VAR(x) ((void)(x))
 
@@ -2755,25 +2240,17 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1474 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FOPEN_CLOEXEC_MODE "e"
 #else
-# 1476 "nxdk-dxt/lib/libcxx/include/__config" 3
 #  define _LIBCPP_FOPEN_CLOEXEC_MODE
 #endif
-# 1478 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #endif // __cplusplus
-# 1480 "nxdk-dxt/lib/libcxx/include/__config" 3
 
 #endif // _LIBCPP_CONFIG
-# 1482 "nxdk-dxt/lib/libcxx/include/__config" 3
-# 504 "nxdk-dxt/lib/libcxx/include/string" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <string_view>
 #endif /* expanded by -frewrite-includes */
-# 504 "nxdk-dxt/lib/libcxx/include/string"
-# 1 "nxdk-dxt/lib/libcxx/include/string_view" 1
 // -*- C++ -*-
 //===------------------------ string_view ---------------------------------===//
 //
@@ -2786,177 +2263,12 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #ifndef _LIBCPP_STRING_VIEW
 #define _LIBCPP_STRING_VIEW
 
-/*
-string_view synopsis
-
-namespace std {
-
-    // 7.2, Class template basic_string_view
-    template<class charT, class traits = char_traits<charT>>
-        class basic_string_view;
-
-    // 7.9, basic_string_view non-member comparison functions
-    template<class charT, class traits>
-    constexpr bool operator==(basic_string_view<charT, traits> x,
-                              basic_string_view<charT, traits> y) noexcept;
-    template<class charT, class traits>
-    constexpr bool operator!=(basic_string_view<charT, traits> x,
-                              basic_string_view<charT, traits> y) noexcept;
-    template<class charT, class traits>
-    constexpr bool operator< (basic_string_view<charT, traits> x,
-                                 basic_string_view<charT, traits> y) noexcept;
-    template<class charT, class traits>
-    constexpr bool operator> (basic_string_view<charT, traits> x,
-                              basic_string_view<charT, traits> y) noexcept;
-    template<class charT, class traits>
-    constexpr bool operator<=(basic_string_view<charT, traits> x,
-                                 basic_string_view<charT, traits> y) noexcept;
-    template<class charT, class traits>
-    constexpr bool operator>=(basic_string_view<charT, traits> x,
-                              basic_string_view<charT, traits> y) noexcept;
-    // see below, sufficient additional overloads of comparison functions
-
-    // 7.10, Inserters and extractors
-    template<class charT, class traits>
-      basic_ostream<charT, traits>&
-        operator<<(basic_ostream<charT, traits>& os,
-                   basic_string_view<charT, traits> str);
-
-    // basic_string_view typedef names
-    typedef basic_string_view<char> string_view;
-    typedef basic_string_view<char16_t> u16string_view;
-    typedef basic_string_view<char32_t> u32string_view;
-    typedef basic_string_view<wchar_t> wstring_view;
-
-    template<class charT, class traits = char_traits<charT>>
-    class basic_string_view {
-      public:
-      // types
-      typedef traits traits_type;
-      typedef charT value_type;
-      typedef charT* pointer;
-      typedef const charT* const_pointer;
-      typedef charT& reference;
-      typedef const charT& const_reference;
-      typedef implementation-defined const_iterator;
-      typedef const_iterator iterator;
-      typedef reverse_iterator<const_iterator> const_reverse_iterator;
-      typedef const_reverse_iterator reverse_iterator;
-      typedef size_t size_type;
-      typedef ptrdiff_t difference_type;
-      static constexpr size_type npos = size_type(-1);
-
-      // 7.3, basic_string_view constructors and assignment operators
-      constexpr basic_string_view() noexcept;
-      constexpr basic_string_view(const basic_string_view&) noexcept = default;
-      basic_string_view& operator=(const basic_string_view&) noexcept = default;
-      template<class Allocator>
-      constexpr basic_string_view(const charT* str);
-      constexpr basic_string_view(const charT* str, size_type len);
-
-      // 7.4, basic_string_view iterator support
-      constexpr const_iterator begin() const noexcept;
-      constexpr const_iterator end() const noexcept;
-      constexpr const_iterator cbegin() const noexcept;
-      constexpr const_iterator cend() const noexcept;
-      const_reverse_iterator rbegin() const noexcept;
-      const_reverse_iterator rend() const noexcept;
-      const_reverse_iterator crbegin() const noexcept;
-      const_reverse_iterator crend() const noexcept;
-
-      // 7.5, basic_string_view capacity
-      constexpr size_type size() const noexcept;
-      constexpr size_type length() const noexcept;
-      constexpr size_type max_size() const noexcept;
-      constexpr bool empty() const noexcept;
-
-      // 7.6, basic_string_view element access
-      constexpr const_reference operator[](size_type pos) const;
-      constexpr const_reference at(size_type pos) const;
-      constexpr const_reference front() const;
-      constexpr const_reference back() const;
-      constexpr const_pointer data() const noexcept;
-
-      // 7.7, basic_string_view modifiers
-      constexpr void remove_prefix(size_type n);
-      constexpr void remove_suffix(size_type n);
-      constexpr void swap(basic_string_view& s) noexcept;
-
-      size_type copy(charT* s, size_type n, size_type pos = 0) const;
-
-      constexpr basic_string_view substr(size_type pos = 0, size_type n = npos) const;
-      constexpr int compare(basic_string_view s) const noexcept;
-      constexpr int compare(size_type pos1, size_type n1, basic_string_view s) const;
-      constexpr int compare(size_type pos1, size_type n1,
-                            basic_string_view s, size_type pos2, size_type n2) const;
-      constexpr int compare(const charT* s) const;
-      constexpr int compare(size_type pos1, size_type n1, const charT* s) const;
-      constexpr int compare(size_type pos1, size_type n1,
-                            const charT* s, size_type n2) const;
-      constexpr size_type find(basic_string_view s, size_type pos = 0) const noexcept;
-      constexpr size_type find(charT c, size_type pos = 0) const noexcept;
-      constexpr size_type find(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type find(const charT* s, size_type pos = 0) const;
-      constexpr size_type rfind(basic_string_view s, size_type pos = npos) const noexcept;
-      constexpr size_type rfind(charT c, size_type pos = npos) const noexcept;
-      constexpr size_type rfind(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type rfind(const charT* s, size_type pos = npos) const;
-      constexpr size_type find_first_of(basic_string_view s, size_type pos = 0) const noexcept;
-      constexpr size_type find_first_of(charT c, size_type pos = 0) const noexcept;
-      constexpr size_type find_first_of(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type find_first_of(const charT* s, size_type pos = 0) const;
-      constexpr size_type find_last_of(basic_string_view s, size_type pos = npos) const noexcept;
-      constexpr size_type find_last_of(charT c, size_type pos = npos) const noexcept;
-      constexpr size_type find_last_of(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type find_last_of(const charT* s, size_type pos = npos) const;
-      constexpr size_type find_first_not_of(basic_string_view s, size_type pos = 0) const noexcept;
-      constexpr size_type find_first_not_of(charT c, size_type pos = 0) const noexcept;
-      constexpr size_type find_first_not_of(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type find_first_not_of(const charT* s, size_type pos = 0) const;
-      constexpr size_type find_last_not_of(basic_string_view s, size_type pos = npos) const noexcept;
-      constexpr size_type find_last_not_of(charT c, size_type pos = npos) const noexcept;
-      constexpr size_type find_last_not_of(const charT* s, size_type pos, size_type n) const;
-      constexpr size_type find_last_not_of(const charT* s, size_type pos = npos) const;
-
-      constexpr bool starts_with(basic_string_view s) const noexcept; // C++2a
-      constexpr bool starts_with(charT c) const noexcept;             // C++2a
-      constexpr bool starts_with(const charT* s) const;               // C++2a
-      constexpr bool ends_with(basic_string_view s) const noexcept;   // C++2a
-      constexpr bool ends_with(charT c) const noexcept;               // C++2a
-      constexpr bool ends_with(const charT* s) const;                 // C++2a
-
-     private:
-      const_pointer data_;  // exposition only
-      size_type     size_;  // exposition only
-    };
-
-  // 7.11, Hash support
-  template <class T> struct hash;
-  template <> struct hash<string_view>;
-  template <> struct hash<u16string_view>;
-  template <> struct hash<u32string_view>;
-  template <> struct hash<wstring_view>;
-
-  constexpr basic_string_view<char>     operator "" sv( const char *str,     size_t len ) noexcept;
-  constexpr basic_string_view<wchar_t>  operator "" sv( const wchar_t *str,  size_t len ) noexcept;
-  constexpr basic_string_view<char16_t> operator "" sv( const char16_t *str, size_t len ) noexcept;
-  constexpr basic_string_view<char32_t> operator "" sv( const char32_t *str, size_t len ) noexcept;
-
-}  // namespace std
-
-
-*/
-
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 174 "nxdk-dxt/lib/libcxx/include/string_view"
-# 175 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <__string>
 #endif /* expanded by -frewrite-includes */
-# 175 "nxdk-dxt/lib/libcxx/include/string_view"
-# 1 "nxdk-dxt/lib/libcxx/include/__string" 1
 // -*- C++ -*-
 //===-------------------------- __string ----------------------------------===//
 //
@@ -2973,13 +2285,9 @@ namespace std {
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 55 "nxdk-dxt/lib/libcxx/include/__string"
-# 56 "nxdk-dxt/lib/libcxx/include/__string"
 #if 0 /* expanded by -frewrite-includes */
 #include <algorithm>  // for search and min
 #endif /* expanded by -frewrite-includes */
-# 56 "nxdk-dxt/lib/libcxx/include/__string"
-# 1 "nxdk-dxt/lib/libcxx/include/algorithm" 1
 // -*- C++ -*-
 //===-------------------------- algorithm ---------------------------------===//
 //
@@ -2995,13 +2303,9 @@ namespace std {
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 638 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 639 "nxdk-dxt/lib/libcxx/include/algorithm"
 #if 0 /* expanded by -frewrite-includes */
 #include <initializer_list>
 #endif /* expanded by -frewrite-includes */
-# 639 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/initializer_list" 1
 // -*- C++ -*-
 //===----------------------- initializer_list -----------------------------===//
 //
@@ -3018,13 +2322,9 @@ namespace std {
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 45 "nxdk-dxt/lib/libcxx/include/initializer_list"
-# 46 "nxdk-dxt/lib/libcxx/include/initializer_list"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 46 "nxdk-dxt/lib/libcxx/include/initializer_list"
-# 1 "nxdk-dxt/lib/libcxx/include/cstddef" 1
 // -*- C++ -*-
 //===--------------------------- cstddef ----------------------------------===//
 //
@@ -3063,13 +2363,9 @@ Types:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 36 "nxdk-dxt/lib/libcxx/include/cstddef"
-# 37 "nxdk-dxt/lib/libcxx/include/cstddef"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 37 "nxdk-dxt/lib/libcxx/include/cstddef"
-# 1 "nxdk-dxt/lib/libcxx/include/version" 1
 // -*- C++ -*-
 //===--------------------------- version ----------------------------------===//
 //
@@ -3085,28 +2381,22 @@ Types:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 117 "nxdk-dxt/lib/libcxx/include/version"
-# 118 "nxdk-dxt/lib/libcxx/include/version"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 120 "nxdk-dxt/lib/libcxx/include/version"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 121 "nxdk-dxt/lib/libcxx/include/version" 3
 #endif
-# 122 "nxdk-dxt/lib/libcxx/include/version" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 124 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_chrono_udls                          201304L
 # define __cpp_lib_complex_udls                         201309L
 # define __cpp_lib_exchange_function                    201304L
@@ -3126,33 +2416,27 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 139 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_shared_timed_mutex                 201402L
 # endif
-# 141 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_string_udls                          201304L
 # define __cpp_lib_transformation_trait_aliases         201304L
 # define __cpp_lib_transparent_operators                201210L
 # define __cpp_lib_tuple_element_t                      201402L
 # define __cpp_lib_tuples_by_type                       201304L
 #endif
-# 147 "nxdk-dxt/lib/libcxx/include/version" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 149 "nxdk-dxt/lib/libcxx/include/version" 3
 #if 0 /* disabled by -frewrite-includes */
 # if !defined(_LIBCPP_HAS_NO_BUILTIN_ADDRESSOF)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 150 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_addressof_constexpr                201603L
 # endif
-# 152 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_allocator_traits_is_always_equal     201411L
 # define __cpp_lib_any                                  201606L
 # define __cpp_lib_apply                                201603L
@@ -3163,10 +2447,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 158 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_atomic_is_always_lock_free         201603L
 # endif
-# 160 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_bool_constant                        201505L
 // # define __cpp_lib_boyer_moore_searcher                 201603L
 # define __cpp_lib_byte                                 201603L
@@ -3182,10 +2464,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 171 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_has_unique_object_representations  201606L
 # endif
-# 173 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_hypot                                201603L
 # define __cpp_lib_incomplete_container_elements        201505L
 # define __cpp_lib_invoke                               201411L
@@ -3194,10 +2474,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 177 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_is_aggregate                       201703L
 # endif
-# 179 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_is_invocable                         201703L
 # define __cpp_lib_is_swappable                         201603L
 # define __cpp_lib_launder                              201606L
@@ -3219,10 +2497,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 196 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_shared_mutex                       201505L
 # endif
-# 198 "nxdk-dxt/lib/libcxx/include/version" 3
 // # define __cpp_lib_shared_ptr_arrays                    201611L
 # define __cpp_lib_shared_ptr_weak_type                 201606L
 # define __cpp_lib_string_view                          201606L
@@ -3235,23 +2511,19 @@ Types:
 # define __cpp_lib_variant                              201606L
 # define __cpp_lib_void_t                               201411L
 #endif
-# 210 "nxdk-dxt/lib/libcxx/include/version" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 17
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 212 "nxdk-dxt/lib/libcxx/include/version" 3
 #if 0 /* disabled by -frewrite-includes */
 # if !defined(_LIBCPP_HAS_NO_THREADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 213 "nxdk-dxt/lib/libcxx/include/version" 3
 // #   define __cpp_lib_atomic_ref                         201806L
 # endif
-# 215 "nxdk-dxt/lib/libcxx/include/version" 3
 // # define __cpp_lib_bind_front                           201811L
 // # define __cpp_lib_bit_cast                             201806L
 #if 0 /* disabled by -frewrite-includes */
@@ -3259,10 +2531,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 218 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_char8_t                            201811L
 # endif
-# 220 "nxdk-dxt/lib/libcxx/include/version" 3
 // # define __cpp_lib_concepts                             201806L
 // # define __cpp_lib_constexpr_misc                       201811L
 // # define __cpp_lib_constexpr_swap_algorithms            201806L
@@ -3271,10 +2541,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 224 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_destroying_delete                  201806L
 # endif
-# 226 "nxdk-dxt/lib/libcxx/include/version" 3
 # define __cpp_lib_erase_if                             201811L
 // # define __cpp_lib_generic_unordered_lookup             201811L
 # define __cpp_lib_interpolate                          201902L
@@ -3283,39 +2551,29 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 230 "nxdk-dxt/lib/libcxx/include/version" 3
 #   define __cpp_lib_is_constant_evaluated              201811L
 # endif
-# 232 "nxdk-dxt/lib/libcxx/include/version" 3
 // # define __cpp_lib_list_remove_return_type              201806L
 // # define __cpp_lib_ranges                               201811L
 // # define __cpp_lib_three_way_comparison                 201711L
 #endif
-# 236 "nxdk-dxt/lib/libcxx/include/version" 3
 
 #endif // _LIBCPP_VERSIONH
-# 238 "nxdk-dxt/lib/libcxx/include/version" 3
-# 38 "nxdk-dxt/lib/libcxx/include/cstddef" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 40 "nxdk-dxt/lib/libcxx/include/cstddef"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 41 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #endif
-# 42 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 // Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stddef.h>
 #endif /* expanded by -frewrite-includes */
-# 44 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 1 "nxdk-dxt/lib/pdclib/include/stddef.h" 1 3
 /* Common definitions <stddef.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -3328,13 +2586,10 @@ Types:
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_lib_ext1.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 1 3
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -3349,27 +2604,20 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 10 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
-# 12 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 13 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #define __STDC_WANT_LIB_EXT1_PREVIOUS__ -1
   #endif
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #else
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
-# 19 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
 #if 0 /* disabled by -frewrite-includes */
@@ -3377,19 +2625,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
-# 23 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -3398,23 +2642,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ set to value other than 0,1 -- undefined behavior
     #endif
-# 31 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #endif
-# 33 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/stddef.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 1 3
 /* PDCLib internal integer logic <_PDCLIB_int.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -3432,8 +2668,6 @@ extern "C" {
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_config.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
-# 1 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 1 3
 /* Internal PDCLib configuration <_PDCLIB_config.h>
    (Generic Template)
 
@@ -3477,10 +2711,8 @@ extern "C" {
 #ifdef __CHAR_UNSIGNED__
 #define _PDCLIB_CHAR_SIGNED 0
 #else
-# 58 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_CHAR_SIGNED 1
 #endif
-# 60 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 /* Width of the integer types short, int, long, and long long, in bytes.      */
 /* SHRT == 2, INT >= SHRT, LONG >= INT >= 4, LLONG >= LONG - check your       */
@@ -3490,10 +2722,8 @@ extern "C" {
 #ifdef __LP64__
 #define _PDCLIB_LONG_BYTES  8
 #else
-# 69 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_LONG_BYTES  4
 #endif
-# 71 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_LLONG_BYTES 8
 
 /* <stdlib.h> defines the div() function family that allows taking quotient   */
@@ -3772,7 +3002,6 @@ typedef void *_PDCLIB_fd_t;
 #ifdef __CYGWIN__
 typedef unsigned int wint_t;
 #endif
-# 536 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 /* threads ------------------------------------------------------------------ */
 typedef void *_PDCLIB_thrd_t;
@@ -3795,220 +3024,174 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 554 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_ASSERT_H <assert_ext_.h>
 #endif
-# 556 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<ctype_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 558 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_CTYPE_H <ctype_ext_.h>
 #endif
-# 560 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<errno_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 562 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_ERRNO_H <errno_ext_.h>
 #endif
-# 564 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<float_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 566 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_FLOAT_H <float_ext_.h>
 #endif
-# 568 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<inttypes_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 570 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_INTTYPES_H <inttypes_ext_.h>
 #endif
-# 572 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<iso646_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 574 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_ISO646_H <iso646_ext_.h>
 #endif
-# 576 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<limits_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 578 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_LIMITS_H <limits_ext_.h>
 #endif
-# 580 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<locale_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 582 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_LOCALE_H <locale_ext_.h>
 #endif
-# 584 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<signal_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 586 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_SIGNAL_H <signal_ext_.h>
 #endif
-# 588 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdalign_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 590 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDALIGN_H <stdalign_ext_.h>
 #endif
-# 592 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdarg_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 594 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDARG_H <stdarg_ext_.h>
 #endif
-# 596 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdbool_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 598 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDBOOL_H <stdbool_ext_.h>
 #endif
-# 600 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stddef_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 602 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDDEF_H <stddef_ext_.h>
 #endif
-# 604 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdint_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 606 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDINT_H <stdint_ext_.h>
 #endif
-# 608 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdio_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 610 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDIO_H <stdio_ext_.h>
 #endif
-# 612 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdlib_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 614 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDLIB_H <stdlib_ext_.h>
 #endif
-# 616 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<stdnoreturn_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 618 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STDNORETURN_H <stdnoreturn_ext_.h>
 #endif
-# 620 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<string_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 622 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_STRING_H <string_ext_.h>
 #endif
-# 624 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<threads_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 626 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_THREADS_H <threads_ext_.h>
 #endif
-# 628 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<time_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 630 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_TIME_H <time_ext_.h>
 #endif
-# 632 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_include(<wctype_ext_.h>)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 634 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 #define _PDCLIB_EXTEND_WCTYPE_H <wctype_ext_.h>
 #endif
-# 636 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
 
 
 #endif
-# 639 "nxdk-dxt/lib/pdclib/platform/xbox/include/pdclib/_PDCLIB_config.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_aux.h"
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 1 3
 /* Auxiliary PDCLib code <_PDCLIB_aux.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -4034,38 +3217,30 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 22 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #error Compiler does not define _ _STDC_ _ to 1 (not standard-compliant)!
 #endif
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __STDC_VERSION__ < 199901L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_restrict
 #define _PDCLIB_inline
 #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_restrict restrict
 #define _PDCLIB_inline inline
 #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __STDC_VERSION__ < 201112L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 34 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_Noreturn
 #else
-# 36 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_Noreturn _Noreturn
 #endif
-# 38 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 
 #ifndef __STDC_HOSTED__
 #error Compiler does not define _ _STDC_HOSTED_ _ (not standard-compliant)!
@@ -4075,7 +3250,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 42 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_HOSTED 0
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -4083,13 +3257,10 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 44 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_HOSTED 1
 #else
-# 46 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #error Compiler does not define _ _STDC_HOSTED_ _ to 0 or 1 (not standard-compliant)!
 #endif
-# 48 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 
 /* -------------------------------------------------------------------------- */
 /* Helper macros:                                                             */
@@ -4119,17 +3290,13 @@ typedef int _PDCLIB_once_flag;
 #define _PDCLIB_LOCK( mtx ) mtx_lock( &mtx )
 #define _PDCLIB_UNLOCK( mtx ) mtx_unlock( &mtx )
 #else
-# 77 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 #define _PDCLIB_LOCK( mtx )
 #define _PDCLIB_UNLOCK( mtx )
 #endif
-# 80 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
 
 
 
 #endif
-# 84 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_aux.h" 3
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 2 3
 
 /* null pointer constant */
 #define _PDCLIB_NULL 0
@@ -4154,15 +3321,12 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 37 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_CHAR_MIN    _PDCLIB_SCHAR_MIN
 #define _PDCLIB_CHAR_MAX    _PDCLIB_SCHAR_MAX
 #else
-# 40 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_CHAR_MIN    0
 #define _PDCLIB_CHAR_MAX    _PDCLIB_UCHAR_MAX
 #endif
-# 43 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* Setting 'short' limits                                                     */
 #if 0 /* disabled by -frewrite-includes */
@@ -4170,15 +3334,12 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 46 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_SHRT_MAX      0x7fff
 #define _PDCLIB_SHRT_MIN      (-0x7fff - 1)
 #define _PDCLIB_USHRT_MAX     0xffff
 #else
-# 50 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Unsupported width of 'short' (not 16 bit).
 #endif
-# 52 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_USHRT_MIN 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -4186,10 +3347,8 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 55 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Bogus setting: short > int? Check _PDCLIB_config.h.
 #endif
-# 57 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* Setting 'int' limits                                                       */
 #if 0 /* disabled by -frewrite-includes */
@@ -4197,7 +3356,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 60 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_INT_MAX   0x7fff
 #define _PDCLIB_INT_MIN   (-0x7fff - 1)
 #define _PDCLIB_UINT_MAX  0xffffU
@@ -4207,7 +3365,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 64 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_INT_MAX   0x7fffffff
 #define _PDCLIB_INT_MIN   (-0x7fffffff - 1)
 #define _PDCLIB_UINT_MAX  0xffffffffU
@@ -4217,15 +3374,12 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 68 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_INT_MAX   0x7fffffffffffffff
 #define _PDCLIB_INT_MIN   (-0x7fffffffffffffff - 1)
 #define _PDCLIB_UINT_MAX  0xffffffffffffffff
 #else
-# 72 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Unsupported width of 'int' (neither 16, 32, nor 64 bit).
 #endif
-# 74 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_UINT_MIN 0
 
 /* Setting 'long' limits                                                      */
@@ -4234,7 +3388,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 78 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_LONG_MAX   0x7fffffffL
 #define _PDCLIB_LONG_MIN   (-0x7fffffffL - 1L)
 #define _PDCLIB_ULONG_MAX  0xffffffffUL
@@ -4244,15 +3397,12 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 82 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_LONG_MAX   0x7fffffffffffffffL
 #define _PDCLIB_LONG_MIN   (-0x7fffffffffffffffL - 1L)
 #define _PDCLIB_ULONG_MAX  0xffffffffffffffffUL
 #else
-# 86 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Unsupported width of 'long' (neither 32 nor 64 bit).
 #endif
-# 88 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_ULONG_MIN 0
 
 /* Setting 'long long' limits                                                 */
@@ -4261,7 +3411,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 92 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_LLONG_MAX  0x7fffffffffffffffLL
 #define _PDCLIB_LLONG_MIN  (-0x7fffffffffffffffLL - 1LL)
 #define _PDCLIB_ULLONG_MAX 0xffffffffffffffffULL
@@ -4271,15 +3420,12 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 96 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_LLONG_MAX  0x7fffffffffffffffffffffffffffffffLL
 #define _PDCLIB_LLONG_MIN  (-0x7fffffffffffffffffffffffffffffffLL - 1LL)
 #define _PDCLIB_ULLONG_MAX 0xffffffffffffffffffffffffffffffffULL
 #else
-# 100 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Unsupported width of 'long long' (neither 64 nor 128 bit).
 #endif
-# 102 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #define _PDCLIB_ULLONG_MIN 0
 
 /* -------------------------------------------------------------------------- */
@@ -4294,7 +3440,6 @@ typedef int _PDCLIB_once_flag;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 112 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed char        _PDCLIB_int8_t;
 typedef unsigned char      _PDCLIB_uint8_t;
 #define _PDCLIB_INT8_MAX   _PDCLIB_CHAR_MAX
@@ -4302,10 +3447,8 @@ typedef unsigned char      _PDCLIB_uint8_t;
 #define _PDCLIB_UINT8_MAX  _PDCLIB_UCHAR_MAX
 #define _PDCLIB_8_CONV     hh
 #else
-# 119 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Unsupported width of char (not 8 bits).
 #endif
-# 121 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* Setting 'int16_t', its limits, its literal, and conversion macros.         */
 #if 0 /* disabled by -frewrite-includes */
@@ -4313,7 +3456,6 @@ typedef unsigned char      _PDCLIB_uint8_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 124 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed int         _PDCLIB_int16_t;
 typedef unsigned int       _PDCLIB_uint16_t;
 #define _PDCLIB_INT16_MAX  _PDCLIB_INT_MAX
@@ -4326,7 +3468,6 @@ typedef unsigned int       _PDCLIB_uint16_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 131 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed short       _PDCLIB_int16_t;
 typedef unsigned short     _PDCLIB_uint16_t;
 #define _PDCLIB_INT16_MAX  _PDCLIB_SHRT_MAX
@@ -4334,10 +3475,8 @@ typedef unsigned short     _PDCLIB_uint16_t;
 #define _PDCLIB_UINT16_MAX _PDCLIB_USHRT_MAX
 #define _PDCLIB_16_CONV    h
 #else
-# 138 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Neither 'short' nor 'int' are 16-bit.
 #endif
-# 140 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* Setting 'int32_t', its limits, its literal, and conversion macros.         */
 #if 0 /* disabled by -frewrite-includes */
@@ -4345,7 +3484,6 @@ typedef unsigned short     _PDCLIB_uint16_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 143 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed int         _PDCLIB_int32_t;
 typedef unsigned int       _PDCLIB_uint32_t;
 #define _PDCLIB_INT32_MAX  _PDCLIB_INT_MAX
@@ -4360,7 +3498,6 @@ typedef unsigned int       _PDCLIB_uint32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 152 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed long        _PDCLIB_int32_t;
 typedef unsigned long      _PDCLIB_uint32_t;
 #define _PDCLIB_INT32_MAX  _PDCLIB_LONG_MAX
@@ -4370,10 +3507,8 @@ typedef unsigned long      _PDCLIB_uint32_t;
 #define _PDCLIB_UINT32_LITERAL ul
 #define _PDCLIB_32_CONV        l
 #else
-# 161 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Neither 'int' nor 'long' are 32-bit.
 #endif
-# 163 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* Setting 'int64_t', its limits, its literal, and conversion macros.         */
 #if 0 /* disabled by -frewrite-includes */
@@ -4381,7 +3516,6 @@ typedef unsigned long      _PDCLIB_uint32_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 166 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed long        _PDCLIB_int64_t;
 typedef unsigned long      _PDCLIB_uint64_t;
 #define _PDCLIB_INT64_MAX  _PDCLIB_LONG_MAX
@@ -4396,7 +3530,6 @@ typedef unsigned long      _PDCLIB_uint64_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 175 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 typedef signed long long   _PDCLIB_int64_t;
 typedef unsigned long long _PDCLIB_uint64_t;
 #define _PDCLIB_INT64_MAX  _PDCLIB_LLONG_MAX
@@ -4406,10 +3539,8 @@ typedef unsigned long long _PDCLIB_uint64_t;
 #define _PDCLIB_UINT64_LITERAL ull
 #define _PDCLIB_64_CONV        ll
 #else
-# 184 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 #error Neither 'long' nor 'long long' are 64-bit.
 #endif
-# 186 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* -------------------------------------------------------------------------- */
 /* <stdint.h> "fastest" types and their limits                                */
@@ -4534,7 +3665,6 @@ struct _PDCLIB_file_t
 #ifndef __STDC_NO_THREADS__
     _PDCLIB_mtx_t           mtx;      /* Multithreading safety */
 #endif
-# 310 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
     char *                  filename; /* Name the current stream has been opened with */
     struct _PDCLIB_file_t * next;     /* Pointer to next struct (internal) */
 };
@@ -4785,7 +3915,6 @@ _PDCLIB_LOCAL struct _PDCLIB_lc_messages_t * _PDCLIB_load_lc_messages( const cha
 /* Sanity checks                                                              */
 /* -------------------------------------------------------------------------- */
 
-# 584 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
 
 /* intptr_t being wide enough to store the value of a pointer */
 _PDCLIB_static_assert( sizeof( void * ) == sizeof( _PDCLIB_intptr ), "Compiler disagrees on _PDCLIB_intptr." );
@@ -4794,8 +3923,6 @@ _PDCLIB_static_assert( sizeof( void * ) == sizeof( _PDCLIB_intptr ), "Compiler d
 _PDCLIB_static_assert( sizeof( &_PDCLIB_digits[1] - &_PDCLIB_digits[0] ) == sizeof( _PDCLIB_ptrdiff ), "Compiler disagrees on _PDCLIB_ptrdiff." );
 
 #endif
-# 592 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_int.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/stddef.h" 2 3
 
 typedef _PDCLIB_ptrdiff_t ptrdiff_t;
 
@@ -4803,18 +3930,15 @@ typedef _PDCLIB_ptrdiff_t ptrdiff_t;
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
 typedef _PDCLIB_size_t size_t;
 #endif
-# 23 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #ifndef __cplusplus
 typedef _PDCLIB_wchar_t   wchar_t;
 #endif
-# 27 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #ifndef _PDCLIB_NULL_DEFINED
 #define _PDCLIB_NULL_DEFINED _PDCLIB_NULL_DEFINED
 #define NULL _PDCLIB_NULL
 #endif
-# 32 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #define offsetof( type, member ) _PDCLIB_offsetof( type, member )
 
@@ -4825,14 +3949,11 @@ typedef _PDCLIB_wchar_t   wchar_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 38 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 #ifndef _PDCLIB_RSIZE_T_DEFINED
 #define _PDCLIB_RSIZE_T_DEFINED _PDCLIB_RSIZE_T_DEFINED
 typedef size_t rsize_t;
 #endif
-# 42 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 #endif
-# 43 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 /* Extension hook for downstream projects that want to have non-standard
    extensions to standard headers.
@@ -4841,24 +3962,16 @@ typedef size_t rsize_t;
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_STDDEF_H
 #endif /* expanded by -frewrite-includes */
-# 48 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
-# 49 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 #endif
-# 50 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 54 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
 
 #endif
-# 56 "nxdk-dxt/lib/pdclib/include/stddef.h" 3
-# 45 "nxdk-dxt/lib/libcxx/include/cstddef" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include <__nullptr>
 #endif /* expanded by -frewrite-includes */
-# 45 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__nullptr" 1 3
 // -*- C++ -*-
 //===--------------------------- __nullptr --------------------------------===//
 //
@@ -4874,31 +3987,23 @@ typedef size_t rsize_t;
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
-# 14 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
 #endif
-# 18 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
 
 namespace std
 {
     typedef decltype(nullptr) nullptr_t;
 }
-# 60 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
 
 #endif  // _LIBCPP_NULLPTR
-# 62 "nxdk-dxt/lib/libcxx/include/__nullptr" 3
-# 46 "nxdk-dxt/lib/libcxx/include/cstddef" 2 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -4911,14 +4016,11 @@ using ::size_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 54 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 // Re-use the compiler's <stddef.h> max_align_t where possible.
 using ::max_align_t;
 #else
-# 57 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 typedef long double max_align_t;
 #endif
-# 59 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
@@ -4927,7 +4029,6 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 namespace std  // purposefully not versioned
 {
 enum class byte : unsigned char {};
@@ -4978,8 +4079,6 @@ constexpr byte  operator~ (byte __b) noexcept
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>  // rest of byte
 #endif /* expanded by -frewrite-includes */
-# 110 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 1 "nxdk-dxt/lib/libcxx/include/type_traits" 1 3
 // -*- C++ -*-
 //===------------------------ type_traits ---------------------------------===//
 //
@@ -4995,13 +4094,9 @@ constexpr byte  operator~ (byte __b) noexcept
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 416 "nxdk-dxt/lib/libcxx/include/type_traits" 3
-# 417 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 417 "nxdk-dxt/lib/libcxx/include/type_traits" 3
-# 1 "nxdk-dxt/lib/libcxx/include/cstddef" 1 3
 // -*- C++ -*-
 //===--------------------------- cstddef ----------------------------------===//
 //
@@ -5040,38 +4135,27 @@ Types:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 36 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 37 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 37 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 38 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 40 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 41 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #endif
-# 42 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 // Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stddef.h>
 #endif /* expanded by -frewrite-includes */
-# 44 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 45 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <__nullptr>
 #endif /* expanded by -frewrite-includes */
-# 45 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 46 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -5084,14 +4168,11 @@ using ::size_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 54 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 // Re-use the compiler's <stddef.h> max_align_t where possible.
 using ::max_align_t;
 #else
-# 57 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 typedef long double max_align_t;
 #endif
-# 59 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
@@ -5100,38 +4181,27 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>  // rest of byte
 #endif /* expanded by -frewrite-includes */
-# 110 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 111 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 #endif
-# 112 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 #endif  // _LIBCPP_CSTDDEF
-# 114 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 418 "nxdk-dxt/lib/libcxx/include/type_traits" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 418 "nxdk-dxt/lib/libcxx/include/type_traits" 3
-# 419 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 421 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 422 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #endif
-# 423 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -5153,11 +4223,9 @@ struct _LIBCPP_TEMPLATE_VIS integral_constant
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 440 "nxdk-dxt/lib/libcxx/include/type_traits" 3
   _LIBCPP_INLINE_VISIBILITY
   constexpr value_type operator ()() const _NOEXCEPT {return value;}
 #endif
-# 443 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 };
 
 template <class _Tp, _Tp __v>
@@ -5168,15 +4236,12 @@ _LIBCPP_CONSTEXPR const _Tp integral_constant<_Tp, __v>::value;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 449 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <bool __b>
 using bool_constant = integral_constant<bool, __b>;
 #define _LIBCPP_BOOL_CONSTANT(__b) bool_constant<(__b)>
 #else
-# 453 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #define _LIBCPP_BOOL_CONSTANT(__b) integral_constant<bool,(__b)>
 #endif
-# 455 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 typedef _LIBCPP_BOOL_CONSTANT(true)  true_type;
 typedef _LIBCPP_BOOL_CONSTANT(false) false_type;
@@ -5261,10 +4326,8 @@ template <class _If, class _Then>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 535 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <bool _Bp, class _If, class _Then> using conditional_t = typename conditional<_Bp, _If, _Then>::type;
 #endif
-# 537 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <bool, class _Tp = void> struct _LIBCPP_TEMPLATE_VIS enable_if {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS enable_if<true, _Tp> {typedef _Tp type;};
@@ -5274,10 +4337,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS enable_if<true, _Tp> {typedef _
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 542 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <bool _Bp, class _Tp = void> using enable_if_t = typename enable_if<_Bp, _Tp>::type;
 #endif
-# 544 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_same
 
@@ -5289,22 +4350,18 @@ template <class _Tp>            struct _LIBCPP_TEMPLATE_VIS is_same<_Tp, _Tp> : 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 551 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class _Up>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_same_v
     = is_same<_Tp, _Up>::value;
 #endif
-# 555 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Up>
 using _IsSame = _BoolConstant<
 #ifdef __clang__
     __is_same(_Tp, _Up)
 #else
-# 561 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     _VSTD::is_same<_Tp, _Up>::value
 #endif
-# 563 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 >;
 
 template <class _Tp, class _Up>
@@ -5312,10 +4369,8 @@ using _IsNotSame = _BoolConstant<
 #ifdef __clang__
     !__is_same(_Tp, _Up)
 #else
-# 570 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     !_VSTD::is_same<_Tp, _Up>::value
 #endif
-# 572 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 >;
 // addressof
 #ifndef _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
@@ -5330,7 +4385,6 @@ addressof(_Tp& __x) _NOEXCEPT
 }
 
 #else
-# 586 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 inline _LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
@@ -5342,14 +4396,12 @@ addressof(_Tp& __x) _NOEXCEPT
 }
 
 #endif // _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
-# 597 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_OBJC_ARC) && !defined(_LIBCPP_PREDEFINED_OBJC_ARC_ADDRESSOF)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 599 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 // Objective-C++ Automatic Reference Counting uses qualified pointers
 // that require special addressof() signatures. When
 // _LIBCPP_PREDEFINED_OBJC_ARC_ADDRESSOF is defined, the compiler
@@ -5371,7 +4423,6 @@ addressof(__weak _Tp& __x) _NOEXCEPT
   return &__x;
 }
 #endif
-# 620 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -5389,17 +4440,14 @@ addressof(__unsafe_unretained _Tp& __x) _NOEXCEPT
   return &__x;
 }
 #endif
-# 637 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_CXX03_LANG)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 639 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> _Tp* addressof(const _Tp&&) noexcept = delete;
 #endif
-# 641 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 struct __two {char __lx[2];};
 
@@ -5415,12 +4463,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_const<_Tp const> : public tr
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 652 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_const_v
     = is_const<_Tp>::value;
 #endif
-# 656 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_volatile
 
@@ -5432,12 +4478,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_volatile<_Tp volatile> : pub
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 663 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_volatile_v
     = is_volatile<_Tp>::value;
 #endif
-# 667 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_const
 
@@ -5448,10 +4492,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_const<const _Tp> {typede
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 673 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_const_t = typename remove_const<_Tp>::type;
 #endif
-# 675 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_volatile
 
@@ -5462,10 +4504,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_volatile<volatile _Tp> {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 681 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_volatile_t = typename remove_volatile<_Tp>::type;
 #endif
-# 683 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_cv
 
@@ -5476,10 +4516,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_cv
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 689 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_cv_t = typename remove_cv<_Tp>::type;
 #endif
-# 691 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_void
 
@@ -5494,12 +4532,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_void
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 701 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_void_v
     = is_void<_Tp>::value;
 #endif
-# 705 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // __is_nullptr_t
 
@@ -5514,7 +4550,6 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS __is_nullptr_t
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 715 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_null_pointer
     : public __is_nullptr_t_impl<typename remove_cv<_Tp>::type> {};
 
@@ -5523,14 +4558,11 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_null_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 719 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_null_pointer_v
     = is_null_pointer<_Tp>::value;
 #endif
-# 723 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #endif
-# 724 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_integral
 
@@ -5543,12 +4575,10 @@ template <>          struct __libcpp_is_integral<wchar_t>            : public tr
 #ifndef _LIBCPP_NO_HAS_CHAR8_T
 template <>          struct __libcpp_is_integral<char8_t>            : public true_type {};
 #endif
-# 736 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 #ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
 template <>          struct __libcpp_is_integral<char16_t>           : public true_type {};
 template <>          struct __libcpp_is_integral<char32_t>           : public true_type {};
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
-# 740 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <>          struct __libcpp_is_integral<short>              : public true_type {};
 template <>          struct __libcpp_is_integral<unsigned short>     : public true_type {};
 template <>          struct __libcpp_is_integral<int>                : public true_type {};
@@ -5561,7 +4591,6 @@ template <>          struct __libcpp_is_integral<unsigned long long> : public tr
 template <>          struct __libcpp_is_integral<__int128_t>         : public true_type {};
 template <>          struct __libcpp_is_integral<__uint128_t>        : public true_type {};
 #endif
-# 752 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_integral
     : public __libcpp_is_integral<typename remove_cv<_Tp>::type> {};
@@ -5571,12 +4600,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_integral
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 757 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_integral_v
     = is_integral<_Tp>::value;
 #endif
-# 761 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_floating_point
 
@@ -5593,12 +4620,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_floating_point
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 773 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_floating_point_v
     = is_floating_point<_Tp>::value;
 #endif
-# 777 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_array
 
@@ -5614,12 +4639,10 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS is_array<_Tp[_Np]>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 788 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_array_v
     = is_array<_Tp>::value;
 #endif
-# 792 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_pointer
 
@@ -5632,13 +4655,11 @@ template <class _Tp> struct __libcpp_remove_objc_qualifiers { typedef _Tp type; 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 800 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __strong> { typedef _Tp type; };
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __weak> { typedef _Tp type; };
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __autoreleasing> { typedef _Tp type; };
 template <class _Tp> struct __libcpp_remove_objc_qualifiers<_Tp __unsafe_unretained> { typedef _Tp type; };
 #endif
-# 805 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pointer
     : public __libcpp_is_pointer<typename __libcpp_remove_objc_qualifiers<typename remove_cv<_Tp>::type>::type> {};
@@ -5648,12 +4669,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 810 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_pointer_v
     = is_pointer<_Tp>::value;
 #endif
-# 814 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_reference
 
@@ -5672,7 +4691,6 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_reference<_Tp&&> : public tr
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 828 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_reference_v
     = is_reference<_Tp>::value;
@@ -5685,7 +4703,6 @@ template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_rvalue_reference_v
     = is_rvalue_reference<_Tp>::value;
 #endif
-# 840 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 // is_union
 
 #if 0 /* disabled by -frewrite-includes */
@@ -5693,32 +4710,27 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_rvalue_reference_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 843 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_union
     : public integral_constant<bool, __is_union(_Tp)> {};
 
 #else
-# 848 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __libcpp_union : public false_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_union
     : public __libcpp_union<typename remove_cv<_Tp>::type> {};
 
 #endif
-# 854 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 856 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_union_v
     = is_union<_Tp>::value;
 #endif
-# 860 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_class
 
@@ -5727,13 +4739,11 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_union_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 864 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
     : public integral_constant<bool, __is_class(_Tp)> {};
 
 #else
-# 869 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 namespace __is_class_imp
 {
@@ -5745,19 +4755,16 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
     : public integral_constant<bool, sizeof(__is_class_imp::__test<_Tp>(0)) == 1 && !is_union<_Tp>::value> {};
 
 #endif
-# 880 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 882 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_class_v
     = is_class<_Tp>::value;
 #endif
-# 886 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_function
 
@@ -5766,10 +4773,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_function
 #ifdef __clang__
     __is_function(_Tp)
 #else
-# 894 "nxdk-dxt/lib/libcxx/include/type_traits" 3
  !(is_reference<_Tp>::value || is_const<const _Tp>::value)
 #endif
-# 896 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     > {};
 
 
@@ -5778,12 +4783,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_function
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 900 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_function_v
     = is_function<_Tp>::value;
 #endif
-# 904 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __libcpp_is_member_pointer {
   enum {
@@ -5809,12 +4812,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_function_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 925 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_function_pointer_v
     = is_member_function_pointer<_Tp>::value;
 #endif
-# 929 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_member_pointer
 
@@ -5826,12 +4827,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 936 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_pointer_v
     = is_member_pointer<_Tp>::value;
 #endif
-# 940 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_member_object_pointer
 
@@ -5843,12 +4842,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_member_object_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 947 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_object_pointer_v
     = is_member_object_pointer<_Tp>::value;
 #endif
-# 951 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_enum
 
@@ -5857,13 +4854,11 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_object_pointer_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 955 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
     : public integral_constant<bool, __is_enum(_Tp)> {};
 
 #else
-# 960 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
     : public integral_constant<bool, !is_void<_Tp>::value             &&
@@ -5878,19 +4873,16 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
                                      !is_function<_Tp>::value         > {};
 
 #endif
-# 974 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 976 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_enum_v
     = is_enum<_Tp>::value;
 #endif
-# 980 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_arithmetic
 
@@ -5903,12 +4895,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_arithmetic
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 988 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_arithmetic_v
     = is_arithmetic<_Tp>::value;
 #endif
-# 992 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_fundamental
 
@@ -5922,12 +4912,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_fundamental
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1001 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_fundamental_v
     = is_fundamental<_Tp>::value;
 #endif
-# 1005 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_scalar
 
@@ -5945,12 +4933,10 @@ template <> struct _LIBCPP_TEMPLATE_VIS is_scalar<nullptr_t> : public true_type 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1018 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_scalar_v
     = is_scalar<_Tp>::value;
 #endif
-# 1022 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_object
 
@@ -5965,12 +4951,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_object
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1032 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_object_v
     = is_object<_Tp>::value;
 #endif
-# 1036 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_compound
 
@@ -5982,12 +4966,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_compound
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1043 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_compound_v
     = is_compound<_Tp>::value;
 #endif
-# 1047 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 // __is_referenceable  [defns.referenceable]
@@ -6013,10 +4995,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_const {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1068 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_const_t = typename add_const<_Tp>::type;
 #endif
-# 1070 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // add_volatile
 
@@ -6029,10 +5009,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_volatile {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1078 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_volatile_t = typename add_volatile<_Tp>::type;
 #endif
-# 1080 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // add_cv
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_cv {
@@ -6044,10 +5022,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_cv {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1087 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_cv_t = typename add_cv<_Tp>::type;
 #endif
-# 1089 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_reference
 
@@ -6060,10 +5036,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_reference<_Tp&&> {typede
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1097 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_reference_t = typename remove_reference<_Tp>::type;
 #endif
-# 1099 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // add_lvalue_reference
 
@@ -6078,10 +5052,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_lvalue_reference
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1109 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_lvalue_reference_t = typename add_lvalue_reference<_Tp>::type;
 #endif
-# 1111 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, bool = __is_referenceable<_Tp>::value> struct __add_rvalue_reference_impl            { typedef _LIBCPP_NODEBUG_TYPE  _Tp   type; };
 template <class _Tp                                       > struct __add_rvalue_reference_impl<_Tp, true> { typedef _LIBCPP_NODEBUG_TYPE  _Tp&& type; };
@@ -6094,10 +5066,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_rvalue_reference
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1119 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_rvalue_reference_t = typename add_rvalue_reference<_Tp>::type;
 #endif
-# 1121 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> _Tp&& __declval(int);
 template <class _Tp> _Tp   __declval(long);
@@ -6122,7 +5092,6 @@ struct __unconstref {
 template <class _Tp>
 using __uncvref_t _LIBCPP_NODEBUG_TYPE = typename __uncvref<_Tp>::type;
 #endif
-# 1145 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // __is_same_uncvref
 
@@ -6135,14 +5104,12 @@ struct __is_same_uncvref : _IsSame<typename __uncvref<_Tp>::type,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1153 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 // remove_cvref - same as __uncvref
 template <class _Tp>
 struct remove_cvref : public __uncvref<_Tp> {};
 
 template <class _Tp> using remove_cvref_t = typename remove_cvref<_Tp>::type;
 #endif
-# 1159 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 struct __any
@@ -6163,10 +5130,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS remove_pointer<_Tp* const volat
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1175 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_pointer_t = typename remove_pointer<_Tp>::type;
 #endif
-# 1177 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // add_pointer
 
@@ -6186,10 +5151,8 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_pointer
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1192 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using add_pointer_t = typename add_pointer<_Tp>::type;
 #endif
-# 1194 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // type_identity
 #if 0 /* disabled by -frewrite-includes */
@@ -6197,11 +5160,9 @@ template <class _Tp> using add_pointer_t = typename add_pointer<_Tp>::type;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1197 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template<class _Tp> struct type_identity { typedef _Tp type; };
 template<class _Tp> using type_identity_t = typename type_identity<_Tp>::type;
 #endif
-# 1200 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_signed
 
@@ -6223,12 +5184,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_signed : public __libcpp_is_
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1217 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_signed_v
     = is_signed<_Tp>::value;
 #endif
-# 1221 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_unsigned
 
@@ -6250,12 +5209,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_unsigned : public __libcpp_i
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1238 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_unsigned_v
     = is_unsigned<_Tp>::value;
 #endif
-# 1242 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // rank
 
@@ -6271,12 +5228,10 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS rank<_Tp[_Np]>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1253 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t rank_v
     = rank<_Tp>::value;
 #endif
-# 1257 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // extent
 
@@ -6296,12 +5251,10 @@ template <class _Tp, size_t _Np, unsigned _Ip> struct _LIBCPP_TEMPLATE_VIS exten
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1272 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, unsigned _Ip = 0>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t extent_v
     = extent<_Tp, _Ip>::value;
 #endif
-# 1276 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_extent
 
@@ -6317,10 +5270,8 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS remove_extent<_Tp[_
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1287 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_extent_t = typename remove_extent<_Tp>::type;
 #endif
-# 1289 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // remove_all_extents
 
@@ -6336,17 +5287,14 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS remove_all_extents<
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1300 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using remove_all_extents_t = typename remove_all_extents<_Tp>::type;
 #endif
-# 1302 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 17
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1304 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 // is_bounded_array
 
 template <class>                 struct _LIBCPP_TEMPLATE_VIS is_bounded_array           : false_type {};
@@ -6365,7 +5313,6 @@ template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR
 bool is_unbounded_array_v  = is_unbounded_array<_Tp>::value;
 #endif
-# 1322 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // decay
 
@@ -6404,10 +5351,8 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1356 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using decay_t = typename decay<_Tp>::type;
 #endif
-# 1358 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_abstract
 
@@ -6419,12 +5364,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_abstract
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1365 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_abstract_v
     = is_abstract<_Tp>::value;
 #endif
-# 1369 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_final
 
@@ -6436,23 +5379,19 @@ __libcpp_is_final : public integral_constant<bool, __is_final(_Tp)> {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1376 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS
 is_final : public integral_constant<bool, __is_final(_Tp)> {};
 #endif
-# 1379 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1381 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_final_v
     = is_final<_Tp>::value;
 #endif
-# 1385 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_aggregate
 #if 0 /* disabled by -frewrite-includes */
@@ -6460,7 +5399,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_final_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1388 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS
 is_aggregate : public integral_constant<bool, __is_aggregate(_Tp)> {};
@@ -6470,15 +5408,12 @@ is_aggregate : public integral_constant<bool, __is_aggregate(_Tp)> {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1393 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr bool is_aggregate_v
     = is_aggregate<_Tp>::value;
 #endif
-# 1397 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #endif // _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_IS_AGGREGATE)
-# 1399 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_base_of
 
@@ -6491,12 +5426,10 @@ struct _LIBCPP_TEMPLATE_VIS is_base_of
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1407 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Bp, class _Dp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_base_of_v
     = is_base_of<_Bp, _Dp>::value;
 #endif
-# 1411 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_convertible
 
@@ -6505,29 +5438,24 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_base_of_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1415 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _T1, class _T2> struct _LIBCPP_TEMPLATE_VIS is_convertible
     : public integral_constant<bool, __is_convertible_to(_T1, _T2) &&
                                      !is_abstract<_T2>::value> {};
 
 #else  // __has_feature(is_convertible_to)
-# 1421 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #endif  // __has_feature(is_convertible_to)
-# 1488 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1490 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _From, class _To>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_convertible_v
     = is_convertible<_From, _To>::value;
 #endif
-# 1494 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_convertible
 
@@ -6536,7 +5464,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_convertible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1498 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <typename _Tp>
 static void __test_noexcept(_Tp) noexcept;
@@ -6559,7 +5486,6 @@ template <typename _Fm, typename _To>
 inline constexpr bool is_nothrow_convertible_v = is_nothrow_convertible<_Fm, _To>::value;
 
 #endif // _LIBCPP_STD_VER > 17
-# 1520 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_empty
 
@@ -6568,14 +5494,12 @@ inline constexpr bool is_nothrow_convertible_v = is_nothrow_convertible<_Fm, _To
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1524 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS is_empty
     : public integral_constant<bool, __is_empty(_Tp)> {};
 
 #else  // __has_feature(is_empty)
-# 1530 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct __is_empty1
@@ -6597,19 +5521,16 @@ template <class _Tp> struct __libcpp_empty<_Tp, false> : public false_type {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_empty : public __libcpp_empty<_Tp> {};
 
 #endif  // __has_feature(is_empty)
-# 1551 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1553 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_empty_v
     = is_empty<_Tp>::value;
 #endif
-# 1557 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_polymorphic
 
@@ -6618,14 +5539,12 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_empty_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1561 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS is_polymorphic
     : public integral_constant<bool, __is_polymorphic(_Tp)> {};
 
 #else
-# 1567 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template<typename _Tp> char &__is_polymorphic_impl(
     typename enable_if<sizeof((_Tp*)dynamic_cast<const volatile void*>(declval<_Tp*>())) != 0,
@@ -6636,19 +5555,16 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_polymorphic
     : public integral_constant<bool, sizeof(__is_polymorphic_impl<_Tp>(0)) == 1> {};
 
 #endif // __has_feature(is_polymorphic)
-# 1577 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1579 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_polymorphic_v
     = is_polymorphic<_Tp>::value;
 #endif
-# 1583 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // has_virtual_destructor
 
@@ -6657,31 +5573,26 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_polymorphic_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1587 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_virtual_destructor
     : public integral_constant<bool, __has_virtual_destructor(_Tp)> {};
 
 #else
-# 1592 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_virtual_destructor
     : public false_type {};
 
 #endif
-# 1597 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1599 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_virtual_destructor_v
     = has_virtual_destructor<_Tp>::value;
 #endif
-# 1603 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // has_unique_object_representations
 
@@ -6690,7 +5601,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_virtual_destructor_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1607 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_unique_object_representations
     : public integral_constant<bool,
@@ -6701,15 +5611,12 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS has_unique_object_representatio
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1613 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool has_unique_object_representations_v
     = has_unique_object_representations<_Tp>::value;
 #endif
-# 1617 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #endif
-# 1619 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // alignment_of
 
@@ -6721,12 +5628,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS alignment_of
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1626 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR size_t alignment_of_v
     = alignment_of<_Tp>::value;
 #endif
-# 1630 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // aligned_storage
 
@@ -6745,7 +5650,6 @@ struct __nat
     __nat& operator=(const __nat&) = delete;
     ~__nat() = delete;
 #endif
-# 1648 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 };
 
 template <class _Tp>
@@ -6832,11 +5736,9 @@ struct _LIBCPP_TEMPLATE_VIS aligned_storage
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1730 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <size_t _Len, size_t _Align = __find_max_align<__all_types, _Len>::value>
     using aligned_storage_t = typename aligned_storage<_Len, _Align>::type;
 #endif
-# 1733 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #define _CREATE_ALIGNED_STORAGE_SPECIALIZATION(n) \
 template <size_t _Len>\
@@ -6868,10 +5770,8 @@ _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x2000);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1760 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 _CREATE_ALIGNED_STORAGE_SPECIALIZATION(0x4000);
 #endif // !defined(_LIBCPP_OBJECT_FORMAT_COFF)
-# 1762 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #undef _CREATE_ALIGNED_STORAGE_SPECIALIZATION
 
@@ -6909,10 +5809,8 @@ struct aligned_union
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1795 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <size_t _Len, class ..._Types> using aligned_union_t = typename aligned_union<_Len, _Types...>::type;
 #endif
-# 1797 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct __numeric_type
@@ -6996,12 +5894,10 @@ typedef
 #ifndef _LIBCPP_HAS_NO_INT128
     __type_list<__int128_t,
 #endif
-# 1880 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     __nat
 #ifndef _LIBCPP_HAS_NO_INT128
     >
 #endif
-# 1884 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     > > > > > __signed_types;
 
 typedef
@@ -7013,12 +5909,10 @@ typedef
 #ifndef _LIBCPP_HAS_NO_INT128
     __type_list<__uint128_t,
 #endif
-# 1895 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     __nat
 #ifndef _LIBCPP_HAS_NO_INT128
     >
 #endif
-# 1899 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     > > > > > __unsigned_types;
 
 template <class _TypeList, size_t _Size, bool = _Size <= sizeof(typename _TypeList::_Head)> struct __find_first;
@@ -7106,7 +6000,6 @@ template <> struct __make_signed<unsigned long long, true> {typedef long long ty
 template <> struct __make_signed<__int128_t,         true> {typedef __int128_t type;};
 template <> struct __make_signed<__uint128_t,        true> {typedef __int128_t type;};
 #endif
-# 1986 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS make_signed
@@ -7119,10 +6012,8 @@ struct _LIBCPP_TEMPLATE_VIS make_signed
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1994 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using make_signed_t = typename make_signed<_Tp>::type;
 #endif
-# 1996 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, bool = is_integral<_Tp>::value || is_enum<_Tp>::value>
 struct __make_unsigned {};
@@ -7146,7 +6037,6 @@ template <> struct __make_unsigned<unsigned long long, true> {typedef unsigned l
 template <> struct __make_unsigned<__int128_t,         true> {typedef __uint128_t        type;};
 template <> struct __make_unsigned<__uint128_t,        true> {typedef __uint128_t        type;};
 #endif
-# 2019 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS make_unsigned
@@ -7159,10 +6049,8 @@ struct _LIBCPP_TEMPLATE_VIS make_unsigned
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2027 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using make_unsigned_t = typename make_unsigned<_Tp>::type;
 #endif
-# 2029 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Up, class = void>
 struct __common_type2_imp {};
@@ -7187,14 +6075,12 @@ struct __common_type_impl {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2049 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 # define _LIBCPP_OPTIONAL_PACK(...) , __VA_ARGS__
 template <class... Tp>
 struct __common_types;
 template <class... _Tp>
 struct _LIBCPP_TEMPLATE_VIS common_type;
 #else
-# 2055 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 # define _LIBCPP_OPTIONAL_PACK(...)
 struct __no_arg;
 template <class _Tp, class _Up, class = __no_arg>
@@ -7206,7 +6092,6 @@ struct common_type {
                 "common_type accepts at most 3 arguments in C++03");
 };
 #endif // _LIBCPP_CXX03_LANG
-# 2066 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Up>
 struct __common_type_impl<
@@ -7261,10 +6146,8 @@ struct _LIBCPP_TEMPLATE_VIS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2116 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class ..._Tp> using common_type_t = typename common_type<_Tp...>::type;
 #endif
-# 2118 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_assignable
 
@@ -7297,12 +6180,10 @@ struct is_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2146 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_assignable_v
     = is_assignable<_Tp, _Arg>::value;
 #endif
-# 2150 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_copy_assignable
 
@@ -7315,12 +6196,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_copy_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2158 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_copy_assignable_v
     = is_copy_assignable<_Tp>::value;
 #endif
-# 2162 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_move_assignable
 
@@ -7333,12 +6212,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_move_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2170 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_assignable_v
     = is_move_assignable<_Tp>::value;
 #endif
-# 2174 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_destructible
 
@@ -7403,12 +6280,10 @@ struct is_destructible<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2234 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_destructible_v
     = is_destructible<_Tp>::value;
 #endif
-# 2238 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // move
 
@@ -7521,7 +6396,6 @@ struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param..., ...) const volatil
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2346 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Rp, class _Class, class ..._Param>
 struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param...) &, true, false>
@@ -7652,7 +6526,6 @@ struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param..., ...) const volatil
 };
 
 #endif  // __has_feature(cxx_reference_qualified_functions) || defined(_LIBCPP_COMPILER_GCC)
-# 2476 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 template <class _Rp, class _Class>
@@ -7685,7 +6558,6 @@ struct __member_pointer_class_type<_Ret _ClassType::*> {
 // result_of
 
 template <class _Callable> class result_of;
-# 2656 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // template <class T, class... Args> struct is_constructible;
 
@@ -7699,37 +6571,31 @@ struct __nat {};
     defined(_LIBCPP_TESTING_FALLBACK_IS_CONSTRUCTIBLE))
 #endif
 #endif /* disabled by -frewrite-includes */
-# 2779 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if __has_feature(is_constructible)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2781 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class ..._Args>
 struct _LIBCPP_TEMPLATE_VIS is_constructible
     : public integral_constant<bool, __is_constructible(_Tp, _Args...)>
     {};
 #else
-# 2786 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class... _Args>
 struct _LIBCPP_TEMPLATE_VIS is_constructible
     : public __libcpp_is_constructible<_Tp, _Args...>::type {};
 #endif
-# 2790 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2792 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class ..._Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_constructible_v
     = is_constructible<_Tp, _Args...>::value;
 #endif
-# 2796 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_default_constructible
 
@@ -7743,12 +6609,10 @@ struct _LIBCPP_TEMPLATE_VIS is_default_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2805 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_default_constructible_v
     = is_default_constructible<_Tp>::value;
 #endif
-# 2809 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 // First of all, we can't implement this check in C++03 mode because the {}
@@ -7773,7 +6637,6 @@ struct __is_implicitly_default_constructible<_Tp, decltype(__test_implicit_defau
     : false_type
 { };
 #endif // !C++03
-# 2833 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_copy_constructible
 
@@ -7787,12 +6650,10 @@ struct _LIBCPP_TEMPLATE_VIS is_copy_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2842 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_copy_constructible_v
     = is_copy_constructible<_Tp>::value;
 #endif
-# 2846 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_move_constructible
 
@@ -7806,12 +6667,10 @@ struct _LIBCPP_TEMPLATE_VIS is_move_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2855 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_constructible_v
     = is_move_constructible<_Tp>::value;
 #endif
-# 2859 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_constructible
 
@@ -7820,7 +6679,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_move_constructible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2863 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class... _Args>
 struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible
@@ -7829,7 +6687,6 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible
 };
 
 #else  // !__has_feature(is_trivially_constructible)
-# 2871 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class... _Args>
 struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible
@@ -7844,13 +6701,10 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible<_Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2881 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : integral_constant<bool, __has_trivial_constructor(_Tp)>
 #else
-# 2883 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : integral_constant<bool, is_scalar<_Tp>::value>
 #endif
-# 2885 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 {
 };
 
@@ -7873,7 +6727,6 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible<_Tp, _Tp&>
 };
 
 #endif  // !__has_feature(is_trivially_constructible)
-# 2907 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -7881,12 +6734,10 @@ struct _LIBCPP_TEMPLATE_VIS is_trivially_constructible<_Tp, _Tp&>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2910 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class... _Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_constructible_v
     = is_trivially_constructible<_Tp, _Args...>::value;
 #endif
-# 2914 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_default_constructible
 
@@ -7899,12 +6750,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_default_constructi
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2922 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_default_constructible_v
     = is_trivially_default_constructible<_Tp>::value;
 #endif
-# 2926 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_copy_constructible
 
@@ -7917,12 +6766,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copy_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2934 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copy_constructible_v
     = is_trivially_copy_constructible<_Tp>::value;
 #endif
-# 2938 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_move_constructible
 
@@ -7935,12 +6782,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_move_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2946 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_constructible_v
     = is_trivially_move_constructible<_Tp>::value;
 #endif
-# 2950 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_assignable
 
@@ -7949,7 +6794,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_constructible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2954 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Arg>
 struct is_trivially_assignable
@@ -7958,7 +6802,6 @@ struct is_trivially_assignable
 };
 
 #else  // !__has_feature(is_trivially_assignable)
-# 2962 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Arg>
 struct is_trivially_assignable
@@ -7981,19 +6824,16 @@ struct is_trivially_assignable<_Tp&, _Tp&&>
     : integral_constant<bool, is_scalar<_Tp>::value> {};
 
 #endif  // !__has_feature(is_trivially_assignable)
-# 2984 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2986 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_assignable_v
     = is_trivially_assignable<_Tp, _Arg>::value;
 #endif
-# 2990 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_copy_assignable
 
@@ -8006,12 +6846,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copy_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2998 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copy_assignable_v
     = is_trivially_copy_assignable<_Tp>::value;
 #endif
-# 3002 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_move_assignable
 
@@ -8025,12 +6863,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_move_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3011 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_assignable_v
     = is_trivially_move_assignable<_Tp>::value;
 #endif
-# 3015 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_destructible
 
@@ -8039,7 +6875,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_move_assignable_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3019 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible
     : public integral_constant<bool, __is_trivially_destructible(_Tp)> {};
@@ -8050,13 +6885,11 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 3024 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible
     : public integral_constant<bool, is_destructible<_Tp>::value && __has_trivial_destructor(_Tp)> {};
 
 #else
-# 3029 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __libcpp_trivial_destructor
     : public integral_constant<bool, is_scalar<_Tp>::value ||
@@ -8069,19 +6902,16 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_destructible<_Tp[]
     : public false_type {};
 
 #endif
-# 3041 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3043 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_destructible_v
     = is_trivially_destructible<_Tp>::value;
 #endif
-# 3047 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_constructible
 
@@ -8090,14 +6920,12 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_destructible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3051 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class... _Args>
 struct _LIBCPP_TEMPLATE_VIS is_nothrow_constructible
     : public integral_constant<bool, __is_nothrow_constructible(_Tp, _Args...)> {};
 
 #else
-# 3057 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <bool, bool, class _Tp, class... _Args> struct __libcpp_is_nothrow_constructible;
 
@@ -8135,7 +6963,6 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_constructible<_Tp[_Ns]>
 };
 
 #endif  // _LIBCPP_HAS_NO_NOEXCEPT
-# 3094 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -8143,12 +6970,10 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_constructible<_Tp[_Ns]>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3097 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class ..._Args>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_constructible_v
     = is_nothrow_constructible<_Tp, _Args...>::value;
 #endif
-# 3101 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_default_constructible
 
@@ -8161,12 +6986,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_default_constructibl
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3109 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_default_constructible_v
     = is_nothrow_default_constructible<_Tp>::value;
 #endif
-# 3113 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_copy_constructible
 
@@ -8179,12 +7002,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_copy_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3121 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_copy_constructible_v
     = is_nothrow_copy_constructible<_Tp>::value;
 #endif
-# 3125 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_move_constructible
 
@@ -8197,12 +7018,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_move_constructible
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3133 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_constructible_v
     = is_nothrow_move_constructible<_Tp>::value;
 #endif
-# 3137 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_assignable
 
@@ -8211,14 +7030,12 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_constructible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3141 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Arg>
 struct _LIBCPP_TEMPLATE_VIS is_nothrow_assignable
     : public integral_constant<bool, __is_nothrow_assignable(_Tp, _Arg)> {};
 
 #else
-# 3147 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <bool, class _Tp, class _Arg> struct __libcpp_is_nothrow_assignable;
 
@@ -8241,19 +7058,16 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_assignable
 };
 
 #endif  // _LIBCPP_HAS_NO_NOEXCEPT
-# 3169 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3171 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp, class _Arg>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_assignable_v
     = is_nothrow_assignable<_Tp, _Arg>::value;
 #endif
-# 3175 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_copy_assignable
 
@@ -8266,12 +7080,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_copy_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3183 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_copy_assignable_v
     = is_nothrow_copy_assignable<_Tp>::value;
 #endif
-# 3187 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_move_assignable
 
@@ -8285,12 +7097,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_nothrow_move_assignable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3196 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_assignable_v
     = is_nothrow_move_assignable<_Tp>::value;
 #endif
-# 3200 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_nothrow_destructible
 
@@ -8299,7 +7109,6 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_move_assignable_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3204 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <bool, class _Tp> struct __libcpp_is_nothrow_destructible;
 
@@ -8340,7 +7149,6 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_destructible<_Tp&&>
 };
 
 #else
-# 3244 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __libcpp_nothrow_destructor
     : public integral_constant<bool, is_scalar<_Tp>::value ||
@@ -8354,19 +7162,16 @@ struct _LIBCPP_TEMPLATE_VIS is_nothrow_destructible<_Tp[]>
     : public false_type {};
 
 #endif
-# 3257 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3259 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_destructible_v
     = is_nothrow_destructible<_Tp>::value;
 #endif
-# 3263 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_pod
 
@@ -8375,13 +7180,11 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_nothrow_destructible_v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3267 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pod
     : public integral_constant<bool, __is_pod(_Tp)> {};
 
 #else
-# 3272 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pod
     : public integral_constant<bool, is_trivially_default_constructible<_Tp>::value   &&
@@ -8390,19 +7193,16 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_pod
                                      is_trivially_destructible<_Tp>::value> {};
 
 #endif
-# 3280 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && !defined(_LIBCPP_HAS_NO_VARIABLE_TEMPLATES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3282 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_pod_v
     = is_pod<_Tp>::value;
 #endif
-# 3286 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_literal_type;
 
@@ -8415,12 +7215,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_literal_type
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3294 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_literal_type_v
     = is_literal_type<_Tp>::value;
 #endif
-# 3298 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_standard_layout;
 
@@ -8430,13 +7228,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_standard_layout
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3303 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : public integral_constant<bool, __is_standard_layout(_Tp)>
 #else
-# 3305 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : integral_constant<bool, is_scalar<typename remove_all_extents<_Tp>::type>::value>
 #endif
-# 3307 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     {};
 
 #if 0 /* disabled by -frewrite-includes */
@@ -8444,12 +7239,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_standard_layout
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3310 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_standard_layout_v
     = is_standard_layout<_Tp>::value;
 #endif
-# 3314 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivially_copyable;
 
@@ -8459,7 +7252,6 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copyable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3319 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : public integral_constant<bool, __is_trivially_copyable(_Tp)>
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -8467,13 +7259,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copyable
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 3321 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : public integral_constant<bool, !is_volatile<_Tp>::value && __is_trivially_copyable(_Tp)>
 #else
-# 3323 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : integral_constant<bool, is_scalar<typename remove_all_extents<_Tp>::type>::value>
 #endif
-# 3325 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     {};
 
 #if 0 /* disabled by -frewrite-includes */
@@ -8481,12 +7270,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivially_copyable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3328 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivially_copyable_v
     = is_trivially_copyable<_Tp>::value;
 #endif
-# 3332 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // is_trivial;
 
@@ -8496,14 +7283,11 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivial
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3337 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : public integral_constant<bool, __is_trivial(_Tp)>
 #else
-# 3339 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     : integral_constant<bool, is_trivially_copyable<_Tp>::value &&
                                  is_trivially_default_constructible<_Tp>::value>
 #endif
-# 3342 "nxdk-dxt/lib/libcxx/include/type_traits" 3
     {};
 
 #if 0 /* disabled by -frewrite-includes */
@@ -8511,12 +7295,10 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_trivial
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3345 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_trivial_v
     = is_trivial<_Tp>::value;
 #endif
-# 3349 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __is_reference_wrapper_impl : public false_type {};
 template <class _Tp> struct __is_reference_wrapper_impl<reference_wrapper<_Tp> > : public true_type {};
@@ -8792,17 +7574,14 @@ class _LIBCPP_TEMPLATE_VIS result_of<_Fp(_Args...)>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3620 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using result_of_t = typename result_of<_Tp>::type;
 #endif
-# 3622 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3624 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // invoke_result
 
@@ -8852,10 +7631,8 @@ _LIBCPP_INLINE_VAR constexpr bool is_nothrow_invocable_r_v
     = is_nothrow_invocable_r<_Ret, _Fn, _Args...>::value;
 
 #endif // _LIBCPP_STD_VER > 14
-# 3673 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
-# 3675 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp> struct __is_swappable;
 template <class _Tp> struct __is_nothrow_swappable;
@@ -8876,10 +7653,8 @@ typename enable_if
     is_move_assignable<_Tp>::value
 >::type
 #else
-# 3695 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 void
 #endif
-# 3697 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 _LIBCPP_CONSTEXPR_AFTER_CXX17
 swap(_Tp& __x, _Tp& __y) _NOEXCEPT_(is_nothrow_move_constructible<_Tp>::value &&
                                     is_nothrow_move_assignable<_Tp>::value)
@@ -8956,10 +7731,8 @@ struct __nothrow_swappable_with {
       noexcept(swap(_VSTD::declval<_Tp>(), _VSTD::declval<_Up>()))
   &&  noexcept(swap(_VSTD::declval<_Up>(), _VSTD::declval<_Tp>()));
 #else
-# 3773 "nxdk-dxt/lib/libcxx/include/type_traits" 3
       false;
 #endif
-# 3775 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 };
 
 template <class _Tp, class _Up>
@@ -8984,7 +7757,6 @@ struct __is_nothrow_swappable
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3795 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, class _Up>
 struct _LIBCPP_TEMPLATE_VIS is_swappable_with
@@ -9039,7 +7811,6 @@ _LIBCPP_INLINE_VAR constexpr bool is_nothrow_swappable_v
     = is_nothrow_swappable<_Tp>::value;
 
 #endif // _LIBCPP_STD_VER > 14
-# 3849 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp, bool = is_enum<_Tp>::value> struct __underlying_type_impl;
 
@@ -9060,10 +7831,8 @@ struct underlying_type : __underlying_type_impl<_Tp, is_enum<_Tp>::value> {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3865 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 template <class _Tp> using underlying_type_t = typename underlying_type<_Tp>::type;
 #endif
-# 3867 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 
 template <class _Tp, bool = is_enum<_Tp>::value>
@@ -9106,7 +7875,6 @@ __int128_t __convert_to_integral(__int128_t __val) { return __val; }
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
 __uint128_t __convert_to_integral(__uint128_t __val) { return __val; }
 #endif
-# 3909 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
@@ -9146,14 +7914,12 @@ struct __has_operator_addressof
 {};
 
 #endif  // _LIBCPP_CXX03_LANG
-# 3948 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3950 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class...> using void_t = void;
 
@@ -9175,7 +7941,6 @@ template<class _Tp>
 _LIBCPP_INLINE_VAR constexpr bool negation_v
     = negation<_Tp>::value;
 #endif  // _LIBCPP_STD_VER > 14
-# 3971 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 // These traits are used in __tree and __hash_table
 #ifndef _LIBCPP_CXX03_LANG
@@ -9209,7 +7974,6 @@ struct __can_extract_map_key<_ValTy, _Key, _Key, _RawValTy>
     : false_type {};
 
 #endif
-# 4004 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #ifndef _LIBCPP_HAS_NO_BUILTIN_IS_CONSTANT_EVALUATED
 #if 0 /* disabled by -frewrite-includes */
@@ -9217,22 +7981,18 @@ struct __can_extract_map_key<_ValTy, _Key, _Key, _RawValTy>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 4007 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 _LIBCPP_INLINE_VISIBILITY
 inline constexpr bool is_constant_evaluated() noexcept {
   return __builtin_is_constant_evaluated();
 }
 #endif
-# 4012 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 inline _LIBCPP_CONSTEXPR
 bool __libcpp_is_constant_evaluated() _NOEXCEPT { return __builtin_is_constant_evaluated(); }
 #else
-# 4016 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 inline _LIBCPP_CONSTEXPR
 bool __libcpp_is_constant_evaluated() _NOEXCEPT { return false; }
 #endif
-# 4019 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 template <class _CharT>
 using _IsCharLikeType = _And<is_standard_layout<_CharT>, is_trivial<_CharT> >;
@@ -9240,7 +8000,6 @@ using _IsCharLikeType = _And<is_standard_layout<_CharT>, is_trivial<_CharT> >;
 _LIBCPP_END_NAMESPACE_STD
 
 #if 1 /* evaluated by -frewrite-includes */
-# 4026 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 // std::byte
 namespace std  // purposefully not versioned
 {
@@ -9270,30 +8029,21 @@ template <class _Integer>
 
 }
 #endif
-# 4055 "nxdk-dxt/lib/libcxx/include/type_traits" 3
 
 #endif  // _LIBCPP_TYPE_TRAITS
-# 4057 "nxdk-dxt/lib/libcxx/include/type_traits" 3
-# 111 "nxdk-dxt/lib/libcxx/include/cstddef" 2 3
 #endif
-# 112 "nxdk-dxt/lib/libcxx/include/cstddef" 3
 
 #endif  // _LIBCPP_CSTDDEF
-# 114 "nxdk-dxt/lib/libcxx/include/cstddef" 3
-# 47 "nxdk-dxt/lib/libcxx/include/initializer_list" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 49 "nxdk-dxt/lib/libcxx/include/initializer_list"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 50 "nxdk-dxt/lib/libcxx/include/initializer_list" 3
 #endif
-# 51 "nxdk-dxt/lib/libcxx/include/initializer_list" 3
 
 namespace std  // purposefully not versioned
 {
@@ -9357,23 +8107,16 @@ end(initializer_list<_Ep> __il) _NOEXCEPT
 }
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
-# 114 "nxdk-dxt/lib/libcxx/include/initializer_list" 3
 
 }  // std
 
 #endif  // _LIBCPP_INITIALIZER_LIST
-# 118 "nxdk-dxt/lib/libcxx/include/initializer_list" 3
-# 640 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 640 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 641 "nxdk-dxt/lib/libcxx/include/algorithm"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstring>
 #endif /* expanded by -frewrite-includes */
-# 641 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/cstring" 1
 // -*- C++ -*-
 //===--------------------------- cstring ----------------------------------===//
 //
@@ -9389,13 +8132,9 @@ end(initializer_list<_Ep> __il) _NOEXCEPT
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 59 "nxdk-dxt/lib/libcxx/include/cstring"
-# 60 "nxdk-dxt/lib/libcxx/include/cstring"
 #if 0 /* expanded by -frewrite-includes */
 #include <string.h>
 #endif /* expanded by -frewrite-includes */
-# 60 "nxdk-dxt/lib/libcxx/include/cstring"
-# 1 "nxdk-dxt/lib/libcxx/include/string.h" 1
 // -*- C++ -*-
 //===--------------------------- string.h ---------------------------------===//
 //
@@ -9452,27 +8191,20 @@ size_t strlen(const char* s);
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 54 "nxdk-dxt/lib/libcxx/include/string.h"
-# 55 "nxdk-dxt/lib/libcxx/include/string.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 57 "nxdk-dxt/lib/libcxx/include/string.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 58 "nxdk-dxt/lib/libcxx/include/string.h" 3
 #endif
-# 59 "nxdk-dxt/lib/libcxx/include/string.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <string.h>
 #endif /* expanded by -frewrite-includes */
-# 60 "nxdk-dxt/lib/libcxx/include/string.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/string.h" 1 3
 /* String handling <string.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -9485,13 +8217,10 @@ size_t strlen(const char* s);
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_lib_ext1.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/string.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 1 3
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -9506,27 +8235,20 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 10 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
-# 12 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 13 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #define __STDC_WANT_LIB_EXT1_PREVIOUS__ -1
   #endif
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #else
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
-# 19 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
 #if 0 /* disabled by -frewrite-includes */
@@ -9534,19 +8256,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
-# 23 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -9555,35 +8273,25 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ set to value other than 0,1 -- undefined behavior
     #endif
-# 31 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #endif
-# 33 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/string.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/string.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
 typedef _PDCLIB_size_t size_t;
 #endif
-# 21 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 #ifndef _PDCLIB_NULL_DEFINED
 #define _PDCLIB_NULL_DEFINED _PDCLIB_NULL_DEFINED
 #define NULL _PDCLIB_NULL
 #endif
-# 26 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 /* String function conventions */
 
@@ -9753,7 +8461,6 @@ _PDCLIB_PUBLIC size_t strlen( const char * s );
 #ifdef __cplusplus
 }
 #endif
-# 386 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 /* Extension hook for downstream projects that want to have non-standard
    extensions to standard headers.
@@ -9762,8 +8469,6 @@ _PDCLIB_PUBLIC size_t strlen( const char * s );
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_STRING_H
 #endif /* expanded by -frewrite-includes */
-# 391 "nxdk-dxt/lib/pdclib/include/string.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2020 Stefan Schmidt
@@ -9771,7 +8476,6 @@ _PDCLIB_PUBLIC size_t strlen( const char * s );
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 8 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 3
 
 char *strdup (const char *s);
 
@@ -9800,12 +8504,10 @@ __attribute__((deprecated)) static int stricmp (const char *s1, const char *s2)
 #define _NLSCMPERROR 0x7FFFFFFF
 #define _NLSCMP_DEFINED
 #endif
-# 36 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 40 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 3
 
 
 #ifdef __cplusplus
@@ -9814,7 +8516,6 @@ __attribute__((deprecated)) static int stricmp (const char *s1, const char *s2)
 #ifndef _NXDK_PREFERRED_OVERLOAD
 #define _NXDK_PREFERRED_OVERLOAD __attribute__ ((__enable_if__(true, "")))
 #endif
-# 48 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 3
 
 inline static char *__nxdk_strchr (const char *__s, int __c)
 {
@@ -9892,14 +8593,9 @@ inline static _NXDK_PREFERRED_OVERLOAD char *strstr (char *__s1, const char *__s
 }
 
 #endif
-# 125 "nxdk-dxt/lib/xboxrt/libc_extensions/string_ext_.h" 3
-# 392 "nxdk-dxt/lib/pdclib/include/string.h" 2 3
 #endif
-# 393 "nxdk-dxt/lib/pdclib/include/string.h" 3
 
 #endif
-# 395 "nxdk-dxt/lib/pdclib/include/string.h" 3
-# 61 "nxdk-dxt/lib/libcxx/include/string.h" 2 3
 
 // MSVCRT, GNU libc and its derivates may already have the correct prototype in
 // <string.h>. This macro can be defined by users if their C library provides
@@ -9910,17 +8606,14 @@ inline static _NXDK_PREFERRED_OVERLOAD char *strstr (char *__s1, const char *__s
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 67 "nxdk-dxt/lib/libcxx/include/string.h" 3
 #define _LIBCPP_STRING_H_HAS_CONST_OVERLOADS
 #endif
-# 69 "nxdk-dxt/lib/libcxx/include/string.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && !defined(_LIBCPP_STRING_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 71 "nxdk-dxt/lib/libcxx/include/string.h" 3
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
 char* __libcpp_strchr(const char* __s, int __c) {return (char*)strchr(__s, __c);}
@@ -9958,24 +8651,18 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
       char* strstr(      char* __s1, const char* __s2) {return __libcpp_strstr(__s1, __s2);}
 }
 #endif
-# 108 "nxdk-dxt/lib/libcxx/include/string.h" 3
 
 #endif  // _LIBCPP_STRING_H
-# 110 "nxdk-dxt/lib/libcxx/include/string.h" 3
-# 61 "nxdk-dxt/lib/libcxx/include/cstring" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/cstring"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 64 "nxdk-dxt/lib/libcxx/include/cstring" 3
 #endif
-# 65 "nxdk-dxt/lib/libcxx/include/cstring" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -10001,7 +8688,6 @@ using ::strstr;
 #ifndef _LIBCPP_HAS_NO_THREAD_UNSAFE_C_FUNCTIONS
 using ::strtok;
 #endif
-# 90 "nxdk-dxt/lib/libcxx/include/cstring" 3
 using ::memset;
 using ::strerror;
 using ::strlen;
@@ -10009,13 +8695,9 @@ using ::strlen;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTRING
-# 97 "nxdk-dxt/lib/libcxx/include/cstring" 3
-# 642 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <utility> // needed to provide swap_ranges.
 #endif /* expanded by -frewrite-includes */
-# 642 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/utility" 1
 // -*- C++ -*-
 //===-------------------------- utility -----------------------------------===//
 //
@@ -10032,13 +8714,9 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 198 "nxdk-dxt/lib/libcxx/include/utility"
-# 199 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <__tuple>
 #endif /* expanded by -frewrite-includes */
-# 199 "nxdk-dxt/lib/libcxx/include/utility"
-# 1 "nxdk-dxt/lib/libcxx/include/__tuple" 1
 // -*- C++ -*-
 //===----------------------------------------------------------------------===//
 //
@@ -10054,31 +8732,22 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__tuple"
-# 14 "nxdk-dxt/lib/libcxx/include/__tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__tuple"
-# 15 "nxdk-dxt/lib/libcxx/include/__tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/libcxx/include/__tuple"
-# 16 "nxdk-dxt/lib/libcxx/include/__tuple"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 18 "nxdk-dxt/lib/libcxx/include/__tuple"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 19 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -10090,7 +8759,6 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_size;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 template <class _Tp, class...>
 using __enable_if_tuple_size_imp = _Tp;
 
@@ -10115,12 +8783,10 @@ struct _LIBCPP_TEMPLATE_VIS tuple_size<__enable_if_tuple_size_imp<
     : public integral_constant<size_t, tuple_size<_Tp>::value> {};
 
 #else
-# 51 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_size<const _Tp> : public tuple_size<_Tp> {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_size<volatile _Tp> : public tuple_size<_Tp> {};
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_size<const volatile _Tp> : public tuple_size<_Tp> {};
 #endif
-# 55 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 template <size_t _Ip, class _Tp> struct _LIBCPP_TEMPLATE_VIS tuple_element;
 
@@ -10168,19 +8834,16 @@ struct __integer_sequence {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 140 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 template <size_t _Ep, size_t _Sp>
 using __make_indices_imp =
     typename __make_integer_seq<__integer_sequence, size_t, _Ep - _Sp>::template
     __to_tuple_indices<_Sp>;
 #else
-# 145 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 template <size_t _Ep, size_t _Sp>
 using __make_indices_imp =
     typename __detail::__make<_Ep - _Sp>::type::template __to_tuple_indices<_Sp>;
 
 #endif
-# 150 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 template <size_t _Ep, size_t _Sp = 0>
 struct __make_tuple_indices
@@ -10221,7 +8884,6 @@ const typename tuple_element<_Ip, tuple<_Tp...> >::type&&
 get(const tuple<_Tp...>&&) _NOEXCEPT;
 
 #endif // !defined(_LIBCPP_CXX03_LANG)
-# 190 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 // pair specializations
 
@@ -10248,7 +8910,6 @@ _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
 const typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
 get(const pair<_T1, _T2>&&) _NOEXCEPT;
 #endif
-# 216 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 // array specializations
 
@@ -10277,7 +8938,6 @@ _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
 const _Tp&&
 get(const array<_Tp, _Size>&&) _NOEXCEPT;
 #endif
-# 244 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 
@@ -10290,7 +8950,6 @@ template <class ..._Tp> struct __tuple_types {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 252 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 namespace __indexer_detail {
 
@@ -10318,7 +8977,6 @@ using __type_pack_element _LIBCPP_NODEBUG_TYPE = typename decltype(
         >{})
   )::type;
 #endif
-# 279 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 template <size_t _Ip, class ..._Types>
 struct _LIBCPP_TEMPLATE_VIS tuple_element<_Ip, __tuple_types<_Types...>>
@@ -10505,11 +9163,9 @@ struct _LIBCPP_TEMPLATE_VIS tuple_element<_Ip, tuple<_Tp...> >
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 461 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 template <size_t _Ip, class ..._Tp>
 using tuple_element_t _LIBCPP_NODEBUG_TYPE  = typename tuple_element <_Ip, _Tp...>::type;
 #endif
-# 464 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 template <bool _IsTuple, class _SizeTrait, size_t _Expected>
 struct __tuple_like_with_size_imp : false_type {};
@@ -10537,14 +9193,12 @@ struct _LIBCPP_TYPE_VIS __check_tuple_constructor_fail {
     static constexpr bool __enable_assign() { return false; }
 };
 #endif // !defined(_LIBCPP_CXX03_LANG)
-# 491 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 493 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 template <bool _CanCopy, bool _CanMove>
 struct __sfinae_ctor_base {};
@@ -10600,38 +9254,25 @@ struct __sfinae_assign_base<false, true> {
   __sfinae_assign_base& operator=(__sfinae_assign_base&&) = default;
 };
 #endif // _LIBCPP_STD_VER > 14
-# 548 "nxdk-dxt/lib/libcxx/include/__tuple" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP___TUPLE
-# 552 "nxdk-dxt/lib/libcxx/include/__tuple" 3
-# 200 "nxdk-dxt/lib/libcxx/include/utility" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 200 "nxdk-dxt/lib/libcxx/include/utility"
-# 201 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <initializer_list>
 #endif /* expanded by -frewrite-includes */
-# 201 "nxdk-dxt/lib/libcxx/include/utility"
-# 202 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 202 "nxdk-dxt/lib/libcxx/include/utility"
-# 203 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstring>
 #endif /* expanded by -frewrite-includes */
-# 203 "nxdk-dxt/lib/libcxx/include/utility"
-# 204 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdint>
 #endif /* expanded by -frewrite-includes */
-# 204 "nxdk-dxt/lib/libcxx/include/utility"
-# 1 "nxdk-dxt/lib/libcxx/include/cstdint" 1
 // -*- C++ -*-
 //===--------------------------- cstdint ----------------------------------===//
 //
@@ -10777,13 +9418,9 @@ Types:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 143 "nxdk-dxt/lib/libcxx/include/cstdint"
-# 144 "nxdk-dxt/lib/libcxx/include/cstdint"
 #if 0 /* expanded by -frewrite-includes */
 #include <stdint.h>
 #endif /* expanded by -frewrite-includes */
-# 144 "nxdk-dxt/lib/libcxx/include/cstdint"
-# 1 "nxdk-dxt/lib/libcxx/include/stdint.h" 1
 // -*- C++ -*-
 //===---------------------------- stdint.h --------------------------------===//
 //
@@ -10802,10 +9439,8 @@ Types:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 15 "nxdk-dxt/lib/libcxx/include/stdint.h"
 #define _LIBCPP_STDINT_H
 #endif // _STD_TYPES_T
-# 17 "nxdk-dxt/lib/libcxx/include/stdint.h"
 
 /*
     stdint.h synopsis
@@ -10898,21 +9533,16 @@ Macros:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 106 "nxdk-dxt/lib/libcxx/include/stdint.h"
-# 107 "nxdk-dxt/lib/libcxx/include/stdint.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 109 "nxdk-dxt/lib/libcxx/include/stdint.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 110 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 #endif
-# 111 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 
 /* C99 stdlib (e.g. glibc < 2.18) does not provide macros needed
    for C++11 unless __STDC_LIMIT_MACROS and __STDC_CONSTANT_MACROS
@@ -10923,25 +9553,19 @@ Macros:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 117 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 #   define __STDC_LIMIT_MACROS
 #endif
-# 119 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && !defined(__STDC_CONSTANT_MACROS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 120 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 #   define __STDC_CONSTANT_MACROS
 #endif
-# 122 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdint.h>
 #endif /* expanded by -frewrite-includes */
-# 123 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/stdint.h" 1 3
 /* Integer types <stdint.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -10954,13 +9578,10 @@ Macros:
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_lib_ext1.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 1 3
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -10975,27 +9596,20 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 10 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
-# 12 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 13 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #define __STDC_WANT_LIB_EXT1_PREVIOUS__ -1
   #endif
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #else
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
-# 19 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
 #if 0 /* disabled by -frewrite-includes */
@@ -11003,19 +9617,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
-# 23 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -11024,23 +9634,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ set to value other than 0,1 -- undefined behavior
     #endif
-# 31 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #endif
-# 33 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/stdint.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 /* 7.18.1.1 Exact-width integer types. */
 
@@ -11101,9 +9703,7 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #ifndef __STDC_LIMIT_MACROS
 #define _PDCLIB_NO_LIMIT_MACROS
 #endif
-# 76 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 #endif
-# 77 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 #ifndef _PDCLIB_NO_LIMIT_MACROS
 
@@ -11194,7 +9794,6 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #define WINT_MAX _PDCLIB_WINT_MAX
 
 #endif
-# 167 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 /* 7.18.4 Macros for integer constants */
 
@@ -11202,9 +9801,7 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #ifndef __STDC_CONSTANT_MACROS
 #define _PDCLIB_NO_CONSTANT_MACROS
 #endif
-# 174 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 #endif
-# 175 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 #ifndef _PDCLIB_NO_CONSTANT_MACROS
 
@@ -11241,7 +9838,6 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #define UINTMAX_C( value ) _PDCLIB_UINTMAX_C( value )
 
 #endif
-# 211 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 /* Annex K -- Bounds-checking interfaces */
 
@@ -11250,10 +9846,8 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 215 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 #define RSIZE_MAX ( _PDCLIB_SIZE_MAX >> 1 )
 #endif
-# 217 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 /* Extension hook for downstream projects that want to have non-standard
    extensions to standard headers.
@@ -11262,36 +9856,25 @@ typedef _PDCLIB_uintmax_t uintmax_t;
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_STDINT_H
 #endif /* expanded by -frewrite-includes */
-# 222 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
-# 223 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 #endif
-# 224 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 228 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
 
 #endif
-# 230 "nxdk-dxt/lib/pdclib/include/stdint.h" 3
-# 124 "nxdk-dxt/lib/libcxx/include/stdint.h" 2 3
 
 #endif  // _LIBCPP_STDINT_H
-# 126 "nxdk-dxt/lib/libcxx/include/stdint.h" 3
-# 145 "nxdk-dxt/lib/libcxx/include/cstdint" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 147 "nxdk-dxt/lib/libcxx/include/cstdint"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 148 "nxdk-dxt/lib/libcxx/include/cstdint" 3
 #endif
-# 149 "nxdk-dxt/lib/libcxx/include/cstdint" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -11334,18 +9917,12 @@ using::uintmax_t;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDINT
-# 191 "nxdk-dxt/lib/libcxx/include/cstdint" 3
-# 205 "nxdk-dxt/lib/libcxx/include/utility" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 205 "nxdk-dxt/lib/libcxx/include/utility"
-# 206 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 206 "nxdk-dxt/lib/libcxx/include/utility"
-# 1 "nxdk-dxt/lib/libcxx/include/__debug" 1
 // -*- C++ -*-
 //===--------------------------- __debug ----------------------------------===//
 //
@@ -11361,13 +9938,9 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__debug"
-# 14 "nxdk-dxt/lib/libcxx/include/__debug"
 #if 0 /* expanded by -frewrite-includes */
 #include <iosfwd>
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__debug"
-# 1 "nxdk-dxt/lib/libcxx/include/iosfwd" 1
 // -*- C++ -*-
 //===--------------------------- iosfwd -----------------------------------===//
 //
@@ -11464,13 +10037,9 @@ typedef fpos<char_traits<wchar_t>::state_type> wstreampos;
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 94 "nxdk-dxt/lib/libcxx/include/iosfwd"
-# 95 "nxdk-dxt/lib/libcxx/include/iosfwd"
 #if 0 /* expanded by -frewrite-includes */
 #include <wchar.h>  // for mbstate_t
 #endif /* expanded by -frewrite-includes */
-# 95 "nxdk-dxt/lib/libcxx/include/iosfwd"
-# 1 "nxdk-dxt/lib/libcxx/include/wchar.h" 1
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -11485,26 +10054,20 @@ typedef fpos<char_traits<wchar_t>::state_type> wstreampos;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 17 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -11512,7 +10075,6 @@ typedef fpos<char_traits<wchar_t>::state_type> wstreampos;
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 19 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #define _LIBCPP_WCHAR_H
 
 /*
@@ -11605,32 +10167,24 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 108 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 109 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 111 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #endif
-# 113 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
-# 117 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 118 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Sean Koppenhafer
@@ -11642,13 +10196,9 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 #if 0 /* expanded by -frewrite-includes */
 #include <stdint.h>
 #endif /* expanded by -frewrite-includes */
-# 9 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
-# 10 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <stddef.h>
 #endif /* expanded by -frewrite-includes */
-# 10 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/stddef.h" 1 3
 // -*- C++ -*-
 //===--------------------------- stddef.h ---------------------------------===//
 //
@@ -11664,26 +10214,20 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 12 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 #endif
-# 16 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stddef.h>
 #endif /* expanded by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
-# 18 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -11691,7 +10235,6 @@ size_t wcsrtombs(char* restrict dst, const wchar_t** restrict src, size_t len,
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 20 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 #define _LIBCPP_STDDEF_H
 
 /*
@@ -11714,27 +10257,20 @@ Types:
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 39 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
-# 40 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 42 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 43 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 #endif
-# 44 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stddef.h>
 #endif /* expanded by -frewrite-includes */
-# 45 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
-# 46 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #ifdef __cplusplus
 
@@ -11742,8 +10278,6 @@ extern "C++" {
 #if 0 /* expanded by -frewrite-includes */
 #include <__nullptr>
 #endif /* expanded by -frewrite-includes */
-# 50 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
-# 51 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 using std::nullptr_t;
 }
 
@@ -11754,22 +10288,15 @@ using std::nullptr_t;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 57 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 typedef long double max_align_t;
 #endif
-# 59 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #endif
-# 61 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
 
 #endif  // _LIBCPP_STDDEF_H
-# 63 "nxdk-dxt/lib/libcxx/include/stddef.h" 3
-# 11 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include <wctype.h>
 #endif /* expanded by -frewrite-includes */
-# 11 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/wctype.h" 1 3
 // -*- C++ -*-
 //===--------------------------- wctype.h ---------------------------------===//
 //
@@ -11819,27 +10346,20 @@ wctrans_t wctrans(const char* property);
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 47 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
-# 48 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 50 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 51 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
 #endif
-# 52 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wctype.h>
 #endif /* expanded by -frewrite-includes */
-# 53 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/wctype.h" 1 3
 /* Wide character classification and mapping utilities <wctype.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -11852,13 +10372,10 @@ wctrans_t wctrans(const char* property);
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 
 typedef _PDCLIB_wint_t wint_t;
 
@@ -11870,7 +10387,6 @@ typedef int wctype_t;
 #define _PDCLIB_WEOF_DEFINED _PDCLIB_WEOF_DEFINED
 #define WEOF (wint_t)-1
 #endif
-# 26 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 
 /* Wide character classification functions */
 
@@ -11995,19 +10511,13 @@ _PDCLIB_PUBLIC wctrans_t wctrans( const char * property );
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_WCTYPE_H
 #endif /* expanded by -frewrite-includes */
-# 147 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
-# 148 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 #endif
-# 149 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 153 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
 
 #endif
-# 155 "nxdk-dxt/lib/pdclib/include/wctype.h" 3
-# 54 "nxdk-dxt/lib/libcxx/include/wctype.h" 2 3
 
 #ifdef __cplusplus
 
@@ -12031,19 +10541,14 @@ _PDCLIB_PUBLIC wctrans_t wctrans( const char * property );
 #undef wctrans
 
 #endif  // __cplusplus
-# 77 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
 
 #endif  // _LIBCPP_WCTYPE_H
-# 79 "nxdk-dxt/lib/libcxx/include/wctype.h" 3
-# 12 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 2 3
 
 #ifdef __cplusplus
     #define XBOXRT_RESTRICT __restrict
 #else
-# 16 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
     #define XBOXRT_RESTRICT restrict
 #endif
-# 18 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
 
 /* Created from _PDCLIB_mbstate_t */
 typedef struct XBOXRT_mbstate {
@@ -12067,7 +10572,6 @@ struct tm;
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 41 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
 
 wchar_t * wcscpy( wchar_t * XBOXRT_RESTRICT s1, const wchar_t * XBOXRT_RESTRICT s2 );
 wchar_t * wcsncpy( wchar_t * XBOXRT_RESTRICT s1, const wchar_t * XBOXRT_RESTRICT s2, size_t n );
@@ -12109,13 +10613,10 @@ int wcrtomb_s(size_t * XBOXRT_RESTRICT retval, char * XBOXRT_RESTRICT s, size_t 
 #ifdef __cplusplus
 }
 #endif
-# 82 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include <wchar_ext_.h>
 #endif /* expanded by -frewrite-includes */
-# 83 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar_ext_.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -12123,7 +10624,6 @@ int wcrtomb_s(size_t * XBOXRT_RESTRICT retval, char * XBOXRT_RESTRICT s, size_t 
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 8 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar_ext_.h" 3
 
 // Windows-specific extension required by libc++
 int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
@@ -12131,12 +10631,8 @@ int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
 #ifdef __cplusplus
 }
 #endif
-# 15 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar_ext_.h" 3
-# 84 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 2 3
 
 #endif /* end of include guard: _XBOXRT_WCHAR_H */
-# 86 "nxdk-dxt/lib/xboxrt/libc_extensions/wchar.h" 3
-# 119 "nxdk-dxt/lib/libcxx/include/wchar.h" 2 3
 
 // Determine whether we have const-correct overloads for wcschr and friends.
 #if 0 /* disabled by -frewrite-includes */
@@ -12144,7 +10640,6 @@ int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 122 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -12152,41 +10647,33 @@ int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 124 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if __GLIBC_PREREQ(2, 10)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 125 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 127 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #if 0
 #elif defined(_LIBCPP_MSVCRT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 128 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_CRT_CONST_CORRECT_OVERLOADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 129 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 131 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #endif
-# 132 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 134 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
 wchar_t* __libcpp_wcschr(const wchar_t* __s, wchar_t __c) {return (wchar_t*)wcschr(__s, __c);}
@@ -12224,14 +10711,12 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
       wchar_t* wmemchr(      wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
 }
 #endif
-# 171 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 173 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
                   size_t nmc, size_t len, mbstate_t *__restrict ps);
@@ -12239,24 +10724,18 @@ size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
                   size_t nwc, size_t len, mbstate_t *__restrict ps);
 }  // extern "C++"
 #endif  // __cplusplus && _LIBCPP_MSVCRT
-# 180 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #endif  // _LIBCPP_WCHAR_H
-# 182 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 96 "nxdk-dxt/lib/libcxx/include/iosfwd" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 98 "nxdk-dxt/lib/libcxx/include/iosfwd"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 99 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 #endif
-# 100 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -12267,7 +10746,6 @@ template<> struct char_traits<char>;
 #ifndef _LIBCPP_NO_HAS_CHAR8_T
 template<> struct char_traits<char8_t>;
 #endif
-# 110 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 template<> struct char_traits<char16_t>;
 template<> struct char_traits<char32_t>;
 template<> struct char_traits<wchar_t>;
@@ -12352,26 +10830,21 @@ typedef fpos<mbstate_t>    wstreampos;
 #ifndef _LIBCPP_NO_HAS_CHAR8_T
 typedef fpos<mbstate_t>    u8streampos;
 #endif
-# 194 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 #ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
 typedef fpos<mbstate_t>    u16streampos;
 typedef fpos<mbstate_t>    u32streampos;
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
-# 198 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_NEWLIB_VERSION)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 200 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 // On newlib, off_t is 'long int'
 typedef long int streamoff;         // for char_traits in <string>
 #else
-# 203 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 typedef long long streamoff;        // for char_traits in <string>
 #endif
-# 205 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
 
 template <class _CharT,             // for <stdexcept>
           class _Traits = char_traits<_CharT>,
@@ -12388,47 +10861,35 @@ class _LIBCPP_TEMPLATE_VIS vector;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_IOSFWD
-# 221 "nxdk-dxt/lib/libcxx/include/iosfwd" 3
-# 15 "nxdk-dxt/lib/libcxx/include/__debug" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/__debug"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 18 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_NULLPTR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #if 0 /* expanded by -frewrite-includes */
 # include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 21 "nxdk-dxt/lib/libcxx/include/__debug" 3
-# 22 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #endif
-# 23 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_DEBUG_LEVEL >= 1 || defined(_LIBCPP_BUILDING_LIBRARY)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #if 0 /* expanded by -frewrite-includes */
 #   include <cstdlib>
 #endif /* expanded by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__debug" 3
-# 1 "nxdk-dxt/lib/libcxx/include/cstdlib" 1 3
 // -*- C++ -*-
 //===--------------------------- cstdlib ----------------------------------===//
 //
@@ -12515,13 +10976,9 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 84 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
-# 85 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 85 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
-# 1 "nxdk-dxt/lib/libcxx/include/stdlib.h" 1 3
 // -*- C++ -*-
 //===--------------------------- stdlib.h ---------------------------------===//
 //
@@ -12536,36 +10993,28 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #undef _LIBCPP_STDLIB_INCLUDE_NEXT
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 20 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 21 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -12573,7 +11022,6 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 23 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #define _LIBCPP_STDLIB_H
 
 /*
@@ -12645,27 +11093,20 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 91 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 92 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 94 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 95 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #endif
-# 96 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 97 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/stdlib.h" 1 3
 /* General utilities <stdlib.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -12678,13 +11119,10 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_lib_ext1.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 1 3
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -12699,27 +11137,20 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 10 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
-# 12 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 13 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #define __STDC_WANT_LIB_EXT1_PREVIOUS__ -1
   #endif
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #else
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
-# 19 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
 #if 0 /* disabled by -frewrite-includes */
@@ -12727,19 +11158,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
-# 23 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -12748,35 +11175,25 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ set to value other than 0,1 -- undefined behavior
     #endif
-# 31 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #endif
-# 33 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/stdlib.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
 typedef _PDCLIB_size_t size_t;
 #endif
-# 21 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #ifndef _PDCLIB_NULL_DEFINED
 #define _PDCLIB_NULL_DEFINED _PDCLIB_NULL_DEFINED
 #define NULL _PDCLIB_NULL
 #endif
-# 26 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 /* Numeric conversion functions */
 
@@ -12864,10 +11281,8 @@ _PDCLIB_PUBLIC void * calloc( size_t nmemb, size_t size );
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 109 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 _PDCLIB_PUBLIC void * aligned_alloc( size_t alignment, size_t size );
 #endif
-# 111 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 /* De-allocate a chunk of heap memory previously allocated using malloc(),
    calloc(), or realloc(), and pointed to by ptr. If ptr does not match a
@@ -13030,19 +11445,16 @@ _PDCLIB_PUBLIC size_t wcstombs( char * _PDCLIB_restrict s, const wchar_t * _PDCL
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 269 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #ifndef _PDCLIB_ERRNO_T_DEFINED
 #define _PDCLIB_ERRNO_T_DEFINED _PDCLIB_ERRNO_T_DEFINED
 typedef int errno_t;
 #endif
-# 274 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #ifndef _PDCLIB_RSIZE_T_DEFINED
 #define _PDCLIB_RSIZE_T_DEFINED _PDCLIB_RSIZE_T_DEFINED
 typedef size_t rsize_t;
 #endif
-# 279 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 /* A function type that can serve as a constraint handler (see below). The
    first parameter is an error message on the constraint violation, the
@@ -13135,12 +11547,10 @@ _PDCLIB_PUBLIC errno_t qsort_s( void * base, rsize_t nmemb, rsize_t size, int (*
 /* TODO: Multibyte / wide character functions */
 
 #endif
-# 371 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 375 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 /* Extension hook for downstream projects that want to have non-standard
    extensions to standard headers.
@@ -13149,8 +11559,6 @@ _PDCLIB_PUBLIC errno_t qsort_s( void * base, rsize_t nmemb, rsize_t size, int (*
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_STDLIB_H
 #endif /* expanded by -frewrite-includes */
-# 380 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2021 Stefan Schmidt
@@ -13159,12 +11567,10 @@ _PDCLIB_PUBLIC errno_t qsort_s( void * base, rsize_t nmemb, rsize_t size, int (*
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 9 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 
 #ifdef _CRT_RAND_S
 int rand_s (unsigned int *randomValue);
 #endif
-# 13 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 
 // Win32 extension for reversing byte order
 unsigned short _byteswap_ushort (unsigned short val);
@@ -13184,8 +11590,6 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #if 0 /* expanded by -frewrite-includes */
 #include <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 29 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/wchar.h" 1 3
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -13200,26 +11604,20 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 17 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -13227,39 +11625,30 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 19 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #define _LIBCPP_WCHAR_H
 
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 108 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 109 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 111 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #endif
-# 113 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
-# 117 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 118 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 119 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 // Determine whether we have const-correct overloads for wcschr and friends.
 #if 0 /* disabled by -frewrite-includes */
@@ -13267,7 +11656,6 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 122 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -13275,41 +11663,33 @@ _purecall_handler __cdecl _set_purecall_handler (_purecall_handler function);
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 124 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if __GLIBC_PREREQ(2, 10)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 125 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 127 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #if 0
 #elif defined(_LIBCPP_MSVCRT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 128 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_CRT_CONST_CORRECT_OVERLOADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 129 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 131 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 #endif
-# 132 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 134 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
 wchar_t* __libcpp_wcschr(const wchar_t* __s, wchar_t __c) {return (wchar_t*)wcschr(__s, __c);}
@@ -13347,14 +11727,12 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
       wchar_t* wmemchr(      wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
 }
 #endif
-# 171 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 173 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
                   size_t nmc, size_t len, mbstate_t *__restrict ps);
@@ -13362,11 +11740,8 @@ size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
                   size_t nwc, size_t len, mbstate_t *__restrict ps);
 }  // extern "C++"
 #endif  // __cplusplus && _LIBCPP_MSVCRT
-# 180 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
 
 #endif  // _LIBCPP_WCHAR_H
-# 182 "nxdk-dxt/lib/libcxx/include/wchar.h" 3
-# 30 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 2 3
 int mbtowc (wchar_t *pwc, const char *string, size_t n);
 
 // Defined as on ReactOS - may need further adjustment if we decide to do locales properly
@@ -13379,7 +11754,6 @@ int mbtowc (wchar_t *pwc, const char *string, size_t n);
 #ifdef __cplusplus
 }
 #endif
-# 42 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 
 
 #ifdef __cplusplus
@@ -13388,13 +11762,10 @@ int mbtowc (wchar_t *pwc, const char *string, size_t n);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 46 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 #define _NXDK_NOEXCEPT throw()
 #else
-# 48 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 #define _NXDK_NOEXCEPT noexcept
 #endif
-# 50 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 
 // libc++ expects MSVCRT to provide these overloads
 
@@ -13421,7 +11792,6 @@ inline static lldiv_t div (long long __x, long long __y) _NXDK_NOEXCEPT
 #undef _NXDK_NOEXCEPT
 
 #endif
-# 76 "nxdk-dxt/lib/xboxrt/libc_extensions/stdlib_ext_.h" 3
 
 static void *_aligned_malloc (size_t size, size_t alignment)
 {
@@ -13432,20 +11802,14 @@ static void _aligned_free (void *memblock)
 {
     free(memblock);
 }
-# 381 "nxdk-dxt/lib/pdclib/include/stdlib.h" 2 3
 #endif
-# 382 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
 
 #endif
-# 384 "nxdk-dxt/lib/pdclib/include/stdlib.h" 3
-# 98 "nxdk-dxt/lib/libcxx/include/stdlib.h" 2 3
 
 #ifdef __cplusplus
 #if 0 /* expanded by -frewrite-includes */
 #include <math.h>
 #endif /* expanded by -frewrite-includes */
-# 100 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/math.h" 1 3
 // -*- C++ -*-
 //===---------------------------- math.h ----------------------------------===//
 //
@@ -13461,28 +11825,21 @@ static void _aligned_free (void *memblock)
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 294 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 295 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 297 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 298 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #endif
-# 299 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 #define _LIBCPP_STDLIB_INCLUDE_NEXT
 #if 0 /* expanded by -frewrite-includes */
 #include <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 301 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/stdlib.h" 1 3
 // -*- C++ -*-
 //===--------------------------- stdlib.h ---------------------------------===//
 //
@@ -13497,36 +11854,28 @@ static void _aligned_free (void *memblock)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_STDLIB_INCLUDE_NEXT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #undef _LIBCPP_STDLIB_INCLUDE_NEXT
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 20 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 21 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -13534,7 +11883,6 @@ static void _aligned_free (void *memblock)
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 23 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #define _LIBCPP_STDLIB_H
 
 /*
@@ -13606,53 +11954,38 @@ void *aligned_alloc(size_t alignment, size_t size);                       // C11
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 91 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 92 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 94 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 95 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #endif
-# 96 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdlib.h>
 #endif /* expanded by -frewrite-includes */
-# 97 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 98 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #ifdef __cplusplus
 #if 0 /* expanded by -frewrite-includes */
 #include <math.h>
 #endif /* expanded by -frewrite-includes */
-# 100 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 101 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 #endif  // __cplusplus
-# 102 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #endif  // _LIBCPP_STDLIB_H
-# 104 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 302 "nxdk-dxt/lib/libcxx/include/math.h" 2 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <math.h>
 #endif /* expanded by -frewrite-includes */
-# 303 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 1 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 1 3
 #ifndef _PDCLIB_MATH_H
 #define _PDCLIB_MATH_H _PDCLIB_MATH_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 7 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
 
 typedef float float_t;
 typedef double double_t;
@@ -13700,7 +12033,6 @@ typedef double double_t;
     #define M_SQRT2 1.41421356237309504880
     #define M_SQRT1_2 0.70710678118654752440
 #endif
-# 54 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
 
 
 #ifndef __cplusplus
@@ -13719,10 +12051,8 @@ typedef double double_t;
     #define islessgreater(x, y) ((__fp_unordered_compare((x), (y)) & FP_SUBNORMAL) == 0)
     #define isunordered(x, y) ((__fp_unordered_compare((x), (y)) & 0x4500) == 0x4500)
 #else
-# 87 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
 
 #endif
-# 118 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
 
 // 7.12.4
 double acos(double x);
@@ -13962,11 +12292,8 @@ long double fmal(long double x, long double y, long double z);
 #ifdef __cplusplus
 }
 #endif
-# 357 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
 
 #endif
-# 359 "nxdk-dxt/lib/pdclib/platform/xbox/include/math.h" 3
-# 304 "nxdk-dxt/lib/libcxx/include/math.h" 2 3
 
 #ifdef __cplusplus
 
@@ -13977,13 +12304,9 @@ extern "C++" {
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 311 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 312 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <limits>
 #endif /* expanded by -frewrite-includes */
-# 312 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 1 "nxdk-dxt/lib/libcxx/include/limits" 1 3
 // -*- C++ -*-
 //===---------------------------- limits ----------------------------------===//
 //
@@ -13999,61 +12322,44 @@ extern "C++" {
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 104 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 105 "nxdk-dxt/lib/libcxx/include/limits" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 105 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 106 "nxdk-dxt/lib/libcxx/include/limits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_COMPILER_MSVC)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 108 "nxdk-dxt/lib/libcxx/include/limits" 3
 #if 0 /* expanded by -frewrite-includes */
 #include "support/win32/limits_msvc_win32.h"
 #endif /* expanded by -frewrite-includes */
-# 108 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 109 "nxdk-dxt/lib/libcxx/include/limits" 3
 #endif // _LIBCPP_MSVCRT
-# 110 "nxdk-dxt/lib/libcxx/include/limits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__IBMCPP__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/limits" 3
 #if 0 /* expanded by -frewrite-includes */
 #include "support/ibm/limits.h"
 #endif /* expanded by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 113 "nxdk-dxt/lib/libcxx/include/limits" 3
 #endif // __IBMCPP__
-# 114 "nxdk-dxt/lib/libcxx/include/limits" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 116 "nxdk-dxt/lib/libcxx/include/limits" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 117 "nxdk-dxt/lib/libcxx/include/limits" 3
 #endif
-# 118 "nxdk-dxt/lib/libcxx/include/limits" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 120 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -14070,25 +12376,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -14096,31 +12396,22 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 121 "nxdk-dxt/lib/libcxx/include/limits" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 121 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 122 "nxdk-dxt/lib/libcxx/include/limits" 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -14247,13 +12538,10 @@ protected:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 244 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool traps = true;
 #else
-# 246 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool traps = false;
 #endif
-# 248 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool tinyness_before = false;
     static _LIBCPP_CONSTEXPR const float_round_style round_style = round_toward_zero;
 };
@@ -14440,13 +12728,10 @@ protected:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 430 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool is_iec559 = false;
 #else
-# 432 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool is_iec559 = true;
 #endif
-# 434 "nxdk-dxt/lib/libcxx/include/limits" 3
     static _LIBCPP_CONSTEXPR const bool is_bounded = true;
     static _LIBCPP_CONSTEXPR const bool is_modulo = false;
 
@@ -14832,8 +13117,6 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif  // _LIBCPP_LIMITS
-# 819 "nxdk-dxt/lib/libcxx/include/limits" 3
-# 313 "nxdk-dxt/lib/libcxx/include/math.h" 2 3
 
 // div
 
@@ -14842,7 +13125,6 @@ _LIBCPP_POP_MACROS
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 #undef lldiv
 #endif
-# 801 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 // MSVCRT already has the correct prototype in <stdlib.h> if __cplusplus is defined
 #if 0 /* disabled by -frewrite-includes */
@@ -14850,7 +13132,6 @@ _LIBCPP_POP_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 804 "nxdk-dxt/lib/libcxx/include/math.h" 3
 inline _LIBCPP_INLINE_VISIBILITY ldiv_t div(long __x, long __y) _NOEXCEPT {
   return ::ldiv(__x, __y);
 }
@@ -14860,17 +13141,13 @@ inline _LIBCPP_INLINE_VISIBILITY lldiv_t div(long long __x,
   return ::lldiv(__x, __y);
 }
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 813 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #endif // _LIBCPP_MSVCRT / __sun__ / _AIX
-# 814 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 } // extern "C++"
 
 #endif // __cplusplus
-# 1559 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 #else // _LIBCPP_MATH_H
-# 1561 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 // This include lives outside the header guard in order to support an MSVC
 // extension which allows users to do:
@@ -14885,45 +13162,31 @@ inline _LIBCPP_INLINE_VISIBILITY lldiv_t div(long long __x,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1571 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #include_next <math.h>
 #endif /* expanded by -frewrite-includes */
-# 1571 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 1572 "nxdk-dxt/lib/libcxx/include/math.h" 3
 #endif
-# 1573 "nxdk-dxt/lib/libcxx/include/math.h" 3
 
 #endif  // _LIBCPP_MATH_H
-# 1575 "nxdk-dxt/lib/libcxx/include/math.h" 3
-# 101 "nxdk-dxt/lib/libcxx/include/stdlib.h" 2 3
 #endif  // __cplusplus
-# 102 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
 
 #endif  // _LIBCPP_STDLIB_H
-# 104 "nxdk-dxt/lib/libcxx/include/stdlib.h" 3
-# 86 "nxdk-dxt/lib/libcxx/include/cstdlib" 2 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 88 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 89 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #endif
-# 90 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 
 #ifdef __GNUC__
 #define _LIBCPP_UNREACHABLE() __builtin_unreachable()
 #else
-# 94 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #define _LIBCPP_UNREACHABLE() _VSTD::abort()
 #endif
-# 96 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -14933,14 +13196,12 @@ using ::ldiv_t;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::lldiv_t;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 105 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::atof;
 using ::atoi;
 using ::atol;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::atoll;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 111 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::strtod;
 using ::strtof;
 using ::strtold;
@@ -14948,12 +13209,10 @@ using ::strtol;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::strtoll;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 118 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::strtoul;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::strtoull;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 122 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::rand;
 using ::srand;
 using ::calloc;
@@ -14968,7 +13227,6 @@ using ::_Exit;
 using ::getenv;
 using ::system;
 #endif
-# 136 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::bsearch;
 using ::qsort;
 using ::abs;
@@ -14976,13 +13234,11 @@ using ::labs;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::llabs;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 143 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::div;
 using ::ldiv;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::lldiv;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 148 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #ifndef NXDK
 using ::mblen;
 using ::mbtowc;
@@ -14990,37 +13246,28 @@ using ::wctomb;
 using ::mbstowcs;
 using ::wcstombs;
 #endif // NXDK
-# 155 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_CXX03_LANG) && defined(_LIBCPP_HAS_QUICK_EXIT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 156 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::at_quick_exit;
 using ::quick_exit;
 #endif
-# 159 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14 && defined(_LIBCPP_HAS_C11_FEATURES)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 160 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 using ::aligned_alloc;
 #endif
-# 162 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDLIB
-# 166 "nxdk-dxt/lib/libcxx/include/cstdlib" 3
-# 26 "nxdk-dxt/lib/libcxx/include/__debug" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #   include <cstdio>
 #endif /* expanded by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__debug" 3
-# 1 "nxdk-dxt/lib/libcxx/include/cstdio" 1 3
 // -*- C++ -*-
 //===---------------------------- cstdio ----------------------------------===//
 //
@@ -15036,13 +13283,9 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 98 "nxdk-dxt/lib/libcxx/include/cstdio" 3
-# 99 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <stdio.h>
 #endif /* expanded by -frewrite-includes */
-# 99 "nxdk-dxt/lib/libcxx/include/cstdio" 3
-# 1 "nxdk-dxt/lib/libcxx/include/stdio.h" 1 3
 // -*- C++ -*-
 //===---------------------------- stdio.h ---------------------------------===//
 //
@@ -15057,26 +13300,20 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdio.h>
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
-# 17 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -15084,33 +13321,25 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 1 /* evaluated by -frewrite-includes */
-# 19 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 #define _LIBCPP_STDIO_H
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 101 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
-# 102 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 104 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 105 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 #endif
-# 106 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <stdio.h>
 #endif /* expanded by -frewrite-includes */
-# 107 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/stdio.h" 1 3
 /* Input/output <stdio.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -15123,13 +13352,10 @@ _LIBCPP_END_NAMESPACE_STD
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_lib_ext1.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 1 3
 /* __STDC_WANT_LIB_EXT1__ redefinition guard
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -15144,27 +13370,20 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 10 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ undefined when it was defined earlier.
     #endif
-# 12 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 13 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #define __STDC_WANT_LIB_EXT1_PREVIOUS__ -1
   #endif
-# 15 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #else
-# 16 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0 && ( 0 - __STDC_WANT_LIB_EXT1__ - 1 ) == 1
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 17 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
     #error __STDC_WANT_LIB_EXT1__ defined but empty. Should be an integer value.
   #endif
-# 19 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #ifdef __STDC_WANT_LIB_EXT1_PREVIOUS__
 
 #if 0 /* disabled by -frewrite-includes */
@@ -15172,19 +13391,15 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ redefined from previous value.
     #endif
-# 23 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #else
-# 24 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if ( __STDC_WANT_LIB_EXT1__ + 0 ) == 0
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 0
 
 #if 0 /* disabled by -frewrite-includes */
@@ -15193,35 +13408,25 @@ extern "C" {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 27 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #define __STDC_WANT_LIB_EXT1_PREVIOUS__ 1
     #else
-# 29 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
       #error __STDC_WANT_LIB_EXT1__ set to value other than 0,1 -- undefined behavior
     #endif
-# 31 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
   #endif
-# 32 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
 #endif
-# 33 "nxdk-dxt/lib/pdclib/include/pdclib/_PDCLIB_lib_ext1.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/stdio.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
-# 16 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 #ifndef _PDCLIB_SIZE_T_DEFINED
 #define _PDCLIB_SIZE_T_DEFINED _PDCLIB_SIZE_T_DEFINED
 typedef _PDCLIB_size_t size_t;
 #endif
-# 21 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 #ifndef _PDCLIB_NULL_DEFINED
 #define _PDCLIB_NULL_DEFINED _PDCLIB_NULL_DEFINED
 #define NULL _PDCLIB_NULL
 #endif
-# 26 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 /* See setvbuf(), third argument */
 #define _IOFBF (1u<<0)
@@ -15339,8 +13544,6 @@ _PDCLIB_PUBLIC void perror( const char * s );
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_STDIO_H
 #endif /* expanded by -frewrite-includes */
-# 835 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/stdio_ext_.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -15348,18 +13551,13 @@ _PDCLIB_PUBLIC void perror( const char * s );
 // Define required MS-specific aliases
 #define _vsnprintf vsnprintf
 #define _snprintf snprintf
-# 836 "nxdk-dxt/lib/pdclib/include/stdio.h" 2 3
 #endif
-# 837 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 841 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
 
 #endif
-# 843 "nxdk-dxt/lib/pdclib/include/stdio.h" 3
-# 108 "nxdk-dxt/lib/libcxx/include/stdio.h" 2 3
 
 #ifdef __cplusplus
 
@@ -15370,24 +13568,18 @@ _PDCLIB_PUBLIC void perror( const char * s );
 #undef ferror
 
 #endif
-# 118 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
 
 #endif  // _LIBCPP_STDIO_H
-# 120 "nxdk-dxt/lib/libcxx/include/stdio.h" 3
-# 100 "nxdk-dxt/lib/libcxx/include/cstdio" 2 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 102 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 103 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 #endif
-# 104 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -15418,7 +13610,6 @@ using ::freopen;
 using ::remove;
 using ::rename;
 #endif
-# 152 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 
 #ifndef _LIBCPP_HAS_NO_STDIN
 using ::getchar;
@@ -15427,14 +13618,11 @@ using ::getchar;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 156 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 using ::gets;
 #endif
-# 158 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 using ::scanf;
 using ::vscanf;
 #endif
-# 161 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 
 #ifndef _LIBCPP_HAS_NO_STDOUT
 using ::printf;
@@ -15442,58 +13630,44 @@ using ::putchar;
 using ::puts;
 using ::vprintf;
 #endif
-# 168 "nxdk-dxt/lib/libcxx/include/cstdio" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CSTDIO
-# 172 "nxdk-dxt/lib/libcxx/include/cstdio" 3
-# 27 "nxdk-dxt/lib/libcxx/include/__debug" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #   include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 27 "nxdk-dxt/lib/libcxx/include/__debug" 3
-# 28 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #endif
-# 29 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_DEBUG_LEVEL >= 1 && !defined(_LIBCPP_ASSERT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 31 "nxdk-dxt/lib/libcxx/include/__debug" 3
 # define _LIBCPP_ASSERT(x, m) ((x) ? (void)0 : \
   _VSTD::__libcpp_debug_function(_VSTD::__libcpp_debug_info(__FILE__, __LINE__, #x, m)))
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_DEBUG_LEVEL >= 2
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 36 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #ifndef _LIBCPP_DEBUG_ASSERT
 #define _LIBCPP_DEBUG_ASSERT(x, m) _LIBCPP_ASSERT(x, m)
 #endif
-# 39 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #define _LIBCPP_DEBUG_MODE(...) __VA_ARGS__
 #endif
-# 41 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #ifndef _LIBCPP_ASSERT
 #   define _LIBCPP_ASSERT(x, m) ((void)0)
 #endif
-# 45 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #ifndef _LIBCPP_DEBUG_ASSERT
 #   define _LIBCPP_DEBUG_ASSERT(x, m) ((void)0)
 #endif
-# 48 "nxdk-dxt/lib/libcxx/include/__debug" 3
 #ifndef _LIBCPP_DEBUG_MODE
 #define _LIBCPP_DEBUG_MODE(...) ((void)0)
 #endif
-# 51 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -15530,30 +13704,23 @@ _LIBCPP_FUNC_VIS
 bool __libcpp_set_debug_function(__libcpp_debug_function_type __func);
 
 #if 1 /* evaluated by -frewrite-includes */
-# 87 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 #endif // _LIBCPP_DEBUG_LEVEL >= 2 || defined(_LIBCPP_BUILDING_LIBRARY)
-# 275 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_DEBUG_H
-# 279 "nxdk-dxt/lib/libcxx/include/__debug" 3
 
-# 207 "nxdk-dxt/lib/libcxx/include/utility" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 209 "nxdk-dxt/lib/libcxx/include/utility"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 210 "nxdk-dxt/lib/libcxx/include/utility" 3
 #endif
-# 211 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -15610,10 +13777,8 @@ typename conditional
     _Tp&&
 >::type
 #else  // _LIBCPP_CXX03_LANG
-# 267 "nxdk-dxt/lib/libcxx/include/utility" 3
 const _Tp&
 #endif
-# 269 "nxdk-dxt/lib/libcxx/include/utility" 3
 move_if_noexcept(_Tp& __x) _NOEXCEPT
 {
     return _VSTD::move(__x);
@@ -15624,11 +13789,9 @@ move_if_noexcept(_Tp& __x) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 275 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class _Tp> constexpr add_const_t<_Tp>& as_const(_Tp& __t) noexcept { return __t; }
 template <class _Tp>                        void as_const(const _Tp&&) = delete;
 #endif
-# 278 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 struct _LIBCPP_TEMPLATE_VIS piecewise_construct_t { explicit piecewise_construct_t() = default; };
 #if 0 /* disabled by -frewrite-includes */
@@ -15636,20 +13799,16 @@ struct _LIBCPP_TEMPLATE_VIS piecewise_construct_t { explicit piecewise_construct
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 281 "nxdk-dxt/lib/libcxx/include/utility" 3
 extern _LIBCPP_EXPORTED_FROM_ABI const piecewise_construct_t piecewise_construct;// = piecewise_construct_t();
 #else
-# 283 "nxdk-dxt/lib/libcxx/include/utility" 3
 /* _LIBCPP_INLINE_VAR */ constexpr piecewise_construct_t piecewise_construct = piecewise_construct_t();
 #endif
-# 285 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_DEPRECATED_ABI_DISABLE_PAIR_TRIVIAL_COPY_CTOR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 287 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class, class>
 struct __non_trivially_copyable_base {
   _LIBCPP_CONSTEXPR _LIBCPP_INLINE_VISIBILITY
@@ -15658,7 +13817,6 @@ struct __non_trivially_copyable_base {
   __non_trivially_copyable_base(__non_trivially_copyable_base const&) _NOEXCEPT {}
 };
 #endif
-# 295 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _T1, class _T2>
 struct _LIBCPP_TEMPLATE_VIS pair
@@ -15667,10 +13825,8 @@ struct _LIBCPP_TEMPLATE_VIS pair
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 299 "nxdk-dxt/lib/libcxx/include/utility" 3
 : private __non_trivially_copyable_base<_T1, _T2>
 #endif
-# 301 "nxdk-dxt/lib/libcxx/include/utility" 3
 {
     typedef _T1 first_type;
     typedef _T2 second_type;
@@ -15683,14 +13839,11 @@ struct _LIBCPP_TEMPLATE_VIS pair
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 309 "nxdk-dxt/lib/libcxx/include/utility" 3
     pair(pair const&) = default;
     pair(pair&&) = default;
 #else
-# 312 "nxdk-dxt/lib/libcxx/include/utility" 3
   // Use the implicitly declared copy constructor in C++03
 #endif
-# 314 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #ifdef _LIBCPP_CXX03_LANG
     _LIBCPP_INLINE_VISIBILITY
@@ -15710,7 +13863,6 @@ struct _LIBCPP_TEMPLATE_VIS pair
         return *this;
     }
 #else
-# 333 "nxdk-dxt/lib/libcxx/include/utility" 3
     template <bool _Val>
     using _EnableB _LIBCPP_NODEBUG_TYPE = typename enable_if<_Val, bool>::type;
 
@@ -15925,7 +14077,6 @@ struct _LIBCPP_TEMPLATE_VIS pair
         return *this;
     }
 #endif
-# 547 "nxdk-dxt/lib/libcxx/include/utility" 3
 
     _LIBCPP_INLINE_VISIBILITY
     void
@@ -15945,14 +14096,12 @@ private:
              tuple<_Args1...>& __first_args, tuple<_Args2...>& __second_args,
              __tuple_indices<_I1...>, __tuple_indices<_I2...>);
 #endif
-# 566 "nxdk-dxt/lib/libcxx/include/utility" 3
 };
 
 #ifndef _LIBCPP_HAS_NO_DEDUCTION_GUIDES
 template<class _T1, class _T2>
 pair(_T1, _T2) -> pair<_T1, _T2>;
 #endif // _LIBCPP_HAS_NO_DEDUCTION_GUIDES
-# 572 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _T1, class _T2>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
@@ -16028,14 +14177,12 @@ struct __unwrap_reference<reference_wrapper<_Tp> > { typedef _LIBCPP_NODEBUG_TYP
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 643 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class _Tp>
 struct unwrap_reference : __unwrap_reference<_Tp> { };
 
 template <class _Tp>
 struct unwrap_ref_decay : unwrap_reference<typename decay<_Tp>::type> { };
 #endif // > C++17
-# 649 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _Tp>
 struct __unwrap_ref_decay
@@ -16044,13 +14191,10 @@ struct __unwrap_ref_decay
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 653 "nxdk-dxt/lib/libcxx/include/utility" 3
     : unwrap_ref_decay<_Tp>
 #else
-# 655 "nxdk-dxt/lib/libcxx/include/utility" 3
     : __unwrap_reference<typename decay<_Tp>::type>
 #endif
-# 657 "nxdk-dxt/lib/libcxx/include/utility" 3
 { };
 
 #ifndef _LIBCPP_CXX03_LANG
@@ -16065,7 +14209,6 @@ make_pair(_T1&& __t1, _T2&& __t2)
 }
 
 #else  // _LIBCPP_CXX03_LANG
-# 671 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _T1, class _T2>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -16076,7 +14219,6 @@ make_pair(_T1 __x, _T2 __y)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 681 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _T1, class _T2>
   struct _LIBCPP_TEMPLATE_VIS tuple_size<pair<_T1, _T2> >
@@ -16130,7 +14272,6 @@ struct __get_pair<0>
     const _T1&&
     get(const pair<_T1, _T2>&& __p) _NOEXCEPT {return _VSTD::forward<const _T1>(__p.first);}
 #endif  // _LIBCPP_CXX03_LANG
-# 734 "nxdk-dxt/lib/libcxx/include/utility" 3
 };
 
 template <>
@@ -16161,7 +14302,6 @@ struct __get_pair<1>
     const _T2&&
     get(const pair<_T1, _T2>&& __p) _NOEXCEPT {return _VSTD::forward<const _T2>(__p.second);}
 #endif  // _LIBCPP_CXX03_LANG
-# 764 "nxdk-dxt/lib/libcxx/include/utility" 3
 };
 
 template <size_t _Ip, class _T1, class _T2>
@@ -16197,14 +14337,12 @@ get(const pair<_T1, _T2>&& __p) _NOEXCEPT
     return __get_pair<_Ip>::get(_VSTD::move(__p));
 }
 #endif  // _LIBCPP_CXX03_LANG
-# 799 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 801 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class _T1, class _T2>
 inline _LIBCPP_INLINE_VISIBILITY
 constexpr _T1 & get(pair<_T1, _T2>& __p) _NOEXCEPT
@@ -16262,14 +14400,12 @@ constexpr _T1 const && get(pair<_T2, _T1> const&& __p) _NOEXCEPT
 }
 
 #endif
-# 858 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 860 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template<class _Tp, _Tp... _Ip>
 struct _LIBCPP_TEMPLATE_VIS integer_sequence
@@ -16292,13 +14428,11 @@ template<size_t... _Ip>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 878 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _Tp, _Tp _Ep>
 using __make_integer_sequence _LIBCPP_NODEBUG_TYPE = __make_integer_seq<integer_sequence, _Tp, _Ep>;
 
 #else
-# 883 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template<typename _Tp, _Tp _Np> using __make_integer_sequence_unchecked _LIBCPP_NODEBUG_TYPE  =
   typename __detail::__make<_Np>::type::template __convert<integer_sequence, _Tp>;
@@ -16318,7 +14452,6 @@ template <class _Tp, _Tp _Ep>
 using __make_integer_sequence _LIBCPP_NODEBUG_TYPE = typename __make_integer_sequence_checked<_Tp, _Ep>::type;
 
 #endif
-# 902 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template<class _Tp, _Tp _Np>
     using make_integer_sequence = __make_integer_sequence<_Tp, _Np>;
@@ -16330,14 +14463,12 @@ template<class... _Tp>
     using index_sequence_for = make_index_sequence<sizeof...(_Tp)>;
 
 #endif  // _LIBCPP_STD_VER > 11
-# 913 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 915 "nxdk-dxt/lib/libcxx/include/utility" 3
 template<class _T1, class _T2 = _T1>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
 _T1 exchange(_T1& __obj, _T2 && __new_value)
@@ -16347,14 +14478,12 @@ _T1 exchange(_T1& __obj, _T2 && __new_value)
     return __old_value;
 }
 #endif  // _LIBCPP_STD_VER > 11
-# 924 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 926 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 struct _LIBCPP_TYPE_VIS in_place_t {
     explicit in_place_t() = default;
@@ -16388,7 +14517,6 @@ template <class _Tp>
 using __is_inplace_index = __is_inplace_index_imp<__uncvref_t<_Tp>>;
 
 #endif // _LIBCPP_STD_VER > 14
-# 959 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _Arg, class _Result>
 struct _LIBCPP_TEMPLATE_VIS unary_function
@@ -16816,7 +14944,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<char32_t>
 };
 
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
-# 1386 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <>
 struct _LIBCPP_TEMPLATE_VIS hash<wchar_t>
@@ -16886,7 +15013,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<unsigned long long>
 {
 };
 
-# 1470 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <>
 struct _LIBCPP_TEMPLATE_VIS hash<float>
@@ -16931,7 +15057,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1510 "nxdk-dxt/lib/libcxx/include/utility" 3
         // Zero out padding bits
         union
         {
@@ -16956,7 +15081,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 1529 "nxdk-dxt/lib/libcxx/include/utility" 3
         // Zero out padding bits
         union
         {
@@ -16972,10 +15096,8 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
         __u.__t = __v;
         return __u.__s.__a ^ __u.__s.__b;
 #else
-# 1544 "nxdk-dxt/lib/libcxx/include/utility" 3
         return __scalar_hash<long double>::operator()(__v);
 #endif
-# 1546 "nxdk-dxt/lib/libcxx/include/utility" 3
     }
 };
 
@@ -16984,7 +15106,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<long double>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1550 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <class _Tp, bool = is_enum<_Tp>::value>
 struct _LIBCPP_TEMPLATE_VIS __enum_hash
@@ -17009,14 +15130,12 @@ struct _LIBCPP_TEMPLATE_VIS hash : public __enum_hash<_Tp>
 {
 };
 #endif
-# 1574 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1576 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 template <>
 struct _LIBCPP_TEMPLATE_VIS hash<nullptr_t>
@@ -17028,7 +15147,6 @@ struct _LIBCPP_TEMPLATE_VIS hash<nullptr_t>
   }
 };
 #endif
-# 1587 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 template <class _Key, class _Hash>
@@ -17049,7 +15167,6 @@ using __has_enabled_hash _LIBCPP_NODEBUG_TYPE = integral_constant<bool,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1603 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class _Type, class>
 using __enable_hash_helper_imp _LIBCPP_NODEBUG_TYPE  = _Type;
 
@@ -17058,25 +15175,18 @@ using __enable_hash_helper _LIBCPP_NODEBUG_TYPE  = __enable_hash_helper_imp<_Typ
   typename enable_if<__all<__has_enabled_hash<_Keys>::value...>::value>::type
 >;
 #else
-# 1611 "nxdk-dxt/lib/libcxx/include/utility" 3
 template <class _Type, class ...>
 using __enable_hash_helper _LIBCPP_NODEBUG_TYPE = _Type;
 #endif
-# 1614 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 #endif // !_LIBCPP_CXX03_LANG
-# 1616 "nxdk-dxt/lib/libcxx/include/utility" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_UTILITY
-# 1620 "nxdk-dxt/lib/libcxx/include/utility" 3
-# 643 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <memory>
 #endif /* expanded by -frewrite-includes */
-# 643 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/memory" 1
 // -*- C++ -*-
 //===-------------------------- memory ------------------------------------===//
 //
@@ -17093,18 +15203,12 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 651 "nxdk-dxt/lib/libcxx/include/memory"
-# 652 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 652 "nxdk-dxt/lib/libcxx/include/memory"
-# 653 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <typeinfo>
 #endif /* expanded by -frewrite-includes */
-# 653 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/typeinfo" 1
 // -*- C++ -*-
 //===-------------------------- typeinfo ----------------------------------===//
 //
@@ -17121,13 +15225,9 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 59 "nxdk-dxt/lib/libcxx/include/typeinfo"
-# 60 "nxdk-dxt/lib/libcxx/include/typeinfo"
 #if 0 /* expanded by -frewrite-includes */
 #include <exception>
 #endif /* expanded by -frewrite-includes */
-# 60 "nxdk-dxt/lib/libcxx/include/typeinfo"
-# 1 "nxdk-dxt/lib/libcxx/include/exception" 1
 // -*- C++ -*-
 //===-------------------------- exception ---------------------------------===//
 //
@@ -17143,40 +15243,27 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 79 "nxdk-dxt/lib/libcxx/include/exception"
-# 80 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 80 "nxdk-dxt/lib/libcxx/include/exception"
-# 81 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdlib>
 #endif /* expanded by -frewrite-includes */
-# 81 "nxdk-dxt/lib/libcxx/include/exception"
-# 82 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 82 "nxdk-dxt/lib/libcxx/include/exception"
-# 83 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 83 "nxdk-dxt/lib/libcxx/include/exception"
-# 84 "nxdk-dxt/lib/libcxx/include/exception"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_VCRUNTIME)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 86 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #include <vcruntime_exception.h>
 #endif /* expanded by -frewrite-includes */
-# 86 "nxdk-dxt/lib/libcxx/include/exception"
-# 1 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_exception.h" 1
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -17248,23 +15335,17 @@ namespace std
 }
 
 #endif
-# 101 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_exception.h"
-# 87 "nxdk-dxt/lib/libcxx/include/exception" 2
 #endif
-# 88 "nxdk-dxt/lib/libcxx/include/exception"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 90 "nxdk-dxt/lib/libcxx/include/exception"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 91 "nxdk-dxt/lib/libcxx/include/exception" 3
 #endif
-# 92 "nxdk-dxt/lib/libcxx/include/exception" 3
 
 namespace std  // purposefully not using versioning namespace
 {
@@ -17273,7 +15354,6 @@ namespace std  // purposefully not using versioning namespace
 #if !defined(_LIBCPP_ABI_VCRUNTIME)
 #endif
 #endif /* disabled by -frewrite-includes */
-# 114 "nxdk-dxt/lib/libcxx/include/exception" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 14 \
@@ -17282,13 +15362,11 @@ namespace std  // purposefully not using versioning namespace
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 118 "nxdk-dxt/lib/libcxx/include/exception" 3
 typedef void (*unexpected_handler)();
 _LIBCPP_FUNC_VIS unexpected_handler set_unexpected(unexpected_handler) _NOEXCEPT;
 _LIBCPP_FUNC_VIS unexpected_handler get_unexpected() _NOEXCEPT;
 _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void unexpected();
 #endif
-# 123 "nxdk-dxt/lib/libcxx/include/exception" 3
 
 typedef void (*terminate_handler)();
 _LIBCPP_FUNC_VIS terminate_handler set_terminate(terminate_handler) _NOEXCEPT;
@@ -17306,7 +15384,6 @@ _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void rethrow_exception(exception_ptr);
 #ifndef _LIBCPP_ABI_MICROSOFT
 
 #else // _LIBCPP_ABI_MICROSOFT
-# 185 "nxdk-dxt/lib/libcxx/include/exception" 3
 
 class _LIBCPP_TYPE_VIS exception_ptr
 {
@@ -17315,11 +15392,9 @@ class _LIBCPP_TYPE_VIS exception_ptr
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 189 "nxdk-dxt/lib/libcxx/include/exception" 3
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-private-field"
 #endif
-# 192 "nxdk-dxt/lib/libcxx/include/exception" 3
     void* __ptr1_;
     void* __ptr2_;
 #if 0 /* disabled by -frewrite-includes */
@@ -17327,10 +15402,8 @@ class _LIBCPP_TYPE_VIS exception_ptr
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 195 "nxdk-dxt/lib/libcxx/include/exception" 3
 #pragma clang diagnostic pop
 #endif
-# 197 "nxdk-dxt/lib/libcxx/include/exception" 3
 public:
     exception_ptr() _NOEXCEPT;
     exception_ptr(nullptr_t) _NOEXCEPT;
@@ -17357,7 +15430,6 @@ make_exception_ptr(_Ep __e) _NOEXCEPT
 }
 
 #endif // _LIBCPP_ABI_MICROSOFT
-# 232 "nxdk-dxt/lib/libcxx/include/exception" 3
 // nested_exception
 
 class _LIBCPP_EXCEPTION_ABI nested_exception
@@ -17401,16 +15473,13 @@ struct __throw_with_nested<_Tp, _Up, false> {
 #ifndef _LIBCPP_CXX03_LANG
     __do_throw(_Tp&& __t)
 #else
-# 275 "nxdk-dxt/lib/libcxx/include/exception" 3
     __do_throw (_Tp& __t)
 #endif  // _LIBCPP_CXX03_LANG
-# 277 "nxdk-dxt/lib/libcxx/include/exception" 3
     {
         throw _VSTD::forward<_Tp>(__t);
     }
 };
 #endif
-# 282 "nxdk-dxt/lib/libcxx/include/exception" 3
 
 template <class _Tp>
 _LIBCPP_NORETURN
@@ -17426,11 +15495,9 @@ throw_with_nested(_Tp&& __t)
         !__libcpp_is_final<_Up>::value>::
             __do_throw(_VSTD::forward<_Tp>(__t));
 #else
-# 297 "nxdk-dxt/lib/libcxx/include/exception" 3
     ((void)__t);
     // FIXME: Make this abort
 #endif
-# 300 "nxdk-dxt/lib/libcxx/include/exception" 3
 }
 
 template <class _From, class _To>
@@ -17461,51 +15528,36 @@ rethrow_if_nested(const _Ep&,
 }  // std
 
 #endif  // _LIBCPP_EXCEPTION
-# 330 "nxdk-dxt/lib/libcxx/include/exception" 3
-# 61 "nxdk-dxt/lib/libcxx/include/typeinfo" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 61 "nxdk-dxt/lib/libcxx/include/typeinfo"
-# 62 "nxdk-dxt/lib/libcxx/include/typeinfo"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdint>
 #endif /* expanded by -frewrite-includes */
-# 62 "nxdk-dxt/lib/libcxx/include/typeinfo"
-# 63 "nxdk-dxt/lib/libcxx/include/typeinfo"
 #ifdef _LIBCPP_NO_EXCEPTIONS
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdlib>
 #endif /* expanded by -frewrite-includes */
-# 64 "nxdk-dxt/lib/libcxx/include/typeinfo"
-# 65 "nxdk-dxt/lib/libcxx/include/typeinfo"
 #endif
-# 66 "nxdk-dxt/lib/libcxx/include/typeinfo"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 68 "nxdk-dxt/lib/libcxx/include/typeinfo"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 69 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
 #endif
-# 70 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_VCRUNTIME)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 72 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <vcruntime_typeinfo.h>
 #endif /* expanded by -frewrite-includes */
-# 72 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
-# 1 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_typeinfo.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019-2020 Stefan Schmidt
@@ -17516,8 +15568,6 @@ rethrow_if_nested(const _Ep&,
 #if 0 /* expanded by -frewrite-includes */
 #include <assert.h>
 #endif /* expanded by -frewrite-includes */
-# 8 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_typeinfo.h" 3
-# 1 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 1 3
 /* Diagnostics <assert.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -17527,19 +15577,15 @@ rethrow_if_nested(const _Ep&,
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_aux.h"
 #endif /* expanded by -frewrite-includes */
-# 7 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
-# 8 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 12 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
 
 #ifndef _PDCLIB_ASSERT_H
 #define _PDCLIB_ASSERT_H
 void _xbox_assert(char const * const expression, char const * const file_name, char const * const function_name, unsigned long line);
 #endif
-# 17 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
 
 /* If NDEBUG is set, assert() is a null operation. */
 #undef assert
@@ -17547,7 +15593,6 @@ void _xbox_assert(char const * const expression, char const * const file_name, c
 #ifdef NDEBUG
     #define assert(ignore) ((void)0)
 #else
-# 24 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
     #define assert(expression) \
         ((void) ((expression) ? 0 :  \
             (_xbox_assert(_PDCLIB_symbol2string(expression), \
@@ -17555,23 +15600,17 @@ void _xbox_assert(char const * const expression, char const * const file_name, c
                           __func__, \
                           __LINE__), 0)))
 #endif
-# 31 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
 
 #ifndef __cplusplus
 #define static_assert _Static_assert
 #endif
-# 35 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 39 "nxdk-dxt/lib/pdclib/platform/xbox/include/assert.h" 3
-# 9 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_typeinfo.h" 2 3
 #if 0 /* expanded by -frewrite-includes */
 #include <vcruntime_exception.h>
 #endif /* expanded by -frewrite-includes */
-# 9 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_typeinfo.h" 3
-# 10 "nxdk-dxt/lib/xboxrt/vcruntime/vcruntime_typeinfo.h" 3
 
 struct __std_type_info_data
 {
@@ -17656,40 +15695,18 @@ namespace std
 
 #endif
 #endif // defined(_LIBCPP_ABI_VCRUNTIME)
-# 337 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
 
-_LIBCPP_BEGIN_NAMESPACE_STD
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_bad_cast()
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw bad_cast();
-#else
-# 345 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
-    _VSTD::abort();
-#endif
-# 347 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
-}
-_LIBCPP_END_NAMESPACE_STD
 
 #endif  // __LIBCPP_TYPEINFO
-# 351 "nxdk-dxt/lib/libcxx/include/typeinfo" 3
-# 654 "nxdk-dxt/lib/libcxx/include/memory" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 654 "nxdk-dxt/lib/libcxx/include/memory"
-# 655 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdint>
 #endif /* expanded by -frewrite-includes */
-# 655 "nxdk-dxt/lib/libcxx/include/memory"
-# 656 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <new>
 #endif /* expanded by -frewrite-includes */
-# 656 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/new" 1
 // -*- C++ -*-
 //===----------------------------- new ------------------------------------===//
 //
@@ -17781,73 +15798,51 @@ void  operator delete[](void* ptr, void*) noexcept;
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 89 "nxdk-dxt/lib/libcxx/include/new"
-# 90 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #include <exception>
 #endif /* expanded by -frewrite-includes */
-# 90 "nxdk-dxt/lib/libcxx/include/new"
-# 91 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 91 "nxdk-dxt/lib/libcxx/include/new"
-# 92 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 92 "nxdk-dxt/lib/libcxx/include/new"
-# 93 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 93 "nxdk-dxt/lib/libcxx/include/new"
-# 94 "nxdk-dxt/lib/libcxx/include/new"
 #ifdef _LIBCPP_NO_EXCEPTIONS
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdlib>
 #endif /* expanded by -frewrite-includes */
-# 95 "nxdk-dxt/lib/libcxx/include/new"
-# 96 "nxdk-dxt/lib/libcxx/include/new"
 #endif
-# 97 "nxdk-dxt/lib/libcxx/include/new"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_ABI_VCRUNTIME) && !defined(NXDK)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 99 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #include <new.h>
 #endif /* expanded by -frewrite-includes */
-# 99 "nxdk-dxt/lib/libcxx/include/new"
-# 100 "nxdk-dxt/lib/libcxx/include/new"
 #endif
-# 101 "nxdk-dxt/lib/libcxx/include/new"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 103 "nxdk-dxt/lib/libcxx/include/new"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 104 "nxdk-dxt/lib/libcxx/include/new" 3
 #endif
-# 105 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(__cpp_sized_deallocation) || __cpp_sized_deallocation  < 201309L
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 107 "nxdk-dxt/lib/libcxx/include/new" 3
 #define _LIBCPP_HAS_NO_LANGUAGE_SIZED_DEALLOCATION
 #endif
-# 109 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_BUILDING_LIBRARY) && _LIBCPP_STD_VER < 14 && \
@@ -17855,10 +15850,8 @@ void  operator delete[](void* ptr, void*) noexcept;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/new" 3
 # define _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 #endif
-# 114 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION) || \
@@ -17866,10 +15859,8 @@ void  operator delete[](void* ptr, void*) noexcept;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 117 "nxdk-dxt/lib/libcxx/include/new" 3
 # define _LIBCPP_HAS_NO_SIZED_DEALLOCATION
 #endif
-# 119 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !__has_builtin(__builtin_operator_new) || \
@@ -17877,10 +15868,8 @@ void  operator delete[](void* ptr, void*) noexcept;
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 122 "nxdk-dxt/lib/libcxx/include/new" 3
 #define _LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE
 #endif
-# 124 "nxdk-dxt/lib/libcxx/include/new" 3
 
 namespace std  // purposefully not using versioning namespace
 {
@@ -17890,7 +15879,6 @@ namespace std  // purposefully not using versioning namespace
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 129 "nxdk-dxt/lib/libcxx/include/new" 3
 struct _LIBCPP_TYPE_VIS nothrow_t { explicit nothrow_t() = default; };
 extern _LIBCPP_FUNC_VIS const nothrow_t nothrow;
 
@@ -17913,14 +15901,12 @@ public:
     virtual const char* what() const _NOEXCEPT;
 };
 #endif
-# 151 "nxdk-dxt/lib/libcxx/include/new" 3
 
 typedef void (*new_handler)();
 _LIBCPP_FUNC_VIS new_handler set_new_handler(new_handler) _NOEXCEPT;
 _LIBCPP_FUNC_VIS new_handler get_new_handler() _NOEXCEPT;
 
 #endif // !_LIBCPP_ABI_VCRUNTIME
-# 157 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void __throw_bad_alloc();  // not in C++ spec
 
@@ -17930,23 +15916,18 @@ _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void __throw_bad_alloc();  // not in C++ spec
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 162 "nxdk-dxt/lib/libcxx/include/new" 3
 #ifndef _LIBCPP_CXX03_LANG
 enum class _LIBCPP_ENUM_VIS align_val_t : size_t { };
 #else
-# 165 "nxdk-dxt/lib/libcxx/include/new" 3
 enum align_val_t { __zero = 0, __max = (size_t)-1 };
 #endif
-# 167 "nxdk-dxt/lib/libcxx/include/new" 3
 #endif
-# 168 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 17
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 170 "nxdk-dxt/lib/libcxx/include/new" 3
 // Enable the declaration even if the compiler doesn't support the language
 // feature.
 struct destroying_delete_t {
@@ -17954,7 +15935,6 @@ struct destroying_delete_t {
 };
 _LIBCPP_INLINE_VAR constexpr destroying_delete_t destroying_delete{};
 #endif // _LIBCPP_STD_VER > 17
-# 177 "nxdk-dxt/lib/libcxx/include/new" 3
 
 }  // std
 
@@ -17963,20 +15943,16 @@ _LIBCPP_INLINE_VAR constexpr destroying_delete_t destroying_delete{};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 181 "nxdk-dxt/lib/libcxx/include/new" 3
 #define _THROW_BAD_ALLOC throw(std::bad_alloc)
 #else
-# 183 "nxdk-dxt/lib/libcxx/include/new" 3
 #define _THROW_BAD_ALLOC
 #endif
-# 185 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_ABI_VCRUNTIME) || defined(NXDK)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 187 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new(std::size_t __sz) _THROW_BAD_ALLOC;
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new(std::size_t __sz, const std::nothrow_t&) _NOEXCEPT _LIBCPP_NOALIAS;
@@ -17985,7 +15961,6 @@ _LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p, const std::nothrow
 #ifndef _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_AVAILABILITY_SIZED_NEW_DELETE void  operator delete(void* __p, std::size_t __sz) _NOEXCEPT;
 #endif
-# 195 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new[](std::size_t __sz) _THROW_BAD_ALLOC;
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new[](std::size_t __sz, const std::nothrow_t&) _NOEXCEPT _LIBCPP_NOALIAS;
@@ -17994,7 +15969,6 @@ _LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p, const std::nothr
 #ifndef _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_AVAILABILITY_SIZED_NEW_DELETE void  operator delete[](void* __p, std::size_t __sz) _NOEXCEPT;
 #endif
-# 203 "nxdk-dxt/lib/libcxx/include/new" 3
 
 #ifndef _LIBCPP_HAS_NO_LIBRARY_ALIGNED_ALLOCATION
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new(std::size_t __sz, std::align_val_t) _THROW_BAD_ALLOC;
@@ -18004,7 +15978,6 @@ _LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p, std::align_val_t, 
 #ifndef _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_AVAILABILITY_SIZED_NEW_DELETE void  operator delete(void* __p, std::size_t __sz, std::align_val_t) _NOEXCEPT;
 #endif
-# 212 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new[](std::size_t __sz, std::align_val_t) _THROW_BAD_ALLOC;
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_OVERRIDABLE_FUNC_VIS void* operator new[](std::size_t __sz, std::align_val_t, const std::nothrow_t&) _NOEXCEPT _LIBCPP_NOALIAS;
@@ -18013,9 +15986,7 @@ _LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p, std::align_val_t
 #ifndef _LIBCPP_HAS_NO_LIBRARY_SIZED_DEALLOCATION
 _LIBCPP_OVERRIDABLE_FUNC_VIS _LIBCPP_AVAILABILITY_SIZED_NEW_DELETE void  operator delete[](void* __p, std::size_t __sz, std::align_val_t) _NOEXCEPT;
 #endif
-# 220 "nxdk-dxt/lib/libcxx/include/new" 3
 #endif
-# 221 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_NODISCARD_AFTER_CXX17 inline _LIBCPP_INLINE_VISIBILITY void* operator new  (std::size_t, void* __p) _NOEXCEPT {return __p;}
 _LIBCPP_NODISCARD_AFTER_CXX17 inline _LIBCPP_INLINE_VISIBILITY void* operator new[](std::size_t, void* __p) _NOEXCEPT {return __p;}
@@ -18023,7 +15994,6 @@ inline _LIBCPP_INLINE_VISIBILITY void  operator delete  (void*, void*) _NOEXCEPT
 inline _LIBCPP_INLINE_VISIBILITY void  operator delete[](void*, void*) _NOEXCEPT {}
 
 #endif // !_LIBCPP_ABI_VCRUNTIME
-# 228 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -18031,10 +16001,8 @@ _LIBCPP_CONSTEXPR inline _LIBCPP_INLINE_VISIBILITY bool __is_overaligned_for_new
 #ifdef __STDCPP_DEFAULT_NEW_ALIGNMENT__
   return __align > __STDCPP_DEFAULT_NEW_ALIGNMENT__;
 #else
-# 235 "nxdk-dxt/lib/libcxx/include/new" 3
   return __align > alignment_of<max_align_t>::value;
 #endif
-# 237 "nxdk-dxt/lib/libcxx/include/new" 3
 }
 
 inline _LIBCPP_INLINE_VISIBILITY void *__libcpp_allocate(size_t __size, size_t __align) {
@@ -18044,23 +16012,17 @@ inline _LIBCPP_INLINE_VISIBILITY void *__libcpp_allocate(size_t __size, size_t _
 # ifdef _LIBCPP_HAS_NO_BUILTIN_OVERLOADED_OPERATOR_NEW_DELETE
     return ::operator new(__size, __align_val);
 # else
-# 246 "nxdk-dxt/lib/libcxx/include/new" 3
     return __builtin_operator_new(__size, __align_val);
 # endif
-# 248 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 #else
-# 250 "nxdk-dxt/lib/libcxx/include/new" 3
   ((void)__align);
 #endif
-# 252 "nxdk-dxt/lib/libcxx/include/new" 3
 #ifdef _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
   return ::operator new(__size);
 #else
-# 255 "nxdk-dxt/lib/libcxx/include/new" 3
   return __builtin_operator_new(__size);
 #endif
-# 257 "nxdk-dxt/lib/libcxx/include/new" 3
 }
 
 struct _DeallocateCaller {
@@ -18071,11 +16033,9 @@ struct _DeallocateCaller {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 263 "nxdk-dxt/lib/libcxx/include/new" 3
     ((void)__align);
     return __do_deallocate_handle_size(__ptr, __size);
 #else
-# 266 "nxdk-dxt/lib/libcxx/include/new" 3
     if (__is_overaligned_for_new(__align)) {
       const align_val_t __align_val = static_cast<align_val_t>(__align);
       return __do_deallocate_handle_size(__ptr, __size, __align_val);
@@ -18083,7 +16043,6 @@ struct _DeallocateCaller {
       return __do_deallocate_handle_size(__ptr, __size);
     }
 #endif
-# 273 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 
   static inline _LIBCPP_INLINE_VISIBILITY
@@ -18093,11 +16052,9 @@ struct _DeallocateCaller {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 278 "nxdk-dxt/lib/libcxx/include/new" 3
     ((void)__align);
     return __do_call(__ptr);
 #else
-# 281 "nxdk-dxt/lib/libcxx/include/new" 3
     if (__is_overaligned_for_new(__align)) {
       const align_val_t __align_val = static_cast<align_val_t>(__align);
       return __do_call(__ptr, __align_val);
@@ -18105,7 +16062,6 @@ struct _DeallocateCaller {
       return __do_call(__ptr);
     }
 #endif
-# 288 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 
  private:
@@ -18114,10 +16070,8 @@ struct _DeallocateCaller {
     ((void)__size);
     return __do_call(__ptr);
 #else
-# 296 "nxdk-dxt/lib/libcxx/include/new" 3
     return __do_call(__ptr, __size);
 #endif
-# 298 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 
 #ifndef _LIBCPP_HAS_NO_ALIGNED_ALLOCATION
@@ -18126,13 +16080,10 @@ struct _DeallocateCaller {
     ((void)__size);
     return __do_call(__ptr, __align);
 #else
-# 306 "nxdk-dxt/lib/libcxx/include/new" 3
     return __do_call(__ptr, __size, __align);
 #endif
-# 308 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 #endif
-# 310 "nxdk-dxt/lib/libcxx/include/new" 3
 
 private:
   template <class _A1, class _A2>
@@ -18143,13 +16094,10 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 316 "nxdk-dxt/lib/libcxx/include/new" 3
     return ::operator delete(__ptr, __a1, __a2);
 #else
-# 318 "nxdk-dxt/lib/libcxx/include/new" 3
     return __builtin_operator_delete(__ptr, __a1, __a2);
 #endif
-# 320 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 
   template <class _A1>
@@ -18160,23 +16108,18 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 326 "nxdk-dxt/lib/libcxx/include/new" 3
     return ::operator delete(__ptr, __a1);
 #else
-# 328 "nxdk-dxt/lib/libcxx/include/new" 3
     return __builtin_operator_delete(__ptr, __a1);
 #endif
-# 330 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 
   static inline void __do_call(void *__ptr) {
 #ifdef _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
     return ::operator delete(__ptr);
 #else
-# 336 "nxdk-dxt/lib/libcxx/include/new" 3
     return __builtin_operator_delete(__ptr);
 #endif
-# 338 "nxdk-dxt/lib/libcxx/include/new" 3
   }
 };
 
@@ -18197,10 +16140,8 @@ _LIBCPP_CONSTEXPR _Tp* __launder(_Tp* __p) _NOEXCEPT
 #ifdef _LIBCPP_COMPILER_HAS_BUILTIN_LAUNDER
     return __builtin_launder(__p);
 #else
-# 358 "nxdk-dxt/lib/libcxx/include/new" 3
     return __p;
 #endif
-# 360 "nxdk-dxt/lib/libcxx/include/new" 3
 }
 
 
@@ -18209,7 +16150,6 @@ _LIBCPP_CONSTEXPR _Tp* __launder(_Tp* __p) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 364 "nxdk-dxt/lib/libcxx/include/new" 3
 template <class _Tp>
 _LIBCPP_NODISCARD_AFTER_CXX17 inline _LIBCPP_INLINE_VISIBILITY
 constexpr _Tp* launder(_Tp* __p) noexcept
@@ -18217,28 +16157,19 @@ constexpr _Tp* launder(_Tp* __p) noexcept
     return _VSTD::__launder(__p);
 }
 #endif
-# 371 "nxdk-dxt/lib/libcxx/include/new" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_NEW
-# 375 "nxdk-dxt/lib/libcxx/include/new" 3
-# 657 "nxdk-dxt/lib/libcxx/include/memory" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
-# 657 "nxdk-dxt/lib/libcxx/include/memory"
-# 658 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <limits>
 #endif /* expanded by -frewrite-includes */
-# 658 "nxdk-dxt/lib/libcxx/include/memory"
-# 659 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <iterator>
 #endif /* expanded by -frewrite-includes */
-# 659 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/iterator" 1
 // -*- C++ -*-
 //===-------------------------- iterator ----------------------------------===//
 //
@@ -18660,18 +16591,12 @@ template <class E> constexpr const E* data(initializer_list<E> il) noexcept;    
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 419 "nxdk-dxt/lib/libcxx/include/iterator"
-# 420 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #include <iosfwd> // for forward declarations of vector and string.
 #endif /* expanded by -frewrite-includes */
-# 420 "nxdk-dxt/lib/libcxx/include/iterator"
-# 421 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base>
 #endif /* expanded by -frewrite-includes */
-# 421 "nxdk-dxt/lib/libcxx/include/iterator"
-# 1 "nxdk-dxt/lib/libcxx/include/__functional_base" 1
 // -*- C++ -*-
 //===----------------------------------------------------------------------===//
 //
@@ -18687,46 +16612,31 @@ template <class E> constexpr const E* data(initializer_list<E> il) noexcept;    
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 14 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 15 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #include <typeinfo>
 #endif /* expanded by -frewrite-includes */
-# 15 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 16 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #include <exception>
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 17 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #include <new>
 #endif /* expanded by -frewrite-includes */
-# 17 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 18 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
-# 18 "nxdk-dxt/lib/libcxx/include/__functional_base"
-# 19 "nxdk-dxt/lib/libcxx/include/__functional_base"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 21 "nxdk-dxt/lib/libcxx/include/__functional_base"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 22 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 #endif
-# 23 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -18754,13 +16664,10 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 46 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 template <class _Tp = void>
 #else
-# 48 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 template <class _Tp>
 #endif
-# 50 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 struct _LIBCPP_TEMPLATE_VIS less : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -18773,7 +16680,6 @@ struct _LIBCPP_TEMPLATE_VIS less : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 58 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS less<void>
 {
@@ -18786,7 +16692,6 @@ struct _LIBCPP_TEMPLATE_VIS less<void>
     typedef void is_transparent;
 };
 #endif
-# 70 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 // __weak_result_type
 
@@ -19022,16 +16927,12 @@ struct __invoke_return
 };
 
 #else // defined(_LIBCPP_CXX03_LANG)
-# 305 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base_03>
 #endif /* expanded by -frewrite-includes */
-# 306 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
-# 307 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
-# 309 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 
 template <class _Ret>
@@ -19043,7 +16944,6 @@ struct __invoke_void_return_wrapper
         return __invoke(_VSTD::forward<_Args>(__args)...);
     }
 #else
-# 320 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
     template <class _Fn>
     static _Ret __call(_Fn __f) {
         return __invoke(__f);
@@ -19064,7 +16964,6 @@ struct __invoke_void_return_wrapper
         return __invoke(__f, __a0, __a1, __a2);
     }
 #endif
-# 340 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 };
 
 template <>
@@ -19076,7 +16975,6 @@ struct __invoke_void_return_wrapper<void>
         __invoke(_VSTD::forward<_Args>(__args)...);
     }
 #else
-# 351 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
     template <class _Fn>
     static void __call(_Fn __f) {
         __invoke(__f);
@@ -19097,7 +16995,6 @@ struct __invoke_void_return_wrapper<void>
         __invoke(__f, __a0, __a1, __a2);
     }
 #endif
-# 371 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 };
 
 template <class _Tp>
@@ -19117,7 +17014,6 @@ public:
 #ifndef _LIBCPP_CXX03_LANG
     private: reference_wrapper(type&&); public: // = delete; // do not bind to temps
 #endif
-# 390 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
     // access
     _LIBCPP_INLINE_VISIBILITY operator type&    () const _NOEXCEPT {return *__f_;}
@@ -19132,7 +17028,6 @@ public:
         return __invoke(get(), _VSTD::forward<_ArgTypes>(__args)...);
     }
 #else
-# 404 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
     _LIBCPP_INLINE_VISIBILITY
     typename __invoke_return<type>::type
@@ -19238,7 +17133,6 @@ public:
         return __invoke(get(), __a0, __a1, __a2);
     }
 #endif // _LIBCPP_CXX03_LANG
-# 509 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 };
 
 
@@ -19278,14 +17172,12 @@ cref(reference_wrapper<_Tp> __t) _NOEXCEPT
 template <class _Tp> void ref(const _Tp&&) = delete;
 template <class _Tp> void cref(const _Tp&&) = delete;
 #endif
-# 548 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 550 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 template <class _Tp, class, class = void>
 struct __is_transparent : false_type {};
 
@@ -19294,7 +17186,6 @@ struct __is_transparent<_Tp, _Up,
                         typename __void_t<typename _Tp::is_transparent>::type>
    : true_type {};
 #endif
-# 558 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 // allocator_arg_t
 
@@ -19305,13 +17196,10 @@ struct _LIBCPP_TEMPLATE_VIS allocator_arg_t { explicit allocator_arg_t() = defau
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 564 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 extern _LIBCPP_EXPORTED_FROM_ABI const allocator_arg_t allocator_arg;
 #else
-# 566 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 /* _LIBCPP_INLINE_VAR */ constexpr allocator_arg_t allocator_arg = allocator_arg_t();
 #endif
-# 568 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 // uses_allocator
 
@@ -19350,11 +17238,9 @@ struct _LIBCPP_TEMPLATE_VIS uses_allocator
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 602 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 template <class _Tp, class _Alloc>
 _LIBCPP_INLINE_VAR constexpr size_t uses_allocator_v = uses_allocator<_Tp, _Alloc>::value;
 #endif
-# 605 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 
@@ -19399,60 +17285,41 @@ void __user_alloc_construct_impl (integral_constant<int, 2>, _Tp *__storage, con
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 649 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_FUNCTIONAL_BASE
-# 653 "nxdk-dxt/lib/libcxx/include/__functional_base" 3
-# 422 "nxdk-dxt/lib/libcxx/include/iterator" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 422 "nxdk-dxt/lib/libcxx/include/iterator"
-# 423 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 423 "nxdk-dxt/lib/libcxx/include/iterator"
-# 424 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #include <initializer_list>
 #endif /* expanded by -frewrite-includes */
-# 424 "nxdk-dxt/lib/libcxx/include/iterator"
-# 425 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 425 "nxdk-dxt/lib/libcxx/include/iterator"
-# 426 "nxdk-dxt/lib/libcxx/include/iterator"
 #ifdef __APPLE__
 #if 0 /* expanded by -frewrite-includes */
 #include <Availability.h>
 #endif /* expanded by -frewrite-includes */
-# 427 "nxdk-dxt/lib/libcxx/include/iterator"
-# 428 "nxdk-dxt/lib/libcxx/include/iterator"
 #endif
-# 429 "nxdk-dxt/lib/libcxx/include/iterator"
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 430 "nxdk-dxt/lib/libcxx/include/iterator"
-# 431 "nxdk-dxt/lib/libcxx/include/iterator"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 433 "nxdk-dxt/lib/libcxx/include/iterator"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 434 "nxdk-dxt/lib/libcxx/include/iterator" 3
 #endif
-# 435 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -19574,7 +17441,6 @@ using __iter_to_alloc_type = pair<
     add_const_t<typename iterator_traits<_InputIterator>::value_type::first_type>,
     typename iterator_traits<_InputIterator>::value_type::second_type>;
 #endif
-# 556 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template<class _Category, class _Tp, class _Distance = ptrdiff_t,
          class _Pointer = _Tp*, class _Reference = _Tp&>
@@ -19813,7 +17679,6 @@ operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& _
     return __y.base() - __x.base();
 }
 #else
-# 794 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Iter1, class _Iter2>
 inline _LIBCPP_INLINE_VISIBILITY
 typename reverse_iterator<_Iter1>::difference_type
@@ -19822,7 +17687,6 @@ operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& _
     return __y.base() - __x.base();
 }
 #endif
-# 802 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Iter>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -19837,7 +17701,6 @@ operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_i
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 812 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Iter>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
 reverse_iterator<_Iter> make_reverse_iterator(_Iter __i)
@@ -19845,7 +17708,6 @@ reverse_iterator<_Iter> make_reverse_iterator(_Iter __i)
     return reverse_iterator<_Iter>(__i);
 }
 #endif
-# 819 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Container>
 class _LIBCPP_TEMPLATE_VIS back_insert_iterator
@@ -19867,7 +17729,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY back_insert_iterator& operator=(typename _Container::value_type&& __value_)
         {container->push_back(_VSTD::move(__value_)); return *this;}
 #endif  // _LIBCPP_CXX03_LANG
-# 840 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY back_insert_iterator& operator*()     {return *this;}
     _LIBCPP_INLINE_VISIBILITY back_insert_iterator& operator++()    {return *this;}
     _LIBCPP_INLINE_VISIBILITY back_insert_iterator  operator++(int) {return *this;}
@@ -19901,7 +17762,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY front_insert_iterator& operator=(typename _Container::value_type&& __value_)
         {container->push_front(_VSTD::move(__value_)); return *this;}
 #endif  // _LIBCPP_CXX03_LANG
-# 873 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY front_insert_iterator& operator*()     {return *this;}
     _LIBCPP_INLINE_VISIBILITY front_insert_iterator& operator++()    {return *this;}
     _LIBCPP_INLINE_VISIBILITY front_insert_iterator  operator++(int) {return *this;}
@@ -19937,7 +17797,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY insert_iterator& operator=(typename _Container::value_type&& __value_)
         {iter = container->insert(iter, _VSTD::move(__value_)); ++iter; return *this;}
 #endif  // _LIBCPP_CXX03_LANG
-# 908 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY insert_iterator& operator*()        {return *this;}
     _LIBCPP_INLINE_VISIBILITY insert_iterator& operator++()       {return *this;}
     _LIBCPP_INLINE_VISIBILITY insert_iterator& operator++(int)    {return *this;}
@@ -20167,10 +18026,8 @@ public:
             __reference
         >::type reference;
 #else
-# 1137 "nxdk-dxt/lib/libcxx/include/iterator" 3
     typedef typename iterator_traits<iterator_type>::reference reference;
 #endif
-# 1139 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
     move_iterator() : __i() {}
@@ -20262,7 +18119,6 @@ operator-(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
     return __x.base() - __y.base();
 }
 #else
-# 1230 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Iter1, class _Iter2>
 inline _LIBCPP_INLINE_VISIBILITY
 typename move_iterator<_Iter1>::difference_type
@@ -20271,7 +18127,6 @@ operator-(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
     return __x.base() - __y.base();
 }
 #endif
-# 1238 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Iter>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -20330,13 +18185,11 @@ auto
 operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
 -> decltype(__x.base() - __y.base());
 #else
-# 1296 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Iter1, class _Iter2>
 _LIBCPP_INLINE_VISIBILITY
 typename __wrap_iter<_Iter1>::difference_type
 operator-(const __wrap_iter<_Iter1>&, const __wrap_iter<_Iter2>&) _NOEXCEPT;
 #endif
-# 1301 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Iter>
 _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
@@ -20349,7 +18202,6 @@ template <class _Ip, class _Op> _Op _LIBCPP_INLINE_VISIBILITY move(_Ip, _Ip, _Op
 template <class _B1, class _B2> _B2 _LIBCPP_INLINE_VISIBILITY move_backward(_B1, _B1, _B2);
 
 #if 1 /* evaluated by -frewrite-includes */
-# 1313 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Tp>
 _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
@@ -20360,7 +18212,6 @@ typename enable_if
 >::type
 __unwrap_iter(__wrap_iter<_Tp*>);
 #endif
-# 1335 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Iter>
 class __wrap_iter
@@ -20381,42 +18232,33 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1351 "nxdk-dxt/lib/libcxx/include/iterator" 3
                 : __i{}
 #endif
-# 1353 "nxdk-dxt/lib/libcxx/include/iterator" 3
     {
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_DEBUG_LEVEL >= 2
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1355 "nxdk-dxt/lib/libcxx/include/iterator" 3
         __get_db()->__insert_i(this);
 #endif
-# 1357 "nxdk-dxt/lib/libcxx/include/iterator" 3
     }
     template <class _Up> _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
         __wrap_iter(const __wrap_iter<_Up>& __u,
             typename enable_if<is_convertible<_Up, iterator_type>::value>::type* = 0) _NOEXCEPT
             : __i(__u.base())
     {
-# 1366 "nxdk-dxt/lib/libcxx/include/iterator" 3
     }
-# 1390 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG reference operator*() const _NOEXCEPT
     {
-# 1396 "nxdk-dxt/lib/libcxx/include/iterator" 3
         return *__i;
     }
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG pointer  operator->() const _NOEXCEPT
     {
-# 1404 "nxdk-dxt/lib/libcxx/include/iterator" 3
         return (pointer)_VSTD::addressof(*__i);
     }
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter& operator++() _NOEXCEPT
     {
-# 1412 "nxdk-dxt/lib/libcxx/include/iterator" 3
         ++__i;
         return *this;
     }
@@ -20430,11 +18272,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1421 "nxdk-dxt/lib/libcxx/include/iterator" 3
         _LIBCPP_ASSERT(__get_const_db()->__decrementable(this),
                        "Attempted to decrement non-decrementable iterator");
 #endif
-# 1424 "nxdk-dxt/lib/libcxx/include/iterator" 3
         --__i;
         return *this;
     }
@@ -20449,11 +18289,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1434 "nxdk-dxt/lib/libcxx/include/iterator" 3
         _LIBCPP_ASSERT(__get_const_db()->__addable(this, __n),
                    "Attempted to add/subtract iterator outside of valid range");
 #endif
-# 1437 "nxdk-dxt/lib/libcxx/include/iterator" 3
         __i += __n;
         return *this;
     }
@@ -20468,11 +18306,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1447 "nxdk-dxt/lib/libcxx/include/iterator" 3
         _LIBCPP_ASSERT(__get_const_db()->__subscriptable(this, __n),
                    "Attempted to subscript iterator outside of valid range");
 #endif
-# 1450 "nxdk-dxt/lib/libcxx/include/iterator" 3
         return __i[__n];
     }
 
@@ -20484,16 +18320,13 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1457 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(const void* __p, iterator_type __x) : __i(__x)
     {
         __get_db()->__insert_ic(this, __p);
     }
 #else
-# 1462 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG __wrap_iter(iterator_type __x) _NOEXCEPT : __i(__x) {}
 #endif
-# 1464 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
     template <class _Up> friend class __wrap_iter;
     template <class _CharT, class _Traits, class _Alloc> friend class basic_string;
@@ -20537,13 +18370,11 @@ private:
     operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
     -> decltype(__x.base() - __y.base());
 #else
-# 1507 "nxdk-dxt/lib/libcxx/include/iterator" 3
     template <class _Iter1, class _Iter2>
     _LIBCPP_CONSTEXPR_IF_NODEBUG friend
     typename __wrap_iter<_Iter1>::difference_type
     operator-(const __wrap_iter<_Iter1>&, const __wrap_iter<_Iter2>&) _NOEXCEPT;
 #endif
-# 1512 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
     template <class _Iter1>
     _LIBCPP_CONSTEXPR_IF_NODEBUG friend
@@ -20560,7 +18391,6 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1524 "nxdk-dxt/lib/libcxx/include/iterator" 3
     template <class _Tp>
     _LIBCPP_CONSTEXPR_IF_NODEBUG friend
     typename enable_if
@@ -20570,7 +18400,6 @@ private:
     >::type
     __unwrap_iter(__wrap_iter<_Tp*>);
 #else
-# 1533 "nxdk-dxt/lib/libcxx/include/iterator" 3
   template <class _Tp>
   inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
   typename enable_if
@@ -20580,7 +18409,6 @@ private:
   >::type
   __unwrap_iter(__wrap_iter<_Tp*> __i);
 #endif
-# 1542 "nxdk-dxt/lib/libcxx/include/iterator" 3
 };
 
 template <class _Iter1, class _Iter2>
@@ -20601,11 +18429,9 @@ operator<(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXC
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1558 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to compare incomparable iterators");
 #endif
-# 1561 "nxdk-dxt/lib/libcxx/include/iterator" 3
     return __x.base() < __y.base();
 }
 
@@ -20629,15 +18455,12 @@ operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXC
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1636 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to subtract incompatible iterators");
 #endif
-# 1639 "nxdk-dxt/lib/libcxx/include/iterator" 3
     return __x.base() - __y.base();
 }
 #else
-# 1642 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Iter1, class _Iter2>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
 typename __wrap_iter<_Iter1>::difference_type
@@ -20648,15 +18471,12 @@ operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXC
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1648 "nxdk-dxt/lib/libcxx/include/iterator" 3
     _LIBCPP_ASSERT(__get_const_db()->__less_than_comparable(&__x, &__y),
                    "Attempted to subtract incompatible iterators");
 #endif
-# 1651 "nxdk-dxt/lib/libcxx/include/iterator" 3
     return __x.base() - __y.base();
 }
 #endif
-# 1654 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Iter>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
@@ -20706,32 +18526,26 @@ end(_Tp (&__array)[_Np])
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1699 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 11
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1733 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 
 #endif
-# 1819 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 
 #else  // defined(_LIBCPP_CXX03_LANG)
-# 1822 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 #endif  // !defined(_LIBCPP_CXX03_LANG)
-# 1856 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1858 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 
 template <class _Cont>
@@ -20750,7 +18564,6 @@ constexpr size_t size(const _Tp (&)[_Sz]) noexcept { return _Sz; }
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1885 "nxdk-dxt/lib/libcxx/include/iterator" 3
 template <class _Cont>
 _LIBCPP_INLINE_VISIBILITY
 constexpr auto ssize(const _Cont& __c)
@@ -20762,7 +18575,6 @@ template <class _Tp, ptrdiff_t _Sz>
 _LIBCPP_INLINE_VISIBILITY
 constexpr ptrdiff_t ssize(const _Tp (&)[_Sz]) noexcept { return _Sz; }
 #endif
-# 1896 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 template <class _Cont>
 _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_INLINE_VISIBILITY
@@ -20801,29 +18613,20 @@ template <class _Ep>
 _LIBCPP_INLINE_VISIBILITY
 constexpr const _Ep* data(initializer_list<_Ep> __il) noexcept { return __il.begin(); }
 #endif
-# 1934 "nxdk-dxt/lib/libcxx/include/iterator" 3
 
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_ITERATOR
-# 1939 "nxdk-dxt/lib/libcxx/include/iterator" 3
-# 660 "nxdk-dxt/lib/libcxx/include/memory" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base>
 #endif /* expanded by -frewrite-includes */
-# 660 "nxdk-dxt/lib/libcxx/include/memory"
-# 661 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <iosfwd>
 #endif /* expanded by -frewrite-includes */
-# 661 "nxdk-dxt/lib/libcxx/include/memory"
-# 662 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <tuple>
 #endif /* expanded by -frewrite-includes */
-# 662 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/tuple" 1
 // -*- C++ -*-
 //===--------------------------- tuple ------------------------------------===//
 //
@@ -20840,51 +18643,34 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 148 "nxdk-dxt/lib/libcxx/include/tuple"
-# 149 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <__tuple>
 #endif /* expanded by -frewrite-includes */
-# 149 "nxdk-dxt/lib/libcxx/include/tuple"
-# 150 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 150 "nxdk-dxt/lib/libcxx/include/tuple"
-# 151 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 151 "nxdk-dxt/lib/libcxx/include/tuple"
-# 152 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base>
 #endif /* expanded by -frewrite-includes */
-# 152 "nxdk-dxt/lib/libcxx/include/tuple"
-# 153 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
-# 153 "nxdk-dxt/lib/libcxx/include/tuple"
-# 154 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 154 "nxdk-dxt/lib/libcxx/include/tuple"
-# 155 "nxdk-dxt/lib/libcxx/include/tuple"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 157 "nxdk-dxt/lib/libcxx/include/tuple"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 158 "nxdk-dxt/lib/libcxx/include/tuple" 3
 #endif
-# 159 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -20918,13 +18704,10 @@ class __tuple_leaf
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 188 "nxdk-dxt/lib/libcxx/include/tuple" 3
       return !__reference_binds_to_temporary(_Hp, _Tp);
 #else
-# 190 "nxdk-dxt/lib/libcxx/include/tuple" 3
       return true;
 #endif
-# 192 "nxdk-dxt/lib/libcxx/include/tuple" 3
     }
 
     __tuple_leaf& operator=(const __tuple_leaf&);
@@ -21221,13 +19004,10 @@ class _LIBCPP_TEMPLATE_VIS tuple
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 484 "nxdk-dxt/lib/libcxx/include/tuple" 3
     static constexpr bool _EnableImplicitReducedArityExtension = true;
 #else
-# 486 "nxdk-dxt/lib/libcxx/include/tuple" 3
     static constexpr bool _EnableImplicitReducedArityExtension = false;
 #endif
-# 488 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
     template <class ..._Args>
     struct _PackExpandsToThisTuple : false_type {};
@@ -21731,7 +19511,6 @@ tuple(allocator_arg_t, _Alloc, pair<_Tp1, _Tp2>) -> tuple<_Tp1, _Tp2>;
 template <class _Alloc, class ..._Tp>
 tuple(allocator_arg_t, _Alloc, tuple<_Tp...>) -> tuple<_Tp...>;
 #endif
-# 991 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 template <class ..._Tp>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -21749,7 +19528,6 @@ swap(tuple<_Tp...>& __t, tuple<_Tp...>& __u)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1044 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 namespace __find_detail {
 
@@ -21785,7 +19563,6 @@ struct __find_exactly_one_checked<_T1> {
 } // namespace __find_detail;
 
 #endif
-# 1112 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 // tie
 
@@ -21929,7 +19706,6 @@ operator<=(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1404 "nxdk-dxt/lib/libcxx/include/tuple" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
 
@@ -21972,21 +19748,15 @@ _LIBCPP_NOEXCEPT_RETURN(
 #undef _LIBCPP_NOEXCEPT_RETURN
 
 #endif // _LIBCPP_STD_VER > 14
-# 1446 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 #endif // !defined(_LIBCPP_CXX03_LANG)
-# 1448 "nxdk-dxt/lib/libcxx/include/tuple" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_TUPLE
-# 1452 "nxdk-dxt/lib/libcxx/include/tuple" 3
-# 663 "nxdk-dxt/lib/libcxx/include/memory" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <stdexcept>
 #endif /* expanded by -frewrite-includes */
-# 663 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/stdexcept" 1
 // -*- C++ -*-
 //===--------------------------- stdexcept --------------------------------===//
 //
@@ -22030,39 +19800,26 @@ public:
 
 */
 
-# 44 "nxdk-dxt/lib/libcxx/include/stdexcept"
-# 45 "nxdk-dxt/lib/libcxx/include/stdexcept"
 
-# 45 "nxdk-dxt/lib/libcxx/include/stdexcept"
-# 46 "nxdk-dxt/lib/libcxx/include/stdexcept"
 
-# 46 "nxdk-dxt/lib/libcxx/include/stdexcept"
-# 47 "nxdk-dxt/lib/libcxx/include/stdexcept"
 #ifdef _LIBCPP_NO_EXCEPTIONS
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdlib>
 #endif /* expanded by -frewrite-includes */
-# 48 "nxdk-dxt/lib/libcxx/include/stdexcept"
-# 49 "nxdk-dxt/lib/libcxx/include/stdexcept"
 #endif
-# 50 "nxdk-dxt/lib/libcxx/include/stdexcept"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 52 "nxdk-dxt/lib/libcxx/include/stdexcept"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 53 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 #endif
-# 54 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 
 
 
-# 72 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 
 
 namespace std  // purposefully not using versioning namespace
@@ -22085,12 +19842,10 @@ public:
 
     virtual const char* what() const _NOEXCEPT;
 #else
-# 95 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 public:
     explicit logic_error(const _VSTD::string&); // Symbol uses versioned std::string
     _LIBCPP_INLINE_VISIBILITY explicit logic_error(const char* __s) : exception(__s) {}
 #endif
-# 99 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI runtime_error
@@ -22110,12 +19865,10 @@ public:
 
     virtual const char* what() const _NOEXCEPT;
 #else
-# 118 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 public:
    explicit runtime_error(const _VSTD::string&); // Symbol uses versioned std::string
    _LIBCPP_INLINE_VISIBILITY explicit runtime_error(const char* __s) : exception(__s) {}
 #endif // _LIBCPP_ABI_VCRUNTIME
-# 122 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI domain_error
@@ -22128,7 +19881,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~domain_error() _NOEXCEPT;
 #endif
-# 134 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI invalid_argument
@@ -22141,7 +19893,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~invalid_argument() _NOEXCEPT;
 #endif
-# 146 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI length_error
@@ -22153,7 +19904,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~length_error() _NOEXCEPT;
 #endif
-# 157 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI out_of_range
@@ -22166,7 +19916,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~out_of_range() _NOEXCEPT;
 #endif
-# 169 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI range_error
@@ -22179,7 +19928,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~range_error() _NOEXCEPT;
 #endif
-# 181 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI overflow_error
@@ -22192,7 +19940,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~overflow_error() _NOEXCEPT;
 #endif
-# 193 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 class _LIBCPP_EXCEPTION_ABI underflow_error
@@ -22205,7 +19952,6 @@ public:
 #ifndef _LIBCPP_ABI_VCRUNTIME
     virtual ~underflow_error() _NOEXCEPT;
 #endif
-# 205 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
 };
 
 }  // std
@@ -22215,131 +19961,21 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 // in the dylib
 _LIBCPP_NORETURN _LIBCPP_FUNC_VIS void __throw_runtime_error(const char*);
 
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_logic_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw logic_error(__msg);
-#else
-# 220 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 223 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_domain_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw domain_error(__msg);
-#else
-# 231 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 234 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_invalid_argument(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw invalid_argument(__msg);
-#else
-# 242 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 245 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_length_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw length_error(__msg);
-#else
-# 253 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 256 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_out_of_range(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw out_of_range(__msg);
-#else
-# 264 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 267 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_range_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw range_error(__msg);
-#else
-# 275 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 278 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_overflow_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw overflow_error(__msg);
-#else
-# 286 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 289 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_underflow_error(const char*__msg)
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw underflow_error(__msg);
-#else
-# 297 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-    ((void)__msg);
-    _VSTD::abort();
-#endif
-# 300 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-}
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_STDEXCEPT
-# 305 "nxdk-dxt/lib/libcxx/include/stdexcept" 3
-# 664 "nxdk-dxt/lib/libcxx/include/memory" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <cstring>
 #endif /* expanded by -frewrite-includes */
-# 664 "nxdk-dxt/lib/libcxx/include/memory"
-# 665 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_ATOMIC_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 666 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #  include <atomic>
 #endif /* expanded by -frewrite-includes */
-# 666 "nxdk-dxt/lib/libcxx/include/memory"
-# 1 "nxdk-dxt/lib/libcxx/include/atomic" 1
 // -*- C++ -*-
 //===--------------------------- atomic -----------------------------------===//
 //
@@ -22356,54 +19992,38 @@ _LIBCPP_END_NAMESPACE_STD
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 549 "nxdk-dxt/lib/libcxx/include/atomic"
-# 550 "nxdk-dxt/lib/libcxx/include/atomic"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 550 "nxdk-dxt/lib/libcxx/include/atomic"
-# 551 "nxdk-dxt/lib/libcxx/include/atomic"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdint>
 #endif /* expanded by -frewrite-includes */
-# 551 "nxdk-dxt/lib/libcxx/include/atomic"
-# 552 "nxdk-dxt/lib/libcxx/include/atomic"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 552 "nxdk-dxt/lib/libcxx/include/atomic"
-# 553 "nxdk-dxt/lib/libcxx/include/atomic"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 553 "nxdk-dxt/lib/libcxx/include/atomic"
-# 554 "nxdk-dxt/lib/libcxx/include/atomic"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 556 "nxdk-dxt/lib/libcxx/include/atomic"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 557 "nxdk-dxt/lib/libcxx/include/atomic" 3
 #endif
-# 558 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 #ifdef _LIBCPP_HAS_NO_THREADS
 # error <atomic> is not supported on this single threaded system
 #endif
-# 562 "nxdk-dxt/lib/libcxx/include/atomic" 3
 #ifdef _LIBCPP_HAS_NO_ATOMIC_HEADER
 # error <atomic> is not implemented
 #endif
-# 565 "nxdk-dxt/lib/libcxx/include/atomic" 3
 #ifdef kill_dependency
 # error C++ standard library is incompatible with <stdatomic.h>
 #endif
-# 568 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 #define _LIBCPP_CHECK_STORE_MEMORY_ORDER(__m) \
   _LIBCPP_DIAGNOSE_WARNING(__m == memory_order_consume || \
@@ -22442,7 +20062,6 @@ typedef underlying_type<__legacy_memory_order>::type __memory_order_underlying_t
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 602 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 enum class memory_order : __memory_order_underlying_t {
   relaxed = __mo_relaxed,
@@ -22461,7 +20080,6 @@ inline constexpr auto memory_order_acq_rel = memory_order::acq_rel;
 inline constexpr auto memory_order_seq_cst = memory_order::seq_cst;
 
 #else
-# 620 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 typedef enum memory_order {
   memory_order_relaxed = __mo_relaxed,
@@ -22473,7 +20091,6 @@ typedef enum memory_order {
 } memory_order;
 
 #endif // _LIBCPP_STD_VER > 17
-# 631 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -22482,18 +20099,15 @@ typedef enum memory_order {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 637 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 
 #endif
-# 657 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_HAS_GCC_ATOMIC_IMP)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 659 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 template <typename _Tp>
 struct __cxx_atomic_base_impl {
@@ -22502,17 +20116,14 @@ struct __cxx_atomic_base_impl {
 #ifndef _LIBCPP_CXX03_LANG
     __cxx_atomic_base_impl() _NOEXCEPT = default;
 #else
-# 667 "nxdk-dxt/lib/libcxx/include/atomic" 3
     __cxx_atomic_base_impl() _NOEXCEPT : __a_value() {}
 #endif // _LIBCPP_CXX03_LANG
-# 669 "nxdk-dxt/lib/libcxx/include/atomic" 3
   _LIBCPP_CONSTEXPR explicit __cxx_atomic_base_impl(_Tp value) _NOEXCEPT
     : __a_value(value) {}
   _Tp __a_value;
 };
 
 #elif 1 /* evaluated by -frewrite-includes */
-# 911 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 template <typename _Tp>
 struct __cxx_atomic_base_impl {
@@ -22521,10 +20132,8 @@ struct __cxx_atomic_base_impl {
 #ifndef _LIBCPP_CXX03_LANG
     __cxx_atomic_base_impl() _NOEXCEPT = default;
 #else
-# 919 "nxdk-dxt/lib/libcxx/include/atomic" 3
     __cxx_atomic_base_impl() _NOEXCEPT : __a_value() {}
 #endif // _LIBCPP_CXX03_LANG
-# 921 "nxdk-dxt/lib/libcxx/include/atomic" 3
   _LIBCPP_CONSTEXPR explicit __cxx_atomic_base_impl(_Tp value) _NOEXCEPT
     : __a_value(value) {}
   _LIBCPP_DISABLE_EXTENSION_WARNING _Atomic(_Tp) __a_value;
@@ -22533,7 +20142,6 @@ struct __cxx_atomic_base_impl {
 #define __cxx_atomic_is_lock_free(__s) __c11_atomic_is_lock_free(__s)
 
 #endif // _LIBCPP_HAS_GCC_ATOMIC_IMP, _LIBCPP_HAS_C_ATOMIC_IMP
-# 1083 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 template <class _Tp>
 _LIBCPP_INLINE_VISIBILITY
@@ -22547,7 +20155,6 @@ _Tp kill_dependency(_Tp __y) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1092 "nxdk-dxt/lib/libcxx/include/atomic" 3
 # define ATOMIC_BOOL_LOCK_FREE      __CLANG_ATOMIC_BOOL_LOCK_FREE
 # define ATOMIC_CHAR_LOCK_FREE      __CLANG_ATOMIC_CHAR_LOCK_FREE
 # define ATOMIC_CHAR16_T_LOCK_FREE  __CLANG_ATOMIC_CHAR16_T_LOCK_FREE
@@ -22559,16 +20166,13 @@ _Tp kill_dependency(_Tp __y) _NOEXCEPT
 # define ATOMIC_LLONG_LOCK_FREE     __CLANG_ATOMIC_LLONG_LOCK_FREE
 # define ATOMIC_POINTER_LOCK_FREE   __CLANG_ATOMIC_POINTER_LOCK_FREE
 #endif
-# 1114 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 #ifdef _LIBCPP_ATOMIC_ONLY_USE_BUILTINS
 
 #else
-# 1440 "nxdk-dxt/lib/libcxx/include/atomic" 3
 template <typename _Tp,
           typename _Base = __cxx_atomic_base_impl<_Tp> >
 #endif //_LIBCPP_ATOMIC_ONLY_USE_BUILTINS
-# 1443 "nxdk-dxt/lib/libcxx/include/atomic" 3
 struct __cxx_atomic_impl : public _Base {
 
 #if 0 /* disabled by -frewrite-includes */
@@ -22576,11 +20180,9 @@ struct __cxx_atomic_impl : public _Base {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1446 "nxdk-dxt/lib/libcxx/include/atomic" 3
     static_assert(is_trivially_copyable<_Tp>::value,
       "std::atomic<Tp> requires that 'Tp' be a trivially copyable type");
 #endif
-# 1449 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
   _LIBCPP_INLINE_VISIBILITY __cxx_atomic_impl() _NOEXCEPT _LIBCPP_DEFAULT
   _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR explicit __cxx_atomic_impl(_Tp value) _NOEXCEPT
@@ -22599,10 +20201,8 @@ struct __atomic_base  // false
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1463 "nxdk-dxt/lib/libcxx/include/atomic" 3
   static _LIBCPP_CONSTEXPR bool is_always_lock_free = __atomic_always_lock_free(sizeof(__a_), 0);
 #endif
-# 1465 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
     _LIBCPP_INLINE_VISIBILITY
     bool is_lock_free() const volatile _NOEXCEPT
@@ -22678,13 +20278,11 @@ struct __atomic_base  // false
     __atomic_base& operator=(const __atomic_base&) = delete;
     __atomic_base& operator=(const __atomic_base&) volatile = delete;
 #else
-# 1546 "nxdk-dxt/lib/libcxx/include/atomic" 3
 private:
     __atomic_base(const __atomic_base&);
     __atomic_base& operator=(const __atomic_base&);
     __atomic_base& operator=(const __atomic_base&) volatile;
 #endif
-# 1551 "nxdk-dxt/lib/libcxx/include/atomic" 3
 };
 
 #if 0 /* disabled by -frewrite-includes */
@@ -22692,11 +20290,9 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1554 "nxdk-dxt/lib/libcxx/include/atomic" 3
 template <class _Tp, bool __b>
 _LIBCPP_CONSTEXPR bool __atomic_base<_Tp, __b>::is_always_lock_free;
 #endif
-# 1557 "nxdk-dxt/lib/libcxx/include/atomic" 3
 
 // atomic<Integral>
 
@@ -23435,48 +21031,36 @@ typedef struct atomic_flag
     atomic_flag& operator=(const atomic_flag&) = delete;
     atomic_flag& operator=(const atomic_flag&) volatile = delete;
 #else
-# 2306 "nxdk-dxt/lib/libcxx/include/atomic" 3
 private:
     atomic_flag(const atomic_flag&);
     atomic_flag& operator=(const atomic_flag&);
     atomic_flag& operator=(const atomic_flag&) volatile;
 #endif
-# 2311 "nxdk-dxt/lib/libcxx/include/atomic" 3
 } atomic_flag;
 
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_ATOMIC
-# 2443 "nxdk-dxt/lib/libcxx/include/atomic" 3
-# 667 "nxdk-dxt/lib/libcxx/include/memory" 2
 #endif
-# 668 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 668 "nxdk-dxt/lib/libcxx/include/memory"
-# 669 "nxdk-dxt/lib/libcxx/include/memory"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 671 "nxdk-dxt/lib/libcxx/include/memory"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 672 "nxdk-dxt/lib/libcxx/include/memory" 3
 #endif
-# 673 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 675 "nxdk-dxt/lib/libcxx/include/memory" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -23493,25 +21077,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -23519,26 +21097,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 676 "nxdk-dxt/lib/libcxx/include/memory" 2 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -23553,13 +21124,10 @@ _ValueType __libcpp_relaxed_load(_ValueType const* __value) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 686 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __atomic_load_n(__value, __ATOMIC_RELAXED);
 #else
-# 688 "nxdk-dxt/lib/libcxx/include/memory" 3
     return *__value;
 #endif
-# 690 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _ValueType>
@@ -23572,13 +21140,10 @@ _ValueType __libcpp_acquire_load(_ValueType const* __value) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 698 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __atomic_load_n(__value, __ATOMIC_ACQUIRE);
 #else
-# 700 "nxdk-dxt/lib/libcxx/include/memory" 3
     return *__value;
 #endif
-# 702 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 // addressof moved to <type_traits>
@@ -23640,11 +21205,9 @@ struct __pointer_traits_element_type<_Sp<_Tp, _Args...>, false>
 };
 
 #else  // _LIBCPP_HAS_NO_VARIADICS
-# 763 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 815 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp, class = void>
 struct __has_difference_type : false_type {};
@@ -23682,10 +21245,8 @@ struct __pointer_traits_rebind
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename _Tp::template rebind<_Up> type;
 #else
-# 852 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef _LIBCPP_NODEBUG_TYPE typename _Tp::template rebind<_Up>::other type;
 #endif
-# 854 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 #ifndef _LIBCPP_HAS_NO_VARIADICS
@@ -23696,10 +21257,8 @@ struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, true>
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename _Sp<_Tp, _Args...>::template rebind<_Up> type;
 #else
-# 864 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef _LIBCPP_NODEBUG_TYPE typename _Sp<_Tp, _Args...>::template rebind<_Up>::other type;
 #endif
-# 866 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <template <class, class...> class _Sp, class _Tp, class ..._Args, class _Up>
@@ -23709,7 +21268,6 @@ struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, false>
 };
 
 #else  // _LIBCPP_HAS_NO_VARIADICS
-# 875 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <template <class> class _Sp, class _Tp, class _Up>
 struct __pointer_traits_rebind<_Sp<_Tp>, _Up, true>
@@ -23717,10 +21275,8 @@ struct __pointer_traits_rebind<_Sp<_Tp>, _Up, true>
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename _Sp<_Tp>::template rebind<_Up> type;
 #else
-# 882 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename _Sp<_Tp>::template rebind<_Up>::other type;
 #endif
-# 884 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <template <class> class _Sp, class _Tp, class _Up>
@@ -23735,10 +21291,8 @@ struct __pointer_traits_rebind<_Sp<_Tp, _A0>, _Up, true>
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename _Sp<_Tp, _A0>::template rebind<_Up> type;
 #else
-# 898 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename _Sp<_Tp, _A0>::template rebind<_Up>::other type;
 #endif
-# 900 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <template <class, class> class _Sp, class _Tp, class _A0, class _Up>
@@ -23754,10 +21308,8 @@ struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1>, _Up, true>
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename _Sp<_Tp, _A0, _A1>::template rebind<_Up> type;
 #else
-# 915 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename _Sp<_Tp, _A0, _A1>::template rebind<_Up>::other type;
 #endif
-# 917 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <template <class, class, class> class _Sp, class _Tp, class _A0,
@@ -23774,10 +21326,8 @@ struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1, _A2>, _Up, true>
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename _Sp<_Tp, _A0, _A1, _A2>::template rebind<_Up> type;
 #else
-# 933 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename _Sp<_Tp, _A0, _A1, _A2>::template rebind<_Up>::other type;
 #endif
-# 935 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <template <class, class, class, class> class _Sp, class _Tp, class _A0,
@@ -23788,7 +21338,6 @@ struct __pointer_traits_rebind<_Sp<_Tp, _A0, _A1, _A2>, _Up, false>
 };
 
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 945 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Ptr>
 struct _LIBCPP_TEMPLATE_VIS pointer_traits
@@ -23800,11 +21349,9 @@ struct _LIBCPP_TEMPLATE_VIS pointer_traits
 #ifndef _LIBCPP_CXX03_LANG
     template <class _Up> using rebind = typename __pointer_traits_rebind<pointer, _Up>::type;
 #else
-# 956 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Up> struct rebind
         {typedef typename __pointer_traits_rebind<pointer, _Up>::type other;};
 #endif  // _LIBCPP_CXX03_LANG
-# 959 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 private:
     struct __nat {};
@@ -23825,10 +21372,8 @@ struct _LIBCPP_TEMPLATE_VIS pointer_traits<_Tp*>
 #ifndef _LIBCPP_CXX03_LANG
     template <class _Up> using rebind = _Up*;
 #else
-# 979 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Up> struct rebind {typedef _Up* other;};
 #endif
-# 981 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 private:
     struct __nat {};
@@ -23844,10 +21389,8 @@ struct __rebind_pointer {
 #ifndef _LIBCPP_CXX03_LANG
     typedef typename pointer_traits<_From>::template rebind<_To>        type;
 #else
-# 996 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename pointer_traits<_From>::template rebind<_To>::other type;
 #endif
-# 998 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 // allocator_traits
@@ -23901,10 +21444,8 @@ struct __const_pointer<_Tp, _Ptr, _Alloc, false>
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<const _Tp> type;
 #else
-# 1051 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename pointer_traits<_Ptr>::template rebind<const _Tp>::other type;
 #endif
-# 1053 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <class _Tp, class = void>
@@ -23926,10 +21467,8 @@ struct __void_pointer<_Ptr, _Alloc, false>
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<void> type;
 #else
-# 1074 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<void>::other type;
 #endif
-# 1076 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <class _Tp, class = void>
@@ -23951,10 +21490,8 @@ struct __const_void_pointer<_Ptr, _Alloc, false>
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<const void> type;
 #else
-# 1097 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef _LIBCPP_NODEBUG_TYPE typename pointer_traits<_Ptr>::template rebind<const void>::other type;
 #endif
-# 1099 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <class _Tp>
@@ -23970,7 +21507,6 @@ __to_raw_pointer(_Tp* __p) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1110 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <class _Pointer>
 inline _LIBCPP_INLINE_VISIBILITY
 typename pointer_traits<_Pointer>::element_type*
@@ -23979,7 +21515,6 @@ __to_raw_pointer(_Pointer __p) _NOEXCEPT
     return _VSTD::__to_raw_pointer(__p.operator->());
 }
 #else
-# 1118 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <class _Pointer>
 inline _LIBCPP_INLINE_VISIBILITY
 auto
@@ -24014,7 +21549,6 @@ to_address(const _Pointer& __p) _NOEXCEPT
     return _VSTD::__to_raw_pointer(__p);
 }
 #endif
-# 1152 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp, class = void>
 struct __has_size_type : false_type {};
@@ -24153,7 +21687,6 @@ struct __allocator_traits_rebind<_Alloc<_Tp, _Args...>, _Up, false>
 };
 
 #else  // _LIBCPP_HAS_NO_VARIADICS
-# 1290 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <template <class> class _Alloc, class _Tp, class _Up>
 struct __allocator_traits_rebind<_Alloc<_Tp>, _Up, true>
@@ -24208,7 +21741,6 @@ struct __allocator_traits_rebind<_Alloc<_Tp, _A0, _A1, _A2>, _Up, false>
 };
 
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 1344 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #ifndef _LIBCPP_CXX03_LANG
 
@@ -24234,7 +21766,6 @@ struct __has_allocate_hint
 };
 
 #else  // _LIBCPP_CXX03_LANG
-# 1369 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Alloc, class _SizeType, class _ConstVoidPtr>
 struct __has_allocate_hint
@@ -24243,14 +21774,12 @@ struct __has_allocate_hint
 };
 
 #endif  // _LIBCPP_CXX03_LANG
-# 1377 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_CXX03_LANG)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1379 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Alloc, class _Tp, class ..._Args>
 decltype(_VSTD::declval<_Alloc>().construct(_VSTD::declval<_Tp*>(),
@@ -24332,7 +21861,6 @@ struct __has_select_on_container_copy_construction
 };
 
 #else  // _LIBCPP_CXX03_LANG
-# 1460 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Alloc, class _Pointer, class _Tp, class = void>
 struct __has_construct : std::false_type {};
@@ -24363,7 +21891,6 @@ struct __has_select_on_container_copy_construction
 };
 
 #endif  // _LIBCPP_CXX03_LANG
-# 1490 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Alloc, class _Ptr, bool = __has_difference_type<_Alloc>::value>
 struct __alloc_traits_difference_type
@@ -24436,13 +21963,11 @@ struct _LIBCPP_TEMPLATE_VIS allocator_traits
                   typename __allocator_traits_rebind<allocator_type, _Tp>::type;
     template <class _Tp> using rebind_traits = allocator_traits<rebind_alloc<_Tp> >;
 #else  // _LIBCPP_CXX03_LANG
-# 1562 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Tp> struct rebind_alloc
         {typedef typename __allocator_traits_rebind<allocator_type, _Tp>::type other;};
     template <class _Tp> struct rebind_traits
         {typedef allocator_traits<typename rebind_alloc<_Tp>::other> other;};
 #endif  // _LIBCPP_CXX03_LANG
-# 1567 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_INLINE_VISIBILITY
     static pointer allocate(allocator_type& __a, size_type __n)
@@ -24463,7 +21988,6 @@ struct _LIBCPP_TEMPLATE_VIS allocator_traits
             {__construct(__has_construct<allocator_type, _Tp*, _Args...>(),
                          __a, __p, _VSTD::forward<_Args>(__args)...);}
 #else  // _LIBCPP_HAS_NO_VARIADICS
-# 1587 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Tp>
         _LIBCPP_INLINE_VISIBILITY
         static void construct(allocator_type&, _Tp* __p)
@@ -24492,7 +22016,6 @@ struct _LIBCPP_TEMPLATE_VIS allocator_traits
                 ::new ((void*)__p) _Tp(__a0, __a1, __a2);
             }
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 1615 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template <class _Tp>
         _LIBCPP_INLINE_VISIBILITY
@@ -24523,10 +22046,8 @@ struct _LIBCPP_TEMPLATE_VIS allocator_traits
 #ifdef _LIBCPP_NO_EXCEPTIONS
                         _VSTD::move(*__begin1)
 #else
-# 1645 "nxdk-dxt/lib/libcxx/include/memory" 3
                         _VSTD::move_if_noexcept(*__begin1)
 #endif
-# 1647 "nxdk-dxt/lib/libcxx/include/memory" 3
                         );
         }
 
@@ -24597,10 +22118,8 @@ struct _LIBCPP_TEMPLATE_VIS allocator_traits
 #ifdef _LIBCPP_NO_EXCEPTIONS
                         _VSTD::move(*--__end1)
 #else
-# 1717 "nxdk-dxt/lib/libcxx/include/memory" 3
                         _VSTD::move_if_noexcept(*--__end1)
 #endif
-# 1719 "nxdk-dxt/lib/libcxx/include/memory" 3
                         );
               --__end2;
             }
@@ -24647,7 +22166,6 @@ private:
                 ::new ((void*)__p) _Tp(_VSTD::forward<_Args>(__args)...);
             }
 #else  // _LIBCPP_HAS_NO_VARIADICS
-# 1765 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Tp, class _A0>
         _LIBCPP_INLINE_VISIBILITY
         static void __construct(true_type, allocator_type& __a, _Tp* __p,
@@ -24661,7 +22179,6 @@ private:
                 ::new ((void*)__p) _Tp(__a0);
             }
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 1778 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template <class _Tp>
         _LIBCPP_INLINE_VISIBILITY
@@ -24697,10 +22214,8 @@ struct __rebind_alloc_helper
 #ifndef _LIBCPP_CXX03_LANG
     typedef _LIBCPP_NODEBUG_TYPE typename _Traits::template rebind_alloc<_Tp>        type;
 #else
-# 1813 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename _Traits::template rebind_alloc<_Tp>::other type;
 #endif
-# 1815 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 // allocator
@@ -24750,7 +22265,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1860 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Up, class... _Args>
         _LIBCPP_INLINE_VISIBILITY
         void
@@ -24759,7 +22273,6 @@ public:
             ::new((void*)__p) _Up(_VSTD::forward<_Args>(__args)...);
         }
 #else  // !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-# 1868 "nxdk-dxt/lib/libcxx/include/memory" 3
         _LIBCPP_INLINE_VISIBILITY
         void
         construct(pointer __p)
@@ -24771,7 +22284,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1875 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template <class _A0>
         _LIBCPP_INLINE_VISIBILITY
@@ -24788,7 +22300,6 @@ public:
             ::new((void*)__p) _Tp(__a0);
         }
 # endif  // defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES)
-# 1891 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _A0, class _A1>
         _LIBCPP_INLINE_VISIBILITY
         void
@@ -24818,7 +22329,6 @@ public:
             ::new((void*)__p) _Tp(__a0, __a1);
         }
 #endif  // !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-# 1920 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY void destroy(pointer __p) {__p->~_Tp();}
 };
 
@@ -24864,7 +22374,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1961 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Up, class... _Args>
         _LIBCPP_INLINE_VISIBILITY
         void
@@ -24873,7 +22382,6 @@ public:
             ::new((void*)__p) _Up(_VSTD::forward<_Args>(__args)...);
         }
 #else  // !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-# 1969 "nxdk-dxt/lib/libcxx/include/memory" 3
         _LIBCPP_INLINE_VISIBILITY
         void
         construct(pointer __p)
@@ -24885,7 +22393,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1976 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template <class _A0>
         _LIBCPP_INLINE_VISIBILITY
@@ -24902,7 +22409,6 @@ public:
             ::new((void*) const_cast<_Tp *>(__p)) _Tp(__a0);
         }
 # endif  // defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES)
-# 1992 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _A0, class _A1>
         _LIBCPP_INLINE_VISIBILITY
         void
@@ -24932,7 +22438,6 @@ public:
             ::new((void*) const_cast<_Tp *>(__p)) _Tp(__a0, __a1);
         }
 #endif  // !defined(_LIBCPP_HAS_NO_RVALUE_REFERENCES) && !defined(_LIBCPP_HAS_NO_VARIADICS)
-# 2021 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY void destroy(pointer __p) {__p->~_Tp();}
 };
 
@@ -24964,11 +22469,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2048 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator=(_Tp&& __element)
         {::new(_VSTD::addressof(*__x_)) _Tp(_VSTD::move(__element)); return *this;}
 #endif
-# 2051 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator& operator++() {++__x_; return *this;}
     _LIBCPP_INLINE_VISIBILITY raw_storage_iterator  operator++(int)
         {raw_storage_iterator __t(*this); ++__x_; return __t;}
@@ -24977,10 +22480,8 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2055 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY _OutputIterator base() const { return __x_; }
 #endif
-# 2057 "nxdk-dxt/lib/libcxx/include/memory" 3
 };
 
 template <class _Tp>
@@ -25001,7 +22502,6 @@ get_temporary_buffer(ptrdiff_t __n) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2073 "nxdk-dxt/lib/libcxx/include/memory" 3
     if (__is_overaligned_for_new(_LIBCPP_ALIGNOF(_Tp)))
         {
             std::align_val_t __al =
@@ -25013,7 +22513,6 @@ get_temporary_buffer(ptrdiff_t __n) _NOEXCEPT
                 __n * sizeof(_Tp), nothrow));
         }
 #else
-# 2084 "nxdk-dxt/lib/libcxx/include/memory" 3
     if (__is_overaligned_for_new(_LIBCPP_ALIGNOF(_Tp)))
         {
             // Since aligned operator new is unavailable, return an empty
@@ -25023,7 +22522,6 @@ get_temporary_buffer(ptrdiff_t __n) _NOEXCEPT
 
         __r.first = static_cast<_Tp*>(::operator new(__n * sizeof(_Tp), nothrow));
 #endif
-# 2093 "nxdk-dxt/lib/libcxx/include/memory" 3
 
         if (__r.first)
         {
@@ -25047,7 +22545,6 @@ void return_temporary_buffer(_Tp* __p) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2112 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <class _Tp>
 struct _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr_ref
 {
@@ -25105,7 +22602,6 @@ public:
     typedef void element_type;
 };
 #endif
-# 2169 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp, int _Idx,
           bool _CanBeEmptyBase =
@@ -25134,12 +22630,10 @@ struct __compressed_pair_elem {
                          __tuple_indices<_Indexes...>)
       : __value_(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
 #else
-# 2197 "nxdk-dxt/lib/libcxx/include/memory" 3
   _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_() {}
   _LIBCPP_INLINE_VISIBILITY
   __compressed_pair_elem(_ParamT __p) : __value_(std::forward<_ParamT>(__p)) {}
 #endif
-# 2201 "nxdk-dxt/lib/libcxx/include/memory" 3
 
   _LIBCPP_INLINE_VISIBILITY reference __get() _NOEXCEPT { return __value_; }
   _LIBCPP_INLINE_VISIBILITY
@@ -25174,13 +22668,11 @@ struct __compressed_pair_elem<_Tp, _Idx, true> : private _Tp {
                          __tuple_indices<_Indexes...>)
       : __value_type(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
 #else
-# 2235 "nxdk-dxt/lib/libcxx/include/memory" 3
   _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_type() {}
   _LIBCPP_INLINE_VISIBILITY
   __compressed_pair_elem(_ParamT __p)
       : __value_type(std::forward<_ParamT>(__p)) {}
 #endif
-# 2240 "nxdk-dxt/lib/libcxx/include/memory" 3
 
   _LIBCPP_INLINE_VISIBILITY reference __get() _NOEXCEPT { return *this; }
   _LIBCPP_INLINE_VISIBILITY
@@ -25243,7 +22735,6 @@ public:
                typename __make_tuple_indices<sizeof...(_Args2)>::type()) {}
 
 #else
-# 2302 "nxdk-dxt/lib/libcxx/include/memory" 3
   _LIBCPP_INLINE_VISIBILITY
   __compressed_pair() {}
 
@@ -25258,7 +22749,6 @@ public:
   __compressed_pair(_T1 __t1, _T2 __t2)
       : _Base1(_VSTD::forward<_T1>(__t1)), _Base2(_VSTD::forward<_T2>(__t2)) {}
 #endif
-# 2316 "nxdk-dxt/lib/libcxx/include/memory" 3
 
   _LIBCPP_INLINE_VISIBILITY
   typename _Base1::reference first() _NOEXCEPT {
@@ -25308,10 +22798,8 @@ struct _LIBCPP_TEMPLATE_VIS default_delete {
 #ifndef _LIBCPP_CXX03_LANG
   _LIBCPP_INLINE_VISIBILITY constexpr default_delete() _NOEXCEPT = default;
 #else
-# 2365 "nxdk-dxt/lib/libcxx/include/memory" 3
   _LIBCPP_INLINE_VISIBILITY default_delete() {}
 #endif
-# 2367 "nxdk-dxt/lib/libcxx/include/memory" 3
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
   default_delete(const default_delete<_Up>&,
@@ -25338,10 +22826,8 @@ public:
 #ifndef _LIBCPP_CXX03_LANG
   _LIBCPP_INLINE_VISIBILITY constexpr default_delete() _NOEXCEPT = default;
 #else
-# 2393 "nxdk-dxt/lib/libcxx/include/memory" 3
   _LIBCPP_INLINE_VISIBILITY default_delete() {}
 #endif
-# 2395 "nxdk-dxt/lib/libcxx/include/memory" 3
 
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
@@ -25492,7 +22978,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2541 "nxdk-dxt/lib/libcxx/include/memory" 3
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
   unique_ptr(auto_ptr<_Up>&& __p,
@@ -25501,7 +22986,6 @@ public:
                                 __nat>::type = __nat()) _NOEXCEPT
       : __ptr_(__p.release()) {}
 #endif
-# 2549 "nxdk-dxt/lib/libcxx/include/memory" 3
 
   _LIBCPP_INLINE_VISIBILITY
   unique_ptr& operator=(unique_ptr&& __u) _NOEXCEPT {
@@ -25526,7 +23010,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2569 "nxdk-dxt/lib/libcxx/include/memory" 3
   template <class _Up>
   _LIBCPP_INLINE_VISIBILITY
       typename enable_if<is_convertible<_Up*, _Tp*>::value &&
@@ -25537,13 +23020,11 @@ public:
     return *this;
   }
 #endif
-# 2579 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #ifdef _LIBCPP_CXX03_LANG
   unique_ptr(unique_ptr const&) = delete;
   unique_ptr& operator=(unique_ptr const&) = delete;
 #endif
-# 2584 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 
   _LIBCPP_INLINE_VISIBILITY
@@ -25767,7 +23248,6 @@ public:
   unique_ptr(unique_ptr const&) = delete;
   unique_ptr& operator=(unique_ptr const&) = delete;
 #endif
-# 2807 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 public:
   _LIBCPP_INLINE_VISIBILITY
@@ -25984,7 +23464,6 @@ operator>=(nullptr_t, const unique_ptr<_T1, _D1>& __x)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3019 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 struct __unique_if
@@ -26026,17 +23505,14 @@ template<class _Tp, class... _Args>
     make_unique(_Args&&...) = delete;
 
 #endif  // _LIBCPP_STD_VER > 11
-# 3060 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp, class _Dp>
 #ifdef _LIBCPP_CXX03_LANG
 struct _LIBCPP_TEMPLATE_VIS hash<unique_ptr<_Tp, _Dp> >
 #else
-# 3065 "nxdk-dxt/lib/libcxx/include/memory" 3
 struct _LIBCPP_TEMPLATE_VIS hash<__enable_hash_helper<
     unique_ptr<_Tp, _Dp>, typename unique_ptr<_Tp, _Dp>::pointer> >
 #endif
-# 3068 "nxdk-dxt/lib/libcxx/include/memory" 3
 {
     typedef unique_ptr<_Tp, _Dp> argument_type;
     typedef size_t               result_type;
@@ -26116,7 +23592,6 @@ uninitialized_copy(_InputIterator __f, _InputIterator __l, _ForwardIterator __r)
     try
     {
 #endif
-# 3147 "nxdk-dxt/lib/libcxx/include/memory" 3
         for (; __f != __l; ++__f, (void) ++__r)
             ::new (static_cast<void*>(_VSTD::addressof(*__r))) value_type(*__f);
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26128,7 +23603,6 @@ uninitialized_copy(_InputIterator __f, _InputIterator __l, _ForwardIterator __r)
         throw;
     }
 #endif
-# 3158 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __r;
 }
 
@@ -26142,7 +23616,6 @@ uninitialized_copy_n(_InputIterator __f, _Size __n, _ForwardIterator __r)
     try
     {
 #endif
-# 3171 "nxdk-dxt/lib/libcxx/include/memory" 3
         for (; __n > 0; ++__f, (void) ++__r, (void) --__n)
             ::new (static_cast<void*>(_VSTD::addressof(*__r))) value_type(*__f);
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26154,7 +23627,6 @@ uninitialized_copy_n(_InputIterator __f, _Size __n, _ForwardIterator __r)
         throw;
     }
 #endif
-# 3182 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __r;
 }
 
@@ -26168,7 +23640,6 @@ uninitialized_fill(_ForwardIterator __f, _ForwardIterator __l, const _Tp& __x)
     try
     {
 #endif
-# 3195 "nxdk-dxt/lib/libcxx/include/memory" 3
         for (; __f != __l; ++__f)
             ::new (static_cast<void*>(_VSTD::addressof(*__f))) value_type(__x);
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26180,7 +23651,6 @@ uninitialized_fill(_ForwardIterator __f, _ForwardIterator __l, const _Tp& __x)
         throw;
     }
 #endif
-# 3206 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _ForwardIterator, class _Size, class _Tp>
@@ -26193,7 +23663,6 @@ uninitialized_fill_n(_ForwardIterator __f, _Size __n, const _Tp& __x)
     try
     {
 #endif
-# 3218 "nxdk-dxt/lib/libcxx/include/memory" 3
         for (; __n > 0; ++__f, (void) --__n)
             ::new (static_cast<void*>(_VSTD::addressof(*__f))) value_type(__x);
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26205,12 +23674,10 @@ uninitialized_fill_n(_ForwardIterator __f, _Size __n, const _Tp& __x)
         throw;
     }
 #endif
-# 3229 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __f;
 }
 
 #if 1 /* evaluated by -frewrite-includes */
-# 3233 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 
 template <class _ForwardIterator>
@@ -26221,7 +23688,6 @@ void uninitialized_default_construct(_ForwardIterator __first, _ForwardIterator 
 #ifndef _LIBCPP_NO_EXCEPTIONS
     try {
 #endif
-# 3264 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __idx != __last; ++__idx)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt;
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26230,7 +23696,6 @@ void uninitialized_default_construct(_ForwardIterator __first, _ForwardIterator 
         throw;
     }
 #endif
-# 3272 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _ForwardIterator, class _Size>
@@ -26241,7 +23706,6 @@ _ForwardIterator uninitialized_default_construct_n(_ForwardIterator __first, _Si
 #ifndef _LIBCPP_NO_EXCEPTIONS
     try {
 #endif
-# 3282 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __n > 0; (void)++__idx, --__n)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt;
     return __idx;
@@ -26251,7 +23715,6 @@ _ForwardIterator uninitialized_default_construct_n(_ForwardIterator __first, _Si
         throw;
     }
 #endif
-# 3291 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 
@@ -26263,7 +23726,6 @@ void uninitialized_value_construct(_ForwardIterator __first, _ForwardIterator __
 #ifndef _LIBCPP_NO_EXCEPTIONS
     try {
 #endif
-# 3302 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __idx != __last; ++__idx)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt();
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -26272,7 +23734,6 @@ void uninitialized_value_construct(_ForwardIterator __first, _ForwardIterator __
         throw;
     }
 #endif
-# 3310 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _ForwardIterator, class _Size>
@@ -26280,11 +23741,9 @@ inline _LIBCPP_INLINE_VISIBILITY
 _ForwardIterator uninitialized_value_construct_n(_ForwardIterator __first, _Size __n) {
     using _Vt = typename iterator_traits<_ForwardIterator>::value_type;
     auto __idx = __first;
-# 3320 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __n > 0; (void)++__idx, --__n)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt();
     return __idx;
-# 3329 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 
@@ -26293,11 +23752,9 @@ inline _LIBCPP_INLINE_VISIBILITY
 _ForwardIt uninitialized_move(_InputIt __first, _InputIt __last, _ForwardIt __first_res) {
     using _Vt = typename iterator_traits<_ForwardIt>::value_type;
     auto __idx = __first_res;
-# 3340 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __first != __last; (void)++__idx, ++__first)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt(std::move(*__first));
     return __idx;
-# 3349 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _InputIt, class _Size, class _ForwardIt>
@@ -26306,16 +23763,13 @@ pair<_InputIt, _ForwardIt>
 uninitialized_move_n(_InputIt __first, _Size __n, _ForwardIt __first_res) {
     using _Vt = typename iterator_traits<_ForwardIt>::value_type;
     auto __idx = __first_res;
-# 3360 "nxdk-dxt/lib/libcxx/include/memory" 3
     for (; __n > 0; ++__idx, (void)++__first, --__n)
         ::new((void*)_VSTD::addressof(*__idx)) _Vt(std::move(*__first));
     return {__first, __idx};
-# 3369 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 
 #endif // _LIBCPP_STD_VER > 14
-# 3373 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 // NOTE: Relaxed and acq/rel atomics (for increment and decrement respectively)
 // should be sufficient for thread safety.
@@ -26327,7 +23781,6 @@ uninitialized_move_n(_InputIt __first, _Size __n, _ForwardIt __first_res) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3380 "nxdk-dxt/lib/libcxx/include/memory" 3
 #   define _LIBCPP_HAS_BUILTIN_ATOMIC_SUPPORT
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -26335,10 +23788,8 @@ uninitialized_move_n(_InputIt __first, _Size __n, _ForwardIt __first_res) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 3382 "nxdk-dxt/lib/libcxx/include/memory" 3
 #   define _LIBCPP_HAS_BUILTIN_ATOMIC_SUPPORT
 #endif
-# 3384 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY _Tp
@@ -26349,13 +23800,10 @@ __libcpp_atomic_refcount_increment(_Tp& __t) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3390 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __atomic_add_fetch(&__t, 1, __ATOMIC_RELAXED);
 #else
-# 3392 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __t += 1;
 #endif
-# 3394 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template <class _Tp>
@@ -26363,13 +23811,10 @@ inline _LIBCPP_INLINE_VISIBILITY _Tp
 __libcpp_atomic_refcount_decrement(_Tp& __t) _NOEXCEPT
 {
 #if 1 /* evaluated by -frewrite-includes */
-# 3401 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __atomic_add_fetch(&__t, -1, __ATOMIC_ACQ_REL);
 #else
-# 3403 "nxdk-dxt/lib/libcxx/include/memory" 3
     return __t -= 1;
 #endif
-# 3405 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 class _LIBCPP_EXCEPTION_ABI bad_weak_ptr
@@ -26379,18 +23824,6 @@ public:
     virtual ~bad_weak_ptr() _NOEXCEPT;
     virtual const char* what() const  _NOEXCEPT;
 };
-
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_bad_weak_ptr()
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw bad_weak_ptr();
-#else
-# 3421 "nxdk-dxt/lib/libcxx/include/memory" 3
-    _VSTD::abort();
-#endif
-# 3423 "nxdk-dxt/lib/libcxx/include/memory" 3
-}
 
 template<class _Tp> class _LIBCPP_TEMPLATE_VIS weak_ptr;
 
@@ -26416,11 +23849,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 3445 "nxdk-dxt/lib/libcxx/include/memory" 3
     void __add_shared() _NOEXCEPT;
     bool __release_shared() _NOEXCEPT;
 #else
-# 3448 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY
     void __add_shared() _NOEXCEPT {
       __libcpp_atomic_refcount_increment(__shared_owners_);
@@ -26434,7 +23865,6 @@ public:
       return false;
     }
 #endif
-# 3461 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY
     long use_count() const _NOEXCEPT {
         return __libcpp_relaxed_load(&__shared_owners_) + 1;
@@ -26455,7 +23885,6 @@ protected:
     virtual ~__shared_weak_count();
 
 public:
-# 3487 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY
     void __add_shared() _NOEXCEPT {
       __shared_count::__add_shared();
@@ -26469,7 +23898,6 @@ public:
       if (__shared_count::__release_shared())
         __release_weak();
     }
-# 3501 "nxdk-dxt/lib/libcxx/include/memory" 3
     void __release_weak() _NOEXCEPT;
     _LIBCPP_INLINE_VISIBILITY
     long use_count() const _NOEXCEPT {return __shared_count::use_count();}
@@ -26484,10 +23912,8 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3511 "nxdk-dxt/lib/libcxx/include/memory" 3
     virtual const void* __get_deleter(const type_info&) const _NOEXCEPT;
 #endif
-# 3513 "nxdk-dxt/lib/libcxx/include/memory" 3
 private:
     virtual void __on_zero_shared_weak() _NOEXCEPT = 0;
 };
@@ -26505,7 +23931,6 @@ public:
 #ifndef _LIBCPP_NO_RTTI
     virtual const void* __get_deleter(const type_info&) const _NOEXCEPT;
 #endif
-# 3530 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 private:
     virtual void __on_zero_shared() _NOEXCEPT;
@@ -26522,7 +23947,6 @@ __shared_ptr_pointer<_Tp, _Dp, _Alloc>::__get_deleter(const type_info& __t) cons
 }
 
 #endif  // _LIBCPP_NO_RTTI
-# 3546 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp, class _Dp, class _Alloc>
 void
@@ -26563,7 +23987,6 @@ public:
             :  __data_(piecewise_construct, _VSTD::forward_as_tuple(__a),
                    _VSTD::forward_as_tuple(_VSTD::forward<_Args>(__args)...)) {}
 #endif  // _LIBCPP_HAS_NO_VARIADICS
-# 3608 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 private:
     virtual void __on_zero_shared() _NOEXCEPT;
@@ -26613,10 +24036,8 @@ public:
     typedef _Tp element_type;
 
 #if 1 /* evaluated by -frewrite-includes */
-# 3657 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef weak_ptr<_Tp> weak_type;
 #endif
-# 3659 "nxdk-dxt/lib/libcxx/include/memory" 3
 private:
     element_type*      __ptr_;
     __shared_weak_count* __cntrl_;
@@ -26653,7 +24074,6 @@ public:
                    typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type = __nat())
                        _NOEXCEPT;
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 3695 "nxdk-dxt/lib/libcxx/include/memory" 3
     template<class _Yp> explicit shared_ptr(const weak_ptr<_Yp>& __r,
                    typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type= __nat());
 #if 0 /* disabled by -frewrite-includes */
@@ -26661,20 +24081,16 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 3698 "nxdk-dxt/lib/libcxx/include/memory" 3
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
     template<class _Yp>
         shared_ptr(auto_ptr<_Yp>&& __r,
                    typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type = __nat());
 #else
-# 3703 "nxdk-dxt/lib/libcxx/include/memory" 3
     template<class _Yp>
         shared_ptr(auto_ptr<_Yp> __r,
                    typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type = __nat());
 #endif
-# 3707 "nxdk-dxt/lib/libcxx/include/memory" 3
 #endif
-# 3708 "nxdk-dxt/lib/libcxx/include/memory" 3
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
     template <class _Yp, class _Dp>
         shared_ptr(unique_ptr<_Yp, _Dp>&&,
@@ -26695,7 +24111,6 @@ public:
                        __nat
                    >::type = __nat());
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 3728 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Yp, class _Dp>
         shared_ptr(unique_ptr<_Yp, _Dp>,
                    typename enable_if
@@ -26715,7 +24130,6 @@ public:
                        __nat
                    >::type = __nat());
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 3747 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     ~shared_ptr();
 
@@ -26745,7 +24159,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 3772 "nxdk-dxt/lib/libcxx/include/memory" 3
     template<class _Yp>
         _LIBCPP_INLINE_VISIBILITY
         typename enable_if
@@ -26756,15 +24169,12 @@ public:
         >::type&
         operator=(auto_ptr<_Yp>&& __r);
 #endif
-# 3782 "nxdk-dxt/lib/libcxx/include/memory" 3
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 3783 "nxdk-dxt/lib/libcxx/include/memory" 3
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 3784 "nxdk-dxt/lib/libcxx/include/memory" 3
     template<class _Yp>
         _LIBCPP_INLINE_VISIBILITY
         typename enable_if
@@ -26775,9 +24185,7 @@ public:
         >::type
         operator=(auto_ptr<_Yp> __r);
 #endif
-# 3794 "nxdk-dxt/lib/libcxx/include/memory" 3
 #endif
-# 3795 "nxdk-dxt/lib/libcxx/include/memory" 3
     template <class _Yp, class _Dp>
         typename enable_if
         <
@@ -26789,11 +24197,9 @@ public:
         _LIBCPP_INLINE_VISIBILITY
         operator=(unique_ptr<_Yp, _Dp>&& __r);
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 3806 "nxdk-dxt/lib/libcxx/include/memory" 3
         _LIBCPP_INLINE_VISIBILITY
         operator=(unique_ptr<_Yp, _Dp> __r);
 #endif
-# 3809 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     _LIBCPP_INLINE_VISIBILITY
     void swap(shared_ptr& __r) _NOEXCEPT;
@@ -26858,7 +24264,6 @@ public:
                     ? const_cast<void *>(__cntrl_->__get_deleter(typeid(_Dp)))
                       : nullptr);}
 #endif  // _LIBCPP_NO_RTTI
-# 3873 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template<class ..._Args>
         static
@@ -26945,7 +24350,6 @@ shared_ptr<_Tp>::shared_ptr(_Yp* __p, _Dp __d,
                             typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type)
     : __ptr_(__p)
 {
-# 3963 "nxdk-dxt/lib/libcxx/include/memory" 3
         typedef typename __shared_ptr_default_allocator<_Yp>::type _AllocT;
         typedef __shared_ptr_pointer<_Yp*, _Dp, _AllocT > _CntrlBlk;
         __cntrl_ = new _CntrlBlk(__p, __d, _AllocT());
@@ -26961,7 +24365,6 @@ shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d)
     try
     {
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 3986 "nxdk-dxt/lib/libcxx/include/memory" 3
         typedef typename __shared_ptr_default_allocator<_Tp>::type _AllocT;
         typedef __shared_ptr_pointer<nullptr_t, _Dp, _AllocT > _CntrlBlk;
         __cntrl_ = new _CntrlBlk(__p, __d, _AllocT());
@@ -26973,7 +24376,6 @@ shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d)
         throw;
     }
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 3997 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template<class _Tp>
@@ -26986,7 +24388,6 @@ shared_ptr<_Tp>::shared_ptr(_Yp* __p, _Dp __d, _Alloc __a,
     try
     {
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 4009 "nxdk-dxt/lib/libcxx/include/memory" 3
         typedef __shared_ptr_pointer<_Yp*, _Dp, _Alloc> _CntrlBlk;
         typedef typename __allocator_traits_rebind<_Alloc, _CntrlBlk>::type _A2;
         typedef __allocator_destructor<_A2> _D2;
@@ -27004,7 +24405,6 @@ shared_ptr<_Tp>::shared_ptr(_Yp* __p, _Dp __d, _Alloc __a,
         throw;
     }
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 4026 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template<class _Tp>
@@ -27016,7 +24416,6 @@ shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d, _Alloc __a)
     try
     {
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 4037 "nxdk-dxt/lib/libcxx/include/memory" 3
         typedef __shared_ptr_pointer<nullptr_t, _Dp, _Alloc> _CntrlBlk;
         typedef typename __allocator_traits_rebind<_Alloc, _CntrlBlk>::type _A2;
         typedef __allocator_destructor<_A2> _D2;
@@ -27033,7 +24432,6 @@ shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d, _Alloc __a)
         throw;
     }
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 4053 "nxdk-dxt/lib/libcxx/include/memory" 3
 }
 
 template<class _Tp>
@@ -27096,23 +24494,19 @@ shared_ptr<_Tp>::shared_ptr(shared_ptr<_Yp>&& __r,
 }
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4115 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 4117 "nxdk-dxt/lib/libcxx/include/memory" 3
 template<class _Tp>
 template<class _Yp>
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
 shared_ptr<_Tp>::shared_ptr(auto_ptr<_Yp>&& __r,
 #else
-# 4122 "nxdk-dxt/lib/libcxx/include/memory" 3
 shared_ptr<_Tp>::shared_ptr(auto_ptr<_Yp> __r,
 #endif
-# 4124 "nxdk-dxt/lib/libcxx/include/memory" 3
                             typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type)
     : __ptr_(__r.get())
 {
@@ -27122,17 +24516,14 @@ shared_ptr<_Tp>::shared_ptr(auto_ptr<_Yp> __r,
     __r.release();
 }
 #endif
-# 4133 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 template <class _Yp, class _Dp>
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
 #else
-# 4139 "nxdk-dxt/lib/libcxx/include/memory" 3
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
 #endif
-# 4141 "nxdk-dxt/lib/libcxx/include/memory" 3
                             typename enable_if
                             <
                                 !is_lvalue_reference<_Dp>::value &&
@@ -27147,12 +24538,10 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 4151 "nxdk-dxt/lib/libcxx/include/memory" 3
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
     else
 #endif
-# 4155 "nxdk-dxt/lib/libcxx/include/memory" 3
     {
         typedef typename __shared_ptr_default_allocator<_Yp>::type _AllocT;
         typedef __shared_ptr_pointer<_Yp*, _Dp, _AllocT > _CntrlBlk;
@@ -27167,10 +24556,8 @@ template <class _Yp, class _Dp>
 #ifndef _LIBCPP_HAS_NO_RVALUE_REFERENCES
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
 #else
-# 4169 "nxdk-dxt/lib/libcxx/include/memory" 3
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
 #endif
-# 4171 "nxdk-dxt/lib/libcxx/include/memory" 3
                             typename enable_if
                             <
                                 is_lvalue_reference<_Dp>::value &&
@@ -27185,12 +24572,10 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp> __r,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 4181 "nxdk-dxt/lib/libcxx/include/memory" 3
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
     else
 #endif
-# 4185 "nxdk-dxt/lib/libcxx/include/memory" 3
     {
         typedef typename __shared_ptr_default_allocator<_Yp>::type _AllocT;
         typedef __shared_ptr_pointer<_Yp*,
@@ -27301,7 +24686,6 @@ shared_ptr<_Tp>::operator=(shared_ptr<_Yp>&& __r)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 4291 "nxdk-dxt/lib/libcxx/include/memory" 3
 template<class _Tp>
 template<class _Yp>
 inline
@@ -27317,7 +24701,6 @@ shared_ptr<_Tp>::operator=(auto_ptr<_Yp>&& __r)
     return *this;
 }
 #endif
-# 4306 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 template <class _Yp, class _Dp>
@@ -27336,14 +24719,12 @@ shared_ptr<_Tp>::operator=(unique_ptr<_Yp, _Dp>&& __r)
 }
 
 #else  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4324 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER <= 14 || defined(_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 4326 "nxdk-dxt/lib/libcxx/include/memory" 3
 template<class _Tp>
 template<class _Yp>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -27359,7 +24740,6 @@ shared_ptr<_Tp>::operator=(auto_ptr<_Yp> __r)
     return *this;
 }
 #endif
-# 4341 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 template <class _Yp, class _Dp>
@@ -27378,7 +24758,6 @@ shared_ptr<_Tp>::operator=(unique_ptr<_Yp, _Dp> __r)
 }
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4359 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 inline
@@ -27486,14 +24865,11 @@ operator<(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 4462 "nxdk-dxt/lib/libcxx/include/memory" 3
     typedef typename common_type<_Tp*, _Up*>::type _Vp;
     return less<_Vp>()(__x.get(), __y.get());
 #else
-# 4465 "nxdk-dxt/lib/libcxx/include/memory" 3
     return less<>()(__x.get(), __y.get());
 #endif
-# 4467 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 }
 
@@ -27673,7 +25049,6 @@ get_deleter(const shared_ptr<_Tp>& __p) _NOEXCEPT
 }
 
 #endif  // _LIBCPP_NO_RTTI
-# 4646 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 class _LIBCPP_TEMPLATE_VIS weak_ptr
@@ -27703,7 +25078,6 @@ public:
                    typename enable_if<is_convertible<_Yp*, _Tp*>::value, __nat*>::type = 0)
                          _NOEXCEPT;
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4675 "nxdk-dxt/lib/libcxx/include/memory" 3
     ~weak_ptr();
 
     _LIBCPP_INLINE_VISIBILITY
@@ -27731,7 +25105,6 @@ public:
         operator=(weak_ptr<_Yp>&& __r) _NOEXCEPT;
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4702 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template<class _Yp>
         typename enable_if
@@ -27838,7 +25211,6 @@ weak_ptr<_Tp>::weak_ptr(weak_ptr<_Yp>&& __r,
 }
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4808 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 weak_ptr<_Tp>::~weak_ptr()
@@ -27896,7 +25268,6 @@ weak_ptr<_Tp>::operator=(weak_ptr<_Yp>&& __r) _NOEXCEPT
 }
 
 #endif  // _LIBCPP_HAS_NO_RVALUE_REFERENCES
-# 4865 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 template<class _Yp>
@@ -27939,13 +25310,10 @@ weak_ptr<_Tp>::lock() const _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 4928 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <class _Tp = void> struct owner_less;
 #else
-# 4930 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <class _Tp> struct owner_less;
 #endif
-# 4932 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template <class _Tp>
 struct _LIBCPP_TEMPLATE_VIS owner_less<shared_ptr<_Tp> >
@@ -27984,7 +25352,6 @@ struct _LIBCPP_TEMPLATE_VIS owner_less<weak_ptr<_Tp> >
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 4966 "nxdk-dxt/lib/libcxx/include/memory" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS owner_less<void>
 {
@@ -28007,7 +25374,6 @@ struct _LIBCPP_TEMPLATE_VIS owner_less<void>
     typedef void is_transparent;
 };
 #endif
-# 4988 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<class _Tp>
 class _LIBCPP_TEMPLATE_VIS enable_shared_from_this
@@ -28036,7 +25402,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5012 "nxdk-dxt/lib/libcxx/include/memory" 3
     _LIBCPP_INLINE_VISIBILITY
     weak_ptr<_Tp> weak_from_this() _NOEXCEPT
        { return __weak_this_; }
@@ -28045,7 +25410,6 @@ public:
     weak_ptr<const _Tp> weak_from_this() const _NOEXCEPT
         { return __weak_this_; }
 #endif // _LIBCPP_STD_VER > 14
-# 5020 "nxdk-dxt/lib/libcxx/include/memory" 3
 
     template <class _Up> friend class shared_ptr;
 };
@@ -28074,7 +25438,6 @@ operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p);
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5044 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 class _LIBCPP_TYPE_VIS __sp_mut
 {
@@ -28215,7 +25578,6 @@ atomic_compare_exchange_weak_explicit(shared_ptr<_Tp>* __p, shared_ptr<_Tp>* __v
 }
 
 #endif  // !defined(_LIBCPP_HAS_NO_ATOMIC_HEADER)
-# 5184 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 //enum class
 #if 0 /* disabled by -frewrite-includes */
@@ -28223,7 +25585,6 @@ atomic_compare_exchange_weak_explicit(shared_ptr<_Tp>* __p, shared_ptr<_Tp>* __v
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 5187 "nxdk-dxt/lib/libcxx/include/memory" 3
 # ifndef _LIBCPP_CXX03_LANG
 enum class pointer_safety : unsigned char {
   relaxed,
@@ -28231,9 +25592,7 @@ enum class pointer_safety : unsigned char {
   strict
 };
 # endif
-# 5194 "nxdk-dxt/lib/libcxx/include/memory" 3
 #else
-# 5195 "nxdk-dxt/lib/libcxx/include/memory" 3
 struct _LIBCPP_TYPE_VIS pointer_safety
 {
     enum __lx
@@ -28254,7 +25613,6 @@ struct _LIBCPP_TYPE_VIS pointer_safety
     operator int() const {return __v_;}
 };
 #endif
-# 5215 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE) && \
@@ -28262,25 +25620,20 @@ struct _LIBCPP_TYPE_VIS pointer_safety
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5218 "nxdk-dxt/lib/libcxx/include/memory" 3
 _LIBCPP_FUNC_VIS pointer_safety get_pointer_safety() _NOEXCEPT;
 #else
-# 5220 "nxdk-dxt/lib/libcxx/include/memory" 3
 // This function is only offered in C++03 under ABI v1.
 #if 0 /* disabled by -frewrite-includes */
 # if !defined(_LIBCPP_ABI_POINTER_SAFETY_ENUM_TYPE) || !defined(_LIBCPP_CXX03_LANG)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 5222 "nxdk-dxt/lib/libcxx/include/memory" 3
 inline _LIBCPP_INLINE_VISIBILITY
 pointer_safety get_pointer_safety() _NOEXCEPT {
   return pointer_safety::relaxed;
 }
 # endif
-# 5227 "nxdk-dxt/lib/libcxx/include/memory" 3
 #endif
-# 5228 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 
 _LIBCPP_FUNC_VIS void declare_reachable(void* __p);
@@ -28307,13 +25660,10 @@ void __swap_allocator(_Alloc & __a1, _Alloc & __a2)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5250 "nxdk-dxt/lib/libcxx/include/memory" 3
     _NOEXCEPT
 #else
-# 5252 "nxdk-dxt/lib/libcxx/include/memory" 3
     _NOEXCEPT_(__is_nothrow_swappable<_Alloc>::value)
 #endif
-# 5254 "nxdk-dxt/lib/libcxx/include/memory" 3
 {
     __swap_allocator(__a1, __a2,
       integral_constant<bool, _VSTD::allocator_traits<_Alloc>::propagate_on_container_swap::value>());
@@ -28327,13 +25677,10 @@ void __swap_allocator(_Alloc & __a1, _Alloc & __a2, true_type)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5263 "nxdk-dxt/lib/libcxx/include/memory" 3
     _NOEXCEPT
 #else
-# 5265 "nxdk-dxt/lib/libcxx/include/memory" 3
     _NOEXCEPT_(__is_nothrow_swappable<_Alloc>::value)
 #endif
-# 5267 "nxdk-dxt/lib/libcxx/include/memory" 3
 {
     using _VSTD::swap;
     swap(__a1, __a2);
@@ -28351,13 +25698,10 @@ struct __noexcept_move_assign_container : public integral_constant<bool,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 5280 "nxdk-dxt/lib/libcxx/include/memory" 3
         || _Traits::is_always_equal::value
 #else
-# 5282 "nxdk-dxt/lib/libcxx/include/memory" 3
         && is_nothrow_move_assignable<_Alloc>::value
 #endif
-# 5284 "nxdk-dxt/lib/libcxx/include/memory" 3
     > {};
 
 
@@ -28382,7 +25726,6 @@ struct __temp_value {
     ~__temp_value() { _Traits::destroy(__a, __addr()); }
     };
 #endif
-# 5308 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 template<typename _Alloc, typename = void, typename = void>
 struct __is_allocator : false_type {};
@@ -28449,23 +25792,15 @@ _LIBCPP_POP_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 5370 "nxdk-dxt/lib/libcxx/include/memory" 3
 #if 0 /* expanded by -frewrite-includes */
 #   include <__pstl_memory>
 #endif /* expanded by -frewrite-includes */
-# 5370 "nxdk-dxt/lib/libcxx/include/memory" 3
-# 5371 "nxdk-dxt/lib/libcxx/include/memory" 3
 #endif
-# 5372 "nxdk-dxt/lib/libcxx/include/memory" 3
 
 #endif  // _LIBCPP_MEMORY
-# 5374 "nxdk-dxt/lib/libcxx/include/memory" 3
-# 644 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <functional>
 #endif /* expanded by -frewrite-includes */
-# 644 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/functional" 1
 // -*- C++ -*-
 //===------------------------ functional ----------------------------------===//
 //
@@ -28482,62 +25817,41 @@ _LIBCPP_POP_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 500 "nxdk-dxt/lib/libcxx/include/functional"
-# 501 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 501 "nxdk-dxt/lib/libcxx/include/functional"
-# 502 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <typeinfo>
 #endif /* expanded by -frewrite-includes */
-# 502 "nxdk-dxt/lib/libcxx/include/functional"
-# 503 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <exception>
 #endif /* expanded by -frewrite-includes */
-# 503 "nxdk-dxt/lib/libcxx/include/functional"
-# 504 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <memory>
 #endif /* expanded by -frewrite-includes */
-# 504 "nxdk-dxt/lib/libcxx/include/functional"
-# 505 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <tuple>
 #endif /* expanded by -frewrite-includes */
-# 505 "nxdk-dxt/lib/libcxx/include/functional"
-# 506 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
-# 506 "nxdk-dxt/lib/libcxx/include/functional"
-# 507 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 507 "nxdk-dxt/lib/libcxx/include/functional"
-# 508 "nxdk-dxt/lib/libcxx/include/functional"
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base>
 #endif /* expanded by -frewrite-includes */
-# 509 "nxdk-dxt/lib/libcxx/include/functional"
-# 510 "nxdk-dxt/lib/libcxx/include/functional"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 512 "nxdk-dxt/lib/libcxx/include/functional"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 513 "nxdk-dxt/lib/libcxx/include/functional" 3
 #endif
-# 514 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -28546,13 +25860,10 @@ _LIBCPP_BEGIN_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 518 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 520 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 522 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS plus : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28565,7 +25876,6 @@ struct _LIBCPP_TEMPLATE_VIS plus : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 530 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS plus<void>
 {
@@ -28578,7 +25888,6 @@ struct _LIBCPP_TEMPLATE_VIS plus<void>
     typedef void is_transparent;
 };
 #endif
-# 542 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28586,13 +25895,10 @@ struct _LIBCPP_TEMPLATE_VIS plus<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 545 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 547 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 549 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS minus : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28605,7 +25911,6 @@ struct _LIBCPP_TEMPLATE_VIS minus : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 557 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS minus<void>
 {
@@ -28618,7 +25923,6 @@ struct _LIBCPP_TEMPLATE_VIS minus<void>
     typedef void is_transparent;
 };
 #endif
-# 569 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28626,13 +25930,10 @@ struct _LIBCPP_TEMPLATE_VIS minus<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 572 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 574 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 576 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS multiplies : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28645,7 +25946,6 @@ struct _LIBCPP_TEMPLATE_VIS multiplies : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 584 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS multiplies<void>
 {
@@ -28658,7 +25958,6 @@ struct _LIBCPP_TEMPLATE_VIS multiplies<void>
     typedef void is_transparent;
 };
 #endif
-# 596 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28666,13 +25965,10 @@ struct _LIBCPP_TEMPLATE_VIS multiplies<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 599 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 601 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 603 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS divides : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28685,7 +25981,6 @@ struct _LIBCPP_TEMPLATE_VIS divides : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 611 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS divides<void>
 {
@@ -28698,7 +25993,6 @@ struct _LIBCPP_TEMPLATE_VIS divides<void>
     typedef void is_transparent;
 };
 #endif
-# 623 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28706,13 +26000,10 @@ struct _LIBCPP_TEMPLATE_VIS divides<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 626 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 628 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 630 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS modulus : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28725,7 +26016,6 @@ struct _LIBCPP_TEMPLATE_VIS modulus : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 638 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS modulus<void>
 {
@@ -28738,7 +26028,6 @@ struct _LIBCPP_TEMPLATE_VIS modulus<void>
     typedef void is_transparent;
 };
 #endif
-# 650 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28746,13 +26035,10 @@ struct _LIBCPP_TEMPLATE_VIS modulus<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 653 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 655 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 657 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS negate : unary_function<_Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28765,7 +26051,6 @@ struct _LIBCPP_TEMPLATE_VIS negate : unary_function<_Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 665 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS negate<void>
 {
@@ -28778,7 +26063,6 @@ struct _LIBCPP_TEMPLATE_VIS negate<void>
     typedef void is_transparent;
 };
 #endif
-# 677 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28786,13 +26070,10 @@ struct _LIBCPP_TEMPLATE_VIS negate<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 680 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 682 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 684 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS equal_to : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28805,7 +26086,6 @@ struct _LIBCPP_TEMPLATE_VIS equal_to : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 692 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS equal_to<void>
 {
@@ -28818,7 +26098,6 @@ struct _LIBCPP_TEMPLATE_VIS equal_to<void>
     typedef void is_transparent;
 };
 #endif
-# 704 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28826,13 +26105,10 @@ struct _LIBCPP_TEMPLATE_VIS equal_to<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 707 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 709 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 711 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS not_equal_to : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28845,7 +26121,6 @@ struct _LIBCPP_TEMPLATE_VIS not_equal_to : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 719 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS not_equal_to<void>
 {
@@ -28858,7 +26133,6 @@ struct _LIBCPP_TEMPLATE_VIS not_equal_to<void>
     typedef void is_transparent;
 };
 #endif
-# 731 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28866,13 +26140,10 @@ struct _LIBCPP_TEMPLATE_VIS not_equal_to<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 734 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 736 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 738 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS greater : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28885,7 +26156,6 @@ struct _LIBCPP_TEMPLATE_VIS greater : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 746 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS greater<void>
 {
@@ -28898,7 +26168,6 @@ struct _LIBCPP_TEMPLATE_VIS greater<void>
     typedef void is_transparent;
 };
 #endif
-# 758 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 // less in <__functional_base>
@@ -28908,13 +26177,10 @@ struct _LIBCPP_TEMPLATE_VIS greater<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 763 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 765 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 767 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS greater_equal : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28927,7 +26193,6 @@ struct _LIBCPP_TEMPLATE_VIS greater_equal : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 775 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS greater_equal<void>
 {
@@ -28940,7 +26205,6 @@ struct _LIBCPP_TEMPLATE_VIS greater_equal<void>
     typedef void is_transparent;
 };
 #endif
-# 787 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28948,13 +26212,10 @@ struct _LIBCPP_TEMPLATE_VIS greater_equal<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 790 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 792 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 794 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS less_equal : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -28967,7 +26228,6 @@ struct _LIBCPP_TEMPLATE_VIS less_equal : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 802 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS less_equal<void>
 {
@@ -28980,7 +26240,6 @@ struct _LIBCPP_TEMPLATE_VIS less_equal<void>
     typedef void is_transparent;
 };
 #endif
-# 814 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -28988,13 +26247,10 @@ struct _LIBCPP_TEMPLATE_VIS less_equal<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 817 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 819 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 821 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS logical_and : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29007,7 +26263,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_and : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 829 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_and<void>
 {
@@ -29020,7 +26275,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_and<void>
     typedef void is_transparent;
 };
 #endif
-# 841 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29028,13 +26282,10 @@ struct _LIBCPP_TEMPLATE_VIS logical_and<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 844 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 846 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 848 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS logical_or : binary_function<_Tp, _Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29047,7 +26298,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_or : binary_function<_Tp, _Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 856 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_or<void>
 {
@@ -29060,7 +26310,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_or<void>
     typedef void is_transparent;
 };
 #endif
-# 868 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29068,13 +26317,10 @@ struct _LIBCPP_TEMPLATE_VIS logical_or<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 871 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 873 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 875 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS logical_not : unary_function<_Tp, bool>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29087,7 +26333,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_not : unary_function<_Tp, bool>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 883 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS logical_not<void>
 {
@@ -29100,7 +26345,6 @@ struct _LIBCPP_TEMPLATE_VIS logical_not<void>
     typedef void is_transparent;
 };
 #endif
-# 895 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29108,13 +26352,10 @@ struct _LIBCPP_TEMPLATE_VIS logical_not<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 898 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 900 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 902 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS bit_and : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29127,7 +26368,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_and : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 910 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_and<void>
 {
@@ -29140,7 +26380,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_and<void>
     typedef void is_transparent;
 };
 #endif
-# 922 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29148,13 +26387,10 @@ struct _LIBCPP_TEMPLATE_VIS bit_and<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 925 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 927 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 929 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS bit_or : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29167,7 +26403,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_or : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 937 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_or<void>
 {
@@ -29180,7 +26415,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_or<void>
     typedef void is_transparent;
 };
 #endif
-# 949 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29188,13 +26422,10 @@ struct _LIBCPP_TEMPLATE_VIS bit_or<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 952 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 #else
-# 954 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 #endif
-# 956 "nxdk-dxt/lib/libcxx/include/functional" 3
 struct _LIBCPP_TEMPLATE_VIS bit_xor : binary_function<_Tp, _Tp, _Tp>
 {
     _LIBCPP_CONSTEXPR_AFTER_CXX11 _LIBCPP_INLINE_VISIBILITY
@@ -29207,7 +26438,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_xor : binary_function<_Tp, _Tp, _Tp>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 964 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <>
 struct _LIBCPP_TEMPLATE_VIS bit_xor<void>
 {
@@ -29220,7 +26450,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_xor<void>
     typedef void is_transparent;
 };
 #endif
-# 976 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 
 #if 0 /* disabled by -frewrite-includes */
@@ -29228,7 +26457,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_xor<void>
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 979 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp = void>
 struct _LIBCPP_TEMPLATE_VIS bit_not : unary_function<_Tp, _Tp>
 {
@@ -29249,7 +26477,6 @@ struct _LIBCPP_TEMPLATE_VIS bit_not<void>
     typedef void is_transparent;
 };
 #endif
-# 999 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Predicate>
 class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 unary_negate
@@ -29318,7 +26545,6 @@ public:
         return __invoke(__f_, _VSTD::forward<_ArgTypes>(__args)...);
     }
 #endif
-# 1400 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 template<class _Rp, class _Tp>
@@ -29344,20 +26570,8 @@ public:
 
     virtual const char* what() const _NOEXCEPT;
 #endif
-# 1425 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
-_LIBCPP_NORETURN inline _LIBCPP_INLINE_VISIBILITY
-void __throw_bad_function_call()
-{
-#ifndef _LIBCPP_NO_EXCEPTIONS
-    throw bad_function_call();
-#else
-# 1433 "nxdk-dxt/lib/libcxx/include/functional" 3
-    _VSTD::abort();
-#endif
-# 1435 "nxdk-dxt/lib/libcxx/include/functional" 3
-}
 
 template<class _Fp> class _LIBCPP_TEMPLATE_VIS function; // undefined
 
@@ -29555,7 +26769,6 @@ public:
     virtual const void* target(const type_info&) const _NOEXCEPT = 0;
     virtual const std::type_info& target_type() const _NOEXCEPT = 0;
 #endif  // _LIBCPP_NO_RTTI
-# 1633 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 // __func implements __base for a given functor type.
@@ -29593,7 +26806,6 @@ public:
     virtual const void* target(const type_info&) const _NOEXCEPT;
     virtual const std::type_info& target_type() const _NOEXCEPT;
 #endif  // _LIBCPP_NO_RTTI
-# 1670 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 template<class _Fp, class _Alloc, class _Rp, class ..._ArgTypes>
@@ -29660,7 +26872,6 @@ __func<_Fp, _Alloc, _Rp(_ArgTypes...)>::target_type() const _NOEXCEPT
 }
 
 #endif  // _LIBCPP_NO_RTTI
-# 1736 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 // __value_func creates a value-type from a __func.
 
@@ -29853,7 +27064,6 @@ template <class _Rp, class... _ArgTypes> class __value_func<_Rp(_ArgTypes...)>
         return (const _Tp*)__f_->target(typeid(_Tp));
     }
 #endif // _LIBCPP_NO_RTTI
-# 1928 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 // Storage for a functor object, to be used with __policy to manage copy and
@@ -29903,10 +27113,8 @@ struct __policy
 #ifndef _LIBCPP_NO_RTTI
                                                              &typeid(void)
 #else
-# 1977 "nxdk-dxt/lib/libcxx/include/functional" 3
                                                              nullptr
 #endif
-# 1979 "nxdk-dxt/lib/libcxx/include/functional" 3
         };
         return &__policy_;
     }
@@ -29931,10 +27139,8 @@ struct __policy
 #ifndef _LIBCPP_NO_RTTI
           &typeid(typename _Fun::_Target)
 #else
-# 2003 "nxdk-dxt/lib/libcxx/include/functional" 3
           nullptr
 #endif
-# 2005 "nxdk-dxt/lib/libcxx/include/functional" 3
       };
         return &__policy_;
     }
@@ -29948,10 +27154,8 @@ struct __policy
 #ifndef _LIBCPP_NO_RTTI
             &typeid(typename _Fun::_Target)
 #else
-# 2018 "nxdk-dxt/lib/libcxx/include/functional" 3
             nullptr
 #endif
-# 2020 "nxdk-dxt/lib/libcxx/include/functional" 3
         };
         return &__policy_;
     }
@@ -30171,7 +27375,6 @@ template <class _Rp, class... _ArgTypes> class __policy_func<_Rp(_ArgTypes...)>
             return reinterpret_cast<const _Tp*>(&__buf_.__small);
     }
 #endif // _LIBCPP_NO_RTTI
-# 2239 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 }  // __function
@@ -30184,10 +27387,8 @@ class _LIBCPP_TEMPLATE_VIS function<_Rp(_ArgTypes...)>
 #ifndef _LIBCPP_ABI_OPTIMIZED_FUNCTION
     typedef __function::__value_func<_Rp(_ArgTypes...)> __func;
 #else
-# 2251 "nxdk-dxt/lib/libcxx/include/functional" 3
     typedef __function::__policy_func<_Rp(_ArgTypes...)> __func;
 #endif
-# 2253 "nxdk-dxt/lib/libcxx/include/functional" 3
 
     __func __f_;
 
@@ -30229,7 +27430,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2290 "nxdk-dxt/lib/libcxx/include/functional" 3
     template<class _Alloc>
       _LIBCPP_INLINE_VISIBILITY
       function(allocator_arg_t, const _Alloc&) _NOEXCEPT {}
@@ -30243,7 +27443,6 @@ public:
     template<class _Fp, class _Alloc, class = _EnableIfCallable<_Fp>>
       function(allocator_arg_t, const _Alloc& __a, _Fp __f);
 #endif
-# 2303 "nxdk-dxt/lib/libcxx/include/functional" 3
 
     function& operator=(const function&);
     function& operator=(function&&) _NOEXCEPT;
@@ -30261,13 +27460,11 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2316 "nxdk-dxt/lib/libcxx/include/functional" 3
     template<class _Fp, class _Alloc>
       _LIBCPP_INLINE_VISIBILITY
       void assign(_Fp&& __f, const _Alloc& __a)
         {function(allocator_arg, __a, _VSTD::forward<_Fp>(__f)).swap(*this);}
 #endif
-# 2321 "nxdk-dxt/lib/libcxx/include/functional" 3
 
     // function capacity:
     _LIBCPP_INLINE_VISIBILITY
@@ -30290,7 +27487,6 @@ public:
     template <typename _Tp> _Tp* target() _NOEXCEPT;
     template <typename _Tp> const _Tp* target() const _NOEXCEPT;
 #endif  // _LIBCPP_NO_RTTI
-# 2343 "nxdk-dxt/lib/libcxx/include/functional" 3
 };
 
 #ifndef _LIBCPP_HAS_NO_DEDUCTION_GUIDES
@@ -30339,7 +27535,6 @@ struct __strip_signature<_Rp (_Gp::*) (_Ap...) const volatile & noexcept> { usin
 template<class _Fp, class _Stripped = typename __strip_signature<decltype(&_Fp::operator())>::type>
 function(_Fp) -> function<_Stripped>;
 #endif // !_LIBCPP_HAS_NO_DEDUCTION_GUIDES
-# 2391 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template<class _Rp, class ..._ArgTypes>
 function<_Rp(_ArgTypes...)>::function(const function& __f) : __f_(__f.__f_) {}
@@ -30349,13 +27544,11 @@ function<_Rp(_ArgTypes...)>::function(const function& __f) : __f_(__f.__f_) {}
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2396 "nxdk-dxt/lib/libcxx/include/functional" 3
 template<class _Rp, class ..._ArgTypes>
 template <class _Alloc>
 function<_Rp(_ArgTypes...)>::function(allocator_arg_t, const _Alloc&,
                                      const function& __f) : __f_(__f.__f_) {}
 #endif
-# 2401 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Rp, class... _ArgTypes>
 function<_Rp(_ArgTypes...)>::function(function&& __f) _NOEXCEPT
@@ -30366,14 +27559,12 @@ function<_Rp(_ArgTypes...)>::function(function&& __f) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2407 "nxdk-dxt/lib/libcxx/include/functional" 3
 template<class _Rp, class ..._ArgTypes>
 template <class _Alloc>
 function<_Rp(_ArgTypes...)>::function(allocator_arg_t, const _Alloc&,
                                       function&& __f)
     : __f_(_VSTD::move(__f.__f_)) {}
 #endif
-# 2413 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Rp, class... _ArgTypes>
 template <class _Fp, class>
@@ -30384,14 +27575,12 @@ function<_Rp(_ArgTypes...)>::function(_Fp __f) : __f_(_VSTD::move(__f)) {}
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2419 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Rp, class... _ArgTypes>
 template <class _Fp, class _Alloc, class>
 function<_Rp(_ArgTypes...)>::function(allocator_arg_t, const _Alloc& __a,
                                       _Fp __f)
     : __f_(_VSTD::move(__f), __a) {}
 #endif
-# 2425 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template<class _Rp, class ..._ArgTypes>
 function<_Rp(_ArgTypes...)>&
@@ -30469,7 +27658,6 @@ function<_Rp(_ArgTypes...)>::target() const _NOEXCEPT
 }
 
 #endif  // _LIBCPP_NO_RTTI
-# 2502 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Rp, class... _ArgTypes>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -30498,16 +27686,12 @@ swap(function<_Rp(_ArgTypes...)>& __x, function<_Rp(_ArgTypes...)>& __y) _NOEXCE
 {return __x.swap(__y);}
 
 #else // _LIBCPP_CXX03_LANG
-# 2530 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_03>
 #endif /* expanded by -frewrite-includes */
-# 2531 "nxdk-dxt/lib/libcxx/include/functional" 3
-# 2532 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 #endif
-# 2534 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                  BIND
@@ -30522,11 +27706,9 @@ template<class _Tp> struct _LIBCPP_TEMPLATE_VIS is_bind_expression
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2544 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t is_bind_expression_v = is_bind_expression<_Tp>::value;
 #endif
-# 2547 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template<class _Tp> struct __is_placeholder : public integral_constant<int, 0> {};
 template<class _Tp> struct _LIBCPP_TEMPLATE_VIS is_placeholder
@@ -30537,11 +27719,9 @@ template<class _Tp> struct _LIBCPP_TEMPLATE_VIS is_placeholder
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2553 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 _LIBCPP_INLINE_VAR constexpr size_t is_placeholder_v = is_placeholder<_Tp>::value;
 #endif
-# 2556 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 namespace placeholders
 {
@@ -30553,7 +27733,6 @@ template <int _Np> struct __ph {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2563 "nxdk-dxt/lib/libcxx/include/functional" 3
 _LIBCPP_FUNC_VIS extern const __ph<1>   _1;
 _LIBCPP_FUNC_VIS extern const __ph<2>   _2;
 _LIBCPP_FUNC_VIS extern const __ph<3>   _3;
@@ -30565,7 +27744,6 @@ _LIBCPP_FUNC_VIS extern const __ph<8>   _8;
 _LIBCPP_FUNC_VIS extern const __ph<9>   _9;
 _LIBCPP_FUNC_VIS extern const __ph<10> _10;
 #else
-# 2574 "nxdk-dxt/lib/libcxx/include/functional" 3
 /* _LIBCPP_INLINE_VAR */ constexpr __ph<1>   _1{};
 /* _LIBCPP_INLINE_VAR */ constexpr __ph<2>   _2{};
 /* _LIBCPP_INLINE_VAR */ constexpr __ph<3>   _3{};
@@ -30577,7 +27755,6 @@ _LIBCPP_FUNC_VIS extern const __ph<10> _10;
 /* _LIBCPP_INLINE_VAR */ constexpr __ph<9>   _9{};
 /* _LIBCPP_INLINE_VAR */ constexpr __ph<10> _10{};
 #endif // defined(_LIBCPP_CXX03_LANG) || defined(_LIBCPP_BUILDING_LIBRARY)
-# 2585 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 }  // placeholders
 
@@ -30887,14 +28064,12 @@ bind(_Fp&& __f, _BoundArgs&&... __bound_args)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 2894 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2896 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Fn, class ..._Args>
 invoke_result_t<_Fn, _Args...>
@@ -30959,7 +28134,6 @@ __not_fn_imp<decay_t<_RawFunc>> not_fn(_RawFunc&& __fn) {
 }
 
 #endif
-# 2960 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 // struct hash<T*> in <memory>
 
@@ -31050,7 +28224,6 @@ __search(_RandomAccessIterator1 __first1, _RandomAccessIterator1 __last1,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3046 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 // default searcher
 template<class _ForwardIterator, class _BinaryPredicate = equal_to<>>
@@ -31078,21 +28251,18 @@ private:
     };
 
 #endif // _LIBCPP_STD_VER > 14
-# 3073 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 17
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 3075 "nxdk-dxt/lib/libcxx/include/functional" 3
 template <class _Tp>
 using unwrap_reference_t = typename unwrap_reference<_Tp>::type;
 
 template <class _Tp>
 using unwrap_ref_decay_t = typename unwrap_ref_decay<_Tp>::type;
 #endif // > C++17
-# 3081 "nxdk-dxt/lib/libcxx/include/functional" 3
 
 template <class _Container, class _Predicate>
 inline void __libcpp_erase_if_container( _Container& __c, _Predicate __pred)
@@ -31109,23 +28279,15 @@ inline void __libcpp_erase_if_container( _Container& __c, _Predicate __pred)
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_FUNCTIONAL
-# 3097 "nxdk-dxt/lib/libcxx/include/functional" 3
-# 645 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <iterator>
 #endif /* expanded by -frewrite-includes */
-# 645 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 646 "nxdk-dxt/lib/libcxx/include/algorithm"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstddef>
 #endif /* expanded by -frewrite-includes */
-# 646 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 647 "nxdk-dxt/lib/libcxx/include/algorithm"
 #if 0 /* expanded by -frewrite-includes */
 #include <bit>
 #endif /* expanded by -frewrite-includes */
-# 647 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 1 "nxdk-dxt/lib/libcxx/include/bit" 1
 // -*- C++ -*-
 //===------------------------------ bit ----------------------------------===//
 //
@@ -31184,75 +28346,52 @@ namespace std {
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 56 "nxdk-dxt/lib/libcxx/include/bit"
-# 57 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include <limits>
 #endif /* expanded by -frewrite-includes */
-# 57 "nxdk-dxt/lib/libcxx/include/bit"
-# 58 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 58 "nxdk-dxt/lib/libcxx/include/bit"
-# 59 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 59 "nxdk-dxt/lib/libcxx/include/bit"
-# 60 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 60 "nxdk-dxt/lib/libcxx/include/bit"
-# 61 "nxdk-dxt/lib/libcxx/include/bit"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__IBMCPP__)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include "support/ibm/support.h"
 #endif /* expanded by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/bit"
-# 64 "nxdk-dxt/lib/libcxx/include/bit"
 #endif
-# 65 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_COMPILER_MSVC)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 66 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #include <intrin.h>
 #endif /* expanded by -frewrite-includes */
-# 66 "nxdk-dxt/lib/libcxx/include/bit"
-# 67 "nxdk-dxt/lib/libcxx/include/bit"
 #endif
-# 68 "nxdk-dxt/lib/libcxx/include/bit"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 70 "nxdk-dxt/lib/libcxx/include/bit"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 71 "nxdk-dxt/lib/libcxx/include/bit" 3
 #endif
-# 72 "nxdk-dxt/lib/libcxx/include/bit" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 74 "nxdk-dxt/lib/libcxx/include/bit" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -31269,25 +28408,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -31295,26 +28428,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 75 "nxdk-dxt/lib/libcxx/include/bit" 2 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -31350,7 +28476,6 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
 int __libcpp_popcount(unsigned long long __x) _NOEXCEPT { return __builtin_popcountll(__x); }
 
 #else  // _LIBCPP_COMPILER_MSVC
-# 110 "nxdk-dxt/lib/libcxx/include/bit" 3
 
 // Precondition:  __x != 0
 inline _LIBCPP_INLINE_VISIBILITY
@@ -31377,19 +28502,16 @@ int __libcpp_ctz(unsigned long long __x) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 132 "nxdk-dxt/lib/libcxx/include/bit" 3
     (defined(_M_AMD64) || defined(__x86_64__))
   if (_BitScanForward64(&__where, __x))
     return static_cast<int>(__where);
 #else
-# 136 "nxdk-dxt/lib/libcxx/include/bit" 3
   // Win32 doesn't have _BitScanForward64 so emulate it with two 32 bit calls.
   if (_BitScanForward(&__where, static_cast<unsigned long>(__x)))
     return static_cast<int>(__where);
   if (_BitScanForward(&__where, static_cast<unsigned long>(__x >> 32)))
     return static_cast<int>(__where + 32);
 #endif
-# 142 "nxdk-dxt/lib/libcxx/include/bit" 3
   return 64;
 }
 
@@ -31418,18 +28540,15 @@ int __libcpp_clz(unsigned long long __x) {
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 166 "nxdk-dxt/lib/libcxx/include/bit" 3
   if (_BitScanReverse64(&__where, __x))
     return static_cast<int>(63 - __where);
 #else
-# 169 "nxdk-dxt/lib/libcxx/include/bit" 3
   // Win32 doesn't have _BitScanReverse64 so emulate it with two 32 bit calls.
   if (_BitScanReverse(&__where, static_cast<unsigned long>(__x >> 32)))
     return static_cast<int>(63 - (__where + 32));
   if (_BitScanReverse(&__where, static_cast<unsigned long>(__x)))
     return static_cast<int>(63 - __where);
 #endif
-# 175 "nxdk-dxt/lib/libcxx/include/bit" 3
   return 64; // Undefined Behavior.
 }
 
@@ -31449,7 +28568,6 @@ inline _LIBCPP_INLINE_VISIBILITY int __libcpp_popcount(unsigned long long __x) {
 }
 
 #endif // _LIBCPP_COMPILER_MSVC
-# 194 "nxdk-dxt/lib/libcxx/include/bit" 3
 
 template <class _Tp>
 using __bitop_unsigned_integer _LIBCPP_NODEBUG_TYPE = integral_constant<bool,
@@ -31618,7 +28736,6 @@ bool __ispow2(_Tp __t) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 358 "nxdk-dxt/lib/libcxx/include/bit" 3
 
 template<class _Tp>
 _LIBCPP_INLINE_VISIBILITY constexpr
@@ -31737,7 +28854,6 @@ enum class endian
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 472 "nxdk-dxt/lib/libcxx/include/bit" 3
     native = little
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -31745,56 +28861,41 @@ enum class endian
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 474 "nxdk-dxt/lib/libcxx/include/bit" 3
     native = big
 #else
-# 476 "nxdk-dxt/lib/libcxx/include/bit" 3
     native = 0xCAFE
 #endif
-# 478 "nxdk-dxt/lib/libcxx/include/bit" 3
 };
 
 #endif // _LIBCPP_STD_VER > 17
-# 481 "nxdk-dxt/lib/libcxx/include/bit" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 _LIBCPP_POP_MACROS
 
 #endif // _LIBCPP_BIT
-# 487 "nxdk-dxt/lib/libcxx/include/bit" 3
-# 648 "nxdk-dxt/lib/libcxx/include/algorithm" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 648 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 649 "nxdk-dxt/lib/libcxx/include/algorithm"
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 650 "nxdk-dxt/lib/libcxx/include/algorithm"
-# 651 "nxdk-dxt/lib/libcxx/include/algorithm"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 653 "nxdk-dxt/lib/libcxx/include/algorithm"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 654 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 #endif
-# 655 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 657 "nxdk-dxt/lib/libcxx/include/algorithm" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -31811,25 +28912,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -31837,26 +28932,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 658 "nxdk-dxt/lib/libcxx/include/algorithm" 2 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -32023,7 +29111,6 @@ struct __debug_less
 };
 
 #endif // _LIBCPP_DEBUG
-# 824 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 template <class _Comp>
 struct __comp_ref_type {
@@ -32032,10 +29119,8 @@ struct __comp_ref_type {
 #ifndef _LIBCPP_DEBUG
   typedef typename add_lvalue_reference<_Comp>::type type;
 #else
-# 832 "nxdk-dxt/lib/libcxx/include/algorithm" 3
   typedef __debug_less<_Comp> type;
 #endif
-# 834 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 };
 
 // all_of
@@ -32097,7 +29182,6 @@ for_each(_InputIterator __first, _InputIterator __last, _Function __f)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 891 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 // for_each_n
 
 template <class _InputIterator, class _Size, class _Function>
@@ -32116,7 +29200,6 @@ for_each_n(_InputIterator __first, _Size __orig_n, _Function __f)
     return __first;
 }
 #endif
-# 909 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // find
 
@@ -32438,7 +29521,6 @@ mismatch(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __fi
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1226 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
 _LIBCPP_NODISCARD_EXT inline
 _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
@@ -32465,7 +29547,6 @@ mismatch(_InputIterator1 __first1, _InputIterator1 __last1,
     return _VSTD::mismatch(__first1, __last1, __first2, __last2, __equal_to<__v1, __v2>());
 }
 #endif
-# 1252 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // equal
 
@@ -32497,7 +29578,6 @@ equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1279 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 template <class _BinaryPredicate, class _InputIterator1, class _InputIterator2>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
 bool
@@ -32552,7 +29632,6 @@ equal(_InputIterator1 __first1, _InputIterator1 __last1,
         typename iterator_traits<_InputIterator2>::iterator_category());
 }
 #endif
-# 1333 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // is_permutation
 
@@ -32620,7 +29699,6 @@ is_permutation(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1396 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 template<class _BinaryPredicate, class _ForwardIterator1, class _ForwardIterator2>
 _LIBCPP_CONSTEXPR_AFTER_CXX17 bool
 __is_permutation(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
@@ -32717,7 +29795,6 @@ is_permutation(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
         typename iterator_traits<_ForwardIterator2>::iterator_category());
 }
 #endif
-# 1492 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // search
 // __search is in <functional>
@@ -32754,13 +29831,11 @@ search(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1524 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 template <class _ForwardIterator, class _Searcher>
 _LIBCPP_NODISCARD_EXT _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
 _ForwardIterator search(_ForwardIterator __f, _ForwardIterator __l, const _Searcher &__s)
 { return __s(__f, __l).first; }
 #endif
-# 1529 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // search_n
 
@@ -32890,7 +29965,6 @@ __unwrap_iter(move_iterator<_Tp*> __i)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1654 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
@@ -32917,7 +29991,6 @@ __unwrap_iter(__wrap_iter<const _Tp*> __i)
 }
 
 #else
-# 1680 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 template <class _Tp>
 inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_IF_NODEBUG
@@ -32932,7 +30005,6 @@ __unwrap_iter(__wrap_iter<_Tp*> __i)
 }
 
 #endif  // _LIBCPP_DEBUG_LEVEL < 2
-# 1694 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 template <class _InputIterator, class _OutputIterator>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -33531,7 +30603,6 @@ min(initializer_list<_Tp> __t)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 2558 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // max_element
 
@@ -33605,14 +30676,12 @@ max(initializer_list<_Tp> __t)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 2631 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 #if 0 /* disabled by -frewrite-includes */
 #if _LIBCPP_STD_VER > 14
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 2633 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 // clamp
 template<class _Tp, class _Compare>
 _LIBCPP_NODISCARD_EXT inline
@@ -33634,7 +30703,6 @@ clamp(const _Tp& __v, const _Tp& __lo, const _Tp& __hi)
     return _VSTD::clamp(__v, __lo, __hi, __less<_Tp>());
 }
 #endif
-# 2654 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // minmax_element
 
@@ -33769,7 +30837,6 @@ minmax(initializer_list<_Tp> __t)
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 2788 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // random_shuffle
 
@@ -33831,11 +30898,9 @@ private:
     static const _Working_result_type _Rp = _Engine::_Max - _Engine::_Min
                                           + _Working_result_type(1);
 #else
-# 2849 "nxdk-dxt/lib/libcxx/include/algorithm" 3
     static _LIBCPP_CONSTEXPR const _Working_result_type _Rp = _Engine::max() - _Engine::min()
                                                       + _Working_result_type(1);
 #endif
-# 2852 "nxdk-dxt/lib/libcxx/include/algorithm" 3
     static _LIBCPP_CONSTEXPR const size_t __m = __log2<_Working_result_type, _Rp>::value;
     static _LIBCPP_CONSTEXPR const size_t _WDt = numeric_limits<_Working_result_type>::digits;
     static _LIBCPP_CONSTEXPR const size_t _EDt = numeric_limits<_Engine_result_type>::digits;
@@ -34026,7 +31091,6 @@ _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3038 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 class _LIBCPP_TYPE_VIS __rs_default;
 
 _LIBCPP_FUNC_VIS __rs_default __rs_get();
@@ -34082,10 +31146,8 @@ random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
 #ifndef _LIBCPP_CXX03_LANG
                _RandomNumberGenerator&& __rand)
 #else
-# 3093 "nxdk-dxt/lib/libcxx/include/algorithm" 3
                _RandomNumberGenerator& __rand)
 #endif
-# 3095 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 {
     typedef typename iterator_traits<_RandomAccessIterator>::difference_type difference_type;
     difference_type __d = __last - __first;
@@ -34100,7 +31162,6 @@ random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
     }
 }
 #endif
-# 3109 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 template <class _PopulationIterator, class _SampleIterator, class _Distance,
           class _UniformRandomNumberGenerator>
@@ -34168,7 +31229,6 @@ _SampleIterator __sample(_PopulationIterator __first,
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 3172 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 template <class _PopulationIterator, class _SampleIterator, class _Distance,
           class _UniformRandomNumberGenerator>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -34178,7 +31238,6 @@ _SampleIterator sample(_PopulationIterator __first,
     return _VSTD::__sample(__first, __last, __output_iter, __n, __g);
 }
 #endif // _LIBCPP_STD_VER > 14
-# 3181 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 // partition_copy
 
@@ -34625,103 +31684,12 @@ __stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last, _Comp
               typename iterator_traits<_RandomAccessIterator>::difference_type __len,
               typename iterator_traits<_RandomAccessIterator>::value_type* __buff, ptrdiff_t __buff_size);
 
-template <class _Compare, class _RandomAccessIterator>
-void
-__stable_sort_move(_RandomAccessIterator __first1, _RandomAccessIterator __last1, _Compare __comp,
-                   typename iterator_traits<_RandomAccessIterator>::difference_type __len,
-                   typename iterator_traits<_RandomAccessIterator>::value_type* __first2)
-{
-    typedef typename iterator_traits<_RandomAccessIterator>::value_type value_type;
-    switch (__len)
-    {
-    case 0:
-        return;
-    case 1:
-        ::new(__first2) value_type(_VSTD::move(*__first1));
-        return;
-    case 2:
-        __destruct_n __d(0);
-        unique_ptr<value_type, __destruct_n&> __h2(__first2, __d);
-        if (__comp(*--__last1, *__first1))
-        {
-            ::new(__first2) value_type(_VSTD::move(*__last1));
-            __d.__incr((value_type*)0);
-            ++__first2;
-            ::new(__first2) value_type(_VSTD::move(*__first1));
-        }
-        else
-        {
-            ::new(__first2) value_type(_VSTD::move(*__first1));
-            __d.__incr((value_type*)0);
-            ++__first2;
-            ::new(__first2) value_type(_VSTD::move(*__last1));
-        }
-        __h2.release();
-        return;
-    }
-    if (__len <= 8)
-    {
-        __insertion_sort_move<_Compare>(__first1, __last1, __first2, __comp);
-        return;
-    }
-    typename iterator_traits<_RandomAccessIterator>::difference_type __l2 = __len / 2;
-    _RandomAccessIterator __m = __first1 + __l2;
-    __stable_sort<_Compare>(__first1, __m, __comp, __l2, __first2, __l2);
-    __stable_sort<_Compare>(__m, __last1, __comp, __len - __l2, __first2 + __l2, __len - __l2);
-    __merge_move_construct<_Compare>(__first1, __m, __m, __last1, __first2, __comp);
-}
 
 template <class _Tp>
 struct __stable_sort_switch
 {
     static const unsigned value = 128*is_trivially_copy_assignable<_Tp>::value;
 };
-
-template <class _Compare, class _RandomAccessIterator>
-void
-__stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp,
-              typename iterator_traits<_RandomAccessIterator>::difference_type __len,
-              typename iterator_traits<_RandomAccessIterator>::value_type* __buff, ptrdiff_t __buff_size)
-{
-    typedef typename iterator_traits<_RandomAccessIterator>::value_type value_type;
-    typedef typename iterator_traits<_RandomAccessIterator>::difference_type difference_type;
-    switch (__len)
-    {
-    case 0:
-    case 1:
-        return;
-    case 2:
-        if (__comp(*--__last, *__first))
-            swap(*__first, *__last);
-        return;
-    }
-    if (__len <= static_cast<difference_type>(__stable_sort_switch<value_type>::value))
-    {
-        __insertion_sort<_Compare>(__first, __last, __comp);
-        return;
-    }
-    typename iterator_traits<_RandomAccessIterator>::difference_type __l2 = __len / 2;
-    _RandomAccessIterator __m = __first + __l2;
-    if (__len <= __buff_size)
-    {
-        __destruct_n __d(0);
-        unique_ptr<value_type, __destruct_n&> __h2(__buff, __d);
-        __stable_sort_move<_Compare>(__first, __m, __comp, __l2, __buff);
-        __d.__set(__l2, (value_type*)0);
-        __stable_sort_move<_Compare>(__m, __last, __comp, __len - __l2, __buff + __l2);
-        __d.__set(__len, (value_type*)0);
-        __merge_move_assign<_Compare>(__buff, __buff + __l2, __buff + __l2, __buff + __len, __first, __comp);
-//         __merge<_Compare>(move_iterator<value_type*>(__buff),
-//                           move_iterator<value_type*>(__buff + __l2),
-//                           move_iterator<_RandomAccessIterator>(__buff + __l2),
-//                           move_iterator<_RandomAccessIterator>(__buff + __len),
-//                           __first, __comp);
-        return;
-    }
-    __stable_sort<_Compare>(__first, __m, __comp, __l2, __buff, __buff_size);
-    __stable_sort<_Compare>(__m, __last, __comp, __len - __l2, __buff, __buff_size);
-    __inplace_merge<_Compare>(__first, __m, __last, __comp, __l2, __len - __l2, __buff, __buff_size);
-}
 
 template <class _RandomAccessIterator, class _Compare>
 inline _LIBCPP_INLINE_VISIBILITY
@@ -35233,54 +32201,37 @@ _LIBCPP_POP_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 5682 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 #if 0 /* expanded by -frewrite-includes */
 #   include <__pstl_algorithm>
 #endif /* expanded by -frewrite-includes */
-# 5682 "nxdk-dxt/lib/libcxx/include/algorithm" 3
-# 5683 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 #endif
-# 5684 "nxdk-dxt/lib/libcxx/include/algorithm" 3
 
 #endif  // _LIBCPP_ALGORITHM
-# 5686 "nxdk-dxt/lib/libcxx/include/algorithm" 3
-# 57 "nxdk-dxt/lib/libcxx/include/__string" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdio>     // For EOF.
 #endif /* expanded by -frewrite-includes */
-# 57 "nxdk-dxt/lib/libcxx/include/__string"
-# 58 "nxdk-dxt/lib/libcxx/include/__string"
 #if 0 /* expanded by -frewrite-includes */
 #include <memory>     // for __murmur2_or_cityhash
 #endif /* expanded by -frewrite-includes */
-# 58 "nxdk-dxt/lib/libcxx/include/__string"
-# 59 "nxdk-dxt/lib/libcxx/include/__string"
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 60 "nxdk-dxt/lib/libcxx/include/__string"
-# 61 "nxdk-dxt/lib/libcxx/include/__string"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 63 "nxdk-dxt/lib/libcxx/include/__string"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 64 "nxdk-dxt/lib/libcxx/include/__string" 3
 #endif
-# 65 "nxdk-dxt/lib/libcxx/include/__string" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 67 "nxdk-dxt/lib/libcxx/include/__string" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -35297,25 +32248,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -35323,26 +32268,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 68 "nxdk-dxt/lib/libcxx/include/__string" 2 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -35446,7 +32384,6 @@ char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 249 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_memcmp(__s1, __s2, __n);
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -35454,10 +32391,8 @@ char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t 
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 251 "nxdk-dxt/lib/libcxx/include/__string" 3
     return memcmp(__s1, __s2, __n);
 #else
-# 253 "nxdk-dxt/lib/libcxx/include/__string" 3
     for (; __n; --__n, ++__s1, ++__s2)
     {
         if (lt(*__s1, *__s2))
@@ -35467,7 +32402,6 @@ char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t 
     }
     return 0;
 #endif
-# 262 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 inline _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -35481,7 +32415,6 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 271 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_char_memchr(__s, to_int_type(__a), __n);
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -35489,10 +32422,8 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 273 "nxdk-dxt/lib/libcxx/include/__string" 3
     return (const char_type*) memchr(__s, to_int_type(__a), __n);
 #else
-# 275 "nxdk-dxt/lib/libcxx/include/__string" 3
     for (; __n; --__n)
     {
         if (eq(*__s, __a))
@@ -35501,7 +32432,6 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
     }
     return nullptr;
 #endif
-# 283 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 
@@ -35562,7 +32492,6 @@ char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 339 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_wmemcmp(__s1, __s2, __n);
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -35570,10 +32499,8 @@ char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 341 "nxdk-dxt/lib/libcxx/include/__string" 3
     return wmemcmp(__s1, __s2, __n);
 #else
-# 343 "nxdk-dxt/lib/libcxx/include/__string" 3
     for (; __n; --__n, ++__s1, ++__s2)
     {
         if (lt(*__s1, *__s2))
@@ -35583,7 +32510,6 @@ char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size
     }
     return 0;
 #endif
-# 352 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 
@@ -35596,13 +32522,10 @@ inline size_t __char_traits_length_checked(const typename _Traits::char_type* __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 360 "nxdk-dxt/lib/libcxx/include/__string" 3
   return __s ? _Traits::length(__s) : (_VSTD::__libcpp_debug_function(_VSTD::__libcpp_debug_info(__FILE__, __LINE__, "p == nullptr", "null pointer pass to non-null argument of char_traits<...>::length")), 0);
 #else
-# 362 "nxdk-dxt/lib/libcxx/include/__string" 3
   return _Traits::length(__s);
 #endif
-# 364 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 inline _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -35614,7 +32537,6 @@ char_traits<wchar_t>::length(const char_type* __s) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 371 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_wcslen(__s);
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -35622,16 +32544,13 @@ char_traits<wchar_t>::length(const char_type* __s) _NOEXCEPT
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 373 "nxdk-dxt/lib/libcxx/include/__string" 3
     return wcslen(__s);
 #else
-# 375 "nxdk-dxt/lib/libcxx/include/__string" 3
     size_t __len = 0;
     for (; !eq(*__s, char_type(0)); ++__s)
         ++__len;
     return __len;
 #endif
-# 380 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 inline _LIBCPP_CONSTEXPR_AFTER_CXX14
@@ -35645,7 +32564,6 @@ char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 389 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_wmemchr(__s, __a, __n);
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -35653,10 +32571,8 @@ char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 391 "nxdk-dxt/lib/libcxx/include/__string" 3
     return wmemchr(__s, __a, __n);
 #else
-# 393 "nxdk-dxt/lib/libcxx/include/__string" 3
     for (; __n; --__n)
     {
         if (eq(*__s, __a))
@@ -35665,7 +32581,6 @@ char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __
     }
     return nullptr;
 #endif
-# 401 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 
@@ -35740,10 +32655,8 @@ char_traits<char8_t>::compare(const char_type* __s1, const char_type* __s2, size
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 471 "nxdk-dxt/lib/libcxx/include/__string" 3
     return __builtin_memcmp(__s1, __s2, __n);
 #else
-# 473 "nxdk-dxt/lib/libcxx/include/__string" 3
     for (; __n; --__n, ++__s1, ++__s2)
     {
         if (lt(*__s1, *__s2))
@@ -35753,7 +32666,6 @@ char_traits<char8_t>::compare(const char_type* __s1, const char_type* __s2, size
     }
     return 0;
 #endif
-# 482 "nxdk-dxt/lib/libcxx/include/__string" 3
 }
 
 // TODO use '__builtin_char_memchr' if it ever supports char8_t ??
@@ -35771,7 +32683,6 @@ char_traits<char8_t>::find(const char_type* __s, size_t __n, const char_type& __
 }
 
 #endif // #_LIBCPP_NO_HAS_CHAR8_T
-# 499 "nxdk-dxt/lib/libcxx/include/__string" 3
 
 #ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
 
@@ -36014,7 +32925,6 @@ char_traits<char32_t>::assign(char_type* __s, size_t __n, char_type __a) _NOEXCE
 }
 
 #endif  // _LIBCPP_HAS_NO_UNICODE_CHARS
-# 741 "nxdk-dxt/lib/libcxx/include/__string" 3
 
 // helper fns for basic_string and string_view
 
@@ -36260,63 +33170,42 @@ _LIBCPP_END_NAMESPACE_STD
 _LIBCPP_POP_MACROS
 
 #endif  // _LIBCPP___STRING
-# 986 "nxdk-dxt/lib/libcxx/include/__string" 3
-# 176 "nxdk-dxt/lib/libcxx/include/string_view" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <iosfwd>
 #endif /* expanded by -frewrite-includes */
-# 176 "nxdk-dxt/lib/libcxx/include/string_view"
-# 177 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <algorithm>
 #endif /* expanded by -frewrite-includes */
-# 177 "nxdk-dxt/lib/libcxx/include/string_view"
-# 178 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <iterator>
 #endif /* expanded by -frewrite-includes */
-# 178 "nxdk-dxt/lib/libcxx/include/string_view"
-# 179 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <limits>
 #endif /* expanded by -frewrite-includes */
-# 179 "nxdk-dxt/lib/libcxx/include/string_view"
-# 180 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <stdexcept>
 #endif /* expanded by -frewrite-includes */
-# 180 "nxdk-dxt/lib/libcxx/include/string_view"
-# 181 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 181 "nxdk-dxt/lib/libcxx/include/string_view"
-# 182 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #include <__debug>
 #endif /* expanded by -frewrite-includes */
-# 182 "nxdk-dxt/lib/libcxx/include/string_view"
-# 183 "nxdk-dxt/lib/libcxx/include/string_view"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 185 "nxdk-dxt/lib/libcxx/include/string_view"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 186 "nxdk-dxt/lib/libcxx/include/string_view" 3
 #endif
-# 187 "nxdk-dxt/lib/libcxx/include/string_view" 3
 
 _LIBCPP_PUSH_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__undef_macros>
 #endif /* expanded by -frewrite-includes */
-# 189 "nxdk-dxt/lib/libcxx/include/string_view" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -36333,25 +33222,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -36359,26 +33242,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 190 "nxdk-dxt/lib/libcxx/include/string_view" 2 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -36426,10 +33302,8 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 233 "nxdk-dxt/lib/libcxx/include/string_view" 3
     _LIBCPP_ASSERT(__len == 0 || __s != nullptr, "string_view::string_view(_CharT *, size_t): received nullptr");
 #endif
-# 235 "nxdk-dxt/lib/libcxx/include/string_view" 3
     }
 
     _LIBCPP_CONSTEXPR _LIBCPP_INLINE_VISIBILITY
@@ -36501,7 +33375,6 @@ public:
     _LIBCPP_CONSTEXPR _LIBCPP_INLINE_VISIBILITY
     const_pointer data() const _NOEXCEPT { return __data; }
 
-# 603 "nxdk-dxt/lib/libcxx/include/string_view" 3
 
 private:
     const   value_type* __data;
@@ -36547,7 +33420,6 @@ operator<<(basic_ostream<_CharT, _Traits>& __os,
            basic_string_view<_CharT, _Traits> __str);
 
 typedef basic_string_view<char>     string_view;
-# 781 "nxdk-dxt/lib/libcxx/include/string_view" 3
 typedef basic_string_view<char16_t> u16string_view;
 typedef basic_string_view<char32_t> u32string_view;
 typedef basic_string_view<wchar_t>  wstring_view;
@@ -36563,68 +33435,23 @@ struct _LIBCPP_TEMPLATE_VIS hash<basic_string_view<_CharT, char_traits<_CharT> >
     }
 };
 
-#if 1 /* evaluated by -frewrite-includes */
-# 798 "nxdk-dxt/lib/libcxx/include/string_view" 3
-inline namespace literals
-{
-  inline namespace string_view_literals
-  {
-    inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-    basic_string_view<char> operator "" sv(const char *__str, size_t __len) _NOEXCEPT
-    {
-        return basic_string_view<char> (__str, __len);
-    }
-
-    inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-    basic_string_view<wchar_t> operator "" sv(const wchar_t *__str, size_t __len) _NOEXCEPT
-    {
-        return basic_string_view<wchar_t> (__str, __len);
-    }
-
-# 821 "nxdk-dxt/lib/libcxx/include/string_view" 3
-
-    inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-    basic_string_view<char16_t> operator "" sv(const char16_t *__str, size_t __len) _NOEXCEPT
-    {
-        return basic_string_view<char16_t> (__str, __len);
-    }
-
-    inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
-    basic_string_view<char32_t> operator "" sv(const char32_t *__str, size_t __len) _NOEXCEPT
-    {
-        return basic_string_view<char32_t> (__str, __len);
-    }
-  }
-}
-#endif
-# 836 "nxdk-dxt/lib/libcxx/include/string_view" 3
 _LIBCPP_END_NAMESPACE_STD
 
 _LIBCPP_POP_MACROS
 
 #endif // _LIBCPP_STRING_VIEW
-# 841 "nxdk-dxt/lib/libcxx/include/string_view" 3
-# 505 "nxdk-dxt/lib/libcxx/include/string" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <iosfwd>
 #endif /* expanded by -frewrite-includes */
-# 505 "nxdk-dxt/lib/libcxx/include/string"
-# 506 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstring>
 #endif /* expanded by -frewrite-includes */
-# 506 "nxdk-dxt/lib/libcxx/include/string"
-# 507 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdio>  // For EOF.
 #endif /* expanded by -frewrite-includes */
-# 507 "nxdk-dxt/lib/libcxx/include/string"
-# 508 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <cwchar>
 #endif /* expanded by -frewrite-includes */
-# 508 "nxdk-dxt/lib/libcxx/include/string"
-# 1 "nxdk-dxt/lib/libcxx/include/cwchar" 1
 // -*- C++ -*-
 //===--------------------------- cwchar -----------------------------------===//
 //
@@ -36641,13 +33468,9 @@ _LIBCPP_POP_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 105 "nxdk-dxt/lib/libcxx/include/cwchar"
-# 106 "nxdk-dxt/lib/libcxx/include/cwchar"
 #if 0 /* expanded by -frewrite-includes */
 #include <cwctype>
 #endif /* expanded by -frewrite-includes */
-# 106 "nxdk-dxt/lib/libcxx/include/cwchar"
-# 1 "nxdk-dxt/lib/libcxx/include/cwctype" 1
 // -*- C++ -*-
 //===--------------------------- cwctype ----------------------------------===//
 //
@@ -36664,13 +33487,9 @@ _LIBCPP_POP_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 52 "nxdk-dxt/lib/libcxx/include/cwctype"
-# 53 "nxdk-dxt/lib/libcxx/include/cwctype"
 #if 0 /* expanded by -frewrite-includes */
 #include <cctype>
 #endif /* expanded by -frewrite-includes */
-# 53 "nxdk-dxt/lib/libcxx/include/cwctype"
-# 1 "nxdk-dxt/lib/libcxx/include/cctype" 1
 // -*- C++ -*-
 //===---------------------------- cctype ----------------------------------===//
 //
@@ -36687,13 +33506,9 @@ _LIBCPP_POP_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 37 "nxdk-dxt/lib/libcxx/include/cctype"
-# 38 "nxdk-dxt/lib/libcxx/include/cctype"
 #if 0 /* expanded by -frewrite-includes */
 #include <ctype.h>
 #endif /* expanded by -frewrite-includes */
-# 38 "nxdk-dxt/lib/libcxx/include/cctype"
-# 1 "nxdk-dxt/lib/libcxx/include/ctype.h" 1
 // -*- C++ -*-
 //===---------------------------- ctype.h ---------------------------------===//
 //
@@ -36710,27 +33525,20 @@ _LIBCPP_POP_MACROS
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 32 "nxdk-dxt/lib/libcxx/include/ctype.h"
-# 33 "nxdk-dxt/lib/libcxx/include/ctype.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 35 "nxdk-dxt/lib/libcxx/include/ctype.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 36 "nxdk-dxt/lib/libcxx/include/ctype.h" 3
 #endif
-# 37 "nxdk-dxt/lib/libcxx/include/ctype.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <ctype.h>
 #endif /* expanded by -frewrite-includes */
-# 38 "nxdk-dxt/lib/libcxx/include/ctype.h" 3
-# 1 "nxdk-dxt/lib/pdclib/include/ctype.h" 1 3
 /* Character handling <ctype.h>
 
    This file is part of the Public Domain C Library (PDCLib).
@@ -36743,13 +33551,10 @@ _LIBCPP_POP_MACROS
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 13 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
 
 #if 0 /* expanded by -frewrite-includes */
 #include "pdclib/_PDCLIB_int.h"
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
-# 15 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
 
 /* Character classification functions */
 
@@ -36841,8 +33646,6 @@ _PDCLIB_PUBLIC int toupper( int c );
 #if 0 /* expanded by -frewrite-includes */
 #include _PDCLIB_EXTEND_CTYPE_H
 #endif /* expanded by -frewrite-includes */
-# 103 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
-# 1 "nxdk-dxt/lib/xboxrt/libc_extensions/ctype_ext_.h" 1 3
 // SPDX-License-Identifier: MIT
 
 // SPDX-FileCopyrightText: 2019 Stefan Schmidt
@@ -36850,7 +33653,6 @@ _PDCLIB_PUBLIC int toupper( int c );
 #ifdef __cplusplus
 extern "C" {
 #endif
-# 8 "nxdk-dxt/lib/xboxrt/libc_extensions/ctype_ext_.h" 3
 
 // (obsolete) POSIX function, but required by libc++
 static int isascii (int c)
@@ -36872,19 +33674,13 @@ static int isascii (int c)
 #ifdef __cplusplus
 }
 #endif
-# 29 "nxdk-dxt/lib/xboxrt/libc_extensions/ctype_ext_.h" 3
-# 104 "nxdk-dxt/lib/pdclib/include/ctype.h" 2 3
 #endif
-# 105 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
 
 #ifdef __cplusplus
 }
 #endif
-# 109 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
 
 #endif
-# 111 "nxdk-dxt/lib/pdclib/include/ctype.h" 3
-# 39 "nxdk-dxt/lib/libcxx/include/ctype.h" 2 3
 
 #ifdef __cplusplus
 
@@ -36904,96 +33700,76 @@ static int isascii (int c)
 #undef toupper
 
 #endif
-# 58 "nxdk-dxt/lib/libcxx/include/ctype.h" 3
 
 #endif  // _LIBCPP_CTYPE_H
-# 60 "nxdk-dxt/lib/libcxx/include/ctype.h" 3
-# 39 "nxdk-dxt/lib/libcxx/include/cctype" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 41 "nxdk-dxt/lib/libcxx/include/cctype"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 42 "nxdk-dxt/lib/libcxx/include/cctype" 3
 #endif
-# 43 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
 #ifdef isalnum
 #undef isalnum
 #endif
-# 49 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isalpha
 #undef isalpha
 #endif
-# 53 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isblank
 #undef isblank
 #endif
-# 57 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef iscntrl
 #undef iscntrl
 #endif
-# 61 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isdigit
 #undef isdigit
 #endif
-# 65 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isgraph
 #undef isgraph
 #endif
-# 69 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef islower
 #undef islower
 #endif
-# 73 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isprint
 #undef isprint
 #endif
-# 77 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef ispunct
 #undef ispunct
 #endif
-# 81 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isspace
 #undef isspace
 #endif
-# 85 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isupper
 #undef isupper
 #endif
-# 89 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef isxdigit
 #undef isxdigit
 #endif
-# 93 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef tolower
 #undef tolower
 #endif
-# 97 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 #ifdef toupper
 #undef toupper
 #endif
-# 101 "nxdk-dxt/lib/libcxx/include/cctype" 3
 
 
 using ::isalnum;
@@ -37014,26 +33790,19 @@ using ::toupper;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CCTYPE
-# 121 "nxdk-dxt/lib/libcxx/include/cctype" 3
-# 54 "nxdk-dxt/lib/libcxx/include/cwctype" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <wctype.h>
 #endif /* expanded by -frewrite-includes */
-# 54 "nxdk-dxt/lib/libcxx/include/cwctype"
-# 55 "nxdk-dxt/lib/libcxx/include/cwctype"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 57 "nxdk-dxt/lib/libcxx/include/cwctype"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 58 "nxdk-dxt/lib/libcxx/include/cwctype" 3
 #endif
-# 59 "nxdk-dxt/lib/libcxx/include/cwctype" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -37062,13 +33831,9 @@ using ::wctrans;
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CWCTYPE
-# 87 "nxdk-dxt/lib/libcxx/include/cwctype" 3
-# 107 "nxdk-dxt/lib/libcxx/include/cwchar" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 107 "nxdk-dxt/lib/libcxx/include/cwchar"
-# 1 "nxdk-dxt/lib/libcxx/include/wchar.h" 1
 // -*- C++ -*-
 //===--------------------------- wchar.h ----------------------------------===//
 //
@@ -37083,26 +33848,20 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 11 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #endif
-# 15 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 16 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 17 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -37110,39 +33869,30 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 19 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #define _LIBCPP_WCHAR_H
 
 
 #if 0 /* expanded by -frewrite-includes */
 #include <__config>
 #endif /* expanded by -frewrite-includes */
-# 108 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 109 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 111 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 112 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #endif
-# 113 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #ifdef __cplusplus
 #define __CORRECT_ISO_CPP_WCHAR_H_PROTO
 #endif
-# 117 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* expanded by -frewrite-includes */
 #include_next <wchar.h>
 #endif /* expanded by -frewrite-includes */
-# 118 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 119 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 // Determine whether we have const-correct overloads for wcschr and friends.
 #if 0 /* disabled by -frewrite-includes */
@@ -37150,7 +33900,6 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 122 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #  define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #if 0 /* disabled by -frewrite-includes */
 #if 0
@@ -37158,41 +33907,33 @@ _LIBCPP_END_NAMESPACE_STD
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 124 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* disabled by -frewrite-includes */
 #  if __GLIBC_PREREQ(2, 10)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 125 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 127 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* disabled by -frewrite-includes */
 #if 0
 #elif defined(_LIBCPP_MSVCRT)
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 128 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #if 0 /* disabled by -frewrite-includes */
 #  if defined(_CRT_CONST_CORRECT_OVERLOADS)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 129 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #    define _LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS 1
 #  endif
-# 131 "nxdk-dxt/lib/libcxx/include/wchar.h"
 #endif
-# 132 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && !defined(_LIBCPP_WCHAR_H_HAS_CONST_OVERLOADS) && defined(_LIBCPP_PREFERRED_OVERLOAD)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 134 "nxdk-dxt/lib/libcxx/include/wchar.h"
 extern "C++" {
 inline _LIBCPP_INLINE_VISIBILITY
 wchar_t* __libcpp_wcschr(const wchar_t* __s, wchar_t __c) {return (wchar_t*)wcschr(__s, __c);}
@@ -37230,14 +33971,12 @@ inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_PREFERRED_OVERLOAD
       wchar_t* wmemchr(      wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
 }
 #endif
-# 171 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #if 0 /* disabled by -frewrite-includes */
 #if defined(__cplusplus) && defined(_LIBCPP_MSVCRT_LIKE)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 173 "nxdk-dxt/lib/libcxx/include/wchar.h"
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
                   size_t nmc, size_t len, mbstate_t *__restrict ps);
@@ -37245,24 +33984,18 @@ size_t wcsnrtombs(char *__restrict dst, const wchar_t **__restrict src,
                   size_t nwc, size_t len, mbstate_t *__restrict ps);
 }  // extern "C++"
 #endif  // __cplusplus && _LIBCPP_MSVCRT
-# 180 "nxdk-dxt/lib/libcxx/include/wchar.h"
 
 #endif  // _LIBCPP_WCHAR_H
-# 182 "nxdk-dxt/lib/libcxx/include/wchar.h"
-# 108 "nxdk-dxt/lib/libcxx/include/cwchar" 2
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 110 "nxdk-dxt/lib/libcxx/include/cwchar"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 111 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 #endif
-# 112 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 
 _LIBCPP_BEGIN_NAMESPACE_STD
 
@@ -37289,7 +34022,6 @@ using ::getwc;
 using ::putwc;
 using ::ungetwc;
 #endif // NXDK
-# 138 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 using ::wcstod;
 using ::wcstof;
 using ::wcstold;
@@ -37298,14 +34030,11 @@ using ::wcstol;
 #ifndef NXDK
 using ::wcstoll;
 #endif // NXDK
-# 146 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 147 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 using ::wcstoul;
 #ifndef _LIBCPP_HAS_NO_LONG_LONG
 using ::wcstoull;
 #endif // _LIBCPP_HAS_NO_LONG_LONG
-# 151 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 using ::wcscpy;
 using ::wcsncpy;
 using ::wcscat;
@@ -37330,7 +34059,6 @@ using ::wmemset;
 #ifndef NXDK
 using ::wcsftime;
 #endif // NXDK
-# 175 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 using ::btowc;
 using ::wctob;
 using ::mbsinit;
@@ -37341,97 +34069,66 @@ using ::mbsrtowcs;
 #ifndef NXDK
 using ::wcsrtombs;
 #endif
-# 185 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 
 #ifndef _LIBCPP_HAS_NO_STDIN
 using ::getwchar;
 using ::vwscanf;
 using ::wscanf;
 #endif
-# 191 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 
 #ifndef _LIBCPP_HAS_NO_STDOUT
 using ::putwchar;
 using ::vwprintf;
 using ::wprintf;
 #endif
-# 197 "nxdk-dxt/lib/libcxx/include/cwchar" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 #endif  // _LIBCPP_CWCHAR
-# 201 "nxdk-dxt/lib/libcxx/include/cwchar" 3
-# 509 "nxdk-dxt/lib/libcxx/include/string" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <algorithm>
 #endif /* expanded by -frewrite-includes */
-# 509 "nxdk-dxt/lib/libcxx/include/string"
-# 510 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <iterator>
 #endif /* expanded by -frewrite-includes */
-# 510 "nxdk-dxt/lib/libcxx/include/string"
-# 511 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
-# 511 "nxdk-dxt/lib/libcxx/include/string"
-# 512 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <memory>
 #endif /* expanded by -frewrite-includes */
-# 512 "nxdk-dxt/lib/libcxx/include/string"
-# 513 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <stdexcept>
 #endif /* expanded by -frewrite-includes */
-# 513 "nxdk-dxt/lib/libcxx/include/string"
-# 514 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <type_traits>
 #endif /* expanded by -frewrite-includes */
-# 514 "nxdk-dxt/lib/libcxx/include/string"
-# 515 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <initializer_list>
 #endif /* expanded by -frewrite-includes */
-# 515 "nxdk-dxt/lib/libcxx/include/string"
-# 516 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <__functional_base>
 #endif /* expanded by -frewrite-includes */
-# 516 "nxdk-dxt/lib/libcxx/include/string"
-# 517 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #include <version>
 #endif /* expanded by -frewrite-includes */
-# 517 "nxdk-dxt/lib/libcxx/include/string"
-# 518 "nxdk-dxt/lib/libcxx/include/string"
 #ifndef _LIBCPP_HAS_NO_UNICODE_CHARS
 #if 0 /* expanded by -frewrite-includes */
 #include <cstdint>
 #endif /* expanded by -frewrite-includes */
-# 519 "nxdk-dxt/lib/libcxx/include/string"
-# 520 "nxdk-dxt/lib/libcxx/include/string"
 #endif
-# 521 "nxdk-dxt/lib/libcxx/include/string"
 
 #if 0 /* disabled by -frewrite-includes */
 #if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 525 "nxdk-dxt/lib/libcxx/include/string"
 #if 0 /* expanded by -frewrite-includes */
 #pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 526 "nxdk-dxt/lib/libcxx/include/string" 3
 #endif
-# 527 "nxdk-dxt/lib/libcxx/include/string" 3
 
 _LIBCPP_PUSH_MACROS
-# 529 "nxdk-dxt/lib/libcxx/include/string" 3
-# 1 "nxdk-dxt/lib/libcxx/include/__undef_macros" 1 3
 // -*- C++ -*-
 //===------------------------ __undef_macros ------------------------------===//
 //
@@ -37448,25 +34145,19 @@ _LIBCPP_PUSH_MACROS
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 13 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 14 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing min")
 #else
-# 17 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro min is incompatible with C++.  #undefing min
 #endif
-# 19 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 20 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef min
 #endif
-# 22 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 
 #ifdef max
 #if 0 /* disabled by -frewrite-includes */
@@ -37474,26 +34165,19 @@ _LIBCPP_WARNING("macro min is incompatible with C++.  Try #define NOMINMAX "
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 25 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #if 0 /* disabled by -frewrite-includes */
 #if defined(_LIBCPP_WARNING)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 26 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 _LIBCPP_WARNING("macro max is incompatible with C++.  Try #define NOMINMAX "
                 "before any Windows header. #undefing max")
 #else
-# 29 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #warning: macro max is incompatible with C++.  #undefing max
 #endif
-# 31 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #endif
-# 32 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
 #undef max
 #endif
-# 34 "nxdk-dxt/lib/libcxx/include/__undef_macros" 3
-# 530 "nxdk-dxt/lib/libcxx/include/string" 2 3
 
 
 _LIBCPP_BEGIN_NAMESPACE_STD
@@ -37545,11 +34229,9 @@ struct __libcpp_string_gets_noexcept_iterator_impl : public true_type {};
 #endif
 #endif /* disabled by -frewrite-includes */
 #elif 0 /* evaluated by -frewrite-includes */
-# 625 "nxdk-dxt/lib/libcxx/include/string" 3
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator_impl : public false_type {};
 #else
-# 628 "nxdk-dxt/lib/libcxx/include/string" 3
 template <class _Iter, bool = __is_forward_iterator<_Iter>::value>
 struct __libcpp_string_gets_noexcept_iterator_impl : public _LIBCPP_BOOL_CONSTANT((
     noexcept(++(declval<_Iter&>())) &&
@@ -37561,7 +34243,6 @@ struct __libcpp_string_gets_noexcept_iterator_impl : public _LIBCPP_BOOL_CONSTAN
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator_impl<_Iter, false> : public false_type {};
 #endif
-# 639 "nxdk-dxt/lib/libcxx/include/string" 3
 
 
 template <class _Iter>
@@ -37573,7 +34254,6 @@ struct __can_be_converted_to_string_view : public _LIBCPP_BOOL_CONSTANT(
     ( is_convertible<const _Tp&, basic_string_view<_CharT, _Traits> >::value &&
      !is_convertible<const _Tp&, const _CharT*>::value)) {};
 
-# 664 "nxdk-dxt/lib/libcxx/include/string" 3
 
 template<class _CharT, class _Traits, class _Allocator>
 class _LIBCPP_TEMPLATE_VIS basic_string
@@ -37594,15 +34274,12 @@ public:
     typedef typename __alloc_traits::const_pointer       const_pointer;
 
 #if 0 /* evaluated by -frewrite-includes */
-# 692 "nxdk-dxt/lib/libcxx/include/string" 3
     typedef pointer                                      iterator;
     typedef const_pointer                                const_iterator;
 #else  // defined(_LIBCPP_RAW_ITERATORS)
-# 695 "nxdk-dxt/lib/libcxx/include/string" 3
     typedef __wrap_iter<pointer>                         iterator;
     typedef __wrap_iter<const_pointer>                   const_iterator;
 #endif  // defined(_LIBCPP_RAW_ITERATORS)
-# 698 "nxdk-dxt/lib/libcxx/include/string" 3
     typedef _VSTD::reverse_iterator<iterator>             reverse_iterator;
     typedef _VSTD::reverse_iterator<const_iterator>       const_reverse_iterator;
 
@@ -37621,11 +34298,9 @@ private:
     static const size_type __short_mask = 0x01;
     static const size_type __long_mask  = 0x1ul;
 #else  // _LIBCPP_BIG_ENDIAN
-# 716 "nxdk-dxt/lib/libcxx/include/string" 3
     static const size_type __short_mask = 0x80;
     static const size_type __long_mask  = ~(size_type(~0) >> 1);
 #endif  // _LIBCPP_BIG_ENDIAN
-# 719 "nxdk-dxt/lib/libcxx/include/string" 3
 
     enum {__min_cap = (sizeof(__long) - 1)/sizeof(value_type) > 2 ?
                       (sizeof(__long) - 1)/sizeof(value_type) : 2};
@@ -37641,7 +34316,6 @@ private:
     };
 
 #else
-# 734 "nxdk-dxt/lib/libcxx/include/string" 3
 
     struct __long
     {
@@ -37654,11 +34328,9 @@ private:
     static const size_type __short_mask = 0x80;
     static const size_type __long_mask  = ~(size_type(~0) >> 1);
 #else  // _LIBCPP_BIG_ENDIAN
-# 746 "nxdk-dxt/lib/libcxx/include/string" 3
     static const size_type __short_mask = 0x01;
     static const size_type __long_mask  = 0x1ul;
 #endif  // _LIBCPP_BIG_ENDIAN
-# 749 "nxdk-dxt/lib/libcxx/include/string" 3
 
     enum {__min_cap = (sizeof(__long) - 1)/sizeof(value_type) > 2 ?
                       (sizeof(__long) - 1)/sizeof(value_type) : 2};
@@ -37674,7 +34346,6 @@ private:
     };
 
 #endif  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-# 764 "nxdk-dxt/lib/libcxx/include/string" 3
 
     union __ulx{__long __lx; __short __lxx;};
 
@@ -37709,13 +34380,10 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 794 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(is_nothrow_copy_constructible<allocator_type>::value);
 #else
-# 796 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT;
 #endif
-# 798 "nxdk-dxt/lib/libcxx/include/string" 3
 
     basic_string(const basic_string& __str);
     basic_string(const basic_string& __str, const allocator_type& __a);
@@ -37724,18 +34392,14 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     basic_string(basic_string&& __str)
 #if 0 /* evaluated by -frewrite-includes */
-# 806 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(is_nothrow_move_constructible<allocator_type>::value);
 #else
-# 808 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT;
 #endif
-# 810 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     basic_string(basic_string&& __str, const allocator_type& __a);
 #endif  // _LIBCPP_CXX03_LANG
-# 814 "nxdk-dxt/lib/libcxx/include/string" 3
 
     template <class = typename enable_if<__is_allocator<_Allocator>::value, nullptr_t>::type>
     _LIBCPP_INLINE_VISIBILITY
@@ -37743,7 +34407,6 @@ public:
       _LIBCPP_ASSERT(__s != nullptr, "basic_string(const char*) detected nullptr");
       __init(__s, traits_type::length(__s));
 
-# 823 "nxdk-dxt/lib/libcxx/include/string" 3
     }
 
     template <class = typename enable_if<__is_allocator<_Allocator>::value, nullptr_t>::type>
@@ -37792,7 +34455,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     basic_string(initializer_list<_CharT> __il, const _Allocator& __a);
 #endif  // _LIBCPP_CXX03_LANG
-# 871 "nxdk-dxt/lib/libcxx/include/string" 3
 
     inline ~basic_string();
 
@@ -37810,7 +34472,6 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 894 "nxdk-dxt/lib/libcxx/include/string" 3
     _LIBCPP_INLINE_VISIBILITY
     iterator begin() _NOEXCEPT
         {return iterator(this, __get_pointer());}
@@ -37824,7 +34485,6 @@ public:
     const_iterator end() const _NOEXCEPT
         {return const_iterator(this, __get_pointer() + size());}
 #else
-# 907 "nxdk-dxt/lib/libcxx/include/string" 3
     _LIBCPP_INLINE_VISIBILITY
     iterator begin() _NOEXCEPT
         {return iterator(__get_pointer());}
@@ -37838,7 +34498,6 @@ public:
     const_iterator end() const _NOEXCEPT
         {return const_iterator(__get_pointer() + size());}
 #endif  // _LIBCPP_DEBUG_LEVEL >= 2
-# 920 "nxdk-dxt/lib/libcxx/include/string" 3
     _LIBCPP_INLINE_VISIBILITY
     reverse_iterator rbegin() _NOEXCEPT
         {return reverse_iterator(end());}
@@ -37909,7 +34568,6 @@ public:
 #ifndef _LIBCPP_CXX03_LANG
     _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(initializer_list<value_type> __il) {return append(__il);}
 #endif  // _LIBCPP_CXX03_LANG
-# 990 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     basic_string& append(const basic_string& __str);
@@ -37973,7 +34631,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     basic_string& append(initializer_list<value_type> __il) {return append(__il.begin(), __il.size());}
 #endif  // _LIBCPP_CXX03_LANG
-# 1053 "nxdk-dxt/lib/libcxx/include/string" 3
 
     void push_back(value_type __c);
     _LIBCPP_INLINE_VISIBILITY
@@ -37999,7 +34656,6 @@ public:
         _NOEXCEPT_((__noexcept_move_assign_container<_Allocator, __alloc_traits>::value))
         {*this = _VSTD::move(__str); return *this;}
 #endif
-# 1078 "nxdk-dxt/lib/libcxx/include/string" 3
     basic_string& assign(const basic_string& __str, size_type __pos, size_type __n=npos);
     template <class _Tp>
     _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
@@ -38034,7 +34690,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     basic_string& assign(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
 #endif  // _LIBCPP_CXX03_LANG
-# 1112 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     basic_string& insert(size_type __pos1, const basic_string& __str);
@@ -38087,7 +34742,6 @@ public:
     iterator insert(const_iterator __pos, initializer_list<value_type> __il)
                     {return insert(__pos, __il.begin(), __il.end());}
 #endif  // _LIBCPP_CXX03_LANG
-# 1164 "nxdk-dxt/lib/libcxx/include/string" 3
 
     basic_string& erase(size_type __pos = 0, size_type __n = npos);
     _LIBCPP_INLINE_VISIBILITY
@@ -38149,7 +34803,6 @@ public:
     basic_string& replace(const_iterator __i1, const_iterator __i2, initializer_list<value_type> __il)
         {return replace(__i1, __i2, __il.begin(), __il.end());}
 #endif  // _LIBCPP_CXX03_LANG
-# 1225 "nxdk-dxt/lib/libcxx/include/string" 3
 
     size_type copy(value_type* __s, size_type __n, size_type __pos = 0) const;
     _LIBCPP_INLINE_VISIBILITY
@@ -38162,14 +34815,11 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1233 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT;
 #else
-# 1235 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(!__alloc_traits::propagate_on_container_swap::value ||
                     __is_nothrow_swappable<allocator_type>::value);
 #endif
-# 1238 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     const value_type* c_str() const _NOEXCEPT {return data();}
@@ -38180,11 +34830,9 @@ public:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1244 "nxdk-dxt/lib/libcxx/include/string" 3
     _LIBCPP_INLINE_VISIBILITY
     value_type* data()             _NOEXCEPT  {return _VSTD::__to_raw_pointer(__get_pointer());}
 #endif
-# 1247 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     allocator_type get_allocator() const _NOEXCEPT {return __alloc();}
@@ -38289,7 +34937,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     size_type find_last_not_of(value_type __c, size_type __pos = npos) const _NOEXCEPT;
 
-# 1413 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY bool __invariants() const;
 
@@ -38299,7 +34946,6 @@ public:
     bool __is_long() const _NOEXCEPT
         {return bool(__r_.first().__s.__size_ & __short_mask);}
 
-# 1430 "nxdk-dxt/lib/libcxx/include/string" 3
 
 private:
     _LIBCPP_INLINE_VISIBILITY
@@ -38316,46 +34962,36 @@ private:
 #   ifdef _LIBCPP_BIG_ENDIAN
         {__r_.first().__s.__size_ = (unsigned char)(__s << 1);}
 #   else
-# 1446 "nxdk-dxt/lib/libcxx/include/string" 3
         {__r_.first().__s.__size_ = (unsigned char)(__s);}
 #   endif
-# 1448 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     size_type __get_short_size() const _NOEXCEPT
 #   ifdef _LIBCPP_BIG_ENDIAN
         {return __r_.first().__s.__size_ >> 1;}
 #   else
-# 1454 "nxdk-dxt/lib/libcxx/include/string" 3
         {return __r_.first().__s.__size_;}
 #   endif
-# 1456 "nxdk-dxt/lib/libcxx/include/string" 3
 
 #else  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-# 1458 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     void __set_short_size(size_type __s) _NOEXCEPT
 #   ifdef _LIBCPP_BIG_ENDIAN
         {__r_.first().__s.__size_ = (unsigned char)(__s);}
 #   else
-# 1464 "nxdk-dxt/lib/libcxx/include/string" 3
         {__r_.first().__s.__size_ = (unsigned char)(__s << 1);}
 #   endif
-# 1466 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     size_type __get_short_size() const _NOEXCEPT
 #   ifdef _LIBCPP_BIG_ENDIAN
         {return __r_.first().__s.__size_;}
 #   else
-# 1472 "nxdk-dxt/lib/libcxx/include/string" 3
         {return __r_.first().__s.__size_ >> 1;}
 #   endif
-# 1474 "nxdk-dxt/lib/libcxx/include/string" 3
 
 #endif  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-# 1476 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     void __set_long_size(size_type __s) _NOEXCEPT
@@ -38489,15 +35125,11 @@ private:
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 1 /* evaluated by -frewrite-includes */
-# 1614 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT;
 #else
-# 1616 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(is_nothrow_move_assignable<allocator_type>::value);
 #endif
-# 1618 "nxdk-dxt/lib/libcxx/include/string" 3
 #endif
-# 1619 "nxdk-dxt/lib/libcxx/include/string" 3
 
     _LIBCPP_INLINE_VISIBILITY
     void
@@ -38557,7 +35189,6 @@ template<class _CharT,
 basic_string(basic_string_view<_CharT, _Traits>, _Sz, _Sz, const _Allocator& = _Allocator())
   -> basic_string<_CharT, _Traits, _Allocator>;
 #endif
-# 1678 "nxdk-dxt/lib/libcxx/include/string" 3
 
 
 
@@ -38571,10 +35202,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string()
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1726 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1728 "nxdk-dxt/lib/libcxx/include/string" 3
     __zero();
 }
 
@@ -38586,13 +35215,10 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const allocator_type& __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1735 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(is_nothrow_copy_constructible<allocator_type>::value)
 #else
-# 1737 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT
 #endif
-# 1739 "nxdk-dxt/lib/libcxx/include/string" 3
 : __r_(__second_tag(), __a)
 {
 #if 0 /* disabled by -frewrite-includes */
@@ -38600,10 +35226,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const allocator_type& __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1742 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1744 "nxdk-dxt/lib/libcxx/include/string" 3
     __zero();
 }
 
@@ -38668,10 +35292,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, const
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1804 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1806 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38685,10 +35307,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1815 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1817 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38703,10 +35323,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _CharT* __s, size_
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1827 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1829 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38722,10 +35340,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1840 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1842 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38742,10 +35358,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1854 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1856 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 #ifndef _LIBCPP_CXX03_LANG
@@ -38758,17 +35372,13 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(basic_string&& __str)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1864 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT_(is_nothrow_move_constructible<allocator_type>::value)
 #else
-# 1866 "nxdk-dxt/lib/libcxx/include/string" 3
         _NOEXCEPT
 #endif
-# 1868 "nxdk-dxt/lib/libcxx/include/string" 3
     : __r_(_VSTD::move(__str.__r_))
 {
     __str.__zero();
-# 1876 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38784,11 +35394,9 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(basic_string&& __str, co
         __str.__zero();
     }
 
-# 1895 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 1898 "nxdk-dxt/lib/libcxx/include/string" 3
 
 template <class _CharT, class _Traits, class _Allocator>
 void
@@ -38824,10 +35432,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1929 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1931 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38841,10 +35447,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(size_type __n, _CharT __
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1940 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1942 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38862,10 +35466,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1955 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1957 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38883,10 +35485,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const basic_string& __st
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1970 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1972 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38903,10 +35503,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1984 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1986 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38920,10 +35518,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _Tp & __t)
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 1995 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 1997 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38938,10 +35534,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(const _Tp & __t, const _
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2007 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 2009 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -38958,7 +35552,6 @@ basic_string<_CharT, _Traits, _Allocator>::__init(_InputIterator __first, _Input
     try
     {
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 2025 "nxdk-dxt/lib/libcxx/include/string" 3
     for (; __first != __last; ++__first)
         push_back(*__first);
 #ifndef _LIBCPP_NO_EXCEPTIONS
@@ -38970,7 +35563,6 @@ basic_string<_CharT, _Traits, _Allocator>::__init(_InputIterator __first, _Input
         throw;
     }
 #endif  // _LIBCPP_NO_EXCEPTIONS
-# 2036 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -39015,10 +35607,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2076 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 2078 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -39034,10 +35624,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2089 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 2091 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 #ifndef _LIBCPP_CXX03_LANG
@@ -39053,10 +35641,8 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2102 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 2104 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 template <class _CharT, class _Traits, class _Allocator>
@@ -39072,23 +35658,18 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 #endif
 #endif /* disabled by -frewrite-includes */
 #if 0 /* evaluated by -frewrite-includes */
-# 2115 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__insert_c(this);
 #endif
-# 2117 "nxdk-dxt/lib/libcxx/include/string" 3
 }
 
 #endif  // _LIBCPP_CXX03_LANG
-# 2120 "nxdk-dxt/lib/libcxx/include/string" 3
 
 template <class _CharT, class _Traits, class _Allocator>
 basic_string<_CharT, _Traits, _Allocator>::~basic_string()
 {
 #if 0 /* evaluated by -frewrite-includes */
-# 2125 "nxdk-dxt/lib/libcxx/include/string" 3
     __get_db()->__erase_c(this);
 #endif
-# 2127 "nxdk-dxt/lib/libcxx/include/string" 3
     if (__is_long())
         __alloc_traits::deallocate(__alloc(), __get_long_pointer(), __get_long_cap());
 }
@@ -39109,12 +35690,9 @@ struct _LIBCPP_TEMPLATE_VIS
     { return __do_string_hash(__val.data(), __val.data() + __val.size()); }
 };
 
-# 4268 "nxdk-dxt/lib/libcxx/include/string" 3
-
-# 4280 "nxdk-dxt/lib/libcxx/include/string" 3
 
 
-# 4316 "nxdk-dxt/lib/libcxx/include/string" 3
+
 
 _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS basic_string<char>)
 _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS basic_string<wchar_t>)
@@ -39124,20 +35702,15 @@ _LIBCPP_EXTERN_TEMPLATE(class _LIBCPP_EXTERN_TEMPLATE_TYPE_VIS basic_string<wcha
 #endif
 #endif /* disabled by -frewrite-includes */
 
-# 4360 "nxdk-dxt/lib/libcxx/include/string" 3
 
 _LIBCPP_END_NAMESPACE_STD
 
 _LIBCPP_POP_MACROS
 
 #endif  // _LIBCPP_STRING
-# 4366 "nxdk-dxt/lib/libcxx/include/string" 3
-# 2 "register_xbox.cpp" 2
 #if 0 /* expanded by -frewrite-includes */
 #include <string.h>
 #endif /* expanded by -frewrite-includes */
-# 2 "register_xbox.cpp"
-# 3 "register_xbox.cpp"
 
 int xbox_register ()
 {
