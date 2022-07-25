@@ -1,9 +1,3 @@
-# 1 "<built-in>" 1
-# 1 "<built-in>" 3
-# 402 "<built-in>" 3
-# 1 "<command line>" 1
-# 1 "<built-in>" 2
-# 1 "sample.cpp" 2
 namespace std { inline namespace __1 { } }
 extern "C" {
 struct _PDCLIB_div_t
@@ -53,46 +47,24 @@ typedef unsigned long long _PDCLIB_uint64_t;
 typedef int _PDCLIB_int_fast8_t;
 typedef unsigned int _PDCLIB_uint_fast8_t;
 
-
-
-
 typedef int _PDCLIB_int_fast16_t;
 typedef unsigned int _PDCLIB_uint_fast16_t;
 
-
-
-
 typedef int _PDCLIB_int_fast32_t;
 typedef unsigned int _PDCLIB_uint_fast32_t;
-
-
-
 
 typedef long _PDCLIB_int_fast64_t;
 typedef unsigned long _PDCLIB_uint_fast64_t;
 typedef int _PDCLIB_ptrdiff_t;
 
-
-
-
-
-
 typedef unsigned int _PDCLIB_size_t;
-
 
 typedef unsigned short _PDCLIB_wchar_t;
 
-
-
 typedef unsigned short _PDCLIB_wint_t;
-
-
 
 typedef long _PDCLIB_intptr_t;
 typedef unsigned long _PDCLIB_uintptr_t;
-
-
-
 
 typedef long long int _PDCLIB_intmax_t;
 typedef unsigned long long int _PDCLIB_uintmax_t;
@@ -101,7 +73,6 @@ struct _PDCLIB_fpos_t
     _PDCLIB_uint64_t offset;
     int status;
 };
-
 
 struct _PDCLIB_file_t
 {
@@ -115,31 +86,20 @@ struct _PDCLIB_file_t
     unsigned char * ungetbuf;
     unsigned int status;
 
-
     _PDCLIB_mtx_t mtx;
 
     char * filename;
     struct _PDCLIB_file_t * next;
 };
 
-
-
-
-
 typedef long _PDCLIB_time_t;
 typedef unsigned int _PDCLIB_clock_t;
-
-
-
-
-
 
 struct _PDCLIB_exitfunc_t
 {
     struct _PDCLIB_exitfunc_t * next;
     void (*func)( void );
 };
-
 
 struct _PDCLIB_status_t
 {
@@ -157,61 +117,31 @@ struct _PDCLIB_status_t
     _PDCLIB_va_list arg;
 };
 
-
-
-
-
-
               _PDCLIB_intmax_t _PDCLIB_atomax( const char * s );
-
 
               const char * _PDCLIB_strtox_prelim( const char * p, char * sign, int * base );
               _PDCLIB_uintmax_t _PDCLIB_strtox_main( const char ** p, unsigned int base, _PDCLIB_uintmax_t error, _PDCLIB_uintmax_t limval, int limdigit, char * sign );
-
 
 extern const char _PDCLIB_digits[];
 extern const char _PDCLIB_Xdigits[];
               const char * _PDCLIB_print( const char * spec, struct _PDCLIB_status_t * status );
               const char * _PDCLIB_scan( const char * spec, struct _PDCLIB_status_t * status );
 
-
               unsigned int _PDCLIB_filemode( const char * mode );
-
-
-
-
-
 
               int _PDCLIB_prepread( struct _PDCLIB_file_t * stream );
 
-
-
-
-
-
               int _PDCLIB_prepwrite( struct _PDCLIB_file_t * stream );
-
 
               void _PDCLIB_closeall( void );
 
-
               int _PDCLIB_is_leap( int year_offset );
-
-
-
-
 
               char * _PDCLIB_load_lines( struct _PDCLIB_file_t * stream, _PDCLIB_size_t lines );
 
-
-
-
               int _PDCLIB_getstream( struct _PDCLIB_file_t * stream );
 
-
-
               void _PDCLIB_setstream( struct _PDCLIB_file_t * stream );
-
 
               char * _PDCLIB_strtok( char * s1, _PDCLIB_size_t * s1max, const char * s2, char ** ptr );
                int * _PDCLIB_errno_func( void );
@@ -260,7 +190,6 @@ struct _PDCLIB_lc_collate_t
 {
     int alloced;
 
-
 };
 
 extern struct _PDCLIB_lc_collate_t _PDCLIB_lc_collate;
@@ -286,7 +215,6 @@ struct _PDCLIB_lc_ctype_t
 
 extern struct _PDCLIB_lc_ctype_t _PDCLIB_lc_ctype;
 
-
 struct _PDCLIB_lc_time_t
 {
     int alloced;
@@ -310,11 +238,7 @@ extern struct _PDCLIB_lc_time_t _PDCLIB_lc_time;
               struct _PDCLIB_lc_time_t * _PDCLIB_load_lc_time( const char * path, const char * locale );
               struct _PDCLIB_lc_messages_t * _PDCLIB_load_lc_messages( const char * path, const char * locale );
 
-
-
 typedef _PDCLIB_ptrdiff_t ptrdiff_t;
-
-
 
 typedef _PDCLIB_size_t size_t;
 }
@@ -323,24 +247,14 @@ namespace std
     typedef decltype(nullptr) nullptr_t;
 }
 
-
-
 namespace std { inline namespace __1 {
 
 using ::ptrdiff_t;
 using ::size_t;
 
-
-
-
-
-
 typedef long double max_align_t;
 
-
 } }
-
-
 
 namespace std
 {
@@ -394,7 +308,6 @@ template <class _T1, class _T2> struct pair;
 template <class _Tp> class reference_wrapper;
 template <class _Tp> struct hash;
 
-
 template <class _Tp, _Tp __v>
 struct integral_constant
 {
@@ -404,7 +317,6 @@ struct integral_constant
   __attribute__ ((__exclude_from_explicit_instantiation__))
   constexpr operator value_type() const noexcept {return value;}
 
-
   __attribute__ ((__exclude_from_explicit_instantiation__))
   constexpr value_type operator ()() const noexcept {return value;}
 
@@ -413,12 +325,8 @@ struct integral_constant
 template <class _Tp, _Tp __v>
 constexpr const _Tp integral_constant<_Tp, __v>::value;
 
-
-
 template <bool __b>
 using bool_constant = integral_constant<bool, __b>;
-
-
 
 typedef bool_constant<(true)> true_type;
 typedef bool_constant<(false)> false_type;
@@ -474,8 +382,6 @@ using _SecondType __attribute__((nodebug)) = typename _MetaBase<(sizeof...(_Args
 template <template <class...> class _Func, class ..._Args>
 struct _Lazy : _Func<_Args...> {};
 
-
-
 template <template <class...> class _Templ, class ..._Args, class = _Templ<_Args...> >
 true_type __sfinae_test_impl(int);
 template <template <class...> class, class ...>
@@ -498,37 +404,24 @@ template <bool _Bp, class _If, class _Then>
 template <class _If, class _Then>
     struct conditional<false, _If, _Then> {typedef _Then type;};
 
-
-
 template <bool _Bp, class _If, class _Then> using conditional_t = typename conditional<_Bp, _If, _Then>::type;
-
 
 template <bool, class _Tp = void> struct enable_if {};
 template <class _Tp> struct enable_if<true, _Tp> {typedef _Tp type;};
 
-
-
 template <bool _Bp, class _Tp = void> using enable_if_t = typename enable_if<_Bp, _Tp>::type;
-
-
-
 
 template <class _Tp, class _Up> struct is_same : public false_type {};
 template <class _Tp> struct is_same<_Tp, _Tp> : public true_type {};
-
-
 
 template <class _Tp, class _Up>
 inline constexpr bool is_same_v
     = is_same<_Tp, _Up>::value;
 
-
 template <class _Tp, class _Up>
 using _IsSame = _BoolConstant<
 
     __is_same(_Tp, _Up)
-
-
 
 >;
 
@@ -537,11 +430,7 @@ using _IsNotSame = _BoolConstant<
 
     !__is_same(_Tp, _Up)
 
-
-
 >;
-
-
 
 template <class _Tp>
 inline constexpr
@@ -552,68 +441,38 @@ addressof(_Tp& __x) noexcept
     return __builtin_addressof(__x);
 }
 
-
-
-
 template <class _Tp> _Tp* addressof(const _Tp&&) noexcept = delete;
-
 
 struct __two {char __lx[2];};
 
-
-
-
-
 template <class _Tp> struct is_const : public false_type {};
 template <class _Tp> struct is_const<_Tp const> : public true_type {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_const_v
     = is_const<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_volatile : public false_type {};
 template <class _Tp> struct is_volatile<_Tp volatile> : public true_type {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_volatile_v
     = is_volatile<_Tp>::value;
 
-
-
-
 template <class _Tp> struct remove_const {typedef _Tp type;};
 template <class _Tp> struct remove_const<const _Tp> {typedef _Tp type;};
 
-
 template <class _Tp> using remove_const_t = typename remove_const<_Tp>::type;
-
-
-
 
 template <class _Tp> struct remove_volatile {typedef _Tp type;};
 template <class _Tp> struct remove_volatile<volatile _Tp> {typedef _Tp type;};
 
-
 template <class _Tp> using remove_volatile_t = typename remove_volatile<_Tp>::type;
-
-
-
 
 template <class _Tp> struct remove_cv
 {typedef typename remove_volatile<typename remove_const<_Tp>::type>::type type;};
 
-
 template <class _Tp> using remove_cv_t = typename remove_cv<_Tp>::type;
-
-
-
 
 template <class _Tp> struct __libcpp_is_void : public false_type {};
 template <> struct __libcpp_is_void<void> : public true_type {};
@@ -621,14 +480,9 @@ template <> struct __libcpp_is_void<void> : public true_type {};
 template <class _Tp> struct is_void
     : public __libcpp_is_void<typename remove_cv<_Tp>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_void_v
     = is_void<_Tp>::value;
-
-
-
 
 template <class _Tp> struct __is_nullptr_t_impl : public false_type {};
 template <> struct __is_nullptr_t_impl<nullptr_t> : public true_type {};
@@ -636,20 +490,12 @@ template <> struct __is_nullptr_t_impl<nullptr_t> : public true_type {};
 template <class _Tp> struct __is_nullptr_t
     : public __is_nullptr_t_impl<typename remove_cv<_Tp>::type> {};
 
-
-
 template <class _Tp> struct is_null_pointer
     : public __is_nullptr_t_impl<typename remove_cv<_Tp>::type> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_null_pointer_v
     = is_null_pointer<_Tp>::value;
-
-
-
-
 
 template <class _Tp> struct __libcpp_is_integral : public false_type {};
 template <> struct __libcpp_is_integral<bool> : public true_type {};
@@ -657,9 +503,6 @@ template <> struct __libcpp_is_integral<char> : public true_type {};
 template <> struct __libcpp_is_integral<signed char> : public true_type {};
 template <> struct __libcpp_is_integral<unsigned char> : public true_type {};
 template <> struct __libcpp_is_integral<wchar_t> : public true_type {};
-
-
-
 
 template <> struct __libcpp_is_integral<char16_t> : public true_type {};
 template <> struct __libcpp_is_integral<char32_t> : public true_type {};
@@ -673,21 +516,12 @@ template <> struct __libcpp_is_integral<unsigned long> : public true_type {};
 template <> struct __libcpp_is_integral<long long> : public true_type {};
 template <> struct __libcpp_is_integral<unsigned long long> : public true_type {};
 
-
-
-
-
 template <class _Tp> struct is_integral
     : public __libcpp_is_integral<typename remove_cv<_Tp>::type> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_integral_v
     = is_integral<_Tp>::value;
-
-
-
 
 template <class _Tp> struct __libcpp_is_floating_point : public false_type {};
 template <> struct __libcpp_is_floating_point<float> : public true_type {};
@@ -697,14 +531,9 @@ template <> struct __libcpp_is_floating_point<long double> : public true_type {}
 template <class _Tp> struct is_floating_point
     : public __libcpp_is_floating_point<typename remove_cv<_Tp>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_floating_point_v
     = is_floating_point<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_array
     : public false_type {};
@@ -713,14 +542,9 @@ template <class _Tp> struct is_array<_Tp[]>
 template <class _Tp, size_t _Np> struct is_array<_Tp[_Np]>
     : public true_type {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_array_v
     = is_array<_Tp>::value;
-
-
-
 
 template <class _Tp> struct __libcpp_is_pointer : public false_type {};
 template <class _Tp> struct __libcpp_is_pointer<_Tp*> : public true_type {};
@@ -729,14 +553,9 @@ template <class _Tp> struct __libcpp_remove_objc_qualifiers { typedef _Tp type; 
 template <class _Tp> struct is_pointer
     : public __libcpp_is_pointer<typename __libcpp_remove_objc_qualifiers<typename remove_cv<_Tp>::type>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_pointer_v
     = is_pointer<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_lvalue_reference : public false_type {};
 template <class _Tp> struct is_lvalue_reference<_Tp&> : public true_type {};
@@ -747,8 +566,6 @@ template <class _Tp> struct is_rvalue_reference<_Tp&&> : public true_type {};
 template <class _Tp> struct is_reference : public false_type {};
 template <class _Tp> struct is_reference<_Tp&> : public true_type {};
 template <class _Tp> struct is_reference<_Tp&&> : public true_type {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_reference_v
@@ -762,48 +579,29 @@ template <class _Tp>
 inline constexpr bool is_rvalue_reference_v
     = is_rvalue_reference<_Tp>::value;
 
-
-
-
-
-
 template <class _Tp> struct is_union
     : public integral_constant<bool, __is_union(_Tp)> {};
 template <class _Tp>
 inline constexpr bool is_union_v
     = is_union<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_class
     : public integral_constant<bool, __is_class(_Tp)> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_class_v
     = is_class<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_function
     : public _BoolConstant<
 
     __is_function(_Tp)
 
-
-
     > {};
-
-
-
 
 template <class _Tp>
 inline constexpr bool is_function_v
     = is_function<_Tp>::value;
-
 
 template <class _Tp> struct __libcpp_is_member_pointer {
   enum {
@@ -820,80 +618,50 @@ template <class _Tp, class _Up> struct __libcpp_is_member_pointer<_Tp _Up::*> {
   };
 };
 
-
 template <class _Tp> struct is_member_function_pointer
     : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_func > {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_member_function_pointer_v
     = is_member_function_pointer<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_member_pointer
  : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_member > {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_member_pointer_v
     = is_member_pointer<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_member_object_pointer
     : public _BoolConstant< __libcpp_is_member_pointer<typename remove_cv<_Tp>::type>::__is_obj > {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_member_object_pointer_v
     = is_member_object_pointer<_Tp>::value;
 
-
-
 template <class _Tp> struct is_enum
     : public integral_constant<bool, __is_enum(_Tp)> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_enum_v
     = is_enum<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_arithmetic
     : public integral_constant<bool, is_integral<_Tp>::value ||
                                      is_floating_point<_Tp>::value> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_arithmetic_v
     = is_arithmetic<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_fundamental
     : public integral_constant<bool, is_void<_Tp>::value ||
                                      __is_nullptr_t<_Tp>::value ||
                                      is_arithmetic<_Tp>::value> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_fundamental_v
     = is_fundamental<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_scalar
     : public integral_constant<bool, is_arithmetic<_Tp>::value ||
@@ -904,14 +672,9 @@ template <class _Tp> struct is_scalar
 
 template <> struct is_scalar<nullptr_t> : public true_type {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_scalar_v
     = is_scalar<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_object
     : public integral_constant<bool, is_scalar<_Tp>::value ||
@@ -919,27 +682,16 @@ template <class _Tp> struct is_object
                                      is_union<_Tp>::value ||
                                      is_class<_Tp>::value > {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_object_v
     = is_object<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_compound
     : public integral_constant<bool, !is_fundamental<_Tp>::value> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_compound_v
     = is_compound<_Tp>::value;
-
-
-
-
 
 struct __is_referenceable_impl {
     template <class _Tp> static _Tp& __test(int);
@@ -950,51 +702,29 @@ template <class _Tp>
 struct __is_referenceable : integral_constant<bool,
     _IsNotSame<decltype(__is_referenceable_impl::__test<_Tp>(0)), __two>::value> {};
 
-
-
-
 template <class _Tp> struct add_const {
   typedef __attribute__((nodebug)) const _Tp type;
 };
 
-
-
 template <class _Tp> using add_const_t = typename add_const<_Tp>::type;
-
-
-
 
 template <class _Tp> struct add_volatile {
   typedef __attribute__((nodebug)) volatile _Tp type;
 };
 
-
-
 template <class _Tp> using add_volatile_t = typename add_volatile<_Tp>::type;
-
-
 
 template <class _Tp> struct add_cv {
   typedef __attribute__((nodebug)) const volatile _Tp type;
 };
 
-
-
 template <class _Tp> using add_cv_t = typename add_cv<_Tp>::type;
-
-
-
 
 template <class _Tp> struct remove_reference {typedef __attribute__((nodebug)) _Tp type;};
 template <class _Tp> struct remove_reference<_Tp&> {typedef __attribute__((nodebug)) _Tp type;};
 template <class _Tp> struct remove_reference<_Tp&&> {typedef __attribute__((nodebug)) _Tp type;};
 
-
-
 template <class _Tp> using remove_reference_t = typename remove_reference<_Tp>::type;
-
-
-
 
 template <class _Tp, bool = __is_referenceable<_Tp>::value> struct __add_lvalue_reference_impl { typedef __attribute__((nodebug)) _Tp type; };
 template <class _Tp > struct __add_lvalue_reference_impl<_Tp, true> { typedef __attribute__((nodebug)) _Tp& type; };
@@ -1002,10 +732,7 @@ template <class _Tp > struct __add_lvalue_reference_impl<_Tp, true> { typedef __
 template <class _Tp> struct add_lvalue_reference
 {typedef __attribute__((nodebug)) typename __add_lvalue_reference_impl<_Tp>::type type;};
 
-
-
 template <class _Tp> using add_lvalue_reference_t = typename add_lvalue_reference<_Tp>::type;
-
 
 template <class _Tp, bool = __is_referenceable<_Tp>::value> struct __add_rvalue_reference_impl { typedef __attribute__((nodebug)) _Tp type; };
 template <class _Tp > struct __add_rvalue_reference_impl<_Tp, true> { typedef __attribute__((nodebug)) _Tp&& type; };
@@ -1013,10 +740,7 @@ template <class _Tp > struct __add_rvalue_reference_impl<_Tp, true> { typedef __
 template <class _Tp> struct add_rvalue_reference
 {typedef __attribute__((nodebug)) typename __add_rvalue_reference_impl<_Tp>::type type;};
 
-
-
 template <class _Tp> using add_rvalue_reference_t = typename add_rvalue_reference<_Tp>::type;
-
 
 template <class _Tp> _Tp&& __declval(int);
 template <class _Tp> _Tp __declval(long);
@@ -1024,8 +748,6 @@ template <class _Tp> _Tp __declval(long);
 template <class _Tp>
 decltype(std::__1::__declval<_Tp>(0))
 declval() noexcept;
-
-
 
 template <class _Tp>
 struct __uncvref {
@@ -1037,24 +759,17 @@ struct __unconstref {
     typedef __attribute__((nodebug)) typename remove_const<typename remove_reference<_Tp>::type>::type type;
 };
 
-
 template <class _Tp>
 using __uncvref_t __attribute__((nodebug)) = typename __uncvref<_Tp>::type;
-
-
-
 
 template <class _Tp, class _Up>
 struct __is_same_uncvref : _IsSame<typename __uncvref<_Tp>::type,
                                    typename __uncvref<_Up>::type> {};
 
-
 struct __any
 {
     __any(...);
 };
-
-
 
 template <class _Tp> struct remove_pointer {typedef __attribute__((nodebug)) _Tp type;};
 template <class _Tp> struct remove_pointer<_Tp*> {typedef __attribute__((nodebug)) _Tp type;};
@@ -1062,12 +777,7 @@ template <class _Tp> struct remove_pointer<_Tp* const> {typedef __attribute__((n
 template <class _Tp> struct remove_pointer<_Tp* volatile> {typedef __attribute__((nodebug)) _Tp type;};
 template <class _Tp> struct remove_pointer<_Tp* const volatile> {typedef __attribute__((nodebug)) _Tp type;};
 
-
-
 template <class _Tp> using remove_pointer_t = typename remove_pointer<_Tp>::type;
-
-
-
 
 template <class _Tp,
         bool = __is_referenceable<_Tp>::value ||
@@ -1080,12 +790,7 @@ template <class _Tp> struct __add_pointer_impl<_Tp, false>
 template <class _Tp> struct add_pointer
     {typedef __attribute__((nodebug)) typename __add_pointer_impl<_Tp>::type type;};
 
-
-
 template <class _Tp> using add_pointer_t = typename add_pointer<_Tp>::type;
-
-
-
 
 template <class _Tp, bool = is_integral<_Tp>::value>
 struct __libcpp_is_signed_impl : public bool_constant<(_Tp(-1) < _Tp(0))> {};
@@ -1100,14 +805,9 @@ template <class _Tp> struct __libcpp_is_signed<_Tp, false> : public false_type {
 
 template <class _Tp> struct is_signed : public __libcpp_is_signed<_Tp> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_signed_v
     = is_signed<_Tp>::value;
-
-
-
 
 template <class _Tp, bool = is_integral<_Tp>::value>
 struct __libcpp_is_unsigned_impl : public bool_constant<(_Tp(0) < _Tp(-1))> {};
@@ -1122,14 +822,9 @@ template <class _Tp> struct __libcpp_is_unsigned<_Tp, false> : public false_type
 
 template <class _Tp> struct is_unsigned : public __libcpp_is_unsigned<_Tp> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_unsigned_v
     = is_unsigned<_Tp>::value;
-
-
-
 
 template <class _Tp> struct rank
     : public integral_constant<size_t, 0> {};
@@ -1138,14 +833,9 @@ template <class _Tp> struct rank<_Tp[]>
 template <class _Tp, size_t _Np> struct rank<_Tp[_Np]>
     : public integral_constant<size_t, rank<_Tp>::value + 1> {};
 
-
-
 template <class _Tp>
 inline constexpr size_t rank_v
     = rank<_Tp>::value;
-
-
-
 
 template <class _Tp, unsigned _Ip = 0> struct extent
     : public integral_constant<size_t, 0> {};
@@ -1158,14 +848,9 @@ template <class _Tp, size_t _Np> struct extent<_Tp[_Np], 0>
 template <class _Tp, size_t _Np, unsigned _Ip> struct extent<_Tp[_Np], _Ip>
     : public integral_constant<size_t, extent<_Tp, _Ip-1>::value> {};
 
-
-
 template <class _Tp, unsigned _Ip = 0>
 inline constexpr size_t extent_v
     = extent<_Tp, _Ip>::value;
-
-
-
 
 template <class _Tp> struct remove_extent
     {typedef _Tp type;};
@@ -1174,12 +859,7 @@ template <class _Tp> struct remove_extent<_Tp[]>
 template <class _Tp, size_t _Np> struct remove_extent<_Tp[_Np]>
     {typedef _Tp type;};
 
-
-
 template <class _Tp> using remove_extent_t = typename remove_extent<_Tp>::type;
-
-
-
 
 template <class _Tp> struct remove_all_extents
     {typedef _Tp type;};
@@ -1188,12 +868,7 @@ template <class _Tp> struct remove_all_extents<_Tp[]>
 template <class _Tp, size_t _Np> struct remove_all_extents<_Tp[_Np]>
     {typedef typename remove_all_extents<_Tp>::type type;};
 
-
-
 template <class _Tp> using remove_all_extents_t = typename remove_all_extents<_Tp>::type;
-
-
-
 
 template <class _Up, bool>
 struct __decay {
@@ -1225,94 +900,47 @@ public:
     typedef __attribute__((nodebug)) typename __decay<_Up, __is_referenceable<_Up>::value>::type type;
 };
 
-
-
 template <class _Tp> using decay_t = typename decay<_Tp>::type;
-
-
-
 
 template <class _Tp> struct is_abstract
     : public integral_constant<bool, __is_abstract(_Tp)> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_abstract_v
     = is_abstract<_Tp>::value;
 
-
-
-
 template <class _Tp> struct
 __libcpp_is_final : public integral_constant<bool, __is_final(_Tp)> {};
 
-
-
 template <class _Tp> struct
 is_final : public integral_constant<bool, __is_final(_Tp)> {};
-
-
-
 
 template <class _Tp>
 inline constexpr bool is_final_v
     = is_final<_Tp>::value;
 
-
-
-
-
-
 template <class _Tp> struct
 is_aggregate : public integral_constant<bool, __is_aggregate(_Tp)> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_aggregate_v
     = is_aggregate<_Tp>::value;
 
-
-
-
-
-
 template <class _Bp, class _Dp>
 struct is_base_of
     : public integral_constant<bool, __is_base_of(_Bp, _Dp)> {};
-
-
 
 template <class _Bp, class _Dp>
 inline constexpr bool is_base_of_v
     = is_base_of<_Bp, _Dp>::value;
 
-
-
-
-
-
-
 template <class _T1, class _T2> struct is_convertible
     : public integral_constant<bool, __is_convertible_to(_T1, _T2) &&
                                      !is_abstract<_T2>::value> {};
 
-
-
-
-
-
-
 template <class _From, class _To>
 inline constexpr bool is_convertible_v
     = is_convertible<_From, _To>::value;
-
-
-
-
-
-
 
 template <class _Tp>
 struct is_empty
@@ -1321,12 +949,6 @@ template <class _Tp>
 inline constexpr bool is_empty_v
     = is_empty<_Tp>::value;
 
-
-
-
-
-
-
 template <class _Tp>
 struct is_polymorphic
     : public integral_constant<bool, __is_polymorphic(_Tp)> {};
@@ -1334,50 +956,26 @@ template <class _Tp>
 inline constexpr bool is_polymorphic_v
     = is_polymorphic<_Tp>::value;
 
-
-
-
-
-
-
 template <class _Tp> struct has_virtual_destructor
     : public integral_constant<bool, __has_virtual_destructor(_Tp)> {};
 template <class _Tp>
 inline constexpr bool has_virtual_destructor_v
     = has_virtual_destructor<_Tp>::value;
 
-
-
-
-
-
-
 template <class _Tp> struct has_unique_object_representations
     : public integral_constant<bool,
        __has_unique_object_representations(remove_cv_t<remove_all_extents_t<_Tp>>)> {};
-
-
 
 template <class _Tp>
 inline constexpr bool has_unique_object_representations_v
     = has_unique_object_representations<_Tp>::value;
 
-
-
-
-
-
 template <class _Tp> struct alignment_of
     : public integral_constant<size_t, alignof(_Tp)> {};
-
-
 
 template <class _Tp>
 inline constexpr size_t alignment_of_v
     = alignment_of<_Tp>::value;
-
-
-
 
 template <class _Hp, class _Tp>
 struct __type_list
@@ -1475,8 +1073,6 @@ struct aligned_storage
     };
 };
 
-
-
 template <size_t _Len, size_t _Align = __find_max_align<__all_types, _Len>::value>
     using aligned_storage_t = typename aligned_storage<_Len, _Align>::type;
 template <size_t _Len>struct aligned_storage<_Len, 0x1>{ struct alignas(0x1) type { unsigned char __lx[(_Len + 0x1 - 1)/0x1 * 0x1]; };};
@@ -1519,10 +1115,7 @@ struct aligned_union
     typedef typename aligned_storage<__len, alignment_value>::type type;
 };
 
-
-
 template <size_t _Len, class ..._Types> using aligned_union_t = typename aligned_union<_Len, _Types...>::type;
-
 
 template <class _Tp>
 struct __numeric_type
@@ -1548,8 +1141,6 @@ struct __numeric_type<void>
 {
    static const bool value = true;
 };
-
-
 
 template <class _A1, class _A2 = void, class _A3 = void,
           bool = __numeric_type<_A1>::value &&
@@ -1595,8 +1186,6 @@ public:
 template <class _A1, class _A2 = void, class _A3 = void>
 class __promote : public __promote_imp<_A1, _A2, _A3> {};
 
-
-
 typedef
     __type_list<signed char,
     __type_list<signed short,
@@ -1604,11 +1193,7 @@ typedef
     __type_list<signed long,
     __type_list<signed long long,
 
-
-
     __nat
-
-
 
     > > > > > __signed_types;
 
@@ -1619,11 +1204,7 @@ typedef
     __type_list<unsigned long,
     __type_list<unsigned long long,
 
-
-
     __nat
-
-
 
     > > > > > __unsigned_types;
 
@@ -1709,20 +1290,13 @@ template <> struct __make_signed<unsigned long, true> {typedef long type;};
 template <> struct __make_signed< signed long long, true> {typedef long long type;};
 template <> struct __make_signed<unsigned long long, true> {typedef long long type;};
 
-
-
-
-
 template <class _Tp>
 struct make_signed
 {
     typedef typename __apply_cv<_Tp, typename __make_signed<typename remove_cv<_Tp>::type>::type>::type type;
 };
 
-
-
 template <class _Tp> using make_signed_t = typename make_signed<_Tp>::type;
-
 
 template <class _Tp, bool = is_integral<_Tp>::value || is_enum<_Tp>::value>
 struct __make_unsigned {};
@@ -1743,20 +1317,13 @@ template <> struct __make_unsigned<unsigned long, true> {typedef unsigned long t
 template <> struct __make_unsigned< signed long long, true> {typedef unsigned long long type;};
 template <> struct __make_unsigned<unsigned long long, true> {typedef unsigned long long type;};
 
-
-
-
-
 template <class _Tp>
 struct make_unsigned
 {
     typedef typename __apply_cv<_Tp, typename __make_unsigned<typename remove_cv<_Tp>::type>::type>::type type;
 };
 
-
-
 template <class _Tp> using make_unsigned_t = typename make_unsigned<_Tp>::type;
-
 
 template <class _Tp, class _Up, class = void>
 struct __common_type2_imp {};
@@ -1774,10 +1341,6 @@ struct __common_type2_imp<_Tp, _Up,
 
 template <class, class = void>
 struct __common_type_impl {};
-
-
-
-
 
 template <class... Tp>
 struct __common_types;
@@ -1799,18 +1362,12 @@ struct __common_type_impl<
                                         _Vp , _Rest...> > {
 };
 
-
-
 template <>
 struct common_type<> {};
-
-
 
 template <class _Tp>
 struct common_type<_Tp>
     : public common_type<_Tp, _Tp> {};
-
-
 
 template <class _Tp, class _Up>
 struct common_type<_Tp, _Up>
@@ -1821,22 +1378,13 @@ struct common_type<_Tp, _Up>
     >::type
 {};
 
-
-
 template <class _Tp, class _Up, class _Vp , class... _Rest>
 struct
     common_type<_Tp, _Up, _Vp , _Rest...>
     : __common_type_impl<
           __common_types<_Tp, _Up, _Vp , _Rest...> > {};
 
-
-
-
-
 template <class ..._Tp> using common_type_t = typename common_type<_Tp...>::type;
-
-
-
 
 template<typename, typename _Tp> struct __select_2nd { typedef __attribute__((nodebug)) _Tp type; };
 
@@ -1846,7 +1394,6 @@ __is_assignable_test(int);
 
 template <class, class>
 false_type __is_assignable_test(...);
-
 
 template <class _Tp, class _Arg, bool = is_void<_Tp>::value || is_void<_Arg>::value>
 struct __is_assignable_imp
@@ -1862,33 +1409,21 @@ template <class _Tp, class _Arg>
 struct is_assignable
     : public __is_assignable_imp<_Tp, _Arg> {};
 
-
-
 template <class _Tp, class _Arg>
 inline constexpr bool is_assignable_v
     = is_assignable<_Tp, _Arg>::value;
-
-
-
 
 template <class _Tp> struct is_copy_assignable
     : public is_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_copy_assignable_v
     = is_copy_assignable<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_move_assignable
     : public is_assignable<typename add_lvalue_reference<_Tp>::type,
                            typename add_rvalue_reference<_Tp>::type> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_move_assignable_v
@@ -1942,14 +1477,9 @@ template <>
 struct is_destructible<void>
     : public std::__1::false_type {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_destructible_v
     = is_destructible<_Tp>::value;
-
-
-
 
 template <class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -2054,9 +1584,6 @@ struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param..., ...) const volatil
     typedef _Rp _ReturnType;
     typedef _Rp (_FnType) (_Param..., ...);
 };
-
-
-
 
 template <class _Rp, class _Class, class ..._Param>
 struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param...) &, true, false>
@@ -2186,9 +1713,6 @@ struct __member_pointer_traits_imp<_Rp (_Class::*)(_Param..., ...) const volatil
     typedef _Rp (_FnType) (_Param..., ...);
 };
 
-
-
-
 template <class _Rp, class _Class>
 struct __member_pointer_traits_imp<_Rp _Class::*, false, true>
 {
@@ -2203,10 +1727,7 @@ struct __member_pointer_traits
                     is_member_object_pointer<_MP>::value>
 {
 
-
-
 };
-
 
 template <class _DecayedFp>
 struct __member_pointer_class_type {};
@@ -2216,20 +1737,12 @@ struct __member_pointer_class_type<_Ret _ClassType::*> {
   typedef _ClassType type;
 };
 
-
-
 template <class _Callable> class result_of;
-
-
 
 namespace __is_construct
 {
 struct __nat {};
 }
-
-
-
-
 
 template <class _Tp, class ..._Args>
 struct is_constructible
@@ -2239,25 +1752,14 @@ template <class _Tp, class ..._Args>
 inline constexpr bool is_constructible_v
     = is_constructible<_Tp, _Args...>::value;
 
-
-
-
 template <class _Tp>
 struct is_default_constructible
     : public is_constructible<_Tp>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_default_constructible_v
     = is_default_constructible<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp>
 void __test_implicit_default_constructible(_Tp);
@@ -2277,39 +1779,23 @@ struct __is_implicitly_default_constructible<_Tp, decltype(__test_implicit_defau
     : false_type
 { };
 
-
-
-
 template <class _Tp>
 struct is_copy_constructible
     : public is_constructible<_Tp,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_copy_constructible_v
     = is_copy_constructible<_Tp>::value;
-
-
-
 
 template <class _Tp>
 struct is_move_constructible
     : public is_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_move_constructible_v
     = is_move_constructible<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp, class... _Args>
 struct is_trivially_constructible
@@ -2320,50 +1806,29 @@ template <class _Tp, class... _Args>
 inline constexpr bool is_trivially_constructible_v
     = is_trivially_constructible<_Tp, _Args...>::value;
 
-
-
-
 template <class _Tp> struct is_trivially_default_constructible
     : public is_trivially_constructible<_Tp>
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_trivially_default_constructible_v
     = is_trivially_default_constructible<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_trivially_copy_constructible
     : public is_trivially_constructible<_Tp, typename add_lvalue_reference<const _Tp>::type>
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_trivially_copy_constructible_v
     = is_trivially_copy_constructible<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_trivially_move_constructible
     : public is_trivially_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_trivially_move_constructible_v
     = is_trivially_move_constructible<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp, class _Arg>
 struct is_trivially_assignable
@@ -2374,50 +1839,28 @@ template <class _Tp, class _Arg>
 inline constexpr bool is_trivially_assignable_v
     = is_trivially_assignable<_Tp, _Arg>::value;
 
-
-
-
 template <class _Tp> struct is_trivially_copy_assignable
     : public is_trivially_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_trivially_copy_assignable_v
     = is_trivially_copy_assignable<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_trivially_move_assignable
     : public is_trivially_assignable<typename add_lvalue_reference<_Tp>::type,
                                      typename add_rvalue_reference<_Tp>::type>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_trivially_move_assignable_v
     = is_trivially_move_assignable<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp> struct is_trivially_destructible
     : public integral_constant<bool, __is_trivially_destructible(_Tp)> {};
 template <class _Tp>
 inline constexpr bool is_trivially_destructible_v
     = is_trivially_destructible<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp, class... _Args>
 struct is_nothrow_constructible
@@ -2426,50 +1869,29 @@ template <class _Tp, class ..._Args>
 inline constexpr bool is_nothrow_constructible_v
     = is_nothrow_constructible<_Tp, _Args...>::value;
 
-
-
-
 template <class _Tp> struct is_nothrow_default_constructible
     : public is_nothrow_constructible<_Tp>
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_nothrow_default_constructible_v
     = is_nothrow_default_constructible<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_nothrow_copy_constructible
     : public is_nothrow_constructible<_Tp,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_nothrow_copy_constructible_v
     = is_nothrow_copy_constructible<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_nothrow_move_constructible
     : public is_nothrow_constructible<_Tp, typename add_rvalue_reference<_Tp>::type>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_nothrow_move_constructible_v
     = is_nothrow_move_constructible<_Tp>::value;
-
-
-
-
-
-
 
 template <class _Tp, class _Arg>
 struct is_nothrow_assignable
@@ -2478,38 +1900,22 @@ template <class _Tp, class _Arg>
 inline constexpr bool is_nothrow_assignable_v
     = is_nothrow_assignable<_Tp, _Arg>::value;
 
-
-
-
 template <class _Tp> struct is_nothrow_copy_assignable
     : public is_nothrow_assignable<typename add_lvalue_reference<_Tp>::type,
                   typename add_lvalue_reference<typename add_const<_Tp>::type>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_nothrow_copy_assignable_v
     = is_nothrow_copy_assignable<_Tp>::value;
-
-
-
 
 template <class _Tp> struct is_nothrow_move_assignable
     : public is_nothrow_assignable<typename add_lvalue_reference<_Tp>::type,
                                      typename add_rvalue_reference<_Tp>::type>
     {};
 
-
-
 template <class _Tp>
 inline constexpr bool is_nothrow_move_assignable_v
     = is_nothrow_move_assignable<_Tp>::value;
-
-
-
-
-
-
 
 template <bool, class _Tp> struct __libcpp_is_nothrow_destructible;
 
@@ -2552,96 +1958,54 @@ template <class _Tp>
 inline constexpr bool is_nothrow_destructible_v
     = is_nothrow_destructible<_Tp>::value;
 
-
-
-
-
-
-
 template <class _Tp> struct is_pod
     : public integral_constant<bool, __is_pod(_Tp)> {};
 template <class _Tp>
 inline constexpr bool is_pod_v
     = is_pod<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_literal_type
     : public integral_constant<bool, __is_literal_type(_Tp)>
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_literal_type_v
     = is_literal_type<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_standard_layout
-
 
     : public integral_constant<bool, __is_standard_layout(_Tp)>
 
-
-
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_standard_layout_v
     = is_standard_layout<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_trivially_copyable
-
 
     : public integral_constant<bool, __is_trivially_copyable(_Tp)>
 
-
-
-
-
-
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_trivially_copyable_v
     = is_trivially_copyable<_Tp>::value;
 
-
-
-
 template <class _Tp> struct is_trivial
-
 
     : public integral_constant<bool, __is_trivial(_Tp)>
 
-
-
-
     {};
-
-
 
 template <class _Tp>
 inline constexpr bool is_trivial_v
     = is_trivial<_Tp>::value;
 
-
 template <class _Tp> struct __is_reference_wrapper_impl : public false_type {};
 template <class _Tp> struct __is_reference_wrapper_impl<reference_wrapper<_Tp> > : public true_type {};
 template <class _Tp> struct __is_reference_wrapper
     : public __is_reference_wrapper_impl<typename remove_cv<_Tp>::type> {};
-
-
 
 template <class _Fp, class _A0,
          class _DecayFp = typename decay<_Fp>::type,
@@ -2708,8 +2072,6 @@ auto __invoke(__any, _Args&& ...__args) -> __nat;
 template <class ..._Args>
 auto __invoke_constexpr(__any, _Args&& ...__args) -> __nat;
 
-
-
 template <class _Fp, class _A0, class ..._Args,
           class = __enable_if_bullet1<_Fp, _A0>>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -2752,8 +2114,6 @@ constexpr auto
 __invoke_constexpr(_Fp&& __f, _A0&& __a0, _Args&& ...__args)
 noexcept(noexcept(((*std::__1::forward<_A0>(__a0)).*__f)(std::__1::forward<_Args>(__args)...))) -> decltype(((*std::__1::forward<_A0>(__a0)).*__f)(std::__1::forward<_Args>(__args)...)) { return ((*std::__1::forward<_A0>(__a0)).*__f)(std::__1::forward<_Args>(__args)...); }
 
-
-
 template <class _Fp, class _A0,
           class = __enable_if_bullet4<_Fp, _A0>>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -2795,8 +2155,6 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr auto
 __invoke_constexpr(_Fp&& __f, _A0&& __a0)
 noexcept(noexcept((*std::__1::forward<_A0>(__a0)).*__f)) -> decltype((*std::__1::forward<_A0>(__a0)).*__f) { return (*std::__1::forward<_A0>(__a0)).*__f; }
-
-
 
 template <class _Fp, class ..._Args>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -2810,9 +2168,6 @@ constexpr auto
 __invoke_constexpr(_Fp&& __f, _Args&& ...__args)
 noexcept(noexcept(std::__1::forward<_Fp>(__f)(std::__1::forward<_Args>(__args)...))) -> decltype(std::__1::forward<_Fp>(__f)(std::__1::forward<_Args>(__args)...)) { return std::__1::forward<_Fp>(__f)(std::__1::forward<_Args>(__args)...); }
 
-
-
-
 template <class _Ret, class _Fp, class ..._Args>
 struct __invokable_r
 {
@@ -2821,8 +2176,6 @@ struct __invokable_r
     std::__1::__invoke(std::__1::declval<_XFp>(), std::__1::declval<_XArgs>()...));
   template <class _XFp, class ..._XArgs>
   static __nat __try_call(...);
-
-
 
   using _Result = decltype(__try_call<_Fp, _Args...>(0));
 
@@ -2888,23 +2241,13 @@ struct __invoke_of
 {
 };
 
-
-
 template <class _Fp, class ..._Args>
 class result_of<_Fp(_Args...)>
     : public __invoke_of<_Fp, _Args...>
 {
 };
 
-
-
 template <class _Tp> using result_of_t = typename result_of<_Tp>::type;
-
-
-
-
-
-
 
 template <class _Fn, class... _Args>
 struct invoke_result
@@ -2914,8 +2257,6 @@ struct invoke_result
 
 template <class _Fn, class... _Args>
 using invoke_result_t = typename invoke_result<_Fn, _Args...>::type;
-
-
 
 template <class _Fn, class ..._Args>
 struct is_invocable
@@ -2933,8 +2274,6 @@ template <class _Ret, class _Fn, class ..._Args>
 inline constexpr bool is_invocable_r_v
     = is_invocable_r<_Ret, _Fn, _Args...>::value;
 
-
-
 template <class _Fn, class ..._Args>
 struct is_nothrow_invocable
     : integral_constant<bool, __nothrow_invokable<_Fn, _Args...>::value> {};
@@ -2951,14 +2290,8 @@ template <class _Ret, class _Fn, class ..._Args>
 inline constexpr bool is_nothrow_invocable_r_v
     = is_nothrow_invocable_r<_Ret, _Fn, _Args...>::value;
 
-
-
-
-
 template <class _Tp> struct __is_swappable;
 template <class _Tp> struct __is_nothrow_swappable;
-
-
 
 template <class _ForwardIterator1, class _ForwardIterator2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -2973,9 +2306,6 @@ typename enable_if
     is_move_constructible<_Tp>::value &&
     is_move_assignable<_Tp>::value
 >::type
-
-
-
 
 swap(_Tp& __x, _Tp& __y) noexcept(is_nothrow_move_constructible<_Tp>::value && is_nothrow_move_assignable<_Tp>::value)
 
@@ -3005,8 +2335,6 @@ swap_ranges(_ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardItera
     return __first2;
 }
 
-
-
 template <class _ForwardIterator1, class _ForwardIterator2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 void
@@ -3018,11 +2346,8 @@ iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
     swap(*__a, *__b);
 }
 
-
-
 namespace __detail
 {
-
 
 template <class _Tp, class _Up = _Tp,
           bool _NotVoid = !is_void<_Tp>::value && !is_void<_Up>::value>
@@ -3033,7 +2358,6 @@ struct __swappable_with
     __test_swap(int);
     template <class, class>
     static __nat __test_swap(long);
-
 
     typedef decltype((__test_swap<_Tp, _Up>(0))) __swap1;
     typedef decltype((__test_swap<_Up, _Tp>(0))) __swap2;
@@ -3051,8 +2375,6 @@ struct __nothrow_swappable_with {
 
       noexcept(swap(std::__1::declval<_Tp>(), std::__1::declval<_Up>()))
   && noexcept(swap(std::__1::declval<_Up>(), std::__1::declval<_Tp>()));
-
-
 
 };
 
@@ -3072,9 +2394,6 @@ struct __is_nothrow_swappable
     : public integral_constant<bool, __detail::__nothrow_swappable_with<_Tp&>::value>
 {
 };
-
-
-
 
 template <class _Tp, class _Up>
 struct is_swappable_with
@@ -3128,8 +2447,6 @@ template <class _Tp>
 inline constexpr bool is_nothrow_swappable_v
     = is_nothrow_swappable<_Tp>::value;
 
-
-
 template <class _Tp, bool = is_enum<_Tp>::value> struct __underlying_type_impl;
 
 template <class _Tp>
@@ -3144,11 +2461,7 @@ struct __underlying_type_impl<_Tp, true>
 template <class _Tp>
 struct underlying_type : __underlying_type_impl<_Tp, is_enum<_Tp>::value> {};
 
-
-
 template <class _Tp> using underlying_type_t = typename underlying_type<_Tp>::type;
-
-
 
 template <class _Tp, bool = is_enum<_Tp>::value>
 struct __sfinae_underlying_type
@@ -3187,8 +2500,6 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 typename __sfinae_underlying_type<_Tp>::__promoted_type
 __convert_to_integral(_Tp __val) { return __val; }
 
-
-
 template <class _Tp>
 struct __has_operator_addressof_member_imp
 {
@@ -3219,11 +2530,6 @@ struct __has_operator_addressof
                                   || __has_operator_addressof_free_imp<_Tp>::value>
 {};
 
-
-
-
-
-
 template <class...> using void_t = void;
 
 template <class... _Args>
@@ -3244,9 +2550,6 @@ template<class _Tp>
 inline constexpr bool negation_v
     = negation<_Tp>::value;
 
-
-
-
 struct __extract_key_fail_tag {};
 struct __extract_key_self_tag {};
 struct __extract_key_first_tag {};
@@ -3262,15 +2565,10 @@ struct __can_extract_key<_Pair, _Key, pair<_First, _Second>>
     : conditional<_IsSame<typename remove_const<_First>::type, _Key>::value,
                   __extract_key_first_tag, __extract_key_fail_tag>::type {};
 
-
-
-
 template <class _ValTy, class _Key, class _ContainerValueTy,
           class _RawValTy = typename __unconstref<_ValTy>::type>
 struct __can_extract_map_key
     : integral_constant<bool, _IsSame<_RawValTy, _Key>::value> {};
-
-
 
 template <class _ValTy, class _Key, class _RawValTy>
 struct __can_extract_map_key<_ValTy, _Key, _Key, _RawValTy>
@@ -3278,16 +2576,10 @@ struct __can_extract_map_key<_ValTy, _Key, _Key, _RawValTy>
 inline constexpr
 bool __libcpp_is_constant_evaluated() noexcept { return __builtin_is_constant_evaluated(); }
 
-
-
-
-
 template <class _CharT>
 using _IsCharLikeType = _And<is_standard_layout<_CharT>, is_trivial<_CharT> >;
 
 } }
-
-
 
 namespace std
 {
@@ -3318,8 +2610,6 @@ template <class _Integer>
 }
 namespace std
 {
-
-
 
 template<class _Ep>
 class initializer_list
@@ -3377,131 +2667,50 @@ end(initializer_list<_Ep> __il) noexcept
     return __il.end();
 }
 
-
-
 }
 extern "C" {
                void * memcpy( void * s1, const void * s2, size_t n );
 
-
-
-
-
                void * memmove( void * s1, const void * s2, size_t n );
-
-
-
-
 
                char * strcpy( char * s1, const char * s2 );
                char * strncpy( char * s1, const char * s2, size_t n );
                char * strcat( char * s1, const char * s2 );
 
-
-
-
-
-
-
                char * strncat( char * s1, const char * s2, size_t n );
 
-
-
-
-
-
-
                int memcmp( const void * s1, const void * s2, size_t n );
-
-
-
-
 
                int strcmp( const char * s1, const char * s2 );
                int strcoll( const char * s1, const char * s2 );
 
-
-
-
-
-
                int strncmp( const char * s1, const char * s2, size_t n );
-
-
-
-
-
 
                size_t strxfrm( char * s1, const char * s2, size_t n );
 
-
-
-
-
-
-
                void * memchr( const void * s, int c, size_t n );
-
-
-
-
 
                char * strchr( const char * s, int c );
 
-
-
-
-
                size_t strcspn( const char * s1, const char * s2 );
-
-
-
 
                char * strpbrk( const char * s1, const char * s2 );
 
-
-
-
-
                char * strrchr( const char * s, int c );
 
-
-
-
-
                size_t strspn( const char * s1, const char * s2 );
-
-
-
-
 
                char * strstr( const char * s1, const char * s2 );
                char * strtok( char * s1, const char * s2 );
 
-
-
-
-
-
-
                void * memset( void * s, int c, size_t n );
-
-
-
-
 
                char * strerror( int errnum );
 
-
-
                size_t strlen( const char * s );
-
-
-
 
 }
 extern "C" {
-
 
 char *strdup (const char *s);
 
@@ -3509,9 +2718,6 @@ static char *_strdup (const char *s)
 {
     return strdup(s);
 }
-
-
-
 
 int _strnicmp (const char *s1, const char *s2, size_t n);
 int _stricmp (const char *s1, const char *s2);
@@ -3525,12 +2731,6 @@ __attribute__((deprecated)) static int stricmp (const char *s1, const char *s2)
 {
     return _stricmp(s1, s2);
 }
-
-
-
-
-
-
 
 }
 inline static char *__nxdk_strchr (const char *__s, int __c)
@@ -3640,8 +2840,6 @@ namespace std { inline namespace __1 {
 
 template <class _Tp> struct tuple_size;
 
-
-
 template <class _Tp, class...>
 using __enable_if_tuple_size_imp = _Tp;
 
@@ -3664,12 +2862,6 @@ struct tuple_size<__enable_if_tuple_size_imp<
     const volatile _Tp,
     integral_constant<size_t, sizeof(tuple_size<_Tp>)>>>
     : public integral_constant<size_t, tuple_size<_Tp>::value> {};
-
-
-
-
-
-
 
 template <size_t _Ip, class _Tp> struct tuple_element;
 
@@ -3697,10 +2889,6 @@ template <class _Tp> struct __tuple_like<const _Tp> : public __tuple_like<_Tp> {
 template <class _Tp> struct __tuple_like<volatile _Tp> : public __tuple_like<_Tp> {};
 template <class _Tp> struct __tuple_like<const volatile _Tp> : public __tuple_like<_Tp> {};
 
-
-
-
-
 template <size_t...> struct __tuple_indices {};
 
 template <class _IdxType, _IdxType... _Values>
@@ -3712,18 +2900,10 @@ struct __integer_sequence {
   using __to_tuple_indices = __tuple_indices<(_Values + _Sp)...>;
 };
 
-
-
 template <size_t _Ep, size_t _Sp>
 using __make_indices_imp =
     typename __make_integer_seq<__integer_sequence, size_t, _Ep - _Sp>::template
     __to_tuple_indices<_Sp>;
-
-
-
-
-
-
 
 template <size_t _Ep, size_t _Sp = 0>
 struct __make_tuple_indices
@@ -3731,7 +2911,6 @@ struct __make_tuple_indices
     static_assert(_Sp <= _Ep, "__make_tuple_indices input error");
     typedef __make_indices_imp<_Ep, _Sp> type;
 };
-
 
 template <class ..._Tp> class tuple;
 
@@ -3763,10 +2942,6 @@ template <size_t _Ip, class ..._Tp>
 const typename tuple_element<_Ip, tuple<_Tp...> >::type&&
 get(const tuple<_Tp...>&&) noexcept;
 
-
-
-
-
 template <class _T1, class _T2> struct __tuple_like<pair<_T1, _T2> > : true_type {};
 
 template <size_t _Ip, class _T1, class _T2>
@@ -3779,7 +2954,6 @@ template <size_t _Ip, class _T1, class _T2>
 const typename tuple_element<_Ip, pair<_T1, _T2> >::type&
 get(const pair<_T1, _T2>&) noexcept;
 
-
 template <size_t _Ip, class _T1, class _T2>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
@@ -3789,9 +2963,6 @@ template <size_t _Ip, class _T1, class _T2>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 const typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
 get(const pair<_T1, _T2>&&) noexcept;
-
-
-
 
 template <class _Tp, size_t _Size> struct array;
 
@@ -3807,7 +2978,6 @@ template <size_t _Ip, class _Tp, size_t _Size>
 const _Tp&
 get(const array<_Tp, _Size>&) noexcept;
 
-
 template <size_t _Ip, class _Tp, size_t _Size>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 _Tp&&
@@ -3818,11 +2988,6 @@ template <size_t _Ip, class _Tp, size_t _Size>
 const _Tp&&
 get(const array<_Tp, _Size>&&) noexcept;
 
-
-
-
-
-
 template <class ..._Tp> struct __tuple_types {};
 template <size_t _Ip, class ..._Types>
 struct tuple_element<_Ip, __tuple_types<_Types...>>
@@ -3830,7 +2995,6 @@ struct tuple_element<_Ip, __tuple_types<_Types...>>
     static_assert(_Ip < sizeof...(_Types), "tuple_element index out of range");
     typedef __attribute__((nodebug)) __type_pack_element<_Ip, _Types...> type;
 };
-
 
 template <class ..._Tp>
 struct tuple_size<__tuple_types<_Tp...> >
@@ -3944,8 +3108,6 @@ struct __tuple_sfinae_base {
   using __assignable = decltype(__do_test<is_assignable>(_ToArgs{}, _FromArgs{}));
 };
 
-
-
 template <class _Tp, class _Up, bool = __tuple_like<typename remove_reference<_Tp>::type>::value,
                                 bool = __tuple_like<_Up>::value>
 struct __tuple_convertible
@@ -3958,8 +3120,6 @@ struct __tuple_convertible<_Tp, _Up, true, true>
     , typename __make_tuple_types<_Up>::type
     >
 {};
-
-
 
 template <class _Tp, class _Up, bool = __tuple_like<typename remove_reference<_Tp>::type>::value,
                                 bool = __tuple_like<_Up>::value>
@@ -3974,8 +3134,6 @@ struct __tuple_constructible<_Tp, _Up, true, true>
     >
 {};
 
-
-
 template <class _Tp, class _Up, bool = __tuple_like<typename remove_reference<_Tp>::type>::value,
                                 bool = __tuple_like<_Up>::value>
 struct __tuple_assignable
@@ -3989,18 +3147,14 @@ struct __tuple_assignable<_Tp, _Up, true, true>
     >
 {};
 
-
 template <size_t _Ip, class ..._Tp>
 struct tuple_element<_Ip, tuple<_Tp...> >
 {
     typedef __attribute__((nodebug)) typename tuple_element<_Ip, __tuple_types<_Tp...> >::type type;
 };
 
-
-
 template <size_t _Ip, class ..._Tp>
 using tuple_element_t __attribute__((nodebug)) = typename tuple_element <_Ip, _Tp...>::type;
-
 
 template <bool _IsTuple, class _SizeTrait, size_t _Expected>
 struct __tuple_like_with_size_imp : false_type {};
@@ -4027,10 +3181,6 @@ struct __check_tuple_constructor_fail {
     template <class ...>
     static constexpr bool __enable_assign() { return false; }
 };
-
-
-
-
 
 template <bool _CanCopy, bool _CanMove>
 struct __sfinae_ctor_base {};
@@ -4086,7 +3236,6 @@ struct __sfinae_assign_base<false, true> {
   __sfinae_assign_base& operator=(__sfinae_assign_base&&) = default;
 };
 
-
 } }
 extern "C" {
 typedef _PDCLIB_int8_t int8_t;
@@ -4108,10 +3257,6 @@ typedef uint16_t uint_least16_t;
 typedef uint32_t uint_least32_t;
 typedef uint64_t uint_least64_t;
 
-
-
-
-
 typedef _PDCLIB_int_fast8_t int_fast8_t;
 typedef _PDCLIB_int_fast16_t int_fast16_t;
 typedef _PDCLIB_int_fast32_t int_fast32_t;
@@ -4122,12 +3267,8 @@ typedef _PDCLIB_uint_fast16_t uint_fast16_t;
 typedef _PDCLIB_uint_fast32_t uint_fast32_t;
 typedef _PDCLIB_uint_fast64_t uint_fast64_t;
 
-
-
 typedef _PDCLIB_intptr_t intptr_t;
 typedef _PDCLIB_uintptr_t uintptr_t;
-
-
 
 typedef _PDCLIB_intmax_t intmax_t;
 typedef _PDCLIB_uintmax_t uintmax_t;
@@ -4176,103 +3317,43 @@ extern "C++" {
 using std::nullptr_t;
 }
 
-
-
-
 typedef long double max_align_t;
 extern "C" {
 
-
-
-
 typedef _PDCLIB_wint_t wint_t;
-
 
 typedef int wctrans_t;
 typedef int wctype_t;
                int iswalnum( wint_t wc );
 
-
-
-
-
-
                int iswalpha( wint_t wc );
-
-
-
-
 
                int iswblank( wint_t wc );
 
-
                int iswcntrl( wint_t wc );
-
-
 
                int iswdigit( wint_t wc );
 
-
-
-
-
                int iswgraph( wint_t wc );
-
-
-
-
 
                int iswlower( wint_t wc );
 
-
                int iswprint( wint_t wc );
-
-
-
 
                int iswpunct( wint_t wc );
 
-
-
-
                int iswspace( wint_t wc );
-
-
-
-
 
                int iswupper( wint_t wc );
 
-
-
                int iswxdigit( wint_t wc );
-
-
-
-
-
-
 
                int iswctype( wint_t wc, wctype_t desc );
                wctype_t wctype( const char * property );
 
-
-
-
-
-
                wint_t towlower( wint_t wc );
 
-
-
-
                wint_t towupper( wint_t wc );
-
-
-
-
-
-
 
                wint_t towctrans( wint_t wc, wctrans_t desc );
                wctrans_t wctrans( const char * property );
@@ -4295,9 +3376,7 @@ typedef XBOXRT_mbstate_t mbstate_t;
 
 struct tm;
 
-
 extern "C" {
-
 
 wchar_t * wcscpy( wchar_t * __restrict s1, const wchar_t * __restrict s2 );
 wchar_t * wcsncpy( wchar_t * __restrict s1, const wchar_t * __restrict s2, size_t n );
@@ -4336,14 +3415,10 @@ size_t mbsrtowcs(wchar_t *dest, const char **src, size_t len, mbstate_t *ps);
 int wctob(wint_t c);
 int wcrtomb_s(size_t * __restrict retval, char * __restrict s, size_t ssz, wchar_t wc, mbstate_t * __restrict ps);
 
-
 }
 extern "C" {
 
-
-
 int _snwprintf(wchar_t *buffer, size_t count, const wchar_t *format, ...);
-
 
 }
 extern "C++" {
@@ -4383,9 +3458,6 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__)) __attribute__ (
       wchar_t* wmemchr( wchar_t* __s, wchar_t __c, size_t __n) {return __libcpp_wmemchr(__s, __c, __n);}
 }
 
-
-
-
 extern "C" {
 size_t mbsnrtowcs(wchar_t *__restrict dst, const char **__restrict src,
                   size_t nmc, size_t len, mbstate_t *__restrict ps);
@@ -4398,8 +3470,6 @@ class ios_base;
 
 template<class _CharT> struct char_traits;
 template<> struct char_traits<char>;
-
-
 
 template<> struct char_traits<char16_t>;
 template<> struct char_traits<char32_t>;
@@ -4483,20 +3553,10 @@ template <class _State> class fpos;
 typedef fpos<mbstate_t> streampos;
 typedef fpos<mbstate_t> wstreampos;
 
-
-
-
 typedef fpos<mbstate_t> u16streampos;
 typedef fpos<mbstate_t> u32streampos;
 
-
-
-
-
-
-
 typedef long long streamoff;
-
 
 template <class _CharT,
           class _Traits = char_traits<_CharT>,
@@ -4504,8 +3564,6 @@ template <class _CharT,
     class basic_string;
 typedef basic_string<char, char_traits<char>, allocator<char> > string;
 typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t> > wstring;
-
-
 
 template <class _Tp, class _Alloc = allocator<_Tp> >
 class vector;
@@ -4524,126 +3582,49 @@ extern "C" {
                long int atol( const char * nptr );
                long long int atoll( const char * nptr );
 
-
-
 extern unsigned long int _PDCLIB_seed;
                int rand( void );
 
-
-
-
                void srand( unsigned int seed );
-
-
-
-
-
-
 
                void * malloc( size_t size );
 
-
-
-
-
-
                void * calloc( size_t nmemb, size_t size );
 
-
-
                void * aligned_alloc( size_t alignment, size_t size );
-
-
-
-
-
-
 
                void free( void * ptr );
                void * realloc( void * ptr, size_t size );
                                 void abort( void );
 
-
-
-
-
-
                int at_quick_exit( void (*func)( void ) );
-
-
-
-
-
 
                int atexit( void (*func)( void ) );
 
-
-
-
-
-
-
                                 void exit( int status );
-
-
-
-
-
-
 
                                 void quick_exit( int status );
 
-
-
-
-
-
-
                                 void _Exit( int status );
                char * getenv( const char * name );
-
-
-
-
-
 
                int system( const char * string );
                void * bsearch( const void * key, const void * base, size_t nmemb, size_t size, int (*compar)( const void *, const void * ) );
                void qsort( void * base, size_t nmemb, size_t size, int (*compar)( const void *, const void * ) );
 
-
-
-
-
-
-
                int abs( int j );
                long int labs( long int j );
                long long int llabs( long long int j );
 
-
-
-
-
-
 typedef struct _PDCLIB_div_t div_t;
 typedef struct _PDCLIB_ldiv_t ldiv_t;
 typedef struct _PDCLIB_lldiv_t lldiv_t;
-
-
-
 
                div_t div( int numer, int denom );
                ldiv_t ldiv( long int numer, long int denom );
                lldiv_t lldiv( long long int numer, long long int denom );
 }
 extern "C" {
-
-
-
-
-
-
 
 unsigned short _byteswap_ushort (unsigned short val);
 unsigned long _byteswap_ulong (unsigned long val);
@@ -4675,10 +3656,6 @@ inline static lldiv_t div (long long __x, long long __y) noexcept
     return lldiv(__x, __y);
 }
 
-
-
-
-
 static void *_aligned_malloc (size_t size, size_t alignment)
 {
     return aligned_alloc(alignment, size);
@@ -4689,7 +3666,6 @@ static void _aligned_free (void *memblock)
     free(memblock);
 }
 extern "C" {
-
 
 typedef float float_t;
 typedef double double_t;
@@ -4721,7 +3697,6 @@ double tan(double x);
 float tanf(float x);
 long double tanl(long double x);
 
-
 double acosh(double x);
 float acoshf(float x);
 long double acoshl(long double x);
@@ -4745,7 +3720,6 @@ long double sinhl(long double x);
 double tanh(double x);
 float tanhf(float x);
 long double tanhl(long double x);
-
 
 double exp(double x);
 float expf(float x);
@@ -4802,7 +3776,6 @@ double scalbln(double x, long int n);
 float scalblnf(float x, long int n);
 long double scalblnl(long double x, long int n);
 
-
 double cbrt(double x);
 float cbrtf(float x);
 long double cbrtl(long double x);
@@ -4823,7 +3796,6 @@ double sqrt(double x);
 float sqrtf(float x);
 long double sqrtl(long double x);
 
-
 double erf(double x);
 float erff(float x);
 long double erfl(long double x);
@@ -4839,7 +3811,6 @@ long double lgammal(long double x);
 double tgamma(double x);
 float tgammaf(float x);
 long double tgammal(long double x);
-
 
 double ceil(double x);
 float ceilf(float x);
@@ -4879,7 +3850,6 @@ double trunc(double x);
 float truncf(float x);
 long double truncl(long double x);
 
-
 double fmod(double x, double y);
 float fmodf(float x, float y);
 long double fmodl(long double x, long double y);
@@ -4891,7 +3861,6 @@ long double remainderl(long double x, long double y);
 double remquo(double x, double y, int *quo);
 float remquof(float x, float y, int *quo);
 long double remquol(long double x, long double y, int *quo);
-
 
 double copysign(double x, double y);
 float copysignf(float x, float y);
@@ -4909,7 +3878,6 @@ double nexttoward(double x, long double y);
 float nexttowardf(float x, long double y);
 long double nexttowardl(long double x, long double y);
 
-
 double fdim(double x, double y);
 float fdimf(float x, float y);
 long double fdiml(long double x, long double y);
@@ -4922,11 +3890,9 @@ double fmin(double x, double y);
 float fminf(float x, float y);
 long double fminl(long double x, long double y);
 
-
 double fma(double x, double y, double z);
 float fmaf(float x, float y, float z);
 long double fmal(long double x, long double y, long double z);
-
 
 }
 extern "C++" {
@@ -5048,11 +4014,7 @@ protected:
     static constexpr const bool is_bounded = true;
     static constexpr const bool is_modulo = !std::__1::is_signed<_Tp>::value;
 
-
-
     static constexpr const bool traps = true;
-
-
 
     static constexpr const bool tinyness_before = false;
     static constexpr const float_round_style round_style = round_toward_zero;
@@ -5234,10 +4196,6 @@ protected:
     __attribute__ ((__exclude_from_explicit_instantiation__)) static constexpr type quiet_NaN() noexcept {return __builtin_nanl("");}
     __attribute__ ((__exclude_from_explicit_instantiation__)) static constexpr type signaling_NaN() noexcept {return __builtin_nansl("");}
     __attribute__ ((__exclude_from_explicit_instantiation__)) static constexpr type denorm_min() noexcept {return 4.9406564584124654e-324L;}
-
-
-
-
 
     static constexpr const bool is_iec559 = true;
 
@@ -5676,11 +4634,6 @@ using ::lldiv;
 using ::at_quick_exit;
 using ::quick_exit;
 
-
-
-
-
-
 } }
 extern "C" {
 typedef struct _PDCLIB_fpos_t fpos_t;
@@ -5701,36 +4654,21 @@ extern FILE * stderr;
 
                FILE * freopen( const char * filename, const char * mode, FILE * stream );
 
-
-
-
                void setbuf( FILE * stream, char * buf );
 
                int setvbuf( FILE * stream, char * buf, int mode, size_t size );
 
                int fprintf( FILE * stream, const char * format, ... );
 
-
                int printf( const char * format, ... );
-
 
                int scanf( const char * format, ... );
 
                int snprintf( char * s, size_t n, const char * format, ... );
 
-
-
-
                int sprintf( char * s, const char * format, ... );
 
-
-
-
                int sscanf( const char * s, const char * format, ... );
-
-
-
-
 
                int vfprintf( FILE * stream, const char * format, _PDCLIB_va_list arg );
 
@@ -5744,25 +4682,11 @@ extern FILE * stderr;
 
                int vsprintf( char * s, const char * format, _PDCLIB_va_list arg );
 
-
-
-
                void clearerr( FILE * stream );
-
-
-
 
                int feof( FILE * stream );
 
-
-
-
                int ferror( FILE * stream );
-
-
-
-
-
 
                void perror( const char * s );
 }
@@ -5789,13 +4713,10 @@ using ::feof;
 using ::ferror;
 using ::perror;
 
-
 using ::fopen;
 using ::freopen;
 using ::remove;
 using ::rename;
-
-
 
 } }
 namespace std { inline namespace __1 {
@@ -5816,25 +4737,14 @@ struct __libcpp_debug_info {
   const char* __msg_;
 };
 
-
 typedef void(*__libcpp_debug_function_type)(__libcpp_debug_info const&);
 
-
-
 extern __libcpp_debug_function_type __libcpp_debug_function;
-
 
 [[noreturn]]
 void __libcpp_abort_debug_function(__libcpp_debug_info const&);
 
-
-
-
 bool __libcpp_set_debug_function(__libcpp_debug_function_type __func);
-
-
-
-
 
 } }
 namespace std { inline namespace __1 {
@@ -5876,12 +4786,6 @@ operator>=(const _Tp& __x, const _Tp& __y)
 
 }
 
-
-
-
-
-
-
 template <class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 
@@ -5892,28 +4796,19 @@ typename conditional
     _Tp&&
 >::type
 
-
-
 move_if_noexcept(_Tp& __x) noexcept
 {
     return std::__1::move(__x);
 }
 
-
-
 template <class _Tp> constexpr add_const_t<_Tp>& as_const(_Tp& __t) noexcept { return __t; }
 template <class _Tp> void as_const(const _Tp&&) = delete;
 
-
 struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
-
 
 extern const piecewise_construct_t piecewise_construct;
 template <class _T1, class _T2>
 struct pair
-
-
-
 
 {
     typedef _T1 first_type;
@@ -5921,8 +4816,6 @@ struct pair
 
     _T1 first;
     _T2 second;
-
-
 
     pair(pair const&) = default;
     pair(pair&&) = default;
@@ -6140,7 +5033,6 @@ struct pair
         return *this;
     }
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void
     swap(pair& __p) noexcept(__is_nothrow_swappable<first_type>::value && __is_nothrow_swappable<second_type>::value)
@@ -6152,7 +5044,6 @@ struct pair
     }
 private:
 
-
     template <class... _Args1, class... _Args2, size_t... _I1, size_t... _I2>
         __attribute__ ((__exclude_from_explicit_instantiation__))
         pair(piecewise_construct_t,
@@ -6161,10 +5052,8 @@ private:
 
 };
 
-
 template<class _T1, class _T2>
 pair(_T1, _T2) -> pair<_T1, _T2>;
-
 
 template <class _T1, class _T2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -6237,14 +5126,9 @@ struct __unwrap_reference<reference_wrapper<_Tp> > { typedef __attribute__((node
 template <class _Tp>
 struct __unwrap_ref_decay
 
-
-
-
     : __unwrap_reference<typename decay<_Tp>::type>
 
 { };
-
-
 
 template <class _T1, class _T2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -6293,7 +5177,6 @@ struct __get_pair<0>
     const _T1&
     get(const pair<_T1, _T2>& __p) noexcept {return __p.first;}
 
-
     template <class _T1, class _T2>
     static
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -6322,7 +5205,6 @@ struct __get_pair<1>
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
     const _T2&
     get(const pair<_T1, _T2>& __p) noexcept {return __p.second;}
-
 
     template <class _T1, class _T2>
     static
@@ -6354,7 +5236,6 @@ get(const pair<_T1, _T2>& __p) noexcept
     return __get_pair<_Ip>::get(__p);
 }
 
-
 template <size_t _Ip, class _T1, class _T2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
@@ -6370,9 +5251,6 @@ get(const pair<_T1, _T2>&& __p) noexcept
 {
     return __get_pair<_Ip>::get(std::__1::move(__p));
 }
-
-
-
 
 template <class _T1, class _T2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -6430,11 +5308,6 @@ constexpr _T1 const && get(pair<_T2, _T1> const&& __p) noexcept
     return __get_pair<1>::get(std::__1::move(__p));
 }
 
-
-
-
-
-
 template<class _Tp, _Tp... _Ip>
 struct integer_sequence
 {
@@ -6451,9 +5324,6 @@ struct integer_sequence
 template<size_t... _Ip>
     using index_sequence = integer_sequence<size_t, _Ip...>;
 
-
-
-
 template <class _Tp, _Tp _Ep>
 using __make_integer_sequence __attribute__((nodebug)) = __make_integer_seq<integer_sequence, _Tp, _Ep>;
 template<class _Tp, _Tp _Np>
@@ -6465,10 +5335,6 @@ template<size_t _Np>
 template<class... _Tp>
     using index_sequence_for = make_index_sequence<sizeof...(_Tp)>;
 
-
-
-
-
 template<class _T1, class _T2 = _T1>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 _T1 exchange(_T1& __obj, _T2 && __new_value)
@@ -6477,10 +5343,6 @@ _T1 exchange(_T1& __obj, _T2 && __new_value)
     __obj = std::__1::forward<_T2>(__new_value);
     return __old_value;
 }
-
-
-
-
 
 struct in_place_t {
     explicit in_place_t() = default;
@@ -6513,8 +5375,6 @@ template <size_t _Idx> struct __is_inplace_index_imp<in_place_index_t<_Idx>> : t
 template <class _Tp>
 using __is_inplace_index = __is_inplace_index_imp<__uncvref_t<_Tp>>;
 
-
-
 template <class _Arg, class _Result>
 struct unary_function
 {
@@ -6532,9 +5392,6 @@ __loadword(const void* __p)
     return __r;
 }
 
-
-
-
 template <class _Size, size_t = sizeof(_Size)*8>
 struct __murmur2_or_cityhash;
 
@@ -6544,7 +5401,6 @@ struct __murmur2_or_cityhash<_Size, 32>
     inline _Size operator()(const void* __key, _Size __len)
          __attribute__((__no_sanitize__("unsigned-integer-overflow")));
 };
-
 
 template <class _Size>
 _Size
@@ -6653,8 +5509,6 @@ struct __murmur2_or_cityhash<_Size, 64>
                          __a + __rotate(__b ^ __k3, 20) - __c + __len);
   }
 
-
-
   static pair<_Size, _Size> __weak_hash_len_32_with_seeds(
       _Size __w, _Size __x, _Size __y, _Size __z, _Size __a, _Size __b)
         __attribute__((__no_sanitize__("unsigned-integer-overflow")))
@@ -6668,7 +5522,6 @@ struct __murmur2_or_cityhash<_Size, 64>
     return pair<_Size, _Size>(__a + __z, __b + __c);
   }
 
-
   static pair<_Size, _Size> __weak_hash_len_32_with_seeds(
       const char* __s, _Size __a, _Size __b)
     __attribute__((__no_sanitize__("unsigned-integer-overflow")))
@@ -6680,7 +5533,6 @@ struct __murmur2_or_cityhash<_Size, 64>
                                          __a,
                                          __b);
   }
-
 
   static _Size __hash_len_33_to_64(const char *__s, size_t __len)
     __attribute__((__no_sanitize__("unsigned-integer-overflow")))
@@ -6709,7 +5561,6 @@ struct __murmur2_or_cityhash<_Size, 64>
   }
 };
 
-
 template <class _Size>
 _Size
 __murmur2_or_cityhash<_Size, 64>::operator()(const void* __key, _Size __len)
@@ -6725,8 +5576,6 @@ __murmur2_or_cityhash<_Size, 64>::operator()(const void* __key, _Size __len)
     return __hash_len_33_to_64(__s, __len);
   }
 
-
-
   _Size __x = __loadword<_Size>(__s + __len - 40);
   _Size __y = __loadword<_Size>(__s + __len - 16) +
               __loadword<_Size>(__s + __len - 56);
@@ -6735,7 +5584,6 @@ __murmur2_or_cityhash<_Size, 64>::operator()(const void* __key, _Size __len)
   pair<_Size, _Size> __v = __weak_hash_len_32_with_seeds(__s + __len - 64, __len, __z);
   pair<_Size, _Size> __w = __weak_hash_len_32_with_seeds(__s + __len - 32, __y + __k1, __x);
   __x = __x * __k1 + __loadword<_Size>(__s);
-
 
   __len = (__len - 1) & ~static_cast<_Size>(63);
   do {
@@ -6889,7 +5737,6 @@ struct hash<_Tp*>
     }
 };
 
-
 template <>
 struct hash<bool>
     : public unary_function<bool, size_t>
@@ -6922,8 +5769,6 @@ struct hash<unsigned char>
     size_t operator()(unsigned char __v) const noexcept {return static_cast<size_t>(__v);}
 };
 
-
-
 template <>
 struct hash<char16_t>
     : public unary_function<char16_t, size_t>
@@ -6939,8 +5784,6 @@ struct hash<char32_t>
     __attribute__ ((__exclude_from_explicit_instantiation__))
     size_t operator()(char32_t __v) const noexcept {return static_cast<size_t>(__v);}
 };
-
-
 
 template <>
 struct hash<wchar_t>
@@ -7010,7 +5853,6 @@ struct hash<unsigned long long>
 {
 };
 
-
 template <>
 struct hash<float>
     : public __scalar_hash<float>
@@ -7050,8 +5892,6 @@ struct hash<long double>
         if (__v == 0.0L)
             return 0;
 
-
-
         union
         {
             long double __t;
@@ -7072,9 +5912,6 @@ struct hash<long double>
 
     }
 };
-
-
-
 
 template <class _Tp, bool = is_enum<_Tp>::value>
 struct __enum_hash
@@ -7099,10 +5936,6 @@ struct hash : public __enum_hash<_Tp>
 {
 };
 
-
-
-
-
 template <>
 struct hash<nullptr_t>
   : public unary_function<nullptr_t, size_t>
@@ -7112,8 +5945,6 @@ struct hash<nullptr_t>
     return 662607004ull;
   }
 };
-
-
 
 template <class _Key, class _Hash>
 using __check_hash_requirements __attribute__((nodebug)) = integral_constant<bool,
@@ -7128,8 +5959,6 @@ using __has_enabled_hash __attribute__((nodebug)) = integral_constant<bool,
     is_default_constructible<_Hash>::value
 >;
 
-
-
 template <class _Type, class>
 using __enable_hash_helper_imp __attribute__((nodebug)) = _Type;
 
@@ -7137,12 +5966,6 @@ template <class _Type, class ..._Keys>
 using __enable_hash_helper __attribute__((nodebug)) = __enable_hash_helper_imp<_Type,
   typename enable_if<__all<__has_enabled_hash<_Keys>::value...>::value>::type
 >;
-
-
-
-
-
-
 
 } }
 struct __std_exception_data
@@ -7171,7 +5994,6 @@ namespace std
             const __std_exception_data data = {_Message, true};
             __std_exception_copy(&data, &this->_Data);
         }
-
 
         explicit exception (const char *const _Message, int) noexcept : _Data{_Message, false}
         {
@@ -7210,15 +6032,10 @@ namespace std
 namespace std
 {
 
-
-
-
-
 typedef void (*unexpected_handler)();
                  unexpected_handler set_unexpected(unexpected_handler) noexcept;
                  unexpected_handler get_unexpected() noexcept;
 [[noreturn]] void unexpected();
-
 
 typedef void (*terminate_handler)();
                  terminate_handler set_terminate(terminate_handler) noexcept;
@@ -7233,20 +6050,14 @@ class exception_ptr;
                  exception_ptr current_exception() noexcept;
 [[noreturn]] void rethrow_exception(exception_ptr);
 
-
-
-
-
 class exception_ptr
 {
-
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-private-field"
 
     void* __ptr1_;
     void* __ptr2_;
-
 
 #pragma clang diagnostic pop
 
@@ -7264,8 +6075,6 @@ public:
                  exception_ptr current_exception() noexcept;
 [[noreturn]] void rethrow_exception(exception_ptr p);
 
-
-
 template <class _E> void *__GetExceptionInfo(_E);
 
 template<class _Ep>
@@ -7275,18 +6084,13 @@ make_exception_ptr(_Ep __e) noexcept
   return __copy_exception_ptr(std::__1::addressof(__e), __GetExceptionInfo(__e));
 }
 
-
-
-
 class nested_exception
 {
     exception_ptr __ptr_;
 public:
     nested_exception() noexcept;
 
-
     virtual ~nested_exception() noexcept;
-
 
     [[noreturn]] void rethrow_nested() const;
     __attribute__ ((__exclude_from_explicit_instantiation__)) exception_ptr nested_ptr() const noexcept {return __ptr_;}
@@ -7307,14 +6111,10 @@ throw_with_nested(_Tp&& __t)
 {
     ((void)__t);
 
-
 }
 
 template <class _From, class _To>
 struct __can_dynamic_cast : public bool_constant<(is_polymorphic<_From>::value && (!is_base_of<_To, _From>::value || is_convertible<const _From*, const _To*>::value))> {};
-
-
-
 
 template <class _Ep>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -7338,13 +6138,8 @@ rethrow_if_nested(const _Ep&,
 }
 extern "C" {
 
-
-
-
 void _xbox_assert(char const * const expression, char const * const file_name, char const * const function_name, unsigned long line);
 }
-
-
 
 struct __std_type_info_data
 {
@@ -7397,7 +6192,6 @@ public:
 
 private:
 
-
     type_info () noexcept;
 
     type_info (type_info const &) noexcept = delete;
@@ -7429,20 +6223,13 @@ namespace std
 namespace std
 {
 
-
-
 struct nothrow_t { explicit nothrow_t() = default; };
 extern const nothrow_t nothrow;
 typedef void (*new_handler)();
                  new_handler set_new_handler(new_handler) noexcept;
                  new_handler get_new_handler() noexcept;
 
-
-
 [[noreturn]] void __throw_bad_alloc();
-
-
-
 
 enum class align_val_t : size_t { };
 }
@@ -7453,15 +6240,12 @@ enum class align_val_t : size_t { };
 
                                                                    void operator delete(void* __p, std::size_t __sz) noexcept;
 
-
                                                            void* operator new[](std::size_t __sz) ;
                                                            void* operator new[](std::size_t __sz, const std::nothrow_t&) noexcept ;
                              void operator delete[](void* __p) noexcept;
                              void operator delete[](void* __p, const std::nothrow_t&) noexcept;
 
                                                                    void operator delete[](void* __p, std::size_t __sz) noexcept;
-
-
 
                                                            void* operator new(std::size_t __sz, std::align_val_t) ;
                                                            void* operator new(std::size_t __sz, std::align_val_t, const std::nothrow_t&) noexcept ;
@@ -7470,7 +6254,6 @@ enum class align_val_t : size_t { };
 
                                                                    void operator delete(void* __p, std::size_t __sz, std::align_val_t) noexcept;
 
-
                                                            void* operator new[](std::size_t __sz, std::align_val_t) ;
                                                            void* operator new[](std::size_t __sz, std::align_val_t, const std::nothrow_t&) noexcept ;
                              void operator delete[](void* __p, std::align_val_t) noexcept;
@@ -7478,22 +6261,16 @@ enum class align_val_t : size_t { };
 
                                                                    void operator delete[](void* __p, std::size_t __sz, std::align_val_t) noexcept;
 
-
-
                               inline __attribute__ ((__exclude_from_explicit_instantiation__)) void* operator new (std::size_t, void* __p) noexcept {return __p;}
                               inline __attribute__ ((__exclude_from_explicit_instantiation__)) void* operator new[](std::size_t, void* __p) noexcept {return __p;}
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) void operator delete (void*, void*) noexcept {}
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) void operator delete[](void*, void*) noexcept {}
-
-
 
 namespace std { inline namespace __1 {
 
 constexpr inline __attribute__ ((__exclude_from_explicit_instantiation__)) bool __is_overaligned_for_new(size_t __align) noexcept {
 
   return __align > 8U;
-
-
 
 }
 
@@ -7504,26 +6281,15 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__)) void *__libcpp_
 
     return ::operator new(__size, __align_val);
 
-
-
   }
 
-
-
-
   return ::operator new(__size);
-
-
 
 }
 
 struct _DeallocateCaller {
   static inline __attribute__ ((__exclude_from_explicit_instantiation__))
   void __do_deallocate_handle_size_align(void *__ptr, size_t __size, size_t __align) {
-
-
-
-
 
     if (__is_overaligned_for_new(__align)) {
       const align_val_t __align_val = static_cast<align_val_t>(__align);
@@ -7536,10 +6302,6 @@ struct _DeallocateCaller {
 
   static inline __attribute__ ((__exclude_from_explicit_instantiation__))
   void __do_deallocate_handle_align(void *__ptr, size_t __align) {
-
-
-
-
 
     if (__is_overaligned_for_new(__align)) {
       const align_val_t __align_val = static_cast<align_val_t>(__align);
@@ -7556,47 +6318,33 @@ struct _DeallocateCaller {
     ((void)__size);
     return __do_call(__ptr);
 
-
-
   }
-
 
   static inline void __do_deallocate_handle_size(void *__ptr, size_t __size, align_val_t __align) {
 
     ((void)__size);
     return __do_call(__ptr, __align);
 
-
-
   }
-
 
 private:
   template <class _A1, class _A2>
   static inline void __do_call(void *__ptr, _A1 __a1, _A2 __a2) {
 
-
     return ::operator delete(__ptr, __a1, __a2);
-
-
 
   }
 
   template <class _A1>
   static inline void __do_call(void *__ptr, _A1 __a1) {
 
-
     return ::operator delete(__ptr, __a1);
-
-
 
   }
 
   static inline void __do_call(void *__ptr) {
 
     return ::operator delete(__ptr);
-
-
 
   }
 };
@@ -7618,12 +6366,7 @@ constexpr _Tp* __launder(_Tp* __p) noexcept
 
     return __builtin_launder(__p);
 
-
-
 }
-
-
-
 
 template <class _Tp>
                               inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -7631,7 +6374,6 @@ constexpr _Tp* launder(_Tp* __p) noexcept
 {
     return std::__1::__launder(__p);
 }
-
 
 } }
 namespace std { inline namespace __1 {
@@ -7655,11 +6397,7 @@ public:
     static const bool value = sizeof(__test<_Tp>(0)) == 1;
 };
 
-
-
 template <class _Tp = void>
-
-
 
 struct less : binary_function<_Tp, _Tp, bool>
 {
@@ -7667,8 +6405,6 @@ struct less : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x < __y;}
 };
-
-
 
 template <>
 struct less<void>
@@ -7681,9 +6417,6 @@ struct less<void>
         { return std::__1::forward<_T1>(__t) < std::__1::forward<_T2>(__u); }
     typedef void is_transparent;
 };
-
-
-
 
 template <class _Tp>
 struct __derives_from_unary_function
@@ -7756,8 +6489,6 @@ struct __weak_result_type
 {
 };
 
-
-
 template <class _Rp>
 struct __weak_result_type<_Rp ()>
 {
@@ -7775,8 +6506,6 @@ struct __weak_result_type<_Rp (*)()>
 {
     typedef __attribute__((nodebug)) _Rp result_type;
 };
-
-
 
 template <class _Rp, class _A1>
 struct __weak_result_type<_Rp (_A1)>
@@ -7820,8 +6549,6 @@ struct __weak_result_type<_Rp (_Cp::*)() const volatile>
 {
 };
 
-
-
 template <class _Rp, class _A1, class _A2>
 struct __weak_result_type<_Rp (_A1, _A2)>
     : public binary_function<_A1, _A2, _Rp>
@@ -7863,10 +6590,6 @@ struct __weak_result_type<_Rp (_Cp::*)(_A1) const volatile>
     : public binary_function<const volatile _Cp*, _A1, _Rp>
 {
 };
-
-
-
-
 
 template <class _Rp, class _A1, class _A2, class _A3, class ..._A4>
 struct __weak_result_type<_Rp (_A1, _A2, _A3, _A4...)>
@@ -7916,8 +6639,6 @@ struct __invoke_return
     typedef decltype(__invoke(std::__1::declval<_Tp>(), std::__1::declval<_Args>()...)) type;
 };
 
-
-
 template <class _Ret>
 struct __invoke_void_return_wrapper
 {
@@ -7957,12 +6678,8 @@ public:
 
     private: reference_wrapper(type&&); public:
 
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__)) operator type& () const noexcept {return *__f_;}
     __attribute__ ((__exclude_from_explicit_instantiation__)) type& get() const noexcept {return *__f_;}
-
-
 
     template <class... _ArgTypes>
     __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -7972,7 +6689,6 @@ public:
     }
 
 };
-
 
 template <class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -8006,12 +6722,8 @@ cref(reference_wrapper<_Tp> __t) noexcept
     return cref(__t.get());
 }
 
-
 template <class _Tp> void ref(const _Tp&&) = delete;
 template <class _Tp> void cref(const _Tp&&) = delete;
-
-
-
 
 template <class _Tp, class, class = void>
 struct __is_transparent : false_type {};
@@ -8021,19 +6733,9 @@ struct __is_transparent<_Tp, _Up,
                         typename __void_t<typename _Tp::is_transparent>::type>
    : true_type {};
 
-
-
-
 struct allocator_arg_t { explicit allocator_arg_t() = default; };
 
-
-
 extern const allocator_arg_t allocator_arg;
-
-
-
-
-
 
 template <class _Tp>
 struct __has_allocator_type
@@ -8065,15 +6767,8 @@ struct uses_allocator
 {
 };
 
-
-
 template <class _Tp, class _Alloc>
 inline constexpr size_t uses_allocator_v = uses_allocator<_Tp, _Alloc>::value;
-
-
-
-
-
 
 template <class _Tp, class _Alloc, class ..._Args>
 struct __uses_alloc_ctor_imp
@@ -8097,7 +6792,6 @@ void __user_alloc_construct_impl (integral_constant<int, 0>, _Tp *__storage, con
     new (__storage) _Tp (std::__1::forward<_Args>(__args)...);
 }
 
-
 template <class _Tp, class _Allocator, class... _Args>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 void __user_alloc_construct_impl (integral_constant<int, 1>, _Tp *__storage, const _Allocator &__a, _Args &&... __args )
@@ -8105,15 +6799,12 @@ void __user_alloc_construct_impl (integral_constant<int, 1>, _Tp *__storage, con
     new (__storage) _Tp (allocator_arg, __a, std::__1::forward<_Args>(__args)...);
 }
 
-
 template <class _Tp, class _Allocator, class... _Args>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 void __user_alloc_construct_impl (integral_constant<int, 2>, _Tp *__storage, const _Allocator &__a, _Args &&... __args )
 {
     new (__storage) _Tp (std::__1::forward<_Args>(__args)..., __a);
 }
-
-
 
 } }
 namespace std { inline namespace __1 {
@@ -8139,7 +6830,6 @@ private:
 public:
     static const bool value = sizeof(__test<_Tp>(0,0,0,0,0)) == 1;
 };
-
 
 template <class _Tp>
 struct __has_iterator_category
@@ -8175,11 +6865,6 @@ struct __iterator_traits<_Iter, true>
         is_convertible<typename _Iter::iterator_category, output_iterator_tag>::value
       >
 {};
-
-
-
-
-
 
 template <class _Iter>
 struct iterator_traits
@@ -8221,7 +6906,6 @@ struct __is_exactly_input_iterator
          __has_iterator_category_convertible_to<_Tp, input_iterator_tag>::value &&
         !__has_iterator_category_convertible_to<_Tp, forward_iterator_tag>::value> {};
 
-
 template<class _InputIterator>
 using __iter_value_type = typename iterator_traits<_InputIterator>::value_type;
 
@@ -8235,7 +6919,6 @@ template<class _InputIterator>
 using __iter_to_alloc_type = pair<
     add_const_t<typename iterator_traits<_InputIterator>::value_type::first_type>,
     typename iterator_traits<_InputIterator>::value_type::second_type>;
-
 
 template<class _Category, class _Tp, class _Distance = ptrdiff_t,
          class _Pointer = _Tp*, class _Reference = _Tp&>
@@ -8327,7 +7010,6 @@ next(_InputIter __x,
 {
     ((void)0);
 
-
     std::__1::advance(__x, __n);
     return __x;
 }
@@ -8347,7 +7029,6 @@ prev(_InputIter __x,
     std::__1::advance(__x, -__n);
     return __x;
 }
-
 
 template <class _Tp, class = void>
 struct __is_stashing_iterator : false_type {};
@@ -8464,7 +7145,6 @@ operator<=(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& 
     return __x.base() >= __y.base();
 }
 
-
 template <class _Iter1, class _Iter2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 auto
@@ -8474,7 +7154,6 @@ operator-(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& _
     return __y.base() - __x.base();
 }
 
-
 template <class _Iter>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 reverse_iterator<_Iter>
@@ -8483,15 +7162,12 @@ operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_i
     return reverse_iterator<_Iter>(__x.base() - __n);
 }
 
-
-
 template <class _Iter>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 reverse_iterator<_Iter> make_reverse_iterator(_Iter __i)
 {
     return reverse_iterator<_Iter>(__i);
 }
-
 
 template <class _Container>
 class back_insert_iterator
@@ -8810,9 +7486,6 @@ public:
             __reference
         >::type reference;
 
-
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
     move_iterator() : __i() {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -8893,7 +7566,6 @@ operator<=(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
     return __x.base() <= __y.base();
 }
 
-
 template <class _Iter1, class _Iter2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 auto
@@ -8917,8 +7589,6 @@ make_move_iterator(_Iter __i)
 {
     return move_iterator<_Iter>(__i);
 }
-
-
 
 template <class _Iter> class __wrap_iter;
 
@@ -8952,18 +7622,11 @@ template <class _Iter1, class _Iter2>
 bool
 operator<=(const __wrap_iter<_Iter1>&, const __wrap_iter<_Iter2>&) noexcept;
 
-
 template <class _Iter1, class _Iter2>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 auto
 operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) noexcept
 -> decltype(__x.base() - __y.base());
-
-
-
-
-
-
 
 template <class _Iter>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -8975,8 +7638,6 @@ template <class _B1, class _B2> _B2 __attribute__ ((__exclude_from_explicit_inst
 template <class _Ip, class _Op> _Op __attribute__ ((__exclude_from_explicit_instantiation__)) move(_Ip, _Ip, _Op);
 template <class _B1, class _B2> _B2 __attribute__ ((__exclude_from_explicit_instantiation__)) move_backward(_B1, _B1, _B2);
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 typename enable_if
@@ -8985,7 +7646,6 @@ typename enable_if
     _Tp*
 >::type
 __unwrap_iter(__wrap_iter<_Tp*>);
-
 
 template <class _Iter>
 class __wrap_iter
@@ -9002,13 +7662,9 @@ private:
 public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __wrap_iter() noexcept
 
-
                 : __i{}
 
     {
-
-
-
 
     }
     template <class _Up> __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -9036,10 +7692,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __wrap_iter& operator--() noexcept
     {
 
-
-
-
-
         --__i;
         return *this;
     }
@@ -9049,10 +7701,6 @@ public:
         {__wrap_iter __w(*this); __w += __n; return __w;}
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __wrap_iter& operator+=(difference_type __n) noexcept
     {
-
-
-
-
 
         __i += __n;
         return *this;
@@ -9064,10 +7712,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr reference operator[](difference_type __n) const noexcept
     {
 
-
-
-
-
         return __i[__n];
     }
 
@@ -9075,14 +7719,7 @@ public:
 
 private:
 
-
-
-
-
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __wrap_iter(iterator_type __x) noexcept : __i(__x) {}
-
 
     template <class _Up> friend class __wrap_iter;
     template <class _CharT, class _Traits, class _Alloc> friend class basic_string;
@@ -9119,18 +7756,11 @@ private:
     bool
     operator<=(const __wrap_iter<_Iter1>&, const __wrap_iter<_Iter2>&) noexcept;
 
-
     template <class _Iter1, class _Iter2>
     constexpr friend
     auto
     operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) noexcept
     -> decltype(__x.base() - __y.base());
-
-
-
-
-
-
 
     template <class _Iter1>
     constexpr friend
@@ -9141,8 +7771,6 @@ private:
     template <class _B1, class _B2> friend _B2 copy_backward(_B1, _B1, _B2);
     template <class _Ip, class _Op> friend _Op move(_Ip, _Ip, _Op);
     template <class _B1, class _B2> friend _B2 move_backward(_B1, _B1, _B2);
-
-
 
     template <class _Tp>
     constexpr friend
@@ -9168,10 +7796,6 @@ bool
 operator<(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) noexcept
 {
 
-
-
-
-
     return __x.base() < __y.base();
 }
 
@@ -9183,17 +7807,12 @@ operator!=(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) noexc
     return !(__x == __y);
 }
 
-
 template <class _Iter1, class _Iter2>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 auto
 operator-(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) noexcept
 -> decltype(__x.base() - __y.base())
 {
-
-
-
-
 
     return __x.base() - __y.base();
 }
@@ -9222,7 +7841,6 @@ struct __libcpp_is_trivial_iterator<reverse_iterator<_Iter> >
 template <class _Iter>
 struct __libcpp_is_trivial_iterator<__wrap_iter<_Iter> >
     : public bool_constant<(__libcpp_is_trivial_iterator<_Iter>::value)> {};
-
 
 template <class _Tp, size_t _Np>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -9286,15 +7904,8 @@ template <class _Ep>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr const _Ep* data(initializer_list<_Ep> __il) noexcept { return __il.begin(); }
 
-
-
 } }
 namespace std { inline namespace __1 {
-
-
-
-
-
 
 template <size_t _Ip, class _Hp,
           bool=is_empty<_Hp>::value && !__libcpp_is_final<_Hp>::value
@@ -9317,10 +7928,7 @@ class __tuple_leaf
     template <class _Tp>
     static constexpr bool __can_bind_reference() {
 
-
       return !__reference_binds_to_temporary(_Hp, _Tp);
-
-
 
     }
 
@@ -9497,8 +8105,6 @@ struct __all_default_constructible<__tuple_types<_Tp...>>
     : __all<is_default_constructible<_Tp>::value...>
 { };
 
-
-
 template<class _Indx, class ..._Tp> struct __tuple_impl;
 
 template<size_t ..._Indx, class ..._Tp>
@@ -9604,8 +8210,6 @@ struct __declspec(empty_bases) __tuple_impl<__tuple_indices<_Indx...>, _Tp...>
     }
 };
 
-
-
 template <class ..._Tp>
 class tuple
 {
@@ -9613,12 +8217,7 @@ class tuple
 
     _BaseT __base_;
 
-
-
-
-
     static constexpr bool _EnableImplicitReducedArityExtension = false;
-
 
     template <class ..._Args>
     struct _PackExpandsToThisTuple : false_type {};
@@ -9644,7 +8243,6 @@ class tuple
                 __all<is_default_constructible<_Tp>::value...>::value &&
                 !__enable_implicit_default< >();
         }
-
 
         template <class ..._Args>
         static constexpr bool __enable_explicit() {
@@ -9722,11 +8320,8 @@ class tuple
     struct _CheckTupleLikeConstructor<true, true, _Dummy>
     {
 
-
-
         template <class _Tuple>
         using _PreferTupleLikeConstructor = _Or<
-
 
             _IsSame<__uncvref_t<_Tuple>, tuple>,
             _Lazy<_And,
@@ -10094,7 +8689,6 @@ public:
     void swap(tuple&) noexcept {}
 };
 
-
 template <class ..._Tp>
 tuple(_Tp...) -> tuple<_Tp...>;
 template <class _Tp1, class _Tp2>
@@ -10106,7 +8700,6 @@ tuple(allocator_arg_t, _Alloc, pair<_Tp1, _Tp2>) -> tuple<_Tp1, _Tp2>;
 template <class _Alloc, class ..._Tp>
 tuple(allocator_arg_t, _Alloc, tuple<_Tp...>) -> tuple<_Tp...>;
 
-
 template <class ..._Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 typename enable_if
@@ -10117,9 +8710,6 @@ typename enable_if
 swap(tuple<_Tp...>& __t, tuple<_Tp...>& __u)
                  noexcept(__all<__is_nothrow_swappable<_Tp>::value...>::value)
     {__t.swap(__u);}
-
-
-
 
 namespace __find_detail {
 
@@ -10153,10 +8743,6 @@ struct __find_exactly_one_checked<_T1> {
 };
 
 }
-
-
-
-
 
 template <class ..._Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -10293,12 +8879,8 @@ operator<=(const tuple<_Tp...>& __x, const tuple<_Up...>& __y)
     return !(__y < __x);
 }
 
-
-
 template <class _Tp>
 inline constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
-
-
 
 template <class _Fn, class _Tuple, size_t ..._Id>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10306,25 +8888,15 @@ constexpr decltype(auto) __apply_tuple_impl(_Fn && __f, _Tuple && __t,
                                             __tuple_indices<_Id...>)
 noexcept(noexcept(std::__1::__invoke_constexpr( std::__1::forward<_Fn>(__f), std::__1::get<_Id>(std::__1::forward<_Tuple>(__t))...))) { return std::__1::__invoke_constexpr( std::__1::forward<_Fn>(__f), std::__1::get<_Id>(std::__1::forward<_Tuple>(__t))...); }
 
-
-
-
-
 template <class _Fn, class _Tuple>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr decltype(auto) apply(_Fn && __f, _Tuple && __t)
 noexcept(noexcept(std::__1::__apply_tuple_impl( std::__1::forward<_Fn>(__f), std::__1::forward<_Tuple>(__t), typename __make_tuple_indices<tuple_size_v<remove_reference_t<_Tuple>>>::type{}))) { return std::__1::__apply_tuple_impl( std::__1::forward<_Fn>(__f), std::__1::forward<_Tuple>(__t), typename __make_tuple_indices<tuple_size_v<remove_reference_t<_Tuple>>>::type{}); }
 
-
-
-
-
 template <class _Tp, class _Tuple, size_t... _Idx>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr _Tp __make_from_tuple_impl(_Tuple&& __t, __tuple_indices<_Idx...>)
 noexcept(noexcept(_Tp(std::__1::get<_Idx>(std::__1::forward<_Tuple>(__t))...))) { return _Tp(std::__1::get<_Idx>(std::__1::forward<_Tuple>(__t))...); }
-
-
 
 template <class _Tp, class _Tuple>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10359,9 +8931,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit domain_error(const string& __s) : logic_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit domain_error(const char* __s) : logic_error(__s) {}
 
-
-
-
 };
 
 class invalid_argument
@@ -10370,9 +8939,6 @@ class invalid_argument
 public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit invalid_argument(const string& __s) : logic_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit invalid_argument(const char* __s) : logic_error(__s) {}
-
-
-
 
 };
 
@@ -10383,8 +8949,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit length_error(const string& __s) : logic_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit length_error(const char* __s) : logic_error(__s) {}
 
-
-
 };
 
 class out_of_range
@@ -10393,9 +8957,6 @@ class out_of_range
 public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit out_of_range(const string& __s) : logic_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit out_of_range(const char* __s) : logic_error(__s) {}
-
-
-
 
 };
 
@@ -10406,9 +8967,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit range_error(const string& __s) : runtime_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit range_error(const char* __s) : runtime_error(__s) {}
 
-
-
-
 };
 
 class overflow_error
@@ -10417,9 +8975,6 @@ class overflow_error
 public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit overflow_error(const string& __s) : runtime_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit overflow_error(const char* __s) : runtime_error(__s) {}
-
-
-
 
 };
 
@@ -10430,24 +8985,16 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit underflow_error(const string& __s) : runtime_error(__s) {}
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit underflow_error(const char* __s) : runtime_error(__s) {}
 
-
-
-
 };
 
 }
 
 namespace std { inline namespace __1 {
 
-
 [[noreturn]] void __throw_runtime_error(const char*);
-
 
 } }
 namespace std { inline namespace __1 {
-
-
-
 
 enum __legacy_memory_order {
     __mo_relaxed,
@@ -10474,16 +9021,10 @@ struct __cxx_atomic_base_impl {
 
     __cxx_atomic_base_impl() noexcept = default;
 
-
-
   constexpr explicit __cxx_atomic_base_impl(_Tp value) noexcept
     : __a_value(value) {}
   __extension__ _Atomic(_Tp) __a_value;
 };
-
-
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10496,28 +9037,17 @@ template <typename _Tp,
 
 struct __cxx_atomic_impl : public _Base {
 
-
-
-
-
-
-
   __attribute__ ((__exclude_from_explicit_instantiation__)) __cxx_atomic_impl() noexcept = default;
   __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr explicit __cxx_atomic_impl(_Tp value) noexcept
     : _Base(value) {}
 };
-
-
 
 template <class _Tp, bool = is_integral<_Tp>::value && !is_same<_Tp, bool>::value>
 struct __atomic_base
 {
     mutable __cxx_atomic_impl<_Tp> __a_;
 
-
-
   static constexpr bool is_always_lock_free = __atomic_always_lock_free(sizeof(__a_), 0);
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     bool is_lock_free() const volatile noexcept
@@ -10588,25 +9118,14 @@ struct __atomic_base
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
     __atomic_base(_Tp __d) noexcept : __a_(__d) {}
 
-
     __atomic_base(const __atomic_base&) = delete;
     __atomic_base& operator=(const __atomic_base&) = delete;
     __atomic_base& operator=(const __atomic_base&) volatile = delete;
 
-
-
-
-
-
 };
-
-
 
 template <class _Tp, bool __b>
 constexpr bool __atomic_base<_Tp, __b>::is_always_lock_free;
-
-
-
 
 template <class _Tp>
 struct __atomic_base<_Tp, true>
@@ -10687,8 +9206,6 @@ struct __atomic_base<_Tp, true>
     _Tp operator^=(_Tp __op) noexcept {return fetch_xor(__op) ^ __op;}
 };
 
-
-
 template <class _Tp>
 struct atomic
     : public __atomic_base<_Tp>
@@ -10706,8 +9223,6 @@ struct atomic
     _Tp operator=(_Tp __d) noexcept
         {__base::store(__d); return __d;}
 };
-
-
 
 template <class _Tp>
 struct atomic<_Tp*>
@@ -10767,8 +9282,6 @@ struct atomic<_Tp*>
     _Tp* operator-=(ptrdiff_t __op) noexcept {return fetch_sub(__op) - __op;}
 };
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 bool
@@ -10784,8 +9297,6 @@ atomic_is_lock_free(const atomic<_Tp>* __o) noexcept
 {
     return __o->is_lock_free();
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10803,8 +9314,6 @@ atomic_init(atomic<_Tp>* __o, _Tp __d) noexcept
     __cxx_atomic_init(&__o->__a_, __d);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 void
@@ -10820,8 +9329,6 @@ atomic_store(atomic<_Tp>* __o, _Tp __d) noexcept
 {
     __o->store(__d);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10841,8 +9348,6 @@ atomic_store_explicit(atomic<_Tp>* __o, _Tp __d, memory_order __m) noexcept
     __o->store(__d, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 _Tp
@@ -10858,8 +9363,6 @@ atomic_load(const atomic<_Tp>* __o) noexcept
 {
     return __o->load();
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10879,8 +9382,6 @@ atomic_load_explicit(const atomic<_Tp>* __o, memory_order __m) noexcept
     return __o->load(__m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 _Tp
@@ -10896,8 +9397,6 @@ atomic_exchange(atomic<_Tp>* __o, _Tp __d) noexcept
 {
     return __o->exchange(__d);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10915,8 +9414,6 @@ atomic_exchange_explicit(atomic<_Tp>* __o, _Tp __d, memory_order __m) noexcept
     return __o->exchange(__d, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 bool
@@ -10933,8 +9430,6 @@ atomic_compare_exchange_weak(atomic<_Tp>* __o, _Tp* __e, _Tp __d) noexcept
     return __o->compare_exchange_weak(*__e, __d);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 bool
@@ -10950,8 +9445,6 @@ atomic_compare_exchange_strong(atomic<_Tp>* __o, _Tp* __e, _Tp __d) noexcept
 {
     return __o->compare_exchange_strong(*__e, __d);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -10974,8 +9467,6 @@ atomic_compare_exchange_weak_explicit(atomic<_Tp>* __o, _Tp* __e, _Tp __d,
     return __o->compare_exchange_weak(*__e, __d, __s, __f);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 bool
@@ -10997,8 +9488,6 @@ atomic_compare_exchange_strong_explicit(atomic<_Tp>* __o, _Tp* __e,
 {
     return __o->compare_exchange_strong(*__e, __d, __s, __f);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11039,8 +9528,6 @@ atomic_fetch_add(atomic<_Tp*>* __o, ptrdiff_t __op) noexcept
 {
     return __o->fetch_add(__op);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11083,8 +9570,6 @@ atomic_fetch_add_explicit(atomic<_Tp*>* __o, ptrdiff_t __op, memory_order __m) n
     return __o->fetch_add(__op, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 typename enable_if
@@ -11124,8 +9609,6 @@ atomic_fetch_sub(atomic<_Tp*>* __o, ptrdiff_t __op) noexcept
 {
     return __o->fetch_sub(__op);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11168,8 +9651,6 @@ atomic_fetch_sub_explicit(atomic<_Tp*>* __o, ptrdiff_t __op, memory_order __m) n
     return __o->fetch_sub(__op, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 typename enable_if
@@ -11193,8 +9674,6 @@ atomic_fetch_and(atomic<_Tp>* __o, _Tp __op) noexcept
 {
     return __o->fetch_and(__op);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11220,8 +9699,6 @@ atomic_fetch_and_explicit(atomic<_Tp>* __o, _Tp __op, memory_order __m) noexcept
     return __o->fetch_and(__op, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 typename enable_if
@@ -11245,8 +9722,6 @@ atomic_fetch_or(atomic<_Tp>* __o, _Tp __op) noexcept
 {
     return __o->fetch_or(__op);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11272,8 +9747,6 @@ atomic_fetch_or_explicit(atomic<_Tp>* __o, _Tp __op, memory_order __m) noexcept
     return __o->fetch_or(__op, __m);
 }
 
-
-
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 typename enable_if
@@ -11297,8 +9770,6 @@ atomic_fetch_xor(atomic<_Tp>* __o, _Tp __op) noexcept
 {
     return __o->fetch_xor(__op);
 }
-
-
 
 template <class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -11324,13 +9795,9 @@ atomic_fetch_xor_explicit(atomic<_Tp>* __o, _Tp __op, memory_order __m) noexcept
     return __o->fetch_xor(__op, __m);
 }
 
-
-
 typedef struct atomic_flag
 {
     __cxx_atomic_impl<bool> __a_;
-
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     atomic_flag() noexcept = default;
@@ -11338,18 +9805,11 @@ typedef struct atomic_flag
     __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
     atomic_flag(bool __b) noexcept : __a_(__b) {}
 
-
     atomic_flag(const atomic_flag&) = delete;
     atomic_flag& operator=(const atomic_flag&) = delete;
     atomic_flag& operator=(const atomic_flag&) volatile = delete;
 
-
-
-
-
-
 } atomic_flag;
-
 
 } }
 namespace std { inline namespace __1 {
@@ -11358,10 +9818,7 @@ template <class _ValueType>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 _ValueType __libcpp_relaxed_load(_ValueType const* __value) {
 
-
     return __atomic_load_n(__value, 0);
-
-
 
 }
 
@@ -11369,14 +9826,9 @@ template <class _ValueType>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 _ValueType __libcpp_acquire_load(_ValueType const* __value) {
 
-
     return __atomic_load_n(__value, 2);
 
-
-
 }
-
-
 
 template <class _Tp> class allocator;
 
@@ -11402,8 +9854,6 @@ public:
     template <class _Up> struct rebind {typedef allocator<_Up> other;};
 };
 
-
-
 template <class _Tp, class = void>
 struct __has_element_type : false_type {};
 
@@ -11420,8 +9870,6 @@ struct __pointer_traits_element_type<_Ptr, true>
     typedef __attribute__((nodebug)) typename _Ptr::element_type type;
 };
 
-
-
 template <template <class, class...> class _Sp, class _Tp, class ..._Args>
 struct __pointer_traits_element_type<_Sp<_Tp, _Args...>, true>
 {
@@ -11433,7 +9881,6 @@ struct __pointer_traits_element_type<_Sp<_Tp, _Args...>, false>
 {
     typedef __attribute__((nodebug)) _Tp type;
 };
-
 
 template <class _Tp, class = void>
 struct __has_difference_type : false_type {};
@@ -11471,11 +9918,7 @@ struct __pointer_traits_rebind
 
     typedef __attribute__((nodebug)) typename _Tp::template rebind<_Up> type;
 
-
-
 };
-
-
 
 template <template <class, class...> class _Sp, class _Tp, class ..._Args, class _Up>
 struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, true>
@@ -11491,7 +9934,6 @@ struct __pointer_traits_rebind<_Sp<_Tp, _Args...>, _Up, false>
     typedef _Sp<_Up, _Args...> type;
 };
 
-
 template <class _Ptr>
 struct pointer_traits
 {
@@ -11499,9 +9941,7 @@ struct pointer_traits
     typedef typename __pointer_traits_element_type<pointer>::type element_type;
     typedef typename __pointer_traits_difference_type<pointer>::type difference_type;
 
-
     template <class _Up> using rebind = typename __pointer_traits_rebind<pointer, _Up>::type;
-
 
 private:
     struct __nat {};
@@ -11519,9 +9959,7 @@ struct pointer_traits<_Tp*>
     typedef _Tp element_type;
     typedef ptrdiff_t difference_type;
 
-
     template <class _Up> using rebind = _Up*;
-
 
 private:
     struct __nat {};
@@ -11538,8 +9976,6 @@ struct __rebind_pointer {
     typedef typename pointer_traits<_From>::template rebind<_To> type;
 
 };
-
-
 
 template <class _Tp, class = void>
 struct __has_pointer_type : false_type {};
@@ -11589,8 +10025,6 @@ struct __const_pointer<_Tp, _Ptr, _Alloc, false>
 {
 
     typedef __attribute__((nodebug)) typename pointer_traits<_Ptr>::template rebind<const _Tp> type;
-
-
 
 };
 
@@ -11644,8 +10078,6 @@ __to_raw_pointer(_Tp* __p) noexcept
     return __p;
 }
 
-
-
 template <class _Pointer>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 typename pointer_traits<_Pointer>::element_type*
@@ -11653,7 +10085,6 @@ __to_raw_pointer(_Pointer __p) noexcept
 {
     return std::__1::__to_raw_pointer(__p.operator->());
 }
-
 
 template <class _Tp, class = void>
 struct __has_size_type : false_type {};
@@ -11777,8 +10208,6 @@ struct __allocator_traits_rebind
     typedef __attribute__((nodebug)) typename _Tp::template rebind<_Up>::other type;
 };
 
-
-
 template <template <class, class...> class _Alloc, class _Tp, class ..._Args, class _Up>
 struct __allocator_traits_rebind<_Alloc<_Tp, _Args...>, _Up, true>
 {
@@ -11790,9 +10219,6 @@ struct __allocator_traits_rebind<_Alloc<_Tp, _Args...>, _Up, false>
 {
     typedef __attribute__((nodebug)) _Alloc<_Up, _Args...> type;
 };
-
-
-
 
 template <class _Alloc, class _SizeType, class _ConstVoidPtr>
 auto
@@ -11910,8 +10336,6 @@ struct __is_default_allocator : false_type {};
 template <class _Tp>
 struct __is_default_allocator<std::__1::allocator<_Tp> > : true_type {};
 
-
-
 template <class _Alloc,
     bool = __has_construct<_Alloc, typename _Alloc::value_type*, typename _Alloc::value_type&&>::value && !__is_default_allocator<_Alloc>::value
     >
@@ -11932,8 +10356,6 @@ struct __is_cpp17_copy_insertable<_Alloc, false> : integral_constant<bool,
     std::is_copy_constructible<typename _Alloc::value_type>::value &&
     __is_cpp17_move_insertable<_Alloc>::value>
   {};
-
-
 
 template <class _Alloc>
 struct allocator_traits
@@ -11958,16 +10380,9 @@ struct allocator_traits
     typedef typename __is_always_equal<allocator_type>::type
                      is_always_equal;
 
-
     template <class _Tp> using rebind_alloc =
                   typename __allocator_traits_rebind<allocator_type, _Tp>::type;
     template <class _Tp> using rebind_traits = allocator_traits<rebind_alloc<_Tp> >;
-
-
-
-
-
-
 
                                   __attribute__ ((__exclude_from_explicit_instantiation__))
     static pointer allocate(allocator_type& __a, size_type __n)
@@ -11980,7 +10395,6 @@ struct allocator_traits
     __attribute__ ((__exclude_from_explicit_instantiation__))
     static void deallocate(allocator_type& __a, pointer __p, size_type __n) noexcept
         {__a.deallocate(__p, __n);}
-
 
     template <class _Tp, class... _Args>
         __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -12015,8 +10429,6 @@ struct allocator_traits
               construct(__a, std::__1::__to_raw_pointer(__begin2),
 
                         std::__1::move(*__begin1)
-
-
 
                         );
         }
@@ -12088,8 +10500,6 @@ struct allocator_traits
 
                         std::__1::move(*--__end1)
 
-
-
                         );
               --__end2;
             }
@@ -12123,7 +10533,6 @@ private:
     static pointer __allocate(allocator_type& __a, size_type __n,
         const_void_pointer, false_type)
         {return __a.allocate(__n);}
-
 
     template <class _Tp, class... _Args>
         __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -12169,11 +10578,7 @@ struct __rebind_alloc_helper
 
     typedef __attribute__((nodebug)) typename _Traits::template rebind_alloc<_Tp> type;
 
-
-
 };
-
-
 
 template <class _Tp>
 class allocator
@@ -12215,7 +10620,6 @@ public:
         {std::__1::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), alignof(_Tp));}
     __attribute__ ((__exclude_from_explicit_instantiation__)) size_type max_size() const noexcept
         {return size_type(~0) / sizeof(_Tp);}
-
 
     template <class _Up, class... _Args>
         __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -12265,7 +10669,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) size_type max_size() const noexcept
         {return size_type(~0) / sizeof(_Tp);}
 
-
     template <class _Up, class... _Args>
         __attribute__ ((__exclude_from_explicit_instantiation__))
         void
@@ -12300,14 +10703,12 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) raw_storage_iterator& operator=(const _Tp& __element)
         {::new(std::__1::addressof(*__x_)) _Tp(__element); return *this;}
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__)) raw_storage_iterator& operator=(_Tp&& __element)
         {::new(std::__1::addressof(*__x_)) _Tp(std::__1::move(__element)); return *this;}
 
     __attribute__ ((__exclude_from_explicit_instantiation__)) raw_storage_iterator& operator++() {++__x_; return *this;}
     __attribute__ ((__exclude_from_explicit_instantiation__)) raw_storage_iterator operator++(int)
         {raw_storage_iterator __t(*this); ++__x_; return __t;}
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__)) _OutputIterator base() const { return __x_; }
 
@@ -12326,7 +10727,6 @@ get_temporary_buffer(ptrdiff_t __n) noexcept
         __n = __m;
     while (__n > 0)
     {
-
 
     if (__is_overaligned_for_new(alignof(_Tp)))
         {
@@ -12362,7 +10762,6 @@ struct __compressed_pair_elem {
   typedef _Tp& reference;
   typedef const _Tp& const_reference;
 
-
   __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __compressed_pair_elem() : __value_() {}
 
   template <class _Up, class = typename enable_if<
@@ -12381,11 +10780,6 @@ struct __compressed_pair_elem {
                          __tuple_indices<_Indexes...>)
       : __value_(std::__1::forward<_Args>(std::__1::get<_Indexes>(__args))...) {}
 
-
-
-
-
-
   __attribute__ ((__exclude_from_explicit_instantiation__)) reference __get() noexcept { return __value_; }
   __attribute__ ((__exclude_from_explicit_instantiation__))
   const_reference __get() const noexcept { return __value_; }
@@ -12400,7 +10794,6 @@ struct __compressed_pair_elem<_Tp, _Idx, true> : private _Tp {
   typedef _Tp& reference;
   typedef const _Tp& const_reference;
   typedef _Tp __value_type;
-
 
   __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr __compressed_pair_elem() = default;
 
@@ -12419,17 +10812,10 @@ struct __compressed_pair_elem<_Tp, _Idx, true> : private _Tp {
                          __tuple_indices<_Indexes...>)
       : __value_type(std::__1::forward<_Args>(std::__1::get<_Indexes>(__args))...) {}
 
-
-
-
-
-
-
   __attribute__ ((__exclude_from_explicit_instantiation__)) reference __get() noexcept { return *this; }
   __attribute__ ((__exclude_from_explicit_instantiation__))
   const_reference __get() const noexcept { return *this; }
 };
-
 
 struct __second_tag {};
 
@@ -12438,10 +10824,6 @@ class __compressed_pair : private __compressed_pair_elem<_T1, 0>,
                           private __compressed_pair_elem<_T2, 1> {
   typedef __attribute__((nodebug)) __compressed_pair_elem<_T1, 0> _Base1;
   typedef __attribute__((nodebug)) __compressed_pair_elem<_T2, 1> _Base2;
-
-
-
-
 
   static_assert((!is_same<_T1, _T2>::value),
     "__compressed_pair cannot be instantated when T1 and T2 are the same type; "
@@ -12523,16 +10905,12 @@ void swap(__compressed_pair<_T1, _T2>& __x, __compressed_pair<_T1, _T2>& __y)
   __x.swap(__y);
 }
 
-
-
 template <class _Tp>
 struct default_delete {
     static_assert(!is_function<_Tp>::value,
                   "default_delete cannot be instantiated for function types");
 
   __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr default_delete() noexcept = default;
-
-
 
   template <class _Up>
   __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -12559,9 +10937,6 @@ private:
 public:
 
   __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr default_delete() noexcept = default;
-
-
-
 
   template <class _Up>
   __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -12779,7 +11154,6 @@ public:
   }
 };
 
-
 template <class _Tp, class _Dp>
 class unique_ptr<_Tp[], _Dp> {
 public:
@@ -12939,11 +11313,6 @@ public:
     __ptr_.second() = std::__1::forward<_Ep>(__u.get_deleter());
     return *this;
   }
-
-
-
-
-
 
 public:
   __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -13155,9 +11524,6 @@ operator>=(nullptr_t, const unique_ptr<_T1, _D1>& __x)
     return !(nullptr < __x);
 }
 
-
-
-
 template<class _Tp>
 struct __unique_if
 {
@@ -13197,11 +11563,7 @@ template<class _Tp, class... _Args>
     typename __unique_if<_Tp>::__unique_array_known_bound
     make_unique(_Args&&...) = delete;
 
-
-
 template <class _Tp, class _Dp>
-
-
 
 struct hash<__enable_hash_helper<
     unique_ptr<_Tp, _Dp>, typename unique_ptr<_Tp, _Dp>::pointer> >
@@ -13281,10 +11643,6 @@ uninitialized_copy(_InputIterator __f, _InputIterator __l, _ForwardIterator __r)
 {
     typedef typename iterator_traits<_ForwardIterator>::value_type value_type;
 
-
-
-
-
         for (; __f != __l; ++__f, (void) ++__r)
             ::new (static_cast<void*>(std::__1::addressof(*__r))) value_type(*__f);
     return __r;
@@ -13295,10 +11653,6 @@ _ForwardIterator
 uninitialized_copy_n(_InputIterator __f, _Size __n, _ForwardIterator __r)
 {
     typedef typename iterator_traits<_ForwardIterator>::value_type value_type;
-
-
-
-
 
         for (; __n > 0; ++__f, (void) ++__r, (void) --__n)
             ::new (static_cast<void*>(std::__1::addressof(*__r))) value_type(*__f);
@@ -13311,10 +11665,6 @@ uninitialized_fill(_ForwardIterator __f, _ForwardIterator __l, const _Tp& __x)
 {
     typedef typename iterator_traits<_ForwardIterator>::value_type value_type;
 
-
-
-
-
         for (; __f != __l; ++__f)
             ::new (static_cast<void*>(std::__1::addressof(*__f))) value_type(__x);
 }
@@ -13325,17 +11675,10 @@ uninitialized_fill_n(_ForwardIterator __f, _Size __n, const _Tp& __x)
 {
     typedef typename iterator_traits<_ForwardIterator>::value_type value_type;
 
-
-
-
-
         for (; __n > 0; ++__f, (void) --__n)
             ::new (static_cast<void*>(std::__1::addressof(*__f))) value_type(__x);
     return __f;
 }
-
-
-
 
 template <class _ForwardIterator>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -13343,15 +11686,8 @@ void uninitialized_default_construct(_ForwardIterator __first, _ForwardIterator 
     using _Vt = typename iterator_traits<_ForwardIterator>::value_type;
     auto __idx = __first;
 
-
-
     for (; __idx != __last; ++__idx)
         ::new((void*)std::__1::addressof(*__idx)) _Vt;
-
-
-
-
-
 
 }
 
@@ -13361,19 +11697,11 @@ _ForwardIterator uninitialized_default_construct_n(_ForwardIterator __first, _Si
     using _Vt = typename iterator_traits<_ForwardIterator>::value_type;
     auto __idx = __first;
 
-
-
     for (; __n > 0; (void)++__idx, --__n)
         ::new((void*)std::__1::addressof(*__idx)) _Vt;
     return __idx;
 
-
-
-
-
-
 }
-
 
 template <class _ForwardIterator>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -13381,15 +11709,8 @@ void uninitialized_value_construct(_ForwardIterator __first, _ForwardIterator __
     using _Vt = typename iterator_traits<_ForwardIterator>::value_type;
     auto __idx = __first;
 
-
-
     for (; __idx != __last; ++__idx)
         ::new((void*)std::__1::addressof(*__idx)) _Vt();
-
-
-
-
-
 
 }
 
@@ -13402,7 +11723,6 @@ _ForwardIterator uninitialized_value_construct_n(_ForwardIterator __first, _Size
         ::new((void*)std::__1::addressof(*__idx)) _Vt();
     return __idx;
 }
-
 
 template <class _InputIt, class _ForwardIt>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -13429,10 +11749,7 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__)) _Tp
 __libcpp_atomic_refcount_increment(_Tp& __t) noexcept
 {
 
-
     return __atomic_add_fetch(&__t, 1, 0);
-
-
 
 }
 
@@ -13442,8 +11759,6 @@ __libcpp_atomic_refcount_decrement(_Tp& __t) noexcept
 {
 
     return __atomic_add_fetch(&__t, -1, 4);
-
-
 
 }
 
@@ -13472,11 +11787,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     explicit __shared_count(long __refs = 0) noexcept
         : __shared_owners_(__refs) {}
-
-
-
-
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void __add_shared() noexcept {
@@ -13529,12 +11839,6 @@ public:
     long use_count() const noexcept {return __shared_count::use_count();}
     __shared_weak_count* lock() noexcept;
 
-
-
-
-
-
-
     virtual const void* __get_deleter(const type_info&) const noexcept;
 
 private:
@@ -13551,16 +11855,12 @@ public:
     __shared_ptr_pointer(_Tp __p, _Dp __d, _Alloc __a)
         : __data_(__compressed_pair<_Tp, _Dp>(__p, std::__1::move(__d)), std::__1::move(__a)) {}
 
-
     virtual const void* __get_deleter(const type_info&) const noexcept;
-
 
 private:
     virtual void __on_zero_shared() noexcept;
     virtual void __on_zero_shared_weak() noexcept;
 };
-
-
 
 template <class _Tp, class _Dp, class _Alloc>
 const void*
@@ -13568,8 +11868,6 @@ __shared_ptr_pointer<_Tp, _Dp, _Alloc>::__get_deleter(const type_info& __t) cons
 {
     return __t == typeid(_Dp) ? std::__1::addressof(__data_.first().second()) : nullptr;
 }
-
-
 
 template <class _Tp, class _Dp, class _Alloc>
 void
@@ -13599,7 +11897,6 @@ class __shared_ptr_emplace
     __compressed_pair<_Alloc, _Tp> __data_;
 public:
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     __shared_ptr_emplace(_Alloc __a)
         : __data_(std::__1::move(__a)) {}
@@ -13609,7 +11906,6 @@ public:
         __shared_ptr_emplace(_Alloc __a, _Args&& ...__args)
             : __data_(piecewise_construct, std::__1::forward_as_tuple(__a),
                    std::__1::forward_as_tuple(std::__1::forward<_Args>(__args)...)) {}
-
 
 private:
     virtual void __on_zero_shared() noexcept;
@@ -13657,7 +11953,6 @@ class shared_ptr
 {
 public:
     typedef _Tp element_type;
-
 
     typedef weak_ptr<_Tp> weak_type;
 
@@ -13751,10 +12046,6 @@ public:
         __attribute__ ((__exclude_from_explicit_instantiation__))
         operator=(unique_ptr<_Yp, _Dp>&& __r);
 
-
-
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void swap(shared_ptr& __r) noexcept;
     __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -13810,14 +12101,12 @@ public:
     __owner_equivalent(const shared_ptr& __p) const
         {return __cntrl_ == __p.__cntrl_;}
 
-
     template <class _Dp>
         __attribute__ ((__exclude_from_explicit_instantiation__))
         _Dp* __get_deleter() const noexcept
             {return static_cast<_Dp*>(__cntrl_
                     ? const_cast<void *>(__cntrl_->__get_deleter(typeid(_Dp)))
                       : nullptr);}
-
 
     template<class ..._Args>
         static
@@ -13864,7 +12153,6 @@ private:
     template <class _Up> friend class shared_ptr;
     template <class _Up> friend class weak_ptr;
 };
-
 
 template<class _Tp>
 inline
@@ -13916,9 +12204,6 @@ shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d)
     : __ptr_(0)
 {
 
-
-
-
         typedef typename __shared_ptr_default_allocator<_Tp>::type _AllocT;
         typedef __shared_ptr_pointer<nullptr_t, _Dp, _AllocT > _CntrlBlk;
         __cntrl_ = new _CntrlBlk(__p, __d, _AllocT());
@@ -13930,9 +12215,6 @@ shared_ptr<_Tp>::shared_ptr(_Yp* __p, _Dp __d, _Alloc __a,
                             typename enable_if<is_convertible<_Yp*, element_type*>::value, __nat>::type)
     : __ptr_(__p)
 {
-
-
-
 
         typedef __shared_ptr_pointer<_Yp*, _Dp, _Alloc> _CntrlBlk;
         typedef typename __allocator_traits_rebind<_Alloc, _CntrlBlk>::type _A2;
@@ -13950,9 +12232,6 @@ template<class _Dp, class _Alloc>
 shared_ptr<_Tp>::shared_ptr(nullptr_t __p, _Dp __d, _Alloc __a)
     : __ptr_(0)
 {
-
-
-
 
         typedef __shared_ptr_pointer<nullptr_t, _Dp, _Alloc> _CntrlBlk;
         typedef typename __allocator_traits_rebind<_Alloc, _CntrlBlk>::type _A2;
@@ -13998,8 +12277,6 @@ shared_ptr<_Tp>::shared_ptr(const shared_ptr<_Yp>& __r,
         __cntrl_->__add_shared();
 }
 
-
-
 template<class _Tp>
 inline
 shared_ptr<_Tp>::shared_ptr(shared_ptr&& __r) noexcept
@@ -14027,8 +12304,6 @@ template <class _Yp, class _Dp>
 
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
 
-
-
                             typename enable_if
                             <
                                 !is_lvalue_reference<_Dp>::value &&
@@ -14038,7 +12313,6 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
                             >::type)
     : __ptr_(__r.get())
 {
-
 
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
@@ -14058,8 +12332,6 @@ template <class _Yp, class _Dp>
 
 shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
 
-
-
                             typename enable_if
                             <
                                 is_lvalue_reference<_Dp>::value &&
@@ -14069,7 +12341,6 @@ shared_ptr<_Tp>::shared_ptr(unique_ptr<_Yp, _Dp>&& __r,
                             >::type)
     : __ptr_(__r.get())
 {
-
 
     if (__ptr_ == nullptr)
         __cntrl_ = nullptr;
@@ -14154,8 +12425,6 @@ shared_ptr<_Tp>::operator=(const shared_ptr<_Yp>& __r) noexcept
     shared_ptr(__r).swap(*this);
     return *this;
 }
-
-
 
 template<class _Tp>
 inline
@@ -14296,12 +12565,7 @@ bool
 operator<(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) noexcept
 {
 
-
-
-
-
     return less<>()(__x.get(), __y.get());
-
 
 }
 
@@ -14470,8 +12734,6 @@ const_pointer_cast(const shared_ptr<_Up>& __r) noexcept
     return shared_ptr<_Tp>(__r, const_cast<_RTp*>(__r.get()));
 }
 
-
-
 template<class _Dp, class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 _Dp*
@@ -14479,8 +12741,6 @@ get_deleter(const shared_ptr<_Tp>& __p) noexcept
 {
     return __p.template __get_deleter<_Dp>();
 }
-
-
 
 template<class _Tp>
 class weak_ptr
@@ -14503,7 +12763,6 @@ public:
                    typename enable_if<is_convertible<_Yp*, _Tp*>::value, __nat*>::type = 0)
                          noexcept;
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     weak_ptr(weak_ptr&& __r) noexcept;
     template<class _Yp> __attribute__ ((__exclude_from_explicit_instantiation__)) weak_ptr(weak_ptr<_Yp>&& __r,
@@ -14523,8 +12782,6 @@ public:
         __attribute__ ((__exclude_from_explicit_instantiation__))
         operator=(weak_ptr<_Yp> const& __r) noexcept;
 
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     weak_ptr& operator=(weak_ptr&& __r) noexcept;
     template<class _Yp>
@@ -14535,8 +12792,6 @@ public:
         >::type
         __attribute__ ((__exclude_from_explicit_instantiation__))
         operator=(weak_ptr<_Yp>&& __r) noexcept;
-
-
 
     template<class _Yp>
         typename enable_if
@@ -14617,8 +12872,6 @@ weak_ptr<_Tp>::weak_ptr(weak_ptr<_Yp> const& __r,
         __cntrl_->__add_weak();
 }
 
-
-
 template<class _Tp>
 inline
 weak_ptr<_Tp>::weak_ptr(weak_ptr&& __r) noexcept
@@ -14641,8 +12894,6 @@ weak_ptr<_Tp>::weak_ptr(weak_ptr<_Yp>&& __r,
     __r.__ptr_ = 0;
     __r.__cntrl_ = 0;
 }
-
-
 
 template<class _Tp>
 weak_ptr<_Tp>::~weak_ptr()
@@ -14674,8 +12925,6 @@ weak_ptr<_Tp>::operator=(weak_ptr<_Yp> const& __r) noexcept
     return *this;
 }
 
-
-
 template<class _Tp>
 inline
 weak_ptr<_Tp>&
@@ -14698,8 +12947,6 @@ weak_ptr<_Tp>::operator=(weak_ptr<_Yp>&& __r) noexcept
     weak_ptr(std::__1::move(__r)).swap(*this);
     return *this;
 }
-
-
 
 template<class _Tp>
 template<class _Yp>
@@ -14737,12 +12984,7 @@ weak_ptr<_Tp>::lock() const noexcept
     return __r;
 }
 
-
-
 template <class _Tp = void> struct owner_less;
-
-
-
 
 template <class _Tp>
 struct owner_less<shared_ptr<_Tp> >
@@ -14776,8 +13018,6 @@ struct owner_less<weak_ptr<_Tp> >
         {return __x.owner_before(__y);}
 };
 
-
-
 template <>
 struct owner_less<void>
 {
@@ -14799,7 +13039,6 @@ struct owner_less<void>
         {return __x.owner_before(__y);}
     typedef void is_transparent;
 };
-
 
 template<class _Tp>
 class enable_shared_from_this
@@ -14823,8 +13062,6 @@ public:
     shared_ptr<_Tp const> shared_from_this() const
         {return shared_ptr<const _Tp>(__weak_this_);}
 
-
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     weak_ptr<_Tp> weak_from_this() noexcept
        { return __weak_this_; }
@@ -14832,7 +13069,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     weak_ptr<const _Tp> weak_from_this() const noexcept
         { return __weak_this_; }
-
 
     template <class _Up> friend class shared_ptr;
 };
@@ -14855,10 +13091,6 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__))
 basic_ostream<_CharT, _Traits>&
 operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p);
 
-
-
-
-
 class __sp_mut
 {
     void* __lx;
@@ -14873,7 +13105,6 @@ private:
 
     friend __sp_mut& __get_sp_mut(const void*);
 };
-
 
 __sp_mut& __get_sp_mut(const void*);
 
@@ -15016,9 +13247,6 @@ struct pointer_safety
     operator int() const {return __v_;}
 };
 
-
-
-
                  pointer_safety get_pointer_safety() noexcept;
                  void declare_reachable(void* __p);
                  void declare_no_pointers(char* __p, size_t __n);
@@ -15035,15 +13263,11 @@ undeclare_reachable(_Tp* __p)
 
                  void* align(size_t __align, size_t __sz, void*& __ptr, size_t& __space);
 
-
 template <typename _Alloc>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 void __swap_allocator(_Alloc & __a1, _Alloc & __a2)
 
-
     noexcept
-
-
 
 {
     __swap_allocator(__a1, __a2,
@@ -15054,10 +13278,7 @@ template <typename _Alloc>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 void __swap_allocator(_Alloc & __a1, _Alloc & __a2, true_type)
 
-
     noexcept
-
-
 
 {
     using std::__1::swap;
@@ -15072,14 +13293,9 @@ template <typename _Alloc, typename _Traits=allocator_traits<_Alloc> >
 struct __noexcept_move_assign_container : public integral_constant<bool,
     _Traits::propagate_on_container_move_assignment::value
 
-
         || _Traits::is_always_equal::value
 
-
-
     > {};
-
-
 
 template <class _Tp, class _Alloc>
 struct __temp_value {
@@ -15101,7 +13317,6 @@ struct __temp_value {
     ~__temp_value() { _Traits::destroy(__a, __addr()); }
     };
 
-
 template<typename _Alloc, typename = void, typename = void>
 struct __is_allocator : false_type {};
 
@@ -15111,10 +13326,6 @@ struct __is_allocator<_Alloc,
        typename __void_t<decltype(std::__1::declval<_Alloc&>().allocate(size_t(0)))>::type
      >
    : true_type {};
-
-
-
-
 
 struct __builtin_new_allocator {
   struct __builtin_new_deleter {
@@ -15157,15 +13368,10 @@ struct __builtin_new_allocator {
   }
 };
 
-
 } }
 namespace std { inline namespace __1 {
 
-
-
 template <class _Tp = void>
-
-
 
 struct plus : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15173,8 +13379,6 @@ struct plus : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x + __y;}
 };
-
-
 
 template <>
 struct plus<void>
@@ -15188,13 +13392,7 @@ struct plus<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct minus : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15202,8 +13400,6 @@ struct minus : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x - __y;}
 };
-
-
 
 template <>
 struct minus<void>
@@ -15217,13 +13413,7 @@ struct minus<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct multiplies : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15231,8 +13421,6 @@ struct multiplies : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x * __y;}
 };
-
-
 
 template <>
 struct multiplies<void>
@@ -15246,13 +13434,7 @@ struct multiplies<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct divides : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15260,8 +13442,6 @@ struct divides : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x / __y;}
 };
-
-
 
 template <>
 struct divides<void>
@@ -15275,13 +13455,7 @@ struct divides<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct modulus : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15289,8 +13463,6 @@ struct modulus : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x % __y;}
 };
-
-
 
 template <>
 struct modulus<void>
@@ -15304,13 +13476,7 @@ struct modulus<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct negate : unary_function<_Tp, _Tp>
 {
@@ -15318,8 +13484,6 @@ struct negate : unary_function<_Tp, _Tp>
     _Tp operator()(const _Tp& __x) const
         {return -__x;}
 };
-
-
 
 template <>
 struct negate<void>
@@ -15333,13 +13497,7 @@ struct negate<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct equal_to : binary_function<_Tp, _Tp, bool>
 {
@@ -15347,8 +13505,6 @@ struct equal_to : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x == __y;}
 };
-
-
 
 template <>
 struct equal_to<void>
@@ -15362,13 +13518,7 @@ struct equal_to<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct not_equal_to : binary_function<_Tp, _Tp, bool>
 {
@@ -15376,8 +13526,6 @@ struct not_equal_to : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x != __y;}
 };
-
-
 
 template <>
 struct not_equal_to<void>
@@ -15391,13 +13539,7 @@ struct not_equal_to<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct greater : binary_function<_Tp, _Tp, bool>
 {
@@ -15405,8 +13547,6 @@ struct greater : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x > __y;}
 };
-
-
 
 template <>
 struct greater<void>
@@ -15420,15 +13560,7 @@ struct greater<void>
     typedef void is_transparent;
 };
 
-
-
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct greater_equal : binary_function<_Tp, _Tp, bool>
 {
@@ -15436,8 +13568,6 @@ struct greater_equal : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x >= __y;}
 };
-
-
 
 template <>
 struct greater_equal<void>
@@ -15451,13 +13581,7 @@ struct greater_equal<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct less_equal : binary_function<_Tp, _Tp, bool>
 {
@@ -15465,8 +13589,6 @@ struct less_equal : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x <= __y;}
 };
-
-
 
 template <>
 struct less_equal<void>
@@ -15480,13 +13602,7 @@ struct less_equal<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct logical_and : binary_function<_Tp, _Tp, bool>
 {
@@ -15494,8 +13610,6 @@ struct logical_and : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x && __y;}
 };
-
-
 
 template <>
 struct logical_and<void>
@@ -15509,13 +13623,7 @@ struct logical_and<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct logical_or : binary_function<_Tp, _Tp, bool>
 {
@@ -15523,8 +13631,6 @@ struct logical_or : binary_function<_Tp, _Tp, bool>
     bool operator()(const _Tp& __x, const _Tp& __y) const
         {return __x || __y;}
 };
-
-
 
 template <>
 struct logical_or<void>
@@ -15538,13 +13644,7 @@ struct logical_or<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct logical_not : unary_function<_Tp, bool>
 {
@@ -15552,8 +13652,6 @@ struct logical_not : unary_function<_Tp, bool>
     bool operator()(const _Tp& __x) const
         {return !__x;}
 };
-
-
 
 template <>
 struct logical_not<void>
@@ -15567,13 +13665,7 @@ struct logical_not<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct bit_and : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15581,8 +13673,6 @@ struct bit_and : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x & __y;}
 };
-
-
 
 template <>
 struct bit_and<void>
@@ -15596,13 +13686,7 @@ struct bit_and<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct bit_or : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15610,8 +13694,6 @@ struct bit_or : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x | __y;}
 };
-
-
 
 template <>
 struct bit_or<void>
@@ -15625,13 +13707,7 @@ struct bit_or<void>
     typedef void is_transparent;
 };
 
-
-
-
-
 template <class _Tp = void>
-
-
 
 struct bit_xor : binary_function<_Tp, _Tp, _Tp>
 {
@@ -15639,8 +13715,6 @@ struct bit_xor : binary_function<_Tp, _Tp, _Tp>
     _Tp operator()(const _Tp& __x, const _Tp& __y) const
         {return __x ^ __y;}
 };
-
-
 
 template <>
 struct bit_xor<void>
@@ -15653,10 +13727,6 @@ struct bit_xor<void>
         { return std::__1::forward<_T1>(__t) ^ std::__1::forward<_T2>(__u); }
     typedef void is_transparent;
 };
-
-
-
-
 
 template <class _Tp = void>
 struct bit_not : unary_function<_Tp, _Tp>
@@ -15677,7 +13747,6 @@ struct bit_not<void>
         { return ~std::__1::forward<_Tp>(__x); }
     typedef void is_transparent;
 };
-
 
 template <class _Predicate>
 class __attribute__ ((deprecated)) unary_negate
@@ -15720,10 +13789,6 @@ __attribute__ ((deprecated)) inline constexpr __attribute__ ((__exclude_from_exp
 binary_negate<_Predicate>
 not2(const _Predicate& __pred) {return binary_negate<_Predicate>(__pred);}
 
-
-
-
-
 template <class _Tp>
 class __mem_fn
     : public __weak_result_type<_Tp>
@@ -15736,8 +13801,6 @@ private:
 
 public:
     __attribute__ ((__exclude_from_explicit_instantiation__)) __mem_fn(type __f) noexcept : __f_(__f) {}
-
-
 
     template <class... _ArgTypes>
     __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -15756,23 +13819,11 @@ mem_fn(_Rp _Tp::* __pm) noexcept
     return __mem_fn<_Rp _Tp::*>(__pm);
 }
 
-
-
-
-
-
-
 class bad_function_call
     : public exception
 {
 
-
-
-
-
-
 };
-
 
 template<class _Fp> class function;
 
@@ -15819,11 +13870,7 @@ bool __not_null(function<_Fp> const& __f) { return !!__f; }
 
 }
 
-
-
 namespace __function {
-
-
 
 template <class _Fp, class _Ap, class _FB> class __alloc_func;
 template <class _Fp, class _FB>
@@ -15840,7 +13887,6 @@ class __alloc_func<_Fp, _Ap, _Rp(_ArgTypes...)>
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const _Target& __target() const { return __f_.first(); }
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const _Alloc& __get_allocator() const { return __f_.second(); }
@@ -15949,8 +13995,6 @@ public:
   }
 };
 
-
-
 template<class _Fp> class __base;
 
 template<class _Rp, class ..._ArgTypes>
@@ -15971,8 +14015,6 @@ public:
     virtual const std::type_info& target_type() const noexcept = 0;
 
 };
-
-
 
 template<class _FD, class _Alloc, class _FB> class __func;
 
@@ -16054,8 +14096,6 @@ __func<_Fp, _Alloc, _Rp(_ArgTypes...)>::operator()(_ArgTypes&& ... __arg)
     return __f_(std::__1::forward<_ArgTypes>(__arg)...);
 }
 
-
-
 template<class _Fp, class _Alloc, class _Rp, class ..._ArgTypes>
 const void*
 __func<_Fp, _Alloc, _Rp(_ArgTypes...)>::target(const type_info& __ti) const noexcept
@@ -16071,10 +14111,6 @@ __func<_Fp, _Alloc, _Rp(_ArgTypes...)>::target_type() const noexcept
 {
     return typeid(_Fp);
 }
-
-
-
-
 
 template <class _Fp> class __value_func;
 
@@ -16248,7 +14284,6 @@ template <class _Rp, class... _ArgTypes> class __value_func<_Rp(_ArgTypes...)>
     __attribute__ ((__exclude_from_explicit_instantiation__))
     explicit operator bool() const noexcept { return __f_ != 0; }
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const std::type_info& target_type() const noexcept
     {
@@ -16267,14 +14302,11 @@ template <class _Rp, class... _ArgTypes> class __value_func<_Rp(_ArgTypes...)>
 
 };
 
-
-
 union __policy_storage
 {
     mutable char __small[sizeof(void*) * 2];
     void* __large;
 };
-
 
 template <typename _Fun>
 struct __use_small_storage
@@ -16284,21 +14316,15 @@ struct __use_small_storage
                     std::__1::is_trivially_copy_constructible<_Fun>::value &&
                     std::__1::is_trivially_destructible<_Fun>::value> {};
 
-
-
 struct __policy
 {
 
     void* (*const __clone)(const void*);
     void (*const __destroy)(void*);
 
-
     const bool __is_null;
 
-
     const std::type_info* const __type_info;
-
-
 
     template <typename _Fun>
     __attribute__ ((__exclude_from_explicit_instantiation__)) static const __policy* __create()
@@ -16313,8 +14339,6 @@ struct __policy
                                                              true,
 
                                                              &typeid(void)
-
-
 
         };
         return &__policy_;
@@ -16340,8 +14364,6 @@ struct __policy
 
           &typeid(typename _Fun::_Target)
 
-
-
       };
         return &__policy_;
     }
@@ -16355,20 +14377,14 @@ struct __policy
 
             &typeid(typename _Fun::_Target)
 
-
-
         };
         return &__policy_;
     }
 };
 
-
-
 template <typename _Tp>
 using __fast_forward =
     typename std::__1::conditional<std::__1::is_scalar<_Tp>::value, _Tp, _Tp&&>::type;
-
-
 
 template <class _Fp> struct __policy_invoker;
 
@@ -16380,10 +14396,8 @@ struct __policy_invoker<_Rp(_ArgTypes...)>
 
     __Call __call_;
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     __policy_invoker() : __call_(&__call_empty) {}
-
 
     template <typename _Fun>
     __attribute__ ((__exclude_from_explicit_instantiation__)) static __policy_invoker __create()
@@ -16412,9 +14426,6 @@ struct __policy_invoker<_Rp(_ArgTypes...)>
     }
 };
 
-
-
-
 template <class _Fp> class __policy_func;
 
 template <class _Rp, class... _ArgTypes> class __policy_func<_Rp(_ArgTypes...)>
@@ -16422,13 +14433,8 @@ template <class _Rp, class... _ArgTypes> class __policy_func<_Rp(_ArgTypes...)>
 
     __policy_storage __buf_;
 
-
-
-
     typedef __function::__policy_invoker<_Rp(_ArgTypes...)> __invoker;
     __invoker __invoker_;
-
-
 
     const __policy* __policy_;
 
@@ -16558,7 +14564,6 @@ template <class _Rp, class... _ArgTypes> class __policy_func<_Rp(_ArgTypes...)>
         return !__policy_->__is_null;
     }
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const std::type_info& target_type() const noexcept
     {
@@ -16588,9 +14593,6 @@ class function<_Rp(_ArgTypes...)>
 
     typedef __function::__value_func<_Rp(_ArgTypes...)> __func;
 
-
-
-
     __func __f_;
 
     template <class _Fp, bool = _And<
@@ -16616,7 +14618,6 @@ class function<_Rp(_ArgTypes...)>
 public:
     typedef _Rp result_type;
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     function() noexcept { }
     __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -16633,13 +14634,11 @@ public:
 
     ~function();
 
-
     void swap(function&) noexcept;
     __attribute__ ((__exclude_from_explicit_instantiation__))
     explicit operator bool() const noexcept {
       return static_cast<bool>(__f_);
     }
-
 
     template<class _R2, class... _ArgTypes2>
       bool operator==(const function<_R2(_ArgTypes2...)>&) const = delete;
@@ -16649,14 +14648,11 @@ public:
 
     _Rp operator()(_ArgTypes...) const;
 
-
-
     const std::type_info& target_type() const noexcept;
     template <typename _Tp> _Tp* target() noexcept;
     template <typename _Tp> const _Tp* target() const noexcept;
 
 };
-
 
 template<class _Rp, class ..._Ap>
 function(_Rp(*)(_Ap...)) -> function<_Rp(_Ap...)>;
@@ -16702,7 +14698,6 @@ struct __strip_signature<_Rp (_Gp::*) (_Ap...) const volatile & noexcept> { usin
 
 template<class _Fp, class _Stripped = typename __strip_signature<decltype(&_Fp::operator())>::type>
 function(_Fp) -> function<_Stripped>;
-
 
 template<class _Rp, class ..._ArgTypes>
 function<_Rp(_ArgTypes...)>::function(const function& __f) : __f_(__f.__f_) {}
@@ -16762,8 +14757,6 @@ function<_Rp(_ArgTypes...)>::operator()(_ArgTypes... __arg) const
     return __f_(std::__1::forward<_ArgTypes>(__arg)...);
 }
 
-
-
 template<class _Rp, class ..._ArgTypes>
 const std::type_info&
 function<_Rp(_ArgTypes...)>::target_type() const noexcept
@@ -16786,8 +14779,6 @@ function<_Rp(_ArgTypes...)>::target() const noexcept
 {
     return __f_.template target<_Tp>();
 }
-
-
 
 template <class _Rp, class... _ArgTypes>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -16818,28 +14809,20 @@ template<class _Tp> struct __is_bind_expression : public false_type {};
 template<class _Tp> struct is_bind_expression
     : public __is_bind_expression<typename remove_cv<_Tp>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr size_t is_bind_expression_v = is_bind_expression<_Tp>::value;
-
 
 template<class _Tp> struct __is_placeholder : public integral_constant<int, 0> {};
 template<class _Tp> struct is_placeholder
     : public __is_placeholder<typename remove_cv<_Tp>::type> {};
 
-
-
 template <class _Tp>
 inline constexpr size_t is_placeholder_v = is_placeholder<_Tp>::value;
-
 
 namespace placeholders
 {
 
 template <int _Np> struct __ph {};
-
-
 
                  extern const __ph<1> _1;
                  extern const __ph<2> _2;
@@ -16856,9 +14839,6 @@ template <int _Np> struct __ph {};
 template<int _Np>
 struct __is_placeholder<placeholders::__ph<_Np> >
     : public integral_constant<int, _Np> {};
-
-
-
 
 template <class _Tp, class _Uj>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -17095,7 +15075,6 @@ class __bind_r
 public:
     typedef _Rp result_type;
 
-
     template <class _Gp, class ..._BA,
               class = typename enable_if
                                <
@@ -17158,11 +15137,6 @@ bind(_Fp&& __f, _BoundArgs&&... __bound_args)
     return type(std::__1::forward<_Fp>(__f), std::__1::forward<_BoundArgs>(__bound_args)...);
 }
 
-
-
-
-
-
 template <class _Fn, class ..._Args>
 invoke_result_t<_Fn, _Args...>
 invoke(_Fn&& __f, _Args&&... __args)
@@ -17199,7 +15173,6 @@ public:
         -> decltype( !std::__1::invoke(__fd, std::__1::forward<_Args>(__args)...))
         { return !std::__1::invoke(__fd, std::__1::forward<_Args>(__args)...); }
 
-
     template <class ..._Args>
     __attribute__ ((__exclude_from_explicit_instantiation__))
     auto operator()(_Args&& ...__args) const&&
@@ -17224,10 +15197,6 @@ inline __attribute__ ((__exclude_from_explicit_instantiation__))
 __not_fn_imp<decay_t<_RawFunc>> not_fn(_RawFunc&& __fn) {
     return __not_fn_imp<decay_t<_RawFunc>>(std::__1::forward<_RawFunc>(__fn));
 }
-
-
-
-
 
 template <class _BinaryPredicate, class _ForwardIterator1, class _ForwardIterator2>
 pair<_ForwardIterator1, _ForwardIterator1> constexpr
@@ -17311,10 +15280,6 @@ __search(_RandomAccessIterator1 __first1, _RandomAccessIterator1 __last1,
     }
 }
 
-
-
-
-
 template<class _ForwardIterator, class _BinaryPredicate = equal_to<>>
 class default_searcher {
 public:
@@ -17353,8 +15318,6 @@ inline void __libcpp_erase_if_container( _Container& __c, _Predicate __pred)
 } }
 namespace std { inline namespace __1 {
 
-
-
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __libcpp_ctz(unsigned __x) noexcept { return __builtin_ctz(__x); }
 
@@ -17364,7 +15327,6 @@ int __libcpp_ctz(unsigned long __x) noexcept { return __builtin_ctzl(__x); }
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __libcpp_ctz(unsigned long long __x) noexcept { return __builtin_ctzll(__x); }
 
-
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __libcpp_clz(unsigned __x) noexcept { return __builtin_clz(__x); }
 
@@ -17373,7 +15335,6 @@ int __libcpp_clz(unsigned long __x) noexcept { return __builtin_clzl(__x); }
 
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __libcpp_clz(unsigned long long __x) noexcept { return __builtin_clzll(__x); }
-
 
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __libcpp_popcount(unsigned __x) noexcept { return __builtin_popcount(__x); }
@@ -17394,7 +15355,6 @@ using __bitop_unsigned_integer __attribute__((nodebug)) = integral_constant<bool
         _IsNotSame<typename remove_cv<_Tp>::type, char32_t>::value
     >;
 
-
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 _Tp __rotl(_Tp __t, unsigned int __cnt) noexcept
@@ -17406,7 +15366,6 @@ _Tp __rotl(_Tp __t, unsigned int __cnt) noexcept
     return (__t << (__cnt % __dig)) | (__t >> (__dig - (__cnt % __dig)));
 }
 
-
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 _Tp __rotr(_Tp __t, unsigned int __cnt) noexcept
@@ -17417,8 +15376,6 @@ _Tp __rotr(_Tp __t, unsigned int __cnt) noexcept
         return __t;
     return (__t >> (__cnt % __dig)) | (__t << (__dig - (__cnt % __dig)));
 }
-
-
 
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -17490,7 +15447,6 @@ int __countl_one(_Tp __t) noexcept
         : numeric_limits<_Tp>::digits;
 }
 
-
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 int __countr_one(_Tp __t) noexcept
@@ -17500,7 +15456,6 @@ int __countr_one(_Tp __t) noexcept
         ? __countr_zero(static_cast<_Tp>(~__t))
         : numeric_limits<_Tp>::digits;
 }
-
 
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -17526,8 +15481,6 @@ __popcount(_Tp __t) noexcept
     }
 }
 
-
-
 template<class _Tp>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 unsigned __bit_log2(_Tp __t) noexcept
@@ -17545,9 +15498,6 @@ bool __ispow2(_Tp __t) noexcept
 }
 } }
 namespace std { inline namespace __1 {
-
-
-
 
 template <class _T1, class _T2 = _T1>
 struct __equal_to
@@ -17636,8 +15586,6 @@ public:
     bool operator()(const _T1& __x, const _T2& __y) {return __p_(__y, __x);}
 };
 
-
-
 template <typename _Integral>
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
 typename enable_if
@@ -17665,15 +15613,9 @@ __half_positive(_Tp __value)
 template <class _Comp>
 struct __comp_ref_type {
 
-
-
   typedef typename add_lvalue_reference<_Comp>::type type;
 
-
-
 };
-
-
 
 template <class _Iter>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -17694,9 +15636,6 @@ __unwrap_iter(move_iterator<_Tp*> __i)
 {
     return __i.base();
 }
-
-
-
 
 template <class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -17739,8 +15678,6 @@ fill_n(_OutputIterator __first, _Size __n, const _Tp& __value_)
    return std::__1::__fill_n(__first, __convert_to_integral(__n), __value_);
 }
 
-
-
 template <class _ForwardIterator, class _Tp>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
 void
@@ -17765,8 +15702,6 @@ fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value_)
 {
     std::__1::__fill(__first, __last, __value_, typename iterator_traits<_ForwardIterator>::iterator_category());
 }
-
-
 
 template <class _ForwardIterator, class _Compare>
                       inline
@@ -17796,8 +15731,6 @@ min_element(_ForwardIterator __first, _ForwardIterator __last)
               __less<typename iterator_traits<_ForwardIterator>::value_type>());
 }
 
-
-
 template <class _Tp, class _Compare>
                       inline
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -17816,8 +15749,6 @@ min(const _Tp& __a, const _Tp& __b)
     return std::__1::min(__a, __b, __less<_Tp>());
 }
 
-
-
 template<class _Tp, class _Compare>
                       inline
  __attribute__ ((__exclude_from_explicit_instantiation__)) constexpr
@@ -17835,10 +15766,6 @@ min(initializer_list<_Tp> __t)
 {
     return *std::__1::min_element(__t.begin(), __t.end(), __less<_Tp>());
 }
-
-
-
-
 
 template <unsigned long long _Xp, size_t _Rp>
 struct __log2_imp
@@ -17892,10 +15819,6 @@ private:
     _Engine_result_type __mask0_;
     _Engine_result_type __mask1_;
 
-
-
-
-
     static constexpr const _Working_result_type _Rp = _Engine::max() - _Engine::min()
                                                       + _Working_result_type(1);
 
@@ -17906,7 +15829,6 @@ private:
 public:
 
     __independent_bits_engine(_Engine& __e, size_t __w);
-
 
     result_type operator()() {return __eval(integral_constant<bool, _Rp != 0>());}
 
@@ -17993,8 +15915,6 @@ __independent_bits_engine<_Engine, _UIntType>::__eval(true_type)
     return _Sp;
 }
 
-
-
 template<class _IntType = int>
 class uniform_int_distribution
 {
@@ -18033,11 +15953,9 @@ public:
     explicit uniform_int_distribution(const param_type& __p) : __p_(__p) {}
     void reset() {}
 
-
     template<class _URNG> result_type operator()(_URNG& __g)
         {return (*this)(__g, __p_);}
     template<class _URNG> result_type operator()(_URNG& __g, const param_type& __p);
-
 
     result_type a() const {return __p_.a();}
     result_type b() const {return __p_.b();}
@@ -18082,8 +16000,6 @@ __attribute__((__no_sanitize__("unsigned-integer-overflow")))
     } while (__u >= _Rp);
     return static_cast<result_type>(__u + __p.a());
 }
-
-
 
 class __rs_default;
 
@@ -18140,8 +16056,6 @@ random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
 
                _RandomNumberGenerator&& __rand)
 
-
-
 {
     typedef typename iterator_traits<_RandomAccessIterator>::difference_type difference_type;
     difference_type __d = __last - __first;
@@ -18155,7 +16069,6 @@ random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
         }
     }
 }
-
 
 template <class _PopulationIterator, class _SampleIterator, class _Distance,
           class _UniformRandomNumberGenerator>
@@ -18218,8 +16131,6 @@ _SampleIterator __sample(_PopulationIterator __first,
       __g, _PopCategory());
 }
 
-
-
 template <class _PopulationIterator, class _SampleIterator, class _Distance,
           class _UniformRandomNumberGenerator>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -18228,9 +16139,6 @@ _SampleIterator sample(_PopulationIterator __first,
                        _Distance __n, _UniformRandomNumberGenerator&& __g) {
     return std::__1::__sample(__first, __last, __output_iter, __n, __g);
 }
-
-
-
 
 template <class _Compare, class _InputIterator1, class _InputIterator2>
                               bool
@@ -18273,8 +16181,6 @@ lexicographical_compare(_InputIterator1 __first1, _InputIterator1 __last1,
 } }
 namespace std { inline namespace __1 {
 
-
-
 template <class _CharT>
 struct char_traits
 {
@@ -18314,8 +16220,6 @@ struct char_traits
     static inline constexpr int_type eof() noexcept
         {return int_type(-1);}
 };
-
-
 
 template <>
 struct char_traits<char>
@@ -18368,7 +16272,6 @@ char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t 
     if (__n == 0)
         return 0;
 
-
     return __builtin_memcmp(__s1, __s2, __n);
 }
 
@@ -18379,12 +16282,8 @@ char_traits<char>::find(const char_type* __s, size_t __n, const char_type& __a) 
     if (__n == 0)
         return nullptr;
 
-
     return __builtin_char_memchr(__s, to_int_type(__a), __n);
 }
-
-
-
 
 template <>
 struct char_traits<wchar_t>
@@ -18437,18 +16336,13 @@ char_traits<wchar_t>::compare(const char_type* __s1, const char_type* __s2, size
     if (__n == 0)
         return 0;
 
-
     return __builtin_wmemcmp(__s1, __s2, __n);
 }
-
 
 template <class _Traits>
  __attribute__ ((__exclude_from_explicit_instantiation__))
 constexpr
 inline size_t __char_traits_length_checked(const typename _Traits::char_type* __s) noexcept {
-
-
-
 
   return _Traits::length(__s);
 
@@ -18458,7 +16352,6 @@ inline constexpr
 size_t
 char_traits<wchar_t>::length(const char_type* __s) noexcept
 {
-
 
     return __builtin_wcslen(__s);
 }
@@ -18470,11 +16363,8 @@ char_traits<wchar_t>::find(const char_type* __s, size_t __n, const char_type& __
     if (__n == 0)
         return nullptr;
 
-
     return __builtin_wmemchr(__s, __a, __n);
 }
-
-
 
 template<class _Ptr>
 inline __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -18500,92 +16390,42 @@ struct __quoted_output_proxy
 } }
 namespace std { inline namespace __1 {
 
-
 } }
 extern "C" {
                int isalnum( int c );
 
-
-
-
-
-
                int isalpha( int c );
-
-
-
 
                int isblank( int c );
 
-
                int iscntrl( int c );
-
 
                int isdigit( int c );
 
-
-
-
-
                int isgraph( int c );
-
-
-
-
-
-
 
                int islower( int c );
 
-
                int isprint( int c );
-
-
-
-
 
                int ispunct( int c );
 
-
-
-
-
                int isspace( int c );
-
-
-
-
-
-
 
                int isupper( int c );
 
-
                int isxdigit( int c );
-
-
-
-
-
 
                int tolower( int c );
 
-
-
-
                int toupper( int c );
 extern "C" {
-
-
 
 static int isascii (int c)
 {
     return c >= 0 && c < 128;
 }
 }
-
-
-
 
 }
 namespace std { inline namespace __1 {
@@ -18642,10 +16482,6 @@ using ::wcstof;
 using ::wcstold;
 using ::wcstol;
 
-
-
-
-
 using ::wcstoul;
 
 using ::wcstoull;
@@ -18672,8 +16508,6 @@ using ::wmemcpy;
 using ::wmemmove;
 using ::wmemset;
 
-
-
 using ::btowc;
 using ::wctob;
 using ::mbsinit;
@@ -18682,21 +16516,9 @@ using ::mbrtowc;
 using ::wcrtomb;
 using ::mbsrtowcs;
 
-
-
-
 } }
 
-
-
-
-
-
-
 namespace std { inline namespace __1 {
-
-
-
 
 template<class _CharT, class _Traits, class _Allocator>
 basic_string<_CharT, _Traits, _Allocator>
@@ -18730,16 +16552,13 @@ protected:
     [[noreturn]] void __throw_out_of_range() const;
 };
 
-
 extern template class __basic_string_common<true>;
-
 
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator_impl : public true_type {};
 template <class _Iter>
 struct __libcpp_string_gets_noexcept_iterator
     : public bool_constant<(__libcpp_is_trivial_iterator<_Iter>::value || __libcpp_string_gets_noexcept_iterator_impl<_Iter>::value)> {};
-
 
 template<class _CharT, class _Traits, class _Allocator>
 class basic_string
@@ -18758,10 +16577,6 @@ public:
     typedef typename __alloc_traits::pointer pointer;
     typedef typename __alloc_traits::const_pointer const_pointer;
 
-
-
-
-
     typedef __wrap_iter<pointer> iterator;
     typedef __wrap_iter<const_pointer> const_iterator;
 
@@ -18770,7 +16585,6 @@ public:
 
 private:
 
-
     struct __long
     {
         size_type __cap_;
@@ -18778,13 +16592,8 @@ private:
         pointer __data_;
     };
 
-
-
-
-
     static const size_type __short_mask = 0x01;
     static const size_type __long_mask = 0x1ul;
-
 
     enum {__min_cap = (sizeof(__long) - 1)/sizeof(value_type) > 2 ?
                       (sizeof(__long) - 1)/sizeof(value_type) : 2};
@@ -18828,27 +16637,18 @@ public:
 
     __attribute__ ((__exclude_from_explicit_instantiation__)) explicit basic_string(const allocator_type& __a)
 
-
-
-
         noexcept;
-
 
     basic_string(const basic_string& __str);
     basic_string(const basic_string& __str, const allocator_type& __a);
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     basic_string(basic_string&& __str)
 
-
-
         noexcept;
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     basic_string(basic_string&& __str, const allocator_type& __a);
-
 
     template <class = typename enable_if<__is_allocator<_Allocator>::value, nullptr_t>::type>
     __attribute__ ((__exclude_from_explicit_instantiation__))
@@ -18890,7 +16690,6 @@ public:
     basic_string(initializer_list<_CharT> __il);
     __attribute__ ((__exclude_from_explicit_instantiation__))
     basic_string(initializer_list<_CharT> __il, const _Allocator& __a);
-
 
     inline ~basic_string();
 
@@ -19005,7 +16804,6 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     basic_string& assign(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
 
-
     basic_string& erase(size_type __pos = 0, size_type __n = npos);
     __attribute__ ((__exclude_from_explicit_instantiation__))
     iterator erase(const_iterator __pos);
@@ -19016,16 +16814,13 @@ public:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     basic_string substr(size_type __pos = 0, size_type __n = npos) const;
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const value_type* c_str() const noexcept {return data();}
     __attribute__ ((__exclude_from_explicit_instantiation__))
     const value_type* data() const noexcept {return std::__1::__to_raw_pointer(__get_pointer());}
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     value_type* data() noexcept {return std::__1::__to_raw_pointer(__get_pointer());}
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     allocator_type get_allocator() const noexcept {return __alloc();}
@@ -19038,7 +16833,6 @@ public:
     bool __is_long() const noexcept
         {return bool(__r_.first().__s.__size_ & __short_mask);}
 
-
 private:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     allocator_type& __alloc() noexcept
@@ -19050,18 +16844,12 @@ private:
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void __set_short_size(size_type __s) noexcept
 
-
-
         {__r_.first().__s.__size_ = (unsigned char)(__s << 1);}
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     size_type __get_short_size() const noexcept
 
-
-
         {return __r_.first().__s.__size_ >> 1;}
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void __set_long_size(size_type __s) noexcept
@@ -19184,25 +16972,18 @@ private:
     void __copy_assign_alloc(const basic_string&, false_type) noexcept
         {}
 
-
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void __move_assign(basic_string& __str, false_type)
         noexcept(__alloc_traits::is_always_equal::value);
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void __move_assign(basic_string& __str, true_type)
 
-
         noexcept;
-
-
-
-
 
     __attribute__ ((__exclude_from_explicit_instantiation__))
     void
     __move_assign_alloc(basic_string& __str)
         noexcept(!__alloc_traits::propagate_on_container_move_assignment::value || is_nothrow_move_assignable<allocator_type>::value)
-
 
     {__move_assign_alloc(__str, integral_constant<bool,
                       __alloc_traits::propagate_on_container_move_assignment::value>());}
@@ -19229,7 +17010,6 @@ private:
     friend basic_string operator+<>(const basic_string&, value_type);
 };
 
-
 template<class _InputIterator,
          class _CharT = typename iterator_traits<_InputIterator>::value_type,
          class _Allocator = allocator<_CharT>,
@@ -19239,18 +17019,11 @@ template<class _InputIterator,
 basic_string(_InputIterator, _InputIterator, _Allocator = _Allocator())
   -> basic_string<_CharT, char_traits<_CharT>, _Allocator>;
 
-
-
-
-
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string()
     noexcept(is_nothrow_default_constructible<allocator_type>::value)
 {
-
-
-
 
     __zero();
 }
@@ -19360,14 +17133,9 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
         __init(std::__1::__to_raw_pointer(__str.__get_long_pointer()), __str.__get_long_size());
 }
 
-
-
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(basic_string&& __str)
-
-
-
 
         noexcept
 
@@ -19390,8 +17158,6 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(basic_string&& __str, co
     }
 
 }
-
-
 
 template <class _CharT, class _Traits, class _Allocator>
 void
@@ -19522,17 +17288,12 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(_InputIterator __first, 
 
 }
 
-
-
 template <class _CharT, class _Traits, class _Allocator>
 inline
 basic_string<_CharT, _Traits, _Allocator>::basic_string(
     initializer_list<_CharT> __il)
 {
     __init(__il.begin(), __il.end());
-
-
-
 
 }
 
@@ -19545,23 +17306,15 @@ basic_string<_CharT, _Traits, _Allocator>::basic_string(
 {
     __init(__il.begin(), __il.end());
 
-
-
-
 }
-
-
 
 template <class _CharT, class _Traits, class _Allocator>
 basic_string<_CharT, _Traits, _Allocator>::~basic_string()
 {
 
-
-
     if (__is_long())
         __alloc_traits::deallocate(__alloc(), __get_long_pointer(), __get_long_cap());
 }
-
 
 template<class _CharT, class _Traits, class _Allocator>
     const typename basic_string<_CharT, _Traits, _Allocator>::size_type
@@ -19578,22 +17331,10 @@ struct
     { return __do_string_hash(__val.data(), __val.data() + __val.size()); }
 };
 
-
-
-
-
 extern template class basic_string<char>;
 extern template class basic_string<wchar_t>;
 
-
-
-
 } }
-
-
-
-
-
 
 int xbox_register ()
 {
