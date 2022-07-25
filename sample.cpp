@@ -402,12 +402,6 @@
 
 #if 1 /* evaluated by -frewrite-includes */
 
-// _LIBCPP_ALTERNATE_STRING_LAYOUT is an old name for
-// _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT left here for backward compatibility.
-
-#if 0 /* evaluated by -frewrite-includes */
-#define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-#endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -2967,17 +2961,6 @@ _PDCLIB_LOCAL struct _PDCLIB_lc_ctype_t * _PDCLIB_load_lc_ctype( const char * pa
 _PDCLIB_LOCAL struct _PDCLIB_lc_time_t * _PDCLIB_load_lc_time( const char * path, const char * locale );
 _PDCLIB_LOCAL struct _PDCLIB_lc_messages_t * _PDCLIB_load_lc_messages( const char * path, const char * locale );
 
-/* -------------------------------------------------------------------------- */
-/* Sanity checks                                                              */
-/* -------------------------------------------------------------------------- */
-
-
-/* intptr_t being wide enough to store the value of a pointer */
-_PDCLIB_static_assert( sizeof( void * ) == sizeof( _PDCLIB_intptr ), "Compiler disagrees on _PDCLIB_intptr." );
-
-/* ptrdiff_t as the result of pointer arithmetic */
-_PDCLIB_static_assert( sizeof( &_PDCLIB_digits[1] - &_PDCLIB_digits[0] ) == sizeof( _PDCLIB_ptrdiff ), "Compiler disagrees on _PDCLIB_ptrdiff." );
-
 #endif
 
 typedef _PDCLIB_ptrdiff_t ptrdiff_t;
@@ -2997,23 +2980,6 @@ typedef _PDCLIB_wchar_t   wchar_t;
 #endif
 
 #define offsetof( type, member ) _PDCLIB_offsetof( type, member )
-
-/* Annex K -- Bounds-checking interfaces */
-
-
-#if 0 /* evaluated by -frewrite-includes */
-#ifndef _PDCLIB_RSIZE_T_DEFINED
-#define _PDCLIB_RSIZE_T_DEFINED _PDCLIB_RSIZE_T_DEFINED
-typedef size_t rsize_t;
-#endif
-#endif
-
-/* Extension hook for downstream projects that want to have non-standard
-   extensions to standard headers.
-*/
-#ifdef _PDCLIB_EXTEND_STDDEF_H
-
-#endif
 
 #ifdef __cplusplus
 }
@@ -3124,85 +3090,6 @@ constexpr byte  operator~ (byte __b) noexcept
 #ifndef _LIBCPP_TYPE_TRAITS
 #define _LIBCPP_TYPE_TRAITS
 
-
-
-// -*- C++ -*-
-//===--------------------------- cstddef ----------------------------------===//
-//
-// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
-// See https://llvm.org/LICENSE.txt for license information.
-// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-//
-//===----------------------------------------------------------------------===//
-
-#ifndef _LIBCPP_CSTDDEF
-#define _LIBCPP_CSTDDEF
-
-/*
-    cstddef synopsis
-
-Macros:
-
-    offsetof(type,member-designator)
-    NULL
-
-namespace std
-{
-
-Types:
-
-    ptrdiff_t
-    size_t
-    max_align_t
-    nullptr_t
-    byte // C++17
-
-}  // std
-
-*/
-
-
-
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-#endif
-
-// Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
-
-
-
-_LIBCPP_BEGIN_NAMESPACE_STD
-
-using ::ptrdiff_t;
-using ::size_t;
-
-
-#if 0 /* evaluated by -frewrite-includes */
-// Re-use the compiler's <stddef.h> max_align_t where possible.
-using ::max_align_t;
-#else
-typedef long double max_align_t;
-#endif
-
-_LIBCPP_END_NAMESPACE_STD
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-
-
-#endif
-
-#endif  // _LIBCPP_CSTDDEF
-
-
-
-#if 1 /* evaluated by -frewrite-includes */
-
-#endif
-
 _LIBCPP_BEGIN_NAMESPACE_STD
 
 template <class _T1, class _T2> struct _LIBCPP_TEMPLATE_VIS pair;
@@ -3233,8 +3120,6 @@ _LIBCPP_CONSTEXPR const _Tp integral_constant<_Tp, __v>::value;
 template <bool __b>
 using bool_constant = integral_constant<bool, __b>;
 #define _LIBCPP_BOOL_CONSTANT(__b) bool_constant<(__b)>
-#else
-#define _LIBCPP_BOOL_CONSTANT(__b) integral_constant<bool,(__b)>
 #endif
 
 typedef _LIBCPP_BOOL_CONSTANT(true)  true_type;
@@ -3368,60 +3253,7 @@ addressof(_Tp& __x) _NOEXCEPT
 {
     return __builtin_addressof(__x);
 }
-
-#else
-
-template <class _Tp>
-inline _LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
-_Tp*
-addressof(_Tp& __x) _NOEXCEPT
-{
-  return reinterpret_cast<_Tp *>(
-      const_cast<char *>(&reinterpret_cast<const volatile char &>(__x)));
-}
-
 #endif // _LIBCPP_HAS_NO_BUILTIN_ADDRESSOF
-
-
-#if 0 /* evaluated by -frewrite-includes */
-// Objective-C++ Automatic Reference Counting uses qualified pointers
-// that require special addressof() signatures. When
-// _LIBCPP_PREDEFINED_OBJC_ARC_ADDRESSOF is defined, the compiler
-// itself is providing these definitions. Otherwise, we provide them.
-template <class _Tp>
-inline _LIBCPP_INLINE_VISIBILITY
-__strong _Tp*
-addressof(__strong _Tp& __x) _NOEXCEPT
-{
-  return &__x;
-}
-
-#ifdef _LIBCPP_HAS_OBJC_ARC_WEAK
-template <class _Tp>
-inline _LIBCPP_INLINE_VISIBILITY
-__weak _Tp*
-addressof(__weak _Tp& __x) _NOEXCEPT
-{
-  return &__x;
-}
-#endif
-
-template <class _Tp>
-inline _LIBCPP_INLINE_VISIBILITY
-__autoreleasing _Tp*
-addressof(__autoreleasing _Tp& __x) _NOEXCEPT
-{
-  return &__x;
-}
-
-template <class _Tp>
-inline _LIBCPP_INLINE_VISIBILITY
-__unsafe_unretained _Tp*
-addressof(__unsafe_unretained _Tp& __x) _NOEXCEPT
-{
-  return &__x;
-}
-#endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -3665,24 +3497,8 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_union_v
 
 // is_class
 
-
-#if 1 /* evaluated by -frewrite-includes */
-
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
     : public integral_constant<bool, __is_class(_Tp)> {};
-
-#else
-
-namespace __is_class_imp
-{
-template <class _Tp> char  __test(int _Tp::*);
-template <class _Tp> __two __test(...);
-}
-
-template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_class
-    : public integral_constant<bool, sizeof(__is_class_imp::__test<_Tp>(0)) == 1 && !is_union<_Tp>::value> {};
-
-#endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -3761,28 +3577,8 @@ _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_member_object_pointer_v
 #endif
 
 // is_enum
-
-
-#if 1 /* evaluated by -frewrite-includes */
-
 template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
     : public integral_constant<bool, __is_enum(_Tp)> {};
-
-#else
-
-template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_enum
-    : public integral_constant<bool, !is_void<_Tp>::value             &&
-                                     !is_integral<_Tp>::value         &&
-                                     !is_floating_point<_Tp>::value   &&
-                                     !is_array<_Tp>::value            &&
-                                     !is_pointer<_Tp>::value          &&
-                                     !is_reference<_Tp>::value        &&
-                                     !is_member_pointer<_Tp>::value   &&
-                                     !is_union<_Tp>::value            &&
-                                     !is_class<_Tp>::value            &&
-                                     !is_function<_Tp>::value         > {};
-
-#endif
 
 
 #if 1 /* evaluated by -frewrite-includes */
@@ -27831,37 +27627,6 @@ public:
 
 private:
 
-#ifdef _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-
-    struct __long
-    {
-        pointer   __data_;
-        size_type __size_;
-        size_type __cap_;
-    };
-
-#ifdef _LIBCPP_BIG_ENDIAN
-    static const size_type __short_mask = 0x01;
-    static const size_type __long_mask  = 0x1ul;
-#else  // _LIBCPP_BIG_ENDIAN
-    static const size_type __short_mask = 0x80;
-    static const size_type __long_mask  = ~(size_type(~0) >> 1);
-#endif  // _LIBCPP_BIG_ENDIAN
-
-    enum {__min_cap = (sizeof(__long) - 1)/sizeof(value_type) > 2 ?
-                      (sizeof(__long) - 1)/sizeof(value_type) : 2};
-
-    struct __short
-    {
-        value_type __data_[__min_cap];
-        struct
-            : __padding<value_type>
-        {
-            unsigned char __size_;
-        };
-    };
-
-#else
 
     struct __long
     {
@@ -27890,8 +27655,6 @@ private:
         };
         value_type __data_[__min_cap];
     };
-
-#endif  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
 
     union __ulx{__long __lx; __short __lxx;};
 
@@ -27990,21 +27753,6 @@ public:
 
     basic_string& operator=(const basic_string& __str);
 
-
-#if 0 /* evaluated by -frewrite-includes */
-    _LIBCPP_INLINE_VISIBILITY
-    iterator begin() _NOEXCEPT
-        {return iterator(this, __get_pointer());}
-    _LIBCPP_INLINE_VISIBILITY
-    const_iterator begin() const _NOEXCEPT
-        {return const_iterator(this, __get_pointer());}
-    _LIBCPP_INLINE_VISIBILITY
-    iterator end() _NOEXCEPT
-        {return iterator(this, __get_pointer() + size());}
-    _LIBCPP_INLINE_VISIBILITY
-    const_iterator end() const _NOEXCEPT
-        {return const_iterator(this, __get_pointer() + size());}
-#else
     _LIBCPP_INLINE_VISIBILITY
     iterator begin() _NOEXCEPT
         {return iterator(__get_pointer());}
@@ -28017,7 +27765,6 @@ public:
     _LIBCPP_INLINE_VISIBILITY
     const_iterator end() const _NOEXCEPT
         {return const_iterator(__get_pointer() + size());}
-#endif  // _LIBCPP_DEBUG_LEVEL >= 2
     _LIBCPP_INLINE_VISIBILITY
     reverse_iterator rbegin() _NOEXCEPT
         {return reverse_iterator(end());}
@@ -28073,61 +27820,6 @@ public:
     const_reference at(size_type __n) const;
     reference       at(size_type __n);
 
-    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const basic_string& __str) {return append(__str);}
-
-    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const value_type* __s)     {return append(__s);}
-    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(value_type __c)            {push_back(__c); return *this;}
-#ifndef _LIBCPP_CXX03_LANG
-    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(initializer_list<value_type> __il) {return append(__il);}
-#endif  // _LIBCPP_CXX03_LANG
-
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& append(const basic_string& __str);
-
-    basic_string& append(const basic_string& __str, size_type __pos, size_type __n=npos);
-
-    basic_string& append(const value_type* __s, size_type __n);
-    basic_string& append(const value_type* __s);
-    basic_string& append(size_type __n, value_type __c);
-
-    _LIBCPP_INLINE_VISIBILITY
-    void __append_default_init(size_type __n);
-
-    template <class _ForwardIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    basic_string& __append_forward_unsafe(_ForwardIterator, _ForwardIterator);
-    template<class _InputIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    typename enable_if
-        <
-            __is_exactly_input_iterator<_InputIterator>::value
-                || !__libcpp_string_gets_noexcept_iterator<_InputIterator>::value,
-            basic_string&
-        >::type
-    _LIBCPP_INLINE_VISIBILITY
-    append(_InputIterator __first, _InputIterator __last) {
-      const basic_string __temp (__first, __last, __alloc());
-      append(__temp.data(), __temp.size());
-      return *this;
-    }
-    template<class _ForwardIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    typename enable_if
-        <
-            __is_forward_iterator<_ForwardIterator>::value
-                && __libcpp_string_gets_noexcept_iterator<_ForwardIterator>::value,
-            basic_string&
-        >::type
-    _LIBCPP_INLINE_VISIBILITY
-    append(_ForwardIterator __first, _ForwardIterator __last) {
-      return __append_forward_unsafe(__first, __last);
-    }
-
-#ifndef _LIBCPP_CXX03_LANG
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& append(initializer_list<value_type> __il) {return append(__il.begin(), __il.size());}
-#endif  // _LIBCPP_CXX03_LANG
-
     void push_back(value_type __c);
     _LIBCPP_INLINE_VISIBILITY
     void pop_back();
@@ -28171,90 +27863,16 @@ public:
     basic_string& assign(initializer_list<value_type> __il) {return assign(__il.begin(), __il.size());}
 #endif  // _LIBCPP_CXX03_LANG
 
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& insert(size_type __pos1, const basic_string& __str);
-
-    basic_string& insert(size_type __pos1, const basic_string& __str, size_type __pos2, size_type __n=npos);
-    basic_string& insert(size_type __pos, const value_type* __s, size_type __n);
-    basic_string& insert(size_type __pos, const value_type* __s);
-    basic_string& insert(size_type __pos, size_type __n, value_type __c);
-    iterator      insert(const_iterator __pos, value_type __c);
-    _LIBCPP_INLINE_VISIBILITY
-    iterator      insert(const_iterator __pos, size_type __n, value_type __c);
-    template<class _InputIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    typename enable_if
-        <
-           __is_exactly_input_iterator<_InputIterator>::value
-                || !__libcpp_string_gets_noexcept_iterator<_InputIterator>::value,
-            iterator
-        >::type
-        insert(const_iterator __pos, _InputIterator __first, _InputIterator __last);
-    template<class _ForwardIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    typename enable_if
-        <
-            __is_forward_iterator<_ForwardIterator>::value
-                 && __libcpp_string_gets_noexcept_iterator<_ForwardIterator>::value,
-            iterator
-        >::type
-        insert(const_iterator __pos, _ForwardIterator __first, _ForwardIterator __last);
-#ifndef _LIBCPP_CXX03_LANG
-    _LIBCPP_INLINE_VISIBILITY
-    iterator insert(const_iterator __pos, initializer_list<value_type> __il)
-                    {return insert(__pos, __il.begin(), __il.end());}
-#endif  // _LIBCPP_CXX03_LANG
-
     basic_string& erase(size_type __pos = 0, size_type __n = npos);
     _LIBCPP_INLINE_VISIBILITY
     iterator      erase(const_iterator __pos);
     _LIBCPP_INLINE_VISIBILITY
     iterator      erase(const_iterator __first, const_iterator __last);
 
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(size_type __pos1, size_type __n1, const basic_string& __str);
-
-    basic_string& replace(size_type __pos1, size_type __n1, const basic_string& __str, size_type __pos2, size_type __n2=npos);
-
-    basic_string& replace(size_type __pos, size_type __n1, const value_type* __s, size_type __n2);
-    basic_string& replace(size_type __pos, size_type __n1, const value_type* __s);
-    basic_string& replace(size_type __pos, size_type __n1, size_type __n2, value_type __c);
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(const_iterator __i1, const_iterator __i2, const basic_string& __str);
-
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(const_iterator __i1, const_iterator __i2, const value_type* __s, size_type __n);
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(const_iterator __i1, const_iterator __i2, const value_type* __s);
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(const_iterator __i1, const_iterator __i2, size_type __n, value_type __c);
-    template<class _InputIterator>
-    _LIBCPP_METHOD_TEMPLATE_IMPLICIT_INSTANTIATION_VIS
-    typename enable_if
-        <
-            __is_input_iterator<_InputIterator>::value,
-            basic_string&
-        >::type
-        replace(const_iterator __i1, const_iterator __i2, _InputIterator __j1, _InputIterator __j2);
-#ifndef _LIBCPP_CXX03_LANG
-    _LIBCPP_INLINE_VISIBILITY
-    basic_string& replace(const_iterator __i1, const_iterator __i2, initializer_list<value_type> __il)
-        {return replace(__i1, __i2, __il.begin(), __il.end());}
-#endif  // _LIBCPP_CXX03_LANG
-
     size_type copy(value_type* __s, size_type __n, size_type __pos = 0) const;
     _LIBCPP_INLINE_VISIBILITY
     basic_string substr(size_type __pos = 0, size_type __n = npos) const;
 
-    _LIBCPP_INLINE_VISIBILITY
-    void swap(basic_string& __str)
-
-#if 1 /* evaluated by -frewrite-includes */
-        _NOEXCEPT;
-#else
-        _NOEXCEPT_(!__alloc_traits::propagate_on_container_swap::value ||
-                    __is_nothrow_swappable<allocator_type>::value);
-#endif
 
     _LIBCPP_INLINE_VISIBILITY
     const value_type* c_str() const _NOEXCEPT {return data();}
@@ -28268,59 +27886,6 @@ public:
 
     _LIBCPP_INLINE_VISIBILITY
     allocator_type get_allocator() const _NOEXCEPT {return __alloc();}
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find(const basic_string& __str, size_type __pos = 0) const _NOEXCEPT;
-
-    size_type find(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find(const value_type* __s, size_type __pos = 0) const _NOEXCEPT;
-    size_type find(value_type __c, size_type __pos = 0) const _NOEXCEPT;
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type rfind(const basic_string& __str, size_type __pos = npos) const _NOEXCEPT;
-
-    size_type rfind(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type rfind(const value_type* __s, size_type __pos = npos) const _NOEXCEPT;
-    size_type rfind(value_type __c, size_type __pos = npos) const _NOEXCEPT;
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_of(const basic_string& __str, size_type __pos = 0) const _NOEXCEPT;
-
-    size_type find_first_of(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_of(const value_type* __s, size_type __pos = 0) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_of(value_type __c, size_type __pos = 0) const _NOEXCEPT;
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_of(const basic_string& __str, size_type __pos = npos) const _NOEXCEPT;
-
-    size_type find_last_of(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_of(const value_type* __s, size_type __pos = npos) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_of(value_type __c, size_type __pos = npos) const _NOEXCEPT;
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_not_of(const basic_string& __str, size_type __pos = 0) const _NOEXCEPT;
-
-    size_type find_first_not_of(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_not_of(const value_type* __s, size_type __pos = 0) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_first_not_of(value_type __c, size_type __pos = 0) const _NOEXCEPT;
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_not_of(const basic_string& __str, size_type __pos = npos) const _NOEXCEPT;
-
-    size_type find_last_not_of(const value_type* __s, size_type __pos, size_type __n) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_not_of(const value_type* __s, size_type __pos = npos) const _NOEXCEPT;
-    _LIBCPP_INLINE_VISIBILITY
-    size_type find_last_not_of(value_type __c, size_type __pos = npos) const _NOEXCEPT;
-
 
     _LIBCPP_INLINE_VISIBILITY bool __invariants() const;
 
@@ -28339,26 +27904,6 @@ private:
     const allocator_type& __alloc() const _NOEXCEPT
         {return __r_.second();}
 
-#ifdef _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-
-    _LIBCPP_INLINE_VISIBILITY
-    void __set_short_size(size_type __s) _NOEXCEPT
-#   ifdef _LIBCPP_BIG_ENDIAN
-        {__r_.first().__s.__size_ = (unsigned char)(__s << 1);}
-#   else
-        {__r_.first().__s.__size_ = (unsigned char)(__s);}
-#   endif
-
-    _LIBCPP_INLINE_VISIBILITY
-    size_type __get_short_size() const _NOEXCEPT
-#   ifdef _LIBCPP_BIG_ENDIAN
-        {return __r_.first().__s.__size_ >> 1;}
-#   else
-        {return __r_.first().__s.__size_;}
-#   endif
-
-#else  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
-
     _LIBCPP_INLINE_VISIBILITY
     void __set_short_size(size_type __s) _NOEXCEPT
 #   ifdef _LIBCPP_BIG_ENDIAN
@@ -28374,8 +27919,6 @@ private:
 #   else
         {return __r_.first().__s.__size_ >> 1;}
 #   endif
-
-#endif  // _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT
 
     _LIBCPP_INLINE_VISIBILITY
     void __set_long_size(size_type __s) _NOEXCEPT
