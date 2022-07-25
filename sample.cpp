@@ -3475,15 +3475,6 @@ struct __is_same_uncvref : _IsSame<typename __uncvref<_Tp>::type,
                                    typename __uncvref<_Up>::type> {};
 
 
-#if 0 /* evaluated by -frewrite-includes */
-// remove_cvref - same as __uncvref
-template <class _Tp>
-struct remove_cvref : public __uncvref<_Tp> {};
-
-template <class _Tp> using remove_cvref_t = typename remove_cvref<_Tp>::type;
-#endif
-
-
 struct __any
 {
     __any(...);
@@ -3518,13 +3509,6 @@ template <class _Tp> struct _LIBCPP_TEMPLATE_VIS add_pointer
 
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using add_pointer_t = typename add_pointer<_Tp>::type;
-#endif
-
-// type_identity
-
-#if 0 /* evaluated by -frewrite-includes */
-template<class _Tp> struct type_identity { typedef _Tp type; };
-template<class _Tp> using type_identity_t = typename type_identity<_Tp>::type;
 #endif
 
 // is_signed
@@ -3633,27 +3617,6 @@ template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS remove_all_extents<
 
 #if 1 /* evaluated by -frewrite-includes */
 template <class _Tp> using remove_all_extents_t = typename remove_all_extents<_Tp>::type;
-#endif
-
-
-#if 0 /* evaluated by -frewrite-includes */
-// is_bounded_array
-
-template <class>                 struct _LIBCPP_TEMPLATE_VIS is_bounded_array           : false_type {};
-template <class _Tp, size_t _Np> struct _LIBCPP_TEMPLATE_VIS is_bounded_array<_Tp[_Np]> : true_type {};
-
-template <class _Tp>
-_LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR
-bool is_bounded_array_v  = is_bounded_array<_Tp>::value;
-
-// is_unbounded_array
-
-template <class>     struct _LIBCPP_TEMPLATE_VIS is_unbounded_array        : false_type {};
-template <class _Tp> struct _LIBCPP_TEMPLATE_VIS is_unbounded_array<_Tp[]> : true_type {};
-
-template <class _Tp>
-_LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR
-bool is_unbounded_array_v  = is_unbounded_array<_Tp>::value;
 #endif
 
 // decay
@@ -3771,33 +3734,6 @@ template <class _From, class _To>
 _LIBCPP_INLINE_VAR _LIBCPP_CONSTEXPR bool is_convertible_v
     = is_convertible<_From, _To>::value;
 #endif
-
-// is_nothrow_convertible
-
-
-#if 0 /* evaluated by -frewrite-includes */
-
-template <typename _Tp>
-static void __test_noexcept(_Tp) noexcept;
-
-template<typename _Fm, typename _To>
-static bool_constant<noexcept(__test_noexcept<_To>(declval<_Fm>()))>
-__is_nothrow_convertible_test();
-
-template <typename _Fm, typename _To>
-struct __is_nothrow_convertible_helper: decltype(__is_nothrow_convertible_test<_Fm, _To>())
-{ };
-
-template <typename _Fm, typename _To>
-struct is_nothrow_convertible : _Or<
-    _And<is_void<_To>, is_void<_Fm>>,
-    _Lazy<_And, is_convertible<_Fm, _To>, __is_nothrow_convertible_helper<_Fm, _To>>
->::type { };
-
-template <typename _Fm, typename _To>
-inline constexpr bool is_nothrow_convertible_v = is_nothrow_convertible<_Fm, _To>::value;
-
-#endif // _LIBCPP_STD_VER > 17
 
 // is_empty
 
